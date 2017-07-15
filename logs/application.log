@@ -1,0 +1,939 @@
+2017-07-15 19:24:12,474 [INFO] from application in scala-execution-context-global-63 - ApplicationTimer demo: Starting application at 2017-07-15T17:24:12.473Z
+2017-07-15 19:24:13,262 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-63 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:24:13,570 [INFO] from play.api.Play in scala-execution-context-global-63 - Application started (Dev)
+2017-07-15 19:39:14,725 [INFO] from application in scala-execution-context-global-633 - ApplicationTimer demo: Stopping application at 2017-07-15T17:39:14.725Z after 902s.
+2017-07-15 19:39:14,970 [INFO] from application in scala-execution-context-global-633 - ApplicationTimer demo: Starting application at 2017-07-15T17:39:14.970Z
+2017-07-15 19:39:15,217 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-633 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:39:15,241 [INFO] from play.api.Play in scala-execution-context-global-633 - Application started (Dev)
+2017-07-15 19:39:30,269 [INFO] from application in scala-execution-context-global-633 - ApplicationTimer demo: Stopping application at 2017-07-15T17:39:30.268Z after 16s.
+2017-07-15 19:39:30,529 [INFO] from application in scala-execution-context-global-633 - ApplicationTimer demo: Starting application at 2017-07-15T17:39:30.528Z
+2017-07-15 19:39:30,756 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-633 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:39:30,766 [INFO] from play.api.Play in scala-execution-context-global-633 - Application started (Dev)
+2017-07-15 19:39:57,776 [INFO] from application in scala-execution-context-global-659 - ApplicationTimer demo: Stopping application at 2017-07-15T17:39:57.776Z after 27s.
+2017-07-15 19:39:58,009 [INFO] from application in scala-execution-context-global-659 - ApplicationTimer demo: Starting application at 2017-07-15T17:39:58.008Z
+2017-07-15 19:39:58,215 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-659 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:39:58,224 [INFO] from play.api.Play in scala-execution-context-global-659 - Application started (Dev)
+2017-07-15 19:40:24,319 [INFO] from application in scala-execution-context-global-730 - ApplicationTimer demo: Stopping application at 2017-07-15T17:40:24.319Z after 26s.
+2017-07-15 19:40:24,610 [INFO] from application in scala-execution-context-global-730 - ApplicationTimer demo: Starting application at 2017-07-15T17:40:24.610Z
+2017-07-15 19:40:24,780 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-730 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:40:24,792 [INFO] from play.api.Play in scala-execution-context-global-730 - Application started (Dev)
+2017-07-15 19:41:52,554 [INFO] from application in scala-execution-context-global-776 - ApplicationTimer demo: Stopping application at 2017-07-15T17:41:52.554Z after 88s.
+2017-07-15 19:41:52,765 [INFO] from application in scala-execution-context-global-776 - ApplicationTimer demo: Starting application at 2017-07-15T17:41:52.765Z
+2017-07-15 19:41:52,973 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-776 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:41:52,985 [INFO] from play.api.Play in scala-execution-context-global-776 - Application started (Dev)
+2017-07-15 19:43:19,320 [INFO] from application in scala-execution-context-global-814 - ApplicationTimer demo: Stopping application at 2017-07-15T17:43:19.320Z after 87s.
+2017-07-15 19:43:19,485 [INFO] from application in scala-execution-context-global-814 - ApplicationTimer demo: Starting application at 2017-07-15T17:43:19.485Z
+2017-07-15 19:43:19,680 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-814 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:43:19,688 [INFO] from play.api.Play in scala-execution-context-global-814 - Application started (Dev)
+2017-07-15 19:44:23,423 [INFO] from application in scala-execution-context-global-848 - ApplicationTimer demo: Stopping application at 2017-07-15T17:44:23.423Z after 64s.
+2017-07-15 19:44:23,618 [INFO] from application in scala-execution-context-global-848 - ApplicationTimer demo: Starting application at 2017-07-15T17:44:23.618Z
+2017-07-15 19:44:23,803 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-848 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:44:23,815 [INFO] from play.api.Play in scala-execution-context-global-848 - Application started (Dev)
+2017-07-15 19:45:56,680 [INFO] from application in scala-execution-context-global-884 - ApplicationTimer demo: Stopping application at 2017-07-15T17:45:56.680Z after 93s.
+2017-07-15 19:45:56,840 [INFO] from application in scala-execution-context-global-884 - ApplicationTimer demo: Starting application at 2017-07-15T17:45:56.840Z
+2017-07-15 19:45:57,036 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-884 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:45:57,041 [INFO] from play.api.Play in scala-execution-context-global-884 - Application started (Dev)
+2017-07-15 19:46:08,565 [INFO] from application in scala-execution-context-global-884 - ApplicationTimer demo: Stopping application at 2017-07-15T17:46:08.565Z after 12s.
+2017-07-15 19:46:08,707 [INFO] from application in scala-execution-context-global-884 - ApplicationTimer demo: Starting application at 2017-07-15T17:46:08.707Z
+2017-07-15 19:46:08,863 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-884 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:46:08,873 [INFO] from play.api.Play in scala-execution-context-global-884 - Application started (Dev)
+2017-07-15 19:48:44,375 [INFO] from application in scala-execution-context-global-954 - ApplicationTimer demo: Stopping application at 2017-07-15T17:48:44.375Z after 156s.
+2017-07-15 19:48:44,489 [INFO] from application in scala-execution-context-global-954 - ApplicationTimer demo: Starting application at 2017-07-15T17:48:44.489Z
+2017-07-15 19:48:44,644 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-954 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:48:44,651 [INFO] from play.api.Play in scala-execution-context-global-954 - Application started (Dev)
+2017-07-15 19:50:02,348 [INFO] from application in scala-execution-context-global-990 - ApplicationTimer demo: Stopping application at 2017-07-15T17:50:02.348Z after 78s.
+2017-07-15 19:50:02,433 [INFO] from application in scala-execution-context-global-990 - ApplicationTimer demo: Starting application at 2017-07-15T17:50:02.433Z
+2017-07-15 19:50:02,552 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-990 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:50:02,556 [INFO] from play.api.Play in scala-execution-context-global-990 - Application started (Dev)
+2017-07-15 19:51:35,359 [INFO] from application in scala-execution-context-global-1025 - ApplicationTimer demo: Stopping application at 2017-07-15T17:51:35.359Z after 93s.
+2017-07-15 19:51:35,505 [INFO] from application in scala-execution-context-global-1025 - ApplicationTimer demo: Starting application at 2017-07-15T17:51:35.505Z
+2017-07-15 19:51:35,608 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1025 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:51:35,612 [INFO] from play.api.Play in scala-execution-context-global-1025 - Application started (Dev)
+2017-07-15 19:52:55,226 [INFO] from application in scala-execution-context-global-1103 - ApplicationTimer demo: Stopping application at 2017-07-15T17:52:55.226Z after 80s.
+2017-07-15 19:52:55,322 [INFO] from application in scala-execution-context-global-1103 - ApplicationTimer demo: Starting application at 2017-07-15T17:52:55.322Z
+2017-07-15 19:52:55,440 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1103 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:52:55,446 [INFO] from play.api.Play in scala-execution-context-global-1103 - Application started (Dev)
+2017-07-15 19:53:24,319 [INFO] from application in scala-execution-context-global-1131 - ApplicationTimer demo: Stopping application at 2017-07-15T17:53:24.319Z after 29s.
+2017-07-15 19:53:24,402 [INFO] from application in scala-execution-context-global-1131 - ApplicationTimer demo: Starting application at 2017-07-15T17:53:24.402Z
+2017-07-15 19:53:24,475 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1131 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:53:24,480 [INFO] from play.api.Play in scala-execution-context-global-1131 - Application started (Dev)
+2017-07-15 19:54:32,634 [INFO] from application in scala-execution-context-global-1175 - ApplicationTimer demo: Stopping application at 2017-07-15T17:54:32.633Z after 68s.
+2017-07-15 19:54:32,735 [INFO] from application in scala-execution-context-global-1175 - ApplicationTimer demo: Starting application at 2017-07-15T17:54:32.735Z
+2017-07-15 19:54:32,841 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1175 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:54:32,845 [INFO] from play.api.Play in scala-execution-context-global-1175 - Application started (Dev)
+2017-07-15 19:55:14,939 [INFO] from application in scala-execution-context-global-1211 - ApplicationTimer demo: Stopping application at 2017-07-15T17:55:14.939Z after 42s.
+2017-07-15 19:55:15,031 [INFO] from application in scala-execution-context-global-1211 - ApplicationTimer demo: Starting application at 2017-07-15T17:55:15.030Z
+2017-07-15 19:55:15,124 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1211 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:55:15,128 [INFO] from play.api.Play in scala-execution-context-global-1211 - Application started (Dev)
+2017-07-15 19:56:22,698 [INFO] from application in scala-execution-context-global-1252 - ApplicationTimer demo: Stopping application at 2017-07-15T17:56:22.698Z after 67s.
+2017-07-15 19:56:22,775 [INFO] from application in scala-execution-context-global-1252 - ApplicationTimer demo: Starting application at 2017-07-15T17:56:22.775Z
+2017-07-15 19:56:22,900 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1252 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:56:22,906 [INFO] from play.api.Play in scala-execution-context-global-1252 - Application started (Dev)
+2017-07-15 19:56:46,795 [INFO] from application in scala-execution-context-global-1276 - ApplicationTimer demo: Stopping application at 2017-07-15T17:56:46.795Z after 24s.
+2017-07-15 19:56:46,885 [INFO] from application in scala-execution-context-global-1276 - ApplicationTimer demo: Starting application at 2017-07-15T17:56:46.885Z
+2017-07-15 19:56:46,965 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1276 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:56:46,969 [INFO] from play.api.Play in scala-execution-context-global-1276 - Application started (Dev)
+2017-07-15 19:57:01,892 [INFO] from application in scala-execution-context-global-1309 - ApplicationTimer demo: Stopping application at 2017-07-15T17:57:01.892Z after 15s.
+2017-07-15 19:57:02,069 [INFO] from application in scala-execution-context-global-1309 - ApplicationTimer demo: Starting application at 2017-07-15T17:57:02.069Z
+2017-07-15 19:57:02,220 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1309 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:57:02,227 [INFO] from play.api.Play in scala-execution-context-global-1309 - Application started (Dev)
+2017-07-15 19:57:11,947 [INFO] from application in scala-execution-context-global-1309 - ApplicationTimer demo: Stopping application at 2017-07-15T17:57:11.947Z after 9s.
+2017-07-15 19:57:12,040 [INFO] from application in scala-execution-context-global-1309 - ApplicationTimer demo: Starting application at 2017-07-15T17:57:12.040Z
+2017-07-15 19:57:12,199 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1309 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:57:12,204 [INFO] from play.api.Play in scala-execution-context-global-1309 - Application started (Dev)
+2017-07-15 19:57:23,284 [INFO] from application in scala-execution-context-global-1309 - ApplicationTimer demo: Stopping application at 2017-07-15T17:57:23.284Z after 11s.
+2017-07-15 19:57:23,413 [INFO] from application in scala-execution-context-global-1309 - ApplicationTimer demo: Starting application at 2017-07-15T17:57:23.413Z
+2017-07-15 19:57:23,493 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1309 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:57:23,499 [INFO] from play.api.Play in scala-execution-context-global-1309 - Application started (Dev)
+2017-07-15 19:57:35,594 [INFO] from application in scala-execution-context-global-1276 - ApplicationTimer demo: Stopping application at 2017-07-15T17:57:35.594Z after 12s.
+2017-07-15 19:57:35,680 [INFO] from application in scala-execution-context-global-1276 - ApplicationTimer demo: Starting application at 2017-07-15T17:57:35.680Z
+2017-07-15 19:57:35,816 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1276 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:57:35,822 [INFO] from play.api.Play in scala-execution-context-global-1276 - Application started (Dev)
+2017-07-15 19:57:50,420 [INFO] from application in scala-execution-context-global-1276 - ApplicationTimer demo: Stopping application at 2017-07-15T17:57:50.420Z after 15s.
+2017-07-15 19:57:50,518 [INFO] from application in scala-execution-context-global-1276 - ApplicationTimer demo: Starting application at 2017-07-15T17:57:50.518Z
+2017-07-15 19:57:50,628 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1276 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:57:50,632 [INFO] from play.api.Play in scala-execution-context-global-1276 - Application started (Dev)
+2017-07-15 19:58:00,405 [INFO] from application in scala-execution-context-global-1276 - ApplicationTimer demo: Stopping application at 2017-07-15T17:58:00.404Z after 10s.
+2017-07-15 19:58:00,494 [INFO] from application in scala-execution-context-global-1276 - ApplicationTimer demo: Starting application at 2017-07-15T17:58:00.494Z
+2017-07-15 19:58:00,654 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1276 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:58:00,659 [INFO] from play.api.Play in scala-execution-context-global-1276 - Application started (Dev)
+2017-07-15 19:58:11,791 [INFO] from application in scala-execution-context-global-1276 - ApplicationTimer demo: Stopping application at 2017-07-15T17:58:11.791Z after 11s.
+2017-07-15 19:58:11,866 [INFO] from application in scala-execution-context-global-1276 - ApplicationTimer demo: Starting application at 2017-07-15T17:58:11.865Z
+2017-07-15 19:58:11,960 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1276 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 19:58:11,966 [INFO] from play.api.Play in scala-execution-context-global-1276 - Application started (Dev)
+2017-07-15 21:00:31,820 [INFO] from application in scala-execution-context-global-1543 - ApplicationTimer demo: Stopping application at 2017-07-15T19:00:31.820Z after 3740s.
+2017-07-15 21:00:31,932 [INFO] from application in scala-execution-context-global-1543 - ApplicationTimer demo: Starting application at 2017-07-15T19:00:31.932Z
+2017-07-15 21:00:32,045 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1543 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:00:32,049 [INFO] from play.api.Play in scala-execution-context-global-1543 - Application started (Dev)
+2017-07-15 21:02:33,681 [INFO] from application in scala-execution-context-global-1589 - ApplicationTimer demo: Stopping application at 2017-07-15T19:02:33.681Z after 122s.
+2017-07-15 21:02:33,755 [INFO] from application in scala-execution-context-global-1589 - ApplicationTimer demo: Starting application at 2017-07-15T19:02:33.755Z
+2017-07-15 21:02:33,859 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1589 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:02:33,863 [INFO] from play.api.Play in scala-execution-context-global-1589 - Application started (Dev)
+2017-07-15 21:03:03,836 [INFO] from application in scala-execution-context-global-1589 - ApplicationTimer demo: Stopping application at 2017-07-15T19:03:03.836Z after 30s.
+2017-07-15 21:03:03,960 [INFO] from application in scala-execution-context-global-1589 - ApplicationTimer demo: Starting application at 2017-07-15T19:03:03.959Z
+2017-07-15 21:03:04,057 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1589 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:03:04,060 [INFO] from play.api.Play in scala-execution-context-global-1589 - Application started (Dev)
+2017-07-15 21:03:42,503 [INFO] from application in scala-execution-context-global-1664 - ApplicationTimer demo: Stopping application at 2017-07-15T19:03:42.503Z after 39s.
+2017-07-15 21:03:42,583 [INFO] from application in scala-execution-context-global-1664 - ApplicationTimer demo: Starting application at 2017-07-15T19:03:42.582Z
+2017-07-15 21:03:42,679 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1664 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:03:42,685 [INFO] from play.api.Play in scala-execution-context-global-1664 - Application started (Dev)
+2017-07-15 21:04:42,328 [INFO] from application in scala-execution-context-global-1698 - ApplicationTimer demo: Stopping application at 2017-07-15T19:04:42.327Z after 60s.
+2017-07-15 21:04:42,461 [INFO] from application in scala-execution-context-global-1698 - ApplicationTimer demo: Starting application at 2017-07-15T19:04:42.461Z
+2017-07-15 21:04:42,639 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1698 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:04:42,646 [INFO] from play.api.Play in scala-execution-context-global-1698 - Application started (Dev)
+2017-07-15 21:05:29,300 [INFO] from application in scala-execution-context-global-1737 - ApplicationTimer demo: Stopping application at 2017-07-15T19:05:29.300Z after 47s.
+2017-07-15 21:05:29,385 [INFO] from application in scala-execution-context-global-1737 - ApplicationTimer demo: Starting application at 2017-07-15T19:05:29.385Z
+2017-07-15 21:05:29,494 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1737 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:05:29,500 [INFO] from play.api.Play in scala-execution-context-global-1737 - Application started (Dev)
+2017-07-15 21:05:43,338 [INFO] from application in scala-execution-context-global-1737 - ApplicationTimer demo: Stopping application at 2017-07-15T19:05:43.337Z after 14s.
+2017-07-15 21:05:43,499 [INFO] from application in scala-execution-context-global-1737 - ApplicationTimer demo: Starting application at 2017-07-15T19:05:43.499Z
+2017-07-15 21:05:43,647 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1737 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:05:43,653 [INFO] from play.api.Play in scala-execution-context-global-1737 - Application started (Dev)
+2017-07-15 21:06:01,924 [INFO] from application in scala-execution-context-global-1761 - ApplicationTimer demo: Stopping application at 2017-07-15T19:06:01.924Z after 18s.
+2017-07-15 21:06:01,997 [INFO] from application in scala-execution-context-global-1761 - ApplicationTimer demo: Starting application at 2017-07-15T19:06:01.997Z
+2017-07-15 21:06:02,089 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1761 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:06:02,092 [INFO] from play.api.Play in scala-execution-context-global-1761 - Application started (Dev)
+2017-07-15 21:07:20,332 [INFO] from application in scala-execution-context-global-1849 - ApplicationTimer demo: Stopping application at 2017-07-15T19:07:20.332Z after 79s.
+2017-07-15 21:07:20,460 [INFO] from application in scala-execution-context-global-1849 - ApplicationTimer demo: Starting application at 2017-07-15T19:07:20.460Z
+2017-07-15 21:07:20,593 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1849 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:07:20,605 [INFO] from play.api.Play in scala-execution-context-global-1849 - Application started (Dev)
+2017-07-15 21:08:38,047 [INFO] from application in scala-execution-context-global-1888 - ApplicationTimer demo: Stopping application at 2017-07-15T19:08:38.047Z after 78s.
+2017-07-15 21:08:38,133 [INFO] from application in scala-execution-context-global-1888 - ApplicationTimer demo: Starting application at 2017-07-15T19:08:38.133Z
+2017-07-15 21:08:38,296 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1888 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:08:38,300 [INFO] from play.api.Play in scala-execution-context-global-1888 - Application started (Dev)
+2017-07-15 21:08:47,015 [INFO] from application in scala-execution-context-global-1888 - ApplicationTimer demo: Stopping application at 2017-07-15T19:08:47.014Z after 9s.
+2017-07-15 21:08:47,126 [INFO] from application in scala-execution-context-global-1888 - ApplicationTimer demo: Starting application at 2017-07-15T19:08:47.124Z
+2017-07-15 21:08:47,231 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1888 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:08:47,235 [INFO] from play.api.Play in scala-execution-context-global-1888 - Application started (Dev)
+2017-07-15 21:16:20,661 [INFO] from application in scala-execution-context-global-1958 - ApplicationTimer demo: Stopping application at 2017-07-15T19:16:20.661Z after 453s.
+2017-07-15 21:16:20,727 [INFO] from application in scala-execution-context-global-1958 - ApplicationTimer demo: Starting application at 2017-07-15T19:16:20.727Z
+2017-07-15 21:16:20,814 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1958 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:16:20,817 [INFO] from play.api.Play in scala-execution-context-global-1958 - Application started (Dev)
+2017-07-15 21:17:05,732 [INFO] from application in scala-execution-context-global-1999 - ApplicationTimer demo: Stopping application at 2017-07-15T19:17:05.732Z after 45s.
+2017-07-15 21:17:05,841 [INFO] from application in scala-execution-context-global-1999 - ApplicationTimer demo: Starting application at 2017-07-15T19:17:05.840Z
+2017-07-15 21:17:05,912 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1999 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:17:05,916 [INFO] from play.api.Play in scala-execution-context-global-1999 - Application started (Dev)
+2017-07-15 21:17:35,005 [INFO] from application in scala-execution-context-global-2024 - ApplicationTimer demo: Stopping application at 2017-07-15T19:17:35.004Z after 30s.
+2017-07-15 21:17:35,078 [INFO] from application in scala-execution-context-global-2024 - ApplicationTimer demo: Starting application at 2017-07-15T19:17:35.077Z
+2017-07-15 21:17:35,178 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2024 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:17:35,183 [INFO] from play.api.Play in scala-execution-context-global-2024 - Application started (Dev)
+2017-07-15 21:17:50,799 [INFO] from application in scala-execution-context-global-2024 - ApplicationTimer demo: Stopping application at 2017-07-15T19:17:50.799Z after 15s.
+2017-07-15 21:17:50,920 [INFO] from application in scala-execution-context-global-2024 - ApplicationTimer demo: Starting application at 2017-07-15T19:17:50.920Z
+2017-07-15 21:17:51,053 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2024 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:17:51,057 [INFO] from play.api.Play in scala-execution-context-global-2024 - Application started (Dev)
+2017-07-15 21:22:03,460 [INFO] from application in scala-execution-context-global-2141 - ApplicationTimer demo: Stopping application at 2017-07-15T19:22:03.460Z after 253s.
+2017-07-15 21:22:03,571 [INFO] from application in scala-execution-context-global-2141 - ApplicationTimer demo: Starting application at 2017-07-15T19:22:03.571Z
+2017-07-15 21:22:03,668 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2141 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:22:03,671 [INFO] from play.api.Play in scala-execution-context-global-2141 - Application started (Dev)
+2017-07-15 21:24:01,725 [INFO] from application in scala-execution-context-global-2241 - ApplicationTimer demo: Stopping application at 2017-07-15T19:24:01.724Z after 118s.
+2017-07-15 21:24:01,802 [INFO] from application in scala-execution-context-global-2241 - ApplicationTimer demo: Starting application at 2017-07-15T19:24:01.801Z
+2017-07-15 21:24:01,875 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2241 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:24:01,878 [INFO] from play.api.Play in scala-execution-context-global-2241 - Application started (Dev)
+2017-07-15 21:26:30,427 [INFO] from application in scala-execution-context-global-2283 - ApplicationTimer demo: Stopping application at 2017-07-15T19:26:30.427Z after 149s.
+2017-07-15 21:26:30,507 [INFO] from application in scala-execution-context-global-2283 - ApplicationTimer demo: Starting application at 2017-07-15T19:26:30.507Z
+2017-07-15 21:26:30,566 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2283 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:26:30,568 [INFO] from play.api.Play in scala-execution-context-global-2283 - Application started (Dev)
+2017-07-15 21:30:47,297 [INFO] from application in scala-execution-context-global-2427 - ApplicationTimer demo: Stopping application at 2017-07-15T19:30:47.297Z after 257s.
+2017-07-15 21:30:47,442 [INFO] from application in scala-execution-context-global-2427 - ApplicationTimer demo: Starting application at 2017-07-15T19:30:47.442Z
+2017-07-15 21:30:47,509 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2427 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:30:47,512 [INFO] from play.api.Play in scala-execution-context-global-2427 - Application started (Dev)
+2017-07-15 21:31:33,941 [INFO] from application in scala-execution-context-global-2461 - ApplicationTimer demo: Stopping application at 2017-07-15T19:31:33.941Z after 46s.
+2017-07-15 21:31:34,007 [INFO] from application in scala-execution-context-global-2461 - ApplicationTimer demo: Starting application at 2017-07-15T19:31:34.007Z
+2017-07-15 21:31:34,090 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2461 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:31:34,093 [INFO] from play.api.Play in scala-execution-context-global-2461 - Application started (Dev)
+2017-07-15 21:31:47,740 [INFO] from application in scala-execution-context-global-2461 - ApplicationTimer demo: Stopping application at 2017-07-15T19:31:47.740Z after 13s.
+2017-07-15 21:31:47,821 [INFO] from application in scala-execution-context-global-2461 - ApplicationTimer demo: Starting application at 2017-07-15T19:31:47.821Z
+2017-07-15 21:31:47,906 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2461 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:31:47,910 [INFO] from play.api.Play in scala-execution-context-global-2461 - Application started (Dev)
+2017-07-15 21:31:55,016 [INFO] from application in scala-execution-context-global-2483 - ApplicationTimer demo: Stopping application at 2017-07-15T19:31:55.016Z after 8s.
+2017-07-15 21:31:55,093 [INFO] from application in scala-execution-context-global-2483 - ApplicationTimer demo: Starting application at 2017-07-15T19:31:55.093Z
+2017-07-15 21:31:55,160 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2483 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:31:55,163 [INFO] from play.api.Play in scala-execution-context-global-2483 - Application started (Dev)
+2017-07-15 21:33:43,703 [INFO] from application in scala-execution-context-global-2578 - ApplicationTimer demo: Stopping application at 2017-07-15T19:33:43.702Z after 108s.
+2017-07-15 21:33:43,787 [INFO] from application in scala-execution-context-global-2578 - ApplicationTimer demo: Starting application at 2017-07-15T19:33:43.787Z
+2017-07-15 21:33:43,871 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2578 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:33:43,875 [INFO] from play.api.Play in scala-execution-context-global-2578 - Application started (Dev)
+2017-07-15 21:34:57,520 [INFO] from application in scala-execution-context-global-2612 - ApplicationTimer demo: Stopping application at 2017-07-15T19:34:57.520Z after 74s.
+2017-07-15 21:34:57,609 [INFO] from application in scala-execution-context-global-2612 - ApplicationTimer demo: Starting application at 2017-07-15T19:34:57.609Z
+2017-07-15 21:34:57,731 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2612 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:34:57,735 [INFO] from play.api.Play in scala-execution-context-global-2612 - Application started (Dev)
+2017-07-15 21:35:29,849 [INFO] from application in scala-execution-context-global-2637 - ApplicationTimer demo: Stopping application at 2017-07-15T19:35:29.848Z after 32s.
+2017-07-15 21:35:29,924 [INFO] from application in scala-execution-context-global-2637 - ApplicationTimer demo: Starting application at 2017-07-15T19:35:29.923Z
+2017-07-15 21:35:30,013 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2637 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:35:30,017 [INFO] from play.api.Play in scala-execution-context-global-2637 - Application started (Dev)
+2017-07-15 21:35:52,541 [INFO] from application in scala-execution-context-global-2672 - ApplicationTimer demo: Stopping application at 2017-07-15T19:35:52.541Z after 23s.
+2017-07-15 21:35:52,611 [INFO] from application in scala-execution-context-global-2672 - ApplicationTimer demo: Starting application at 2017-07-15T19:35:52.610Z
+2017-07-15 21:35:52,682 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2672 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:35:52,684 [INFO] from play.api.Play in scala-execution-context-global-2672 - Application started (Dev)
+2017-07-15 21:36:24,735 [INFO] from application in scala-execution-context-global-2705 - ApplicationTimer demo: Stopping application at 2017-07-15T19:36:24.734Z after 32s.
+2017-07-15 21:36:24,813 [INFO] from application in scala-execution-context-global-2705 - ApplicationTimer demo: Starting application at 2017-07-15T19:36:24.813Z
+2017-07-15 21:36:24,921 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2705 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:36:24,925 [INFO] from play.api.Play in scala-execution-context-global-2705 - Application started (Dev)
+2017-07-15 21:37:08,109 [INFO] from application in scala-execution-context-global-2768 - ApplicationTimer demo: Stopping application at 2017-07-15T19:37:08.109Z after 44s.
+2017-07-15 21:37:08,189 [INFO] from application in scala-execution-context-global-2768 - ApplicationTimer demo: Starting application at 2017-07-15T19:37:08.189Z
+2017-07-15 21:37:08,300 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2768 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:37:08,304 [INFO] from play.api.Play in scala-execution-context-global-2768 - Application started (Dev)
+2017-07-15 21:39:57,509 [INFO] from application in scala-execution-context-global-2811 - ApplicationTimer demo: Stopping application at 2017-07-15T19:39:57.508Z after 169s.
+2017-07-15 21:39:57,581 [INFO] from application in scala-execution-context-global-2811 - ApplicationTimer demo: Starting application at 2017-07-15T19:39:57.580Z
+2017-07-15 21:39:57,673 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2811 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:39:57,677 [INFO] from play.api.Play in scala-execution-context-global-2811 - Application started (Dev)
+2017-07-15 21:40:13,323 [INFO] from application in scala-execution-context-global-2834 - ApplicationTimer demo: Stopping application at 2017-07-15T19:40:13.323Z after 16s.
+2017-07-15 21:40:13,392 [INFO] from application in scala-execution-context-global-2834 - ApplicationTimer demo: Starting application at 2017-07-15T19:40:13.392Z
+2017-07-15 21:40:13,495 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2834 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:40:13,498 [INFO] from play.api.Play in scala-execution-context-global-2834 - Application started (Dev)
+2017-07-15 21:41:53,983 [INFO] from application in scala-execution-context-global-2896 - ApplicationTimer demo: Stopping application at 2017-07-15T19:41:53.982Z after 100s.
+2017-07-15 21:41:54,074 [INFO] from application in scala-execution-context-global-2896 - ApplicationTimer demo: Starting application at 2017-07-15T19:41:54.074Z
+2017-07-15 21:41:54,173 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2896 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:41:54,176 [INFO] from play.api.Play in scala-execution-context-global-2896 - Application started (Dev)
+2017-07-15 21:47:58,413 [INFO] from application in scala-execution-context-global-2962 - ApplicationTimer demo: Stopping application at 2017-07-15T19:47:58.413Z after 364s.
+2017-07-15 21:47:58,482 [INFO] from application in scala-execution-context-global-2962 - ApplicationTimer demo: Starting application at 2017-07-15T19:47:58.482Z
+2017-07-15 21:47:58,581 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2962 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:47:58,584 [INFO] from play.api.Play in scala-execution-context-global-2962 - Application started (Dev)
+2017-07-15 21:50:24,967 [INFO] from application in scala-execution-context-global-2996 - ApplicationTimer demo: Stopping application at 2017-07-15T19:50:24.967Z after 146s.
+2017-07-15 21:50:25,028 [INFO] from application in scala-execution-context-global-2996 - ApplicationTimer demo: Starting application at 2017-07-15T19:50:25.028Z
+2017-07-15 21:50:25,147 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2996 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:50:25,150 [INFO] from play.api.Play in scala-execution-context-global-2996 - Application started (Dev)
+2017-07-15 21:51:14,193 [INFO] from application in scala-execution-context-global-3050 - ApplicationTimer demo: Stopping application at 2017-07-15T19:51:14.193Z after 49s.
+2017-07-15 21:51:14,252 [INFO] from application in scala-execution-context-global-3050 - ApplicationTimer demo: Starting application at 2017-07-15T19:51:14.252Z
+2017-07-15 21:51:14,361 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3050 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:51:14,367 [INFO] from play.api.Play in scala-execution-context-global-3050 - Application started (Dev)
+2017-07-15 21:52:13,361 [INFO] from application in scala-execution-context-global-3091 - ApplicationTimer demo: Stopping application at 2017-07-15T19:52:13.361Z after 59s.
+2017-07-15 21:52:13,435 [INFO] from application in scala-execution-context-global-3091 - ApplicationTimer demo: Starting application at 2017-07-15T19:52:13.435Z
+2017-07-15 21:52:13,523 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3091 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 21:52:13,527 [INFO] from play.api.Play in scala-execution-context-global-3091 - Application started (Dev)
+2017-07-15 22:50:37,195 [INFO] from application in scala-execution-context-global-3132 - ApplicationTimer demo: Stopping application at 2017-07-15T20:50:37.195Z after 3504s.
+2017-07-15 22:50:37,275 [INFO] from application in scala-execution-context-global-3132 - ApplicationTimer demo: Starting application at 2017-07-15T20:50:37.274Z
+2017-07-15 22:50:37,370 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3132 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 22:50:37,373 [INFO] from play.api.Play in scala-execution-context-global-3132 - Application started (Dev)
+2017-07-15 22:52:17,194 [INFO] from application in scala-execution-context-global-3177 - ApplicationTimer demo: Stopping application at 2017-07-15T20:52:17.194Z after 100s.
+2017-07-15 22:52:17,272 [INFO] from application in scala-execution-context-global-3177 - ApplicationTimer demo: Starting application at 2017-07-15T20:52:17.272Z
+2017-07-15 22:52:17,379 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3177 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 22:52:17,383 [INFO] from play.api.Play in scala-execution-context-global-3177 - Application started (Dev)
+2017-07-15 22:53:33,977 [INFO] from application in scala-execution-context-global-3236 - ApplicationTimer demo: Stopping application at 2017-07-15T20:53:33.977Z after 76s.
+2017-07-15 22:53:34,085 [INFO] from application in scala-execution-context-global-3236 - ApplicationTimer demo: Starting application at 2017-07-15T20:53:34.085Z
+2017-07-15 22:53:34,177 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3236 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 22:53:34,188 [INFO] from play.api.Play in scala-execution-context-global-3236 - Application started (Dev)
+2017-07-15 22:53:37,775 [INFO] from application in scala-execution-context-global-3236 - ApplicationTimer demo: Stopping application at 2017-07-15T20:53:37.774Z after 3s.
+2017-07-15 22:53:37,857 [INFO] from application in scala-execution-context-global-3236 - ApplicationTimer demo: Starting application at 2017-07-15T20:53:37.857Z
+2017-07-15 22:53:37,940 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3236 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 22:53:37,943 [INFO] from play.api.Play in scala-execution-context-global-3236 - Application started (Dev)
+2017-07-15 22:54:24,538 [INFO] from application in scala-execution-context-global-3313 - ApplicationTimer demo: Stopping application at 2017-07-15T20:54:24.538Z after 47s.
+2017-07-15 22:54:24,645 [INFO] from application in scala-execution-context-global-3313 - ApplicationTimer demo: Starting application at 2017-07-15T20:54:24.645Z
+2017-07-15 22:54:24,720 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3313 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 22:54:24,723 [INFO] from play.api.Play in scala-execution-context-global-3313 - Application started (Dev)
+2017-07-15 22:56:40,844 [INFO] from application in scala-execution-context-global-3372 - ApplicationTimer demo: Stopping application at 2017-07-15T20:56:40.844Z after 136s.
+2017-07-15 22:56:40,910 [INFO] from application in scala-execution-context-global-3372 - ApplicationTimer demo: Starting application at 2017-07-15T20:56:40.910Z
+2017-07-15 22:56:41,041 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3372 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 22:56:41,045 [INFO] from play.api.Play in scala-execution-context-global-3372 - Application started (Dev)
+2017-07-15 22:58:27,007 [INFO] from application in scala-execution-context-global-3428 - ApplicationTimer demo: Stopping application at 2017-07-15T20:58:27.007Z after 107s.
+2017-07-15 22:58:27,070 [INFO] from application in scala-execution-context-global-3428 - ApplicationTimer demo: Starting application at 2017-07-15T20:58:27.070Z
+2017-07-15 22:58:27,128 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3428 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 22:58:27,130 [INFO] from play.api.Play in scala-execution-context-global-3428 - Application started (Dev)
+2017-07-15 23:00:31,813 [INFO] from application in scala-execution-context-global-3466 - ApplicationTimer demo: Stopping application at 2017-07-15T21:00:31.813Z after 124s.
+2017-07-15 23:00:31,929 [INFO] from application in scala-execution-context-global-3466 - ApplicationTimer demo: Starting application at 2017-07-15T21:00:31.929Z
+2017-07-15 23:00:32,085 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3466 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:00:32,091 [INFO] from play.api.Play in scala-execution-context-global-3466 - Application started (Dev)
+2017-07-15 23:01:18,081 [INFO] from application in scala-execution-context-global-3503 - ApplicationTimer demo: Stopping application at 2017-07-15T21:01:18.081Z after 47s.
+2017-07-15 23:01:18,131 [INFO] from application in scala-execution-context-global-3503 - ApplicationTimer demo: Starting application at 2017-07-15T21:01:18.131Z
+2017-07-15 23:01:18,188 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3503 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:01:18,191 [INFO] from play.api.Play in scala-execution-context-global-3503 - Application started (Dev)
+2017-07-15 23:01:37,644 [INFO] from application in scala-execution-context-global-3525 - ApplicationTimer demo: Stopping application at 2017-07-15T21:01:37.644Z after 19s.
+2017-07-15 23:01:37,700 [INFO] from application in scala-execution-context-global-3525 - ApplicationTimer demo: Starting application at 2017-07-15T21:01:37.700Z
+2017-07-15 23:01:37,762 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3525 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:01:37,765 [INFO] from play.api.Play in scala-execution-context-global-3525 - Application started (Dev)
+2017-07-15 23:03:50,373 [INFO] from application in scala-execution-context-global-3571 - ApplicationTimer demo: Stopping application at 2017-07-15T21:03:50.372Z after 133s.
+2017-07-15 23:03:50,434 [INFO] from application in scala-execution-context-global-3571 - ApplicationTimer demo: Starting application at 2017-07-15T21:03:50.434Z
+2017-07-15 23:03:50,511 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3571 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:03:50,514 [INFO] from play.api.Play in scala-execution-context-global-3571 - Application started (Dev)
+2017-07-15 23:04:47,512 [INFO] from application in scala-execution-context-global-3606 - ApplicationTimer demo: Stopping application at 2017-07-15T21:04:47.512Z after 57s.
+2017-07-15 23:04:47,575 [INFO] from application in scala-execution-context-global-3606 - ApplicationTimer demo: Starting application at 2017-07-15T21:04:47.575Z
+2017-07-15 23:04:47,662 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3606 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:04:47,666 [INFO] from play.api.Play in scala-execution-context-global-3606 - Application started (Dev)
+2017-07-15 23:05:23,773 [INFO] from application in scala-execution-context-global-3644 - ApplicationTimer demo: Stopping application at 2017-07-15T21:05:23.772Z after 36s.
+2017-07-15 23:05:23,840 [INFO] from application in scala-execution-context-global-3644 - ApplicationTimer demo: Starting application at 2017-07-15T21:05:23.840Z
+2017-07-15 23:05:23,964 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3644 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:05:23,968 [INFO] from play.api.Play in scala-execution-context-global-3644 - Application started (Dev)
+2017-07-15 23:05:38,483 [INFO] from application in scala-execution-context-global-3644 - ApplicationTimer demo: Stopping application at 2017-07-15T21:05:38.483Z after 15s.
+2017-07-15 23:05:38,534 [INFO] from application in scala-execution-context-global-3644 - ApplicationTimer demo: Starting application at 2017-07-15T21:05:38.534Z
+2017-07-15 23:05:38,587 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3644 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:05:38,589 [INFO] from play.api.Play in scala-execution-context-global-3644 - Application started (Dev)
+2017-07-15 23:19:38,621 [INFO] from application in scala-execution-context-global-3717 - ApplicationTimer demo: Stopping application at 2017-07-15T21:19:38.621Z after 840s.
+2017-07-15 23:19:38,717 [INFO] from application in scala-execution-context-global-3717 - ApplicationTimer demo: Starting application at 2017-07-15T21:19:38.717Z
+2017-07-15 23:19:38,820 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3717 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:19:38,824 [INFO] from play.api.Play in scala-execution-context-global-3717 - Application started (Dev)
+2017-07-15 23:20:38,229 [INFO] from application in scala-execution-context-global-3758 - ApplicationTimer demo: Stopping application at 2017-07-15T21:20:38.229Z after 60s.
+2017-07-15 23:20:38,314 [INFO] from application in scala-execution-context-global-3758 - ApplicationTimer demo: Starting application at 2017-07-15T21:20:38.314Z
+2017-07-15 23:20:38,414 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3758 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:20:38,417 [INFO] from play.api.Play in scala-execution-context-global-3758 - Application started (Dev)
+2017-07-15 23:22:17,430 [INFO] from application in scala-execution-context-global-3793 - ApplicationTimer demo: Stopping application at 2017-07-15T21:22:17.430Z after 99s.
+2017-07-15 23:22:17,492 [INFO] from application in scala-execution-context-global-3793 - ApplicationTimer demo: Starting application at 2017-07-15T21:22:17.491Z
+2017-07-15 23:22:17,576 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3793 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:22:17,580 [INFO] from play.api.Play in scala-execution-context-global-3793 - Application started (Dev)
+2017-07-15 23:23:03,417 [INFO] from application in scala-execution-context-global-3827 - ApplicationTimer demo: Stopping application at 2017-07-15T21:23:03.417Z after 46s.
+2017-07-15 23:23:03,519 [INFO] from application in scala-execution-context-global-3827 - ApplicationTimer demo: Starting application at 2017-07-15T21:23:03.519Z
+2017-07-15 23:23:03,615 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3827 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:23:03,619 [INFO] from play.api.Play in scala-execution-context-global-3827 - Application started (Dev)
+2017-07-15 23:23:36,331 [INFO] from application in scala-execution-context-global-3866 - ApplicationTimer demo: Stopping application at 2017-07-15T21:23:36.331Z after 33s.
+2017-07-15 23:23:36,404 [INFO] from application in scala-execution-context-global-3866 - ApplicationTimer demo: Starting application at 2017-07-15T21:23:36.404Z
+2017-07-15 23:23:36,486 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3866 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:23:36,490 [INFO] from play.api.Play in scala-execution-context-global-3866 - Application started (Dev)
+2017-07-15 23:27:49,034 [INFO] from application in scala-execution-context-global-3902 - ApplicationTimer demo: Stopping application at 2017-07-15T21:27:49.034Z after 253s.
+2017-07-15 23:27:49,109 [INFO] from application in scala-execution-context-global-3902 - ApplicationTimer demo: Starting application at 2017-07-15T21:27:49.109Z
+2017-07-15 23:27:49,204 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3902 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:27:49,207 [INFO] from play.api.Play in scala-execution-context-global-3902 - Application started (Dev)
+2017-07-15 23:32:11,294 [INFO] from application in scala-execution-context-global-3949 - ApplicationTimer demo: Stopping application at 2017-07-15T21:32:11.294Z after 262s.
+2017-07-15 23:32:11,343 [INFO] from application in scala-execution-context-global-3949 - ApplicationTimer demo: Starting application at 2017-07-15T21:32:11.343Z
+2017-07-15 23:32:11,399 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3949 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:32:11,403 [INFO] from play.api.Play in scala-execution-context-global-3949 - Application started (Dev)
+2017-07-15 23:33:18,911 [INFO] from application in scala-execution-context-global-3986 - ApplicationTimer demo: Stopping application at 2017-07-15T21:33:18.911Z after 67s.
+2017-07-15 23:33:19,029 [INFO] from application in scala-execution-context-global-3986 - ApplicationTimer demo: Starting application at 2017-07-15T21:33:19.029Z
+2017-07-15 23:33:19,144 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3986 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:33:19,148 [INFO] from play.api.Play in scala-execution-context-global-3986 - Application started (Dev)
+2017-07-15 23:38:36,441 [INFO] from application in scala-execution-context-global-4049 - ApplicationTimer demo: Stopping application at 2017-07-15T21:38:36.441Z after 317s.
+2017-07-15 23:38:36,599 [INFO] from application in scala-execution-context-global-4049 - ApplicationTimer demo: Starting application at 2017-07-15T21:38:36.599Z
+2017-07-15 23:38:36,756 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4049 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:38:36,761 [INFO] from play.api.Play in scala-execution-context-global-4049 - Application started (Dev)
+2017-07-15 23:38:55,587 [INFO] from application in scala-execution-context-global-4073 - ApplicationTimer demo: Stopping application at 2017-07-15T21:38:55.587Z after 19s.
+2017-07-15 23:38:55,704 [INFO] from application in scala-execution-context-global-4073 - ApplicationTimer demo: Starting application at 2017-07-15T21:38:55.704Z
+2017-07-15 23:38:55,836 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4073 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:38:55,853 [INFO] from play.api.Play in scala-execution-context-global-4073 - Application started (Dev)
+2017-07-15 23:39:30,354 [INFO] from application in scala-execution-context-global-4152 - ApplicationTimer demo: Stopping application at 2017-07-15T21:39:30.354Z after 35s.
+2017-07-15 23:39:30,465 [INFO] from application in scala-execution-context-global-4152 - ApplicationTimer demo: Starting application at 2017-07-15T21:39:30.464Z
+2017-07-15 23:39:30,555 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4152 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:39:30,558 [INFO] from play.api.Play in scala-execution-context-global-4152 - Application started (Dev)
+2017-07-15 23:39:57,314 [INFO] from application in scala-execution-context-global-4152 - ApplicationTimer demo: Stopping application at 2017-07-15T21:39:57.314Z after 27s.
+2017-07-15 23:39:57,428 [INFO] from application in scala-execution-context-global-4152 - ApplicationTimer demo: Starting application at 2017-07-15T21:39:57.427Z
+2017-07-15 23:39:57,648 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4152 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:39:57,652 [INFO] from play.api.Play in scala-execution-context-global-4152 - Application started (Dev)
+2017-07-15 23:40:49,418 [INFO] from application in scala-execution-context-global-4223 - ApplicationTimer demo: Stopping application at 2017-07-15T21:40:49.418Z after 52s.
+2017-07-15 23:40:49,464 [INFO] from application in scala-execution-context-global-4223 - ApplicationTimer demo: Starting application at 2017-07-15T21:40:49.464Z
+2017-07-15 23:40:49,639 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4223 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:40:49,643 [INFO] from play.api.Play in scala-execution-context-global-4223 - Application started (Dev)
+2017-07-15 23:43:53,081 [INFO] from application in scala-execution-context-global-4257 - ApplicationTimer demo: Stopping application at 2017-07-15T21:43:53.081Z after 184s.
+2017-07-15 23:43:53,178 [INFO] from application in scala-execution-context-global-4257 - ApplicationTimer demo: Starting application at 2017-07-15T21:43:53.177Z
+2017-07-15 23:43:53,313 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4257 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:43:53,327 [INFO] from play.api.Play in scala-execution-context-global-4257 - Application started (Dev)
+2017-07-15 23:44:39,151 [INFO] from application in scala-execution-context-global-4299 - ApplicationTimer demo: Stopping application at 2017-07-15T21:44:39.151Z after 46s.
+2017-07-15 23:44:39,236 [INFO] from application in scala-execution-context-global-4299 - ApplicationTimer demo: Starting application at 2017-07-15T21:44:39.236Z
+2017-07-15 23:44:39,323 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4299 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:44:39,327 [INFO] from play.api.Play in scala-execution-context-global-4299 - Application started (Dev)
+2017-07-15 23:48:08,302 [INFO] from application in scala-execution-context-global-4334 - ApplicationTimer demo: Stopping application at 2017-07-15T21:48:08.302Z after 209s.
+2017-07-15 23:48:08,367 [INFO] from application in scala-execution-context-global-4334 - ApplicationTimer demo: Starting application at 2017-07-15T21:48:08.367Z
+2017-07-15 23:48:08,424 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4334 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:48:08,427 [INFO] from play.api.Play in scala-execution-context-global-4334 - Application started (Dev)
+2017-07-15 23:49:34,736 [INFO] from application in scala-execution-context-global-4438 - ApplicationTimer demo: Stopping application at 2017-07-15T21:49:34.735Z after 86s.
+2017-07-15 23:49:34,789 [INFO] from application in scala-execution-context-global-4438 - ApplicationTimer demo: Starting application at 2017-07-15T21:49:34.789Z
+2017-07-15 23:49:34,877 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4438 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:49:34,884 [INFO] from play.api.Play in scala-execution-context-global-4438 - Application started (Dev)
+2017-07-15 23:49:58,363 [INFO] from application in scala-execution-context-global-4438 - ApplicationTimer demo: Stopping application at 2017-07-15T21:49:58.363Z after 24s.
+2017-07-15 23:49:58,423 [INFO] from application in scala-execution-context-global-4438 - ApplicationTimer demo: Starting application at 2017-07-15T21:49:58.423Z
+2017-07-15 23:49:58,487 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4438 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:49:58,489 [INFO] from play.api.Play in scala-execution-context-global-4438 - Application started (Dev)
+2017-07-15 23:58:42,620 [INFO] from application in scala-execution-context-global-4514 - ApplicationTimer demo: Stopping application at 2017-07-15T21:58:42.620Z after 524s.
+2017-07-15 23:58:42,745 [INFO] from application in scala-execution-context-global-4514 - ApplicationTimer demo: Starting application at 2017-07-15T21:58:42.745Z
+2017-07-15 23:58:42,896 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-4514 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-07-15 23:58:42,901 [INFO] from play.api.Play in scala-execution-context-global-4514 - Application started (Dev)

@@ -1,0 +1,280 @@
+@(message: String, style: String = "java")
+
+@defining(play.core.PlayVersion.current) { version =>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <i class="fa fa-play-circle"></i> <span class="light">Vidos</span> Masažai
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">Apie Mane</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#download">Masažai</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Kainos</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Klausk</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Kontaktai</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Intro Header -->
+<header class="intro">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="brand-heading">Vidos Masazai (pakeisti galim)</h1>
+                    <p class="intro-text">Ka nors cia parasyti</p>
+                    <a href="#about" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-4">
+
+            <h2 align="center"><u>Išsilavinimas:</u></h2>
+            <ul>
+                <li>"Vilniaus aukštesnioji medicinos mokykla", Lietuva.</li>
+                <li>Klaipėdos universitetas. Bakalauro laipsnis "Visuomenės sveikata".</li>
+            </ul>
+
+            <h2 align="center"><u>Darbo Patirtis</u></h2>
+            <ul>
+                <li>27 metai: Medicinos sesuo.</li>
+                <li>6 metai: Visuomenės sveikatos priežiūros specialistė.</li>
+                <li>6 metai: Masažuotoja.</li>
+            </ul>
+
+            <h2 align="center"><u>Kursai:</u></h2>
+            <ul>
+                <li>2010 metai - "Baltic SPA Professional" Kursai (Latvija), SPA masažai.</li>
+                <li>2012 metai - Slaugos darbuotojų tobulinimosi ir specializacijos centras.</li>
+                <li>Pažymėjimas Nr. KV 120146 - suteikta teisė daryti gydomuosius masažus.</li>
+            </ul>
+        </div>
+        <div class="col-lg-4 ">
+            <img src='@routes.Assets.at("images/img/as2.jpg")' class="img-circle" alt="Medicine massage" height="600">
+
+        </div>
+        <div class="col-lg-4 ">
+
+            <h2 align="center"><u>SPA Sertifikatai</u></h2>
+            <ul>
+
+                <li>Klasikinis segmentinis masažas</li>
+                <li>Karštų-šaltų akmenų masažas</li>
+                <li>Limfodrenažinis masažas</li>
+                <li>Thai pėdų masažas</li>
+                <li>Tradicinis ajurvedinis masažas</li>
+            </ul>
+            <h2 align="center"><u>Gydomieji masažai:</u></h2>
+            <ul>
+                <li>Sergant sąnarių, stuburo, nervų, širdies-kraujagyslių, kvėpavimo sistemų ligomis</li>
+                <li>Medžiagų apykaitos sutrikimo atvejais</li>
+                <li>Segmentinis masažas</li>
+                <li>Jungiamojo audinio masažas</li>
+                <li>Vaikų masažas</li>
+                <li>Sportinis masažas</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Download Section -->
+<section id="download" class="content-section text-center">
+    <div class="download-section">
+        <h2>Masažai</h2>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-4 ">
+
+
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
+                        Limfodrenažinis masažas
+                    </button>
+                    <div id="demo" class="collapse">
+                        <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
+                                                      class="img-circle" alt="Medicine massage" width="250"
+                                                      height="250"></a></div>
+                        <div id="lopas">
+                            <p class="text-justify">
+                            <ul>
+                                <li>Tai saugus efektyvus būdas sustiprinti sveikatą bei palaikyti gerą savijautą.
+                                    Sveikiems žmonėms - tai profilaktinė priemonė, palaikanti normalią medžiagų
+                                    apykaitą.
+                                </li>
+                                <li> Masažo metu suaktyvinami pažeistų minkštųjų audinių regeneracijos procesai,
+                                    slopinami uždegiminiai procesai, sustiprinamas imunitetas, pagerinamas audinių
+                                    aprūpinimas deguonimi.
+                                </li>
+                                <li> Limfodrenažinis masažas tinka visiems, kurie jaučia kojų pabrinkimą, patinimą ar
+                                    tiesiog nuovargį. Po ilgos dienos jis puikiai atpalaiduoja pavargusias kojas ir
+                                    suteikia lengvumo pojūtį. Taip pat tinka žmonėms, kurių kojos visada šaltos.
+                                </li>
+                                <li> Šis masažas grožio tikslais naudojamas celiulito gydymui ir profilaktikai, odos
+                                    stangrinimui, apimčių mažinimui, bendrai savijautai gerinti ir mažinti patinimus po
+                                    plastinių operacijų.
+                                </li>
+                                <li> Šis masažas atliekamas moterims ir vyrams.
+                                <li> Gydymui ši procedūra skiriama kasdien, profilaktiškai - 2-3 kartus per savaitę.
+                                    Norimas efektas pasiekiamas po 15 procedūrų.
+                                </li>
+                            </p>
+
+                            </ul></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 ">
+
+
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Karštų-šaltų
+                        akmenų masažas
+                    </button>
+                    <div id="demo2" class="collapse">
+                        <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                      alt="Medicine massage" width="250" height="250"></a></div>
+                        <div id="lopas">
+                            <p class="text-justify">
+                            <ul>
+                                <li> Akmenys turi savybę iš raumenų pašalinti toksines medžiagas, susikaupusias dėl
+                                    streso ir nesveiko gyvenimo būdo, gerina miegą, padeda sureguliuoti kraujospūdį,
+                                    teigiamai veikia širdies ritmą, sužadinamos natūralios organizmo galios, padedančios
+                                    įveikti ligas, paspartinamas gijimo procesas.
+                                    Ši terapija veikia daugelį organizmo grandžių:
+                                </li>
+                                <li> Stimuliuoja imuninę sistemą;</li>
+                                <li> Suaktyvina kraujotaką;</li>
+                                <li>Pagerėja aprūpinimas deguonimi;</li>
+                                <li> Lengvai ir maloniai numalšina raumenų, nugaros, galvos ir kaklo skausmus;</li>
+                                <li> Teigiamai veikia nervinę sistemą;</li>
+                                <li>Gerindama metabolizmą, padeda atsikratyti riebalų pertekliaus.</li>
+                                <li>Šis masažas ypač tinka pervargus, patyrus gilų stresą, jaučiant nervingumą, apatiją,
+                                    miego sutrikimus.
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 ">
+
+
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Klasikinis
+                        Segmentinis masažas
+                    </button>
+                    <div id="demo3" class="collapse">
+                        <div class="text-center"><img src='@routes.Assets.at("images/img/mas2.jpg")' class="img-circle"
+                                                      alt="Medicine massage" width="250" height="250"></a></div>
+                        <div id="lopas">
+                            <p class="text-justify">
+                            <ul>
+                                <li>Klasikinis lalallalalalalallalalala ir t.t.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Contact Start Bootstrap</h2></p>
+            <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates
+                and themes, or to just say hello!</p>
+
+            </p>
+            <ul class="list-inline banner-social-buttons">
+                <li>
+                    <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i
+                            class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i
+                            class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i
+                            class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<div id="map"></div>
+
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <p>Copyright &copy; Your Website 2016</p>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src='@routes.Assets.at("stylesheets/vendor/jquery/jquery.js")'></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src='@routes.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")'></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+<!-- Theme JavaScript -->
+<script src='@routes.Assets.at("javascripts/js/grayscale.min.js")'></script>
+
+</body>
+
+
+}
