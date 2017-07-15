@@ -62,14 +62,15 @@ Seq[Any](format.raw/*1.43*/("""
                     <a class="page-scroll" href="#download">Masažai</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Kainos</a>
+                    <a class="page-scroll" href="#kainos">Kainos</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Klausk</a>
+                    <a class="page-scroll" href="#klausk">Klausk</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Kontaktai</a>
+                    <a class="page-scroll" href="#kontaktai">Kontaktai</a>
                 </li>
+                
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -83,8 +84,8 @@ Seq[Any](format.raw/*1.43*/("""
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1 class="brand-heading">Vidos Masazai (pakeisti galim)</h1>
-                    <p class="intro-text">Ka nors cia parasyti</p>
+                    <h1 class="brand-heading"></h1>
+                    <p class="intro-text">Atsipalaiduok...</p>
                     <a href="#about" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
@@ -93,6 +94,8 @@ Seq[Any](format.raw/*1.43*/("""
         </div>
     </div>
 </header>
+
+
 
 <!-- About Section -->
 <section id="about" class="container content-section text-center">
@@ -120,7 +123,7 @@ Seq[Any](format.raw/*1.43*/("""
             </ul>
         </div>
         <div class="col-lg-4 ">
-            <img src='"""),_display_(/*91.24*/routes/*91.30*/.Assets.at("images/img/as2.jpg")),format.raw/*91.62*/("""' class="img-circle" alt="Medicine massage" height="600">
+            <img src='"""),_display_(/*94.24*/routes/*94.30*/.Assets.at("images/img/as2.jpg")),format.raw/*94.62*/("""' class="img-circle" alt="Medicine massage" height="600">
 
         </div>
         <div class="col-lg-4 ">
@@ -162,7 +165,7 @@ Seq[Any](format.raw/*1.43*/("""
                         Limfodrenažinis masažas
                     </button>
                     <div id="demo" class="collapse">
-                        <div class="text-center"><img src='"""),_display_(/*133.61*/routes/*133.67*/.Assets.at("images/img/massage164.jpg")),format.raw/*133.106*/("""'
+                        <div class="text-center"><img src='"""),_display_(/*136.61*/routes/*136.67*/.Assets.at("images/img/massage164.jpg")),format.raw/*136.106*/("""'
                                                       class="img-circle" alt="Medicine massage" width="250"
                                                       height="250"></a></div>
                         <div id="lopas">
@@ -188,7 +191,7 @@ Seq[Any](format.raw/*1.43*/("""
                                 <li> Gydymui ši procedūra skiriama kasdien, profilaktiškai - 2-3 kartus per savaitę.
                                     Norimas efektas pasiekiamas po 15 procedūrų.
                                 </li>
-                            </p>
+
 
                             </ul></div>
                     </div>
@@ -201,7 +204,7 @@ Seq[Any](format.raw/*1.43*/("""
                         akmenų masažas
                     </button>
                     <div id="demo2" class="collapse">
-                        <div class="text-center"><img src='"""),_display_(/*172.61*/routes/*172.67*/.Assets.at("images/img/mas3.jpeg")),format.raw/*172.101*/("""' class="img-circle"
+                        <div class="text-center"><img src='"""),_display_(/*175.61*/routes/*175.67*/.Assets.at("images/img/mas3.jpeg")),format.raw/*175.101*/("""' class="img-circle"
                                                       alt="Medicine massage" width="250" height="250"></a></div>
                         <div id="lopas">
                             <p class="text-justify">
@@ -234,7 +237,7 @@ Seq[Any](format.raw/*1.43*/("""
                         Segmentinis masažas
                     </button>
                     <div id="demo3" class="collapse">
-                        <div class="text-center"><img src='"""),_display_(/*205.61*/routes/*205.67*/.Assets.at("images/img/mas2.jpg")),format.raw/*205.100*/("""' class="img-circle"
+                        <div class="text-center"><img src='"""),_display_(/*208.61*/routes/*208.67*/.Assets.at("images/img/mas2.jpg")),format.raw/*208.100*/("""' class="img-circle"
                                                       alt="Medicine massage" width="250" height="250"></a></div>
                         <div id="lopas">
                             <p class="text-justify">
@@ -251,12 +254,28 @@ Seq[Any](format.raw/*1.43*/("""
         </div>
     </div>
 
-</section>
+</section >
 
+<section id="kainos" class="content-section text-center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="contact-section">
+                <div class="container">
+                    <hr>
+                    <h2>Kainos</h2>
+                    <hr>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</section>
 <!-- Contact Section -->
 
 
-<section id="contact" class="container content-section text-center">
+<section id="klausk" class="container content-section text-center">
     <div class="row">
         <div class="col-lg-12">
             <div class="contact-section">
@@ -294,24 +313,57 @@ Seq[Any](format.raw/*1.43*/("""
 
 
         </div>
+        </div>
     </div>
 </section>
 
-<!-- Map Section -->
-<div id="map"></div>
 
+<section>
+    <!-- Map Section -->
+    <div id="kontaktai" class="text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr>
+                <p class="text-justify">
+                <h3>Kontaktinė informacija</h3>
+                <p>Telefonas: +37061218754</p>
+                <p>polescuk'eta'gmail.com</p>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<section>
+<!-- Map Section -->
+<div id="map" class="text-center">
+    <div class="row">
+        <div class="col-lg-12">
+
+<h2>Čia tūrėtų būti supistas žemėlapis, kuris niekaip neveikia</h2>
+
+    </div>
+    </div>
+</div>
+
+</section>
 <!-- Footer -->
 <footer>
     <div class="container text-center">
-        <p>Copyright &copy; Your Website 2016</p>
+        <p>Copyright &copy; Vida Massage 2017</p>
     </div>
 </footer>
 
 <!-- jQuery -->
-<script src='"""),_display_(/*279.15*/routes/*279.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*279.70*/("""'></script>
+<script src='"""),_display_(/*331.15*/routes/*331.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*331.70*/("""'></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src='"""),_display_(/*282.15*/routes/*282.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*282.83*/("""'></script>
+<script src='"""),_display_(/*334.15*/routes/*334.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*334.83*/("""'></script>
 
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -321,7 +373,7 @@ Seq[Any](format.raw/*1.43*/("""
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtkVXlKJlSvm85a7oRDMLw4ZOZaxYwKxM&sensor=false"></script>
 
 <!-- Theme JavaScript -->
-<script src='"""),_display_(/*292.15*/routes/*292.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*292.66*/("""'></script>
+<script src='"""),_display_(/*344.15*/routes/*344.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*344.66*/("""'></script>
 
 </body>
 
@@ -342,11 +394,11 @@ Seq[Any](format.raw/*1.43*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sun Jul 16 00:31:24 CEST 2017
+                  DATE: Sun Jul 16 01:14:11 CEST 2017
                   SOURCE: /home/alex/git/web/app/views/pagrindinisContent.scala.html
-                  HASH: 2dacbc4c85b4c5297c21a737f0564cdc8a153cea
-                  MATRIX: 968->1|1104->42|1132->45|1179->84|1229->97|1257->99|4704->3519|4719->3525|4772->3557|6293->5050|6309->5056|6371->5095|8852->7548|8868->7554|8925->7588|10954->9589|10970->9595|11026->9628|14213->12787|14229->12793|14300->12842|14390->12904|14406->12910|14490->12972|15025->13479|15041->13485|15108->13530
-                  LINES: 28->1|33->1|35->3|35->3|35->3|37->5|123->91|123->91|123->91|165->133|165->133|165->133|204->172|204->172|204->172|237->205|237->205|237->205|311->279|311->279|311->279|314->282|314->282|314->282|324->292|324->292|324->292
+                  HASH: a82ebfe950a8d9a148401e2b5f75b852b4b8f04d
+                  MATRIX: 968->1|1104->42|1132->45|1179->84|1229->97|1257->99|4689->3504|4704->3510|4757->3542|6278->5035|6294->5041|6356->5080|8805->7501|8821->7507|8878->7541|10907->9542|10923->9548|10979->9581|15155->13729|15171->13735|15242->13784|15332->13846|15348->13852|15432->13914|15967->14421|15983->14427|16050->14472
+                  LINES: 28->1|33->1|35->3|35->3|35->3|37->5|126->94|126->94|126->94|168->136|168->136|168->136|207->175|207->175|207->175|240->208|240->208|240->208|363->331|363->331|363->331|366->334|366->334|366->334|376->344|376->344|376->344
                   -- GENERATED --
               */
           
