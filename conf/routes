@@ -22,7 +22,6 @@ GET     /de                 controllers.HomeController.germanVersion()
 GET     /rus                 controllers.HomeController.russianVersion()
 
 
-
 GET     /public/*file      controllers.Assets.at(path="/public", file)
 
 
