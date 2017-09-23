@@ -472,11 +472,12 @@ Seq[Any](format.raw/*1.65*/("""
 
             </div>
         </div>
+
+
     </div>
-    <a href="#klausk" class="btn btn-circle page-scroll">
+    <a href="#kainos" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </a>
-
 </section>
 
 
@@ -489,51 +490,11 @@ Seq[Any](format.raw/*1.65*/("""
                 <div class="container">
                     <hr>
                     <h2>Kainos</h2>
+                    <hr>
 
     <p></p>
-                    <table class="table table-inverse">
 
-                        <tr>
-                            <th scope="row"></th>
-                            <td>30min</td>
-                            <td>60min</td>
-                            <td>90min</td>
-                            <td>120min</td>
-                        </tr>
-                        <tbody>
-                        <tr>
-                            <th scope="row">Atskirų kūno dalių</th>
-                            <td>30 CHF</td>
-                            <td>60 CHF</td>
-                            <td>90 CHF</td>
-                            <td>120 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Karštų-šaltų akmenų (~120min.)</th>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>250 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Limfodrenažinis kūno masažas</th>
-                            <td>50 CHF</td>
-                            <td>80 CHF</td>
-                            <td>120 CHF</td>
-                            <td>150 CHF</td>
-                        </tr>
 
-                        <tr>
-                            <th scope="row">Limfodrenažinis veido masažas</th>
-                            <td>30 CHF</td>
-                            <td>50 CHF</td>
-                            <td>80 CHF</td>
-                            <td>110 CHF</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                </div>
             <div >
 
             </div>
@@ -542,10 +503,11 @@ Seq[Any](format.raw/*1.65*/("""
             </div>
         </div>
     </div>
+
+    </div>
     <a href="#klausk" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </a>
-
 </section>
 
 
@@ -563,36 +525,36 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-                            """),_display_(/*532.30*/helper/*532.36*/.form(action = routes.HomeController.submitLT(),'class -> "form-horizontal")/*532.112*/ {_display_(Seq[Any](format.raw/*532.114*/("""
+                            """),_display_(/*494.30*/helper/*494.36*/.form(action = routes.HomeController.submitLT(),'class -> "form-horizontal")/*494.112*/ {_display_(Seq[Any](format.raw/*494.114*/("""
 
 
 
 
-                            """),_display_(/*537.30*/helper/*537.36*/.input(contactForm("Vardas"),'class->"form-control")/*537.88*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*537.117*/("""
-                            """),format.raw/*538.29*/("""<input type="text" name=""""),_display_(/*538.55*/contactForm/*538.66*/.field("firstName").name),format.raw/*538.90*/(""""  placeholder="Jūsų vardas" id=""""),_display_(/*538.124*/id),format.raw/*538.126*/("""" """),_display_(/*538.129*/toHtmlArgs(args)),_display_(/*538.146*/if(contactForm.hasErrors)/*538.171*/ {_display_(Seq[Any](format.raw/*538.173*/("""
-                            """),format.raw/*539.29*/("""<option value='"""),_display_(/*539.45*/contactForm/*539.56*/.field("firstName").value),format.raw/*539.81*/("""'></option>""")))}),format.raw/*539.93*/("""
-                            """)))}),format.raw/*540.30*/("""
+                            """),_display_(/*499.30*/helper/*499.36*/.input(contactForm("Vardas"),'class->"form-control")/*499.88*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*499.117*/("""
+                            """),format.raw/*500.29*/("""<input type="text" name=""""),_display_(/*500.55*/contactForm/*500.66*/.field("firstName").name),format.raw/*500.90*/(""""  placeholder="Jūsų vardas" id=""""),_display_(/*500.124*/id),format.raw/*500.126*/("""" """),_display_(/*500.129*/toHtmlArgs(args)),_display_(/*500.146*/if(contactForm.hasErrors)/*500.171*/ {_display_(Seq[Any](format.raw/*500.173*/("""
+                            """),format.raw/*501.29*/("""<option value='"""),_display_(/*501.45*/contactForm/*501.56*/.field("firstName").value),format.raw/*501.81*/("""'></option>""")))}),format.raw/*501.93*/("""
+                            """)))}),format.raw/*502.30*/("""
 
 
 
-                            """),format.raw/*544.29*/("""<div id="xxx">
-                            """),_display_(/*545.30*/for(error <- contactForm("firstName").errors) yield /*545.75*/ {_display_(Seq[Any](format.raw/*545.77*/("""
-                            """),format.raw/*546.29*/("""<p id="xxxx">"""),_display_(/*546.43*/error/*546.48*/.format(messages())),format.raw/*546.67*/("""</p>
-                                """)))}),format.raw/*547.34*/("""</div>
+                            """),format.raw/*506.29*/("""<div id="xxx">
+                            """),_display_(/*507.30*/for(error <- contactForm("firstName").errors) yield /*507.75*/ {_display_(Seq[Any](format.raw/*507.77*/("""
+                            """),format.raw/*508.29*/("""<p id="xxxx">"""),_display_(/*508.43*/error/*508.48*/.format(messages())),format.raw/*508.67*/("""</p>
+                                """)))}),format.raw/*509.34*/("""</div>
 
 
 
-                            """),_display_(/*551.30*/helper/*551.36*/.input(contactForm("Elektroninis paštas"),'class->"form-control")/*551.101*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*551.130*/("""
-                            """),format.raw/*552.29*/("""<input type="text" name=""""),_display_(/*552.55*/contactForm/*552.66*/.field("email").name),format.raw/*552.86*/(""""  placeholder="Jūsų elektroninis paštas" id=""""),_display_(/*552.133*/id),format.raw/*552.135*/("""" """),_display_(/*552.138*/toHtmlArgs(args)),_display_(/*552.155*/if(contactForm.hasErrors)/*552.180*/ {_display_(Seq[Any](format.raw/*552.182*/("""
-                            """),format.raw/*553.29*/("""<option value='"""),_display_(/*553.45*/contactForm/*553.56*/.field("email").value),format.raw/*553.77*/("""'></option>""")))}),format.raw/*553.89*/("""
-                            """)))}),format.raw/*554.30*/("""
+                            """),_display_(/*513.30*/helper/*513.36*/.input(contactForm("Elektroninis paštas"),'class->"form-control")/*513.101*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*513.130*/("""
+                            """),format.raw/*514.29*/("""<input type="text" name=""""),_display_(/*514.55*/contactForm/*514.66*/.field("email").name),format.raw/*514.86*/(""""  placeholder="Jūsų elektroninis paštas" id=""""),_display_(/*514.133*/id),format.raw/*514.135*/("""" """),_display_(/*514.138*/toHtmlArgs(args)),_display_(/*514.155*/if(contactForm.hasErrors)/*514.180*/ {_display_(Seq[Any](format.raw/*514.182*/("""
+                            """),format.raw/*515.29*/("""<option value='"""),_display_(/*515.45*/contactForm/*515.56*/.field("email").value),format.raw/*515.77*/("""'></option>""")))}),format.raw/*515.89*/("""
+                            """)))}),format.raw/*516.30*/("""
 
 
 
-                            """),format.raw/*558.29*/("""<div id="xxx">
-                            """),_display_(/*559.30*/for(error <- contactForm("email").errors) yield /*559.71*/ {_display_(Seq[Any](format.raw/*559.73*/("""
-                            """),format.raw/*560.29*/("""<p id="xxxx">"""),_display_(/*560.43*/error/*560.48*/.format(messages())),format.raw/*560.67*/("""</p>
-                                """)))}),format.raw/*561.34*/("""</div>
+                            """),format.raw/*520.29*/("""<div id="xxx">
+                            """),_display_(/*521.30*/for(error <- contactForm("email").errors) yield /*521.71*/ {_display_(Seq[Any](format.raw/*521.73*/("""
+                            """),format.raw/*522.29*/("""<p id="xxxx">"""),_display_(/*522.43*/error/*522.48*/.format(messages())),format.raw/*522.67*/("""</p>
+                                """)))}),format.raw/*523.34*/("""</div>
 
 
 
@@ -600,42 +562,42 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-                            """),_display_(/*569.30*/helper/*569.36*/.input(field = contactForm("Klausimas"))/*569.76*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*569.105*/("""
-                            """),format.raw/*570.29*/("""<div>
-                                <textarea class="form-control" name=""""),_display_(/*571.71*/contactForm("textbox")/*571.93*/.name),format.raw/*571.98*/("""" id=""""),_display_(/*571.105*/id),format.raw/*571.107*/("""" placeholder="Jūsų žinutė" rows='5' cols='80'>"""),_display_(/*571.155*/if(contactForm.hasErrors)/*571.180*/{_display_(_display_(/*571.182*/contactForm/*571.193*/.field("textbox").value))}),format.raw/*571.217*/("""</textarea>
+                            """),_display_(/*531.30*/helper/*531.36*/.input(field = contactForm("Klausimas"))/*531.76*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*531.105*/("""
+                            """),format.raw/*532.29*/("""<div>
+                                <textarea class="form-control" name=""""),_display_(/*533.71*/contactForm("textbox")/*533.93*/.name),format.raw/*533.98*/("""" id=""""),_display_(/*533.105*/id),format.raw/*533.107*/("""" placeholder="Jūsų žinutė" rows='5' cols='80'>"""),_display_(/*533.155*/if(contactForm.hasErrors)/*533.180*/{_display_(_display_(/*533.182*/contactForm/*533.193*/.field("textbox").value))}),format.raw/*533.217*/("""</textarea>
                             </div>
-                            """)))}),format.raw/*573.30*/("""
-                            """),format.raw/*574.29*/("""<div id="xxx">
-                                """),_display_(/*575.34*/for(error <- contactForm("textbox").errors) yield /*575.77*/ {_display_(Seq[Any](format.raw/*575.79*/("""
-                                """),format.raw/*576.33*/("""<p id="xxxx">"""),_display_(/*576.47*/error/*576.52*/.format(messages())),format.raw/*576.71*/("""</p>
-                                """)))}),format.raw/*577.34*/("""</div>
+                            """)))}),format.raw/*535.30*/("""
+                            """),format.raw/*536.29*/("""<div id="xxx">
+                                """),_display_(/*537.34*/for(error <- contactForm("textbox").errors) yield /*537.77*/ {_display_(Seq[Any](format.raw/*537.79*/("""
+                                """),format.raw/*538.33*/("""<p id="xxxx">"""),_display_(/*538.47*/error/*538.52*/.format(messages())),format.raw/*538.71*/("""</p>
+                                """)))}),format.raw/*539.34*/("""</div>
 
 
 
                                 <button type="submit"  class="btn btn-default" >Siųsti žinute</button>
 
-                            <div id="flash">"""),_display_(/*583.46*/flash/*583.51*/.get("success")),format.raw/*583.66*/("""</div>
+                            <div id="flash">"""),_display_(/*545.46*/flash/*545.51*/.get("success")),format.raw/*545.66*/("""</div>
 
-                            """),_display_(/*585.30*/if(contactForm.hasGlobalErrors)/*585.61*/ {_display_(Seq[Any](format.raw/*585.63*/("""
-                            """),format.raw/*586.29*/("""<div id="xxx">
+                            """),_display_(/*547.30*/if(contactForm.hasGlobalErrors)/*547.61*/ {_display_(Seq[Any](format.raw/*547.63*/("""
+                            """),format.raw/*548.29*/("""<div id="xxx">
                             <p class="error" >
-                                """),_display_(/*588.34*/for(error <- contactForm.globalErrors) yield /*588.72*/ {_display_(Seq[Any](format.raw/*588.74*/("""
-                            """),format.raw/*589.29*/("""<p>"""),_display_(/*589.33*/error/*589.38*/.format(messages())),format.raw/*589.57*/("""</p>
-                            """),_display_(/*590.30*/for(error <- contactForm("email").errors) yield /*590.71*/ {_display_(Seq[Any](format.raw/*590.73*/("""
-                            """),format.raw/*591.29*/("""<p>"""),_display_(/*591.33*/error/*591.38*/.format(messages())),format.raw/*591.57*/("""</p>
-                            """)))}),format.raw/*592.30*/("""
-                            """)))}),format.raw/*593.30*/("""
-                            """),format.raw/*594.29*/("""</p>
+                                """),_display_(/*550.34*/for(error <- contactForm.globalErrors) yield /*550.72*/ {_display_(Seq[Any](format.raw/*550.74*/("""
+                            """),format.raw/*551.29*/("""<p>"""),_display_(/*551.33*/error/*551.38*/.format(messages())),format.raw/*551.57*/("""</p>
+                            """),_display_(/*552.30*/for(error <- contactForm("email").errors) yield /*552.71*/ {_display_(Seq[Any](format.raw/*552.73*/("""
+                            """),format.raw/*553.29*/("""<p>"""),_display_(/*553.33*/error/*553.38*/.format(messages())),format.raw/*553.57*/("""</p>
+                            """)))}),format.raw/*554.30*/("""
+                            """)))}),format.raw/*555.30*/("""
+                            """),format.raw/*556.29*/("""</p>
                             </div>
-                            """)))}),format.raw/*596.30*/("""
-                            """)))}),format.raw/*597.30*/("""
+                            """)))}),format.raw/*558.30*/("""
+                            """)))}),format.raw/*559.30*/("""
 
 
-                            """),format.raw/*600.29*/("""<p></p>
+                            """),format.raw/*562.29*/("""<p></p>
                             <h3>Mūsų socialiniai tinklai</h3>
                             <ul class="list-inline banner-social-buttons">
                                 <li><a href="www.google.com" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-                                <li><a href=""""),_display_(/*604.47*/routes/*604.53*/.HomeController.toFaceBook),format.raw/*604.79*/("""" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
+                                <li><a href=""""),_display_(/*566.47*/routes/*566.53*/.HomeController.toFaceBook),format.raw/*566.79*/("""" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
                                 <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
                             </ul>
                         </div>
@@ -681,7 +643,7 @@ Seq[Any](format.raw/*1.65*/("""
         </div>
     </div>
 <hr>
-    """),_display_(/*650.6*/if(contactForm.hasErrors)/*650.31*/{_display_(Seq[Any](format.raw/*650.32*/("""<script src=""""),_display_(/*650.46*/routes/*650.52*/.Assets.at("javascripts/js/returnToFormOnFail.js")),format.raw/*650.102*/(""""></script>""")))}),format.raw/*650.114*/("""</script>
+    """),_display_(/*612.6*/if(contactForm.hasErrors)/*612.31*/{_display_(Seq[Any](format.raw/*612.32*/("""<script src=""""),_display_(/*612.46*/routes/*612.52*/.Assets.at("javascripts/js/returnToFormOnFail.js")),format.raw/*612.102*/(""""></script>""")))}),format.raw/*612.114*/("""</script>
 </section>
 
 
@@ -690,7 +652,7 @@ Seq[Any](format.raw/*1.65*/("""
 
 <section>
 <!-- Map Section -->
-<div id="map" class="text-center">
+<div id="mappp" class="text-center">
     <div class="row">
         <div class="col-lg-12">
 <h2>Žemėlapis</h2>
@@ -713,18 +675,18 @@ Seq[Any](format.raw/*1.65*/("""
 </footer>
 
 <!-- jQuery -->
-<script src='"""),_display_(/*682.15*/routes/*682.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*682.70*/("""'></script>
+<script src='"""),_display_(/*644.15*/routes/*644.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*644.70*/("""'></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src='"""),_display_(/*685.15*/routes/*685.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*685.83*/("""'></script>
+<script src='"""),_display_(/*647.15*/routes/*647.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*647.83*/("""'></script>
 
 <!-- Plugin JavaScript -->
-<script src="""),_display_(/*688.14*/routes/*688.20*/.Assets.at("javascripts/js/jquery.easing.min.js")),format.raw/*688.69*/(""""></script>
+<script src="""),_display_(/*650.14*/routes/*650.20*/.Assets.at("javascripts/js/jquery.easing.min.js")),format.raw/*650.69*/(""""></script>
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 
 <!-- Theme JavaScript -->
-<script src='"""),_display_(/*693.15*/routes/*693.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*693.66*/("""'></script>
+<script src='"""),_display_(/*655.15*/routes/*655.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*655.66*/("""'></script>
 
 </body>
 
@@ -749,11 +711,11 @@ Seq[Any](format.raw/*1.65*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Sep 23 20:14:55 CEST 2017
+                  DATE: Sat Sep 23 21:29:02 CEST 2017
                   SOURCE: /home/alex/git/web/app/views/pagrindinisContent.scala.html
-                  HASH: a97144ba0947226d225ff3de049c8807bfe24799
-                  MATRIX: 1047->1|1183->66|1228->64|1255->83|1302->122|1352->135|1383->140|1914->644|1929->650|1979->679|3314->1987|3329->1993|3379->2022|3419->2035|3435->2041|3494->2078|3658->2215|3673->2221|3723->2250|3763->2263|3779->2269|3838->2306|4006->2447|4021->2453|4072->2483|4113->2496|4129->2502|4188->2539|4398->2723|4411->2728|4447->2743|4475->2744|5450->3691|5466->3697|5520->3729|7697->5878|7713->5884|7775->5923|10811->8931|10827->8937|10884->8971|12869->10928|12885->10934|12942->10968|13851->11849|13867->11855|13929->11894|17596->15533|17612->15539|17669->15573|19152->17028|19168->17034|19225->17068|20077->17892|20093->17898|20150->17932|21013->18767|21029->18773|21091->18812|26347->24040|26363->24046|26450->24122|26492->24124|26554->24158|26570->24164|26632->24216|26701->24245|26759->24274|26813->24300|26834->24311|26880->24335|26943->24369|26968->24371|27000->24374|27039->24391|27075->24416|27117->24418|27175->24447|27219->24463|27240->24474|27287->24499|27331->24511|27393->24541|27454->24573|27526->24617|27588->24662|27629->24664|27687->24693|27729->24707|27744->24712|27785->24731|27855->24769|27922->24808|27938->24814|28014->24879|28083->24908|28141->24937|28195->24963|28216->24974|28258->24994|28334->25041|28359->25043|28391->25046|28430->25063|28466->25088|28508->25090|28566->25119|28610->25135|28631->25146|28674->25167|28718->25179|28780->25209|28841->25241|28913->25285|28971->25326|29012->25328|29070->25357|29112->25371|29127->25376|29168->25395|29238->25433|29309->25476|29325->25482|29375->25522|29444->25551|29502->25580|29606->25656|29638->25678|29665->25683|29701->25690|29726->25692|29803->25740|29839->25765|29871->25767|29893->25778|29942->25802|30050->25878|30108->25907|30184->25955|30244->25998|30285->26000|30347->26033|30389->26047|30404->26052|30445->26071|30515->26109|30702->26268|30717->26273|30754->26288|30819->26325|30860->26356|30901->26358|30959->26387|31082->26482|31137->26520|31178->26522|31236->26551|31268->26555|31283->26560|31324->26579|31386->26613|31444->26654|31485->26656|31543->26685|31575->26689|31590->26694|31631->26713|31697->26747|31759->26777|31817->26806|31918->26875|31980->26905|32040->26936|32432->27300|32448->27306|32496->27332|33942->28752|33977->28777|34017->28778|34059->28792|34075->28798|34148->28848|34193->28860|34604->29243|34620->29249|34691->29298|34781->29360|34797->29366|34881->29428|34962->29481|34978->29487|35049->29536|35302->29761|35318->29767|35385->29812
-                  LINES: 30->1|33->2|36->1|37->3|37->3|37->3|42->8|52->18|52->18|52->18|87->53|87->53|87->53|87->53|87->53|87->53|91->57|91->57|91->57|91->57|91->57|91->57|95->61|95->61|95->61|95->61|95->61|95->61|109->75|109->75|109->75|110->76|136->102|136->102|136->102|193->159|193->159|193->159|240->206|240->206|240->206|273->239|273->239|273->239|298->264|298->264|298->264|352->318|352->318|352->318|374->340|374->340|374->340|395->361|395->361|395->361|417->383|417->383|417->383|566->532|566->532|566->532|566->532|571->537|571->537|571->537|571->537|572->538|572->538|572->538|572->538|572->538|572->538|572->538|572->538|572->538|572->538|573->539|573->539|573->539|573->539|573->539|574->540|578->544|579->545|579->545|579->545|580->546|580->546|580->546|580->546|581->547|585->551|585->551|585->551|585->551|586->552|586->552|586->552|586->552|586->552|586->552|586->552|586->552|586->552|586->552|587->553|587->553|587->553|587->553|587->553|588->554|592->558|593->559|593->559|593->559|594->560|594->560|594->560|594->560|595->561|603->569|603->569|603->569|603->569|604->570|605->571|605->571|605->571|605->571|605->571|605->571|605->571|605->571|605->571|605->571|607->573|608->574|609->575|609->575|609->575|610->576|610->576|610->576|610->576|611->577|617->583|617->583|617->583|619->585|619->585|619->585|620->586|622->588|622->588|622->588|623->589|623->589|623->589|623->589|624->590|624->590|624->590|625->591|625->591|625->591|625->591|626->592|627->593|628->594|630->596|631->597|634->600|638->604|638->604|638->604|684->650|684->650|684->650|684->650|684->650|684->650|684->650|716->682|716->682|716->682|719->685|719->685|719->685|722->688|722->688|722->688|727->693|727->693|727->693
+                  HASH: d64146c6067f39478de9f1d747c29d7e2a430ada
+                  MATRIX: 1047->1|1183->66|1228->64|1255->83|1302->122|1352->135|1383->140|1914->644|1929->650|1979->679|3314->1987|3329->1993|3379->2022|3419->2035|3435->2041|3494->2078|3658->2215|3673->2221|3723->2250|3763->2263|3779->2269|3838->2306|4006->2447|4021->2453|4072->2483|4113->2496|4129->2502|4188->2539|4398->2723|4411->2728|4447->2743|4475->2744|5450->3691|5466->3697|5520->3729|7697->5878|7713->5884|7775->5923|10811->8931|10827->8937|10884->8971|12869->10928|12885->10934|12942->10968|13851->11849|13867->11855|13929->11894|17596->15533|17612->15539|17669->15573|19152->17028|19168->17034|19225->17068|20077->17892|20093->17898|20150->17932|21013->18767|21029->18773|21091->18812|24671->22364|24687->22370|24774->22446|24816->22448|24878->22482|24894->22488|24956->22540|25025->22569|25083->22598|25137->22624|25158->22635|25204->22659|25267->22693|25292->22695|25324->22698|25363->22715|25399->22740|25441->22742|25499->22771|25543->22787|25564->22798|25611->22823|25655->22835|25717->22865|25778->22897|25850->22941|25912->22986|25953->22988|26011->23017|26053->23031|26068->23036|26109->23055|26179->23093|26246->23132|26262->23138|26338->23203|26407->23232|26465->23261|26519->23287|26540->23298|26582->23318|26658->23365|26683->23367|26715->23370|26754->23387|26790->23412|26832->23414|26890->23443|26934->23459|26955->23470|26998->23491|27042->23503|27104->23533|27165->23565|27237->23609|27295->23650|27336->23652|27394->23681|27436->23695|27451->23700|27492->23719|27562->23757|27633->23800|27649->23806|27699->23846|27768->23875|27826->23904|27930->23980|27962->24002|27989->24007|28025->24014|28050->24016|28127->24064|28163->24089|28195->24091|28217->24102|28266->24126|28374->24202|28432->24231|28508->24279|28568->24322|28609->24324|28671->24357|28713->24371|28728->24376|28769->24395|28839->24433|29026->24592|29041->24597|29078->24612|29143->24649|29184->24680|29225->24682|29283->24711|29406->24806|29461->24844|29502->24846|29560->24875|29592->24879|29607->24884|29648->24903|29710->24937|29768->24978|29809->24980|29867->25009|29899->25013|29914->25018|29955->25037|30021->25071|30083->25101|30141->25130|30242->25199|30304->25229|30364->25260|30756->25624|30772->25630|30820->25656|32266->27076|32301->27101|32341->27102|32383->27116|32399->27122|32472->27172|32517->27184|32930->27569|32946->27575|33017->27624|33107->27686|33123->27692|33207->27754|33288->27807|33304->27813|33375->27862|33628->28087|33644->28093|33711->28138
+                  LINES: 30->1|33->2|36->1|37->3|37->3|37->3|42->8|52->18|52->18|52->18|87->53|87->53|87->53|87->53|87->53|87->53|91->57|91->57|91->57|91->57|91->57|91->57|95->61|95->61|95->61|95->61|95->61|95->61|109->75|109->75|109->75|110->76|136->102|136->102|136->102|193->159|193->159|193->159|240->206|240->206|240->206|273->239|273->239|273->239|298->264|298->264|298->264|352->318|352->318|352->318|374->340|374->340|374->340|395->361|395->361|395->361|417->383|417->383|417->383|528->494|528->494|528->494|528->494|533->499|533->499|533->499|533->499|534->500|534->500|534->500|534->500|534->500|534->500|534->500|534->500|534->500|534->500|535->501|535->501|535->501|535->501|535->501|536->502|540->506|541->507|541->507|541->507|542->508|542->508|542->508|542->508|543->509|547->513|547->513|547->513|547->513|548->514|548->514|548->514|548->514|548->514|548->514|548->514|548->514|548->514|548->514|549->515|549->515|549->515|549->515|549->515|550->516|554->520|555->521|555->521|555->521|556->522|556->522|556->522|556->522|557->523|565->531|565->531|565->531|565->531|566->532|567->533|567->533|567->533|567->533|567->533|567->533|567->533|567->533|567->533|567->533|569->535|570->536|571->537|571->537|571->537|572->538|572->538|572->538|572->538|573->539|579->545|579->545|579->545|581->547|581->547|581->547|582->548|584->550|584->550|584->550|585->551|585->551|585->551|585->551|586->552|586->552|586->552|587->553|587->553|587->553|587->553|588->554|589->555|590->556|592->558|593->559|596->562|600->566|600->566|600->566|646->612|646->612|646->612|646->612|646->612|646->612|646->612|678->644|678->644|678->644|681->647|681->647|681->647|684->650|684->650|684->650|689->655|689->655|689->655
                   -- GENERATED --
               */
           

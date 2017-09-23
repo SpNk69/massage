@@ -4,9 +4,24 @@
     <list default="true" id="ec72ac84-4374-4999-8edc-66fc5f9faa8c" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/$global/playCompileEverything/$global/streams/out" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/manipulateBytecode/$global/streams/out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/universal/stage/RUNNING_PID" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/germanContent$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/germanContent$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinisContent$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinisContent$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/russianContent$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/russianContent$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/germanContent.scala.html" afterPath="$PROJECT_DIR$/app/views/germanContent.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" afterPath="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/russianContent.scala.html" afterPath="$PROJECT_DIR$/app/views/russianContent.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/germanContent.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/germanContent.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/pagrindinisContent.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/pagrindinisContent.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/russianContent.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/russianContent.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.12" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.12" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/universal/stage/logs/application.log" afterPath="$PROJECT_DIR$/target/universal/stage/logs/application.log" />
     </list>
     <ignored path="$PROJECT_DIR$/target/resolution-cache/" />
     <ignored path="$PROJECT_DIR$/target/streams/" />
@@ -39,8 +54,8 @@
       <file leaf-file-name="pagrindinisContent.scala.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="460" column="14" lean-forward="false" selection-start-line="460" selection-start-column="14" selection-end-line="460" selection-end-column="14" />
+            <state relative-caret-position="478">
+              <caret line="458" column="24" lean-forward="false" selection-start-line="458" selection-start-column="24" selection-end-line="458" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -69,8 +84,8 @@
       <file leaf-file-name="germanContent.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="594" column="14" lean-forward="false" selection-start-line="594" selection-start-column="14" selection-end-line="594" selection-end-column="14" />
+            <state relative-caret-position="338">
+              <caret line="303" column="103" lean-forward="false" selection-start-line="303" selection-start-column="103" selection-end-line="303" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -152,7 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>logo</find>
       <find>map5</find>
       <find>map</find>
       <find>background:</find>
@@ -182,6 +196,7 @@
       <find>atskir</find>
       <find>segment</find>
       <find>kar</find>
+      <find>kainos</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -243,8 +258,8 @@
         <option value="$PROJECT_DIR$/test/leTest.java" />
         <option value="$PROJECT_DIR$/test/FunctionalTest.java" />
         <option value="$PROJECT_DIR$/test/BrowserTest.java" />
-        <option value="$PROJECT_DIR$/app/views/germanContent.scala.html" />
         <option value="$PROJECT_DIR$/app/views/russianContent.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/germanContent.scala.html" />
         <option value="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
       </list>
     </option>
@@ -1201,14 +1216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="594" column="14" lean-forward="false" selection-start-line="594" selection-start-column="14" selection-end-line="594" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/russianContent.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8800">
@@ -1217,10 +1224,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="303" column="103" lean-forward="false" selection-start-line="303" selection-start-column="103" selection-end-line="303" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="460" column="14" lean-forward="false" selection-start-line="460" selection-start-column="14" selection-end-line="460" selection-end-column="14" />
+        <state relative-caret-position="478">
+          <caret line="458" column="24" lean-forward="false" selection-start-line="458" selection-start-column="24" selection-end-line="458" selection-end-column="24" />
           <folding />
         </state>
       </provider>
