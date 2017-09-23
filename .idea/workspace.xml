@@ -25,97 +25,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/welcome2.template.scala" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/$global/playCompileEverything/$global/streams/out" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/compile/manipulateBytecode/$global/streams/out" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/config-classes/$1d92da54e9e25c92d8f7$$anonfun$$sbtdef$1.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$1d92da54e9e25c92d8f7$$anonfun$$sbtdef$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/config-classes/$1d92da54e9e25c92d8f7$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$1d92da54e9e25c92d8f7$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/HomeController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseAssets.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseAssets.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseHomeController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseHomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseAssets.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseAssets.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseHomeController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseHomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/routes$javascript.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/routes$javascript.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/routes.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/routes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/main2$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/main2$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinis$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinis$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinis.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinis.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinisContent$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinisContent$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinisContent.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinisContent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterPath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/web-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/web-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/web-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/web-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-docs.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-sources.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/play-java-starter-example/play-java-starter-example_2.12/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/play-java-starter-example/play-java-starter-example_2.12/1.0-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/play-java-starter-example/play-java-starter-example_2.12/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/play-java-starter-example/play-java-starter-example_2.12/1.0-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-debian.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-debian.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-docker.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-docker.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-linux.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-linux.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-rpm.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-rpm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-universal-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-universal-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-universal-src.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-universal-src.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-universal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-universal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-windows.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-windows.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/logback.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/production.conf" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/production.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/routes" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/main2.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/main2.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/pagrindinis.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/pagrindinis.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/pagrindinisContent.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/pagrindinisContent.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/grayscale.min.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/grayscale.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/index.html" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/grayscale.min.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/grayscale.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/index.html" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/resolution-cache/" />
     <ignored path="$PROJECT_DIR$/target/streams/" />
@@ -145,16 +55,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pagrindinisContent.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2664">
-              <caret line="144" column="14" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="417" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pagrindinis.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pagrindinis.scala.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -185,16 +85,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="germanContent.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="243" column="51" lean-forward="false" selection-start-line="243" selection-start-column="51" selection-end-line="243" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main2.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main2.scala.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -217,11 +107,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BrowserTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BrowserTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/BrowserTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
               <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/application.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project/build.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -415,7 +325,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,33 +339,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="play-java-starter-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="config-classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -469,55 +365,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="play-java-starter-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="play-java-starter-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1037,16 +885,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/img/mas3.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/img/massage164.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/img/pic1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1385,6 +1223,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/application.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
