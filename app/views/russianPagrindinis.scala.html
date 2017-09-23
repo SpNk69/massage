@@ -2,19 +2,23 @@
 * This template takes a single argument, a String containing a
 * message to display.
 *@
-@(message: String)
+@(message: String)(contactForm: Form[_])
 
 @*
 * Call the `main` template with two arguments. The first
 * argument is a `String` with the title of the page, the second
 * argument is an `Html` object containing the body of the page.
 *@
-@main2(message) {
+
+
+
+@main2ru(message) {
+
 
 @*
 * Get an `Html` object by calling the built-in Play welcome
 * template and passing a `String` message.
 *@
-@russianContent(message, style = "java")
+@russianContent(message, style = "java",contactForm)
 
 }

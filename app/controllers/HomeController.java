@@ -1,9 +1,18 @@
 package controllers;
 
+import play.Logger;
+import play.data.Form;
 import play.data.FormFactory;
-import play.mvc.*;
-
-import views.html.*;
+import play.libs.mailer.Email;
+import play.libs.mailer.MailerClient;
+import play.mvc.Controller;
+import play.mvc.Result;
+import views.formdata.ContactFormData;
+import views.formdata.ContactFormDataDE;
+import views.formdata.ContactFormDataRU;
+import views.html.germanPagrindinis;
+import views.html.pagrindinis;
+import views.html.russianPagrindinis;
 
 import javax.inject.Inject;
 
@@ -21,29 +30,98 @@ public class HomeController extends Controller {
      */
 
 
-    @Inject FormFactory formFactory;
+    @Inject
+    FormFactory formFactory;
+    @Inject
+    MailerClient mailerClient;
 
 
-
-
-
-    public Result index() {
-        return ok(index.render("YEssss"));
+    public Result pagrindinisLT() {
+        Form<ContactFormData> userForm = formFactory.form(ContactFormData.class).bindFromRequest();
+        return ok(pagrindinis.render("", userForm));
     }
 
-    public Result pagrindinis() {
-        return ok(pagrindinis.render("Pagrindinis"));}
-
-    public Result apie() {
-        return ok(pagrindinis.render("Apie Mane"));}
-
-
-
     public Result germanVersion() {
-        return ok(germanPagrindinis.render("German Version"));}
+
+        Form<ContactFormDataDE> userForm = formFactory.form(ContactFormDataDE.class).bindFromRequest();
+        return ok(germanPagrindinis.render("",userForm));
+    }
 
     public Result russianVersion() {
-        return ok(russianPagrindinis.render("RUskij"));}
+        Form<ContactFormDataRU> userForm = formFactory.form(ContactFormDataRU.class).bindFromRequest();
 
+        return ok(russianPagrindinis.render("",userForm));
+    }
+
+    public Result toFaceBook() {
+        return redirect("http://facebook.com");
+    }
+
+
+    private String cleanUp(String input) {
+        return input.replaceAll("[^\\w ]+", "");
+    }
+
+    public Result submitLT() {
+        Form<ContactFormData> userForm = formFactory.form(ContactFormData.class).bindFromRequest();
+        try {
+
+            Logger.info("UserFormLT: " + userForm.get().toString());
+        } catch (IllegalStateException e) {
+            return badRequest(views.html.pagrindinis.render("", userForm));
+        }
+        //TO DO: Make email content look better
+        Email email = new Email().setFrom(userForm.get().getEmail())
+                .addTo("info@vidamassage.ch")
+                .setBodyText("Vardas: " + cleanUp(userForm.get().getFirstName()) +
+                        "\n" + "Email: " + userForm.get().getEmail() +
+                        "\n Zinute: " + cleanUp(userForm.get().getTextbox()));
+        mailerClient.send(email);
+
+
+        flash("success", "Ačiū už klausimą! Susisieksime kai tik galėsime.");
+        return redirect("lt#klausk");
+    }
+    public Result submitRU() {
+        Form<ContactFormDataRU> userForm = formFactory.form(ContactFormDataRU.class).bindFromRequest();
+        try {
+
+            Logger.info("UserFormRU: " + userForm.get().toString());
+        } catch (IllegalStateException e) {
+            return badRequest(views.html.russianPagrindinis.render("", userForm));
+        }
+        //TO DO: Make email content look better
+        Email email = new Email().setFrom(userForm.get().getEmail())
+                .addTo("info@vidamassage.ch")
+                .setBodyText("Vardas: " + cleanUp(userForm.get().getFirstName()) +
+                        "\n" + "Email: " + userForm.get().getEmail() +
+                        "\n Zinute: " + cleanUp(userForm.get().getTextbox()));
+        mailerClient.send(email);
+
+
+        flash("success", "Спасибо за вопрос! Мы свяжемся с вами, как только сможем.");
+        return redirect("ru#bonpoc");
+    }
+
+    public Result submitDE() {
+        Form<ContactFormDataDE> userForm = formFactory.form(ContactFormDataDE.class).bindFromRequest();
+        try {
+
+            Logger.info("UserFormDE: " + userForm.get().toString());
+        } catch (IllegalStateException e) {
+            return badRequest(views.html.germanPagrindinis.render("", userForm));
+        }
+        //TO DO: Make email content look better
+        Email email = new Email().setFrom(userForm.get().getEmail())
+                .addTo("info@vidamassage.ch")
+                .setBodyText("Vardas: " + cleanUp(userForm.get().getFirstName()) +
+                        "\n" + "Email: " + userForm.get().getEmail() +
+                        "\n Zinute: " + cleanUp(userForm.get().getTextbox()));
+        mailerClient.send(email);
+
+
+        flash("success", "Vielen Dank für die Frage! Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.");
+        return redirect("de#fragen");
+    }
 
 }

@@ -18,6 +18,5 @@ libraryDependencies += "com.typesafe.play" %% "play-mailer" % "6.0.0"
 libraryDependencies += "com.typesafe.play" %% "play-mailer-guice" % "6.0.0"
 
 
-
 // Make verbose tests
 testOptions in Test := Seq(Tests.Argument(TestFrameworks.JUnit, "-a", "-v"))

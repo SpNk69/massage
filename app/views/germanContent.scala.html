@@ -1,4 +1,5 @@
-@(message: String, style: String = "java")
+@(message: String, style: String = "java", contactForm: Form[_])
+@import helper._
 
 @defining(play.core.PlayVersion.current) { version =>
 
@@ -24,33 +25,35 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">Über mich</a>
+                    <a class="page-scroll" href="#uber">Über mich</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#download">Massagen</a>
+                    <a class="page-scroll" href="#massagen">Massagen</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#kainos">Preise</a>
+                    <a class="page-scroll" href="#galerie">Galerie</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#klausk">Fragen</a>
+                    <a class="page-scroll" href="#preise">Preise</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#kontaktai">Kontakte</a>
+                    <a class="page-scroll" href="#fragen">Fragen</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#kontakte">Kontakte</a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href='@routes.HomeController.germanVersion'><img src='@routes.Assets.at("stylesheets/css/flag-de2.png")' class="flag flag-lt" alt="German" /></a>
+                    <a class="page-scroll" href='@routes.HomeController.germanVersion'><img src='@routes.Assets.at("images/img/flag-de2.png")' class="flag flag-lt" alt="German" /></a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href='@routes.HomeController.pagrindinis'><img src='@routes.Assets.at("stylesheets/css/flag-lt2.png")' class="flag flag-lt" alt="Lithuanian" /></a>
+                    <a class="page-scroll" href='@routes.HomeController.pagrindinisLT'><img src='@routes.Assets.at("images/img/flag-lt2.png")' class="flag flag-lt" alt="Lithuanian" /></a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="@routes.HomeController.russianVersion"><img src='@routes.Assets.at("stylesheets/css/flag-rus.png")' class="flag flag-lt" alt="Russian" /></a>
+                    <a class="page-scroll" href="@routes.HomeController.russianVersion"><img src='@routes.Assets.at("images/img/flag-rus.png")' class="flag flag-lt" alt="Russian" /></a>
                 </li>
-
 
             </ul>
 
@@ -70,48 +73,48 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h1 class="brand-heading"></h1>
-                    <p class="intro-text">Entspannen...</p>
-                    <a href="#about" class="btn btn-circle page-scroll">
+                    <p class="intro-text">Massage ist eine der besonderen Faktoren in das Leben einer Person, zu helfen einen guten Körper und Seele zu halten. Und es gibt nichts Besseres als nach einem harten und müden Arbeitstag, entspannen und beleben Sie Ihren Körper mit Massage-Verfahren.</p>
+                    <a href="#uber" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <a href="#uber" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-down animated"></i>
+    </a>
 </header>
 
 
 
 <!-- About Section -->
-<section id="about" class="container content-section text-center">
+<section id="uber" class="container content-section text-center">
     <div class="row">
-        <div class="col-lg-4">
 
-            <h2 align="center"><u>Bildung</u></h2>
-            <ul>
-                <li>"Vilniuser Medizinischer Schule", Litauen.</li>
-                <li>Universität Klaipeda - Bachelor Öffentliches "Gesundheitswesen verliehen".</li>
-            </ul>
-
-            <h2 align="center"><u>Erfahrung</u></h2>
-            <ul>
-                <li>27 Jahre: Krankenschwester.</li>
-                <li>6 Jahre: Gesundheitswesen Specialist.</li>
-                <li>6 Jahre: Masseurin.</li>
-            </ul>
-
-            <h2 align="center"><u>Kurse</u></h2>
-            <ul>
-                <li>2010 Jahre ,,Baltic SPA Professional“ Kursus / Lettland  SPA Massaeurin.</li>
-                <li>2012 Jahre -  Fortbildungs- und Spezialisierungszentrum für Pflegepersonal. </li>
-                <li>Bescheinigung Nr.KV 120146 erhält die Zulassung als Masseurin.</li>
-            </ul>
-        </div>
-        <div class="col-lg-4 ">
+        <div class="col-lg-6 ">
             <img src='@routes.Assets.at("images/img/as2.jpg")' class="img-circle" alt="Medicine massage" height="600">
 
         </div>
-        <div class="col-lg-4 ">
+        <div class="col-lg-6 ">
+
+            <h2 align="center"><u>Bildung</u></h2>
+            <ul>
+                <li>Vilnius Höhere Medizinische Fakultät Litauen.</li>
+                <li> Klaipeda Universität. Bachelor Öffentliches Gesundheitswesen verliehen. Litauen.</li>
+                <li> 2010 - "Baltic SPA Profi" Kurse (Lettland), Wellness-Massagen.</li>
+                <li>2012 - Zentrum für Entwicklung und Spezialisierung des Pflegepersonals.</li>
+                <li>   Zertifikat Nr 120146 KV - das Recht hat therapeutische Massage zu machen.</li>
+            </ul>
+            <p></p>
+
+            <h2 align="center"><u>BERUFSERFAHRUNG</u></h2>
+            <ul>
+                <li>27 Jahre: Krankenschwester.</li>
+                <li>7 Jahre: Gesundheitswesen Specialist.</li>
+                <li>7 Jahre: Masseurin.</li>
+            </ul>
+            <p></p>
 
             <h2 align="center"><u>SPA Zertifizierungen</u></h2>
             <ul>
@@ -122,59 +125,53 @@
                 <li>Thai Fußmassage</li>
                 <li>Traditionelle Ayurveda-Massage</li>
             </ul>
-            <h2 align="center"><u>Therapeutische Massagen</u></h2>
-            <ul>
-                <li>Patienten mit Gelenken, der Wirbelsäule, neurologischen, Herz-Kreislauf- und Atemwegserkrankungen</li>
-                <li>Metabolische Störungen</li>
-                <li>Segmentmassage </li>
-                <li>Bindegewebsmassage</li>
-                <li>Kindermassage</li>
-                <li>Sportmassage </li>
-            </ul>
+
         </div>
     </div>
+    <a href="#massagen" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-down animated"></i>
+    </a>
 </section>
 
 <!-- Download Section -->
-<section id="download" class="content-section text-center">
+<section id="massagen" class="content-section text-center">
     <div class="download-section">
-        <h2>Es bietet seinen Kunden eine Vielzahl von Massagen:</h2>
+        <h2 id="vienas">Sveikatą gerinantys masažai</h2>
         <div class="container">
 
             <div class="row">
 
-
-
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Hot and Cold Stone Massage
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#limfodrenazinis">
+                        Lymphdrainage massage
                     </button>
                     <p></p>
-                    <div id="demo2" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
-                                                      alt="Medicine massage" width="250" height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li> Die Steine, die bei dieser Massage eingesetzt werden, wurden an der Küste der Ostsee gesammelt. Über
-                                    Tausende von Jahren waren sie den Kräften des Meeres ausgesetzt, wurden von Sonne, Luft und
-                                    Winden geformt und erhielten so ihre einzigarten Formen und Eigenschaften, die den menschlichen
-                                    Körper positiv beeinflussen.
+                    <div id="limfodrenazinis" class="collapse">
+                        <!--<div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
+                                                      class="img-circle" alt="Medicine massage" width="250"
+                                                      height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
 
-                                    Die Steine haben die Fähigkeit, Giftstoffe und angestauten Stress abzubauen sowie Anspannungen zu
-                                    lösen. Sie verbessern den Schlaf, unterstützen den Blutdruck und ihre Energie wirkt sich positiv aufs Herz
-                                    aus und reguliert so die körpereigenen, natürlichen Kräfte.
 
-                                    Diese Massage eignet sich deshalb besonders gegen Müdigkeit und Stress, da die Wärme der Steine
-                                    muskelentspannend wirken. Die Abwechslung mit den kühlen Steinen wirkt sich dabei vitalisierend auf
-                                    das vegetative Nervensystem aus und entspannt zudem verkrampfte Rücken-, Kopf- und
-                                    Nackenmuskulatur.
 
-                                    Bei Schwangerschaft, Infektions- und Krebskrankheiten wird diese Massage nicht empfohlen.
-                                </li>
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo" >
+                                Lymphdrainage Körpermassage
+                            </button>
+                            <div id="limfo" class="collapse customWidth">      <p class="massageText customWidth">Die wichtigsten Eigenschaften der ätherischen Öle
+                                ÄtherischeÖle sind besondere Kostbarkeiten, die uns die Natur schenkt. Sie
+                                enthalten die Lebenskraft der Pflanzen in konzentrierter Form. Faktoren wie Stress,
+                                Hektik und negative Emotionen vermindern unsere Lebensqualität. Die anregenden
+                                und wohlriechenden Düfte von naturreinen ätherischen Ölen können diese Faktoren
+                                lindern und wirken sich harmonisierend auf Körper und Geist.
+                            </p> </div>
 
-                            </ul>
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo2" >
+                                Lymphdrainage Gesichtsmassage
+                            </button>
+                            <div id="limfo2" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
+
                         </div>
                     </div>
                     <p></p>
@@ -184,48 +181,51 @@
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
-                        Lymphdrainage massage
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#karstusaltu">Heiß-kalt
+                        Steinmassage
                     </button>
                     <p></p>
-                    <div id="demo" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
-                                                      class="img-circle" alt="Medicine massage" width="250"
-                                                      height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li>Die wichtigsten Eigenschaften der ätherischen Öle
-                                    ÄtherischeÖle sind besondere Kostbarkeiten, die uns die Natur schenkt. Sie
-                                    enthalten die Lebenskraft der Pflanzen in konzentrierter Form. Faktoren wie Stress,
-                                    Hektik und negative Emotionen vermindern unsere Lebensqualität. Die anregenden
-                                    und wohlriechenden Düfte von naturreinen ätherischen Ölen können diese Faktoren
-                                    lindern und wirken sich harmonisierend auf Körper und Geist.
-                                </li>
+                    <div id="karstusaltu" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
+
+                            <p class="massageText customWidth"> Die Steine, die bei dieser Massage eingesetzt werden, wurden an der Küste der Ostsee gesammelt. Über
+                                Tausende von Jahren waren sie den Kräften des Meeres ausgesetzt, wurden von Sonne, Luft und
+                                Winden geformt und erhielten so ihre einzigarten Formen und Eigenschaften, die den menschlichen
+                                Körper positiv beeinflussen.</br>
+
+                                Die Steine haben die Fähigkeit, Giftstoffe und angestauten Stress abzubauen sowie Anspannungen zu
+                                lösen. Sie verbessern den Schlaf, unterstützen den Blutdruck und ihre Energie wirkt sich positiv aufs Herz
+                                aus und reguliert so die körpereigenen, natürlichen Kräfte.</br>
+
+                                Diese Massage eignet sich deshalb besonders gegen Müdigkeit und Stress, da die Wärme der Steine
+                                muskelentspannend wirken. Die Abwechslung mit den kühlen Steinen wirkt sich dabei vitalisierend auf
+                                das vegetative Nervensystem aus und entspannt zudem verkrampfte Rücken-, Kopf- und
+                                Nackenmuskulatur.</br>
+
+                                Bei Schwangerschaft, Infektions- und Krebskrankheiten wird diese Massage nicht empfohlen.
 
 
-                            </ul></div>
+                        </div>
                     </div>
                     <p></p>
                 </div>
 
-
-
-
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Entspannende Ganzkörpermassage
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#segmentinis">Klassisch
+                        Segmentale Rückenmassage
                     </button>
                     <p></p>
-                    <div id="demo3" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/mas2.jpg")' class="img-circle"
-                                                      alt="Medicine massage" width="250" height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li>Atpalaiduojantis viso kūno.....</li>
-                            </ul>
+                    <div id="segmentinis" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
+
+                            <p class="massageText customWidth">Entspannt verspannte Rückenmuskeln, verbessert die Gewebestruktur, unterstützt eine bessere Körperhaltung, lindert Entzündungen der Nervenwurzeln (Radikulitis), z.B. nach einem chirurgischen Eingriff an der Wirbelsäule.</p>
+
 
                         </div>
                     </div>
@@ -234,133 +234,204 @@
 
             </div>
 
+            <div class="row">
+
+
+                <div class="col-lg-4 ">
+
+
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#demo33" >
+                        Individuelle Körpermassagen
+                    </button>
+                    <p></p>
+                    <div id="demo33" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
+                                                        class="img-circle" alt="Medicine massage" width="250"
+                                                        height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv" align="center">
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#galva" >
+                                Kopfmassage
+                            </button>
+                            <div id="galva" class="collapse customWidth"><p class="massageText">Entspannt bei Stress, lindert Krämpfe, verbessert den Blutkreislauf.</p> </div>
+
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#peciai" >
+                                Schulterhalsmassage
+                            </button>
+                            <div id="peciai" class="collapse customWidth"><p class="massageText">Die effektivste Behandlung, sowie ein Heilmittel für die Beseitigung von unangenehmen Symptomen. Nach der ersten Massage des Halses, fühlen Sie eine allgemeine Verbesserung in Ihrem Gesundheitszustand. Nach einem vollen Massagen verschwinden schmerzhafte Empfindungen, die Arbeitskapazität steigt, Schlaflosigkeit und Reizbarkeit verschwinden. Nackenmassage ist ein ausgezeichnetes Werkzeug, um Kopfschmerzen loszuwerden.</p> </div>
 
 
 
 
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#krutines" >
+                                Brustmassage
+                            </button>
+                            <div id="krutines" class="collapse customWidth"><p class="massageText">Reduziert die Spannung der Brust, sowie reduziert Infektionen der Atemwege (Bronchitis, Grippe, Asthma und so weiter.).</p> </div>
 
 
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pilvo" >
+                                Bauchmassage
+                            </button>
+                            <div id="pilvo" class="collapse customWidth"><p class="massageText">regt die Verdauung an, wirkt sich positiv auf die intra-abdominalen Organe aus, verbessert Magen- und Darmfunktionen sowie die Gallensekretion, hilft bei Verstopfung oder Gasansammlung im Darm</p></div>
+
+
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#juosmens" >
+                                Lendenwirbelmassage
+                            </button>
+                            <div id="juosmens" class="collapse customWidth"><p class="massageText">Reduziert Schmerzen nach einem operativen Eingriff, verbessert den Blutkreislauf, lindert Entzündungen der Nervenwurzeln.</p></div>
+
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pedu" >
+                                Beinmassage
+                            </button>
+                            <div id="pedu" class="collapse customWidth"><p class="massageText">Tekstas</p></div>
+
+
+
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+
+
+                <div class="col-lg-4 ">
+
+
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#vyresnio">Masažas vyresnio amžiaus žmonėms
+                    </button>
+                    <p></p>
+                    <div id="vyresnio" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
+
+                            <p class="massageText customWidth"> Masažas yra būtina ir labai naudinga procedūra pagyvenusiems žmonėms, pensininkams. Tyrimai parodė, kad masažas lėtina senėjimo procesą. Taip pat masažas veikia raminančiai visą organizmą ir gali sumažinti skausmus. Masažas gali padėti žmonėms, kenčiantiems raumenų skausmus ar sergantiems atritu. Kada žmogus kenčia, jis tampa vis mažiau aktyvus, nukenčia gyvenimo kokybė ir sveikata. Masažas gerina kraujotaką,  pašalina raumenų nuovargį ir raumenys įgauna tonusą. Dėl to pagerėja pagyvenusio žmogaus gyvenimo kokybė.
+                                </br>Prieš masažą Jums gerai būtų pasikonsultuoti su savo gydytoju. Kai tik gausite gydytojo leidimą masažui, jus drąsiai galite kreiptis pas mane.  </p>
+
+
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+
+
+
+                <div class="col-lg-4 ">
+
+
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#atpalaiduojantis">Ganzkörpermassage
+                    </button>
+                    <p></p>
+                    <div id="atpalaiduojantis" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
+
+                            <p class="massageText customWidth"> Entspannt Körper und Geist, lindert Stress und Nervosität, stärkt das Immunsystem, reduziert Muskelkrämpfe und chronische Verspannungen, lindert Schmerzen, verbessert den Lymphfluss, wirkt sich positiv auf die allgemeine Gesundheit aus</p>
+
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
 
             <div class="row">
 
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">
-                        Anti-Cellulite-Massage mit tibetischen Cup
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#ajurvedinis">Ajurvedinis krūtų masažas moterims
                     </button>
                     <p></p>
-                    <div id="demo4" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
-                                                      class="img-circle" alt="Medicine massage" width="250"
-                                                      height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li>Anticeliulitinis masažas su Tibeto taure</li>
+                    <div id="ajurvedinis" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
 
+                            <p class="massageText customWidth"> Aprašymas</p>
 
-                            </ul></div>
-                    </div>
-                    <p></p>
-                </div>
-
-
-                <div class="col-lg-4 ">
-
-
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5"> Masažas vyresnio amžiaus žmonėms
-                    </button>
-                    <p></p>
-                    <div id="demo5" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
-                                                      alt="Medicine massage" width="250" height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li> Masažas yra būtina ir labai naudinga procedūra pagyvenusiems žmonėms, pensininkams.
-                                    Tyrimai parodė, kad masažas lėtina senėjimo procesą. Taip pat masažas veikia raminančiai
-                                    visą organizmą ir gali sumažinti skausmus. Masažas gali padėti žmonėms, kenčiantiems
-                                    raumenų skausmus ar sergantiems atritu. Kada žmogus kenčia, jis tampa vis mažiau aktyvus,
-                                    nukenčia gyvenimo kokybė ir sveikata. Masažas gerina kraujotaką, pašalina raumenų
-                                    nuovargį ir raumenys įgauna tonusą. Dėl to pagerėja pagyvenusio žmogaus gyvenimo
-                                    kokybė. Prieš masažą jums būtinai reikia pasikonsultuoti su savo gydytoju. Kai tik gausite
-                                    gydytojo leidimą masažui, jus drąsiai galite kreiptis pas mus.
-                                </li>
-
-                            </ul>
                         </div>
                     </div>
                     <p></p>
                 </div>
 
+
+
+
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo6">Verschiede Massagen und ihre Anwendungen
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#anticeliulitinis" >
+                        Anticeliulitinis masažas
                     </button>
                     <p></p>
-                    <div id="demo6" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/mas2.jpg")' class="img-circle"
-                                                      alt="Medicine massage" width="250" height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li>Kopfmassage – entspannt bei Stress, lindert Krämpfe, verbessert den Blutkreislauf
+                    <div id="anticeliulitinis" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
+                                                        class="img-circle" alt="Medicine massage" width="250"
+                                                        height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv" align="center">
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#sedmenys" >
+                                Sėdmenims, šlaunims
+                            </button>
+                            <div id="sedmenys" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
-                                    Schultermassage – verbessert die Durchblutung, entspannt die Muskeln, beruhigt das Nervensystem,
-                                    lindert Schmerzen in Schultern und Nacken
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pilvui" >
+                                Pilvui
+                            </button>
+                            <div id="pilvui" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
-                                    Rückenmassage – entspannt verspannte Rückenmuskeln, verbessert die Gewebestruktur,
-                                    unterstützt eine bessere Körperhaltung, lindert Entzündungen der Nervenwurzeln (Radikulitis), z.B.
-                                    nach einem chirurgischen Eingriff an der Wirbelsäule
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#rankos" >
+                                Rankoms
+                            </button>
+                            <div id="rankos" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
-                                    Brustmassage – lindert bei Atemwegserkrankungen (Bronchitis, Grippe, Asthma, etc.)
 
-                                    Bauchmassage – regt die Verdauung an, wirkt sich positiv auf die intra-abdominalen Organe aus,
-                                    verbessert Magen- und Darmfunktionen sowie die Gallensekretion, hilft bei Verstopfung oder
-                                    Gasansammlung im Darm
 
-                                    Lendenwirbelmassage – reduziert Schmerzen nach einem operativen Eingriff, verbessert den
-                                    Blutkreislauf, lindert Entzündungen der Nervenwurzeln
-
-                                    Bein- und Fussmassage – entlastet die Muskeln und Gelenke, lindert schmerzende, schwere und
-                                    müde Beine, entspannt angespannte Bein- und Fussgewebe
-
-                                    Hand- und Armmassage – regt die Blutzirkulation an, entlastet Gelenke, Muskeln an Hand und
-                                    Armen, entspannt verspanntes Gewebe, hilft nach operativen Eingriffen und Verletzungen an
-                                    Händen und Armen
-
-                                    Ganzkörpermassage – entspannt Körper und Geist, lindert Stress und Nervosität, stärkt das
-                                    Immunsystem, reduziert Muskelkrämpfe und chronische Verspannungen, lindert Schmerzen,
-                                    verbessert den Lymphfluss, wirkt sich positiv auf die allgemeine Gesundheit aus</li>
-                            </ul>
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#tibeto" >
+                                Naudojant Tibeto vakuumine Taure
+                            </button>
+                            <div id="tibeto" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
                         </div>
                     </div>
+                    <p></p>
                 </div>
-
 
             </div>
+
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-    <a href="#kainos" class="btn btn-circle page-scroll">
+    </div>
+    <a href="#galerie" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </a>
 
 </section >
 
-<section id="kainos" class="content-section text-center">
+
+<section id="galerie" class="content-section text-center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="contact-section">
+                <div class="container">
+                    <hr>
+                    <h2>Galerie</h2>
+                    <hr>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <a href="#preise" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-down animated"></i>
+    </a>
+
+</section>
+
+
+
+<section id="preise" class="content-section text-center">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="contact-section">
@@ -374,53 +445,113 @@
             </div>
         </div>
     </div>
-
+    <a href="#fragen" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-down animated"></i>
+    </a>
 </section>
-<!-- Contact Section -->
+<Usertact Section -->
 
 
-<section id="klausk" class="container content-section text-center">
+<section id="fragen" class="container content-section text-center">
     <div class="row">
         <div class="col-lg-12">
             <div class="contact-section">
                 <div class="container">
 
-                    <h2>Ihre Fragen!</h2>
+                    <h2>Stellen Sie Ihre Frage!</h2>
                     <p></p>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label for="firstName">Name</label>
-                                    <input type="text" class="form-control" id="firstName" placeholder="Stasys Bardiuras" >
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail2">E-Mail</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Jane@@vania.lt" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputText">Ihre Nachricht</label>
-                                    <textarea  class="form-control" id="exampleInputText" placeholder="Klausimas" required="required"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-default">Schicke eine Nachricht</button>
-                            </form>
 
 
-                            <!--
-                            <h3>Mūsų socialiniai tinklai</h3>
+
+
+                            @helper.form(action = routes.HomeController.submitDE(),'class -> "form-horizontal") {
+
+
+
+
+                            @helper.input(contactForm("Name"),'class->"form-control") { (id, name, value, args) =>
+                            <input type="text" name="@contactForm.field("firstName").name"  placeholder="Ihr Name" id="@id" @toHtmlArgs(args)@if(contactForm.hasErrors) {
+                            <option value='@contactForm.field("firstName").value'></option>}
+                            }
+
+
+
+                            <div id="xxx">
+                                @for(error <- contactForm("firstName").errors) {
+                                <p id="xxxx">@error.format(messages())</p>
+                                }</div>
+
+
+
+                            @helper.input(contactForm("E-Mail"),'class->"form-control") { (id, name, value, args) =>
+                            <input type="text" name="@contactForm.field("email").name"  placeholder="Ihre E-Mail" id="@id" @toHtmlArgs(args)@if(contactForm.hasErrors) {
+                            <option value='@contactForm.field("email").value'></option>}
+                            }
+
+
+
+                            <div id="xxx">
+                                @for(error <- contactForm("email").errors) {
+                                <p id="xxxx">@error.format(messages())</p>
+                                }</div>
+
+
+
+
+
+
+
+                            @helper.input(field = contactForm("Frage")) { (id, name, value, args) =>
+                            <div>
+                                <textarea class="form-control" name="@contactForm("textbox").name" id="@id" placeholder="Ihre Nachricht" rows='5' cols='80'>@if(contactForm.hasErrors){@contactForm.field("textbox").value}</textarea>
+                            </div>
+                            }
+                            <div id="xxx">
+                                @for(error <- contactForm("textbox").errors) {
+                                <p id="xxxx">@error.format(messages())</p>
+                                }</div>
+
+
+
+                            <button type="submit"  class="btn btn-default" >Nachricht senden</button>
+
+                            <div id="flash">@flash.get("success")</div>
+
+                            @if(contactForm.hasGlobalErrors) {
+                            <div id="xxx">
+                                <p class="error" >
+                                    @for(error <- contactForm.globalErrors) {
+                                <p>@error.format(messages())</p>
+                                @for(error <- contactForm("email").errors) {
+                                <p>@error.format(messages())</p>
+                                }
+                                }
+                                </p>
+                            </div>
+                            }
+                            }
+
+
+                            <p></p>
+                            <h3>Unsere sozialen Netzwerke</h3>
                             <ul class="list-inline banner-social-buttons">
-                                <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-                                <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
+                                <li><a href="www.google.com" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
+                                <li><a href="@routes.HomeController.toFaceBook" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
                                 <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
-                            </ul> -->
+                            </ul>
                         </div>
                     </div>
                 </div>
 
 
-        </div>
+            </div>
         </div>
     </div>
+    <a href="#kontakte" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-down animated"></i>
+    </a>
 
 
 
@@ -435,7 +566,7 @@
 <section>
     <hr>
     <!-- Map Section -->
-    <div id="kontaktai" class="text-center">
+    <div id="kontakte" class="text-center">
         <div class="row">
             <div class="col-lg-12">
                 <p></p>
@@ -453,7 +584,9 @@
             </div>
         </div>
     </div>
-<hr>
+    @if(contactForm.hasErrors){<script src="@routes.Assets.at("javascripts/js/returnToFormOnFailDE.js")"></script>}</script>
+
+    <hr>
 </section>
 
 

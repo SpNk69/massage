@@ -1,26 +1,24 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
-
-# An example controller showing a sample home page
-GET     /                           controllers.HomeController.index
-# An example controller showing how to use dependency injection
-GET     /count                      controllers.CountController.count
-# An example controller showing how to write asynchronous code
-GET     /message                    controllers.AsyncController.message
+GET     /robots.txt             controllers.Assets.at(path="/public", file="robots.txt")
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
+GET     /lt            controllers.HomeController.pagrindinisLT
 
-GET     /lt                 controllers.HomeController.pagrindinis
-GET     /apie                 controllers.HomeController.apie
-
+GET    /toFaceBook    controllers.HomeController.toFaceBook
 
 GET     /de                 controllers.HomeController.germanVersion()
 
-GET     /rus                 controllers.HomeController.russianVersion()
+GET     /ru                 controllers.HomeController.russianVersion()
 
+GET    /submitLT              controllers.HomeController.submitLT()
+
+GET    /submitRU              controllers.HomeController.submitRU()
+
+GET    /submitDE              controllers.HomeController.submitDE()
 
 GET     /public/*file      controllers.Assets.at(path="/public", file)
 

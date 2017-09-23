@@ -1,5 +1,5 @@
-@(message: String, style: String = "java")
-
+@(message: String, style: String = "java", contactForm: Form[_])
+@import helper._
 @defining(play.core.PlayVersion.current) { version =>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -24,31 +24,36 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">Oбо мне</a>
+                    <a class="page-scroll" href="#oбо">Oбо мне</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#download">Mассажы</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#kainos">цены</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#klausk">Bопрос</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#kontaktai">Kонтакты</a>
+                    <a class="page-scroll" href="#mассажы">Mассажы</a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href='@routes.HomeController.germanVersion'><img src='@routes.Assets.at("stylesheets/css/flag-de2.png")' class="flag flag-lt" alt="German" /></a>
+                    <a class="page-scroll" href="#галерея">галерея</a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href='@routes.HomeController.pagrindinis'><img src='@routes.Assets.at("stylesheets/css/flag-lt2.png")' class="flag flag-lt" alt="Lithuanian" /></a>
+                    <a class="page-scroll" href="#цены">цены</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#bonpoc">Bопрос</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#контакты">Kонтакты</a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href="@routes.HomeController.russianVersion"><img src='@routes.Assets.at("stylesheets/css/flag-rus.png")' class="flag flag-lt" alt="Russian" /></a>
+                    <a class="page-scroll" href='@routes.HomeController.germanVersion'><img src='@routes.Assets.at("images/img/flag-de2.png")' class="flag flag-lt" alt="German" /></a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href='@routes.HomeController.pagrindinisLT'><img src='@routes.Assets.at("images/img/flag-lt2.png")' class="flag flag-lt" alt="Lithuanian" /></a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="@routes.HomeController.russianVersion"><img src='@routes.Assets.at("images/img/flag-rus.png")' class="flag flag-lt" alt="Russian" /></a>
                 </li>
 
 
@@ -70,8 +75,8 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h1 class="brand-heading"></h1>
-                    <p class="intro-text">Pасслабься...</p>
-                    <a href="#about" class="btn btn-circle page-scroll">
+                    <p class="intro-text">Массаж является одним из особых факторов в жизни человека, помогая поддерживать хорошее тело и душу. И нет ничего лучше, чем после тяжелого и усталого рабочего дня, расслабиться и оживить cвое тело массажными процедурами.</p>
+                    <a href="oбо" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
                 </div>
@@ -83,37 +88,34 @@
 
 
 <!-- About Section -->
-<section id="about" class="container content-section text-center">
+<section id="oбо" class="container content-section text-center">
     <div class="row">
-        <div class="col-lg-4">
 
-            <h2 align="center"><u>Išsilavinimas</u></h2>
-            <ul>
-                <li>"Vilniaus aukštesnioji medicinos mokykla", Lietuva.</li>
-                <li>Klaipėdos universitetas. Bakalauro laipsnis "Visuomenės sveikata".</li>
-            </ul>
 
-            <h2 align="center"><u>Darbo Patirtis</u></h2>
-            <ul>
-                <li>27 metai: Medicinos sesuo.</li>
-                <li>6 metai: Visuomenės sveikatos priežiūros specialistė.</li>
-                <li>6 metai: Masažuotoja.</li>
-            </ul>
 
-            <h2 align="center"><u>Kursai</u></h2>
-            <ul>
-                <li>2010 metai - "Baltic SPA Professional" Kursai (Latvija), SPA masažai.</li>
-                <li>2012 metai - Slaugos darbuotojų tobulinimosi ir specializacijos centras.</li>
-                <li>Pažymėjimas Nr. KV 120146 - suteikta teisė daryti gydomuosius masažus.</li>
-            </ul>
-        </div>
-        <div class="col-lg-4 ">
+        <div class="col-lg-6 ">
             <img src='@routes.Assets.at("images/img/as2.jpg")' class="img-circle" alt="Medicine massage" height="600">
 
         </div>
-        <div class="col-lg-4 ">
 
-            <h2 align="center"><u>SPA Sertifikatai</u></h2>
+        <div class="col-lg-6">
+
+            <h3 align="center"><u>Образование</u></h3>
+            <ul><li>"Вильнюсская высшая медицинская школа. Литва.</li>
+                <li>Клайпедский университет. Степень бакалавра в области общественного здравоохранения. Литва.</li>
+                <li>2010 г. - "Baltic SPA Professional" курсы (Латвия), спа-массажы.</li>
+                <li> 2012 г. - Центр развития и специализации медсестринского персонала.</li>
+                <li> Сертификат Нет KV 120146 - предоставляется право делать терапевтические (лечебные) массажы.</li>
+            </ul>
+            <p></p>
+            <h3 align="center" ><u>Опыт работы</u></h3>
+            <ul align="center">
+                <li>27 лет: медицинская сестра.</li>
+                <li> 7 лет: специалист общественного здравоохранения.</li>
+                <li>7 лет: массажист.</li>
+            </ul>
+            <p></p>
+            <h3 align="center"><u>SPA Sertifikatai</u></h3>
             <ul>
 
                 <li>Klasikinis segmentinis masažas</li>
@@ -122,45 +124,70 @@
                 <li>Thai pėdų masažas</li>
                 <li>Tradicinis ajurvedinis masažas</li>
             </ul>
-            <h2 align="center"><u>Gydomieji masažai</u></h2>
-            <ul>
-                <li>Sergant sąnarių, stuburo, nervų, širdies-kraujagyslių, kvėpavimo sistemų ligomis</li>
-                <li>Medžiagų apykaitos sutrikimo atvejais</li>
-                <li>Segmentinis masažas</li>
-                <li>Jungiamojo audinio masažas</li>
-                <li>Vaikų masažas</li>
-                <li>Sportinis masažas</li>
-            </ul>
+
+
         </div>
+
+
     </div>
+    <a href="#mассажы" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-down animated"></i>
+    </a>
 </section>
 
+
+
+
+
+
+
+
 <!-- Download Section -->
-<section id="download" class="content-section text-center">
+<section id="mассажы" class="content-section text-center">
     <div class="download-section">
-        <h2>Мы предлагаем нашим клиентам различные виды массажа:</h2>
+        <h2 id="vienas">Оздоровительный массаж</h2>
         <div class="container">
 
             <div class="row">
 
-
-
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Массаж горячими камнями
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#limfodrenazinis">
+                        Лимфодренажный массаж
                     </button>
                     <p></p>
-                    <div id="demo2" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
-                                                      alt="Medicine massage" width="250" height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li> Массаж горячими камнями
-                                </li>
+                    <div id="limfodrenazinis" class="collapse">
+                        <!--<div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
+                                                      class="img-circle" alt="Medicine massage" width="250"
+                                                      height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
 
-                            </ul>
+
+
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo" >
+                                Лимфодренажный массаж тела
+                            </button>
+                            <div id="limfo" class="collapse customWidth">      <p class="massageText customWidth">Tai saugus efektyvus būdas sustiprinti sveikatą bei palaikyti gerą savijautą.
+                                Это безопасный эффективный способ укрепления здоровья и поддержания благополучия. У
+                                здоровых людей - это профилактическая мера, чтобы поддерживать нормальный обмен веществ.
+                                Массаж активируется процессы регенерации поврежденных мягких тканей, замедляются
+                                воспалительные процессы, укрепляет иммунитет, улучшает оксигенацию тканей.</br>
+                                Лимфодренажный массаж подходит для тех, кто чувствует отек ног, отеки, или просто усталость.
+                                После долгого дня, он расслабляет уставшие ноги и дает ощущение легкости. Он также подходит
+                                для людей, чьи ноги всегда холодные.</br>
+                                Этот массаж целей красоты используется для лечения целлюлита и профилактики, подтяжки кожи,
+                                сокращения, улучшают общее самочувствие и уменьшить отеки после пластической хирургии.
+                                Этот массаж делается для женщин и мужчин.</br>
+                                Для лечения, эта процедура делается каждый день, для профилактики - 2-3 раза в неделю.
+                                Нужный эффект достигается после 15 процедур.
+                            </p> </div>
+
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo2" >
+                                Лимфодренажный массаж лица
+                            </button>
+                            <div id="limfo2" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
+
                         </div>
                     </div>
                     <p></p>
@@ -170,43 +197,46 @@
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
-                        Лимфодренажный массаж
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#karstusaltu">Горячих - холодных камней массаж
                     </button>
                     <p></p>
-                    <div id="demo" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
-                                                      class="img-circle" alt="Medicine massage" width="250"
-                                                      height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li>Лимфодренажный массаж
-                                </li>
+                    <div id="karstusaltu" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
+
+                            <p class="massageText customWidth"> Камни, используемые в массаже, собранных на побережье Балтийского моря. Они растут на
+                                протяжении тысяч лет на морском дне обогащает огромную силу и солоноватой воды нити в
+                                сочетании с солнечным светом колебания приобретают уникальные характеристики, которые
+                                влияют на организм человека.</br>
+                                Камень имеет способность из мышц удалить токсины накопленные в результате стресса и
+                                нездорового образа жизни. Улучшает сон, помогает регулировать кровяное давление,
+                                положительно влияет на частоту сердечных сокращений, вызванные естественной силы тела,
+                                чтобы помочь преодолеть болезнь, ускоряет процесс потоков.</br>
+                                Этот массаж особенно подходит от усталости, перенеся глубокий стресс, чувствуя в себе
+                                неоправданные расстройства нервозности, апатия, плохой сон.
+                                Легко и приятно устраняет боль в мышцах, спины, головы и шеи.</p>
 
 
-                            </ul></div>
+                        </div>
                     </div>
                     <p></p>
                 </div>
 
-
-
-
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Расслабляющий массаж всего тела
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#segmentinis">Kлассический
+                        Сегментный массаж спины
                     </button>
                     <p></p>
-                    <div id="demo3" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/mas2.jpg")' class="img-circle"
-                                                      alt="Medicine massage" width="250" height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li>Расслабляющий массаж всего тела</li>
-                            </ul>
+                    <div id="segmentinis" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
+
+                            <p class="massageText customWidth"> Pасслабляет напряженные мышцы спины, улучшает структуру ткани, обеспечивает лучшее положение тела, облегчает воспаление нервных корешков (радикулит).</p>
+
 
                         </div>
                     </div>
@@ -215,127 +245,205 @@
 
             </div>
 
+            <div class="row">
+
+
+                <div class="col-lg-4 ">
+
+
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#demo33" >
+                        Индивидуальный массаж тела
+                    </button>
+                    <p></p>
+                    <div id="demo33" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
+                                                        class="img-circle" alt="Medicine massage" width="250"
+                                                        height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv" align="center">
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#galva" >
+                                Массаж головы
+                            </button>
+                            <div id="galva" class="collapse customWidth"><p class="massageText">Уменьшает стресс, головные боли, улучшает кровообращение.</p> </div>
+
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#peciai" >
+                                Плеч - шеи массаж
+                            </button>
+                            <div id="peciai" class="collapse customWidth"><p class="massageText">Наиболее эффективное лечение, а также средство для удаления неприятных симптомов . Уже после первого массажа шеи вы почувствуете общее улучшение своего самочувствия. После полного курса массажа исчезают болезненные ощущения, возрастает работоспособность, исчезает бессонница и раздражительность. Массаж шеи является отличным инструментом, чтобы избавиться от головной боли.</p> </div>
 
 
 
 
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#krutines" >
+                                Массаж груди
+                            </button>
+                            <div id="krutines" class="collapse customWidth"><p class="massageText">Снимает расстройства дыхания (бронхит, грипп, астма и т. Д.)</p> </div>
 
 
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pilvo" >
+                                Абдоминальный массаж
+                            </button>
+                            <div id="pilvo" class="collapse customWidth"><p class="massageText">стимулирует пищеварение, оказывает положительное влияние на внутрибрюшные органы, улучшает функции желудка и кишечника, а также секрецию желчи, помогает при запоре или накоплении газа в кишечнике.</p></div>
+
+
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#juosmens" >
+                                Массаж поясничного отдела позвоночника
+                            </button>
+                            <div id="juosmens" class="collapse customWidth"><p class="massageText">Уменьшает боль после операции, улучшает кровообращение, снимает воспаление нервных корешков.</p></div>
+
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pedu" >
+                                Массаж ног
+                            </button>
+                            <div id="pedu" class="collapse customWidth"><p class="massageText"></p></div>
+
+
+
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+
+
+                <div class="col-lg-4 ">
+
+
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#vyresnio">Masažas vyresnio amžiaus žmonėms
+                    </button>
+                    <p></p>
+                    <div id="vyresnio" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
+
+                            <p class="massageText customWidth"> Masažas yra būtina ir labai naudinga procedūra pagyvenusiems žmonėms, pensininkams. Tyrimai parodė, kad masažas lėtina senėjimo procesą. Taip pat masažas veikia raminančiai visą organizmą ir gali sumažinti skausmus. Masažas gali padėti žmonėms, kenčiantiems raumenų skausmus ar sergantiems atritu. Kada žmogus kenčia, jis tampa vis mažiau aktyvus, nukenčia gyvenimo kokybė ir sveikata. Masažas gerina kraujotaką,  pašalina raumenų nuovargį ir raumenys įgauna tonusą. Dėl to pagerėja pagyvenusio žmogaus gyvenimo kokybė.
+                                </br>Prieš masažą Jums gerai būtų pasikonsultuoti su savo gydytoju. Kai tik gausite gydytojo leidimą masažui, jus drąsiai galite kreiptis pas mane.  </p>
+
+
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+
+
+
+                <div class="col-lg-4 ">
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#atpalaiduojantis">Полный массаж тела
+                    </button>
+                    <p></p>
+                    <div id="atpalaiduojantis" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
+
+                            <p class="massageText customWidth"> Расслабляет тело и ум, снимает стресс и нервозность, укрепляет иммунную систему, уменьшает мышечные судороги и хронические напряжения, снимает боль, улучшает поток лимфы, оказывает положительное влияние на общее состояние здоровья.</p>
+
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
 
             <div class="row">
 
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">
-                        Антицеллюлитный массаж с Кубком Тибетской
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#ajurvedinis">Ajurvedinis krūtų masažas moterims
                     </button>
                     <p></p>
-                    <div id="demo4" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
-                                                      class="img-circle" alt="Medicine massage" width="250"
-                                                      height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li>Антицеллюлитный массаж с Кубком Тибетской</li>
+                    <div id="ajurvedinis" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
+                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv " align="center">
 
+                            <p class="massageText customWidth"> Aprašymas</p>
 
-                            </ul></div>
-                    </div>
-                    <p></p>
-                </div>
-
-
-                <div class="col-lg-4 ">
-
-
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5"> Массаж для пожилых людей
-                    </button>
-                    <p></p>
-                    <div id="demo5" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
-                                                      alt="Medicine massage" width="250" height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li> Массаж для пожилых людей
-                                </li>
-
-                            </ul>
                         </div>
                     </div>
                     <p></p>
                 </div>
 
+
+
+
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo6">Различные части массажа тела
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#anticeliulitinis" >
+                        Anticeliulitinis masažas
                     </button>
                     <p></p>
-                    <div id="demo6" class="collapse">
-                        <div class="text-center"><img src='@routes.Assets.at("images/img/mas2.jpg")' class="img-circle"
-                                                      alt="Medicine massage" width="250" height="250"></a></div>
-                        <div id="lopas">
-                            <p class="text-justify">
-                            <ul>
-                                <li>Массаж головы - расслабляет напряжение, снимает спазмы, улучшает кровообращение
+                    <div id="anticeliulitinis" class="collapse">
+                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
+                                                        class="img-circle" alt="Medicine massage" width="250"
+                                                        height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv" align="center">
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#sedmenys" >
+                                Sėdmenims, šlaunims
+                            </button>
+                            <div id="sedmenys" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
-                                    Плечи массаж - улучшает кровообращение, расслабляет мышцы, успокаивает нервную систему,
-                                    снимает боль в плечах и шее
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pilvui" >
+                                Pilvui
+                            </button>
+                            <div id="pilvui" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
-                                    Массаж спины - расслабляет напряженные мышцы спины, улучшает структуру тканей,
-                                    поддерживает лучшую осанку, снимает воспаление нервных корешков (ишиас), например,
-                                    после хирургического вмешательства на позвоночнике
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#rankos" >
+                                Rankoms
+                            </button>
+                            <div id="rankos" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
-                                    Массаж груди - снимает респираторные заболевания (бронхит, грипп, астму и т.д.)
 
-                                    Брюшной массаж - стимулирует пищеварение, оказывает положительное влияние на интраабдоминальных органах,
-                                    улучшает желудочно-кишечного тракта функции и секреции желчи, помогает при запорах или
-                                    Накопление газа в кишечнике
 
-                                    Поясничный массаж - уменьшает болевые ощущения после операции, улучшает
-                                    кровообращение, снимает воспаление нервных корешков
-
-                                    Ноги и массаж ног - снимает мышцы и суставы, снимает ноющие, тяжелые и
-                                    усталых ног, расслабляет напряженные ноги и стопы ткани
-
-                                    Рука и плечо массаж - стимулирует кровообращение, снимает суставы, мышцы рук и
-                                    Руки расслаблена напряженная ткань помогает после операции и травм
-                                    Руки и оружие
-
-                                    Полный массаж тела - расслабляет тело и ум, снимает стресс и нервозность, укрепляет
-                                    
-                                    Иммунная система, уменьшает мышечные спазмы и хроническое напряжение, снимает боль,
-                                    улучшает циркуляцию лимфы, оказывает положительное влияние на общее состояние здоровья</li>
-                            </ul>
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#tibeto" >
+                                Naudojant Tibeto vakuumine Taure
+                            </button>
+                            <div id="tibeto" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
                         </div>
                     </div>
+                    <p></p>
                 </div>
-
 
             </div>
+
         </div>
+    </div>
     </div>
 
 
 
-
-
-
-
-
-
-
-    <a href="#kainos" class="btn btn-circle page-scroll">
+    <a href="#галерея" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </a>
 
 </section >
 
-<section id="kainos" class="content-section text-center">
+
+<section id="галерея" class="content-section text-center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="contact-section">
+                <div class="container">
+                    <hr>
+                    <h2>галерея</h2>
+                    <hr>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <a href="#цены" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-down animated"></i>
+    </a>
+
+</section>
+
+
+
+<section id="цены" class="content-section text-center">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="contact-section">
@@ -349,53 +457,114 @@
             </div>
         </div>
     </div>
-
+    <a href="#bonpoc" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-down animated"></i>
+    </a>
 </section>
-<!-- Contact Section -->
+<Usertact Section -->
 
 
-<section id="klausk" class="container content-section text-center">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="contact-section">
-                <div class="container">
+    <section id="bonpoc" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact-section">
+                    <div class="container">
 
-                    <h2>Задайте свой вопрос!</h2>
-                    <p></p>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label for="firstName">Имя</label>
-                                    <input type="text" class="form-control" id="firstName" placeholder="Stasys Bardiuras" >
+                        <h2>Задайте свой вопрос!</h2>
+                        <p></p>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+
+
+
+
+                                @helper.form(action = routes.HomeController.submitRU(),'class -> "form-horizontal") {
+
+
+
+
+                                @helper.input(contactForm("Имя"),'class->"form-control") { (id, name, value, args) =>
+                                <input type="text" name="@contactForm.field("firstName").name"  placeholder="Ваше имя" id="@id" @toHtmlArgs(args)@if(contactForm.hasErrors) {
+                                <option value='@contactForm.field("firstName").value'></option>}
+                                }
+
+
+
+                                <div id="xxx">
+                                    @for(error <- contactForm("firstName").errors) {
+                                    <p id="xxxx">@error.format(messages())</p>
+                                    }</div>
+
+
+
+                                @helper.input(contactForm("Злектронная почта"),'class->"form-control") { (id, name, value, args) =>
+                                <input type="text" name="@contactForm.field("email").name"  placeholder="Ваш адрес электронной почты" id="@id" @toHtmlArgs(args)@if(contactForm.hasErrors) {
+                                <option value='@contactForm.field("email").value'></option>}
+                                }
+
+
+
+                                <div id="xxx">
+                                    @for(error <- contactForm("email").errors) {
+                                    <p id="xxxx">@error.format(messages())</p>
+                                    }</div>
+
+
+
+
+
+
+
+                                @helper.input(field = contactForm("Вопрос")) { (id, name, value, args) =>
+                                <div>
+                                    <textarea class="form-control" name="@contactForm("textbox").name" id="@id" placeholder="Ваше сообщение" rows='5' cols='80'>@if(contactForm.hasErrors){@contactForm.field("textbox").value}</textarea>
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail2">Злектронная почта</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Jane@@vania.lt" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputText">Ваше сообщение</label>
-                                    <textarea  class="form-control" id="exampleInputText" placeholder="Klausimas" required="required"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-default">Siųsti žinute</button>
-                            </form>
+                                }
+                                <div id="xxx">
+                                    @for(error <- contactForm("textbox").errors) {
+                                    <p id="xxxx">@error.format(messages())</p>
+                                    }</div>
 
 
-                            <!--
-                            <h3>Mūsų socialiniai tinklai</h3>
-                            <ul class="list-inline banner-social-buttons">
-                                <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-                                <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
-                                <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
-                            </ul> -->
+
+                                <button type="submit"  class="btn btn-default" >Отправить сообщение</button>
+
+                                <div id="flash">@flash.get("success")</div>
+
+                                @if(contactForm.hasGlobalErrors) {
+                                <div id="xxx">
+                                    <p class="error" >
+                                        @for(error <- contactForm.globalErrors) {
+                                    <p>@error.format(messages())</p>
+                                    @for(error <- contactForm("email").errors) {
+                                    <p>@error.format(messages())</p>
+                                    }
+                                    }
+                                    </p>
+                                </div>
+                                }
+                                }
+
+
+                                <p></p>
+                                <h3>Наши социальные сети</h3>
+                                <ul class="list-inline banner-social-buttons">
+                                    <li><a href="www.google.com" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
+                                    <li><a href="@routes.HomeController.toFaceBook" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
+                                    <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
-
-
+            </div>
+            @if(contactForm.hasErrors){<script src="@routes.Assets.at("javascripts/js/returnToFormOnFailRU.js")"></script>}</script>
         </div>
-        </div>
-    </div>
+        <a href="#контакты" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
 
 
 
@@ -403,14 +572,13 @@
 
 
 
-
-</section>
+    </section>
 
 
 <section>
     <hr>
     <!-- Map Section -->
-    <div id="kontaktai" class="text-center">
+    <div id="контакты" class="text-center">
         <div class="row">
             <div class="col-lg-12">
                 <p></p>
