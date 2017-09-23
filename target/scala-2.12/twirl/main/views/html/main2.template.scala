@@ -29,7 +29,7 @@ object main2 extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
  * handles the rendering of the page header and body tags. It takes
  * two arguments, a `String` for the title of the page and an `Html`
  * object to insert into the body of the page.
- */
+*/
   def apply/*7.2*/(title: String)(content: Html):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
@@ -38,7 +38,7 @@ object main2 extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 Seq[Any](format.raw/*7.32*/("""
 
 """),format.raw/*9.1*/("""<!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
 
     <meta charset="utf-8">
@@ -47,32 +47,35 @@ Seq[Any](format.raw/*7.32*/("""
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Vidos Masažai</title>
 
     <!-- Bootstrap Core CSS -->
     <link href='"""),_display_(/*22.18*/routes/*22.24*/.Assets.at("stylesheets/vendor/bootstrap/css/bootstrap.min.css")),format.raw/*22.88*/("""' rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href='"""),_display_(/*25.18*/routes/*25.24*/.Assets.at("stylesheets/vendor/font-awesome/css/font-awesome.min.css")),format.raw/*25.94*/("""' rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+    <link rel="stylesheet" href=""""),_display_(/*28.35*/routes/*28.41*/.Assets.at("stylesheets/css/w3.css")),format.raw/*28.77*/("""">
+
 
     <!-- Theme CSS -->
-    <link href='"""),_display_(/*30.18*/routes/*30.24*/.Assets.at("stylesheets/css/grayscale.min.css")),format.raw/*30.71*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*32.18*/routes/*32.24*/.Assets.at("stylesheets/css/grayscale.min.css")),format.raw/*32.71*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*33.18*/routes/*33.24*/.Assets.at("stylesheets/css/special.css")),format.raw/*33.65*/("""' rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 
 </head>
     <body>
-        """),format.raw/*42.32*/("""
-        """),_display_(/*43.10*/content),format.raw/*43.17*/("""
-
-    """),format.raw/*45.5*/("""</body>
+        """),format.raw/*46.32*/("""
+        """),_display_(/*47.10*/content),format.raw/*47.17*/("""
+    """),format.raw/*48.5*/("""</body>
 </html>
 """))
       }
@@ -90,11 +93,11 @@ Seq[Any](format.raw/*7.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Jul 15 19:09:24 CEST 2017
+                  DATE: Sat Sep 23 20:14:55 CEST 2017
                   SOURCE: /home/alex/git/web/app/views/main2.scala.html
-                  HASH: 035cec2b4cd8bcdeefb6ef47bf5173d0044267c9
-                  MATRIX: 1207->260|1332->290|1360->292|1767->672|1782->678|1867->742|1958->806|1973->812|2064->882|2402->1193|2417->1199|2485->1246|2940->1763|2977->1773|3005->1780|3038->1786
-                  LINES: 33->7|38->7|40->9|53->22|53->22|53->22|56->25|56->25|56->25|61->30|61->30|61->30|72->42|73->43|73->43|75->45
+                  HASH: ce227ce98b30d075fbd7271492879a7c14e4d2e9
+                  MATRIX: 1206->259|1331->289|1359->291|1746->651|1761->657|1846->721|1937->785|1952->791|2043->861|2142->933|2157->939|2214->975|2286->1020|2301->1026|2369->1073|2433->1110|2448->1116|2510->1157|2966->1675|3003->1685|3031->1692|3063->1697
+                  LINES: 33->7|38->7|40->9|53->22|53->22|53->22|56->25|56->25|56->25|59->28|59->28|59->28|63->32|63->32|63->32|64->33|64->33|64->33|76->46|77->47|77->47|78->48
                   -- GENERATED --
               */
           

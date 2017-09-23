@@ -50,21 +50,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterPath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/germanContent.scala.html" afterPath="$PROJECT_DIR$/app/views/germanContent.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/germanPagrindinis.scala.html" afterPath="$PROJECT_DIR$/app/views/germanPagrindinis.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main2.scala.html" afterPath="$PROJECT_DIR$/app/views/main2.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pagrindinis.scala.html" afterPath="$PROJECT_DIR$/app/views/pagrindinis.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" afterPath="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/russianContent.scala.html" afterPath="$PROJECT_DIR$/app/views/russianContent.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/russianPagrindinis.scala.html" afterPath="$PROJECT_DIR$/app/views/russianPagrindinis.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/application.conf" afterPath="$PROJECT_DIR$/conf/application.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/logback.xml" afterPath="$PROJECT_DIR$/conf/logback.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/web-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/web-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/web-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/web-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-compile-internal.xml" />
@@ -81,8 +66,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-test-internal.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-build-test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/grayscale.min.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/grayscale.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/index.html" afterPath="$PROJECT_DIR$/public/stylesheets/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/play-java-starter-example/play-java-starter-example_2.12/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/play-java-starter-example/play-java-starter-example_2.12/1.0-SNAPSHOT/resolved.xml.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/play-java-starter-example/play-java-starter-example_2.12/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/play-java-starter-example/play-java-starter-example_2.12/1.0-SNAPSHOT/resolved.xml.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/play-java-starter-example-play-java-starter-example_2.12-compile-internal.xml" />
@@ -133,9 +116,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/index.html" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/grayscale.min.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/grayscale.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/index.html" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/BrowserTest.java" afterPath="$PROJECT_DIR$/test/BrowserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/FunctionalTest.java" afterPath="$PROJECT_DIR$/test/FunctionalTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/UnitTest.java" afterPath="$PROJECT_DIR$/test/UnitTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/resolution-cache/" />
     <ignored path="$PROJECT_DIR$/target/streams/" />

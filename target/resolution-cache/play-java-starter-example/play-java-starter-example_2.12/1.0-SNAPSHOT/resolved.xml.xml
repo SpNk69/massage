@@ -4,7 +4,7 @@
 		module="play-java-starter-example_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170715190924"
+		publication="20170923201449"
 	>
 		<description>
 		play-java-starter-example
@@ -55,5 +55,7 @@
 		<dependency org="com.h2database" name="h2" rev="1.4.194" conf="compile->default(compile)"/>
 		<dependency org="org.assertj" name="assertj-core" rev="3.6.2" conf="test->default(compile)"/>
 		<dependency org="org.awaitility" name="awaitility" rev="2.0.0" conf="test->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-mailer_2.12" rev="6.0.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-mailer-guice_2.12" rev="6.0.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

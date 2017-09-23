@@ -1,0 +1,4 @@
+2017-09-09 01:16:47,783 [WARN] from application in main - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-09-09 01:16:48,665 [INFO] from application in main - ApplicationTimer demo: Starting application at 2017-09-08T23:16:48.664Z
+2017-09-09 01:16:49,694 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in main - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-09 01:16:49,986 [INFO] from application in main - ApplicationTimer demo: Stopping application at 2017-09-08T23:16:49.986Z after 1s.

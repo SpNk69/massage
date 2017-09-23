@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/alex/git/web/conf/routes
-// @DATE:Sat Jul 15 19:09:24 CEST 2017
+// @DATE:Sat Sep 23 20:14:55 CEST 2017
 
 import play.api.mvc.Call
 
@@ -9,77 +9,90 @@ import play.api.mvc.Call
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:6
+// @LINE:4
 package controllers {
 
-  // @LINE:10
-  class ReverseAsyncController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:10
-    def message(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "message")
-    }
-  
-  }
-
-  // @LINE:6
+  // @LINE:9
   class ReverseHomeController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:6
-    def index(): Call = {
+    // @LINE:13
+    def germanVersion(): Call = {
       
-      Call("GET", _prefix)
+      Call("GET", _prefix + { _defaultPrefix } + "de")
     }
   
-    // @LINE:16
-    def pagrindinis(): Call = {
+    // @LINE:11
+    def toFaceBook(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "pagrindinis")
+      Call("GET", _prefix + { _defaultPrefix } + "toFaceBook")
+    }
+  
+    // @LINE:19
+    def submitRU(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "submitRU")
+    }
+  
+    // @LINE:9
+    def pagrindinisLT(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "lt")
+    }
+  
+    // @LINE:17
+    def submitLT(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "submitLT")
+    }
+  
+    // @LINE:15
+    def russianVersion(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "ru")
+    }
+  
+    // @LINE:21
+    def submitDE(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "submitDE")
     }
   
   }
 
-  // @LINE:13
+  // @LINE:4
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:20
+    // @LINE:4
     def at(file:String): Call = {
-      implicit val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public")))
-      Call("GET", _prefix + { _defaultPrefix } + "public/" + implicitly[play.api.mvc.PathBindable[String]].unbind("file", file))
+    
+      (file: @unchecked) match {
+      
+        // @LINE:4
+        case (file) if file == "robots.txt" =>
+          implicit val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"), ("file", "robots.txt")))
+          Call("GET", _prefix + { _defaultPrefix } + "robots.txt")
+      
+        // @LINE:23
+        case (file)  =>
+          implicit val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public")))
+          Call("GET", _prefix + { _defaultPrefix } + "public/" + implicitly[play.api.mvc.PathBindable[String]].unbind("file", file))
+      
+      }
+    
     }
   
-    // @LINE:13
+    // @LINE:7
     def versioned(file:Asset): Call = {
       implicit val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
-    }
-  
-  }
-
-  // @LINE:8
-  class ReverseCountController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:8
-    def count(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "count")
     }
   
   }
