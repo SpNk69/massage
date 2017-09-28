@@ -78,15 +78,15 @@ Seq[Any](format.raw/*1.65*/("""
                 </li>
 
                 <li>
-                    <a class="page-scroll" href='"""),_display_(/*47.51*/routes/*47.57*/.HomeController.germanVersion),format.raw/*47.86*/("""'><img src='"""),_display_(/*47.99*/routes/*47.105*/.Assets.at("images/img/flag-de2.png")),format.raw/*47.142*/("""' class="flag flag-lt" alt="German" /></a>
+                    <a class="page-scroll" href='"""),_display_(/*47.51*/routes/*47.57*/.HomeController.germanVersion),format.raw/*47.86*/("""'><img src='"""),_display_(/*47.99*/routes/*47.105*/.Assets.at("images/img/flag-de2.png")),format.raw/*47.142*/("""' alt="Deutsche sprache" /></a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href='"""),_display_(/*51.51*/routes/*51.57*/.HomeController.pagrindinisLT),format.raw/*51.86*/("""'><img src='"""),_display_(/*51.99*/routes/*51.105*/.Assets.at("images/img/flag-lt2.png")),format.raw/*51.142*/("""' class="flag flag-lt" alt="Lithuanian" /></a>
+                    <a class="page-scroll" href='"""),_display_(/*51.51*/routes/*51.57*/.HomeController.pagrindinisLT),format.raw/*51.86*/("""'><img src='"""),_display_(/*51.99*/routes/*51.105*/.Assets.at("images/img/flag-lt2.png")),format.raw/*51.142*/("""' alt="Litauische sprache" /></a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href=""""),_display_(/*55.51*/routes/*55.57*/.HomeController.russianVersion),format.raw/*55.87*/(""""><img src='"""),_display_(/*55.100*/routes/*55.106*/.Assets.at("images/img/flag-rus.png")),format.raw/*55.143*/("""' class="flag flag-lt" alt="Russian" /></a>
+                    <a class="page-scroll" href=""""),_display_(/*55.51*/routes/*55.57*/.HomeController.russianVersion),format.raw/*55.87*/(""""><img src='"""),_display_(/*55.100*/routes/*55.106*/.Assets.at("images/img/flag-rus.png")),format.raw/*55.143*/("""' alt="Russische sprache" /></a>
                 </li>
 
             </ul>
@@ -124,9 +124,11 @@ Seq[Any](format.raw/*1.65*/("""
     <div class="row">
 
         <div class="col-lg-6 ">
-            <img src='"""),_display_(/*93.24*/routes/*93.30*/.Assets.at("images/img/as2.jpg")),format.raw/*93.62*/("""' class="img-circle" alt="Medicine massage" height="600">
+            <img src='"""),_display_(/*93.24*/routes/*93.30*/.Assets.at("images/img/Vida.jpg")),format.raw/*93.63*/("""' class="img-circle" alt="Vida Polescuk" height="600">
+
 
         </div>
+        <p></p>
         <div class="col-lg-6 ">
 
             <h2 align="center"><u>Bildung</u></h2>
@@ -134,8 +136,8 @@ Seq[Any](format.raw/*1.65*/("""
                 <li>Vilnius Höhere Medizinische Fakultät Litauen.</li>
                 <li> Klaipeda Universität. Bachelor Öffentliches Gesundheitswesen verliehen. Litauen.</li>
                 <li> 2010 - "Baltic SPA Profi" Kurse (Lettland), Wellness-Massagen.</li>
-                <li>2012 - Zentrum für Entwicklung und Spezialisierung des Pflegepersonals.</li>
-                <li>   Zertifikat Nr 120146 KV - das Recht hat therapeutische Massage zu machen.</li>
+                <li>2012 - Zentrum für Entwicklung und Spezialisierung des Pflegepersonals: Zertifikat Nr 120146 KV - das Recht hat therapeutische Massage zu machen.</li>
+
             </ul>
             <p></p>
 
@@ -151,10 +153,10 @@ Seq[Any](format.raw/*1.65*/("""
             <ul>
 
                 <li>Klassische Segmentmassage </li>
-                <li>Hot-Cold Stone Massage</li>
-                <li>Lymphdrainage Massage</li>
-                <li>Thai Fußmassage</li>
-                <li>Traditionelle Ayurveda-Massage</li>
+                <li>Hot Stone Massage</li>
+                <li>Manuelle Lymphdrainage </li>
+                <li>Thai-Fußmassage</li>
+                <li>Traditional Kerala Ayurveda-Massage</li>
             </ul>
 
         </div>
@@ -167,7 +169,7 @@ Seq[Any](format.raw/*1.65*/("""
 <!-- Download Section -->
 <section id="massagen" class="content-section text-center">
     <div class="download-section">
-        <h2 id="vienas">Sveikatą gerinantys masažai</h2>
+        <h2 id="vienas">Gesundheitsverbessernde Massagen</h2>
         <div class="container">
 
             <div class="row">
@@ -180,7 +182,7 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="limfodrenazinis" class="collapse">
-                        <!--<div class="text-center"><img src='"""),_display_(/*149.65*/routes/*149.71*/.Assets.at("images/img/massage164.jpg")),format.raw/*149.110*/("""'
+                        <!--<div class="text-center"><img src='"""),_display_(/*151.65*/routes/*151.71*/.Assets.at("images/img/massage164.jpg")),format.raw/*151.110*/("""'
                                                       class="img-circle" alt="Medicine massage" width="250"
                                                       height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
@@ -188,20 +190,33 @@ Seq[Any](format.raw/*1.65*/("""
 
 
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo" >
-                                Lymphdrainage Körpermassage
+                                Manuelle Lymphdrainage
                             </button>
-                            <div id="limfo" class="collapse customWidth">      <p class="massageText customWidth">Die wichtigsten Eigenschaften der ätherischen Öle
-                                ÄtherischeÖle sind besondere Kostbarkeiten, die uns die Natur schenkt. Sie
-                                enthalten die Lebenskraft der Pflanzen in konzentrierter Form. Faktoren wie Stress,
-                                Hektik und negative Emotionen vermindern unsere Lebensqualität. Die anregenden
-                                und wohlriechenden Düfte von naturreinen ätherischen Ölen können diese Faktoren
-                                lindern und wirken sich harmonisierend auf Körper und Geist.
+                            <div id="limfo" class="collapse customWidth">      <p class="massageText customWidth">Es ist eine sichere effektive Möglichkeit, die Gesundheit zu fördern und zu pflegen Wohlbefinden . Bei gesunden Menschen - es ist eine vorbeugende Maßnahme normalen Stoffwechsel aufrecht zu erhalten. Während der Massage aktiviert die Regeneration geschädigter Weichgewebe, entzündliche Prozesse zu verlangsamen, stärkt das Immunsystem, verbessert die Sauerstoffversorgung der Gewebe. Dies hilft, überschüssige Flüssigkeit aus dem Gewebe und Organe zu beseitigen.</br>
+                                Lymphdrainage ist geeignet für diejenigen, die die Schwellung der Beine fühlen, Schwellungen oder einfach Müdigkeit. Nach einem langen Tag, er entspannt müde Beine und gibt ein Gefühl von Leichtigkeit. Es eignet sich auch für Menschen, deren Füße sind immer kalt.</br>
+                                Diese Massage ist für Frauen und Männer.</br>
+                                Für die Behandlung - empfiehlt jeden Tag, für die Prävention - 2-3 mal pro Woche.</br>
+                                Der gewünschte Effekt wird nach 15 Prozeduren erreicht.
                             </p> </div>
 
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo2" >
-                                Lymphdrainage Gesichtsmassage
+                                Manuelle Lymphdrainage Gesicht
                             </button>
-                            <div id="limfo2" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
+                            <div id="limfo2" class="collapse customWidth"><p class="massageText customWidth">Gesichts Lymphdrainage  ist eine Technik der manuellen Therapie, es handelt sich um eine sanfte, und langsame Massage in Richtung der Lymphknoten zur Beseitigung der Giftstoffe auf natürliche Weise, durch die Bewegung der  Haut. Giftstoffe werden dann mobilisiert.</br>
+
+                                Die Lymphdrainage Gesichtsmassage verbessert das natürliche Aussehen im Gesicht und  verjüngt, sie hilft zur Ausscheidung von Flüssigkeiten und Toxinen die in den Geweben angesammelt sind, fördert die Durchblutung und stärkt die Muskulatur.</br>
+
+                                Verhindert das Auftreten von Müdigkeit in unserem Gesicht, verblasst die Zeiches des Alters und macht die Haut frisch und schön. Die Haut sieht jünger und glatter aus.</br>
+
+                                Es gibt viele Vorteile für diese Art von Lymphdrainage:</br>
+                                Detoxifying</br>
+                                Sie eignet sich hervorragend, um Säcke unter den Augen und Schwellungen zu reduzieren.</br>
+                                Fördert die Zellreparatur und verbessern die Haut.</br>
+                                Verbessert die Mikrozirkulation der Nährstoffe.</br>
+                                Erhöht das Sauerstoff.</br>
+                                Verbessert bei Menschen mit Akne das Haut aussehen.</br>
+                                Die Technik hat eine beruhigende Wirkung, hilft bei Problemen von Stress und Schlaflosigkeit.</br>
+                                Fungiert auch als Nervensystem Beruhigung, so ist es sehr für diejenigen empfohlen, die an Stress und Angst leiden.</p> </div>
 
                         </div>
                     </div>
@@ -217,7 +232,7 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="karstusaltu" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*186.67*/routes/*186.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*186.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*201.67*/routes/*201.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*201.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
@@ -246,16 +261,21 @@ Seq[Any](format.raw/*1.65*/("""
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#segmentinis">Klassisch
-                        Segmentale Rückenmassage
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#segmentinis">Rücken Massage
                     </button>
                     <p></p>
                     <div id="segmentinis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*220.67*/routes/*220.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*220.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*234.67*/routes/*234.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*234.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
-                            <p class="massageText customWidth">Entspannt verspannte Rückenmuskeln, verbessert die Gewebestruktur, unterstützt eine bessere Körperhaltung, lindert Entzündungen der Nervenwurzeln (Radikulitis), z.B. nach einem chirurgischen Eingriff an der Wirbelsäule.</p>
+                            <p class="massageText customWidth">Die Rücken Massage ist eine gelungene Synthese der unterschiedlichsten Techniken aus Ost und West mit dem einen Ziel: den Rücken und insbesondere den Schulter- und Nackenbereich optimal zu entspannen. Anschaulich, leicht verständlich und Schritt für Schritt erklärt erarbeiten wir Techniken und Griffe um die Rückenmuskulatur besonders tiefgehend zu entspannen und somit das Wohlbefinden erheblich zu steigern.
+                                Die Rücken Massage ist eine feinfühlige, stark energetische Rückenmassage, die imstande ist, Blockaden zu lösen.
+                                </br> Wirksam für folgende Indikationen:
+                                </br> Bei Verspannungen im Nacken und Schulterbereich
+                                </br> Wirkungsvolle Hilfe zur Stressbewältigung
+                                </br> Zur Linderung von spannungsbedingten Kopfschmerzen
+                                Regulation von Durchblutungsstörungen im Bereich des oberen Rücken.</p>
 
 
                         </div>
@@ -276,7 +296,7 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="demo33" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*245.67*/routes/*245.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*245.112*/("""'
+                        <!--  <div class="text-center"><img src='"""),_display_(/*265.67*/routes/*265.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*265.112*/("""'
                                                         class="img-circle" alt="Medicine massage" width="250"
                                                         height="250"></a></div>-->
                         <div class="customBackGroundOfDiv" align="center">
@@ -286,17 +306,13 @@ Seq[Any](format.raw/*1.65*/("""
                             <div id="galva" class="collapse customWidth"><p class="massageText">Entspannt bei Stress, lindert Krämpfe, verbessert den Blutkreislauf.</p> </div>
 
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#peciai" >
-                                Schulterhalsmassage
+                                Massage Schulter - Hals - Hände
                             </button>
-                            <div id="peciai" class="collapse customWidth"><p class="massageText">Die effektivste Behandlung, sowie ein Heilmittel für die Beseitigung von unangenehmen Symptomen. Nach der ersten Massage des Halses, fühlen Sie eine allgemeine Verbesserung in Ihrem Gesundheitszustand. Nach einem vollen Massagen verschwinden schmerzhafte Empfindungen, die Arbeitskapazität steigt, Schlaflosigkeit und Reizbarkeit verschwinden. Nackenmassage ist ein ausgezeichnetes Werkzeug, um Kopfschmerzen loszuwerden.</p> </div>
+                            <div id="peciai" class="collapse customWidth"><p class="massageText">Die effektivste Behandlung, sowie ein Heilmittel für die Beseitigung von unangenehmen Symptomen. Nach der ersten Massage des Halses, fühlen Sie eine allgemeine Verbesserung in Ihrem Gesundheitszustand. Nach einem vollen Massagen verschwinden schmerzhafte Empfindungen, die Arbeitskapazität steigt, Schlaflosigkeit und Reizbarkeit verschwinden. Nackenmassage ist ein ausgezeichnetes Werkzeug, um Kopfschmerzen loszuwerden.
+                                </br>Dies ist eine hervorragende Maßnahme zur Reduzierung von Kopf, Hals, Schulter Schmerzen, Taubheit Hände.</p> </div>
 
 
 
-
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#krutines" >
-                                Brustmassage
-                            </button>
-                            <div id="krutines" class="collapse customWidth"><p class="massageText">Reduziert die Spannung der Brust, sowie reduziert Infektionen der Atemwege (Bronchitis, Grippe, Asthma und so weiter.).</p> </div>
 
 
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pilvo" >
@@ -306,14 +322,15 @@ Seq[Any](format.raw/*1.65*/("""
 
 
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#juosmens" >
-                                Lendenwirbelmassage
+                                Lendenwirbel - Gesäß - Beinmassage
                             </button>
-                            <div id="juosmens" class="collapse customWidth"><p class="massageText">Reduziert Schmerzen nach einem operativen Eingriff, verbessert den Blutkreislauf, lindert Entzündungen der Nervenwurzeln.</p></div>
+                            <div id="juosmens" class="collapse customWidth"><p class="massageText">Verbessert die Blut- und Lymphzirkulation im unteren Rücken und in den Beinen, entspannt enge Muskeln,  Gesäß, Beinschmerzen, stärkt die geschwächten Muskeln.
+                                Verringert den Schmerz nach der Operation, reduziert die Entzündung der Nervenwurzeln.</p></div>
 
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pedu" >
-                                Beinmassage
+                                Entspannende Fussmassage
                             </button>
-                            <div id="pedu" class="collapse customWidth"><p class="massageText">Tekstas</p></div>
+                            <div id="pedu" class="collapse customWidth"><p class="massageText">Gebrauchte müde Füsse zu entspannen, erhöhen Vitalität, Verbesserung der Immunität. Dieses Verfahren eignet sich für viele Menschen, die stehen oder eine Menge Leute auch, die einen kalten Fusse haben. Massage der Füsse hilft, den ganzen Körper wiederherzustellen und zu atmen.</p></div>
 
 
 
@@ -326,16 +343,17 @@ Seq[Any](format.raw/*1.65*/("""
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#vyresnio">Masažas vyresnio amžiaus žmonėms
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#vyresnio">Massage für ältere Menscher
                     </button>
                     <p></p>
                     <div id="vyresnio" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*299.67*/routes/*299.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*299.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*316.67*/routes/*316.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*316.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
-                            <p class="massageText customWidth"> Masažas yra būtina ir labai naudinga procedūra pagyvenusiems žmonėms, pensininkams. Tyrimai parodė, kad masažas lėtina senėjimo procesą. Taip pat masažas veikia raminančiai visą organizmą ir gali sumažinti skausmus. Masažas gali padėti žmonėms, kenčiantiems raumenų skausmus ar sergantiems atritu. Kada žmogus kenčia, jis tampa vis mažiau aktyvus, nukenčia gyvenimo kokybė ir sveikata. Masažas gerina kraujotaką,  pašalina raumenų nuovargį ir raumenys įgauna tonusą. Dėl to pagerėja pagyvenusio žmogaus gyvenimo kokybė.
-                                </br>Prieš masažą Jums gerai būtų pasikonsultuoti su savo gydytoju. Kai tik gausite gydytojo leidimą masažui, jus drąsiai galite kreiptis pas mane.  </p>
+                            <p class="massageText customWidth"> Massage ist ein notwendiges und sehr nützliches Verfahren für ältere Menschen, Rentner. Studien haben gezeigt, dass die Massage den Alterungsprozess verlangsamt. Auch Massage hat eine beruhigende Wirkung im ganzen Körper und kann Schmerzen reduzieren.
+                                </br>Мassage kann Menschen helfen, die unter Muskelschmerzen leiden: Zum Beispiel, diejenigen, die an Arthritis leiden, Massage hilft, Schmerzen zu reduzieren, erhöht die Amplitude der Bewegung in den Gelenken. Wenn eine Person leidet, wird sie immer weniger aktiv und beeinflusst die Lebensqualität und Gesundheit. Massage verbessert die Durchblutung, beseitigt Muskelermüdung und Muskeln erhalten Ton. Dies verbessert die Lebensqualität einer älteren Person.
+                                </br>Vor einer Massage ist es ratsam, einen Arzt zu konsultieren. Sobald Sie die Erlaubnis vom Arzt für eine Massage bekommen, können Sie sich mit mir in Verbindung setzen.  </p>
 
 
                         </div>
@@ -348,15 +366,16 @@ Seq[Any](format.raw/*1.65*/("""
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#atpalaiduojantis">Ganzkörpermassage
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#atpalaiduojantis">Entspannende Ganzkörpermassagе
                     </button>
                     <p></p>
                     <div id="atpalaiduojantis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*321.67*/routes/*321.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*321.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*339.67*/routes/*339.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*339.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
-                            <p class="massageText customWidth"> Entspannt Körper und Geist, lindert Stress und Nervosität, stärkt das Immunsystem, reduziert Muskelkrämpfe und chronische Verspannungen, lindert Schmerzen, verbessert den Lymphfluss, wirkt sich positiv auf die allgemeine Gesundheit aus</p>
+                            <p class="massageText customWidth"> Entspannende Massage für diejenigen, die nach einem anstrengenden Tag entspannen wollen, vergessen und weg von der täglichen Routine. Beseitigt Spannung und Stress, Anfälle, und Kopfschmerzen, entspannt die Muskeln, wirkt sich positiv auf den inneren Zustand des Körpers, verbessert die Stimmung und liefert die Energie wieder hergestellt.
+                            </br> Absolute Entspannung von Kopf bis Fuss. Die umfassende Massage löst Verspannungen, lockert Muskeln und verleiht neue Energie und Vitalität.</p>
 
                         </div>
                     </div>
@@ -369,15 +388,16 @@ Seq[Any](format.raw/*1.65*/("""
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#ajurvedinis">Ajurvedinis krūtų masažas moterims
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#ajurvedinis">Ayurvedische Brüstmassage für Frauen
                     </button>
                     <p></p>
                     <div id="ajurvedinis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*342.67*/routes/*342.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*342.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*361.67*/routes/*361.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*361.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
-                            <p class="massageText customWidth"> Aprašymas</p>
+                            <p class="massageText customWidth"> Ayurveda empfiehlt der Brüstemassage, denn hierdurch entsteht ein optimaler Stimulus zur Harmonisierung des weiblichen Hormonzyklus. Die Massage sorgt für straffe Haut und straffes Bindegewebe, verhindert Brustschmerzen, Verspannungen und Entzündungen im Brustbereich, beugt Zystenbildung und Brustkrebs vor, aktiviert das Herz und das Herzchakra.
+                                </br>Die Massage wird mit der Verwendung von Pflanzenölen durchgeführt und dauert bis zu einer Stunde. Inklusive Arbeit mit dem Hals (Rücken- und Vorderflächen) und Schultern, Arbeiten mit dem Unterarmbereich, Hände, Bauch und natürlich mit der Brust.</p>
 
                         </div>
                     </div>
@@ -391,35 +411,23 @@ Seq[Any](format.raw/*1.65*/("""
 
 
                     <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#anticeliulitinis" >
-                        Anticeliulitinis masažas
+                        Anti-Cellulite Handmassage
                     </button>
                     <p></p>
                     <div id="anticeliulitinis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*364.67*/routes/*364.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*364.112*/("""'
+                        <!--  <div class="text-center"><img src='"""),_display_(/*384.67*/routes/*384.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*384.112*/("""'
                                                         class="img-circle" alt="Medicine massage" width="250"
                                                         height="250"></a></div>-->
                         <div class="customBackGroundOfDiv" align="center">
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#sedmenys" >
-                                Sėdmenims, šlaunims
-                            </button>
-                            <div id="sedmenys" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pilvui" >
-                                Pilvui
-                            </button>
-                            <div id="pilvui" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#rankos" >
-                                Rankoms
-                            </button>
-                            <div id="rankos" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
+                           <p class="massageText customWidth">Dies ist eine besonders effektive Möglichkeit zur Bekämpfung von Cellulite, die verwendet wird, uneben subkutanes (Cellulite) Probleme in spezifischen Problembereichen zu reduzieren - Oberschenkel, Gesäß und Bauch.
+                                     </br> Massage stimuliert die Zirkulation der Lymphe, erhöht Muskeltonus und Kontraktion durch die Reduzierung von Cellulite und Schwellungen. Löscht den Körper von Toxinen und hat eine ausgeprägte kosmetische Wirkung.
+                            </br> Dies ist die kleinste Methode - verlässt keine Prellungen.</p></div>
 
 
 
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#tibeto" >
-                                Naudojant Tibeto vakuumine Taure
-                            </button>
-                            <div id="tibeto" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
+
 
                         </div>
                     </div>
@@ -497,36 +505,36 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-                            """),_display_(/*466.30*/helper/*466.36*/.form(action = routes.HomeController.submitDE(),'class -> "form-horizontal")/*466.112*/ {_display_(Seq[Any](format.raw/*466.114*/("""
+                            """),_display_(/*474.30*/helper/*474.36*/.form(action = routes.HomeController.submitDE(),'class -> "form-horizontal")/*474.112*/ {_display_(Seq[Any](format.raw/*474.114*/("""
 
 
 
 
-                            """),_display_(/*471.30*/helper/*471.36*/.input(contactForm("Name"),'class->"form-control")/*471.86*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*471.115*/("""
-                            """),format.raw/*472.29*/("""<input type="text" name=""""),_display_(/*472.55*/contactForm/*472.66*/.field("firstName").name),format.raw/*472.90*/(""""  placeholder="Ihr Name" id=""""),_display_(/*472.121*/id),format.raw/*472.123*/("""" """),_display_(/*472.126*/toHtmlArgs(args)),_display_(/*472.143*/if(contactForm.hasErrors)/*472.168*/ {_display_(Seq[Any](format.raw/*472.170*/("""
-                            """),format.raw/*473.29*/("""<option value='"""),_display_(/*473.45*/contactForm/*473.56*/.field("firstName").value),format.raw/*473.81*/("""'></option>""")))}),format.raw/*473.93*/("""
-                            """)))}),format.raw/*474.30*/("""
+                            """),_display_(/*479.30*/helper/*479.36*/.input(contactForm("Name"),'class->"form-control")/*479.86*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*479.115*/("""
+                            """),format.raw/*480.29*/("""<input type="text" name=""""),_display_(/*480.55*/contactForm/*480.66*/.field("firstName").name),format.raw/*480.90*/(""""  placeholder="Ihr Name" id=""""),_display_(/*480.121*/id),format.raw/*480.123*/("""" """),_display_(/*480.126*/toHtmlArgs(args)),_display_(/*480.143*/if(contactForm.hasErrors)/*480.168*/ {_display_(Seq[Any](format.raw/*480.170*/("""
+                            """),format.raw/*481.29*/("""<option value='"""),_display_(/*481.45*/contactForm/*481.56*/.field("firstName").value),format.raw/*481.81*/("""'></option>""")))}),format.raw/*481.93*/("""
+                            """)))}),format.raw/*482.30*/("""
 
 
 
-                            """),format.raw/*478.29*/("""<div id="xxx">
-                                """),_display_(/*479.34*/for(error <- contactForm("firstName").errors) yield /*479.79*/ {_display_(Seq[Any](format.raw/*479.81*/("""
-                                """),format.raw/*480.33*/("""<p id="xxxx">"""),_display_(/*480.47*/error/*480.52*/.format(messages())),format.raw/*480.71*/("""</p>
-                                """)))}),format.raw/*481.34*/("""</div>
+                            """),format.raw/*486.29*/("""<div id="xxx">
+                                """),_display_(/*487.34*/for(error <- contactForm("firstName").errors) yield /*487.79*/ {_display_(Seq[Any](format.raw/*487.81*/("""
+                                """),format.raw/*488.33*/("""<p id="xxxx">"""),_display_(/*488.47*/error/*488.52*/.format(messages())),format.raw/*488.71*/("""</p>
+                                """)))}),format.raw/*489.34*/("""</div>
 
 
 
-                            """),_display_(/*485.30*/helper/*485.36*/.input(contactForm("E-Mail"),'class->"form-control")/*485.88*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*485.117*/("""
-                            """),format.raw/*486.29*/("""<input type="text" name=""""),_display_(/*486.55*/contactForm/*486.66*/.field("email").name),format.raw/*486.86*/(""""  placeholder="Ihre E-Mail" id=""""),_display_(/*486.120*/id),format.raw/*486.122*/("""" """),_display_(/*486.125*/toHtmlArgs(args)),_display_(/*486.142*/if(contactForm.hasErrors)/*486.167*/ {_display_(Seq[Any](format.raw/*486.169*/("""
-                            """),format.raw/*487.29*/("""<option value='"""),_display_(/*487.45*/contactForm/*487.56*/.field("email").value),format.raw/*487.77*/("""'></option>""")))}),format.raw/*487.89*/("""
-                            """)))}),format.raw/*488.30*/("""
+                            """),_display_(/*493.30*/helper/*493.36*/.input(contactForm("E-Mail"),'class->"form-control")/*493.88*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*493.117*/("""
+                            """),format.raw/*494.29*/("""<input type="text" name=""""),_display_(/*494.55*/contactForm/*494.66*/.field("email").name),format.raw/*494.86*/(""""  placeholder="Ihre E-Mail" id=""""),_display_(/*494.120*/id),format.raw/*494.122*/("""" """),_display_(/*494.125*/toHtmlArgs(args)),_display_(/*494.142*/if(contactForm.hasErrors)/*494.167*/ {_display_(Seq[Any](format.raw/*494.169*/("""
+                            """),format.raw/*495.29*/("""<option value='"""),_display_(/*495.45*/contactForm/*495.56*/.field("email").value),format.raw/*495.77*/("""'></option>""")))}),format.raw/*495.89*/("""
+                            """)))}),format.raw/*496.30*/("""
 
 
 
-                            """),format.raw/*492.29*/("""<div id="xxx">
-                                """),_display_(/*493.34*/for(error <- contactForm("email").errors) yield /*493.75*/ {_display_(Seq[Any](format.raw/*493.77*/("""
-                                """),format.raw/*494.33*/("""<p id="xxxx">"""),_display_(/*494.47*/error/*494.52*/.format(messages())),format.raw/*494.71*/("""</p>
-                                """)))}),format.raw/*495.34*/("""</div>
+                            """),format.raw/*500.29*/("""<div id="xxx">
+                                """),_display_(/*501.34*/for(error <- contactForm("email").errors) yield /*501.75*/ {_display_(Seq[Any](format.raw/*501.77*/("""
+                                """),format.raw/*502.33*/("""<p id="xxxx">"""),_display_(/*502.47*/error/*502.52*/.format(messages())),format.raw/*502.71*/("""</p>
+                                """)))}),format.raw/*503.34*/("""</div>
 
 
 
@@ -534,42 +542,42 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-                            """),_display_(/*503.30*/helper/*503.36*/.input(field = contactForm("Frage"))/*503.72*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*503.101*/("""
-                            """),format.raw/*504.29*/("""<div>
-                                <textarea class="form-control" name=""""),_display_(/*505.71*/contactForm("textbox")/*505.93*/.name),format.raw/*505.98*/("""" id=""""),_display_(/*505.105*/id),format.raw/*505.107*/("""" placeholder="Ihre Nachricht" rows='5' cols='80'>"""),_display_(/*505.158*/if(contactForm.hasErrors)/*505.183*/{_display_(_display_(/*505.185*/contactForm/*505.196*/.field("textbox").value))}),format.raw/*505.220*/("""</textarea>
+                            """),_display_(/*511.30*/helper/*511.36*/.input(field = contactForm("Frage"))/*511.72*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*511.101*/("""
+                            """),format.raw/*512.29*/("""<div>
+                                <textarea class="form-control" name=""""),_display_(/*513.71*/contactForm("textbox")/*513.93*/.name),format.raw/*513.98*/("""" id=""""),_display_(/*513.105*/id),format.raw/*513.107*/("""" placeholder="Ihre Nachricht" rows='5' cols='80'>"""),_display_(/*513.158*/if(contactForm.hasErrors)/*513.183*/{_display_(_display_(/*513.185*/contactForm/*513.196*/.field("textbox").value))}),format.raw/*513.220*/("""</textarea>
                             </div>
-                            """)))}),format.raw/*507.30*/("""
-                            """),format.raw/*508.29*/("""<div id="xxx">
-                                """),_display_(/*509.34*/for(error <- contactForm("textbox").errors) yield /*509.77*/ {_display_(Seq[Any](format.raw/*509.79*/("""
-                                """),format.raw/*510.33*/("""<p id="xxxx">"""),_display_(/*510.47*/error/*510.52*/.format(messages())),format.raw/*510.71*/("""</p>
-                                """)))}),format.raw/*511.34*/("""</div>
+                            """)))}),format.raw/*515.30*/("""
+                            """),format.raw/*516.29*/("""<div id="xxx">
+                                """),_display_(/*517.34*/for(error <- contactForm("textbox").errors) yield /*517.77*/ {_display_(Seq[Any](format.raw/*517.79*/("""
+                                """),format.raw/*518.33*/("""<p id="xxxx">"""),_display_(/*518.47*/error/*518.52*/.format(messages())),format.raw/*518.71*/("""</p>
+                                """)))}),format.raw/*519.34*/("""</div>
 
 
 
                             <button type="submit"  class="btn btn-default" >Nachricht senden</button>
 
-                            <div id="flash">"""),_display_(/*517.46*/flash/*517.51*/.get("success")),format.raw/*517.66*/("""</div>
+                            <div id="flash">"""),_display_(/*525.46*/flash/*525.51*/.get("success")),format.raw/*525.66*/("""</div>
 
-                            """),_display_(/*519.30*/if(contactForm.hasGlobalErrors)/*519.61*/ {_display_(Seq[Any](format.raw/*519.63*/("""
-                            """),format.raw/*520.29*/("""<div id="xxx">
+                            """),_display_(/*527.30*/if(contactForm.hasGlobalErrors)/*527.61*/ {_display_(Seq[Any](format.raw/*527.63*/("""
+                            """),format.raw/*528.29*/("""<div id="xxx">
                                 <p class="error" >
-                                    """),_display_(/*522.38*/for(error <- contactForm.globalErrors) yield /*522.76*/ {_display_(Seq[Any](format.raw/*522.78*/("""
-                                """),format.raw/*523.33*/("""<p>"""),_display_(/*523.37*/error/*523.42*/.format(messages())),format.raw/*523.61*/("""</p>
-                                """),_display_(/*524.34*/for(error <- contactForm("email").errors) yield /*524.75*/ {_display_(Seq[Any](format.raw/*524.77*/("""
-                                """),format.raw/*525.33*/("""<p>"""),_display_(/*525.37*/error/*525.42*/.format(messages())),format.raw/*525.61*/("""</p>
-                                """)))}),format.raw/*526.34*/("""
-                                """)))}),format.raw/*527.34*/("""
-                                """),format.raw/*528.33*/("""</p>
+                                    """),_display_(/*530.38*/for(error <- contactForm.globalErrors) yield /*530.76*/ {_display_(Seq[Any](format.raw/*530.78*/("""
+                                """),format.raw/*531.33*/("""<p>"""),_display_(/*531.37*/error/*531.42*/.format(messages())),format.raw/*531.61*/("""</p>
+                                """),_display_(/*532.34*/for(error <- contactForm("email").errors) yield /*532.75*/ {_display_(Seq[Any](format.raw/*532.77*/("""
+                                """),format.raw/*533.33*/("""<p>"""),_display_(/*533.37*/error/*533.42*/.format(messages())),format.raw/*533.61*/("""</p>
+                                """)))}),format.raw/*534.34*/("""
+                                """)))}),format.raw/*535.34*/("""
+                                """),format.raw/*536.33*/("""</p>
                             </div>
-                            """)))}),format.raw/*530.30*/("""
-                            """)))}),format.raw/*531.30*/("""
+                            """)))}),format.raw/*538.30*/("""
+                            """)))}),format.raw/*539.30*/("""
 
 
-                            """),format.raw/*534.29*/("""<p></p>
+                            """),format.raw/*542.29*/("""<p></p>
                             <h3>Unsere sozialen Netzwerke</h3>
                             <ul class="list-inline banner-social-buttons">
                                 <li><a href="www.google.com" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-                                <li><a href=""""),_display_(/*538.47*/routes/*538.53*/.HomeController.toFaceBook),format.raw/*538.79*/("""" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
+                                <li><a href=""""),_display_(/*546.47*/routes/*546.53*/.HomeController.toFaceBook),format.raw/*546.79*/("""" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
                                 <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
                             </ul>
                         </div>
@@ -615,7 +623,7 @@ Seq[Any](format.raw/*1.65*/("""
             </div>
         </div>
     </div>
-    """),_display_(/*584.6*/if(contactForm.hasErrors)/*584.31*/{_display_(Seq[Any](format.raw/*584.32*/("""<script src=""""),_display_(/*584.46*/routes/*584.52*/.Assets.at("javascripts/js/returnToFormOnFailDE.js")),format.raw/*584.104*/(""""></script>""")))}),format.raw/*584.116*/("""</script>
+    """),_display_(/*592.6*/if(contactForm.hasErrors)/*592.31*/{_display_(Seq[Any](format.raw/*592.32*/("""<script src=""""),_display_(/*592.46*/routes/*592.52*/.Assets.at("javascripts/js/returnToFormOnFailDE.js")),format.raw/*592.104*/(""""></script>""")))}),format.raw/*592.116*/("""</script>
 
     <hr>
 </section>
@@ -645,10 +653,10 @@ Seq[Any](format.raw/*1.65*/("""
 </footer>
 
 <!-- jQuery -->
-<script src='"""),_display_(/*614.15*/routes/*614.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*614.70*/("""'></script>
+<script src='"""),_display_(/*622.15*/routes/*622.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*622.70*/("""'></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src='"""),_display_(/*617.15*/routes/*617.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*617.83*/("""'></script>
+<script src='"""),_display_(/*625.15*/routes/*625.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*625.83*/("""'></script>
 
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -658,7 +666,7 @@ Seq[Any](format.raw/*1.65*/("""
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtkVXlKJlSvm85a7oRDMLw4ZOZaxYwKxM&sensor=false"></script>
 
 <!-- Theme JavaScript -->
-<script src='"""),_display_(/*627.15*/routes/*627.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*627.66*/("""'></script>
+<script src='"""),_display_(/*635.15*/routes/*635.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*635.66*/("""'></script>
 
 </body>
 
@@ -683,11 +691,11 @@ Seq[Any](format.raw/*1.65*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Sep 23 21:27:49 CEST 2017
+                  DATE: Wed Sep 27 21:03:27 CEST 2017
                   SOURCE: /home/alex/git/web/app/views/germanContent.scala.html
-                  HASH: 7025173ded928c9c45d7d715696919dfc3513d59
-                  MATRIX: 1042->1|1178->66|1223->64|1250->82|1277->84|1324->123|1374->136|1402->138|1896->605|1911->611|1961->640|3291->1943|3306->1949|3356->1978|3396->1991|3412->1997|3471->2034|3635->2171|3650->2177|3700->2206|3740->2219|3756->2225|3815->2262|3983->2403|3998->2409|4049->2439|4090->2452|4106->2458|4165->2495|5336->3639|5351->3645|5404->3677|7558->5803|7574->5809|7636->5848|9852->8036|9868->8042|9925->8076|12110->10233|12126->10239|12183->10273|13261->11323|13277->11329|13339->11368|17251->15252|17267->15258|17324->15292|18846->16786|18862->16792|18919->16826|20029->17908|20045->17914|20102->17948|20965->18783|20981->18789|21043->18828|24594->22351|24610->22357|24697->22433|24739->22435|24801->22469|24817->22475|24877->22525|24946->22554|25004->22583|25058->22609|25079->22620|25125->22644|25185->22675|25210->22677|25242->22680|25281->22697|25317->22722|25359->22724|25417->22753|25461->22769|25482->22780|25529->22805|25573->22817|25635->22847|25696->22879|25772->22927|25834->22972|25875->22974|25937->23007|25979->23021|25994->23026|26035->23045|26105->23083|26172->23122|26188->23128|26250->23180|26319->23209|26377->23238|26431->23264|26452->23275|26494->23295|26557->23329|26582->23331|26614->23334|26653->23351|26689->23376|26731->23378|26789->23407|26833->23423|26854->23434|26897->23455|26941->23467|27003->23497|27064->23529|27140->23577|27198->23618|27239->23620|27301->23653|27343->23667|27358->23672|27399->23691|27469->23729|27540->23772|27556->23778|27602->23814|27671->23843|27729->23872|27833->23948|27865->23970|27892->23975|27928->23982|27953->23984|28033->24035|28069->24060|28101->24062|28123->24073|28172->24097|28280->24173|28338->24202|28414->24250|28474->24293|28515->24295|28577->24328|28619->24342|28634->24347|28675->24366|28745->24404|28931->24562|28946->24567|28983->24582|29048->24619|29089->24650|29130->24652|29188->24681|29319->24784|29374->24822|29415->24824|29477->24857|29509->24861|29524->24866|29565->24885|29631->24923|29689->24964|29730->24966|29792->24999|29824->25003|29839->25008|29880->25027|29950->25065|30016->25099|30078->25132|30179->25201|30241->25231|30301->25262|30694->25627|30710->25633|30758->25659|32181->27056|32216->27081|32256->27082|32298->27096|32314->27102|32389->27154|32434->27166|32845->27549|32861->27555|32932->27604|33022->27666|33038->27672|33122->27734|33657->28241|33673->28247|33740->28292
-                  LINES: 30->1|33->2|36->1|37->3|38->4|38->4|38->4|40->6|49->15|49->15|49->15|81->47|81->47|81->47|81->47|81->47|81->47|85->51|85->51|85->51|85->51|85->51|85->51|89->55|89->55|89->55|89->55|89->55|89->55|127->93|127->93|127->93|183->149|183->149|183->149|220->186|220->186|220->186|254->220|254->220|254->220|279->245|279->245|279->245|333->299|333->299|333->299|355->321|355->321|355->321|376->342|376->342|376->342|398->364|398->364|398->364|500->466|500->466|500->466|500->466|505->471|505->471|505->471|505->471|506->472|506->472|506->472|506->472|506->472|506->472|506->472|506->472|506->472|506->472|507->473|507->473|507->473|507->473|507->473|508->474|512->478|513->479|513->479|513->479|514->480|514->480|514->480|514->480|515->481|519->485|519->485|519->485|519->485|520->486|520->486|520->486|520->486|520->486|520->486|520->486|520->486|520->486|520->486|521->487|521->487|521->487|521->487|521->487|522->488|526->492|527->493|527->493|527->493|528->494|528->494|528->494|528->494|529->495|537->503|537->503|537->503|537->503|538->504|539->505|539->505|539->505|539->505|539->505|539->505|539->505|539->505|539->505|539->505|541->507|542->508|543->509|543->509|543->509|544->510|544->510|544->510|544->510|545->511|551->517|551->517|551->517|553->519|553->519|553->519|554->520|556->522|556->522|556->522|557->523|557->523|557->523|557->523|558->524|558->524|558->524|559->525|559->525|559->525|559->525|560->526|561->527|562->528|564->530|565->531|568->534|572->538|572->538|572->538|618->584|618->584|618->584|618->584|618->584|618->584|618->584|648->614|648->614|648->614|651->617|651->617|651->617|661->627|661->627|661->627
+                  HASH: 208998f4a9609059d1a592520cb3ca840413cdb7
+                  MATRIX: 1042->1|1178->66|1223->64|1250->82|1277->84|1324->123|1374->136|1402->138|1896->605|1911->611|1961->640|3291->1943|3306->1949|3356->1978|3396->1991|3412->1997|3471->2034|3624->2160|3639->2166|3689->2195|3729->2208|3745->2214|3804->2251|3959->2379|3974->2385|4025->2415|4066->2428|4082->2434|4141->2471|5301->3604|5316->3610|5370->3643|7518->5763|7534->5769|7596->5808|11900->10084|11916->10090|11973->10124|14114->12237|14130->12243|14187->12277|16029->14091|16045->14097|16107->14136|20138->18139|20154->18145|20211->18179|21996->19936|22012->19942|22069->19976|23459->21338|23475->21344|23532->21378|25019->22837|25035->22843|25097->22882|27796->25553|27812->25559|27899->25635|27941->25637|28003->25671|28019->25677|28079->25727|28148->25756|28206->25785|28260->25811|28281->25822|28327->25846|28387->25877|28412->25879|28444->25882|28483->25899|28519->25924|28561->25926|28619->25955|28663->25971|28684->25982|28731->26007|28775->26019|28837->26049|28898->26081|28974->26129|29036->26174|29077->26176|29139->26209|29181->26223|29196->26228|29237->26247|29307->26285|29374->26324|29390->26330|29452->26382|29521->26411|29579->26440|29633->26466|29654->26477|29696->26497|29759->26531|29784->26533|29816->26536|29855->26553|29891->26578|29933->26580|29991->26609|30035->26625|30056->26636|30099->26657|30143->26669|30205->26699|30266->26731|30342->26779|30400->26820|30441->26822|30503->26855|30545->26869|30560->26874|30601->26893|30671->26931|30742->26974|30758->26980|30804->27016|30873->27045|30931->27074|31035->27150|31067->27172|31094->27177|31130->27184|31155->27186|31235->27237|31271->27262|31303->27264|31325->27275|31374->27299|31482->27375|31540->27404|31616->27452|31676->27495|31717->27497|31779->27530|31821->27544|31836->27549|31877->27568|31947->27606|32133->27764|32148->27769|32185->27784|32250->27821|32291->27852|32332->27854|32390->27883|32521->27986|32576->28024|32617->28026|32679->28059|32711->28063|32726->28068|32767->28087|32833->28125|32891->28166|32932->28168|32994->28201|33026->28205|33041->28210|33082->28229|33152->28267|33218->28301|33280->28334|33381->28403|33443->28433|33503->28464|33896->28829|33912->28835|33960->28861|35383->30258|35418->30283|35458->30284|35500->30298|35516->30304|35591->30356|35636->30368|36047->30751|36063->30757|36134->30806|36224->30868|36240->30874|36324->30936|36859->31443|36875->31449|36942->31494
+                  LINES: 30->1|33->2|36->1|37->3|38->4|38->4|38->4|40->6|49->15|49->15|49->15|81->47|81->47|81->47|81->47|81->47|81->47|85->51|85->51|85->51|85->51|85->51|85->51|89->55|89->55|89->55|89->55|89->55|89->55|127->93|127->93|127->93|185->151|185->151|185->151|235->201|235->201|235->201|268->234|268->234|268->234|299->265|299->265|299->265|350->316|350->316|350->316|373->339|373->339|373->339|395->361|395->361|395->361|418->384|418->384|418->384|508->474|508->474|508->474|508->474|513->479|513->479|513->479|513->479|514->480|514->480|514->480|514->480|514->480|514->480|514->480|514->480|514->480|514->480|515->481|515->481|515->481|515->481|515->481|516->482|520->486|521->487|521->487|521->487|522->488|522->488|522->488|522->488|523->489|527->493|527->493|527->493|527->493|528->494|528->494|528->494|528->494|528->494|528->494|528->494|528->494|528->494|528->494|529->495|529->495|529->495|529->495|529->495|530->496|534->500|535->501|535->501|535->501|536->502|536->502|536->502|536->502|537->503|545->511|545->511|545->511|545->511|546->512|547->513|547->513|547->513|547->513|547->513|547->513|547->513|547->513|547->513|547->513|549->515|550->516|551->517|551->517|551->517|552->518|552->518|552->518|552->518|553->519|559->525|559->525|559->525|561->527|561->527|561->527|562->528|564->530|564->530|564->530|565->531|565->531|565->531|565->531|566->532|566->532|566->532|567->533|567->533|567->533|567->533|568->534|569->535|570->536|572->538|573->539|576->542|580->546|580->546|580->546|626->592|626->592|626->592|626->592|626->592|626->592|626->592|656->622|656->622|656->622|659->625|659->625|659->625|669->635|669->635|669->635
                   -- GENERATED --
               */
           

@@ -84,15 +84,15 @@ Seq[Any](format.raw/*1.65*/("""
                 </li>
 
                 <li>
-                    <a class="page-scroll" href='"""),_display_(/*53.51*/routes/*53.57*/.HomeController.germanVersion),format.raw/*53.86*/("""'><img src='"""),_display_(/*53.99*/routes/*53.105*/.Assets.at("images/img/flag-de2.png")),format.raw/*53.142*/("""' class="flag flag-lt" alt="German" /></a>
+                    <a class="page-scroll" href='"""),_display_(/*53.51*/routes/*53.57*/.HomeController.germanVersion),format.raw/*53.86*/("""'><img src='"""),_display_(/*53.99*/routes/*53.105*/.Assets.at("images/img/flag-de2.png")),format.raw/*53.142*/("""' alt="Vokiečių kalba" /></a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href='"""),_display_(/*57.51*/routes/*57.57*/.HomeController.pagrindinisLT),format.raw/*57.86*/("""'><img src='"""),_display_(/*57.99*/routes/*57.105*/.Assets.at("images/img/flag-lt2.png")),format.raw/*57.142*/("""' class="flag flag-lt" alt="Lithuanian" /></a>
+                    <a class="page-scroll" href='"""),_display_(/*57.51*/routes/*57.57*/.HomeController.pagrindinisLT),format.raw/*57.86*/("""'><img src='"""),_display_(/*57.99*/routes/*57.105*/.Assets.at("images/img/flag-lt2.png")),format.raw/*57.142*/("""' alt="Lietuvių kalba" /></a>
                 </li>
 
                 <li>
-                    <a class="page-scroll" href=""""),_display_(/*61.51*/routes/*61.57*/.HomeController.russianVersion),format.raw/*61.87*/(""""><img src='"""),_display_(/*61.100*/routes/*61.106*/.Assets.at("images/img/flag-rus.png")),format.raw/*61.143*/("""' class="flag flag-lt" alt="Russian" /></a>
+                    <a class="page-scroll" href=""""),_display_(/*61.51*/routes/*61.57*/.HomeController.russianVersion),format.raw/*61.87*/(""""><img src='"""),_display_(/*61.100*/routes/*61.106*/.Assets.at("images/img/flag-rus.png")),format.raw/*61.143*/("""' alt="Rusų kalba" /></a>
                 </li>
 
 
@@ -127,15 +127,16 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 <!-- About Section -->
-<section id="apie" class="container content-section text-center">
-    <div class="row">
+<section id="apie" class="container content-section text-center ">
+    <div class="row ">
 
 
 
         <div class="col-lg-6 ">
-            <img src='"""),_display_(/*102.24*/routes/*102.30*/.Assets.at("images/img/as2.jpg")),format.raw/*102.62*/("""' class="img-circle" alt="Medicine massage" height="600">
+            <img src='"""),_display_(/*102.24*/routes/*102.30*/.Assets.at("images/img/Vida.jpg")),format.raw/*102.63*/("""' class="img-circle" alt="Vida Polescuk" height="600">
 
         </div>
+        <p></p>
 
         <div class="col-lg-6">
 
@@ -143,8 +144,8 @@ Seq[Any](format.raw/*1.65*/("""
             <ul><li>"Vilniaus aukštesnioji medicinos mokykla", Lietuva.</li>
                 <li>Klaipėdos universitetas. Bakalauro laipsnis "Visuomenės sveikata".</li>
                 <li>2010 metai - "Baltic SPA Professional" Kursai (Latvija), SPA masažai.</li>
-                <li>2012 metai - Slaugos darbuotojų tobulinimosi ir specializacijos centras.</li>
-                <li>Pažymėjimas Nr. KV 120146 - suteikta teisė daryti gydomuosius masažus.</li>
+                <li>2012 metai - Slaugos darbuotojų tobulinimosi ir specializacijos centras: Pažymėjimas Nr. KV 120146 - suteikta teisė daryti gydomuosius masažus.</li>
+
             </ul>
             <p></p>
             <h3 align="center" ><u>Darbo Patirtis</u></h3>
@@ -161,7 +162,7 @@ Seq[Any](format.raw/*1.65*/("""
                 <li>Karštų-šaltų akmenų masažas</li>
                 <li>Limfodrenažinis masažas</li>
                 <li>Thai pėdų masažas</li>
-                <li>Tradicinis ajurvedinis masažas</li>
+                <li>Tradicinis ajurvedinis Keralos masažas</li>
             </ul>
 
 
@@ -190,7 +191,7 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="limfodrenazinis" class="collapse">
-                        <!--<div class="text-center"><img src='"""),_display_(/*159.65*/routes/*159.71*/.Assets.at("images/img/massage164.jpg")),format.raw/*159.110*/("""'
+                        <!--<div class="text-center"><img src='"""),_display_(/*160.65*/routes/*160.71*/.Assets.at("images/img/massage164.jpg")),format.raw/*160.110*/("""'
                                                       class="img-circle" alt="Medicine massage" width="250"
                                                       height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
@@ -221,7 +222,19 @@ Seq[Any](format.raw/*1.65*/("""
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo2" >
                                 Limfodrenažinis veido masažas
                             </button>
-                            <div id="limfo2" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
+                            <div id="limfo2" class="collapse customWidth"><p class="massageText">
+
+                                Esant nuolatiniam stresui ir nuovargiui, veido raumenys sustingsta ,,liūdesio" kaukėje. Sunkėja limfos nutekėjimas, o kartu toksinių medžiagų apykaitos produktų šalinimas.</br>
+
+
+                                Veido limfodrenažas suteikia puikių rezultatų:</br>
+                                veido pabrinimais,</br>
+                                išsausėjusia oda,</br>
+                                ankstyvuoju senejimu,</br>
+                                tamsiais ratilais ir maišeliais po akimis,</br>
+                                sumažėjusiu audinių bei raumenų elastingumu,</br>
+                                kovojant su kuperoze.</br>
+                                Sumažinę veido suglebimą, sulaukiame ryškaus standinamojo efekto, išsilygina raukšlės.</p> </div>
 
                            </div>
                     </div>
@@ -237,7 +250,7 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="karstusaltu" class="collapse">
-                      <!--  <div class="text-center"><img src='"""),_display_(/*206.65*/routes/*206.71*/.Assets.at("images/img/mas3.jpeg")),format.raw/*206.105*/("""' class="img-circle"
+                      <!--  <div class="text-center"><img src='"""),_display_(/*219.65*/routes/*219.71*/.Assets.at("images/img/mas3.jpeg")),format.raw/*219.105*/("""' class="img-circle"
                                                       alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
@@ -265,16 +278,18 @@ Seq[Any](format.raw/*1.65*/("""
                 <div class="col-lg-4 ">
 
 
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#segmentinis">Klasikinis
-                        Segmentinis nugaros masažas
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#segmentinis">Klasikinis – segmentinis nugaros masažas
                     </button>
                     <p></p>
                     <div id="segmentinis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*239.67*/routes/*239.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*239.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*251.67*/routes/*251.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*251.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
-                            <p class="massageText customWidth"> Atpalaiduoja įtemptus nugaros raumenis, gerina audinio struktūrą, gerina kūno padėtį</p>
+                            <p class="massageText customWidth"> Šis masažas idealiai tinka žmonėms, kurie visą dieną praleidžia stovėdami, sėdėdami pavyzdžiui: prie kompiuterio arba vairuodami automobilį taip pat dirbantiems sėdimą ar sunkų fizinį darbą, kai visa įtampa susikaupia stuburo dalyje, kaklo ir pečių, juosmens ir sėdmenų srityse, ir dėl to susiformuoja skausmingi raumenų mazgai. Šis masažas ypač tinka po treniruočių  kai būna ilgalaikis ir trumpalaikis skausmas. Be to, dėl netaisyklingos stuburo padėties dažnai skauda galvą.
+                            </br> Periodiškai atliekamas masažas padės atsikratyti dažnų nugaros ir galvos skausmų, atpalaiduoti įtemptas raumenų grupes.
+                                </br>    Po masažo atslūgsta nugaros, galvos, pečių, sėdmenų skausmai.
+                                </br>  Po masažo Jūs jausitės pailsėję ir energingi. </p>
 
 
                         </div>
@@ -295,7 +310,7 @@ Seq[Any](format.raw/*1.65*/("""
                 </button>
                 <p></p>
                 <div id="demo33" class="collapse">
-                  <!--  <div class="text-center"><img src='"""),_display_(/*264.61*/routes/*264.67*/.Assets.at("images/img/massage164.jpg")),format.raw/*264.106*/("""'
+                  <!--  <div class="text-center"><img src='"""),_display_(/*279.61*/routes/*279.67*/.Assets.at("images/img/massage164.jpg")),format.raw/*279.106*/("""'
                                                   class="img-circle" alt="Medicine massage" width="250"
                                                   height="250"></a></div>-->
                     <div class="customBackGroundOfDiv" align="center">
@@ -305,17 +320,12 @@ Seq[Any](format.raw/*1.65*/("""
                         <div id="galva" class="collapse customWidth"><p class="massageText">Sumažina stresą, galvos skausmus, gerina kraujo apytaką.</p> </div>
 
                         <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#peciai" >
-                            Pečių – kaklo juostos masažas
+                            Pečių – kaklo – rankų  masažas
                         </button>
-                        <div id="peciai" class="collapse customWidth"><p class="massageText">Efektyviausia gydymo ir nemalonių simptomų šalinimo  priemonė. Jau po pirmo kaklo masažo seanso jus pajusite bendrą savijautos pagerėjimą.  Po pilno masažo kurso skausmingi pojūčiai išnyksta, atsiranda žvalumas, padidėja darbingumas, išnyksta nemiga ir irzlumas. Kaklo masažas yra puiki priemonė atsikratyti galvos skausmo.</p> </div>
+                        <div id="peciai" class="collapse customWidth"><p class="massageText">Efektyviausia  nemalonių simptomų šalinimo  priemonė. Jau po pirmo karto jus pajusite bendrą savijautos pagerėjimą. Po pilno masažo kurso skausmingi pojūčiai išnyksta, atsiranda žvalumas, padidėja darbingumas, išnyksta nemiga ir irzlumas. Tai yra puiki priemonė atsikratyti galvos, kaklo, pečių skausmo, rankų tirpimo jausmo.  </p> </div>
 
 
 
-
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#krutines" >
-                                Krūtinės masažas
-                            </button>
-                        <div id="krutines" class="collapse customWidth"><p class="massageText">Mažina įtampą krūtinėje, o taip pat sumažina kvėpavimo sutrikimus (bronchitas, gripas, astma ir kt.).</p> </div>
 
 
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pilvo" >
@@ -325,14 +335,15 @@ Seq[Any](format.raw/*1.65*/("""
 
 
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#juosmens" >
-                                Juosmeninis sėdmenų, kojų masažas
+                                Juosmens - sėdmenų - kojų  masažas
                             </button>
-                        <div id="juosmens" class="collapse customWidth"><p class="massageText">Sumažina skausmą, gerina kraujo apytaką, palengvina ir mažina nervinių šaknų uždegimą.</p></div>
+                        <div id="juosmens" class="collapse customWidth"><p class="massageText">Gerina kraujo ir limfos apytaką juosmens bei kojų srityse, atpalaiduoja įsitempusius  raumenis, mažina juosmens, sėdmenų, kojų skausmą, stiprina nusilpusius raumenis.
+                            Sumažina skausmą po operacijos, mažina nervinių šaknų uždegimą.</p></div>
 
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pedu" >
-                                Pėdų masažas
+                                Atpalaiduojantis pėdų masažas
                             </button>
-                        <div id="pedu" class="collapse customWidth"><p class="massageText"></p></div>
+                        <div id="pedu" class="collapse customWidth"><p class="massageText">Taikomas pavargusioms, skausmingoms pėdoms atpalaiduoti, kūno gyvybiniam tonusui padidinti, imunitetui stiprinti. Ši procedūra tinka daug vaikštantiems, dirbantiems stovimą arba žmonėms šąlančiomis kojomis. Pėdų masažas padeda atsigauti ir pailsėti visam organizmui.</p></div>
 
 
 
@@ -349,11 +360,11 @@ Seq[Any](format.raw/*1.65*/("""
                 </button>
                 <p></p>
                 <div id="vyresnio" class="collapse">
-                    <!--  <div class="text-center"><img src='"""),_display_(/*318.63*/routes/*318.69*/.Assets.at("images/img/mas3.jpeg")),format.raw/*318.103*/("""' class="img-circle"
+                    <!--  <div class="text-center"><img src='"""),_display_(/*329.63*/routes/*329.69*/.Assets.at("images/img/mas3.jpeg")),format.raw/*329.103*/("""' class="img-circle"
                                                     alt="Medicine massage" width="250" height="250"></a></div>-->
                     <div class="customBackGroundOfDiv " align="center">
 
-                        <p class="massageText customWidth"> Masažas yra būtina ir labai naudinga procedūra pagyvenusiems žmonėms, pensininkams. Tyrimai parodė, kad masažas lėtina senėjimo procesą. Taip pat masažas veikia raminančiai visą organizmą ir gali sumažinti skausmus. Masažas gali padėti žmonėms, kenčiantiems raumenų skausmus ar sergantiems atritu. Kada žmogus kenčia, jis tampa vis mažiau aktyvus, nukenčia gyvenimo kokybė ir sveikata. Masažas gerina kraujotaką,  pašalina raumenų nuovargį ir raumenys įgauna tonusą. Dėl to pagerėja pagyvenusio žmogaus gyvenimo kokybė.
+                        <p class="massageText customWidth">Masažas yra būtina ir labai naudinga procedūra pagyvenusiems žmonėms, pensininkams. Tyrimai parodė, kad masažas lėtina senėjimo procesą. Taip pat masažas veikia raminančiai visą organizmą ir gali sumažinti skausmus. Masažas gali padėti žmonėms, kenčiantiems raumenų skausmus ar sergantiems atritu. Kada žmogus kenčia, jis tampa vis mažiau aktyvus, nukenčia gyvenimo kokybė ir sveikata. Masažas gerina kraujotaką,  pašalina raumenų nuovargį ir raumenys įgauna tonusą. Dėl to pagerėja pagyvenusio žmogaus gyvenimo kokybė.
                             </br>Prieš masažą Jums gerai būtų pasikonsultuoti su savo gydytoju. Kai tik gausite gydytojo leidimą masažui, jus drąsiai galite kreiptis pas mane.  </p>
 
 
@@ -367,15 +378,15 @@ Seq[Any](format.raw/*1.65*/("""
             <div class="col-lg-4 ">
 
 
-                <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#atpalaiduojantis">Atpalaiduojantis viso kūno masažas
+                <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#atpalaiduojantis">Atpalaiduojantis viso kūno  masažas
                 </button>
                 <p></p>
                 <div id="atpalaiduojantis" class="collapse">
-                    <!--  <div class="text-center"><img src='"""),_display_(/*340.63*/routes/*340.69*/.Assets.at("images/img/mas3.jpeg")),format.raw/*340.103*/("""' class="img-circle"
+                    <!--  <div class="text-center"><img src='"""),_display_(/*351.63*/routes/*351.69*/.Assets.at("images/img/mas3.jpeg")),format.raw/*351.103*/("""' class="img-circle"
                                                     alt="Medicine massage" width="250" height="250"></a></div>-->
                     <div class="customBackGroundOfDiv " align="center">
 
-                        <p class="massageText customWidth"> Aprašymas</p>
+                        <p class="massageText customWidth"> Atpalaiduojantis masažas tinka visiems, norintiems atsipalaiduoti po sunkios dienos, užsimiršti bei pabėgti nuo kasdienės rutinos. Pašalina įtampą ir stresą, atslūgsta nugaros ir galvos skausmai, atsipalaiduoja raumenys, teigiamai veikia vidinę organizmo būseną,  pagerina nuotaiką bei grąžina energiją. </p>
 
                     </div>
                 </div>
@@ -392,11 +403,12 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="ajurvedinis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*361.67*/routes/*361.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*361.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*372.67*/routes/*372.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*372.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
-                            <p class="massageText customWidth"> Aprašymas</p>
+                            <p class="massageText customWidth"> Yra skirtas krūtinės sričiai. Jis atliekamas ne tik norint pagražinti krūtinę, sustangrinti krūtis, suteikti joms gražią formą, bet ir siekiant gilesnių terapinių tikslų. Šis masažas daro teigiamą įtaką visų moters reprodukcinių organų sistemai bei padeda subalansuoti hormonų sistemos veiklą. Labai sumažina nemalonų krūtų jautrumą, susijusį su menstruacijų ciklu. Praktiškai išnyksta krūtų vėžio rizika. Švelnėja implantų surandėjimai.
+                            </br> Toks masažas pagerina savijautą, padaro krūtis gražesnes, suteikia pasitikėjimo ir padeda geriau jaustis kaip moteriai.</p>
 
                         </div>
                     </div>
@@ -410,35 +422,25 @@ Seq[Any](format.raw/*1.65*/("""
 
 
                     <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#anticeliulitinis" >
-                        Anticeliulitinis masažas
+                        Anticeliulitinis masažas rankomis
                     </button>
                     <p></p>
                     <div id="anticeliulitinis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*383.67*/routes/*383.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*383.112*/("""'
+                        <!--  <div class="text-center"><img src='"""),_display_(/*395.67*/routes/*395.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*395.112*/("""'
                                                         class="img-circle" alt="Medicine massage" width="250"
                                                         height="250"></a></div>-->
                         <div class="customBackGroundOfDiv" align="center">
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#sedmenys" >
-                                Sėdmenims, šlaunims
-                            </button>
-                            <div id="sedmenys" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
-
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pilvui" >
-                                Pilvui
-                            </button>
-                            <div id="pilvui" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
-
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#rankos" >
-                                Rankoms
-                            </button>
-                            <div id="rankos" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
 
 
 
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#tibeto" >
-                                Naudojant Tibeto vakuumine Taure
-                            </button>
-                            <div id="tibeto" class="collapse customWidth"><p class="massageText">Tekstas</p> </div>
+                           <p class="massageText customWidth"> Tai ypač efektyvus kovos su celiulitu būdas, taikomas tam tikrų probleminių sričių – šlaunų, sėdmenų ir pilvo – netolygiam poodiniam sluksniui (celiulitui) mažinti.
+                                </br>    Masažas aktyvina limfotaką, padidina raumenų susitraukimą ir tonusą dėl to, mažėja celiulitas ir patinimai. Išvalo organizmą nuo šlakų bei suteikia ryškiai išreikštą kosmetinį efektą.
+                               </br>   Masažas su Tibeto moline taure yra pats švelniausias – nepalieka mėlynių, nežaloja kapiliarų.</br>
+                           Naudojant Tibeto molinę vakuuminę taurę.</p> </div>
+
+
+
+
 
                         </div>
                     </div>
@@ -448,73 +450,285 @@ Seq[Any](format.raw/*1.65*/("""
             </div>
 
         </div>
+        <a href="#kainos" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
         </div>
+
     </div>
-    <a href="#kainos" class="btn btn-circle page-scroll">
-        <i class="fa fa-angle-double-down animated"></i>
-    </a>
+
 
 </section >
 
 
 <section id="galerija" class="content-section text-center">
+
     <div class="row">
+
         <div class="col-md-8 col-md-offset-2">
-            <div class="contact-section">
-                <div class="container">
-                    <hr>
-                    <h2>Galerija</h2>
-                    <hr>
+            <hr>
+            <h2>Galerija</h2>
+            <hr>
+
+            <p></p>
 
 
+            <div class="col-lg-4 ">
+                        <a href=""""),_display_(/*443.35*/routes/*443.41*/.Assets.at("images/img/1nr.jpg")),format.raw/*443.73*/(""""> <img src=""""),_display_(/*443.87*/routes/*443.93*/.Assets.at("images/img/1nr.jpg")),format.raw/*443.125*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                    </div>
+
+<p></p>
+                    <div class="col-lg-4 ">
+                        <a href=""""),_display_(/*448.35*/routes/*448.41*/.Assets.at("images/img/Skype1.jpg")),format.raw/*448.76*/(""""> <img src=""""),_display_(/*448.90*/routes/*448.96*/.Assets.at("images/img/Skype1.jpg")),format.raw/*448.131*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                    </div>
+            <p></p>
+
+            <div class="col-lg-4 ">
+                <a href=""""),_display_(/*453.27*/routes/*453.33*/.Assets.at("images/img/3nr.jpg")),format.raw/*453.65*/(""""> <img src=""""),_display_(/*453.79*/routes/*453.85*/.Assets.at("images/img/3nr.jpg")),format.raw/*453.117*/("""" class="w3-image w3-round" alt="Buda" ></a>
+            </div>
+
+
+        </div>
+    </div>
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-2">
+                <p></p>
+
+                <div class="col-lg-4 ">
+                    <a href=""""),_display_(/*465.31*/routes/*465.37*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*465.74*/(""""> <img src=""""),_display_(/*465.88*/routes/*465.94*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*465.131*/("""" class="w3-image w3-round" alt="Buda" ></a>
                 </div>
+                <p></p>
+
+                <div class="col-lg-4 ">
+                    <a href=""""),_display_(/*470.31*/routes/*470.37*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*470.74*/(""""> <img src=""""),_display_(/*470.88*/routes/*470.94*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*470.131*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                </div>
+                <p></p>
+
+                <div class="col-lg-4 ">
+                    <a href=""""),_display_(/*475.31*/routes/*475.37*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*475.74*/(""""> <img src=""""),_display_(/*475.88*/routes/*475.94*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*475.131*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                </div>
+                <p></p>
+
+
 
 
             </div>
+
+
+
+
+        </div>
+
+    <div class="row">
+
+        <div class="col-md-8 col-md-offset-2">
+            <p></p>
+
+            <div class="col-lg-4 ">
+                <a href=""""),_display_(/*495.27*/routes/*495.33*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*495.70*/(""""> <img src=""""),_display_(/*495.84*/routes/*495.90*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*495.127*/("""" class="w3-image w3-round" alt="Buda" ></a>
+            </div>
+            <p></p>
+
+            <div class="col-lg-4 ">
+                <a href=""""),_display_(/*500.27*/routes/*500.33*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*500.70*/(""""> <img src=""""),_display_(/*500.84*/routes/*500.90*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*500.127*/("""" class="w3-image w3-round" alt="Buda" ></a>
+            </div>
+            <p></p>
+
+            <div class="col-lg-4 ">
+                <a href=""""),_display_(/*505.27*/routes/*505.33*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*505.70*/(""""> <img src=""""),_display_(/*505.84*/routes/*505.90*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*505.127*/("""" class="w3-image w3-round" alt="Buda" ></a>
+            </div>
+            <p></p>
+
+
+
+
         </div>
 
 
+
+
+
     </div>
+
+
+
+
     <a href="#kainos" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </a>
+
+    </div>
+
 </section>
 
 
 
 
-<section id="kainos" class="content-section text-center">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="contact-section">
-                <div class="container">
-                    <hr>
-                    <h2>Kainos</h2>
-                    <hr>
+<section  class="content-section text-center">
+    <div class="contact-section " id="kainos">
+    <div class="row" >
+        <div class="col-md-8  col-md-offset-2 " >
+            <div class="" >
+                <hr>
+                <h2>Kainos</h2>
+                <hr>
 
-    <p></p>
+                <div class="w3-container customBackGroundOfDiv">
+
+                    <p></p>
+                    <h5 align="center"><u>Spa masažai</u></h5>
+
+                    <table class="table table-inverse">
+                        <th scope="row"><u>Spa Masažai</u></th>
+                        <td><b><u>Trukmė</u></b></td>
+                        <td><b><u>Kaina</u></b></td>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Karštų-šaltų akmenų masažas</th>
+                            <td>120min</td>
+                            <td>150 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Limfodrenažinis kūno masažas</th>
+                            <td>120min</td>
+
+                            <td>120 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Limfodrenažinis veido masažas</th>
+                            <td>120min</td>
+
+                            <td>70 CHF</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Ajurvedinis krūtų masažas mot.</th>
+                            <td>120min</td>
+
+                            <td>80 CHF</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Klasikinis segmentinis nugaros masažas</th>
+                            <td>120min</td>
+
+                            <td>120 CHF</td>
+                        </tr>
 
 
-            <div >
+
+                        <tr>
+                            <th scope="row">Atpalaiduojantis viso kūno masažas</th>
+                            <td>120min</td>
+
+                            <td>130 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Atpalaiduojantis pėdų masažas</th>
+                            <td>120min</td>
+
+                            <td>70 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Masažas vyresnio amžiaus žmonėms</th>
+                            <td>120min</td>
+
+                            <td>100 CHF</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+
+
+                    <h5 align="center"><b><u>Kiti masažai</u></b></h5>
+
+                    <table class="table table-inverse">
+                        <th scope="row"><u>Atskirų kūno dalių masažai:</u> </th>
+                        <td><b><u>30min</u></b></td>
+                        <td><b><u>60min</u></b></td>
+                        <td><b><u>90min</u></b></td>
+                        <tbody>
+
+                        <tr>
+                            <th scope="row">Juosmens</th>
+                            <td>50 CHF</td>
+                            <td>80 CHF</td>
+                            <td>100 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pečių</th>
+                            <td>50 CHF</td>
+                            <td>80 CHF</td>
+                            <td>100 CHF</td>
+                        </tr>
+                        <p></p>
+
+                        <th scope="row"><u>Anticeliulitinis masažai:<u></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <tbody>
+
+                        <tr>
+                            <th scope="row">Sėdmenų</th>
+                            <td>50 CHF</td>
+                            <td>80 CHF</td>
+                            <td>100 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Šlaunų</th>
+                            <td>50 CHF</td>
+                            <td>80 CHF</td>
+                            <td>100 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pilvo</th>
+                            <td>50 CHF</td>
+                            <td>80 CHF</td>
+                            <td>100 CHF</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+
+
+                    <h5 align="center"><b><u>DOVANŲ KUPONAI</u></b></h5>
+
+                    <table class="table table-inverse">
+
+
+                        <tr>
+                            <th scope="row"><u>Dovanų kuponai</u> </th>
+                            <td>120 CHF</td>
+                            <td>250 CHF</td>
+                            <td>* CHF</td>
+                        <tr>
+                            <th scope="row">* - jusu pasirinkta suma</th>
+                        </tr>
+
+                    </table>
+
+                </div>
 
             </div>
 
-
-            </div>
         </div>
     </div>
-
+        <a href="#klausk" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
     </div>
-    <a href="#klausk" class="btn btn-circle page-scroll">
-        <i class="fa fa-angle-double-down animated"></i>
-    </a>
+
 </section>
 
 
-<section id="klausk" class="container content-section text-center">
+<section id="klausk" class="container content-section text-center  ">
     <div class="row">
-        <div class="col-lg-12">
-            <div class="contact-section">
+        <div class="col-lg-12" >
+            <div class="">
                 <div class="container">
 
                     <h2>Užduokite savo klausimą!</h2>
@@ -525,36 +739,36 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-                            """),_display_(/*494.30*/helper/*494.36*/.form(action = routes.HomeController.submitLT(),'class -> "form-horizontal")/*494.112*/ {_display_(Seq[Any](format.raw/*494.114*/("""
+                            """),_display_(/*708.30*/helper/*708.36*/.form(action = routes.HomeController.submitLT(),'class -> "form-horizontal")/*708.112*/ {_display_(Seq[Any](format.raw/*708.114*/("""
 
 
 
 
-                            """),_display_(/*499.30*/helper/*499.36*/.input(contactForm("Vardas"),'class->"form-control")/*499.88*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*499.117*/("""
-                            """),format.raw/*500.29*/("""<input type="text" name=""""),_display_(/*500.55*/contactForm/*500.66*/.field("firstName").name),format.raw/*500.90*/(""""  placeholder="Jūsų vardas" id=""""),_display_(/*500.124*/id),format.raw/*500.126*/("""" """),_display_(/*500.129*/toHtmlArgs(args)),_display_(/*500.146*/if(contactForm.hasErrors)/*500.171*/ {_display_(Seq[Any](format.raw/*500.173*/("""
-                            """),format.raw/*501.29*/("""<option value='"""),_display_(/*501.45*/contactForm/*501.56*/.field("firstName").value),format.raw/*501.81*/("""'></option>""")))}),format.raw/*501.93*/("""
-                            """)))}),format.raw/*502.30*/("""
+                            """),_display_(/*713.30*/helper/*713.36*/.input(contactForm("Vardas"),'class->"form-control")/*713.88*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*713.117*/("""
+                            """),format.raw/*714.29*/("""<input type="text" name=""""),_display_(/*714.55*/contactForm/*714.66*/.field("firstName").name),format.raw/*714.90*/(""""  placeholder="Jūsų vardas" id=""""),_display_(/*714.124*/id),format.raw/*714.126*/("""" """),_display_(/*714.129*/toHtmlArgs(args)),_display_(/*714.146*/if(contactForm.hasErrors)/*714.171*/ {_display_(Seq[Any](format.raw/*714.173*/("""
+                            """),format.raw/*715.29*/("""<option value='"""),_display_(/*715.45*/contactForm/*715.56*/.field("firstName").value),format.raw/*715.81*/("""'></option>""")))}),format.raw/*715.93*/("""
+                            """)))}),format.raw/*716.30*/("""
 
 
 
-                            """),format.raw/*506.29*/("""<div id="xxx">
-                            """),_display_(/*507.30*/for(error <- contactForm("firstName").errors) yield /*507.75*/ {_display_(Seq[Any](format.raw/*507.77*/("""
-                            """),format.raw/*508.29*/("""<p id="xxxx">"""),_display_(/*508.43*/error/*508.48*/.format(messages())),format.raw/*508.67*/("""</p>
-                                """)))}),format.raw/*509.34*/("""</div>
+                            """),format.raw/*720.29*/("""<div id="xxx">
+                            """),_display_(/*721.30*/for(error <- contactForm("firstName").errors) yield /*721.75*/ {_display_(Seq[Any](format.raw/*721.77*/("""
+                            """),format.raw/*722.29*/("""<p id="xxxx">"""),_display_(/*722.43*/error/*722.48*/.format(messages())),format.raw/*722.67*/("""</p>
+                                """)))}),format.raw/*723.34*/("""</div>
 
 
 
-                            """),_display_(/*513.30*/helper/*513.36*/.input(contactForm("Elektroninis paštas"),'class->"form-control")/*513.101*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*513.130*/("""
-                            """),format.raw/*514.29*/("""<input type="text" name=""""),_display_(/*514.55*/contactForm/*514.66*/.field("email").name),format.raw/*514.86*/(""""  placeholder="Jūsų elektroninis paštas" id=""""),_display_(/*514.133*/id),format.raw/*514.135*/("""" """),_display_(/*514.138*/toHtmlArgs(args)),_display_(/*514.155*/if(contactForm.hasErrors)/*514.180*/ {_display_(Seq[Any](format.raw/*514.182*/("""
-                            """),format.raw/*515.29*/("""<option value='"""),_display_(/*515.45*/contactForm/*515.56*/.field("email").value),format.raw/*515.77*/("""'></option>""")))}),format.raw/*515.89*/("""
-                            """)))}),format.raw/*516.30*/("""
+                            """),_display_(/*727.30*/helper/*727.36*/.input(contactForm("Elektroninis paštas"),'class->"form-control")/*727.101*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*727.130*/("""
+                            """),format.raw/*728.29*/("""<input type="text" name=""""),_display_(/*728.55*/contactForm/*728.66*/.field("email").name),format.raw/*728.86*/(""""  placeholder="Jūsų elektroninis paštas" id=""""),_display_(/*728.133*/id),format.raw/*728.135*/("""" """),_display_(/*728.138*/toHtmlArgs(args)),_display_(/*728.155*/if(contactForm.hasErrors)/*728.180*/ {_display_(Seq[Any](format.raw/*728.182*/("""
+                            """),format.raw/*729.29*/("""<option value='"""),_display_(/*729.45*/contactForm/*729.56*/.field("email").value),format.raw/*729.77*/("""'></option>""")))}),format.raw/*729.89*/("""
+                            """)))}),format.raw/*730.30*/("""
 
 
 
-                            """),format.raw/*520.29*/("""<div id="xxx">
-                            """),_display_(/*521.30*/for(error <- contactForm("email").errors) yield /*521.71*/ {_display_(Seq[Any](format.raw/*521.73*/("""
-                            """),format.raw/*522.29*/("""<p id="xxxx">"""),_display_(/*522.43*/error/*522.48*/.format(messages())),format.raw/*522.67*/("""</p>
-                                """)))}),format.raw/*523.34*/("""</div>
+                            """),format.raw/*734.29*/("""<div id="xxx">
+                            """),_display_(/*735.30*/for(error <- contactForm("email").errors) yield /*735.71*/ {_display_(Seq[Any](format.raw/*735.73*/("""
+                            """),format.raw/*736.29*/("""<p id="xxxx">"""),_display_(/*736.43*/error/*736.48*/.format(messages())),format.raw/*736.67*/("""</p>
+                                """)))}),format.raw/*737.34*/("""</div>
 
 
 
@@ -562,42 +776,42 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-                            """),_display_(/*531.30*/helper/*531.36*/.input(field = contactForm("Klausimas"))/*531.76*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*531.105*/("""
-                            """),format.raw/*532.29*/("""<div>
-                                <textarea class="form-control" name=""""),_display_(/*533.71*/contactForm("textbox")/*533.93*/.name),format.raw/*533.98*/("""" id=""""),_display_(/*533.105*/id),format.raw/*533.107*/("""" placeholder="Jūsų žinutė" rows='5' cols='80'>"""),_display_(/*533.155*/if(contactForm.hasErrors)/*533.180*/{_display_(_display_(/*533.182*/contactForm/*533.193*/.field("textbox").value))}),format.raw/*533.217*/("""</textarea>
+                            """),_display_(/*745.30*/helper/*745.36*/.input(field = contactForm("Klausimas"))/*745.76*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*745.105*/("""
+                            """),format.raw/*746.29*/("""<div>
+                                <textarea class="form-control" name=""""),_display_(/*747.71*/contactForm("textbox")/*747.93*/.name),format.raw/*747.98*/("""" id=""""),_display_(/*747.105*/id),format.raw/*747.107*/("""" placeholder="Jūsų žinutė" rows='5' cols='80'>"""),_display_(/*747.155*/if(contactForm.hasErrors)/*747.180*/{_display_(_display_(/*747.182*/contactForm/*747.193*/.field("textbox").value))}),format.raw/*747.217*/("""</textarea>
                             </div>
-                            """)))}),format.raw/*535.30*/("""
-                            """),format.raw/*536.29*/("""<div id="xxx">
-                                """),_display_(/*537.34*/for(error <- contactForm("textbox").errors) yield /*537.77*/ {_display_(Seq[Any](format.raw/*537.79*/("""
-                                """),format.raw/*538.33*/("""<p id="xxxx">"""),_display_(/*538.47*/error/*538.52*/.format(messages())),format.raw/*538.71*/("""</p>
-                                """)))}),format.raw/*539.34*/("""</div>
+                            """)))}),format.raw/*749.30*/("""
+                            """),format.raw/*750.29*/("""<div id="xxx">
+                                """),_display_(/*751.34*/for(error <- contactForm("textbox").errors) yield /*751.77*/ {_display_(Seq[Any](format.raw/*751.79*/("""
+                                """),format.raw/*752.33*/("""<p id="xxxx">"""),_display_(/*752.47*/error/*752.52*/.format(messages())),format.raw/*752.71*/("""</p>
+                                """)))}),format.raw/*753.34*/("""</div>
 
 
 
                                 <button type="submit"  class="btn btn-default" >Siųsti žinute</button>
 
-                            <div id="flash">"""),_display_(/*545.46*/flash/*545.51*/.get("success")),format.raw/*545.66*/("""</div>
+                            <div id="flash">"""),_display_(/*759.46*/flash/*759.51*/.get("success")),format.raw/*759.66*/("""</div>
 
-                            """),_display_(/*547.30*/if(contactForm.hasGlobalErrors)/*547.61*/ {_display_(Seq[Any](format.raw/*547.63*/("""
-                            """),format.raw/*548.29*/("""<div id="xxx">
+                            """),_display_(/*761.30*/if(contactForm.hasGlobalErrors)/*761.61*/ {_display_(Seq[Any](format.raw/*761.63*/("""
+                            """),format.raw/*762.29*/("""<div id="xxx">
                             <p class="error" >
-                                """),_display_(/*550.34*/for(error <- contactForm.globalErrors) yield /*550.72*/ {_display_(Seq[Any](format.raw/*550.74*/("""
-                            """),format.raw/*551.29*/("""<p>"""),_display_(/*551.33*/error/*551.38*/.format(messages())),format.raw/*551.57*/("""</p>
-                            """),_display_(/*552.30*/for(error <- contactForm("email").errors) yield /*552.71*/ {_display_(Seq[Any](format.raw/*552.73*/("""
-                            """),format.raw/*553.29*/("""<p>"""),_display_(/*553.33*/error/*553.38*/.format(messages())),format.raw/*553.57*/("""</p>
-                            """)))}),format.raw/*554.30*/("""
-                            """)))}),format.raw/*555.30*/("""
-                            """),format.raw/*556.29*/("""</p>
+                                """),_display_(/*764.34*/for(error <- contactForm.globalErrors) yield /*764.72*/ {_display_(Seq[Any](format.raw/*764.74*/("""
+                            """),format.raw/*765.29*/("""<p>"""),_display_(/*765.33*/error/*765.38*/.format(messages())),format.raw/*765.57*/("""</p>
+                            """),_display_(/*766.30*/for(error <- contactForm("email").errors) yield /*766.71*/ {_display_(Seq[Any](format.raw/*766.73*/("""
+                            """),format.raw/*767.29*/("""<p>"""),_display_(/*767.33*/error/*767.38*/.format(messages())),format.raw/*767.57*/("""</p>
+                            """)))}),format.raw/*768.30*/("""
+                            """)))}),format.raw/*769.30*/("""
+                            """),format.raw/*770.29*/("""</p>
                             </div>
-                            """)))}),format.raw/*558.30*/("""
-                            """)))}),format.raw/*559.30*/("""
+                            """)))}),format.raw/*772.30*/("""
+                            """)))}),format.raw/*773.30*/("""
 
 
-                            """),format.raw/*562.29*/("""<p></p>
+                            """),format.raw/*776.29*/("""<p></p>
                             <h3>Mūsų socialiniai tinklai</h3>
                             <ul class="list-inline banner-social-buttons">
                                 <li><a href="www.google.com" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-                                <li><a href=""""),_display_(/*566.47*/routes/*566.53*/.HomeController.toFaceBook),format.raw/*566.79*/("""" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
+                                <li><a href=""""),_display_(/*780.47*/routes/*780.53*/.HomeController.toFaceBook),format.raw/*780.79*/("""" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
                                 <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
                             </ul>
                         </div>
@@ -626,7 +840,7 @@ Seq[Any](format.raw/*1.65*/("""
     <!-- Map Section -->
     <div id="kontaktai" class="text-center">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 price-section">
                 <p></p>
                 <h2>Kontaktinė informacija</h2>
                 <p style="color:#fff;">
@@ -643,7 +857,7 @@ Seq[Any](format.raw/*1.65*/("""
         </div>
     </div>
 <hr>
-    """),_display_(/*612.6*/if(contactForm.hasErrors)/*612.31*/{_display_(Seq[Any](format.raw/*612.32*/("""<script src=""""),_display_(/*612.46*/routes/*612.52*/.Assets.at("javascripts/js/returnToFormOnFail.js")),format.raw/*612.102*/(""""></script>""")))}),format.raw/*612.114*/("""</script>
+    """),_display_(/*826.6*/if(contactForm.hasErrors)/*826.31*/{_display_(Seq[Any](format.raw/*826.32*/("""<script src=""""),_display_(/*826.46*/routes/*826.52*/.Assets.at("javascripts/js/returnToFormOnFail.js")),format.raw/*826.102*/(""""></script>""")))}),format.raw/*826.114*/("""</script>
 </section>
 
 
@@ -675,18 +889,18 @@ Seq[Any](format.raw/*1.65*/("""
 </footer>
 
 <!-- jQuery -->
-<script src='"""),_display_(/*644.15*/routes/*644.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*644.70*/("""'></script>
+<script src='"""),_display_(/*858.15*/routes/*858.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*858.70*/("""'></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src='"""),_display_(/*647.15*/routes/*647.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*647.83*/("""'></script>
+<script src='"""),_display_(/*861.15*/routes/*861.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*861.83*/("""'></script>
 
 <!-- Plugin JavaScript -->
-<script src="""),_display_(/*650.14*/routes/*650.20*/.Assets.at("javascripts/js/jquery.easing.min.js")),format.raw/*650.69*/(""""></script>
+<script src="""),_display_(/*864.14*/routes/*864.20*/.Assets.at("javascripts/js/jquery.easing.min.js")),format.raw/*864.69*/(""""></script>
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 
 <!-- Theme JavaScript -->
-<script src='"""),_display_(/*655.15*/routes/*655.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*655.66*/("""'></script>
+<script src='"""),_display_(/*869.15*/routes/*869.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*869.66*/("""'></script>
 
 </body>
 
@@ -711,11 +925,11 @@ Seq[Any](format.raw/*1.65*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Sep 23 21:29:02 CEST 2017
+                  DATE: Wed Sep 27 23:25:30 CEST 2017
                   SOURCE: /home/alex/git/web/app/views/pagrindinisContent.scala.html
-                  HASH: d64146c6067f39478de9f1d747c29d7e2a430ada
-                  MATRIX: 1047->1|1183->66|1228->64|1255->83|1302->122|1352->135|1383->140|1914->644|1929->650|1979->679|3314->1987|3329->1993|3379->2022|3419->2035|3435->2041|3494->2078|3658->2215|3673->2221|3723->2250|3763->2263|3779->2269|3838->2306|4006->2447|4021->2453|4072->2483|4113->2496|4129->2502|4188->2539|4398->2723|4411->2728|4447->2743|4475->2744|5450->3691|5466->3697|5520->3729|7697->5878|7713->5884|7775->5923|10811->8931|10827->8937|10884->8971|12869->10928|12885->10934|12942->10968|13851->11849|13867->11855|13929->11894|17596->15533|17612->15539|17669->15573|19152->17028|19168->17034|19225->17068|20077->17892|20093->17898|20150->17932|21013->18767|21029->18773|21091->18812|24671->22364|24687->22370|24774->22446|24816->22448|24878->22482|24894->22488|24956->22540|25025->22569|25083->22598|25137->22624|25158->22635|25204->22659|25267->22693|25292->22695|25324->22698|25363->22715|25399->22740|25441->22742|25499->22771|25543->22787|25564->22798|25611->22823|25655->22835|25717->22865|25778->22897|25850->22941|25912->22986|25953->22988|26011->23017|26053->23031|26068->23036|26109->23055|26179->23093|26246->23132|26262->23138|26338->23203|26407->23232|26465->23261|26519->23287|26540->23298|26582->23318|26658->23365|26683->23367|26715->23370|26754->23387|26790->23412|26832->23414|26890->23443|26934->23459|26955->23470|26998->23491|27042->23503|27104->23533|27165->23565|27237->23609|27295->23650|27336->23652|27394->23681|27436->23695|27451->23700|27492->23719|27562->23757|27633->23800|27649->23806|27699->23846|27768->23875|27826->23904|27930->23980|27962->24002|27989->24007|28025->24014|28050->24016|28127->24064|28163->24089|28195->24091|28217->24102|28266->24126|28374->24202|28432->24231|28508->24279|28568->24322|28609->24324|28671->24357|28713->24371|28728->24376|28769->24395|28839->24433|29026->24592|29041->24597|29078->24612|29143->24649|29184->24680|29225->24682|29283->24711|29406->24806|29461->24844|29502->24846|29560->24875|29592->24879|29607->24884|29648->24903|29710->24937|29768->24978|29809->24980|29867->25009|29899->25013|29914->25018|29955->25037|30021->25071|30083->25101|30141->25130|30242->25199|30304->25229|30364->25260|30756->25624|30772->25630|30820->25656|32266->27076|32301->27101|32341->27102|32383->27116|32399->27122|32472->27172|32517->27184|32930->27569|32946->27575|33017->27624|33107->27686|33123->27692|33207->27754|33288->27807|33304->27813|33375->27862|33628->28087|33644->28093|33711->28138
-                  LINES: 30->1|33->2|36->1|37->3|37->3|37->3|42->8|52->18|52->18|52->18|87->53|87->53|87->53|87->53|87->53|87->53|91->57|91->57|91->57|91->57|91->57|91->57|95->61|95->61|95->61|95->61|95->61|95->61|109->75|109->75|109->75|110->76|136->102|136->102|136->102|193->159|193->159|193->159|240->206|240->206|240->206|273->239|273->239|273->239|298->264|298->264|298->264|352->318|352->318|352->318|374->340|374->340|374->340|395->361|395->361|395->361|417->383|417->383|417->383|528->494|528->494|528->494|528->494|533->499|533->499|533->499|533->499|534->500|534->500|534->500|534->500|534->500|534->500|534->500|534->500|534->500|534->500|535->501|535->501|535->501|535->501|535->501|536->502|540->506|541->507|541->507|541->507|542->508|542->508|542->508|542->508|543->509|547->513|547->513|547->513|547->513|548->514|548->514|548->514|548->514|548->514|548->514|548->514|548->514|548->514|548->514|549->515|549->515|549->515|549->515|549->515|550->516|554->520|555->521|555->521|555->521|556->522|556->522|556->522|556->522|557->523|565->531|565->531|565->531|565->531|566->532|567->533|567->533|567->533|567->533|567->533|567->533|567->533|567->533|567->533|567->533|569->535|570->536|571->537|571->537|571->537|572->538|572->538|572->538|572->538|573->539|579->545|579->545|579->545|581->547|581->547|581->547|582->548|584->550|584->550|584->550|585->551|585->551|585->551|585->551|586->552|586->552|586->552|587->553|587->553|587->553|587->553|588->554|589->555|590->556|592->558|593->559|596->562|600->566|600->566|600->566|646->612|646->612|646->612|646->612|646->612|646->612|646->612|678->644|678->644|678->644|681->647|681->647|681->647|684->650|684->650|684->650|689->655|689->655|689->655
+                  HASH: a5c39dfd20e30ae0c804a088c90d641606b90e1d
+                  MATRIX: 1047->1|1183->66|1228->64|1255->83|1302->122|1352->135|1383->140|1914->644|1929->650|1979->679|3314->1987|3329->1993|3379->2022|3419->2035|3435->2041|3494->2078|3645->2202|3660->2208|3710->2237|3750->2250|3766->2256|3825->2293|3976->2417|3991->2423|4042->2453|4083->2466|4099->2472|4158->2509|4350->2675|4363->2680|4399->2695|4427->2696|5404->3645|5420->3651|5475->3684|7649->5830|7665->5836|7727->5875|11562->9682|11578->9688|11635->9722|13598->11657|13614->11663|13671->11697|15316->13314|15332->13320|15394->13359|19056->16993|19072->16999|19129->17033|20612->18488|20628->18494|20685->18528|21832->19647|21848->19653|21905->19687|23359->21113|23375->21119|23437->21158|25025->22718|25041->22724|25095->22756|25137->22770|25153->22776|25208->22808|25395->22967|25411->22973|25468->23008|25510->23022|25526->23028|25584->23063|25767->23218|25783->23224|25837->23256|25879->23270|25895->23276|25950->23308|26243->23573|26259->23579|26318->23616|26360->23630|26376->23636|26436->23673|26627->23836|26643->23842|26702->23879|26744->23893|26760->23899|26820->23936|27011->24099|27027->24105|27086->24142|27128->24156|27144->24162|27204->24199|27520->24487|27536->24493|27595->24530|27637->24544|27653->24550|27713->24587|27888->24734|27904->24740|27963->24777|28005->24791|28021->24797|28081->24834|28256->24981|28272->24987|28331->25024|28373->25038|28389->25044|28449->25081|34468->31072|34484->31078|34571->31154|34613->31156|34675->31190|34691->31196|34753->31248|34822->31277|34880->31306|34934->31332|34955->31343|35001->31367|35064->31401|35089->31403|35121->31406|35160->31423|35196->31448|35238->31450|35296->31479|35340->31495|35361->31506|35408->31531|35452->31543|35514->31573|35575->31605|35647->31649|35709->31694|35750->31696|35808->31725|35850->31739|35865->31744|35906->31763|35976->31801|36043->31840|36059->31846|36135->31911|36204->31940|36262->31969|36316->31995|36337->32006|36379->32026|36455->32073|36480->32075|36512->32078|36551->32095|36587->32120|36629->32122|36687->32151|36731->32167|36752->32178|36795->32199|36839->32211|36901->32241|36962->32273|37034->32317|37092->32358|37133->32360|37191->32389|37233->32403|37248->32408|37289->32427|37359->32465|37430->32508|37446->32514|37496->32554|37565->32583|37623->32612|37727->32688|37759->32710|37786->32715|37822->32722|37847->32724|37924->32772|37960->32797|37992->32799|38014->32810|38063->32834|38171->32910|38229->32939|38305->32987|38365->33030|38406->33032|38468->33065|38510->33079|38525->33084|38566->33103|38636->33141|38823->33300|38838->33305|38875->33320|38940->33357|38981->33388|39022->33390|39080->33419|39203->33514|39258->33552|39299->33554|39357->33583|39389->33587|39404->33592|39445->33611|39507->33645|39565->33686|39606->33688|39664->33717|39696->33721|39711->33726|39752->33745|39818->33779|39880->33809|39938->33838|40039->33907|40101->33937|40161->33968|40553->34332|40569->34338|40617->34364|42077->35798|42112->35823|42152->35824|42194->35838|42210->35844|42283->35894|42328->35906|42741->36291|42757->36297|42828->36346|42918->36408|42934->36414|43018->36476|43099->36529|43115->36535|43186->36584|43439->36809|43455->36815|43522->36860
+                  LINES: 30->1|33->2|36->1|37->3|37->3|37->3|42->8|52->18|52->18|52->18|87->53|87->53|87->53|87->53|87->53|87->53|91->57|91->57|91->57|91->57|91->57|91->57|95->61|95->61|95->61|95->61|95->61|95->61|109->75|109->75|109->75|110->76|136->102|136->102|136->102|194->160|194->160|194->160|253->219|253->219|253->219|285->251|285->251|285->251|313->279|313->279|313->279|363->329|363->329|363->329|385->351|385->351|385->351|406->372|406->372|406->372|429->395|429->395|429->395|477->443|477->443|477->443|477->443|477->443|477->443|482->448|482->448|482->448|482->448|482->448|482->448|487->453|487->453|487->453|487->453|487->453|487->453|499->465|499->465|499->465|499->465|499->465|499->465|504->470|504->470|504->470|504->470|504->470|504->470|509->475|509->475|509->475|509->475|509->475|509->475|529->495|529->495|529->495|529->495|529->495|529->495|534->500|534->500|534->500|534->500|534->500|534->500|539->505|539->505|539->505|539->505|539->505|539->505|742->708|742->708|742->708|742->708|747->713|747->713|747->713|747->713|748->714|748->714|748->714|748->714|748->714|748->714|748->714|748->714|748->714|748->714|749->715|749->715|749->715|749->715|749->715|750->716|754->720|755->721|755->721|755->721|756->722|756->722|756->722|756->722|757->723|761->727|761->727|761->727|761->727|762->728|762->728|762->728|762->728|762->728|762->728|762->728|762->728|762->728|762->728|763->729|763->729|763->729|763->729|763->729|764->730|768->734|769->735|769->735|769->735|770->736|770->736|770->736|770->736|771->737|779->745|779->745|779->745|779->745|780->746|781->747|781->747|781->747|781->747|781->747|781->747|781->747|781->747|781->747|781->747|783->749|784->750|785->751|785->751|785->751|786->752|786->752|786->752|786->752|787->753|793->759|793->759|793->759|795->761|795->761|795->761|796->762|798->764|798->764|798->764|799->765|799->765|799->765|799->765|800->766|800->766|800->766|801->767|801->767|801->767|801->767|802->768|803->769|804->770|806->772|807->773|810->776|814->780|814->780|814->780|860->826|860->826|860->826|860->826|860->826|860->826|860->826|892->858|892->858|892->858|895->861|895->861|895->861|898->864|898->864|898->864|903->869|903->869|903->869
                   -- GENERATED --
               */
           

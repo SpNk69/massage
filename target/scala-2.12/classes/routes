@@ -22,4 +22,3 @@ GET    /submitDE              controllers.HomeController.submitDE()
 
 GET     /public/*file      controllers.Assets.at(path="/public", file)
 
-
