@@ -80,7 +80,7 @@ public class HomeController extends Controller {
 
 
         flash("success", "Ačiū už klausimą! Susisieksime kai tik galėsime.");
-        return redirect("lt#klausk");
+        return redirect("/lt#klausk");
     }
     public Result submitRU() {
         Form<ContactFormDataRU> userForm = formFactory.form(ContactFormDataRU.class).bindFromRequest();
@@ -100,7 +100,7 @@ public class HomeController extends Controller {
 
 
         flash("success", "Спасибо за вопрос! Мы свяжемся с вами, как только сможем.");
-        return redirect("ru#bonpoc");
+        return redirect("/ru#bonpoc");
     }
 
     public Result submitDE() {
@@ -121,7 +121,7 @@ public class HomeController extends Controller {
 
 
         flash("success", "Vielen Dank für die Frage! Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.");
-        return redirect("#fragen");
+        return redirect("/#fragen");
     }
 
 
