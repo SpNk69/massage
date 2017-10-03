@@ -44,24 +44,27 @@ Seq[Any](format.raw/*7.32*/("""
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Массажы Виды - это здоровье и удовольствие для вашего тела. Он идеально подходит для тех, кто хочет расслабиться, восстановить силы и расслабить тело. Попробуйте это сегодня!">
+    <meta name="keywords" content="Спа-массажы, Здоровье, Лимфодренаж, горячими – холодными комнями, Классический - Сегментный, Антицеллюлитный, Cпины, Расслабляющий, Аюрведический, Поясницы, лица, головы, рук, Ног, Плечо, стоп, живота,
+шеи, Ягодицы, Бедры.">
+
     <meta name="author" content="">
 
-    <title>Массаж Виды</title>
+    <title>Vida Массажы </title>
 
     <!-- Bootstrap Core CSS -->
-    <link href='"""),_display_(/*22.18*/routes/*22.24*/.Assets.at("stylesheets/vendor/bootstrap/css/bootstrap.min.css")),format.raw/*22.88*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*25.18*/routes/*25.24*/.Assets.at("stylesheets/vendor/bootstrap/css/bootstrap.min.css")),format.raw/*25.88*/("""' rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href='"""),_display_(/*25.18*/routes/*25.24*/.Assets.at("stylesheets/vendor/font-awesome/css/font-awesome.min.css")),format.raw/*25.94*/("""' rel="stylesheet" type="text/css">
+    <link href='"""),_display_(/*28.18*/routes/*28.24*/.Assets.at("stylesheets/vendor/font-awesome/css/font-awesome.min.css")),format.raw/*28.94*/("""' rel="stylesheet" type="text/css">
 
 
-    <link rel="stylesheet" href=""""),_display_(/*28.35*/routes/*28.41*/.Assets.at("stylesheets/css/w3.css")),format.raw/*28.77*/("""">
+    <link rel="stylesheet" href=""""),_display_(/*31.35*/routes/*31.41*/.Assets.at("stylesheets/css/w3.css")),format.raw/*31.77*/("""">
 
 
     <!-- Theme CSS -->
-    <link href='"""),_display_(/*32.18*/routes/*32.24*/.Assets.at("stylesheets/css/grayscale.min.css")),format.raw/*32.71*/("""' rel="stylesheet">
-    <link href='"""),_display_(/*33.18*/routes/*33.24*/.Assets.at("stylesheets/css/special.css")),format.raw/*33.65*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*35.18*/routes/*35.24*/.Assets.at("stylesheets/css/grayscale.min.css")),format.raw/*35.71*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*36.18*/routes/*36.24*/.Assets.at("stylesheets/css/special.css")),format.raw/*36.65*/("""' rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,9 +76,9 @@ Seq[Any](format.raw/*7.32*/("""
 
 </head>
     <body>
-        """),format.raw/*46.32*/("""
-        """),_display_(/*47.10*/content),format.raw/*47.17*/("""
-    """),format.raw/*48.5*/("""</body>
+        """),format.raw/*49.32*/("""
+        """),_display_(/*50.10*/content),format.raw/*50.17*/("""
+    """),format.raw/*51.5*/("""</body>
 </html>
 """))
       }
@@ -93,11 +96,11 @@ Seq[Any](format.raw/*7.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Sep 23 20:14:55 CEST 2017
+                  DATE: Tue Oct 03 22:35:52 CEST 2017
                   SOURCE: /home/alex/git/web/app/views/main2ru.scala.html
-                  HASH: 8b953390e4b593c9784469219ac5df1b63bbdac8
-                  MATRIX: 1208->259|1333->289|1361->291|1746->649|1761->655|1846->719|1937->783|1952->789|2043->859|2142->931|2157->937|2214->973|2286->1018|2301->1024|2369->1071|2433->1108|2448->1114|2510->1155|2966->1673|3003->1683|3031->1690|3063->1695
-                  LINES: 33->7|38->7|40->9|53->22|53->22|53->22|56->25|56->25|56->25|59->28|59->28|59->28|63->32|63->32|63->32|64->33|64->33|64->33|76->46|77->47|77->47|78->48
+                  HASH: 01eb193bb16a02d1ac10afb04e3bf8e4aaed881b
+                  MATRIX: 1208->259|1333->289|1361->291|2183->1086|2198->1092|2283->1156|2374->1220|2389->1226|2480->1296|2579->1368|2594->1374|2651->1410|2723->1455|2738->1461|2806->1508|2870->1545|2885->1551|2947->1592|3403->2110|3440->2120|3468->2127|3500->2132
+                  LINES: 33->7|38->7|40->9|56->25|56->25|56->25|59->28|59->28|59->28|62->31|62->31|62->31|66->35|66->35|66->35|67->36|67->36|67->36|79->49|80->50|80->50|81->51
                   -- GENERATED --
               */
           

@@ -10,7 +10,7 @@ GET     /lt            controllers.HomeController.pagrindinisLT
 
 GET    /toFaceBook    controllers.HomeController.toFaceBook
 
-GET     /de                 controllers.HomeController.germanVersion()
+GET     /                 controllers.HomeController.germanVersion()
 
 GET     /ru                 controllers.HomeController.russianVersion()
 

@@ -129,3 +129,7 @@ w3-bordered {
 w3-bordered:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
+
+#ulo{text-transform:uppercase;}
+#ulo2{font-weight:normal}
+#what{max-height:700px;}

@@ -44,24 +44,25 @@ Seq[Any](format.raw/*7.32*/("""
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Vidos masažai tai sveikata ir malonumas Jūsų kūnui. Tai puikiai tinka norintiems pailsėti, atgauti jėgas ir atpalaiduoti kūną. Išbandykite jau šiandien!">
+    <meta name="keywords" content="Spa Masažai, Sveikata, Limfodrenažinis, Karštų-šaltų akmenš, Klasikinis segmentinis, Anticeliulitinis, Nugaros, Atpalaiduojantis, Ajurvedinis, Juosmens, Veido, Galvos, Rankų, Kojų, Pečių, Pėdų, Pilvo, Kaklo, Sėdmenų, Šlaunų.">
     <meta name="author" content="">
 
     <title>Vidos Masažai</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href='"""),_display_(/*22.18*/routes/*22.24*/.Assets.at("stylesheets/vendor/bootstrap/css/bootstrap.min.css")),format.raw/*22.88*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*23.18*/routes/*23.24*/.Assets.at("stylesheets/vendor/bootstrap/css/bootstrap.min.css")),format.raw/*23.88*/("""' rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href='"""),_display_(/*25.18*/routes/*25.24*/.Assets.at("stylesheets/vendor/font-awesome/css/font-awesome.min.css")),format.raw/*25.94*/("""' rel="stylesheet" type="text/css">
+    <link href='"""),_display_(/*26.18*/routes/*26.24*/.Assets.at("stylesheets/vendor/font-awesome/css/font-awesome.min.css")),format.raw/*26.94*/("""' rel="stylesheet" type="text/css">
 
 
-    <link rel="stylesheet" href=""""),_display_(/*28.35*/routes/*28.41*/.Assets.at("stylesheets/css/w3.css")),format.raw/*28.77*/("""">
-    <link  href='"""),_display_(/*29.19*/routes/*29.25*/.Assets.at("stylesheets/css/w3.css")),format.raw/*29.61*/("""' rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href=""""),_display_(/*29.35*/routes/*29.41*/.Assets.at("stylesheets/css/w3.css")),format.raw/*29.77*/("""">
+    <link  href='"""),_display_(/*30.19*/routes/*30.25*/.Assets.at("stylesheets/css/w3.css")),format.raw/*30.61*/("""' rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href='"""),_display_(/*32.18*/routes/*32.24*/.Assets.at("stylesheets/css/grayscale.min.css")),format.raw/*32.71*/("""' rel="stylesheet">
-    <link href='"""),_display_(/*33.18*/routes/*33.24*/.Assets.at("stylesheets/css/special.css")),format.raw/*33.65*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*33.18*/routes/*33.24*/.Assets.at("stylesheets/css/grayscale.min.css")),format.raw/*33.71*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*34.18*/routes/*34.24*/.Assets.at("stylesheets/css/special.css")),format.raw/*34.65*/("""' rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,9 +74,9 @@ Seq[Any](format.raw/*7.32*/("""
 
 </head>
     <body>
-        """),format.raw/*46.32*/("""
-        """),_display_(/*47.10*/content),format.raw/*47.17*/("""
-    """),format.raw/*48.5*/("""</body>
+        """),format.raw/*47.32*/("""
+        """),_display_(/*48.10*/content),format.raw/*48.17*/("""
+    """),format.raw/*49.5*/("""</body>
 </html>
 """))
       }
@@ -93,11 +94,11 @@ Seq[Any](format.raw/*7.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sun Sep 24 13:56:20 CEST 2017
+                  DATE: Tue Oct 03 22:19:17 CEST 2017
                   SOURCE: /home/alex/git/web/app/views/main2.scala.html
-                  HASH: 9cc9384eaa2e8096ff5be6bd0754ac00081c697a
-                  MATRIX: 1206->259|1331->289|1359->291|1746->651|1761->657|1846->721|1937->785|1952->791|2043->861|2142->933|2157->939|2214->975|2262->996|2277->1002|2334->1038|2438->1115|2453->1121|2521->1168|2585->1205|2600->1211|2662->1252|3118->1770|3155->1780|3183->1787|3215->1792
-                  LINES: 33->7|38->7|40->9|53->22|53->22|53->22|56->25|56->25|56->25|59->28|59->28|59->28|60->29|60->29|60->29|63->32|63->32|63->32|64->33|64->33|64->33|76->46|77->47|77->47|78->48
+                  HASH: 142dff5820f56159251269dfcf6786a8e9b94583
+                  MATRIX: 1206->259|1331->289|1359->291|2160->1065|2175->1071|2260->1135|2351->1199|2366->1205|2457->1275|2556->1347|2571->1353|2628->1389|2676->1410|2691->1416|2748->1452|2852->1529|2867->1535|2935->1582|2999->1619|3014->1625|3076->1666|3532->2184|3569->2194|3597->2201|3629->2206
+                  LINES: 33->7|38->7|40->9|54->23|54->23|54->23|57->26|57->26|57->26|60->29|60->29|60->29|61->30|61->30|61->30|64->33|64->33|64->33|65->34|65->34|65->34|77->47|78->48|78->48|79->49
                   -- GENERATED --
               */
           

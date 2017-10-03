@@ -133,7 +133,7 @@ Seq[Any](format.raw/*1.65*/("""
 
 
         <div class="col-lg-6 ">
-            <img src='"""),_display_(/*102.24*/routes/*102.30*/.Assets.at("images/img/Vida.jpg")),format.raw/*102.63*/("""' class="img-circle" alt="Vida Polescuk" height="600">
+            <img src='"""),_display_(/*102.24*/routes/*102.30*/.Assets.at("images/img/Vida-Polescuk.jpg")),format.raw/*102.72*/("""' class="img-circle" alt="Masažuotoja Vida Polescuk" id="what">
 
         </div>
         <p></p>
@@ -201,7 +201,7 @@ Seq[Any](format.raw/*1.65*/("""
                             <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo" >
                                 Limfodrenažinis kūno masažas
                             </button>
-                            <div id="limfo" class="collapse customWidth">      <p class="massageText customWidth">Tai saugus efektyvus būdas sustiprinti sveikatą bei palaikyti gerą savijautą.
+                            <div id="limfo" class="collapse customWidth">      <p class="massageText ">Tai saugus efektyvus būdas sustiprinti sveikatą bei palaikyti gerą savijautą.
                                 Sveikiems žmonėms - tai profilaktinė priemonė, palaikanti normalią medžiagų
                                 apykaitą.</br>
 
@@ -340,11 +340,6 @@ Seq[Any](format.raw/*1.65*/("""
                         <div id="juosmens" class="collapse customWidth"><p class="massageText">Gerina kraujo ir limfos apytaką juosmens bei kojų srityse, atpalaiduoja įsitempusius  raumenis, mažina juosmens, sėdmenų, kojų skausmą, stiprina nusilpusius raumenis.
                             Sumažina skausmą po operacijos, mažina nervinių šaknų uždegimą.</p></div>
 
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pedu" >
-                                Atpalaiduojantis pėdų masažas
-                            </button>
-                        <div id="pedu" class="collapse customWidth"><p class="massageText">Taikomas pavargusioms, skausmingoms pėdoms atpalaiduoti, kūno gyvybiniam tonusui padidinti, imunitetui stiprinti. Ši procedūra tinka daug vaikštantiems, dirbantiems stovimą arba žmonėms šąlančiomis kojomis. Pėdų masažas padeda atsigauti ir pailsėti visam organizmui.</p></div>
-
 
 
                     </div>
@@ -360,7 +355,7 @@ Seq[Any](format.raw/*1.65*/("""
                 </button>
                 <p></p>
                 <div id="vyresnio" class="collapse">
-                    <!--  <div class="text-center"><img src='"""),_display_(/*329.63*/routes/*329.69*/.Assets.at("images/img/mas3.jpeg")),format.raw/*329.103*/("""' class="img-circle"
+                    <!--  <div class="text-center"><img src='"""),_display_(/*324.63*/routes/*324.69*/.Assets.at("images/img/mas3.jpeg")),format.raw/*324.103*/("""' class="img-circle"
                                                     alt="Medicine massage" width="250" height="250"></a></div>-->
                     <div class="customBackGroundOfDiv " align="center">
 
@@ -382,7 +377,7 @@ Seq[Any](format.raw/*1.65*/("""
                 </button>
                 <p></p>
                 <div id="atpalaiduojantis" class="collapse">
-                    <!--  <div class="text-center"><img src='"""),_display_(/*351.63*/routes/*351.69*/.Assets.at("images/img/mas3.jpeg")),format.raw/*351.103*/("""' class="img-circle"
+                    <!--  <div class="text-center"><img src='"""),_display_(/*346.63*/routes/*346.69*/.Assets.at("images/img/mas3.jpeg")),format.raw/*346.103*/("""' class="img-circle"
                                                     alt="Medicine massage" width="250" height="250"></a></div>-->
                     <div class="customBackGroundOfDiv " align="center">
 
@@ -403,7 +398,7 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="ajurvedinis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*372.67*/routes/*372.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*372.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*367.67*/routes/*367.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*367.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
@@ -426,7 +421,7 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="anticeliulitinis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*395.67*/routes/*395.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*395.112*/("""'
+                        <!--  <div class="text-center"><img src='"""),_display_(/*390.67*/routes/*390.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*390.112*/("""'
                                                         class="img-circle" alt="Medicine massage" width="250"
                                                         height="250"></a></div>-->
                         <div class="customBackGroundOfDiv" align="center">
@@ -444,7 +439,38 @@ Seq[Any](format.raw/*1.65*/("""
 
                         </div>
                     </div>
+
+
+                <div class="col-lg-4 ">
+
+
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#thaipedu" >
+                        Atpalaiduojantis pėdų masažas
+                    </button>
                     <p></p>
+                    <div id="thaipedu" class="collapse">
+                        <!--  <div class="text-center"><img src='"""),_display_(/*418.67*/routes/*418.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*418.112*/("""'
+                                                        class="img-circle" alt="Medicine massage" width="250"
+                                                        height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv" align="center">
+
+
+
+                            <p class="massageText customWidth"> Taikomas pavargusioms, skausmingoms pėdoms atpalaiduoti, kūno gyvybiniam tonusui padidinti, imunitetui stiprinti. Ši procedūra tinka daug vaikštantiems, dirbantiems stovimą arba žmonėms šąlančiomis kojomis. Pėdų masažas padeda atsigauti ir pailsėti visam organizmui.</p> </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <p></p>
                 </div>
 
             </div>
@@ -474,17 +500,17 @@ Seq[Any](format.raw/*1.65*/("""
 
 
             <div class="col-lg-4 ">
-                        <a href=""""),_display_(/*443.35*/routes/*443.41*/.Assets.at("images/img/1nr.jpg")),format.raw/*443.73*/(""""> <img src=""""),_display_(/*443.87*/routes/*443.93*/.Assets.at("images/img/1nr.jpg")),format.raw/*443.125*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                        <a href=""""),_display_(/*469.35*/routes/*469.41*/.Assets.at("images/img/massage-bed.jpg")),format.raw/*469.81*/(""""> <img src=""""),_display_(/*469.95*/routes/*469.101*/.Assets.at("images/img/massage-bed.jpg")),format.raw/*469.141*/("""" class="w3-image w3-round" alt="Vidos masažinė lova kambaryje" ></a>
                     </div>
 
 <p></p>
                     <div class="col-lg-4 ">
-                        <a href=""""),_display_(/*448.35*/routes/*448.41*/.Assets.at("images/img/Skype1.jpg")),format.raw/*448.76*/(""""> <img src=""""),_display_(/*448.90*/routes/*448.96*/.Assets.at("images/img/Skype1.jpg")),format.raw/*448.131*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                        <a href=""""),_display_(/*474.35*/routes/*474.41*/.Assets.at("images/img/hot-cold-stones.jpg")),format.raw/*474.85*/(""""> <img src=""""),_display_(/*474.99*/routes/*474.105*/.Assets.at("images/img/hot-cold-stones.jpg")),format.raw/*474.149*/("""" class="w3-image w3-round" alt="Karštų-šaltų akmenų masažas" ></a>
                     </div>
             <p></p>
 
             <div class="col-lg-4 ">
-                <a href=""""),_display_(/*453.27*/routes/*453.33*/.Assets.at("images/img/3nr.jpg")),format.raw/*453.65*/(""""> <img src=""""),_display_(/*453.79*/routes/*453.85*/.Assets.at("images/img/3nr.jpg")),format.raw/*453.117*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                <a href=""""),_display_(/*479.27*/routes/*479.33*/.Assets.at("images/img/stones-oil.jpg")),format.raw/*479.72*/(""""> <img src=""""),_display_(/*479.86*/routes/*479.92*/.Assets.at("images/img/stones-oil.jpg")),format.raw/*479.131*/("""" class="w3-image w3-round" alt="Vidos masažui naudojami akmenys ir aliejukai" ></a>
             </div>
 
 
@@ -496,17 +522,17 @@ Seq[Any](format.raw/*1.65*/("""
                 <p></p>
 
                 <div class="col-lg-4 ">
-                    <a href=""""),_display_(/*465.31*/routes/*465.37*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*465.74*/(""""> <img src=""""),_display_(/*465.88*/routes/*465.94*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*465.131*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                    <a href=""""),_display_(/*491.31*/routes/*491.37*/.Assets.at("images/img/massage-bed2.jpg")),format.raw/*491.78*/(""""> <img src=""""),_display_(/*491.92*/routes/*491.98*/.Assets.at("images/img/massage-bed2.jpg")),format.raw/*491.139*/("""" class="w3-image w3-round" alt="Vidos masažų lova" ></a>
                 </div>
                 <p></p>
 
                 <div class="col-lg-4 ">
-                    <a href=""""),_display_(/*470.31*/routes/*470.37*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*470.74*/(""""> <img src=""""),_display_(/*470.88*/routes/*470.94*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*470.131*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                    <a href=""""),_display_(/*496.31*/routes/*496.37*/.Assets.at("images/img/tibetan-vacuum-cup-oil.jpg")),format.raw/*496.88*/(""""> <img src=""""),_display_(/*496.102*/routes/*496.108*/.Assets.at("images/img/tibetan-vacuum-cup-oil.jpg")),format.raw/*496.159*/("""" class="w3-image w3-round" alt="Naudojama Tibeto vakuuminė taurė ir aliejukai" ></a>
                 </div>
                 <p></p>
 
                 <div class="col-lg-4 ">
-                    <a href=""""),_display_(/*475.31*/routes/*475.37*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*475.74*/(""""> <img src=""""),_display_(/*475.88*/routes/*475.94*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*475.131*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                    <a href=""""),_display_(/*501.31*/routes/*501.37*/.Assets.at("images/img/Vida-buda.jpg")),format.raw/*501.75*/(""""> <img src=""""),_display_(/*501.89*/routes/*501.95*/.Assets.at("images/img/Vida-buda.jpg")),format.raw/*501.133*/("""" class="w3-image w3-round" alt="Buda ir kriauklės" ></a>
                 </div>
                 <p></p>
 
@@ -520,28 +546,25 @@ Seq[Any](format.raw/*1.65*/("""
 
         </div>
 
-    <div class="row">
+    <!--<div class="row">
 
         <div class="col-md-8 col-md-offset-2">
             <p></p>
 
             <div class="col-lg-4 ">
-                <a href=""""),_display_(/*495.27*/routes/*495.33*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*495.70*/(""""> <img src=""""),_display_(/*495.84*/routes/*495.90*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*495.127*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                <a href=""""),_display_(/*521.27*/routes/*521.33*/.Assets.at("images/img/5.jpg")),format.raw/*521.63*/(""""> <img src=""""),_display_(/*521.77*/routes/*521.83*/.Assets.at("images/img/5.jpg")),format.raw/*521.113*/("""" class="w3-image w3-round" alt="Buda" ></a>
             </div>
             <p></p>
 
             <div class="col-lg-4 ">
-                <a href=""""),_display_(/*500.27*/routes/*500.33*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*500.70*/(""""> <img src=""""),_display_(/*500.84*/routes/*500.90*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*500.127*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                <a href=""""),_display_(/*526.27*/routes/*526.33*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*526.70*/(""""> <img src=""""),_display_(/*526.84*/routes/*526.90*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*526.127*/("""" class="w3-image w3-round" alt="Buda" ></a>
             </div>
             <p></p>
 
             <div class="col-lg-4 ">
-                <a href=""""),_display_(/*505.27*/routes/*505.33*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*505.70*/(""""> <img src=""""),_display_(/*505.84*/routes/*505.90*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*505.127*/("""" class="w3-image w3-round" alt="Buda" ></a>
+                <a href=""""),_display_(/*531.27*/routes/*531.33*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*531.70*/(""""> <img src=""""),_display_(/*531.84*/routes/*531.90*/.Assets.at("images/img/intro-bg.jpg")),format.raw/*531.127*/("""" class="w3-image w3-round" alt="Buda" ></a>
             </div>
             <p></p>
-
-
-
 
         </div>
 
@@ -549,7 +572,7 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-    </div>
+    </div>-->
 
 
 
@@ -577,65 +600,71 @@ Seq[Any](format.raw/*1.65*/("""
                 <div class="w3-container customBackGroundOfDiv">
 
                     <p></p>
-                    <h5 align="center"><u>Spa masažai</u></h5>
+                    <h5 align="center" ><u>Spa masažai</u></h5>
 
                     <table class="table table-inverse">
-                        <th scope="row"><u>Spa Masažai</u></th>
+                        <th scope="row" id="ulo"><u></u></th>
                         <td><b><u>Trukmė</u></b></td>
                         <td><b><u>Kaina</u></b></td>
                         <tbody>
                         <tr>
-                            <th scope="row">Karštų-šaltų akmenų masažas</th>
-                            <td>120min</td>
-                            <td>150 CHF</td>
+                            <th scope="row" id="ulo2">Karštų-šaltų akmenų masažas</th>
+                            <td>90 min.</td>
+                            <td>170 CHF</td>
                         </tr>
                         <tr>
-                            <th scope="row">Limfodrenažinis kūno masažas</th>
-                            <td>120min</td>
-
-                            <td>120 CHF</td>
+                            <th scope="row" id="ulo2">Karštų-šaltų akmenų masažas</th>
+                            <td>120 min.</td>
+                            <td>220 CHF</td>
                         </tr>
                         <tr>
-                            <th scope="row">Limfodrenažinis veido masažas</th>
-                            <td>120min</td>
+                            <th scope="row" id="ulo2">Limfodrenažinis kūno masažas</th>
+                            <td>90 min.</td>
 
-                            <td>70 CHF</td>
+                            <td>140 CHF</td>
                         </tr>
-
                         <tr>
-                            <th scope="row">Ajurvedinis krūtų masažas mot.</th>
-                            <td>120min</td>
+                            <th scope="row" id="ulo2">Limfodrenažinis veido masažas</th>
+                            <td>50 min.</td>
 
-                            <td>80 CHF</td>
+                            <td>90 CHF</td>
                         </tr>
 
                         <tr>
-                            <th scope="row">Klasikinis segmentinis nugaros masažas</th>
-                            <td>120min</td>
-
-                            <td>120 CHF</td>
-                        </tr>
-
-
-
-                        <tr>
-                            <th scope="row">Atpalaiduojantis viso kūno masažas</th>
-                            <td>120min</td>
-
-                            <td>130 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Atpalaiduojantis pėdų masažas</th>
-                            <td>120min</td>
-
-                            <td>70 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Masažas vyresnio amžiaus žmonėms</th>
-                            <td>120min</td>
+                            <th scope="row" id="ulo2">Ajurvedinis krūtų masažas moterims</th>
+                            <td>60 min.</td>
 
                             <td>100 CHF</td>
                         </tr>
+
+                        <tr>
+                            <th scope="row" id="ulo2">Klasikinis segmentinis nugaros masažas</th>
+                            <td>60 min.</td>
+
+                            <td>100 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" id="ulo2">Klasikinis segmentinis nugaros masažas</th>
+                            <td>120 min.</td>
+
+                            <td>150 CHF</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <th scope="row" id="ulo2">Atpalaiduojantis viso kūno masažas</th>
+                            <td>120 min.</td>
+
+                            <td>200 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" id="ulo2">Atpalaiduojantis pėdų masažas</th>
+                            <td>60 min.</td>
+
+                            <td>100 CHF</td>
+                        </tr>
+
 
                         </tbody>
                     </table>
@@ -645,53 +674,125 @@ Seq[Any](format.raw/*1.65*/("""
                     <h5 align="center"><b><u>Kiti masažai</u></b></h5>
 
                     <table class="table table-inverse">
-                        <th scope="row"><u>Atskirų kūno dalių masažai:</u> </th>
+                        <th scope="row" id="ulo"><u>Atskirų kūno dalių masažai</u> </th>
                         <td><b><u>30min</u></b></td>
                         <td><b><u>60min</u></b></td>
                         <td><b><u>90min</u></b></td>
                         <tbody>
 
                         <tr>
-                            <th scope="row">Juosmens</th>
+                            <th scope="row" id="ulo2">Juosmens, sėdmenų, kojų masažas</th>
                             <td>50 CHF</td>
-                            <td>80 CHF</td>
                             <td>100 CHF</td>
+                            <td>-</td>
                         </tr>
                         <tr>
-                            <th scope="row">Pečių</th>
+                            <th scope="row" id="ulo2">Pečių, kaklo, rankų masažas</th>
                             <td>50 CHF</td>
-                            <td>80 CHF</td>
                             <td>100 CHF</td>
+                            <td>--</td>
                         </tr>
-                        <p></p>
+                        <tr>
+                            <th scope="row" id="ulo2">Galvos masažas</th>
+                            <td>50 CHF</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" id="ulo2">Pilvo masažas</th>
+                            <td>50 CHF</td>
+                            <td>--</td>
+                            <td>--</td>
 
-                        <th scope="row"><u>Anticeliulitinis masažai:<u></th>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <th scope="row"><u></u> </th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+
+                            <th scope="row"><u></u> </th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+
+
+
+                        <th scope="row"><b><u id="ulo">Anticeliulitiniai masažai</u> </b></th>
+                        <td><b><u>30min</u></b></td>
+                        <td><b><u>60min</u></b></td>
+                        <td><b><u>90min</u></b></td>
+                        <tr>
+                        <tbody>
+                            <th scope="row" id="ulo2">Sėdmenų</th>
+                            <td>70 CHF</td>
+                            <td>130 CHF</td>
+                            <td>180 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" id="ulo2">Šlaunų</th>
+                            <td>70 CHF</td>
+                            <td>130 CHF</td>
+                            <td>180 CHF</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" id="ulo2">Pilvo</th>
+                            <td>70 CHF</td>
+                            <td>130 CHF</td>
+                            <td>180 CHF</td>
+                        </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Žąsto masažas</th>
+                                <td>70 CHF</td>
+                                <td>130 CHF</td>
+                                <td>180 CHF</td>
+
+
+                            </tr>
+                        <tr>
+
+                        <th scope="row"><u></u> </th>
                         <td></td>
                         <td></td>
                         <td></td>
+
+                        </tr>
+                        <tr>
+
+                            <th scope="row"><u></u> </th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+
+
+                        <th scope="row" id="ulo"><b><u>Masažas vyresnio amžiaus žmonėms (nuo 65 metų)<u></b></th>
+                        <td><b><u></u></b></td>
+                        <td><b><u>Kaina</u></b></td>
+                        <td><b><u></u></b></td>
                         <tbody>
 
                         <tr>
-                            <th scope="row">Sėdmenų</th>
-                            <td>50 CHF</td>
-                            <td>80 CHF</td>
-                            <td>100 CHF</td>
+                            <th scope="row" id="ulo2">Tinka visi spa ir atskirų kūno dalių masažai</th>
+                            <td></td>
+                            <td>-10% nuolaida</td>
+                            <td></td>
                         </tr>
-                        <tr>
-                            <th scope="row">Šlaunų</th>
-                            <td>50 CHF</td>
-                            <td>80 CHF</td>
-                            <td>100 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Pilvo</th>
-                            <td>50 CHF</td>
-                            <td>80 CHF</td>
-                            <td>100 CHF</td>
-                        </tr>
+
 
                         </tbody>
                     </table>
+                        <p></p>
 
 
 
@@ -701,13 +802,12 @@ Seq[Any](format.raw/*1.65*/("""
 
 
                         <tr>
-                            <th scope="row"><u>Dovanų kuponai</u> </th>
-                            <td>120 CHF</td>
-                            <td>250 CHF</td>
-                            <td>* CHF</td>
-                        <tr>
-                            <th scope="row">* - jusu pasirinkta suma</th>
+                            <th scope="row"><u></u> </th>
+                            <td>100 CHF</td>
+                            <td>200 CHF</td>
+                            <td>300 CHF</td>
                         </tr>
+
 
                     </table>
 
@@ -739,36 +839,36 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-                            """),_display_(/*708.30*/helper/*708.36*/.form(action = routes.HomeController.submitLT(),'class -> "form-horizontal")/*708.112*/ {_display_(Seq[Any](format.raw/*708.114*/("""
+                            """),_display_(/*808.30*/helper/*808.36*/.form(action = routes.HomeController.submitLT(),'class -> "form-horizontal")/*808.112*/ {_display_(Seq[Any](format.raw/*808.114*/("""
 
 
 
 
-                            """),_display_(/*713.30*/helper/*713.36*/.input(contactForm("Vardas"),'class->"form-control")/*713.88*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*713.117*/("""
-                            """),format.raw/*714.29*/("""<input type="text" name=""""),_display_(/*714.55*/contactForm/*714.66*/.field("firstName").name),format.raw/*714.90*/(""""  placeholder="Jūsų vardas" id=""""),_display_(/*714.124*/id),format.raw/*714.126*/("""" """),_display_(/*714.129*/toHtmlArgs(args)),_display_(/*714.146*/if(contactForm.hasErrors)/*714.171*/ {_display_(Seq[Any](format.raw/*714.173*/("""
-                            """),format.raw/*715.29*/("""<option value='"""),_display_(/*715.45*/contactForm/*715.56*/.field("firstName").value),format.raw/*715.81*/("""'></option>""")))}),format.raw/*715.93*/("""
-                            """)))}),format.raw/*716.30*/("""
+                            """),_display_(/*813.30*/helper/*813.36*/.input(contactForm("Vardas"),'class->"form-control")/*813.88*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*813.117*/("""
+                            """),format.raw/*814.29*/("""<input type="text" name=""""),_display_(/*814.55*/contactForm/*814.66*/.field("firstName").name),format.raw/*814.90*/(""""  placeholder="Jūsų vardas" id=""""),_display_(/*814.124*/id),format.raw/*814.126*/("""" """),_display_(/*814.129*/toHtmlArgs(args)),_display_(/*814.146*/if(contactForm.hasErrors)/*814.171*/ {_display_(Seq[Any](format.raw/*814.173*/("""
+                            """),format.raw/*815.29*/("""<option value='"""),_display_(/*815.45*/contactForm/*815.56*/.field("firstName").value),format.raw/*815.81*/("""'></option>""")))}),format.raw/*815.93*/("""
+                            """)))}),format.raw/*816.30*/("""
 
 
 
-                            """),format.raw/*720.29*/("""<div id="xxx">
-                            """),_display_(/*721.30*/for(error <- contactForm("firstName").errors) yield /*721.75*/ {_display_(Seq[Any](format.raw/*721.77*/("""
-                            """),format.raw/*722.29*/("""<p id="xxxx">"""),_display_(/*722.43*/error/*722.48*/.format(messages())),format.raw/*722.67*/("""</p>
-                                """)))}),format.raw/*723.34*/("""</div>
+                            """),format.raw/*820.29*/("""<div id="xxx">
+                            """),_display_(/*821.30*/for(error <- contactForm("firstName").errors) yield /*821.75*/ {_display_(Seq[Any](format.raw/*821.77*/("""
+                            """),format.raw/*822.29*/("""<p id="xxxx">"""),_display_(/*822.43*/error/*822.48*/.format(messages())),format.raw/*822.67*/("""</p>
+                                """)))}),format.raw/*823.34*/("""</div>
 
 
 
-                            """),_display_(/*727.30*/helper/*727.36*/.input(contactForm("Elektroninis paštas"),'class->"form-control")/*727.101*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*727.130*/("""
-                            """),format.raw/*728.29*/("""<input type="text" name=""""),_display_(/*728.55*/contactForm/*728.66*/.field("email").name),format.raw/*728.86*/(""""  placeholder="Jūsų elektroninis paštas" id=""""),_display_(/*728.133*/id),format.raw/*728.135*/("""" """),_display_(/*728.138*/toHtmlArgs(args)),_display_(/*728.155*/if(contactForm.hasErrors)/*728.180*/ {_display_(Seq[Any](format.raw/*728.182*/("""
-                            """),format.raw/*729.29*/("""<option value='"""),_display_(/*729.45*/contactForm/*729.56*/.field("email").value),format.raw/*729.77*/("""'></option>""")))}),format.raw/*729.89*/("""
-                            """)))}),format.raw/*730.30*/("""
+                            """),_display_(/*827.30*/helper/*827.36*/.input(contactForm("Elektroninis paštas"),'class->"form-control")/*827.101*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*827.130*/("""
+                            """),format.raw/*828.29*/("""<input type="text" name=""""),_display_(/*828.55*/contactForm/*828.66*/.field("email").name),format.raw/*828.86*/(""""  placeholder="Jūsų elektroninis paštas" id=""""),_display_(/*828.133*/id),format.raw/*828.135*/("""" """),_display_(/*828.138*/toHtmlArgs(args)),_display_(/*828.155*/if(contactForm.hasErrors)/*828.180*/ {_display_(Seq[Any](format.raw/*828.182*/("""
+                            """),format.raw/*829.29*/("""<option value='"""),_display_(/*829.45*/contactForm/*829.56*/.field("email").value),format.raw/*829.77*/("""'></option>""")))}),format.raw/*829.89*/("""
+                            """)))}),format.raw/*830.30*/("""
 
 
 
-                            """),format.raw/*734.29*/("""<div id="xxx">
-                            """),_display_(/*735.30*/for(error <- contactForm("email").errors) yield /*735.71*/ {_display_(Seq[Any](format.raw/*735.73*/("""
-                            """),format.raw/*736.29*/("""<p id="xxxx">"""),_display_(/*736.43*/error/*736.48*/.format(messages())),format.raw/*736.67*/("""</p>
-                                """)))}),format.raw/*737.34*/("""</div>
+                            """),format.raw/*834.29*/("""<div id="xxx">
+                            """),_display_(/*835.30*/for(error <- contactForm("email").errors) yield /*835.71*/ {_display_(Seq[Any](format.raw/*835.73*/("""
+                            """),format.raw/*836.29*/("""<p id="xxxx">"""),_display_(/*836.43*/error/*836.48*/.format(messages())),format.raw/*836.67*/("""</p>
+                                """)))}),format.raw/*837.34*/("""</div>
 
 
 
@@ -776,43 +876,41 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-                            """),_display_(/*745.30*/helper/*745.36*/.input(field = contactForm("Klausimas"))/*745.76*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*745.105*/("""
-                            """),format.raw/*746.29*/("""<div>
-                                <textarea class="form-control" name=""""),_display_(/*747.71*/contactForm("textbox")/*747.93*/.name),format.raw/*747.98*/("""" id=""""),_display_(/*747.105*/id),format.raw/*747.107*/("""" placeholder="Jūsų žinutė" rows='5' cols='80'>"""),_display_(/*747.155*/if(contactForm.hasErrors)/*747.180*/{_display_(_display_(/*747.182*/contactForm/*747.193*/.field("textbox").value))}),format.raw/*747.217*/("""</textarea>
+                            """),_display_(/*845.30*/helper/*845.36*/.input(field = contactForm("Klausimas"))/*845.76*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*845.105*/("""
+                            """),format.raw/*846.29*/("""<div>
+                                <textarea class="form-control" name=""""),_display_(/*847.71*/contactForm("textbox")/*847.93*/.name),format.raw/*847.98*/("""" id=""""),_display_(/*847.105*/id),format.raw/*847.107*/("""" placeholder="Jūsų žinutė" rows='5' cols='80'>"""),_display_(/*847.155*/if(contactForm.hasErrors)/*847.180*/{_display_(_display_(/*847.182*/contactForm/*847.193*/.field("textbox").value))}),format.raw/*847.217*/("""</textarea>
                             </div>
-                            """)))}),format.raw/*749.30*/("""
-                            """),format.raw/*750.29*/("""<div id="xxx">
-                                """),_display_(/*751.34*/for(error <- contactForm("textbox").errors) yield /*751.77*/ {_display_(Seq[Any](format.raw/*751.79*/("""
-                                """),format.raw/*752.33*/("""<p id="xxxx">"""),_display_(/*752.47*/error/*752.52*/.format(messages())),format.raw/*752.71*/("""</p>
-                                """)))}),format.raw/*753.34*/("""</div>
+                            """)))}),format.raw/*849.30*/("""
+                            """),format.raw/*850.29*/("""<div id="xxx">
+                                """),_display_(/*851.34*/for(error <- contactForm("textbox").errors) yield /*851.77*/ {_display_(Seq[Any](format.raw/*851.79*/("""
+                                """),format.raw/*852.33*/("""<p id="xxxx">"""),_display_(/*852.47*/error/*852.52*/.format(messages())),format.raw/*852.71*/("""</p>
+                                """)))}),format.raw/*853.34*/("""</div>
 
 
 
                                 <button type="submit"  class="btn btn-default" >Siųsti žinute</button>
 
-                            <div id="flash">"""),_display_(/*759.46*/flash/*759.51*/.get("success")),format.raw/*759.66*/("""</div>
+                            <div id="flash">"""),_display_(/*859.46*/flash/*859.51*/.get("success")),format.raw/*859.66*/("""</div>
 
-                            """),_display_(/*761.30*/if(contactForm.hasGlobalErrors)/*761.61*/ {_display_(Seq[Any](format.raw/*761.63*/("""
-                            """),format.raw/*762.29*/("""<div id="xxx">
+                            """),_display_(/*861.30*/if(contactForm.hasGlobalErrors)/*861.61*/ {_display_(Seq[Any](format.raw/*861.63*/("""
+                            """),format.raw/*862.29*/("""<div id="xxx">
                             <p class="error" >
-                                """),_display_(/*764.34*/for(error <- contactForm.globalErrors) yield /*764.72*/ {_display_(Seq[Any](format.raw/*764.74*/("""
-                            """),format.raw/*765.29*/("""<p>"""),_display_(/*765.33*/error/*765.38*/.format(messages())),format.raw/*765.57*/("""</p>
-                            """),_display_(/*766.30*/for(error <- contactForm("email").errors) yield /*766.71*/ {_display_(Seq[Any](format.raw/*766.73*/("""
-                            """),format.raw/*767.29*/("""<p>"""),_display_(/*767.33*/error/*767.38*/.format(messages())),format.raw/*767.57*/("""</p>
-                            """)))}),format.raw/*768.30*/("""
-                            """)))}),format.raw/*769.30*/("""
-                            """),format.raw/*770.29*/("""</p>
+                                """),_display_(/*864.34*/for(error <- contactForm.globalErrors) yield /*864.72*/ {_display_(Seq[Any](format.raw/*864.74*/("""
+                            """),format.raw/*865.29*/("""<p>"""),_display_(/*865.33*/error/*865.38*/.format(messages())),format.raw/*865.57*/("""</p>
+                            """),_display_(/*866.30*/for(error <- contactForm("email").errors) yield /*866.71*/ {_display_(Seq[Any](format.raw/*866.73*/("""
+                            """),format.raw/*867.29*/("""<p>"""),_display_(/*867.33*/error/*867.38*/.format(messages())),format.raw/*867.57*/("""</p>
+                            """)))}),format.raw/*868.30*/("""
+                            """)))}),format.raw/*869.30*/("""
+                            """),format.raw/*870.29*/("""</p>
                             </div>
-                            """)))}),format.raw/*772.30*/("""
-                            """)))}),format.raw/*773.30*/("""
+                            """)))}),format.raw/*872.30*/("""
+                            """)))}),format.raw/*873.30*/("""
 
 
-                            """),format.raw/*776.29*/("""<p></p>
+                            """),format.raw/*876.29*/("""<p></p>
                             <h3>Mūsų socialiniai tinklai</h3>
                             <ul class="list-inline banner-social-buttons">
-                                <li><a href="www.google.com" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-                                <li><a href=""""),_display_(/*780.47*/routes/*780.53*/.HomeController.toFaceBook),format.raw/*780.79*/("""" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
-                                <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
+                                <li><a href=""""),_display_(/*879.47*/routes/*879.53*/.HomeController.toFaceBook),format.raw/*879.79*/("""" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -840,12 +938,12 @@ Seq[Any](format.raw/*1.65*/("""
     <!-- Map Section -->
     <div id="kontaktai" class="text-center">
         <div class="row">
-            <div class="col-lg-12 price-section">
+            <div class="col-lg-12 price-section2">
                 <p></p>
                 <h2>Kontaktinė informacija</h2>
                 <p style="color:#fff;">
                     <strong><i class="fa fa-map-marker"></i> Adresas</strong><br>
-                    Villenstrasse 35, Šafhauzenas, 8200, Šveicarija
+                    ---
                 </p>
                 <p style="color:#fff;"><strong><i class="fa fa-phone"></i> Telefono numeris</strong><br>
                     +41 797897010</p>
@@ -857,7 +955,7 @@ Seq[Any](format.raw/*1.65*/("""
         </div>
     </div>
 <hr>
-    """),_display_(/*826.6*/if(contactForm.hasErrors)/*826.31*/{_display_(Seq[Any](format.raw/*826.32*/("""<script src=""""),_display_(/*826.46*/routes/*826.52*/.Assets.at("javascripts/js/returnToFormOnFail.js")),format.raw/*826.102*/(""""></script>""")))}),format.raw/*826.114*/("""</script>
+    """),_display_(/*924.6*/if(contactForm.hasErrors)/*924.31*/{_display_(Seq[Any](format.raw/*924.32*/("""<script src=""""),_display_(/*924.46*/routes/*924.52*/.Assets.at("javascripts/js/returnToFormOnFail.js")),format.raw/*924.102*/(""""></script>""")))}),format.raw/*924.114*/("""</script>
 </section>
 
 
@@ -889,18 +987,18 @@ Seq[Any](format.raw/*1.65*/("""
 </footer>
 
 <!-- jQuery -->
-<script src='"""),_display_(/*858.15*/routes/*858.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*858.70*/("""'></script>
+<script src='"""),_display_(/*956.15*/routes/*956.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*956.70*/("""'></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src='"""),_display_(/*861.15*/routes/*861.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*861.83*/("""'></script>
+<script src='"""),_display_(/*959.15*/routes/*959.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*959.83*/("""'></script>
 
 <!-- Plugin JavaScript -->
-<script src="""),_display_(/*864.14*/routes/*864.20*/.Assets.at("javascripts/js/jquery.easing.min.js")),format.raw/*864.69*/(""""></script>
+<script src="""),_display_(/*962.14*/routes/*962.20*/.Assets.at("javascripts/js/jquery.easing.min.js")),format.raw/*962.69*/(""""></script>
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 
 <!-- Theme JavaScript -->
-<script src='"""),_display_(/*869.15*/routes/*869.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*869.66*/("""'></script>
+<script src='"""),_display_(/*967.15*/routes/*967.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*967.66*/("""'></script>
 
 </body>
 
@@ -925,11 +1023,11 @@ Seq[Any](format.raw/*1.65*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 27 23:25:30 CEST 2017
+                  DATE: Tue Oct 03 22:46:16 CEST 2017
                   SOURCE: /home/alex/git/web/app/views/pagrindinisContent.scala.html
-                  HASH: a5c39dfd20e30ae0c804a088c90d641606b90e1d
-                  MATRIX: 1047->1|1183->66|1228->64|1255->83|1302->122|1352->135|1383->140|1914->644|1929->650|1979->679|3314->1987|3329->1993|3379->2022|3419->2035|3435->2041|3494->2078|3645->2202|3660->2208|3710->2237|3750->2250|3766->2256|3825->2293|3976->2417|3991->2423|4042->2453|4083->2466|4099->2472|4158->2509|4350->2675|4363->2680|4399->2695|4427->2696|5404->3645|5420->3651|5475->3684|7649->5830|7665->5836|7727->5875|11562->9682|11578->9688|11635->9722|13598->11657|13614->11663|13671->11697|15316->13314|15332->13320|15394->13359|19056->16993|19072->16999|19129->17033|20612->18488|20628->18494|20685->18528|21832->19647|21848->19653|21905->19687|23359->21113|23375->21119|23437->21158|25025->22718|25041->22724|25095->22756|25137->22770|25153->22776|25208->22808|25395->22967|25411->22973|25468->23008|25510->23022|25526->23028|25584->23063|25767->23218|25783->23224|25837->23256|25879->23270|25895->23276|25950->23308|26243->23573|26259->23579|26318->23616|26360->23630|26376->23636|26436->23673|26627->23836|26643->23842|26702->23879|26744->23893|26760->23899|26820->23936|27011->24099|27027->24105|27086->24142|27128->24156|27144->24162|27204->24199|27520->24487|27536->24493|27595->24530|27637->24544|27653->24550|27713->24587|27888->24734|27904->24740|27963->24777|28005->24791|28021->24797|28081->24834|28256->24981|28272->24987|28331->25024|28373->25038|28389->25044|28449->25081|34468->31072|34484->31078|34571->31154|34613->31156|34675->31190|34691->31196|34753->31248|34822->31277|34880->31306|34934->31332|34955->31343|35001->31367|35064->31401|35089->31403|35121->31406|35160->31423|35196->31448|35238->31450|35296->31479|35340->31495|35361->31506|35408->31531|35452->31543|35514->31573|35575->31605|35647->31649|35709->31694|35750->31696|35808->31725|35850->31739|35865->31744|35906->31763|35976->31801|36043->31840|36059->31846|36135->31911|36204->31940|36262->31969|36316->31995|36337->32006|36379->32026|36455->32073|36480->32075|36512->32078|36551->32095|36587->32120|36629->32122|36687->32151|36731->32167|36752->32178|36795->32199|36839->32211|36901->32241|36962->32273|37034->32317|37092->32358|37133->32360|37191->32389|37233->32403|37248->32408|37289->32427|37359->32465|37430->32508|37446->32514|37496->32554|37565->32583|37623->32612|37727->32688|37759->32710|37786->32715|37822->32722|37847->32724|37924->32772|37960->32797|37992->32799|38014->32810|38063->32834|38171->32910|38229->32939|38305->32987|38365->33030|38406->33032|38468->33065|38510->33079|38525->33084|38566->33103|38636->33141|38823->33300|38838->33305|38875->33320|38940->33357|38981->33388|39022->33390|39080->33419|39203->33514|39258->33552|39299->33554|39357->33583|39389->33587|39404->33592|39445->33611|39507->33645|39565->33686|39606->33688|39664->33717|39696->33721|39711->33726|39752->33745|39818->33779|39880->33809|39938->33838|40039->33907|40101->33937|40161->33968|40553->34332|40569->34338|40617->34364|42077->35798|42112->35823|42152->35824|42194->35838|42210->35844|42283->35894|42328->35906|42741->36291|42757->36297|42828->36346|42918->36408|42934->36414|43018->36476|43099->36529|43115->36535|43186->36584|43439->36809|43455->36815|43522->36860
-                  LINES: 30->1|33->2|36->1|37->3|37->3|37->3|42->8|52->18|52->18|52->18|87->53|87->53|87->53|87->53|87->53|87->53|91->57|91->57|91->57|91->57|91->57|91->57|95->61|95->61|95->61|95->61|95->61|95->61|109->75|109->75|109->75|110->76|136->102|136->102|136->102|194->160|194->160|194->160|253->219|253->219|253->219|285->251|285->251|285->251|313->279|313->279|313->279|363->329|363->329|363->329|385->351|385->351|385->351|406->372|406->372|406->372|429->395|429->395|429->395|477->443|477->443|477->443|477->443|477->443|477->443|482->448|482->448|482->448|482->448|482->448|482->448|487->453|487->453|487->453|487->453|487->453|487->453|499->465|499->465|499->465|499->465|499->465|499->465|504->470|504->470|504->470|504->470|504->470|504->470|509->475|509->475|509->475|509->475|509->475|509->475|529->495|529->495|529->495|529->495|529->495|529->495|534->500|534->500|534->500|534->500|534->500|534->500|539->505|539->505|539->505|539->505|539->505|539->505|742->708|742->708|742->708|742->708|747->713|747->713|747->713|747->713|748->714|748->714|748->714|748->714|748->714|748->714|748->714|748->714|748->714|748->714|749->715|749->715|749->715|749->715|749->715|750->716|754->720|755->721|755->721|755->721|756->722|756->722|756->722|756->722|757->723|761->727|761->727|761->727|761->727|762->728|762->728|762->728|762->728|762->728|762->728|762->728|762->728|762->728|762->728|763->729|763->729|763->729|763->729|763->729|764->730|768->734|769->735|769->735|769->735|770->736|770->736|770->736|770->736|771->737|779->745|779->745|779->745|779->745|780->746|781->747|781->747|781->747|781->747|781->747|781->747|781->747|781->747|781->747|781->747|783->749|784->750|785->751|785->751|785->751|786->752|786->752|786->752|786->752|787->753|793->759|793->759|793->759|795->761|795->761|795->761|796->762|798->764|798->764|798->764|799->765|799->765|799->765|799->765|800->766|800->766|800->766|801->767|801->767|801->767|801->767|802->768|803->769|804->770|806->772|807->773|810->776|814->780|814->780|814->780|860->826|860->826|860->826|860->826|860->826|860->826|860->826|892->858|892->858|892->858|895->861|895->861|895->861|898->864|898->864|898->864|903->869|903->869|903->869
+                  HASH: e5f698490b85469f52d4b1f7d4d66fc21f9bfa92
+                  MATRIX: 1047->1|1183->66|1228->64|1255->83|1302->122|1352->135|1383->140|1914->644|1929->650|1979->679|3314->1987|3329->1993|3379->2022|3419->2035|3435->2041|3494->2078|3645->2202|3660->2208|3710->2237|3750->2250|3766->2256|3825->2293|3976->2417|3991->2423|4042->2453|4083->2466|4099->2472|4158->2509|4350->2675|4363->2680|4399->2695|4427->2696|5404->3645|5420->3651|5484->3693|7667->5848|7683->5854|7745->5893|11569->9689|11585->9695|11642->9729|13605->11664|13621->11670|13678->11704|15323->13321|15339->13327|15401->13366|18428->16365|18444->16371|18501->16405|19984->17860|20000->17866|20057->17900|21204->19019|21220->19025|21277->19059|22731->20485|22747->20491|22809->20530|24261->21954|24277->21960|24339->21999|25593->23225|25609->23231|25671->23271|25713->23285|25730->23291|25793->23331|26005->23515|26021->23521|26087->23565|26129->23579|26146->23585|26213->23629|26419->23807|26435->23813|26496->23852|26538->23866|26554->23872|26616->23911|26949->24216|26965->24222|27028->24263|27070->24277|27086->24283|27150->24324|27354->24500|27370->24506|27443->24557|27486->24571|27503->24577|27577->24628|27809->24832|27825->24838|27885->24876|27927->24890|27943->24896|28004->24934|28337->25239|28353->25245|28405->25275|28447->25289|28463->25295|28516->25325|28691->25472|28707->25478|28766->25515|28808->25529|28824->25535|28884->25572|29059->25719|29075->25725|29134->25762|29176->25776|29192->25782|29252->25819|37983->34522|37999->34528|38086->34604|38128->34606|38190->34640|38206->34646|38268->34698|38337->34727|38395->34756|38449->34782|38470->34793|38516->34817|38579->34851|38604->34853|38636->34856|38675->34873|38711->34898|38753->34900|38811->34929|38855->34945|38876->34956|38923->34981|38967->34993|39029->35023|39090->35055|39162->35099|39224->35144|39265->35146|39323->35175|39365->35189|39380->35194|39421->35213|39491->35251|39558->35290|39574->35296|39650->35361|39719->35390|39777->35419|39831->35445|39852->35456|39894->35476|39970->35523|39995->35525|40027->35528|40066->35545|40102->35570|40144->35572|40202->35601|40246->35617|40267->35628|40310->35649|40354->35661|40416->35691|40477->35723|40549->35767|40607->35808|40648->35810|40706->35839|40748->35853|40763->35858|40804->35877|40874->35915|40945->35958|40961->35964|41011->36004|41080->36033|41138->36062|41242->36138|41274->36160|41301->36165|41337->36172|41362->36174|41439->36222|41475->36247|41507->36249|41529->36260|41578->36284|41686->36360|41744->36389|41820->36437|41880->36480|41921->36482|41983->36515|42025->36529|42040->36534|42081->36553|42151->36591|42338->36750|42353->36755|42390->36770|42455->36807|42496->36838|42537->36840|42595->36869|42718->36964|42773->37002|42814->37004|42872->37033|42904->37037|42919->37042|42960->37061|43022->37095|43080->37136|43121->37138|43179->37167|43211->37171|43226->37176|43267->37195|43333->37229|43395->37259|43453->37288|43554->37357|43616->37387|43676->37418|43895->37609|43911->37615|43959->37641|45211->38867|45246->38892|45286->38893|45328->38907|45344->38913|45417->38963|45462->38975|45875->39360|45891->39366|45962->39415|46052->39477|46068->39483|46152->39545|46233->39598|46249->39604|46320->39653|46573->39878|46589->39884|46656->39929
+                  LINES: 30->1|33->2|36->1|37->3|37->3|37->3|42->8|52->18|52->18|52->18|87->53|87->53|87->53|87->53|87->53|87->53|91->57|91->57|91->57|91->57|91->57|91->57|95->61|95->61|95->61|95->61|95->61|95->61|109->75|109->75|109->75|110->76|136->102|136->102|136->102|194->160|194->160|194->160|253->219|253->219|253->219|285->251|285->251|285->251|313->279|313->279|313->279|358->324|358->324|358->324|380->346|380->346|380->346|401->367|401->367|401->367|424->390|424->390|424->390|452->418|452->418|452->418|503->469|503->469|503->469|503->469|503->469|503->469|508->474|508->474|508->474|508->474|508->474|508->474|513->479|513->479|513->479|513->479|513->479|513->479|525->491|525->491|525->491|525->491|525->491|525->491|530->496|530->496|530->496|530->496|530->496|530->496|535->501|535->501|535->501|535->501|535->501|535->501|555->521|555->521|555->521|555->521|555->521|555->521|560->526|560->526|560->526|560->526|560->526|560->526|565->531|565->531|565->531|565->531|565->531|565->531|842->808|842->808|842->808|842->808|847->813|847->813|847->813|847->813|848->814|848->814|848->814|848->814|848->814|848->814|848->814|848->814|848->814|848->814|849->815|849->815|849->815|849->815|849->815|850->816|854->820|855->821|855->821|855->821|856->822|856->822|856->822|856->822|857->823|861->827|861->827|861->827|861->827|862->828|862->828|862->828|862->828|862->828|862->828|862->828|862->828|862->828|862->828|863->829|863->829|863->829|863->829|863->829|864->830|868->834|869->835|869->835|869->835|870->836|870->836|870->836|870->836|871->837|879->845|879->845|879->845|879->845|880->846|881->847|881->847|881->847|881->847|881->847|881->847|881->847|881->847|881->847|881->847|883->849|884->850|885->851|885->851|885->851|886->852|886->852|886->852|886->852|887->853|893->859|893->859|893->859|895->861|895->861|895->861|896->862|898->864|898->864|898->864|899->865|899->865|899->865|899->865|900->866|900->866|900->866|901->867|901->867|901->867|901->867|902->868|903->869|904->870|906->872|907->873|910->876|913->879|913->879|913->879|958->924|958->924|958->924|958->924|958->924|958->924|958->924|990->956|990->956|990->956|993->959|993->959|993->959|996->962|996->962|996->962|1001->967|1001->967|1001->967
                   -- GENERATED --
               */
           

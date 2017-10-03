@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/alex/git/web/conf/routes
-// @DATE:Sun Sep 24 16:37:09 CEST 2017
+// @DATE:Tue Oct 03 19:13:37 CEST 2017
 
 package controllers;
 

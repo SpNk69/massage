@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/alex/git/web/conf/routes
-// @DATE:Sun Sep 24 16:37:09 CEST 2017
+// @DATE:Tue Oct 03 19:13:37 CEST 2017
 
 package router
 
@@ -44,7 +44,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """lt""", """controllers.HomeController.pagrindinisLT"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """toFaceBook""", """controllers.HomeController.toFaceBook"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """de""", """controllers.HomeController.germanVersion()"""),
+    ("""GET""", this.prefix, """controllers.HomeController.germanVersion()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """ru""", """controllers.HomeController.russianVersion()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """submitLT""", """controllers.HomeController.submitLT()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """submitRU""", """controllers.HomeController.submitRU()"""),
@@ -133,7 +133,7 @@ class Routes(
 
   // @LINE:13
   private[this] lazy val controllers_HomeController_germanVersion4_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("de")))
+    PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_HomeController_germanVersion4_invoker = createInvoker(
     HomeController_0.germanVersion(),
@@ -143,7 +143,7 @@ class Routes(
       "germanVersion",
       Nil,
       "GET",
-      this.prefix + """de""",
+      this.prefix + """""",
       """""",
       Seq()
     )

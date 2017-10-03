@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/alex/git/web/conf/routes
-// @DATE:Sun Sep 24 16:37:09 CEST 2017
+// @DATE:Tue Oct 03 19:13:37 CEST 2017
 
 import play.api.mvc.Call
 
@@ -22,7 +22,7 @@ package controllers {
     // @LINE:13
     def germanVersion(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "de")
+      Call("GET", _prefix)
     }
   
     // @LINE:11

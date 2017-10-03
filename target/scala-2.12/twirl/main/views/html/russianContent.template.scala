@@ -46,7 +46,7 @@ Seq[Any](format.raw/*1.65*/("""
                 Menu <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand page-scroll" href='"""),_display_(/*14.56*/routes/*14.62*/.HomeController.russianVersion),format.raw/*14.92*/("""'>
-                <i class="fa fa-play-circle"></i> <span class="light">Вида</span> Mассажы
+                <i class="fa fa-play-circle"></i> <span class="light">Vida</span> Mассажы
             </a>
         </div>
 
@@ -126,7 +126,7 @@ Seq[Any](format.raw/*1.65*/("""
     <div class="row">
 
         <div class="col-lg-6 ">
-            <img src='"""),_display_(/*95.24*/routes/*95.30*/.Assets.at("images/img/Vida.jpg")),format.raw/*95.63*/("""' class="img-circle" alt="Вида Полешчук" height="600">
+            <img src='"""),_display_(/*95.24*/routes/*95.30*/.Assets.at("images/img/Vida-Polescuk.jpg")),format.raw/*95.72*/("""' class="img-circle" alt="Вида Полешчук" id="what">
 
         </div>
         <p></p>
@@ -289,7 +289,7 @@ Seq[Any](format.raw/*1.65*/("""
 
 
                     <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#demo33" >
-                        Индивидуальный массаж тела
+                        Массаж отдельнных частей тело
                     </button>
                     <p></p>
                     <div id="demo33" class="collapse">
@@ -323,10 +323,6 @@ Seq[Any](format.raw/*1.65*/("""
                             <div id="juosmens" class="collapse customWidth"><p class="massageText">Улучшает циркуляцию крови и лимфы в пояснице и ногах, расслабляет напряженные мышцы, уменьшает поясничные, ягодицы,  ногах боль, укрепляет ослабленные мышцы.
                                 Уменьшает боль после операции,  уменьшает воспаление нервных корешков.</p></div>
 
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pedu" >
-                                Расслабляющий массаж стоп
-                            </button>
-                            <div id="pedu" class="collapse customWidth"><p class="massageText">Используется для расслабления усталых стоп, увеличения жизненого тонуса, повышения иммунитета. Эта процедура подходит для многих людей, которые работают стоя или много ходитб также людей у которых мёрзнит стопы. Массаж стоп помогает восстановить и одохнуть всему телу.</p></div>
 
 
 
@@ -343,7 +339,7 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="vyresnio" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*312.67*/routes/*312.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*312.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*308.67*/routes/*308.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*308.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
@@ -363,7 +359,7 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="atpalaiduojantis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*332.67*/routes/*332.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*332.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*328.67*/routes/*328.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*328.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
@@ -384,7 +380,7 @@ Seq[Any](format.raw/*1.65*/("""
                     </button>
                     <p></p>
                     <div id="ajurvedinis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*353.67*/routes/*353.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*353.107*/("""' class="img-circle"
+                        <!--  <div class="text-center"><img src='"""),_display_(/*349.67*/routes/*349.73*/.Assets.at("images/img/mas3.jpeg")),format.raw/*349.107*/("""' class="img-circle"
                                                         alt="Medicine massage" width="250" height="250"></a></div>-->
                         <div class="customBackGroundOfDiv " align="center">
 
@@ -403,29 +399,57 @@ Seq[Any](format.raw/*1.65*/("""
 
 
                     <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#anticeliulitinis" >
-                        Антицеллюлитный ручной массаж
+                        Антицеллюлитный массаж
                     </button>
                     <p></p>
                     <div id="anticeliulitinis" class="collapse">
-                        <!--  <div class="text-center"><img src='"""),_display_(/*376.67*/routes/*376.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*376.112*/("""'
+                        <!--  <div class="text-center"><img src='"""),_display_(/*372.67*/routes/*372.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*372.112*/("""'
                                                         class="img-circle" alt="Medicine massage" width="250"
                                                         height="250"></a></div>-->
                         <div class="customBackGroundOfDiv" align="center">
 
 
 
-                           <p class="massageText" customWidth>Это особенно эффективный способ борьбы с целлюлитом, который используется для уменьшения неравномерной подкожной (целлюлитной) проблемы в определенных проблемных областях - бедрах, ягодицах и брюшной полости.
+                           <p class="massageText customWidth" >Это особенно эффективный способ борьбы с целлюлитом, который используется для уменьшения неравномерной подкожной (целлюлитной) проблемы в определенных проблемных областях - бедрах, ягодицах и брюшной полости.
                                 </br>Массаж стимулирует циркуляцию лимфы, повышает мышечный тонус и сокращение за счет уменьшения целлюлита и припухлости. Очищает организм от шлаков и оказывает выраженный косметический эффект.
-                                </br>  Это  является самым небольным методом - не оставляет синяков.</p>
-                                (naudojant)+ тибетская глиняная чаша</div>
+                                </br>  Это  является самым небольным методом - не оставляет синяков. Используется тибетская глиняная чаша</p>
+                                </div>
 
 
 
 
                         </div>
                     </div>
+
+                <div class="col-lg-4 ">
+
+
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#thaipedu" >
+                        Расслабляющий массаж стоп
+                    </button>
                     <p></p>
+                    <div id="thaipedu" class="collapse">
+                        <!--  <div class="text-center"><img src='"""),_display_(/*398.67*/routes/*398.73*/.Assets.at("images/img/massage164.jpg")),format.raw/*398.112*/("""'
+                                                        class="img-circle" alt="Medicine massage" width="250"
+                                                        height="250"></a></div>-->
+                        <div class="customBackGroundOfDiv" align="center">
+
+
+
+                            <p class="massageText customWidth" >Используется для расслабления усталых стоп, увеличения жизненого тонуса, повышения иммунитета. Эта процедура подходит для многих людей, которые работают стоя или много ходитб также людей у которых мёрзнит стопы. Массаж стоп помогает восстановить и одохнуть всему телу.</p>
+                        </div>
+
+
+
+
+                    </div>
                 </div>
+
+
+
+
+
+            </div>
 
             </div>
 
@@ -444,16 +468,63 @@ Seq[Any](format.raw/*1.65*/("""
 
 <section id="галерея" class="content-section text-center">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="contact-section">
-                <div class="container">
-                    <hr>
-                    <h2>галерея</h2>
-                    <hr>
+
+                <div class="row">
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <hr>
+                        <h2>галерея</h2>
+                        <hr>
+
+                        <p></p>
 
 
+                        <div class="col-lg-4 ">
+                            <a href=""""),_display_(/*449.39*/routes/*449.45*/.Assets.at("images/img/massage-bed.jpg")),format.raw/*449.85*/(""""> <img src=""""),_display_(/*449.99*/routes/*449.105*/.Assets.at("images/img/massage-bed.jpg")),format.raw/*449.145*/("""" class="w3-image w3-round" alt="массажная кровать в комната Вида" ></a>
+                        </div>
+
+                        <p></p>
+                        <div class="col-lg-4 ">
+                            <a href=""""),_display_(/*454.39*/routes/*454.45*/.Assets.at("images/img/hot-cold-stones.jpg")),format.raw/*454.89*/(""""> <img src=""""),_display_(/*454.103*/routes/*454.109*/.Assets.at("images/img/hot-cold-stones.jpg")),format.raw/*454.153*/("""" class="w3-image w3-round" alt="Массаж горячими и холодными камнями" ></a>
+                        </div>
+                        <p></p>
+
+                        <div class="col-lg-4 ">
+                            <a href=""""),_display_(/*459.39*/routes/*459.45*/.Assets.at("images/img/stones-oil.jpg")),format.raw/*459.84*/(""""> <img src=""""),_display_(/*459.98*/routes/*459.104*/.Assets.at("images/img/stones-oil.jpg")),format.raw/*459.143*/("""" class="w3-image w3-round" alt="Камни и масла, используемые в массаже" ></a>
+                        </div>
+
+
+                    </div>
                 </div>
+        <div class="row">
 
+            <div class="col-md-8 col-md-offset-2">
+                <p></p>
+
+                <div class="col-lg-4 ">
+                    <a href=""""),_display_(/*471.31*/routes/*471.37*/.Assets.at("images/img/massage-bed2.jpg")),format.raw/*471.78*/(""""> <img src=""""),_display_(/*471.92*/routes/*471.98*/.Assets.at("images/img/massage-bed2.jpg")),format.raw/*471.139*/("""" class="w3-image w3-round" alt="Массажная кровать Виды" ></a>
+                </div>
+                <p></p>
+
+                <div class="col-lg-4 ">
+                    <a href=""""),_display_(/*476.31*/routes/*476.37*/.Assets.at("images/img/tibetan-vacuum-cup-oil.jpg")),format.raw/*476.88*/(""""> <img src=""""),_display_(/*476.102*/routes/*476.108*/.Assets.at("images/img/tibetan-vacuum-cup-oil.jpg")),format.raw/*476.159*/("""" class="w3-image w3-round" alt="Тибетская вакуумная чашка и масло используются" ></a>
+                </div>
+                <p></p>
+
+                <div class="col-lg-4 ">
+                    <a href=""""),_display_(/*481.31*/routes/*481.37*/.Assets.at("images/img/Vida-buda.jpg")),format.raw/*481.75*/(""""> <img src=""""),_display_(/*481.89*/routes/*481.95*/.Assets.at("images/img/Vida-buda.jpg")),format.raw/*481.133*/("""" class="w3-image w3-round" alt="Будда" ></a>
+                </div>
+                <p></p>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
 
             </div>
         </div>
@@ -466,14 +537,245 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-<section id="цены" class="content-section text-center">
+<section class="content-section text-center ">
+    <div class="contact-section " id="цены">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="contact-section">
-                <div class="container">
+            <div class="">
                     <hr>
                     <h2>цены</h2>
                     <hr>
+
+                    <div class="w3-container customBackGroundOfDiv">
+
+                        <p></p>
+                        <h5 align="center" ><u>Спа-массажы</u></h5>
+
+                        <table class="table table-inverse">
+                            <th scope="row" id="ulo"><u></u></th>
+                            <td><b><u>Время</u></b></td>
+                            <td><b><u>Цена</u></b></td>
+                            <tbody>
+                            <tr>
+                                <th scope="row" id="ulo2">Массаж с горячими – холодными комнями</th>
+                                <td>90 min.</td>
+                                <td>170 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Массаж с горячими – холодными комнями</th>
+                                <td>120 min.</td>
+                                <td>220 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Лимфодренаж тело</th>
+                                <td>90 min.</td>
+
+                                <td>140 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Лимфодренажный массаж лица</th>
+                                <td>50 min.</td>
+
+                                <td>90 CHF</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" id="ulo2">Аюрведический грудей массаж для женщин</th>
+                                <td>60 min.</td>
+
+                                <td>100 CHF</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" id="ulo2">Классический - Сегментный массаж спины</th>
+                                <td>60 min.</td>
+
+                                <td>100 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Классический - Сегментный массаж спины</th>
+                                <td>90 min.</td>
+
+                                <td>150 CHF</td>
+                            </tr>
+
+
+
+                            <tr>
+                                <th scope="row" id="ulo2">Расслабляющий массаж всего тела</th>
+                                <td>120 min.</td>
+
+                                <td>200 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Расслабляющий массаж стоп</th>
+                                <td>60 min.</td>
+
+                                <td>100 CHF</td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+
+
+
+                        <h5 align="center"><b><u>Другие массажы</u></b></h5>
+
+                        <table class="table table-inverse">
+                            <th scope="row" id="ulo"><u>Массаж отдельнных частей тело</u> </th>
+                            <td><b><u>30min</u></b></td>
+                            <td><b><u>60min</u></b></td>
+                            <td><b><u>90min</u></b></td>
+                            <tbody>
+
+                            <tr>
+                                <th scope="row" id="ulo2">Поясницы- Ягодицы - Ног массаж </th>
+                                <td>50 CHF</td>
+                                <td>100 CHF</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Плечо - шеи -  рук массаж</th>
+                                <td>50 CHF</td>
+                                <td>100 CHF</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Массаж головы</th>
+                                <td>50 CHF</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+
+
+
+                            <tr>
+                                <th scope="row" id="ulo2">Массаж  живота</th>
+                                <td>50 CHF</td>
+                                <td>--</td>
+                                <td>--</td>
+
+
+                            </tr>
+
+
+
+                            <tr>
+
+                                <th scope="row"><u></u> </th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+
+                                <th scope="row"><u></u> </th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+
+
+
+                            <th scope="row"><b><u id="ulo">Антицеллюлитный ручной массаж </u> </b></th>
+                            <td><b><u>30min</u></b></td>
+                            <td><b><u>60min</u></b></td>
+                            <td><b><u>90min</u></b></td>
+                            <tr>
+                            <tbody>
+                            <th scope="row" id="ulo2">Ягодицы</th>
+                            <td>70 CHF</td>
+                            <td>130 CHF</td>
+                            <td>180 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Бедры</th>
+                                <td>70 CHF</td>
+                                <td>130 CHF</td>
+                                <td>180 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">живота</th>
+                                <td>70 CHF</td>
+                                <td>130 CHF</td>
+                                <td>180 CHF</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" id="ulo2">Массаж Предплечье</th>
+                                <td>70 CHF</td>
+                                <td>130 CHF</td>
+                                <td>180 CHF</td>
+
+                            </tr>
+
+
+
+
+
+
+                            <tr>
+
+                                <th scope="row"><u></u> </th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+
+                                <th scope="row"><u></u> </th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+
+
+                            <th scope="row" id="ulo"><b><u>Массаж для пожилых людей, пенсионеров (от 65 лет)<u></b></th>
+                            <td><b><u></u></b></td>
+                            <td><b><u>Цена</u></b></td>
+
+                            <td><b><u></u></b></td>
+                            <tbody>
+
+                            <tr>
+                                <th scope="row" id="ulo2">Потходят все спа и  отдельных частей массажы</th>
+                                <td></td>
+                                <td> -10% скидка</td>
+
+                                <td></td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                        <p></p>
+
+
+
+                        <h5 align="center"><b><u>Подарочные купоны</u></b></h5>
+
+                        <table class="table table-inverse">
+
+
+                            <tr>
+                                <th scope="row"><u></u> </th>
+                                <td>100 CHF</td>
+                                <td>200 CHF</td>
+                                <td>300 CHF</td>
+                            </tr>
+
+
+                        </table>
+
+                    </div>
+
+
+
                 </div>
 
 
@@ -483,6 +785,7 @@ Seq[Any](format.raw/*1.65*/("""
     <a href="#bonpoc" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </a>
+</div>
 </section>
 <Usertact Section -->
 
@@ -490,7 +793,7 @@ Seq[Any](format.raw/*1.65*/("""
     <section id="bonpoc" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-12">
-                <div class="contact-section">
+                <div class="">
                     <div class="container">
 
                         <h2>Задайте свой вопрос!</h2>
@@ -501,36 +804,36 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-                                """),_display_(/*470.34*/helper/*470.40*/.form(action = routes.HomeController.submitRU(),'class -> "form-horizontal")/*470.116*/ {_display_(Seq[Any](format.raw/*470.118*/("""
+                                """),_display_(/*773.34*/helper/*773.40*/.form(action = routes.HomeController.submitRU(),'class -> "form-horizontal")/*773.116*/ {_display_(Seq[Any](format.raw/*773.118*/("""
 
 
 
 
-                                """),_display_(/*475.34*/helper/*475.40*/.input(contactForm("Имя"),'class->"form-control")/*475.89*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*475.118*/("""
-                                """),format.raw/*476.33*/("""<input type="text" name=""""),_display_(/*476.59*/contactForm/*476.70*/.field("firstName").name),format.raw/*476.94*/(""""  placeholder="Ваше имя" id=""""),_display_(/*476.125*/id),format.raw/*476.127*/("""" """),_display_(/*476.130*/toHtmlArgs(args)),_display_(/*476.147*/if(contactForm.hasErrors)/*476.172*/ {_display_(Seq[Any](format.raw/*476.174*/("""
-                                """),format.raw/*477.33*/("""<option value='"""),_display_(/*477.49*/contactForm/*477.60*/.field("firstName").value),format.raw/*477.85*/("""'></option>""")))}),format.raw/*477.97*/("""
-                                """)))}),format.raw/*478.34*/("""
+                                """),_display_(/*778.34*/helper/*778.40*/.input(contactForm("Имя"),'class->"form-control")/*778.89*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*778.118*/("""
+                                """),format.raw/*779.33*/("""<input type="text" name=""""),_display_(/*779.59*/contactForm/*779.70*/.field("firstName").name),format.raw/*779.94*/(""""  placeholder="Ваше имя" id=""""),_display_(/*779.125*/id),format.raw/*779.127*/("""" """),_display_(/*779.130*/toHtmlArgs(args)),_display_(/*779.147*/if(contactForm.hasErrors)/*779.172*/ {_display_(Seq[Any](format.raw/*779.174*/("""
+                                """),format.raw/*780.33*/("""<option value='"""),_display_(/*780.49*/contactForm/*780.60*/.field("firstName").value),format.raw/*780.85*/("""'></option>""")))}),format.raw/*780.97*/("""
+                                """)))}),format.raw/*781.34*/("""
 
 
 
-                                """),format.raw/*482.33*/("""<div id="xxx">
-                                    """),_display_(/*483.38*/for(error <- contactForm("firstName").errors) yield /*483.83*/ {_display_(Seq[Any](format.raw/*483.85*/("""
-                                    """),format.raw/*484.37*/("""<p id="xxxx">"""),_display_(/*484.51*/error/*484.56*/.format(messages())),format.raw/*484.75*/("""</p>
-                                    """)))}),format.raw/*485.38*/("""</div>
+                                """),format.raw/*785.33*/("""<div id="xxx">
+                                    """),_display_(/*786.38*/for(error <- contactForm("firstName").errors) yield /*786.83*/ {_display_(Seq[Any](format.raw/*786.85*/("""
+                                    """),format.raw/*787.37*/("""<p id="xxxx">"""),_display_(/*787.51*/error/*787.56*/.format(messages())),format.raw/*787.75*/("""</p>
+                                    """)))}),format.raw/*788.38*/("""</div>
 
 
 
-                                """),_display_(/*489.34*/helper/*489.40*/.input(contactForm("Злектронная почта"),'class->"form-control")/*489.103*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*489.132*/("""
-                                """),format.raw/*490.33*/("""<input type="text" name=""""),_display_(/*490.59*/contactForm/*490.70*/.field("email").name),format.raw/*490.90*/(""""  placeholder="Ваш адрес электронной почты" id=""""),_display_(/*490.140*/id),format.raw/*490.142*/("""" """),_display_(/*490.145*/toHtmlArgs(args)),_display_(/*490.162*/if(contactForm.hasErrors)/*490.187*/ {_display_(Seq[Any](format.raw/*490.189*/("""
-                                """),format.raw/*491.33*/("""<option value='"""),_display_(/*491.49*/contactForm/*491.60*/.field("email").value),format.raw/*491.81*/("""'></option>""")))}),format.raw/*491.93*/("""
-                                """)))}),format.raw/*492.34*/("""
+                                """),_display_(/*792.34*/helper/*792.40*/.input(contactForm("Злектронная почта"),'class->"form-control")/*792.103*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*792.132*/("""
+                                """),format.raw/*793.33*/("""<input type="text" name=""""),_display_(/*793.59*/contactForm/*793.70*/.field("email").name),format.raw/*793.90*/(""""  placeholder="Ваш адрес электронной почты" id=""""),_display_(/*793.140*/id),format.raw/*793.142*/("""" """),_display_(/*793.145*/toHtmlArgs(args)),_display_(/*793.162*/if(contactForm.hasErrors)/*793.187*/ {_display_(Seq[Any](format.raw/*793.189*/("""
+                                """),format.raw/*794.33*/("""<option value='"""),_display_(/*794.49*/contactForm/*794.60*/.field("email").value),format.raw/*794.81*/("""'></option>""")))}),format.raw/*794.93*/("""
+                                """)))}),format.raw/*795.34*/("""
 
 
 
-                                """),format.raw/*496.33*/("""<div id="xxx">
-                                    """),_display_(/*497.38*/for(error <- contactForm("email").errors) yield /*497.79*/ {_display_(Seq[Any](format.raw/*497.81*/("""
-                                    """),format.raw/*498.37*/("""<p id="xxxx">"""),_display_(/*498.51*/error/*498.56*/.format(messages())),format.raw/*498.75*/("""</p>
-                                    """)))}),format.raw/*499.38*/("""</div>
+                                """),format.raw/*799.33*/("""<div id="xxx">
+                                    """),_display_(/*800.38*/for(error <- contactForm("email").errors) yield /*800.79*/ {_display_(Seq[Any](format.raw/*800.81*/("""
+                                    """),format.raw/*801.37*/("""<p id="xxxx">"""),_display_(/*801.51*/error/*801.56*/.format(messages())),format.raw/*801.75*/("""</p>
+                                    """)))}),format.raw/*802.38*/("""</div>
 
 
 
@@ -538,43 +841,41 @@ Seq[Any](format.raw/*1.65*/("""
 
 
 
-                                """),_display_(/*507.34*/helper/*507.40*/.input(field = contactForm("Вопрос"))/*507.77*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*507.106*/("""
-                                """),format.raw/*508.33*/("""<div>
-                                    <textarea class="form-control" name=""""),_display_(/*509.75*/contactForm("textbox")/*509.97*/.name),format.raw/*509.102*/("""" id=""""),_display_(/*509.109*/id),format.raw/*509.111*/("""" placeholder="Ваше сообщение" rows='5' cols='80'>"""),_display_(/*509.162*/if(contactForm.hasErrors)/*509.187*/{_display_(_display_(/*509.189*/contactForm/*509.200*/.field("textbox").value))}),format.raw/*509.224*/("""</textarea>
+                                """),_display_(/*810.34*/helper/*810.40*/.input(field = contactForm("Вопрос"))/*810.77*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*810.106*/("""
+                                """),format.raw/*811.33*/("""<div>
+                                    <textarea class="form-control" name=""""),_display_(/*812.75*/contactForm("textbox")/*812.97*/.name),format.raw/*812.102*/("""" id=""""),_display_(/*812.109*/id),format.raw/*812.111*/("""" placeholder="Ваше сообщение" rows='5' cols='80'>"""),_display_(/*812.162*/if(contactForm.hasErrors)/*812.187*/{_display_(_display_(/*812.189*/contactForm/*812.200*/.field("textbox").value))}),format.raw/*812.224*/("""</textarea>
                                 </div>
-                                """)))}),format.raw/*511.34*/("""
-                                """),format.raw/*512.33*/("""<div id="xxx">
-                                    """),_display_(/*513.38*/for(error <- contactForm("textbox").errors) yield /*513.81*/ {_display_(Seq[Any](format.raw/*513.83*/("""
-                                    """),format.raw/*514.37*/("""<p id="xxxx">"""),_display_(/*514.51*/error/*514.56*/.format(messages())),format.raw/*514.75*/("""</p>
-                                    """)))}),format.raw/*515.38*/("""</div>
+                                """)))}),format.raw/*814.34*/("""
+                                """),format.raw/*815.33*/("""<div id="xxx">
+                                    """),_display_(/*816.38*/for(error <- contactForm("textbox").errors) yield /*816.81*/ {_display_(Seq[Any](format.raw/*816.83*/("""
+                                    """),format.raw/*817.37*/("""<p id="xxxx">"""),_display_(/*817.51*/error/*817.56*/.format(messages())),format.raw/*817.75*/("""</p>
+                                    """)))}),format.raw/*818.38*/("""</div>
 
 
 
                                 <button type="submit"  class="btn btn-default" >Отправить сообщение</button>
 
-                                <div id="flash">"""),_display_(/*521.50*/flash/*521.55*/.get("success")),format.raw/*521.70*/("""</div>
+                                <div id="flash">"""),_display_(/*824.50*/flash/*824.55*/.get("success")),format.raw/*824.70*/("""</div>
 
-                                """),_display_(/*523.34*/if(contactForm.hasGlobalErrors)/*523.65*/ {_display_(Seq[Any](format.raw/*523.67*/("""
-                                """),format.raw/*524.33*/("""<div id="xxx">
+                                """),_display_(/*826.34*/if(contactForm.hasGlobalErrors)/*826.65*/ {_display_(Seq[Any](format.raw/*826.67*/("""
+                                """),format.raw/*827.33*/("""<div id="xxx">
                                     <p class="error" >
-                                        """),_display_(/*526.42*/for(error <- contactForm.globalErrors) yield /*526.80*/ {_display_(Seq[Any](format.raw/*526.82*/("""
-                                    """),format.raw/*527.37*/("""<p>"""),_display_(/*527.41*/error/*527.46*/.format(messages())),format.raw/*527.65*/("""</p>
-                                    """),_display_(/*528.38*/for(error <- contactForm("email").errors) yield /*528.79*/ {_display_(Seq[Any](format.raw/*528.81*/("""
-                                    """),format.raw/*529.37*/("""<p>"""),_display_(/*529.41*/error/*529.46*/.format(messages())),format.raw/*529.65*/("""</p>
-                                    """)))}),format.raw/*530.38*/("""
-                                    """)))}),format.raw/*531.38*/("""
-                                    """),format.raw/*532.37*/("""</p>
+                                        """),_display_(/*829.42*/for(error <- contactForm.globalErrors) yield /*829.80*/ {_display_(Seq[Any](format.raw/*829.82*/("""
+                                    """),format.raw/*830.37*/("""<p>"""),_display_(/*830.41*/error/*830.46*/.format(messages())),format.raw/*830.65*/("""</p>
+                                    """),_display_(/*831.38*/for(error <- contactForm("email").errors) yield /*831.79*/ {_display_(Seq[Any](format.raw/*831.81*/("""
+                                    """),format.raw/*832.37*/("""<p>"""),_display_(/*832.41*/error/*832.46*/.format(messages())),format.raw/*832.65*/("""</p>
+                                    """)))}),format.raw/*833.38*/("""
+                                    """)))}),format.raw/*834.38*/("""
+                                    """),format.raw/*835.37*/("""</p>
                                 </div>
-                                """)))}),format.raw/*534.34*/("""
-                                """)))}),format.raw/*535.34*/("""
+                                """)))}),format.raw/*837.34*/("""
+                                """)))}),format.raw/*838.34*/("""
 
 
-                                """),format.raw/*538.33*/("""<p></p>
+                                """),format.raw/*841.33*/("""<p></p>
                                 <h3>Наши социальные сети</h3>
                                 <ul class="list-inline banner-social-buttons">
-                                    <li><a href="www.google.com" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-                                    <li><a href=""""),_display_(/*542.51*/routes/*542.57*/.HomeController.toFaceBook),format.raw/*542.83*/("""" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
-                                    <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
+                                    <li><a href=""""),_display_(/*844.51*/routes/*844.57*/.HomeController.toFaceBook),format.raw/*844.83*/("""" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -583,7 +884,7 @@ Seq[Any](format.raw/*1.65*/("""
 
                 </div>
             </div>
-            """),_display_(/*552.14*/if(contactForm.hasErrors)/*552.39*/{_display_(Seq[Any](format.raw/*552.40*/("""<script src=""""),_display_(/*552.54*/routes/*552.60*/.Assets.at("javascripts/js/returnToFormOnFailRU.js")),format.raw/*552.112*/(""""></script>""")))}),format.raw/*552.124*/("""</script>
+            """),_display_(/*853.14*/if(contactForm.hasErrors)/*853.39*/{_display_(Seq[Any](format.raw/*853.40*/("""<script src=""""),_display_(/*853.54*/routes/*853.60*/.Assets.at("javascripts/js/returnToFormOnFailRU.js")),format.raw/*853.112*/(""""></script>""")))}),format.raw/*853.124*/("""</script>
         </div>
         <a href="#контакты" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
@@ -603,12 +904,12 @@ Seq[Any](format.raw/*1.65*/("""
     <!-- Map Section -->
     <div id="контакты" class="text-center">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 price-section2">
                 <p></p>
                 <h2>Контактная информация</h2>
                 <p style="color:#fff;">
                     <strong><i class="fa fa-map-marker"></i> Aдрес</strong><br>
-                    Villenstrasse 35, Шaфxaузeн, 8200, Швейцария
+                    ---
                 </p>
                 <p style="color:#fff;"><strong><i class="fa fa-phone"></i> Hомер телефона</strong><br>
                     +41 797897010</p>
@@ -647,10 +948,10 @@ Seq[Any](format.raw/*1.65*/("""
 </footer>
 
 <!-- jQuery -->
-<script src='"""),_display_(/*616.15*/routes/*616.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*616.70*/("""'></script>
+<script src='"""),_display_(/*917.15*/routes/*917.21*/.Assets.at("stylesheets/vendor/jquery/jquery.js")),format.raw/*917.70*/("""'></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src='"""),_display_(/*619.15*/routes/*619.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*619.83*/("""'></script>
+<script src='"""),_display_(/*920.15*/routes/*920.21*/.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")),format.raw/*920.83*/("""'></script>
 
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -660,7 +961,7 @@ Seq[Any](format.raw/*1.65*/("""
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtkVXlKJlSvm85a7oRDMLw4ZOZaxYwKxM&sensor=false"></script>
 
 <!-- Theme JavaScript -->
-<script src='"""),_display_(/*629.15*/routes/*629.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*629.66*/("""'></script>
+<script src='"""),_display_(/*930.15*/routes/*930.21*/.Assets.at("javascripts/js/grayscale.min.js")),format.raw/*930.66*/("""'></script>
 
 </body>
 
@@ -685,11 +986,11 @@ Seq[Any](format.raw/*1.65*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Sep 27 21:03:27 CEST 2017
+                  DATE: Tue Oct 03 22:46:16 CEST 2017
                   SOURCE: /home/alex/git/web/app/views/russianContent.scala.html
-                  HASH: 9a6cbcea16b1e5cd19e54d1e34a13ff1eb740931
-                  MATRIX: 1043->1|1179->66|1224->64|1251->83|1298->122|1348->135|1376->137|1870->604|1885->610|1936->640|3258->1935|3273->1941|3323->1970|3363->1983|3379->1989|3438->2026|3588->2149|3603->2155|3653->2184|3693->2197|3709->2203|3768->2240|3919->2364|3934->2370|3985->2400|4026->2413|4042->2419|4101->2456|5223->3551|5238->3557|5292->3590|7492->5762|7508->5768|7570->5807|11121->9330|11137->9336|11194->9370|13159->11307|13175->11313|13232->11347|14914->13001|14930->13007|14992->13046|18788->16814|18804->16820|18861->16854|20511->18476|20527->18482|20584->18516|21752->19656|21768->19662|21825->19696|23268->21111|23284->21117|23346->21156|26122->23904|26138->23910|26225->23986|26267->23988|26333->24026|26349->24032|26408->24081|26477->24110|26539->24143|26593->24169|26614->24180|26660->24204|26720->24235|26745->24237|26777->24240|26816->24257|26852->24282|26894->24284|26956->24317|27000->24333|27021->24344|27068->24369|27112->24381|27178->24415|27243->24451|27323->24503|27385->24548|27426->24550|27492->24587|27534->24601|27549->24606|27590->24625|27664->24667|27735->24710|27751->24716|27825->24779|27894->24808|27956->24841|28010->24867|28031->24878|28073->24898|28152->24948|28177->24950|28209->24953|28248->24970|28284->24995|28326->24997|28388->25030|28432->25046|28453->25057|28496->25078|28540->25090|28606->25124|28671->25160|28751->25212|28809->25253|28850->25255|28916->25292|28958->25306|28973->25311|29014->25330|29088->25372|29163->25419|29179->25425|29226->25462|29295->25491|29357->25524|29465->25604|29497->25626|29525->25631|29561->25638|29586->25640|29666->25691|29702->25716|29734->25718|29756->25729|29805->25753|29921->25837|29983->25870|30063->25922|30123->25965|30164->25967|30230->26004|30272->26018|30287->26023|30328->26042|30402->26084|30599->26253|30614->26258|30651->26273|30720->26314|30761->26345|30802->26347|30864->26380|31003->26491|31058->26529|31099->26531|31165->26568|31197->26572|31212->26577|31253->26596|31323->26638|31381->26679|31422->26681|31488->26718|31520->26722|31535->26727|31576->26746|31650->26788|31720->26826|31786->26863|31895->26940|31961->26974|32025->27009|32429->27385|32445->27391|32493->27417|32994->27890|33029->27915|33069->27916|33111->27930|33127->27936|33202->27988|33247->28000|34642->29368|34658->29374|34729->29423|34819->29485|34835->29491|34919->29553|35454->30060|35470->30066|35537->30111
-                  LINES: 30->1|33->2|36->1|37->3|37->3|37->3|39->5|48->14|48->14|48->14|82->48|82->48|82->48|82->48|82->48|82->48|86->52|86->52|86->52|86->52|86->52|86->52|90->56|90->56|90->56|90->56|90->56|90->56|129->95|129->95|129->95|193->159|193->159|193->159|237->203|237->203|237->203|266->232|266->232|266->232|296->262|296->262|296->262|346->312|346->312|346->312|366->332|366->332|366->332|387->353|387->353|387->353|410->376|410->376|410->376|504->470|504->470|504->470|504->470|509->475|509->475|509->475|509->475|510->476|510->476|510->476|510->476|510->476|510->476|510->476|510->476|510->476|510->476|511->477|511->477|511->477|511->477|511->477|512->478|516->482|517->483|517->483|517->483|518->484|518->484|518->484|518->484|519->485|523->489|523->489|523->489|523->489|524->490|524->490|524->490|524->490|524->490|524->490|524->490|524->490|524->490|524->490|525->491|525->491|525->491|525->491|525->491|526->492|530->496|531->497|531->497|531->497|532->498|532->498|532->498|532->498|533->499|541->507|541->507|541->507|541->507|542->508|543->509|543->509|543->509|543->509|543->509|543->509|543->509|543->509|543->509|543->509|545->511|546->512|547->513|547->513|547->513|548->514|548->514|548->514|548->514|549->515|555->521|555->521|555->521|557->523|557->523|557->523|558->524|560->526|560->526|560->526|561->527|561->527|561->527|561->527|562->528|562->528|562->528|563->529|563->529|563->529|563->529|564->530|565->531|566->532|568->534|569->535|572->538|576->542|576->542|576->542|586->552|586->552|586->552|586->552|586->552|586->552|586->552|650->616|650->616|650->616|653->619|653->619|653->619|663->629|663->629|663->629
+                  HASH: 1ffda5275f95930ea1921475286a87f0ddbcdbc1
+                  MATRIX: 1043->1|1179->66|1224->64|1251->83|1298->122|1348->135|1376->137|1870->604|1885->610|1936->640|3258->1935|3273->1941|3323->1970|3363->1983|3379->1989|3438->2026|3588->2149|3603->2155|3653->2184|3693->2197|3709->2203|3768->2240|3919->2364|3934->2370|3985->2400|4026->2413|4042->2419|4101->2456|5223->3551|5238->3557|5301->3599|7498->5768|7514->5774|7576->5813|11127->9336|11143->9342|11200->9376|13165->11313|13181->11319|13238->11353|14923->13010|14939->13016|15001->13055|18161->16187|18177->16193|18234->16227|19884->17849|19900->17855|19957->17889|21125->19029|21141->19035|21198->19069|22634->20477|22650->20483|22712->20522|24168->21950|24184->21956|24246->21995|25590->23311|25606->23317|25668->23357|25710->23371|25727->23377|25790->23417|26041->23640|26057->23646|26123->23690|26166->23704|26183->23710|26250->23754|26504->23980|26520->23986|26581->24025|26623->24039|26640->24045|26702->24084|27064->24418|27080->24424|27143->24465|27185->24479|27201->24485|27265->24526|27474->24707|27490->24713|27563->24764|27606->24778|27623->24784|27697->24835|27930->25040|27946->25046|28006->25084|28048->25098|28064->25104|28125->25142|37617->34606|37633->34612|37720->34688|37762->34690|37828->34728|37844->34734|37903->34783|37972->34812|38034->34845|38088->34871|38109->34882|38155->34906|38215->34937|38240->34939|38272->34942|38311->34959|38347->34984|38389->34986|38451->35019|38495->35035|38516->35046|38563->35071|38607->35083|38673->35117|38738->35153|38818->35205|38880->35250|38921->35252|38987->35289|39029->35303|39044->35308|39085->35327|39159->35369|39230->35412|39246->35418|39320->35481|39389->35510|39451->35543|39505->35569|39526->35580|39568->35600|39647->35650|39672->35652|39704->35655|39743->35672|39779->35697|39821->35699|39883->35732|39927->35748|39948->35759|39991->35780|40035->35792|40101->35826|40166->35862|40246->35914|40304->35955|40345->35957|40411->35994|40453->36008|40468->36013|40509->36032|40583->36074|40658->36121|40674->36127|40721->36164|40790->36193|40852->36226|40960->36306|40992->36328|41020->36333|41056->36340|41081->36342|41161->36393|41197->36418|41229->36420|41251->36431|41300->36455|41416->36539|41478->36572|41558->36624|41618->36667|41659->36669|41725->36706|41767->36720|41782->36725|41823->36744|41897->36786|42094->36955|42109->36960|42146->36975|42215->37016|42256->37047|42297->37049|42359->37082|42498->37193|42553->37231|42594->37233|42660->37270|42692->37274|42707->37279|42748->37298|42818->37340|42876->37381|42917->37383|42983->37420|43015->37424|43030->37429|43071->37448|43145->37490|43215->37528|43281->37565|43390->37642|43456->37676|43520->37711|43747->37910|43763->37916|43811->37942|44143->38246|44178->38271|44218->38272|44260->38286|44276->38292|44351->38344|44396->38356|45765->39698|45781->39704|45852->39753|45942->39815|45958->39821|46042->39883|46577->40390|46593->40396|46660->40441
+                  LINES: 30->1|33->2|36->1|37->3|37->3|37->3|39->5|48->14|48->14|48->14|82->48|82->48|82->48|82->48|82->48|82->48|86->52|86->52|86->52|86->52|86->52|86->52|90->56|90->56|90->56|90->56|90->56|90->56|129->95|129->95|129->95|193->159|193->159|193->159|237->203|237->203|237->203|266->232|266->232|266->232|296->262|296->262|296->262|342->308|342->308|342->308|362->328|362->328|362->328|383->349|383->349|383->349|406->372|406->372|406->372|432->398|432->398|432->398|483->449|483->449|483->449|483->449|483->449|483->449|488->454|488->454|488->454|488->454|488->454|488->454|493->459|493->459|493->459|493->459|493->459|493->459|505->471|505->471|505->471|505->471|505->471|505->471|510->476|510->476|510->476|510->476|510->476|510->476|515->481|515->481|515->481|515->481|515->481|515->481|807->773|807->773|807->773|807->773|812->778|812->778|812->778|812->778|813->779|813->779|813->779|813->779|813->779|813->779|813->779|813->779|813->779|813->779|814->780|814->780|814->780|814->780|814->780|815->781|819->785|820->786|820->786|820->786|821->787|821->787|821->787|821->787|822->788|826->792|826->792|826->792|826->792|827->793|827->793|827->793|827->793|827->793|827->793|827->793|827->793|827->793|827->793|828->794|828->794|828->794|828->794|828->794|829->795|833->799|834->800|834->800|834->800|835->801|835->801|835->801|835->801|836->802|844->810|844->810|844->810|844->810|845->811|846->812|846->812|846->812|846->812|846->812|846->812|846->812|846->812|846->812|846->812|848->814|849->815|850->816|850->816|850->816|851->817|851->817|851->817|851->817|852->818|858->824|858->824|858->824|860->826|860->826|860->826|861->827|863->829|863->829|863->829|864->830|864->830|864->830|864->830|865->831|865->831|865->831|866->832|866->832|866->832|866->832|867->833|868->834|869->835|871->837|872->838|875->841|878->844|878->844|878->844|887->853|887->853|887->853|887->853|887->853|887->853|887->853|951->917|951->917|951->917|954->920|954->920|954->920|964->930|964->930|964->930
                   -- GENERATED --
               */
           

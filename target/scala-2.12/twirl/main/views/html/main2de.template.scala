@@ -44,24 +44,26 @@ Seq[Any](format.raw/*7.32*/("""
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Vida Massagen sind Gesundheit und Vergnügen für Ihren Körper. Es ist ideal für diejenigen, die sich entspannen, Kraft wiederherstellen und den Körper entspannen wollen. Versuchen Sie es heute!">
+    <meta name="keywords" content="Spa Massagen, Gesundheit, Manuelle Lymphdrainagemassage, Hot and Cold Stone, Rückenmassage, Anti-Cellulite, Entspannende, Ayurvedische, Lendenwirbel, Gesicht, Kopf, Hände, Bein, Schulter, Fuss, Bauch, Hals,  Gesäß, Oberschenkel.">
+
     <meta name="author" content="">
 
-    <title>Vida-Massage</title>
+    <title>Vida Massage</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href='"""),_display_(/*22.18*/routes/*22.24*/.Assets.at("stylesheets/vendor/bootstrap/css/bootstrap.min.css")),format.raw/*22.88*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*24.18*/routes/*24.24*/.Assets.at("stylesheets/vendor/bootstrap/css/bootstrap.min.css")),format.raw/*24.88*/("""' rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href='"""),_display_(/*25.18*/routes/*25.24*/.Assets.at("stylesheets/vendor/font-awesome/css/font-awesome.min.css")),format.raw/*25.94*/("""' rel="stylesheet" type="text/css">
+    <link href='"""),_display_(/*27.18*/routes/*27.24*/.Assets.at("stylesheets/vendor/font-awesome/css/font-awesome.min.css")),format.raw/*27.94*/("""' rel="stylesheet" type="text/css">
 
 
-    <link rel="stylesheet" href=""""),_display_(/*28.35*/routes/*28.41*/.Assets.at("stylesheets/css/w3.css")),format.raw/*28.77*/("""">
+    <link rel="stylesheet" href=""""),_display_(/*30.35*/routes/*30.41*/.Assets.at("stylesheets/css/w3.css")),format.raw/*30.77*/("""">
 
 
     <!-- Theme CSS -->
-    <link href='"""),_display_(/*32.18*/routes/*32.24*/.Assets.at("stylesheets/css/grayscale.min.css")),format.raw/*32.71*/("""' rel="stylesheet">
-    <link href='"""),_display_(/*33.18*/routes/*33.24*/.Assets.at("stylesheets/css/special.css")),format.raw/*33.65*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*34.18*/routes/*34.24*/.Assets.at("stylesheets/css/grayscale.min.css")),format.raw/*34.71*/("""' rel="stylesheet">
+    <link href='"""),_display_(/*35.18*/routes/*35.24*/.Assets.at("stylesheets/css/special.css")),format.raw/*35.65*/("""' rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,9 +75,9 @@ Seq[Any](format.raw/*7.32*/("""
 
 </head>
     <body>
-        """),format.raw/*46.32*/("""
-        """),_display_(/*47.10*/content),format.raw/*47.17*/("""
-    """),format.raw/*48.5*/("""</body>
+        """),format.raw/*48.32*/("""
+        """),_display_(/*49.10*/content),format.raw/*49.17*/("""
+    """),format.raw/*50.5*/("""</body>
 </html>
 """))
       }
@@ -93,11 +95,11 @@ Seq[Any](format.raw/*7.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Sep 23 20:14:55 CEST 2017
+                  DATE: Tue Oct 03 22:34:11 CEST 2017
                   SOURCE: /home/alex/git/web/app/views/main2de.scala.html
-                  HASH: f27114de3f51217817ac7aecea2731eab9f66ffe
-                  MATRIX: 1208->259|1333->289|1361->291|1747->650|1762->656|1847->720|1938->784|1953->790|2044->860|2143->932|2158->938|2215->974|2287->1019|2302->1025|2370->1072|2434->1109|2449->1115|2511->1156|2967->1674|3004->1684|3032->1691|3064->1696
-                  LINES: 33->7|38->7|40->9|53->22|53->22|53->22|56->25|56->25|56->25|59->28|59->28|59->28|63->32|63->32|63->32|64->33|64->33|64->33|76->46|77->47|77->47|78->48
+                  HASH: 6da597f2d3a83580958b1f97aedb2b8c51855a7f
+                  MATRIX: 1208->259|1333->289|1361->291|2206->1109|2221->1115|2306->1179|2397->1243|2412->1249|2503->1319|2602->1391|2617->1397|2674->1433|2746->1478|2761->1484|2829->1531|2893->1568|2908->1574|2970->1615|3426->2133|3463->2143|3491->2150|3523->2155
+                  LINES: 33->7|38->7|40->9|55->24|55->24|55->24|58->27|58->27|58->27|61->30|61->30|61->30|65->34|65->34|65->34|66->35|66->35|66->35|78->48|79->49|79->49|80->50
                   -- GENERATED --
               */
           
