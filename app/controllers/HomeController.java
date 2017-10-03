@@ -121,7 +121,7 @@ public class HomeController extends Controller {
 
 
         flash("success", "Vielen Dank für die Frage! Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.");
-        return redirect("de#fragen");
+        return redirect("#fragen");
     }
 
 
