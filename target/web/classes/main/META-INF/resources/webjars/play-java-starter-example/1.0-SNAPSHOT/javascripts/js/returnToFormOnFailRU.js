@@ -1,5 +1,1 @@
-myFunction();
-function myFunction() {
-  location.href = "#";
-  location.href = "#bonpoc";
-}
+function myFunction(){location.href="#",location.href="#bonpoc"}myFunction();

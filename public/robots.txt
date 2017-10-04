@@ -1,4 +1,7 @@
 User-agent: *
-Disallow: /public/
 Disallow: /conf/
 Disallow: /controllers/
+
+User-agent Libwww-perl
+Disallow: /
+

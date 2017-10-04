@@ -1,29 +1,19 @@
 @(message: String, style: String = "java", contactForm: Form[_])
 @import helper._
 @defining(play.core.PlayVersion.current) { version =>
-
-
-
-
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" xmlns="http://www.w3.org/1999/html">
-
-<!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 Menu <i class="fa fa-bars"></i>
             </button>
-
             <a class="navbar-brand page-scroll" href='@routes.HomeController.pagrindinisLT'>
                 <i class="fa fa-play-circle"></i> <span class="light">Vidos</span> Masažai
             </a>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
@@ -33,12 +23,9 @@
                 <li>
                     <a class="page-scroll" href="#masazai">Masažai</a>
                 </li>
-
                 <li>
                     <a class="page-scroll" href="#galerija">Galerija</a>
                 </li>
-
-
                 <li>
                     <a class="page-scroll" href="#kainos">Kainos</a>
                 </li>
@@ -48,32 +35,20 @@
                 <li>
                     <a class="page-scroll" href="#kontaktai">Kontaktai</a>
                 </li>
-
                 <li>
                     <a class="page-scroll" href='@routes.HomeController.germanVersion'><img src='@routes.Assets.at("images/img/flag-de2.png")' alt="Vokiečių kalba" /></a>
                 </li>
-
                 <li>
                     <a class="page-scroll" href='@routes.HomeController.pagrindinisLT'><img src='@routes.Assets.at("images/img/flag-lt2.png")' alt="Lietuvių kalba" /></a>
                 </li>
-
                 <li>
                     <a class="page-scroll" href="@routes.HomeController.russianVersion"><img src='@routes.Assets.at("images/img/flag-rus.png")' alt="Rusų kalba" /></a>
                 </li>
-
-
             </ul>
-
-
         </div>
-
-        <!-- /.navbar-collapse -->
     </div>
-
-    <!-- /.container -->
 </nav>
 @flash.get("success")
-<!-- Intro Header -->
 <header class="intro">
     <div class="intro-body">
         <div class="container">
@@ -89,88 +64,59 @@
         </div>
     </div>
 </header>
-
-
-
-<!-- About Section -->
-<section id="apie" class="container content-section text-center ">
-    <div class="row ">
-
-
-
-        <div class="col-lg-6 ">
+<section id="apie" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-6">
             <img src='@routes.Assets.at("images/img/Vida-Polescuk.jpg")' class="img-circle" alt="Masažuotoja Vida Polescuk" id="what">
-
         </div>
         <p></p>
-
         <div class="col-lg-6">
-
-            <h3 align="center"><u>Išsilavinimas</u></h3>
+            <h3 align="center"><em>Išsilavinimas</em></h3>
             <ul><li>"Vilniaus aukštesnioji medicinos mokykla", Lietuva.</li>
                 <li>Klaipėdos universitetas. Bakalauro laipsnis "Visuomenės sveikata".</li>
                 <li>2010 metai - "Baltic SPA Professional" Kursai (Latvija), SPA masažai.</li>
                 <li>2012 metai - Slaugos darbuotojų tobulinimosi ir specializacijos centras: Pažymėjimas Nr. KV 120146 - suteikta teisė daryti gydomuosius masažus.</li>
-
             </ul>
             <p></p>
-            <h3 align="center" ><u>Darbo Patirtis</u></h3>
+            <h3 align="center"><em>Darbo Patirtis</em></h3>
             <ul align="center">
                 <li>27 metai: Medicinos sesuo.</li>
                 <li>7 metai: Visuomenės sveikatos priežiūros specialistė.</li>
                 <li>7 metai: Masažuotoja.</li>
             </ul>
             <p></p>
-            <h3 align="center"><u>SPA Sertifikatai</u></h3>
+            <h3 align="center"><em>SPA Sertifikatai</em></h3>
             <ul>
-
                 <li>Klasikinis segmentinis masažas</li>
                 <li>Karštų-šaltų akmenų masažas</li>
                 <li>Limfodrenažinis masažas</li>
                 <li>Thai pėdų masažas</li>
                 <li>Tradicinis ajurvedinis Keralos masažas</li>
             </ul>
-
-
         </div>
-
-
     </div>
     <a href="#masazai" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </a>
 </section>
-
-<!-- Download Section -->
 <section id="masazai" class="content-section text-center">
     <div class="download-section">
-        <h2 id="vienas">Sveikatą gerinantys masažai</h2>
+        <h1 id="vienas">Sveikatą gerinantys masažai</h1>
         <div class="container">
-
             <div class="row">
-
-                <div class="col-lg-4 ">
-
-
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#limfodrenazinis">
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block" data-toggle="collapse" data-target="#limfodrenazinis">
                         Limfodrenažinis masažas
                     </button>
                     <p></p>
                     <div id="limfodrenazinis" class="collapse">
-                        <!--<div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
-                                                      class="img-circle" alt="Medicine massage" width="250"
-                                                      height="250"></a></div>-->
-                        <div class="customBackGroundOfDiv " align="center">
-
-
-
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo" >
+                        <div class="customBackGroundOfDiv" align="center">
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo">
                                 Limfodrenažinis kūno masažas
                             </button>
-                            <div id="limfo" class="collapse customWidth">      <p class="massageText ">Tai saugus efektyvus būdas sustiprinti sveikatą bei palaikyti gerą savijautą.
+                            <div id="limfo" class="collapse customWidth"> <p class="massageText">Tai saugus efektyvus būdas sustiprinti sveikatą bei palaikyti gerą savijautą.
                                 Sveikiems žmonėms - tai profilaktinė priemonė, palaikanti normalią medžiagų
                                 apykaitą.</br>
-
                                 Masažo metu suaktyvinami pažeistų minkštųjų audinių regeneracijos procesai,
                                 slopinami uždegiminiai procesai, sustiprinamas imunitetas, pagerinamas audinių
                                 aprūpinimas deguonimi.</br>
@@ -184,15 +130,11 @@
                                 Gydymui ši procedūra skiriama kasdien, profilaktiškai - 2-3 kartus per savaitę.
                                 Norimas efektas pasiekiamas po 15 procedūrų.
                             </p> </div>
-
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo2" >
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#limfo2">
                                 Limfodrenažinis veido masažas
                             </button>
                             <div id="limfo2" class="collapse customWidth"><p class="massageText">
-
                                 Esant nuolatiniam stresui ir nuovargiui, veido raumenys sustingsta ,,liūdesio" kaukėje. Sunkėja limfos nutekėjimas, o kartu toksinių medžiagų apykaitos produktų šalinimas.</br>
-
-
                                 Veido limfodrenažas suteikia puikių rezultatų:</br>
                                 veido pabrinimais,</br>
                                 išsausėjusia oda,</br>
@@ -201,678 +143,411 @@
                                 sumažėjusiu audinių bei raumenų elastingumu,</br>
                                 kovojant su kuperoze.</br>
                                 Sumažinę veido suglebimą, sulaukiame ryškaus standinamojo efekto, išsilygina raukšlės.</p> </div>
-
-                           </div>
+                        </div>
                     </div>
                     <p></p>
                 </div>
-
-
-                <div class="col-lg-4 ">
-
-
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#karstusaltu">Karštų-šaltų
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block" data-toggle="collapse" data-target="#karstusaltu">Karštų-šaltų
                         akmenų masažas
                     </button>
                     <p></p>
                     <div id="karstusaltu" class="collapse">
-                      <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
-                                                      alt="Medicine massage" width="250" height="250"></a></div>-->
-                        <div class="customBackGroundOfDiv " align="center">
-
+                        <div class="customBackGroundOfDiv" align="center">
                             <p class="massageText customWidth"> Akmenys turi savybę iš raumenų pašalinti toksines medžiagas, susikaupusias dėl
-                                    streso ir nesveiko gyvenimo būdo, gerina miegą, padeda sureguliuoti kraujospūdį,
-                                    teigiamai veikia širdies ritmą, sužadinamos natūralios organizmo galios, padedančios
-                                    įveikti ligas, paspartinamas gijimo procesas.
-                                    Ši terapija veikia daugelį organizmo grandžių:</br>
-
-                                 Stimuliuoja imuninę sistemą;</br>
-                                 Suaktyvina kraujotaką;</br>
+                                streso ir nesveiko gyvenimo būdo, gerina miegą, padeda sureguliuoti kraujospūdį,
+                                teigiamai veikia širdies ritmą, sužadinamos natūralios organizmo galios, padedančios
+                                įveikti ligas, paspartinamas gijimo procesas.
+                                Ši terapija veikia daugelį organizmo grandžių:</br>
+                                Stimuliuoja imuninę sistemą;</br>
+                                Suaktyvina kraujotaką;</br>
                                 Pagerėja aprūpinimas deguonimi;</br>
                                 Lengvai ir maloniai numalšina raumenų, nugaros, galvos ir kaklo skausmus;</br>
                                 Teigiamai veikia nervinę sistemą;</br>
                                 Gerindama metabolizmą, padeda atsikratyti riebalų pertekliaus.</br>
                                 Šis masažas ypač tinka pervargus, patyrus gilų stresą, jaučiant nervingumą, apatiją,
                                 miego sutrikimus.</p>
-
-
                         </div>
                     </div>
                     <p></p>
                 </div>
-
-                <div class="col-lg-4 ">
-
-
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#segmentinis">Klasikinis – segmentinis nugaros masažas
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block" data-toggle="collapse" data-target="#segmentinis">Klasikinis – segmentinis nugaros masažas
                     </button>
                     <p></p>
                     <div id="segmentinis" class="collapse">
-                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
-                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
-                        <div class="customBackGroundOfDiv " align="center">
-
-                            <p class="massageText customWidth"> Šis masažas idealiai tinka žmonėms, kurie visą dieną praleidžia stovėdami, sėdėdami pavyzdžiui: prie kompiuterio arba vairuodami automobilį taip pat dirbantiems sėdimą ar sunkų fizinį darbą, kai visa įtampa susikaupia stuburo dalyje, kaklo ir pečių, juosmens ir sėdmenų srityse, ir dėl to susiformuoja skausmingi raumenų mazgai. Šis masažas ypač tinka po treniruočių  kai būna ilgalaikis ir trumpalaikis skausmas. Be to, dėl netaisyklingos stuburo padėties dažnai skauda galvą.
-                            </br> Periodiškai atliekamas masažas padės atsikratyti dažnų nugaros ir galvos skausmų, atpalaiduoti įtemptas raumenų grupes.
-                                </br>    Po masažo atslūgsta nugaros, galvos, pečių, sėdmenų skausmai.
-                                </br>  Po masažo Jūs jausitės pailsėję ir energingi. </p>
-
-
+                        <div class="customBackGroundOfDiv" align="center">
+                            <p class="massageText customWidth"> Šis masažas idealiai tinka žmonėms, kurie visą dieną praleidžia stovėdami, sėdėdami pavyzdžiui: prie kompiuterio arba vairuodami automobilį taip pat dirbantiems sėdimą ar sunkų fizinį darbą, kai visa įtampa susikaupia stuburo dalyje, kaklo ir pečių, juosmens ir sėdmenų srityse, ir dėl to susiformuoja skausmingi raumenų mazgai. Šis masažas ypač tinka po treniruočių kai būna ilgalaikis ir trumpalaikis skausmas. Be to, dėl netaisyklingos stuburo padėties dažnai skauda galvą.
+                                </br> Periodiškai atliekamas masažas padės atsikratyti dažnų nugaros ir galvos skausmų, atpalaiduoti įtemptas raumenų grupes.
+                                </br> Po masažo atslūgsta nugaros, galvos, pečių, sėdmenų skausmai.
+                                </br> Po masažo Jūs jausitės pailsėję ir energingi. </p>
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-        <div class="row">
-
-
-            <div class="col-lg-4 ">
-
-
-                <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#demo33" >
-                    Atskirų kūno dalių masažai
-                </button>
-                <p></p>
-                <div id="demo33" class="collapse">
-                  <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
-                                                  class="img-circle" alt="Medicine massage" width="250"
-                                                  height="250"></a></div>-->
-                    <div class="customBackGroundOfDiv" align="center">
-                        <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#galva" >
-                            Galvos masažas
-                        </button>
-                        <div id="galva" class="collapse customWidth"><p class="massageText">Sumažina stresą, galvos skausmus, gerina kraujo apytaką.</p> </div>
-
-                        <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#peciai" >
-                            Pečių – kaklo – rankų  masažas
-                        </button>
-                        <div id="peciai" class="collapse customWidth"><p class="massageText">Efektyviausia  nemalonių simptomų šalinimo  priemonė. Jau po pirmo karto jus pajusite bendrą savijautos pagerėjimą. Po pilno masažo kurso skausmingi pojūčiai išnyksta, atsiranda žvalumas, padidėja darbingumas, išnyksta nemiga ir irzlumas. Tai yra puiki priemonė atsikratyti galvos, kaklo, pečių skausmo, rankų tirpimo jausmo.  </p> </div>
-
-
-
-
-
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pilvo" >
+            <div class="row">
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block" data-toggle="collapse" data-target="#demo33">
+                        Atskirų kūno dalių masažai
+                    </button>
+                    <p></p>
+                    <div id="demo33" class="collapse">
+                        <div class="customBackGroundOfDiv" align="center">
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#galva">
+                                Galvos masažas
+                            </button>
+                            <div id="galva" class="collapse customWidth"><p class="massageText">Sumažina stresą, galvos skausmus, gerina kraujo apytaką.</p> </div>
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#peciai">
+                                Pečių – kaklo – rankų masažas
+                            </button>
+                            <div id="peciai" class="collapse customWidth"><p class="massageText">Efektyviausia nemalonių simptomų šalinimo priemonė. Jau po pirmo karto jus pajusite bendrą savijautos pagerėjimą. Po pilno masažo kurso skausmingi pojūčiai išnyksta, atsiranda žvalumas, padidėja darbingumas, išnyksta nemiga ir irzlumas. Tai yra puiki priemonė atsikratyti galvos, kaklo, pečių skausmo, rankų tirpimo jausmo. </p> </div>
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#pilvo">
                                 Pilvo masažas
                             </button>
                             <div id="pilvo" class="collapse customWidth"><p class="massageText">Stimuliuoja virškinimą, turi teigiamą poveikį vidinių organų veiklai, gerina virškinimo trakto funkcijas ir tulžies sekreciją, padeda su vidurių užkietėjimais arba dujų susikaupimo žarnyne</div>
-
-
-                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#juosmens" >
-                                Juosmens - sėdmenų - kojų  masažas
+                            <button type="button" class="btn btn-primary btn-round-lg btn-xs btn-block btn-width-custom" data-toggle="collapse" data-target="#juosmens">
+                                Juosmens - sėdmenų - kojų masažas
                             </button>
-                        <div id="juosmens" class="collapse customWidth"><p class="massageText">Gerina kraujo ir limfos apytaką juosmens bei kojų srityse, atpalaiduoja įsitempusius  raumenis, mažina juosmens, sėdmenų, kojų skausmą, stiprina nusilpusius raumenis.
-                            Sumažina skausmą po operacijos, mažina nervinių šaknų uždegimą.</p></div>
-
-
-
-                    </div>
-                </div>
-                <p></p>
-            </div>
-
-
-            <div class="col-lg-4 ">
-
-
-                <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#vyresnio">Masažas vyresnio amžiaus žmonėms
-                </button>
-                <p></p>
-                <div id="vyresnio" class="collapse">
-                    <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
-                                                    alt="Medicine massage" width="250" height="250"></a></div>-->
-                    <div class="customBackGroundOfDiv " align="center">
-
-                        <p class="massageText customWidth">Masažas yra būtina ir labai naudinga procedūra pagyvenusiems žmonėms, pensininkams. Tyrimai parodė, kad masažas lėtina senėjimo procesą. Taip pat masažas veikia raminančiai visą organizmą ir gali sumažinti skausmus. Masažas gali padėti žmonėms, kenčiantiems raumenų skausmus ar sergantiems atritu. Kada žmogus kenčia, jis tampa vis mažiau aktyvus, nukenčia gyvenimo kokybė ir sveikata. Masažas gerina kraujotaką,  pašalina raumenų nuovargį ir raumenys įgauna tonusą. Dėl to pagerėja pagyvenusio žmogaus gyvenimo kokybė.
-                            </br>Prieš masažą Jums gerai būtų pasikonsultuoti su savo gydytoju. Kai tik gausite gydytojo leidimą masažui, jus drąsiai galite kreiptis pas mane.  </p>
-
-
-                    </div>
-                </div>
-                <p></p>
-            </div>
-
-
-
-            <div class="col-lg-4 ">
-
-
-                <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#atpalaiduojantis">Atpalaiduojantis viso kūno  masažas
-                </button>
-                <p></p>
-                <div id="atpalaiduojantis" class="collapse">
-                    <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
-                                                    alt="Medicine massage" width="250" height="250"></a></div>-->
-                    <div class="customBackGroundOfDiv " align="center">
-
-                        <p class="massageText customWidth"> Atpalaiduojantis masažas tinka visiems, norintiems atsipalaiduoti po sunkios dienos, užsimiršti bei pabėgti nuo kasdienės rutinos. Pašalina įtampą ir stresą, atslūgsta nugaros ir galvos skausmai, atsipalaiduoja raumenys, teigiamai veikia vidinę organizmo būseną,  pagerina nuotaiką bei grąžina energiją. </p>
-
-                    </div>
-                </div>
-                <p></p>
-            </div>
-        </div>
-
-            <div class="row">
-
-                <div class="col-lg-4 ">
-
-
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#ajurvedinis">Ajurvedinis krūtų masažas moterims
-                    </button>
-                    <p></p>
-                    <div id="ajurvedinis" class="collapse">
-                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/mas3.jpeg")' class="img-circle"
-                                                        alt="Medicine massage" width="250" height="250"></a></div>-->
-                        <div class="customBackGroundOfDiv " align="center">
-
-                            <p class="massageText customWidth"> Yra skirtas krūtinės sričiai. Jis atliekamas ne tik norint pagražinti krūtinę, sustangrinti krūtis, suteikti joms gražią formą, bet ir siekiant gilesnių terapinių tikslų. Šis masažas daro teigiamą įtaką visų moters reprodukcinių organų sistemai bei padeda subalansuoti hormonų sistemos veiklą. Labai sumažina nemalonų krūtų jautrumą, susijusį su menstruacijų ciklu. Praktiškai išnyksta krūtų vėžio rizika. Švelnėja implantų surandėjimai.
-                            </br> Toks masažas pagerina savijautą, padaro krūtis gražesnes, suteikia pasitikėjimo ir padeda geriau jaustis kaip moteriai.</p>
-
+                            <div id="juosmens" class="collapse customWidth"><p class="massageText">Gerina kraujo ir limfos apytaką juosmens bei kojų srityse, atpalaiduoja įsitempusius raumenis, mažina juosmens, sėdmenų, kojų skausmą, stiprina nusilpusius raumenis.
+                                Sumažina skausmą po operacijos, mažina nervinių šaknų uždegimą.</p></div>
                         </div>
                     </div>
                     <p></p>
                 </div>
-
-
-
-
-                <div class="col-lg-4 ">
-
-
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#anticeliulitinis" >
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block" data-toggle="collapse" data-target="#vyresnio">Masažas vyresnio amžiaus žmonėms
+                    </button>
+                    <p></p>
+                    <div id="vyresnio" class="collapse">
+                        <div class="customBackGroundOfDiv" align="center">
+                            <p class="massageText customWidth">Masažas yra būtina ir labai naudinga procedūra pagyvenusiems žmonėms, pensininkams. Tyrimai parodė, kad masažas lėtina senėjimo procesą. Taip pat masažas veikia raminančiai visą organizmą ir gali sumažinti skausmus. Masažas gali padėti žmonėms, kenčiantiems raumenų skausmus ar sergantiems atritu. Kada žmogus kenčia, jis tampa vis mažiau aktyvus, nukenčia gyvenimo kokybė ir sveikata. Masažas gerina kraujotaką, pašalina raumenų nuovargį ir raumenys įgauna tonusą. Dėl to pagerėja pagyvenusio žmogaus gyvenimo kokybė.
+                                </br>Prieš masažą Jums gerai būtų pasikonsultuoti su savo gydytoju. Kai tik gausite gydytojo leidimą masažui, jus drąsiai galite kreiptis pas mane. </p>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block" data-toggle="collapse" data-target="#atpalaiduojantis">Atpalaiduojantis viso kūno masažas
+                    </button>
+                    <p></p>
+                    <div id="atpalaiduojantis" class="collapse">
+                        <div class="customBackGroundOfDiv" align="center">
+                            <p class="massageText customWidth"> Atpalaiduojantis masažas tinka visiems, norintiems atsipalaiduoti po sunkios dienos, užsimiršti bei pabėgti nuo kasdienės rutinos. Pašalina įtampą ir stresą, atslūgsta nugaros ir galvos skausmai, atsipalaiduoja raumenys, teigiamai veikia vidinę organizmo būseną, pagerina nuotaiką bei grąžina energiją. </p>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block" data-toggle="collapse" data-target="#ajurvedinis">Ajurvedinis krūtų masažas moterims
+                    </button>
+                    <p></p>
+                    <div id="ajurvedinis" class="collapse">
+                        <div class="customBackGroundOfDiv" align="center">
+                            <p class="massageText customWidth"> Yra skirtas krūtinės sričiai. Jis atliekamas ne tik norint pagražinti krūtinę, sustangrinti krūtis, suteikti joms gražią formą, bet ir siekiant gilesnių terapinių tikslų. Šis masažas daro teigiamą įtaką visų moters reprodukcinių organų sistemai bei padeda subalansuoti hormonų sistemos veiklą. Labai sumažina nemalonų krūtų jautrumą, susijusį su menstruacijų ciklu. Praktiškai išnyksta krūtų vėžio rizika. Švelnėja implantų surandėjimai.
+                                </br> Toks masažas pagerina savijautą, padaro krūtis gražesnes, suteikia pasitikėjimo ir padeda geriau jaustis kaip moteriai.</p>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block" data-toggle="collapse" data-target="#anticeliulitinis">
                         Anticeliulitinis masažas rankomis
                     </button>
                     <p></p>
                     <div id="anticeliulitinis" class="collapse">
-                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
-                                                        class="img-circle" alt="Medicine massage" width="250"
-                                                        height="250"></a></div>-->
                         <div class="customBackGroundOfDiv" align="center">
-
-
-
-                           <p class="massageText customWidth"> Tai ypač efektyvus kovos su celiulitu būdas, taikomas tam tikrų probleminių sričių – šlaunų, sėdmenų ir pilvo – netolygiam poodiniam sluksniui (celiulitui) mažinti.
-                                </br>    Masažas aktyvina limfotaką, padidina raumenų susitraukimą ir tonusą dėl to, mažėja celiulitas ir patinimai. Išvalo organizmą nuo šlakų bei suteikia ryškiai išreikštą kosmetinį efektą.
-                               </br>   Masažas su Tibeto moline taure yra pats švelniausias – nepalieka mėlynių, nežaloja kapiliarų.</br>
-                           Naudojant Tibeto molinę vakuuminę taurę.</p> </div>
-
-
-
-
-
-                        </div>
+                            <p class="massageText customWidth"> Tai ypač efektyvus kovos su celiulitu būdas, taikomas tam tikrų probleminių sričių – šlaunų, sėdmenų ir pilvo – netolygiam poodiniam sluksniui (celiulitui) mažinti.
+                                </br> Masažas aktyvina limfotaką, padidina raumenų susitraukimą ir tonusą dėl to, mažėja celiulitas ir patinimai. Išvalo organizmą nuo šlakų bei suteikia ryškiai išreikštą kosmetinį efektą.
+                                </br> Masažas su Tibeto moline taure yra pats švelniausias – nepalieka mėlynių, nežaloja kapiliarų.</br>
+                                Naudojant Tibeto molinę vakuuminę taurę.</p> </div>
                     </div>
-
-
-                <div class="col-lg-4 ">
-
-
-                    <button type="button" class="btn btn-primary btn-round-lg btn-block " data-toggle="collapse" data-target="#thaipedu" >
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary btn-round-lg btn-block" data-toggle="collapse" data-target="#thaipedu">
                         Atpalaiduojantis pėdų masažas
                     </button>
                     <p></p>
                     <div id="thaipedu" class="collapse">
-                        <!--  <div class="text-center"><img src='@routes.Assets.at("images/img/massage164.jpg")'
-                                                        class="img-circle" alt="Medicine massage" width="250"
-                                                        height="250"></a></div>-->
                         <div class="customBackGroundOfDiv" align="center">
-
-
-
                             <p class="massageText customWidth"> Taikomas pavargusioms, skausmingoms pėdoms atpalaiduoti, kūno gyvybiniam tonusui padidinti, imunitetui stiprinti. Ši procedūra tinka daug vaikštantiems, dirbantiems stovimą arba žmonėms šąlančiomis kojomis. Pėdų masažas padeda atsigauti ir pailsėti visam organizmui.</p> </div>
-
-
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
                 <p></p>
-                </div>
-
             </div>
-
-        </div>
-        <a href="#kainos" class="btn btn-circle page-scroll">
-            <i class="fa fa-angle-double-down animated"></i>
-        </a>
-        </div>
-
-    </div>
-
-
-</section >
-
-
-<section id="galerija" class="content-section text-center">
-
-    <div class="row">
-
-        <div class="col-md-8 col-md-offset-2">
-            <hr>
-            <h2>Galerija</h2>
-            <hr>
-
-            <p></p>
-
-
-            <div class="col-lg-4 ">
-                        <a href="@routes.Assets.at("images/img/massage-bed.jpg")"> <img src="@routes.Assets.at("images/img/massage-bed.jpg")" class="w3-image w3-round" alt="Vidos masažinė lova kambaryje" ></a>
-                    </div>
-
-<p></p>
-                    <div class="col-lg-4 ">
-                        <a href="@routes.Assets.at("images/img/hot-cold-stones.jpg")"> <img src="@routes.Assets.at("images/img/hot-cold-stones.jpg")" class="w3-image w3-round" alt="Karštų-šaltų akmenų masažas" ></a>
-                    </div>
-            <p></p>
-
-            <div class="col-lg-4 ">
-                <a href="@routes.Assets.at("images/img/stones-oil.jpg")"> <img src="@routes.Assets.at("images/img/stones-oil.jpg")" class="w3-image w3-round" alt="Vidos masažui naudojami akmenys ir aliejukai" ></a>
-            </div>
-
-
         </div>
     </div>
-        <div class="row">
-
-            <div class="col-md-8 col-md-offset-2">
-                <p></p>
-
-                <div class="col-lg-4 ">
-                    <a href="@routes.Assets.at("images/img/massage-bed2.jpg")"> <img src="@routes.Assets.at("images/img/massage-bed2.jpg")" class="w3-image w3-round" alt="Vidos masažų lova" ></a>
-                </div>
-                <p></p>
-
-                <div class="col-lg-4 ">
-                    <a href="@routes.Assets.at("images/img/tibetan-vacuum-cup-oil.jpg")"> <img src="@routes.Assets.at("images/img/tibetan-vacuum-cup-oil.jpg")" class="w3-image w3-round" alt="Naudojama Tibeto vakuuminė taurė ir aliejukai" ></a>
-                </div>
-                <p></p>
-
-                <div class="col-lg-4 ">
-                    <a href="@routes.Assets.at("images/img/Vida-buda.jpg")"> <img src="@routes.Assets.at("images/img/Vida-buda.jpg")" class="w3-image w3-round" alt="Buda ir kriauklės" ></a>
-                </div>
-                <p></p>
-
-
-
-
-            </div>
-
-
-
-
-        </div>
-
-    <!--<div class="row">
-
-        <div class="col-md-8 col-md-offset-2">
-            <p></p>
-
-            <div class="col-lg-4 ">
-                <a href="@routes.Assets.at("images/img/5.jpg")"> <img src="@routes.Assets.at("images/img/5.jpg")" class="w3-image w3-round" alt="Buda" ></a>
-            </div>
-            <p></p>
-
-            <div class="col-lg-4 ">
-                <a href="@routes.Assets.at("images/img/intro-bg.jpg")"> <img src="@routes.Assets.at("images/img/intro-bg.jpg")" class="w3-image w3-round" alt="Buda" ></a>
-            </div>
-            <p></p>
-
-            <div class="col-lg-4 ">
-                <a href="@routes.Assets.at("images/img/intro-bg.jpg")"> <img src="@routes.Assets.at("images/img/intro-bg.jpg")" class="w3-image w3-round" alt="Buda" ></a>
-            </div>
-            <p></p>
-
-        </div>
-
-
-
-
-
-    </div>-->
-
-
-
-
     <a href="#kainos" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </a>
-
     </div>
-
+    </div>
 </section>
-
-
-
-
-<section  class="content-section text-center">
-    <div class="contact-section " id="kainos">
-    <div class="row" >
-        <div class="col-md-8  col-md-offset-2 " >
-            <div class="" >
-                <hr>
-                <h2>Kainos</h2>
-                <hr>
-
-                <div class="w3-container customBackGroundOfDiv">
-
-                    <p></p>
-                    <h5 align="center" ><u>Spa masažai</u></h5>
-
-                    <table class="table table-inverse">
-                        <th scope="row" id="ulo"><u></u></th>
-                        <td><b><u>Trukmė</u></b></td>
-                        <td><b><u>Kaina</u></b></td>
-                        <tbody>
-                        <tr>
-                            <th scope="row" id="ulo2">Karštų-šaltų akmenų masažas</th>
-                            <td>90 min.</td>
-                            <td>170 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="ulo2">Karštų-šaltų akmenų masažas</th>
-                            <td>120 min.</td>
-                            <td>220 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="ulo2">Limfodrenažinis kūno masažas</th>
-                            <td>90 min.</td>
-
-                            <td>140 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="ulo2">Limfodrenažinis veido masažas</th>
-                            <td>50 min.</td>
-
-                            <td>90 CHF</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row" id="ulo2">Ajurvedinis krūtų masažas moterims</th>
-                            <td>60 min.</td>
-
-                            <td>100 CHF</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row" id="ulo2">Klasikinis segmentinis nugaros masažas</th>
-                            <td>60 min.</td>
-
-                            <td>100 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="ulo2">Klasikinis segmentinis nugaros masažas</th>
-                            <td>120 min.</td>
-
-                            <td>150 CHF</td>
-                        </tr>
-
-
-
-                        <tr>
-                            <th scope="row" id="ulo2">Atpalaiduojantis viso kūno masažas</th>
-                            <td>120 min.</td>
-
-                            <td>200 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="ulo2">Atpalaiduojantis pėdų masažas</th>
-                            <td>60 min.</td>
-
-                            <td>100 CHF</td>
-                        </tr>
-
-
-                        </tbody>
-                    </table>
-
-
-
-                    <h5 align="center"><b><u>Kiti masažai</u></b></h5>
-
-                    <table class="table table-inverse">
-                        <th scope="row" id="ulo"><u>Atskirų kūno dalių masažai</u> </th>
-                        <td><b><u>30min</u></b></td>
-                        <td><b><u>60min</u></b></td>
-                        <td><b><u>90min</u></b></td>
-                        <tbody>
-
-                        <tr>
-                            <th scope="row" id="ulo2">Juosmens, sėdmenų, kojų masažas</th>
-                            <td>50 CHF</td>
-                            <td>100 CHF</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="ulo2">Pečių, kaklo, rankų masažas</th>
-                            <td>50 CHF</td>
-                            <td>100 CHF</td>
-                            <td>--</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="ulo2">Galvos masažas</th>
-                            <td>50 CHF</td>
-                            <td>--</td>
-                            <td>--</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="ulo2">Pilvo masažas</th>
-                            <td>50 CHF</td>
-                            <td>--</td>
-                            <td>--</td>
-
-
-                        </tr>
-
-
-                        <tr>
-
-                            <th scope="row"><u></u> </th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-
-                        </tr>
-                        <tr>
-
-                            <th scope="row"><u></u> </th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-
-                        </tr>
-
-
-
-                        <th scope="row"><b><u id="ulo">Anticeliulitiniai masažai</u> </b></th>
-                        <td><b><u>30min</u></b></td>
-                        <td><b><u>60min</u></b></td>
-                        <td><b><u>90min</u></b></td>
-                        <tr>
-                        <tbody>
+<section id="galerija" class="content-section text-center">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <hr>
+            <h1>Galerija</h1>
+            <hr>
+            <p></p>
+            <div class="col-lg-4">
+                <a href="@routes.Assets.at("images/img/massage-bed.jpg")"> <img src="@routes.Assets.at("images/img/massage-bed.jpg")" class="w3-image w3-round" alt="Vidos masažinė lova kambaryje"></a>
+            </div>
+            <p></p>
+            <div class="col-lg-4">
+                <a href="@routes.Assets.at("images/img/hot-cold-stones.jpg")"> <img src="@routes.Assets.at("images/img/hot-cold-stones.jpg")" class="w3-image w3-round" alt="Karštų-šaltų akmenų masažas"></a>
+            </div>
+            <p></p>
+            <div class="col-lg-4">
+                <a href="@routes.Assets.at("images/img/stones-oil.jpg")"> <img src="@routes.Assets.at("images/img/stones-oil.jpg")" class="w3-image w3-round" alt="Vidos masažui naudojami akmenys ir aliejukai"></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p></p>
+            <div class="col-lg-4">
+                <a href="@routes.Assets.at("images/img/massage-bed2.jpg")"> <img src="@routes.Assets.at("images/img/massage-bed2.jpg")" class="w3-image w3-round" alt="Vidos masažų lova"></a>
+            </div>
+            <p></p>
+            <div class="col-lg-4">
+                <a href="@routes.Assets.at("images/img/tibetan-vacuum-cup-oil.jpg")"> <img src="@routes.Assets.at("images/img/tibetan-vacuum-cup-oil.jpg")" class="w3-image w3-round" alt="Naudojama Tibeto vakuuminė taurė ir aliejukai"></a>
+            </div>
+            <p></p>
+            <div class="col-lg-4">
+                <a href="@routes.Assets.at("images/img/Vida-buda.jpg")"> <img src="@routes.Assets.at("images/img/Vida-buda.jpg")" class="w3-image w3-round" alt="Buda ir kriauklės"></a>
+            </div>
+            <p></p>
+        </div>
+    </div>
+    <a href="#kainos" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-down animated"></i>
+    </a>
+    </div>
+</section>
+<section class="content-section text-center">
+    <div class="contact-section" id="kainos">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="">
+                    <hr>
+                    <h1>Kainos</h1>
+                    <hr>
+                    <div class="w3-container customBackGroundOfDiv">
+                        <p></p>
+                        <h5 align="center"><em>Spa masažai</em></h5>
+                        <table class="table table-inverse">
+                            <th scope="row" id="ulo"><em></em></th>
+                            <td><b><em>Trukmė</em></b></td>
+                            <td><b><em>Kaina</em></b></td>
+                            <tbody>
+                            <tr>
+                                <th scope="row" id="ulo2">Karštų-šaltų akmenų masažas</th>
+                                <td>90 min.</td>
+                                <td>170 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Karštų-šaltų akmenų masažas</th>
+                                <td>120 min.</td>
+                                <td>220 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Limfodrenažinis kūno masažas</th>
+                                <td>90 min.</td>
+                                <td>140 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Limfodrenažinis veido masažas</th>
+                                <td>50 min.</td>
+                                <td>90 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Ajurvedinis krūtų masažas moterims</th>
+                                <td>60 min.</td>
+                                <td>100 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Klasikinis segmentinis nugaros masažas</th>
+                                <td>60 min.</td>
+                                <td>100 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Klasikinis segmentinis nugaros masažas</th>
+                                <td>120 min.</td>
+                                <td>150 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Atpalaiduojantis viso kūno masažas</th>
+                                <td>120 min.</td>
+                                <td>200 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Atpalaiduojantis pėdų masažas</th>
+                                <td>60 min.</td>
+                                <td>100 CHF</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h5 align="center"><b><em>Kiti masažai</em></b></h5>
+                        <table class="table table-inverse">
+                            <th scope="row" id="ulo"><em>Atskirų kūno dalių masažai</em> </th>
+                            <td><b><em>30min</em></b></td>
+                            <td><b><em>60min</em></b></td>
+                            <td><b><em>90min</em></b></td>
+                            <tbody>
+                            <tr>
+                                <th scope="row" id="ulo2">Juosmens, sėdmenų, kojų masažas</th>
+                                <td>50 CHF</td>
+                                <td>100 CHF</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Pečių, kaklo, rankų masažas</th>
+                                <td>50 CHF</td>
+                                <td>100 CHF</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Galvos masažas</th>
+                                <td>50 CHF</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Pilvo masažas</th>
+                                <td>50 CHF</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><em></em> </th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><em></em> </th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <th scope="row"><b><u id="ulo">Anticeliulitiniai masažai</em> </b></th>
+                            <td><b><em>30min</em></b></td>
+                            <td><b><em>60min</em></b></td>
+                            <td><b><em>90min</em></b></td>
+                            <tr>
+                            <tbody>
                             <th scope="row" id="ulo2">Sėdmenų masažas</th>
                             <td>70 CHF</td>
                             <td>130 CHF</td>
                             <td>180 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="ulo2">Šlaunų masažas</th>
-                            <td>70 CHF</td>
-                            <td>130 CHF</td>
-                            <td>180 CHF</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" id="ulo2">Pilvo masažas</th>
-                            <td>70 CHF</td>
-                            <td>130 CHF</td>
-                            <td>180 CHF</td>
-                        </tr>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Šlaunų masažas</th>
+                                <td>70 CHF</td>
+                                <td>130 CHF</td>
+                                <td>180 CHF</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="ulo2">Pilvo masažas</th>
+                                <td>70 CHF</td>
+                                <td>130 CHF</td>
+                                <td>180 CHF</td>
+                            </tr>
                             <tr>
                                 <th scope="row" id="ulo2">Žąsto masažas</th>
                                 <td>70 CHF</td>
                                 <td>130 CHF</td>
                                 <td>180 CHF</td>
-
-
                             </tr>
-                        <tr>
-
-                        <th scope="row"><u></u> </th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                        </tr>
-                        <tr>
-
-                            <th scope="row"><u></u> </th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-
-                        </tr>
-
-
-                        <th scope="row" id="ulo"><b><u>Masažas vyresnio amžiaus žmonėms (nuo 65 metų)<u></b></th>
-                        <td><b><u></u></b></td>
-                        <td><b><u>Kaina</u></b></td>
-                        <td><b><u></u></b></td>
-                        <tbody>
-
-                        <tr>
-                            <th scope="row" id="ulo2">Tinka visi spa ir atskirų kūno dalių masažai</th>
-                            <td></td>
-                            <td>-10% nuolaida</td>
-                            <td></td>
-                        </tr>
-
-
-                        </tbody>
-                    </table>
+                            <tr>
+                                <th scope="row"><em></em> </th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><em></em> </th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <th scope="row" id="ulo"><b><em>Masažas vyresnio amžiaus žmonėms (nuo 65 metų)<em></b></th>
+                            <td><b><em></em></b></td>
+                            <td><b><em>Kaina</em></b></td>
+                            <td><b><em></em></b></td>
+                            <tbody>
+                            <tr>
+                                <th scope="row" id="ulo2">Tinka visi spa ir atskirų kūno dalių masažai</th>
+                                <td></td>
+                                <td>-10% nuolaida</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
                         <p></p>
-
-
-
-                    <h5 align="center"><b><u>DOVANŲ KUPONAI</u></b></h5>
-
-                    <table class="table table-inverse">
-
-
-                        <tr>
-                            <th scope="row"><u></u> </th>
-                            <td>100 CHF</td>
-                            <td>200 CHF</td>
-                            <td>300 CHF</td>
-                        </tr>
-
-
-                    </table>
-
+                        <h5 align="center"><b><em>DOVANŲ KUPONAI</em></b></h5>
+                        <table class="table table-inverse">
+                            <tr>
+                                <th scope="row"><em></em> </th>
+                                <td>100 CHF</td>
+                                <td>200 CHF</td>
+                                <td>300 CHF</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-
             </div>
-
         </div>
-    </div>
         <a href="#klausk" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
         </a>
     </div>
-
 </section>
-
-
-<section id="klausk" class="container content-section text-center  ">
+<section id="klausk" class="container content-section text-center">
     <div class="row">
-        <div class="col-lg-12" >
+        <div class="col-lg-12">
             <div class="">
                 <div class="container">
-
-                    <h2>Užduokite savo klausimą!</h2>
+                    <h1>Užduokite savo klausimą!</h1>
                     <p></p>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-
-
-
-
                             @helper.form(action = routes.HomeController.submitLT(),'class -> "form-horizontal") {
-
-
-
-
                             @helper.input(contactForm("Vardas"),'class->"form-control") { (id, name, value, args) =>
-                            <input type="text" name="@contactForm.field("firstName").name"  placeholder="Jūsų vardas" id="@id" @toHtmlArgs(args)@if(contactForm.hasErrors) {
-                            <option value='@contactForm.field("firstName").value'></option>}
+                            <input type="text" name="@contactForm.field("firstName").name" placeholder="Jūsų vardas" id="@id" @toHtmlArgs(args)@if(contactForm.hasErrors) { <option value='@contactForm.field("firstName").value'></option>}
                             }
-
-
-
                             <div id="xxx">
-                            @for(error <- contactForm("firstName").errors) {
-                            <p id="xxxx">@error.format(messages())</p>
+                                @for(error <- contactForm("firstName").errors) { <p id="xxxx">@error.format(messages())</p>
                                 }</div>
-
-
-
                             @helper.input(contactForm("Elektroninis paštas"),'class->"form-control") { (id, name, value, args) =>
-                            <input type="text" name="@contactForm.field("email").name"  placeholder="Jūsų elektroninis paštas" id="@id" @toHtmlArgs(args)@if(contactForm.hasErrors) {
-                            <option value='@contactForm.field("email").value'></option>}
+                            <input type="text" name="@contactForm.field("email").name" placeholder="Jūsų elektroninis paštas" id="@id" @toHtmlArgs(args)@if(contactForm.hasErrors) { <option value='@contactForm.field("email").value'></option>}
                             }
-
-
-
                             <div id="xxx">
-                            @for(error <- contactForm("email").errors) {
-                            <p id="xxxx">@error.format(messages())</p>
+                                @for(error <- contactForm("email").errors) { <p id="xxxx">@error.format(messages())</p>
                                 }</div>
-
-
-
-
-
-
-
                             @helper.input(field = contactForm("Klausimas")) { (id, name, value, args) =>
                             <div>
                                 <textarea class="form-control" name="@contactForm("textbox").name" id="@id" placeholder="Jūsų žinutė" rows='5' cols='80'>@if(contactForm.hasErrors){@contactForm.field("textbox").value}</textarea>
                             </div>
                             }
                             <div id="xxx">
-                                @for(error <- contactForm("textbox").errors) {
-                                <p id="xxxx">@error.format(messages())</p>
+                                @for(error <- contactForm("textbox").errors) { <p id="xxxx">@error.format(messages())</p>
                                 }</div>
-
-
-
-                                <button type="submit"  class="btn btn-default" >Siųsti žinute</button>
-
+                            <button type="submit" class="btn btn-default">Siųsti žinute</button>
                             <div id="flash">@flash.get("success")</div>
-
                             @if(contactForm.hasGlobalErrors) {
                             <div id="xxx">
-                            <p class="error" >
-                                @for(error <- contactForm.globalErrors) {
-                            <p>@error.format(messages())</p>
-                            @for(error <- contactForm("email").errors) {
-                            <p>@error.format(messages())</p>
-                            }
-                            }
-                            </p>
+                                <p class="error">
+                                    @for(error <- contactForm.globalErrors) { <p>@error.format(messages())</p>
+                                @for(error <- contactForm("email").errors) { <p>@error.format(messages())</p>
+                                }
+                                }
+                                </p>
                             </div>
                             }
                             }
-
-
                             <p></p>
                             <h3>Mūsų socialiniai tinklai</h3>
                             <ul class="list-inline banner-social-buttons">
@@ -881,92 +556,53 @@
                         </div>
                     </div>
                 </div>
-
-
-        </div>
+            </div>
         </div>
     </div>
     <a href="#kontaktai" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
     </a>
-
-
-
-
-
-
-
 </section>
-
-
 <section>
     <hr>
-    <!-- Map Section -->
     <div id="kontaktai" class="text-center">
         <div class="row">
             <div class="col-lg-12 price-section2">
                 <p></p>
-                <h2>Kontaktinė informacija</h2>
-                <p style="color:#fff;">
+                <h1>Kontaktinė informacija</h1>
+                <p style="color:#fff">
                     <strong><i class="fa fa-map-marker"></i> Adresas</strong><br>
                     ---
                 </p>
-                <p style="color:#fff;"><strong><i class="fa fa-phone"></i> Telefono numeris</strong><br>
+                <p style="color:#fff"><strong><i class="fa fa-phone"></i> Telefono numeris</strong><br>
                     +41 797897010</p>
-                <p style="color:#fff;">
-                    <strong><i class="fa fa-envelope"></i>  Elektroninis paštas</strong><br>
+                <p style="color:#fff">
+                    <strong><i class="fa fa-envelope"></i> Elektroninis paštas</strong><br>
                     info@@vidamassage.ch</p>
                 <p></p>
             </div>
         </div>
     </div>
-<hr>
+    <hr>
     @if(contactForm.hasErrors){<script src="@routes.Assets.at("javascripts/js/returnToFormOnFail.js")"></script>}</script>
 </section>
-
-
-
-
-
 <section>
-<!-- Map Section -->
-<div id="mappp" class="text-center">
-    <div class="row">
-        <div class="col-lg-12">
-<h2>Žemėlapis</h2>
-
-
-
+    <div id="mappp" class="text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Žemėlapis</h1>
+            </div>
         </div>
     </div>
-</div>
-
 </section>
-
-
-
-<!-- Footer -->
 <footer>
     <div class="container text-center">
         <p>Copyright &copy; Vida Massage 2017</p>
     </div>
 </footer>
-
-<!-- jQuery -->
 <script src='@routes.Assets.at("stylesheets/vendor/jquery/jquery.js")'></script>
-
-<!-- Bootstrap Core JavaScript -->
 <script src='@routes.Assets.at("stylesheets/vendor/bootstrap/js/bootstrap.min.js")'></script>
-
-<!-- Plugin JavaScript -->
 <script src=@routes.Assets.at("javascripts/js/jquery.easing.min.js")"></script>
-
-<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-
-<!-- Theme JavaScript -->
 <script src='@routes.Assets.at("javascripts/js/grayscale.min.js")'></script>
-
 </body>
-
-
 }
