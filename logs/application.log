@@ -3006,3 +3006,87 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[class, interface
     filters.ExampleFilter
 
 2017-10-04 19:26:54,931 [INFO] from play.api.Play in scala-execution-context-global-12275 - Application started (Dev)
+2017-10-04 20:18:13,986 [INFO] from application in scala-execution-context-global-12456 - ApplicationTimer demo: Stopping application at 2017-10-04T18:18:13.986Z after 3079s.
+2017-10-04 20:18:14,012 [WARN] from application in scala-execution-context-global-12456 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-10-04 20:18:14,044 [INFO] from application in scala-execution-context-global-12456 - ApplicationTimer demo: Starting application at 2017-10-04T18:18:14.044Z
+2017-10-04 20:18:14,077 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-12456 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-04 20:18:14,098 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-12456 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-10-04 20:18:14,098 [INFO] from play.api.Play in scala-execution-context-global-12456 - Application started (Dev)
+2017-10-04 20:21:25,104 [INFO] from application in scala-execution-context-global-12496 - ApplicationTimer demo: Stopping application at 2017-10-04T18:21:25.104Z after 191s.
+2017-10-04 20:21:25,126 [WARN] from application in scala-execution-context-global-12496 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-10-04 20:21:25,156 [INFO] from application in scala-execution-context-global-12496 - ApplicationTimer demo: Starting application at 2017-10-04T18:21:25.156Z
+2017-10-04 20:21:25,197 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-12496 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-04 20:21:25,226 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-12496 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-10-04 20:21:25,226 [INFO] from play.api.Play in scala-execution-context-global-12496 - Application started (Dev)
+2017-10-04 20:21:45,291 [INFO] from application in scala-execution-context-global-12542 - ApplicationTimer demo: Stopping application at 2017-10-04T18:21:45.291Z after 20s.
+2017-10-04 20:21:45,310 [WARN] from application in scala-execution-context-global-12542 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-10-04 20:21:45,330 [INFO] from application in scala-execution-context-global-12542 - ApplicationTimer demo: Starting application at 2017-10-04T18:21:45.330Z
+2017-10-04 20:21:45,357 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-12542 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-04 20:21:45,385 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-12542 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-10-04 20:21:45,385 [INFO] from play.api.Play in scala-execution-context-global-12542 - Application started (Dev)
+2017-10-04 20:23:05,678 [INFO] from application in scala-execution-context-global-12589 - ApplicationTimer demo: Stopping application at 2017-10-04T18:23:05.678Z after 80s.
+2017-10-04 20:23:05,705 [WARN] from application in scala-execution-context-global-12589 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-10-04 20:23:05,735 [INFO] from application in scala-execution-context-global-12589 - ApplicationTimer demo: Starting application at 2017-10-04T18:23:05.735Z
+2017-10-04 20:23:05,771 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-12589 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-04 20:23:05,799 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-12589 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-10-04 20:23:05,799 [INFO] from play.api.Play in scala-execution-context-global-12589 - Application started (Dev)
+2017-10-04 20:33:57,543 [INFO] from application in scala-execution-context-global-12683 - ApplicationTimer demo: Stopping application at 2017-10-04T18:33:57.543Z after 652s.
+2017-10-04 20:33:57,560 [WARN] from application in scala-execution-context-global-12683 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-10-04 20:33:57,579 [INFO] from application in scala-execution-context-global-12683 - ApplicationTimer demo: Starting application at 2017-10-04T18:33:57.579Z
+2017-10-04 20:33:57,605 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-12683 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-04 20:33:57,632 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-12683 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-10-04 20:33:57,632 [INFO] from play.api.Play in scala-execution-context-global-12683 - Application started (Dev)
+2017-10-04 20:57:20,644 [INFO] from application in scala-execution-context-global-12727 - ApplicationTimer demo: Stopping application at 2017-10-04T18:57:20.644Z after 1403s.
+2017-10-04 20:57:20,669 [WARN] from application in scala-execution-context-global-12727 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-10-04 20:57:20,705 [INFO] from application in scala-execution-context-global-12727 - ApplicationTimer demo: Starting application at 2017-10-04T18:57:20.705Z
+2017-10-04 20:57:20,753 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-12727 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-04 20:57:20,776 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-12727 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-10-04 20:57:20,776 [INFO] from play.api.Play in scala-execution-context-global-12727 - Application started (Dev)
+2017-10-04 20:58:44,152 [INFO] from application in scala-execution-context-global-12825 - ApplicationTimer demo: Stopping application at 2017-10-04T18:58:44.152Z after 84s.
+2017-10-04 20:58:44,170 [WARN] from application in scala-execution-context-global-12825 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-10-04 20:58:44,209 [INFO] from application in scala-execution-context-global-12825 - ApplicationTimer demo: Starting application at 2017-10-04T18:58:44.209Z
+2017-10-04 20:58:44,240 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-12825 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-10-04 20:58:44,260 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-12825 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-10-04 20:58:44,261 [INFO] from play.api.Play in scala-execution-context-global-12825 - Application started (Dev)

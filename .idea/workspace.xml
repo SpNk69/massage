@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec72ac84-4374-4999-8edc-66fc5f9faa8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/favicon.ico" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/img/1nr.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/img/2nr.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/img/3nr.jpg" afterPath="" />
@@ -23,9 +23,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/img/no.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/img/nu2.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/img/waz.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/js/ImagesModal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/css/googleapifonts1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/css/googleapifonts2.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/universal/stage/RUNNING_PID" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/images/img/1nr.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/images/img/2nr.jpg" afterPath="" />
@@ -59,102 +56,54 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/README.md" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/googleapifonts1.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/googleapifonts2.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseAssets.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseAssets.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseAssets.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseAssets.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/germanContent$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/germanContent$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/main2$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/main2$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/main2de$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/main2de$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/main2ru$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/main2ru$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinisContent$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/pagrindinisContent$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/russianContent$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/russianContent$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterPath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/favicon.ico" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/favicon.ico" afterPath="$PROJECT_DIR$/target/web/public/main/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/germanContent.scala.html" afterPath="$PROJECT_DIR$/app/views/germanContent.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main2.scala.html" afterPath="$PROJECT_DIR$/app/views/main2.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main2de.scala.html" afterPath="$PROJECT_DIR$/app/views/main2de.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main2ru.scala.html" afterPath="$PROJECT_DIR$/app/views/main2ru.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" afterPath="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/russianContent.scala.html" afterPath="$PROJECT_DIR$/app/views/russianContent.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/gulpfile.js" afterPath="$PROJECT_DIR$/public/javascripts/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/hello.js" afterPath="$PROJECT_DIR$/public/javascripts/hello.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/js/grayscale.js" afterPath="$PROJECT_DIR$/public/javascripts/js/grayscale.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/js/grayscale.min.js" afterPath="$PROJECT_DIR$/public/javascripts/js/grayscale.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/js/jquery.easing.min.js" afterPath="$PROJECT_DIR$/public/javascripts/js/jquery.easing.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/js/returnToFormOnFail.js" afterPath="$PROJECT_DIR$/public/javascripts/js/returnToFormOnFail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/js/returnToFormOnFailDE.js" afterPath="$PROJECT_DIR$/public/javascripts/js/returnToFormOnFailDE.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/js/returnToFormOnFailRU.js" afterPath="$PROJECT_DIR$/public/javascripts/js/returnToFormOnFailRU.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/flags.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/flags.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/flags.min.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/flags.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/grayscale.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/grayscale.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/grayscale.min.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/grayscale.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/special.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/special.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/w3.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/w3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/js/grayscale.js" afterPath="$PROJECT_DIR$/public/stylesheets/js/grayscale.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/js/grayscale.min.js" afterPath="$PROJECT_DIR$/public/stylesheets/js/grayscale.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/gulpfile.js" afterPath="$PROJECT_DIR$/public/stylesheets/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/jquery/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/jquery/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/routes" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/routes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/germanContent.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/germanContent.template.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/main2.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/main2.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/main2de.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/main2de.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/main2ru.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/main2ru.template.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/pagrindinisContent.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/pagrindinisContent.template.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/russianContent.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/russianContent.template.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.12" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.12" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/gulpfile.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/hello.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/hello.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/grayscale.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/grayscale.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/grayscale.min.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/grayscale.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/jquery.easing.min.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/jquery.easing.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/returnToFormOnFail.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/returnToFormOnFail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/returnToFormOnFailDE.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/returnToFormOnFailDE.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/returnToFormOnFailRU.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/javascripts/js/returnToFormOnFailRU.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/robots.txt" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/flags.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/flags.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/flags.min.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/flags.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/grayscale.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/grayscale.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/grayscale.min.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/grayscale.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/special.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/special.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/w3.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/css/w3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/js/grayscale.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/js/grayscale.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/js/grayscale.min.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/js/grayscale.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/bootstrap/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/bootstrap/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/font-awesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/font-awesome/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/gulpfile.js" afterPath="$PROJECT_DIR$/target/web/public/main/javascripts/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/hello.js" afterPath="$PROJECT_DIR$/target/web/public/main/javascripts/hello.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/js/grayscale.js" afterPath="$PROJECT_DIR$/target/web/public/main/javascripts/js/grayscale.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/js/grayscale.min.js" afterPath="$PROJECT_DIR$/target/web/public/main/javascripts/js/grayscale.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/js/jquery.easing.min.js" afterPath="$PROJECT_DIR$/target/web/public/main/javascripts/js/jquery.easing.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/js/returnToFormOnFail.js" afterPath="$PROJECT_DIR$/target/web/public/main/javascripts/js/returnToFormOnFail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/js/returnToFormOnFailDE.js" afterPath="$PROJECT_DIR$/target/web/public/main/javascripts/js/returnToFormOnFailDE.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/js/returnToFormOnFailRU.js" afterPath="$PROJECT_DIR$/target/web/public/main/javascripts/js/returnToFormOnFailRU.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/sitemap.xml" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/sitemap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/gulpfile.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/jquery/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-starter-example/1.0-SNAPSHOT/stylesheets/vendor/jquery/jquery.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/robots.txt" afterPath="$PROJECT_DIR$/target/web/public/main/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/flags.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/flags.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/flags.min.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/flags.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/grayscale.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/grayscale.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/grayscale.min.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/grayscale.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/special.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/special.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/w3.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/css/w3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/js/grayscale.js" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/js/grayscale.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/js/grayscale.min.js" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/js/grayscale.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/bootstrap/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/bootstrap/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/font-awesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/font-awesome/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/sitemap.xml" afterPath="$PROJECT_DIR$/target/web/public/main/sitemap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/gulpfile.js" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/jquery/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/vendor/jquery/jquery.min.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/resolution-cache/" />
     <ignored path="$PROJECT_DIR$/target/streams/" />
@@ -187,43 +136,30 @@
       <file leaf-file-name="pagrindinisContent.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="73" column="48" lean-forward="false" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
+            <state relative-caret-position="1814">
+              <caret line="581" column="23" lean-forward="true" selection-start-line="581" selection-start-column="23" selection-end-line="581" selection-end-column="23" />
               <folding>
-                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-                <element signature="e#35885#35891#0" expanded="true" />
+                <element signature="e#35828#35834#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="special.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/css/special.css">
+      <file leaf-file-name="routes" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="2379" lean-forward="false" selection-start-line="0" selection-start-column="2379" selection-end-line="0" selection-end-column="2379" />
+            <state relative-caret-position="80">
+              <caret line="4" column="88" lean-forward="false" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main2de.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/main2de.scala.html">
+      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/vendor/jquery/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="91" lean-forward="false" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main2ru.scala.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/main2ru.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="85" lean-forward="false" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
+            <state relative-caret-position="60">
+              <caret line="3" column="1825" lean-forward="false" selection-start-line="3" selection-start-column="1825" selection-end-line="3" selection-end-column="1825" />
               <folding />
             </state>
           </provider>
@@ -232,45 +168,25 @@
       <file leaf-file-name="main2.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main2.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="400">
+              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="germanContent.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html">
+      <file leaf-file-name="jquery.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/vendor/jquery/jquery.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="80" column="60" lean-forward="false" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
-              <folding>
-                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-                <element signature="e#37277#37283#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="russianContent.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/russianContent.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="72" column="31" lean-forward="false" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
-              <folding>
-                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#section#1;n#Usertact#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#section#1;n#Usertact#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#0;n#section#1;n#Usertact#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="e#36222#36228#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="974">
+              <caret line="3" column="1783" lean-forward="false" selection-start-line="3" selection-start-column="1783" selection-end-line="3" selection-end-column="1783" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/gulpfile.js">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="2063" lean-forward="false" selection-start-line="0" selection-start-column="2063" selection-end-line="0" selection-end-column="2063" />
@@ -279,21 +195,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/hello.js">
+      <file leaf-file-name="russianContent.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/russianContent.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="66" lean-forward="false" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
+            <state relative-caret-position="571">
+              <caret line="509" column="25" lean-forward="false" selection-start-line="509" selection-start-column="25" selection-end-line="509" selection-end-column="25" />
+              <folding>
+                <element signature="e#36165#36171#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="germanContent.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="511" column="39" lean-forward="false" selection-start-line="511" selection-start-column="39" selection-end-line="511" selection-end-column="39" />
+              <folding>
+                <element signature="e#37220#37226#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="robots.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/robots.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grayscale.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/less/grayscale.less">
+      <file leaf-file-name="germanPagrindinis.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/germanPagrindinis.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="260">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -311,10 +251,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pažymė</find>
-      <find>atpalaiduo</find>
-      <find>toksin</find>
-      <find>toksi</find>
       <find>skype1</find>
       <find>2nr</find>
       <find>contact-section</find>
@@ -339,8 +275,12 @@
       <find>pilvo</find>
       <find>gerinantys</find>
       <find>frag</find>
-      <find>&lt;u&gt;</find>
+      <find>style</find>
       <find>&lt;/u&gt;</find>
+      <find>&lt;u&gt;</find>
+      <find>invalid xml</find>
+      <find>stellen</find>
+      <find>klausim</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -359,9 +299,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/images/img/scriptFile.scala" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/test2.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/css/scriptFile.scala" />
         <option value="$PROJECT_DIR$/app/views/science.scala.js" />
         <option value="$PROJECT_DIR$/public/javascripts/js/mapas.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/css/googleapifonts2.css" />
@@ -378,17 +315,14 @@
         <option value="$PROJECT_DIR$/public/javascripts/js/ImagesModal.js" />
         <option value="$PROJECT_DIR$/app/views/test.scala.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/controllers/HomeController.java" />
-        <option value="$PROJECT_DIR$/public/robots.txt" />
         <option value="$PROJECT_DIR$/public/stylesheets/css/grayscale.min.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/css/grayscale.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/css/w3.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/css/flags.min.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/css/flags.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/js/grayscale.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/js/grayscale.min.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/js/bootstrap.js" />
@@ -404,12 +338,18 @@
         <option value="$PROJECT_DIR$/public/javascripts/gulpfile.js" />
         <option value="$PROJECT_DIR$/public/javascripts/hello.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/css/special.css" />
-        <option value="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/russianContent.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/germanContent.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/main2.scala.html" />
         <option value="$PROJECT_DIR$/app/views/main2de.scala.html" />
         <option value="$PROJECT_DIR$/app/views/main2ru.scala.html" />
+        <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/public/stylesheets/js/grayscale.min.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/vendor/jquery/jquery.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/gulpfile.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/vendor/jquery/jquery.min.js" />
+        <option value="$PROJECT_DIR$/app/views/germanContent.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/russianContent.scala.html" />
+        <option value="$PROJECT_DIR$/public/robots.txt" />
+        <option value="$PROJECT_DIR$/app/views/main2.scala.html" />
       </list>
     </option>
   </component>
@@ -470,6 +410,178 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="play-java-starter-example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="play-java-starter-example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="play-java-starter-example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="play-java-starter-example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="play-java-starter-example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="play-java-starter-example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="play-java-starter-example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="play-java-starter-example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -999,6 +1111,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1204" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1015,7 +1128,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24043126" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24043126" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328792" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1044,17 +1157,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/img/lala.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html" />
-    <entry file="file://$PROJECT_DIR$/public/images/img/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/img/downloads-bg.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1088,14 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="860">
           <caret line="85" column="35" lean-forward="true" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1143,30 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/germanPagrindinis.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/russianPagrindinis.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/robots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1227,22 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/js/grayscale.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2223" lean-forward="false" selection-start-line="0" selection-start-column="2223" selection-end-line="0" selection-end-column="2223" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/js/grayscale.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2223" lean-forward="false" selection-start-line="0" selection-start-column="2223" selection-end-line="0" selection-end-column="2223" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/vendor/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1291,14 +1345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/grayscale.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2223" lean-forward="false" selection-start-line="0" selection-start-column="2223" selection-end-line="0" selection-end-column="2223" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/js/grayscale.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1315,6 +1361,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/css/special.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2379" lean-forward="false" selection-start-line="0" selection-start-column="2379" selection-end-line="0" selection-end-column="2379" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main2de.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="91" lean-forward="false" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main2ru.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="85" lean-forward="false" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/russianPagrindinis.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/js/grayscale.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2223" lean-forward="false" selection-start-line="0" selection-start-column="2223" selection-end-line="0" selection-end-column="2223" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/js/jquery.easing.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1323,7 +1409,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/returnToFormOnFailDE.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/js/returnToFormOnFail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="77" lean-forward="false" selection-start-line="0" selection-start-column="77" selection-end-line="0" selection-end-column="77" />
@@ -1331,7 +1417,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/returnToFormOnFail.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/js/returnToFormOnFailDE.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="77" lean-forward="false" selection-start-line="0" selection-start-column="77" selection-end-line="0" selection-end-column="77" />
@@ -1363,6 +1449,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/js/grayscale.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2223" lean-forward="false" selection-start-line="0" selection-start-column="2223" selection-end-line="0" selection-end-column="2223" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/js/grayscale.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1892" lean-forward="false" selection-start-line="0" selection-start-column="1892" selection-end-line="0" selection-end-column="1892" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/less/grayscale.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1371,73 +1473,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/css/special.css">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/vendor/jquery/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2379" lean-forward="false" selection-start-line="0" selection-start-column="2379" selection-end-line="0" selection-end-column="2379" />
+        <state relative-caret-position="60">
+          <caret line="3" column="1825" lean-forward="false" selection-start-line="3" selection-start-column="1825" selection-end-line="3" selection-end-column="1825" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="73" column="48" lean-forward="false" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-            <element signature="e#35885#35891#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="2063" lean-forward="false" selection-start-line="0" selection-start-column="2063" selection-end-line="0" selection-end-column="2063" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/vendor/jquery/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="974">
+          <caret line="3" column="1783" lean-forward="false" selection-start-line="3" selection-start-column="1783" selection-end-line="3" selection-end-column="1783" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/russianContent.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="72" column="31" lean-forward="false" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+        <state relative-caret-position="571">
+          <caret line="509" column="25" lean-forward="false" selection-start-line="509" selection-start-column="25" selection-end-line="509" selection-end-column="25" />
           <folding>
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#section#1;n#Usertact#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#section#1;n#Usertact#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#0;n#section#1;n#Usertact#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="e#36222#36228#0" expanded="true" />
+            <element signature="e#36165#36171#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="80" column="60" lean-forward="false" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
+        <state relative-caret-position="398">
+          <caret line="511" column="39" lean-forward="false" selection-start-line="511" selection-start-column="39" selection-end-line="511" selection-end-column="39" />
           <folding>
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#0;n#section#5;n#body#0;n#!!top" expanded="true" />
-            <element signature="e#37277#37283#0" expanded="true" />
+            <element signature="e#37220#37226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/robots.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/germanPagrindinis.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1814">
+          <caret line="581" column="23" lean-forward="true" selection-start-line="581" selection-start-column="23" selection-end-line="581" selection-end-column="23" />
+          <folding>
+            <element signature="e#35828#35834#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main2.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main2de.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="91" lean-forward="false" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main2ru.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="20" column="85" lean-forward="false" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
+          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="88" lean-forward="false" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
           <folding />
         </state>
       </provider>

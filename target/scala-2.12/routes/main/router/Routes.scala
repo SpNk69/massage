@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/alex/git/web/conf/routes
-// @DATE:Tue Oct 03 19:13:37 CEST 2017
+// @DATE:Wed Oct 04 20:18:06 CEST 2017
 
 package router
 
@@ -17,7 +17,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:4
   Assets_1: controllers.Assets,
-  // @LINE:9
+  // @LINE:10
   HomeController_0: controllers.HomeController,
   val prefix: String
 ) extends GeneratedRouter {
@@ -26,7 +26,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:4
     Assets_1: controllers.Assets,
-    // @LINE:9
+    // @LINE:10
     HomeController_0: controllers.HomeController
   ) = this(errorHandler, Assets_1, HomeController_0, "/")
 
@@ -41,6 +41,7 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """robots.txt""", """controllers.Assets.at(path:String = "/public", file:String = "robots.txt")"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """sitemap.xml""", """controllers.Assets.at(path:String = "/public", file:String = "sitemap.xml")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """lt""", """controllers.HomeController.pagrindinisLT"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """toFaceBook""", """controllers.HomeController.toFaceBook"""),
@@ -77,11 +78,29 @@ class Routes(
     )
   )
 
-  // @LINE:7
-  private[this] lazy val controllers_Assets_versioned1_route = Route("GET",
+  // @LINE:5
+  private[this] lazy val controllers_Assets_at1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("sitemap.xml")))
+  )
+  private[this] lazy val controllers_Assets_at1_invoker = createInvoker(
+    Assets_1.at(fakeValue[String], fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Assets",
+      "at",
+      Seq(classOf[String], classOf[String]),
+      "GET",
+      this.prefix + """sitemap.xml""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:8
+  private[this] lazy val controllers_Assets_versioned2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned1_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned2_invoker = createInvoker(
     Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -95,11 +114,11 @@ class Routes(
     )
   )
 
-  // @LINE:9
-  private[this] lazy val controllers_HomeController_pagrindinisLT2_route = Route("GET",
+  // @LINE:10
+  private[this] lazy val controllers_HomeController_pagrindinisLT3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("lt")))
   )
-  private[this] lazy val controllers_HomeController_pagrindinisLT2_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_pagrindinisLT3_invoker = createInvoker(
     HomeController_0.pagrindinisLT,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -113,11 +132,11 @@ class Routes(
     )
   )
 
-  // @LINE:11
-  private[this] lazy val controllers_HomeController_toFaceBook3_route = Route("GET",
+  // @LINE:12
+  private[this] lazy val controllers_HomeController_toFaceBook4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("toFaceBook")))
   )
-  private[this] lazy val controllers_HomeController_toFaceBook3_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_toFaceBook4_invoker = createInvoker(
     HomeController_0.toFaceBook,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -131,11 +150,11 @@ class Routes(
     )
   )
 
-  // @LINE:13
-  private[this] lazy val controllers_HomeController_germanVersion4_route = Route("GET",
+  // @LINE:14
+  private[this] lazy val controllers_HomeController_germanVersion5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
-  private[this] lazy val controllers_HomeController_germanVersion4_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_germanVersion5_invoker = createInvoker(
     HomeController_0.germanVersion(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -149,11 +168,11 @@ class Routes(
     )
   )
 
-  // @LINE:15
-  private[this] lazy val controllers_HomeController_russianVersion5_route = Route("GET",
+  // @LINE:16
+  private[this] lazy val controllers_HomeController_russianVersion6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("ru")))
   )
-  private[this] lazy val controllers_HomeController_russianVersion5_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_russianVersion6_invoker = createInvoker(
     HomeController_0.russianVersion(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -167,11 +186,11 @@ class Routes(
     )
   )
 
-  // @LINE:17
-  private[this] lazy val controllers_HomeController_submitLT6_route = Route("GET",
+  // @LINE:18
+  private[this] lazy val controllers_HomeController_submitLT7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("submitLT")))
   )
-  private[this] lazy val controllers_HomeController_submitLT6_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_submitLT7_invoker = createInvoker(
     HomeController_0.submitLT(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -185,11 +204,11 @@ class Routes(
     )
   )
 
-  // @LINE:19
-  private[this] lazy val controllers_HomeController_submitRU7_route = Route("GET",
+  // @LINE:20
+  private[this] lazy val controllers_HomeController_submitRU8_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("submitRU")))
   )
-  private[this] lazy val controllers_HomeController_submitRU7_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_submitRU8_invoker = createInvoker(
     HomeController_0.submitRU(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -203,11 +222,11 @@ class Routes(
     )
   )
 
-  // @LINE:21
-  private[this] lazy val controllers_HomeController_submitDE8_route = Route("GET",
+  // @LINE:22
+  private[this] lazy val controllers_HomeController_submitDE9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("submitDE")))
   )
-  private[this] lazy val controllers_HomeController_submitDE8_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_submitDE9_invoker = createInvoker(
     HomeController_0.submitDE(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -221,11 +240,11 @@ class Routes(
     )
   )
 
-  // @LINE:23
-  private[this] lazy val controllers_Assets_at9_route = Route("GET",
+  // @LINE:24
+  private[this] lazy val controllers_Assets_at10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("public/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_at9_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at10_invoker = createInvoker(
     Assets_1.at(fakeValue[String], fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -248,58 +267,64 @@ class Routes(
         controllers_Assets_at0_invoker.call(Assets_1.at(path, file))
       }
   
-    // @LINE:7
-    case controllers_Assets_versioned1_route(params) =>
+    // @LINE:5
+    case controllers_Assets_at1_route(params) =>
+      call(Param[String]("path", Right("/public")), Param[String]("file", Right("sitemap.xml"))) { (path, file) =>
+        controllers_Assets_at1_invoker.call(Assets_1.at(path, file))
+      }
+  
+    // @LINE:8
+    case controllers_Assets_versioned2_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned1_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned2_invoker.call(Assets_1.versioned(path, file))
       }
   
-    // @LINE:9
-    case controllers_HomeController_pagrindinisLT2_route(params) =>
+    // @LINE:10
+    case controllers_HomeController_pagrindinisLT3_route(params) =>
       call { 
-        controllers_HomeController_pagrindinisLT2_invoker.call(HomeController_0.pagrindinisLT)
+        controllers_HomeController_pagrindinisLT3_invoker.call(HomeController_0.pagrindinisLT)
       }
   
-    // @LINE:11
-    case controllers_HomeController_toFaceBook3_route(params) =>
+    // @LINE:12
+    case controllers_HomeController_toFaceBook4_route(params) =>
       call { 
-        controllers_HomeController_toFaceBook3_invoker.call(HomeController_0.toFaceBook)
+        controllers_HomeController_toFaceBook4_invoker.call(HomeController_0.toFaceBook)
       }
   
-    // @LINE:13
-    case controllers_HomeController_germanVersion4_route(params) =>
+    // @LINE:14
+    case controllers_HomeController_germanVersion5_route(params) =>
       call { 
-        controllers_HomeController_germanVersion4_invoker.call(HomeController_0.germanVersion())
+        controllers_HomeController_germanVersion5_invoker.call(HomeController_0.germanVersion())
       }
   
-    // @LINE:15
-    case controllers_HomeController_russianVersion5_route(params) =>
+    // @LINE:16
+    case controllers_HomeController_russianVersion6_route(params) =>
       call { 
-        controllers_HomeController_russianVersion5_invoker.call(HomeController_0.russianVersion())
+        controllers_HomeController_russianVersion6_invoker.call(HomeController_0.russianVersion())
       }
   
-    // @LINE:17
-    case controllers_HomeController_submitLT6_route(params) =>
+    // @LINE:18
+    case controllers_HomeController_submitLT7_route(params) =>
       call { 
-        controllers_HomeController_submitLT6_invoker.call(HomeController_0.submitLT())
+        controllers_HomeController_submitLT7_invoker.call(HomeController_0.submitLT())
       }
   
-    // @LINE:19
-    case controllers_HomeController_submitRU7_route(params) =>
+    // @LINE:20
+    case controllers_HomeController_submitRU8_route(params) =>
       call { 
-        controllers_HomeController_submitRU7_invoker.call(HomeController_0.submitRU())
+        controllers_HomeController_submitRU8_invoker.call(HomeController_0.submitRU())
       }
   
-    // @LINE:21
-    case controllers_HomeController_submitDE8_route(params) =>
+    // @LINE:22
+    case controllers_HomeController_submitDE9_route(params) =>
       call { 
-        controllers_HomeController_submitDE8_invoker.call(HomeController_0.submitDE())
+        controllers_HomeController_submitDE9_invoker.call(HomeController_0.submitDE())
       }
   
-    // @LINE:23
-    case controllers_Assets_at9_route(params) =>
+    // @LINE:24
+    case controllers_Assets_at10_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at9_invoker.call(Assets_1.at(path, file))
+        controllers_Assets_at10_invoker.call(Assets_1.at(path, file))
       }
   }
 }

@@ -2,6 +2,8 @@ User-agent: *
 Disallow: /conf/
 Disallow: /controllers/
 
-User-agent Libwww-perl
+Sitemap: http://www.vidamassage.ch/sitemap.xml
+
+User-agent: Libwww-perl
 Disallow: /
 

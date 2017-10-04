@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/alex/git/web/conf/routes
-// @DATE:Tue Oct 03 19:13:37 CEST 2017
+// @DATE:Wed Oct 04 20:18:06 CEST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -12,7 +12,7 @@ import _root_.play.libs.F
 // @LINE:4
 package controllers.javascript {
 
-  // @LINE:9
+  // @LINE:10
   class ReverseHomeController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -20,7 +20,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:14
     def germanVersion: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.germanVersion",
       """
@@ -30,7 +30,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:12
     def toFaceBook: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.toFaceBook",
       """
@@ -40,7 +40,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:19
+    // @LINE:20
     def submitRU: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.submitRU",
       """
@@ -50,7 +50,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:10
     def pagrindinisLT: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.pagrindinisLT",
       """
@@ -60,7 +60,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:17
+    // @LINE:18
     def submitLT: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.submitLT",
       """
@@ -70,7 +70,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:15
+    // @LINE:16
     def russianVersion: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.russianVersion",
       """
@@ -80,7 +80,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:22
     def submitDE: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.submitDE",
       """
@@ -110,6 +110,10 @@ package controllers.javascript {
             return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "robots.txt"})
           }
         
+          if (file1 == """ + implicitly[play.api.mvc.JavascriptLiteral[String]].to("sitemap.xml") + """) {
+            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "sitemap.xml"})
+          }
+        
           if (true) {
             return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "public/" + (""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("file", file1)})
           }
@@ -118,7 +122,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:7
+    // @LINE:8
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
