@@ -66,11 +66,22 @@
 </header>
 <section id="apie" class="container content-section text-center">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
+            <p></p>
+            <h2 align="center"><em>Apie mane</em></h2>
+            <ul ><li>Mano vardas Vida. Atvykau iš Lietuvos. Gyvenu Šveicarijoje, Schaffhausen mieste.</li>
+                <li>Man masažai - tai iššūkis ir malonumas. <li>Iššūkis - panaikinti skausmus žmogaus kūne. </li>
+                <li>Malonumas - kai nebelieka skausmų, dingsta įtampa, sugražinama  gera savijauta, o žmogaus veide atsiranda šypsena.</li>
+                <li>Mano tikslas yra padėti žmonėms jaustis puikiai bet kuriuo amžiaus periodu.</li></ul>
+            <p></p>
+
+        </div>
+        <p></p>
+        <div class="col-lg-4">
             <img src='@routes.Assets.at("images/img/Vida-Polescuk.jpg")' class="img-circle" alt="Masažuotoja Vida Polescuk" id="what">
         </div>
         <p></p>
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <h3 align="center"><em>Išsilavinimas</em></h3>
             <ul><li>"Vilniaus aukštesnioji medicinos mokykla", Lietuva.</li>
                 <li>Klaipėdos universitetas. Bakalauro laipsnis "Visuomenės sveikata".</li>
@@ -81,7 +92,7 @@
             <h3 align="center"><em>Darbo Patirtis</em></h3>
             <ul align="center">
                 <li>27 metai: Medicinos sesuo.</li>
-                <li>7 metai: Visuomenės sveikatos priežiūros specialistė.</li>
+                <li>8 metai: Visuomenės sveikatos priežiūros specialistė.</li>
                 <li>7 metai: Masažuotoja.</li>
             </ul>
             <p></p>
@@ -516,7 +527,7 @@
                         <div class="col-md-8 col-md-offset-2">
                             @helper.form(action = routes.HomeController.submitLT(),'class -> "form-horizontal") {
                             @helper.input(contactForm("Vardas"),'class->"form-control") { (id, name, value, args) =>
-                            <input type="text" name="@contactForm.field("firstName").name" placeholder="Jūsų vardas" id="@id" @toHtmlArgs(args)@if(contactForm.hasErrors) { <option value='@contactForm.field("firstName").value'></option>}
+                            <input type="text" name=@contactForm.field("firstName").name placeholder="Jūsų vardas" id="@id" @toHtmlArgs(args)@if(contactForm.hasErrors) { <option value='@contactForm.field("firstName").value'></option>}
                             }
                             <div id="xxx">
                                 @for(error <- contactForm("firstName").errors) { <p id="xxxx">@error.format(messages())</p>
