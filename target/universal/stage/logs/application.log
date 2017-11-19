@@ -1,8 +1,0 @@
-2017-09-23 20:23:42,733 [WARN] from application in main - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2017-09-23 20:23:44,415 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in main - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-09-23 20:23:44,579 [INFO] from application in main - ApplicationTimer demo: Starting application at 2017-09-23T18:23:44.578Z
-2017-09-23 20:23:44,583 [INFO] from play.api.Play in main - Application started (Prod)
-2017-09-23 20:23:45,220 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
-2017-09-23 21:25:39,784 [INFO] from play.core.server.AkkaHttpServer in Thread-7 - Stopping server...
-2017-09-23 21:25:39,789 [INFO] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-73 - Starting coordinated shutdown from JVM shutdown hook
-2017-09-23 21:25:39,790 [INFO] from application in Thread-7 - ApplicationTimer demo: Stopping application at 2017-09-23T19:25:39.790Z after 3715s.
