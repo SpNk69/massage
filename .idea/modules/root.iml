@@ -27,6 +27,16 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="SBT: aopalliance:aopalliance:1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.play:play-json_2.12:2.6.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.play:play-functional_2.12:2.6.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: mysql:mysql-connector-java:5.1.40:jar" level="project" />
+    <orderEntry type="library" name="SBT: tyrex:tyrex:1.0.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.zaxxer:HikariCP:2.6.3:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.play:play-jdbc_2.12:2.6.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.play:play-jdbc-api_2.12:2.6.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.play:play-java-jdbc_2.12:2.6.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.jolbox:bonecp:0.8.0.RELEASE:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.googlecode.usc:jdbcdslog:1.0.6.2:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: xml-apis:xml-apis:1.4.01:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: xerces:xercesImpl:2.11.0:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: xalan:xalan:2.7.2:jar" level="project" />
@@ -98,11 +108,9 @@
     <orderEntry type="library" name="SBT: com.typesafe.play:play-server_2.12:2.6.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:play-netty-utils:2.6.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:play-logback_2.12:2.6.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.typesafe.play:play-json_2.12:2.6.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:play-java_2.12:2.6.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:play-java-forms_2.12:2.6.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:play-guice_2.12:2.6.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.typesafe.play:play-functional_2.12:2.6.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:play-exceptions:2.6.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:play-enhancer:1.1.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.typesafe.play:play-akka-http-server_2.12:2.6.0:jar" level="project" />
@@ -139,5 +147,6 @@
     <orderEntry type="library" name="SBT: com.typesafe.play:play-mailer_2.12:6.0.0:jar" level="project" />
     <orderEntry type="library" name="SBT: javax.activation:activation:1.1.1:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.commons:commons-email:1.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.glassfish:javax.json:1.0.4:jar" level="project" />
   </component>
 </module>

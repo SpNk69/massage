@@ -1,0 +1,96 @@
+@*
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html lang=en >
+<head>
+
+</head>
+
+
+<body class="center-main">
+
+<script src='@routes.Assets.at("javascripts/js/angular.min.js")'></script>
+<script src='@routes.Assets.at("javascripts/js/angular-messages.min.js")'></script>
+<!--<script src='@routes.Assets.at("javascripts/js/angular-messages.js")'></script>-->
+<script src='@routes.Assets.at("javascripts/js/route.js")'></script>
+<!--<script src='@routes.Assets.at("javascripts/js/moment.min.js")'></script>-->
+<script src='@routes.Assets.at("javascripts/js/moment-with-locales.min.js")'></script>
+<link href='@routes.Assets.at("javascripts/js/turbo.css")' rel=stylesheet>
+
+<script src='@routes.Assets.at("javascripts/js/angular-moment-picker.js")'></script>
+<script src='@routes.Assets.at("javascripts/js/angular-moment-picker.min.js")'></script>
+
+<link href='@routes.Assets.at("javascripts/js/angular-moment-picker.css")' rel=stylesheet>
+<link href='@routes.Assets.at("javascripts/js/angular-moment-picker.min.css")' rel=stylesheet>
+
+<link href='@routes.Assets.at("stylesheets/vendor/bootstrap/css/bootstrap.min.css")' rel=stylesheet>
+
+
+
+
+<div ng-app="myApp2" class="center-div" ng-controller="MainCtrl">
+Welcome to admin page :)
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<table>
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Massage</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Message</th>
+    </tr>
+    <tr ng-repeat="x in suckThat.fullFormSubmit">
+        <td>{{ $index + 1 }}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.surname}}</td>
+        <td>{{x.email}}</td>
+        <td>{{x.phone}}</td>
+        <td>{{x.massage}}</td>
+        <td>{{x.date}}</td>
+        <td>{{x.time}}</td>
+        <td>{{x.message}}</td>
+
+    </tr>
+</table>
+
+    {{suckThat}}
+
+    <br>
+    <br>
+    <br>
+    <table>
+    <tr
+        ng-repeat="x in adminMassageList.massageListAndPrices">
+
+        <td>{{x.massageName}}</td>
+        <td>{{x.price}}</td>
+
+
+    </tr>
+
+
+
+    </table>
+
+
+</div>
+
+
+
+</body>
+
+</html>

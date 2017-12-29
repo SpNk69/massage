@@ -22,7 +22,7 @@ FOR /F "tokens=* eol=# usebackq delims=" %%i IN ("%FN%") DO (
   set CFG_OPTS=!CFG_OPTS! !DO_NOT_REUSE_ME!
 )
 
-rem We use the value of the JAVACMD environment variable if defined
+rem We use the price of the JAVACMD environment variable if defined
 set _JAVACMD=%JAVACMD%
 
 if "%_JAVACMD%"=="" (
@@ -33,7 +33,7 @@ if "%_JAVACMD%"=="" (
 
 if "%_JAVACMD%"=="" set _JAVACMD=java
 
-rem We use the value of the JAVA_OPTS environment variable if defined, rather than the config.
+rem We use the price of the JAVA_OPTS environment variable if defined, rather than the config.
 set _JAVA_OPTS=%JAVA_OPTS%
 if "%_JAVA_OPTS%"=="" set _JAVA_OPTS=%CFG_OPTS%
 

@@ -23,3 +23,22 @@ GET    /submitDE              controllers.HomeController.submitDE()
 
 GET     /public/*file      controllers.Assets.at(path="/public", file)
 
+GET /mypage/:a controllers.HomeController.myPage(a : String)
++ nocsrf
+POST /mypage/add/:a controllers.HomeController.myPage(a : String)
+
+
+#GET    /playdb         controllers.HomeController.connection()
++ nocsrf
+POST /addToDatabase/:a/:b/:c controllers.HomeController.addToDatabase(a: String, b:String, c:String)
+
+
+GET    /actualpage              controllers.HomeController.testing()
+GET    /adminpage              controllers.HomeController.adminPage()
+
+POST    /doit              controllers.HomeController.doIt()
+#POST    /submitFullForm              controllers.HomeController.submitFullForm()
+POST    /submitFullForm              controllers.FullFormMagic.addBookingToDatabase()
+
+GET    /massageList              controllers.HomeController.massageList()
+GET    /getAdminData              controllers.HomeController.getAdminData()
