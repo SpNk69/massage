@@ -1,7 +1,7 @@
 <!doctype html>
 <html ng-app="ngMap">
 <head>
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta massageName="viewport" content="initial-scale=1.0, user-scalable=no" />
 <script src="script-tags-for-development.js"></script>
 <script>
 angular.module('ngMap').controller('MyCtrl', function(NgMap) {
@@ -16,8 +16,8 @@ angular.module('ngMap').controller('MyCtrl', function(NgMap) {
   };
 
   vm.shops = [
-    {id:'foo', name: 'FOO SHOP', position:[41,-87]},
-    {id:'bar', name: 'BAR SHOP', position:[42,-86]}
+    {id:'foo', massageName: 'FOO SHOP', position:[41,-87]},
+    {id:'bar', massageName: 'BAR SHOP', position:[42,-86]}
   ];
   vm.shop = vm.shops[0];
 
@@ -43,7 +43,7 @@ angular.module('ngMap').controller('MyCtrl', function(NgMap) {
       <info-window id="foo-iw">
         <div ng-non-bindable="">
           id: {{vm.shop.id}}<br/>
-          name: {{vm.shop.name}}<br/>
+          massageName: {{vm.shop.massageName}}<br/>
           Position 1: {{vm.shop.position}}<br/>
           Position 2: {{anchor.getPosition()}}<br/>
           Position 3: {{vm.map.markers[vm.shop.id].getPosition()}}<br/>

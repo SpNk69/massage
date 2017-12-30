@@ -2,9 +2,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jsonthings.JEntryLeTesto;
-import jsonthings.JEntryMassageAndPrices;
+import jsonthings.JEntryMassagePriceLength;
 import jsonthings.JRootKeysToGetArrays;
 import jsonthings.JTopRootList;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -14,7 +15,7 @@ import java.io.IOException;
  */
 public class JsonTest {
 
-
+    @Ignore
     @Test
     public void leMega() throws IOException {
 
@@ -28,12 +29,12 @@ public class JsonTest {
         JRootKeysToGetArrays superRoot = new JRootKeysToGetArrays();
 
 
-        rootList.add(new JEntryMassageAndPrices("LOX","dux"));
+        rootList.add(new JEntryMassagePriceLength("LOX",12.0,50));
         rootList2.add(new JEntryLeTesto("GAY","dux"));
 
 
 
-        superRoot.setMassageListAndPrices(rootList);
+        superRoot.setMassageInfo(rootList);
         superRoot.setLeTesto(rootList2);
 
 

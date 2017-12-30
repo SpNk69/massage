@@ -17,7 +17,7 @@
 <script src='@routes.Assets.at("javascripts/js/angular.min.js")'></script>
 <script src='@routes.Assets.at("javascripts/js/angular-messages.min.js")'></script>
 <!--<script src='@routes.Assets.at("javascripts/js/angular-messages.js")'></script>-->
-<script src='@routes.Assets.at("javascripts/js/route.js")'></script>
+<script src='@routes.Assets.at("javascripts/js/formController.js")'></script>
 <!--<script src='@routes.Assets.at("javascripts/js/moment.min.js")'></script>-->
 <script src='@routes.Assets.at("javascripts/js/moment-with-locales.min.js")'></script>
 <link href='@routes.Assets.at("javascripts/js/turbo.css")' rel=stylesheet>
@@ -33,187 +33,55 @@
 
 
 
-<div ng-app="myApp2" class="center-div">
-
-  <!--  <div  ng-controller="myCtrl">
-
-        First Name: <input class="input" type="text" ng-model="firstName"><br><br>
-        Last Name: <input type="text" ng-model="lastName"><br>
-        <br>
-        Full Name: {{firstName + " " + lastName}} {{1+1}}
-
-        <br>
-        <button ng-click="addName()">RESET</button>
-        <br>
-
-        <h1>{{myWelcome}}</h1>
-
-
-    </div>
-
-    <div  ng-controller="myCtrl22">
-
-        First Name: <input class="input" type="text" ng-model="firstName"><br><br>
-        Last Name: <input type="text" ng-model="lastName"><br>
-        <br>
-        Full Name: {{firstName + " " + lastName}} {{1+1}}
-
-        <br>
-        <button ng-click="changeName()">RESET</button>
-        <br>
-
-
-        <h1>{{firstName2}}</h1>
-
-       <!-- <label for="meeting">Meeting Date : </label><input id="meeting" type="dapricealue="2011-01-13"/>
-
-
-
-    </div>
+<div ng-app="myFormApp" class="center-div">
 
 
 
 
-    <div  ng-controller="sendSimpleStuff" ng-controller="DateController">
-        <h5>send stuff</h5>
 
-        First Name: <input class="input" type="text" ng-model="firstName2"><br><br>
-        Last Name: <input type="text" ng-model="lastName2"><br>
-        Age: <input type="text" ng-model="age2"><br>
-        <br>
-        Full Name: {{firstName2 + " " + lastName2 + " " + age2}} {{1+1}}
+    <div  ng-controller="FormController">
+        <h3>Užpildykite formą :)</h3>
 
-        <br>
-        <button ng-click="send()">send</button>
-        <br>
+        <form name="myForm" novalidate>
 
+            <label for="labelFirstName">Vardas:</label> <br/>
+            <input type="text" ng-model="user.firstName" placeholder="Vardas" id="labelFirstName" name="sname" ><br>
 
-
-        <h1>sending this : {{firstName2 + " " + lastName2}}</h1>
-
-
-    </div> -->
-
-
-
-    <div  ng-controller="MainCtrl">
-        <h3>Please fill the form :)</h3>
-
-        <br>---------------------------
-        <br>
-
-        <li ng-repeat="x in justData.records">
-            {{x.Name}}
-        </li>
-              <li ng-repeat="x in myWelcome2">
-            {{x.name +" "+ x.name}}
-        </li>
-
-        {{myWelcome2.try1.name}}
-        <br>
-
-        </li>
-        DAR KO BLET
-        <li ng-repeat="x in myWelcome2.massagePriceList">
-            {{x.massageName + " "+ x.price}}
-        </li>
-
-        <br>lol:{{lomas}}<br>
-
-        <select ng-model="duxx"
-                ng-options="item.massageName  +' == '+  item.price +'CHF'+ '' | uppercase for item in loxx.massageListAndPrices">
-            <option value="">Select Account</option>
-        </select>
-
-        <br>
-        lox =
-        {{loxx}}
-
-
-
-
-        <br>
-
-        fake: {{myWelcome2}}
-<br>
-        <button ng-click="getData()">GetData</button>
-
-
-        <br>==============================
-        <br>
-
-        object: {{obj}}
-        <br>
-        myWelcome: {{myWelcome}}
-        <br>
-
-
-
-        <br>
-
-        <input type="text" ng-model="testing" placeholder="testing" name="testing"><br>
-
-        <br>
-        <br>
-
-        <button ng-click="subMe()">SubmSubMeit</button> {{pizdiec}}
-
-
-        <p>Username:<br>
-            <input type="text" name="user" ng-model="olox" required>
-            <span  ng-show="myForm.user.$dirty && myForm.user.$invalid">
-<span ng-show="myForm.user.$error.required">Username is required.</span>
-</span>
-        </p>
-
-
-        <ng-form name="myForm2">
-            <input type="email" name="myInput2" ng-model="myInputx">
-        </ng-form>
-
-        <p>The input's valid state is:</p>
-        <h1>{{myForm2.myInput2.$dirty}}</h1>
-        <span ng-show="myForm2.myInput2.$dirty">fU</span>
-
-        <form  novalidate>
-
-            <form name="fuck">
-            First Name:  <br/>
-            <input  type="text" ng-model="user.firstName" name="name1" placeholder="Name"
-                   id="labelName" ng-minlength="5"><br>
-
-
-                <span class="error"  ng-show="fuck.name1.$error">{{fuck.name1.$error.required}}</span>
+            <span>{{invalidName}}</span>
             <br>
-            </form>
 
-            <label for="labelSurname">Last Name:</label> <br/>
-            <input type="text" ng-model="user.lastName" placeholder="Surname" id="labelSurname" name="sname"><br>
+            <label for="labelSurname">Pavardė:</label> <br/>
+            <input type="text" ng-model="user.lastName" placeholder="Pavardė" id="labelSurname" name="sname"><br>
+            <span>{{invalidLastName}}</span>
 
             <br>
 
-            <label class="item item-input">Email </label> <br/>
-            <input type="email" placeholder="Email" ng-model="user.email" name="email" ><br>
-            <!--<span ng-if="bookingForm.email.$invalid" >Fill me!</span>-->
+            <label class="item item-input">Elektroninis Paštas </label> <br/>
+            <input type="text" placeholder="Email" ng-model="user.email" name="email" ><br>
+            <span>{{invalidEmail}}</span>
 
             <br>
 
-            <label class="item item-input">Phone Number </label> <br/>
+            <label class="item item-input">Telefono Numeris</label> <br/>
             <input type="tel" placeholder="Phone" ng-model="user.phone" name="number" > <br>
-           <!-- <span ng-show="bookingForm.number.$touched">{{baby}}</span>-->
+            <span>{{invalidPhone}}</span>
+
             <br>
-            <label class="item item-input">Pick a Massage </label> <br/>
-            <select ng-model="user.selectedItem" ng-options="x for x in names">
+
+
+            <label class="item item-input">Pasirinkite Masažą</label> <br/>
+            <select ng-model="user.massage"
+                    ng-options="item.massageName  +' = '+  item.price +' CHF '+'('+ item.length + 'min)' +'' for item in loxx.massageInfo">
+                <option value="">--------------</option>
             </select>
-
-<br>
-
+            <br>
+            <span>{{invalidMassage}}</span>
 
 
 
             <br/><br>
-            <span>Pick a Date</span>
-            <div moment-picker="memberSince"
+            <label class="item item-input">Pasirinkite Datą</label> <br/>
+            <div moment-picker="chosenDate"
                  format="YYYY-MM-DD"
                  selectable="disabledDates(date, type)"
                  max-view="month"
@@ -222,15 +90,16 @@
                  start-view="month"
                  autoclose="true"
                  today="true"
-                 start-date="memberSince">
+                 start-date="chosenDate">
 
-                {{ memberSince || "Pick a Date" }}
+                {{ chosenDate || "--------" }}
             </div>
+            <span >{{invalidDate}}</span>
             <br>
 
-
-            <span>Pick a Time</span>
-            <div moment-picker="memberSince1"
+           <!-- <span>Pasirinkite Laiką</span>-->
+            <label class="item item-input">Pasirinkite Datą</label> <br/>
+            <div moment-picker="chosenTime"
                  format="HH:mm"
                  max-view="hour"
                  autoclose="true"
@@ -238,43 +107,48 @@
                  min-date="startHour"
                  max-date="endHour"
                  today="true"
-                 start-date="memberSince1"
+                 start-date="chosenTime"
                  show-header="false">
 
-            {{ memberSince1 || "Select a date" }}
+            {{ chosenTime || "----------" }}
             </div>
+            <span >{{invalidTime}}</span>
             <br>
 
-            <label class="item item-input">Message </label> <br/>
-            <textarea placeholder="Message" ng-model="user.message" name="textarea" rows="4" cols="30"></textarea>
+            <label class="item item-input">Jūsų žinutė</label> <br/>
+            <textarea placeholder="Pageidavimai" ng-model="user.message" name="textarea" rows="4" cols="30"></textarea>
+            <br>
+            <span >{{invalidMessage}}</span>
             <br>
             <br>
 
             <br>
-            <button ng-click="submitMe()">Submit</button> {{pizdiec}}
+            <button ng-click="checkSubmittedData()">Tikrinti kas įvesta</button> {{pizdiec}}
+            <br>
+            {{megaFail}}
             <br>
 
 
 
 
-            <button ng-click="submitFullForm()">submitFullForm</button> {{pizdiec}}
+            <button ng-click="submitFullForm()">Užsakyti/Rezervuoti</button> {{pizdiec}}
+            {{submittedSuccess}}
+            {{submittedFail}}
             <br>
 
 
         </form>
 
         <div>
-            <h3>You have submitted the following information:</h3>
+            <h3>Jūsų pateikėte šią informaciją:</h3>
             First Name: {{submittedFirstName}}<br>
             Last Name: {{submittedLastName}}<br>
             Email: {{submittedEmail}}<br>
             Phone: {{submittedPhone}}<br>
-            SelectedItem: {{submittedItem}}<br>
-            Phone: {{submittedPhone}}<br>
+            Massage: {{submittedMassage}}<br>
             Date: {{submittedDate}}<br>
             Time: {{submittedTime}}<br>
             Message: {{submittedMessage}}<br>
-            WHAT: {{wtf}}<br>
 
 
 
@@ -282,105 +156,7 @@
     </div>
 
 
-<!--Stuff chosen:
-            {{dateChosen}}<br>
-            {{timeChosen}}
 
-
-        </form>
-        <br>
-
-
-        <span>Pick a Date</span>
-    <div moment-picker="memberSince"
-         format="YYYY-MM-DD"
-         selectable="disabledDates(date, type)"
-         max-view="month"
-         min-view="mindate"
-         min-date="startDate"
-         start-view="month"
-         autoclose="true"
-         today="true"
-         start-date="memberSince"
-    >
-        {{ memberSince || "Select a date" }}
-    </div>
-        <br>Chosen Date: {{memberSince}}
-    <br />
-    <hr />
-    <span>Time</span>
-    <div moment-picker="memberSince1"
-         format="HH:mm"
-         max-view="hour"
-         autoclose="true"
-         selectable="disabledTimes(date, type)"
-
-         min-date="startHour"
-         max-date="endHour"
-         today="true"
-         start-date="memberSince1"
-         show-header="false"
-    >
-        {{ memberSince1 || "Select a date" }}
-
-
-    </div>
-        <br>Chosen Time: {{memberSince1}}
-
-        <br />
-        Date format:{{suka}}
-
-        <br />
-        Time format:{{formatas}}
-        Time format:{{formatas2}}
-        <hr />
-
-        </form>
-        <br>
-
-        <form name="loginForm" novalidate >
-            <label class="item item-input">
-                <input type="email" placeholder="Email" ng-model="batman" name="email" required>
-            </label>
-
-            <br>
-            <div ng-messages="loginForm.email.$error"  >
-                <div ng-message="required" >Please input a valid e-mail address</div>
-                <div ng-message="email">You did not enter your email address correctly...</div>
-            </div>
-        </form>
-
-    </div>
-
-
-
-
-</div>-->
-
-
-
-
-    <!--<div ng-controller="ctrl1" ng-include="'@routes.Assets.at("javascripts/js/mypage.html")'"></div>
--->
-
-    <!-- <div ng-controller="booking">
-                <h3>Uzsakyti masaza</h3>
-
-
-         Vardas: <input class="input" type="text" ng-model="firstName"><br><br>
-         Pavarde: <input class="input" type="text" ng-model="lastName"><br><br>
-         El. pastas: <input class="input" type="text" ng-model="email"><br><br>
-         Telefono numeris: <input class="input" type="text" ng-model="phone"><br><br>
-         Masazas: <input class="input" type="text" ng-model="massageList"><br><br>
-         Data: <input class="input" type="text" ng-model="date"><br><br>
-         Laikas: <input class="input" type="text" ng-model="time"><br><br>
-         Pageidavimai: <input class="input" type="text" ng-model="additionalMessage"><br><br>
-
-         <br>
-         <button ng-click="bookMassage()">Uzsakyti</button>
-         <br>
-
-     </div>-->
 
 </div>
 

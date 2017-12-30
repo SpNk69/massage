@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myapp">
 <head>
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta massageName="viewport" content="initial-scale=1.0, user-scalable=no" />
 <link href="lib/prettify-tomorrow-night.css" type="text/css" rel="stylesheet" />
 <script src="lib/prettify.js"></script>
 <script src="lib/angular.js"></script>
@@ -39,7 +39,7 @@ angular.module('myapp').directive('allExamples', function() {
     for(var massageName in postData) {
       var input = document.createElement('input');
       input.type = "hidden";
-      input.name = massageName;
+      input.massageName = massageName;
       input.price = postData[massageName];
       form.appendChild(input);
     }
@@ -141,7 +141,7 @@ angular.module('myapp').directive('allExamples', function() {
         <button ng-click="vm.viewInPlunker()">Plunker</button>
       </div>
       <iframe ng-hide="vm.viewSource"
-        src="map-simple.html" name="iframe" frameborder="0">
+        src="map-simple.html" massageName="iframe" frameborder="0">
       </iframe>
       <pre ng-show="vm.viewSource"
         class="source prettyprint lang-html" >{{vm.iframeSource}}</pre>

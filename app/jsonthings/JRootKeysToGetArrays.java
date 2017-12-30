@@ -6,9 +6,9 @@ package jsonthings;
 public class JRootKeysToGetArrays {
 
 
-//    String name;
+//    String massageName;
 
-    JTopRootList massageListAndPrices;
+    JTopRootList massageInfo;
     JTopRootList leTesto;
     JTopRootList fullFormSubmit;
 
@@ -26,12 +26,12 @@ public class JRootKeysToGetArrays {
     }
 
 
-//    public String getName() {
-//        return name;
+//    public String getMassageName() {
+//        return massageName;
 //    }
 //
-//    public void setName(String name) {
-//        this.name = name;
+//    public void setMassageName(String massageName) {
+//        this.massageName = massageName;
 //    }
 
     public JTopRootList getLeTesto() {
@@ -42,19 +42,19 @@ public class JRootKeysToGetArrays {
         this.leTesto = leTesto;
     }
 
-    public JTopRootList getMassageListAndPrices() {
-        return massageListAndPrices;
+    public JTopRootList getMassageInfo() {
+        return massageInfo;
     }
 
-    public void setMassageListAndPrices(JTopRootList massageListAndPrices) {
-        this.massageListAndPrices = massageListAndPrices;
+    public void setMassageInfo(JTopRootList massageInfo) {
+        this.massageInfo = massageInfo;
     }
 
 
 
 //    @Override
 //    public String toString() {
-//        return "JRootKeysToGetArrays [name=" + name + ", massageListAndPrices=" + massageListAndPrices + "]";
+//        return "JRootKeysToGetArrays [massageName=" + massageName + ", massageInfo=" + massageInfo + "]";
 //    }
 
 }

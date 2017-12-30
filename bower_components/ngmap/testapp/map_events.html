@@ -59,11 +59,11 @@
         row.style.backgroundColor = color;
       }
 
-      function setupListener(map, name) {
-        google.maps.event.addListener(map, name, function() {
-          setBackgroundColor(name, '#99CCFF');
+      function setupListener(map, massageName) {
+        google.maps.event.addListener(map, massageName, function() {
+          setBackgroundColor(massageName, '#99CCFF');
           setTimeout(function() {
-           setBackgroundColor(name, 'white');
+           setBackgroundColor(massageName, 'white');
           }, 500);
         });
       }

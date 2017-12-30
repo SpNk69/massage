@@ -1,337 +1,443 @@
-2017-12-29 21:47:44,847 [WARN] from application in scala-execution-context-global-61 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2017-12-29 21:47:45,738 [INFO] from application in scala-execution-context-global-61 - Creating Pool for datasource 'default'
-2017-12-29 21:47:46,066 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-61 - datasource [default] bound to JNDI as DefaultDS
-2017-12-29 21:47:46,074 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-61 - Database [default] connected at jdbc:mysql://localhost:3306/play
-2017-12-29 21:47:46,287 [INFO] from application in scala-execution-context-global-61 - ApplicationTimer demo: Starting application at 2017-12-29T20:47:46.286Z
-2017-12-29 21:47:46,742 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-61 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-12-29 21:47:46,867 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-61 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-12-30 21:59:27,891 [WARN] from application in scala-execution-context-global-107 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 21:59:27,948 [INFO] from application in scala-execution-context-global-107 - Creating Pool for datasource 'default'
+2017-12-30 21:59:27,955 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-107 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 21:59:27,957 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-107 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 21:59:27,959 [INFO] from application in scala-execution-context-global-107 - ApplicationTimer demo: Starting application at 2017-12-30T20:59:27.959Z
+2017-12-30 21:59:28,014 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-107 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 21:59:28,071 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-107 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2017-12-29 21:47:46,870 [INFO] from play.api.Play in scala-execution-context-global-61 - Application started (Dev)
-2017-12-29 21:47:47,503 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-34 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 21:56:25,829 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-47 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 21:57:13,548 [INFO] from application in scala-execution-context-global-142 - ApplicationTimer demo: Stopping application at 2017-12-29T20:57:13.548Z after 567s.
-2017-12-29 21:57:13,549 [INFO] from application in scala-execution-context-global-142 - Shutting down connection pool.
-2017-12-29 21:57:13,608 [WARN] from application in scala-execution-context-global-142 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2017-12-29 21:57:13,657 [INFO] from application in scala-execution-context-global-142 - Creating Pool for datasource 'default'
-2017-12-29 21:57:13,662 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-142 - datasource [default] bound to JNDI as DefaultDS
-2017-12-29 21:57:13,663 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-142 - Database [default] connected at jdbc:mysql://localhost:3306/play
-2017-12-29 21:57:13,664 [INFO] from application in scala-execution-context-global-142 - ApplicationTimer demo: Starting application at 2017-12-29T20:57:13.664Z
-2017-12-29 21:57:13,708 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-142 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-12-29 21:57:13,749 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-142 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-12-30 21:59:28,074 [INFO] from play.api.Play in scala-execution-context-global-107 - Application started (Dev)
+2017-12-30 21:59:28,222 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - IN THE GETADMIN: 
+2017-12-30 21:59:46,177 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - IN THE GETADMIN: 
+2017-12-30 21:59:47,024 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-15 - IN THE GETADMIN: 
+2017-12-30 21:59:47,589 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-15 - IN THE GETADMIN: 
+2017-12-30 21:59:48,174 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - IN THE GETADMIN: 
+2017-12-30 21:59:54,341 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - IN THE GETADMIN: 
+2017-12-30 21:59:54,955 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-15 - IN THE GETADMIN: 
+2017-12-30 21:59:55,587 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-15 - IN THE GETADMIN: 
+2017-12-30 22:01:06,592 [INFO] from application in scala-execution-context-global-156 - ApplicationTimer demo: Stopping application at 2017-12-30T21:01:06.592Z after 99s.
+2017-12-30 22:01:06,593 [INFO] from application in scala-execution-context-global-156 - Shutting down connection pool.
+2017-12-30 22:01:06,668 [WARN] from application in scala-execution-context-global-156 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 22:01:06,756 [INFO] from application in scala-execution-context-global-156 - Creating Pool for datasource 'default'
+2017-12-30 22:01:06,763 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-156 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 22:01:06,763 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-156 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 22:01:06,765 [INFO] from application in scala-execution-context-global-156 - ApplicationTimer demo: Starting application at 2017-12-30T21:01:06.765Z
+2017-12-30 22:01:06,827 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-156 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 22:01:06,880 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-156 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2017-12-29 21:57:13,750 [INFO] from play.api.Play in scala-execution-context-global-142 - Application started (Dev)
-2017-12-29 21:57:13,975 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-46 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 21:57:15,887 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-50 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 21:57:16,733 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-45 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 21:58:15,272 [INFO] from application in scala-execution-context-global-186 - ApplicationTimer demo: Stopping application at 2017-12-29T20:58:15.271Z after 62s.
-2017-12-29 21:58:15,272 [INFO] from application in scala-execution-context-global-186 - Shutting down connection pool.
-2017-12-29 21:58:15,303 [WARN] from application in scala-execution-context-global-186 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2017-12-29 21:58:15,369 [INFO] from application in scala-execution-context-global-186 - Creating Pool for datasource 'default'
-2017-12-29 21:58:15,374 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-186 - datasource [default] bound to JNDI as DefaultDS
-2017-12-29 21:58:15,374 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-186 - Database [default] connected at jdbc:mysql://localhost:3306/play
-2017-12-29 21:58:15,376 [INFO] from application in scala-execution-context-global-186 - ApplicationTimer demo: Starting application at 2017-12-29T20:58:15.376Z
-2017-12-29 21:58:15,433 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-186 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-12-29 21:58:15,479 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-186 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-12-30 22:01:06,882 [INFO] from play.api.Play in scala-execution-context-global-156 - Application started (Dev)
+2017-12-30 22:02:47,764 [WARN] from application in application-akka.actor.default-dispatcher-2 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"123"},{"surname":"2222"},{"email":"a.polescuk@gmail.com"},{"phone":"123123123"},{"massage":"masazas 6 : 150 chf 100 min"},{"date":"2018-01-18"},{"time":"18:50"},{"message":"rt"}]}
+2017-12-30 22:06:20,905 [WARN] from application in application-akka.actor.default-dispatcher-14 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"John"},{"surname":"Pizdon"},{"email":"a.polescuk@gmail.com"},{"phone":"123123123123123123123131123123123"},{"massage":"masazas 4"},{"date":"2017-12-30"},{"time":"20:05"},{"message":"fsdfdsf"}]}
+2017-12-30 22:07:36,010 [INFO] from application in scala-execution-context-global-269 - ApplicationTimer demo: Stopping application at 2017-12-30T21:07:36.010Z after 390s.
+2017-12-30 22:07:36,010 [INFO] from application in scala-execution-context-global-269 - Shutting down connection pool.
+2017-12-30 22:07:36,046 [WARN] from application in scala-execution-context-global-269 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 22:07:36,095 [INFO] from application in scala-execution-context-global-269 - Creating Pool for datasource 'default'
+2017-12-30 22:07:36,100 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-269 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 22:07:36,100 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-269 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 22:07:36,102 [INFO] from application in scala-execution-context-global-269 - ApplicationTimer demo: Starting application at 2017-12-30T21:07:36.102Z
+2017-12-30 22:07:36,148 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-269 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 22:07:36,202 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-269 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2017-12-29 21:58:15,480 [INFO] from play.api.Play in scala-execution-context-global-186 - Application started (Dev)
-2017-12-29 21:58:30,703 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-45 - 
-
-! @76en5nnf0 - Internal server error, for (GET) [/getAdminData] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[no suitable method found for ok(jsonthings.JRootKeysToGetArrays)
-    method play.mvc.Results.ok(play.twirl.api.Content) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to play.twirl.api.Content)
-    method play.mvc.Results.ok(java.lang.String) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.lang.String)
-    method play.mvc.Results.ok(com.fasterxml.jackson.databind.JsonNode) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to com.fasterxml.jackson.databind.JsonNode)
-    method play.mvc.Results.ok(byte[]) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to byte[])
-    method play.mvc.Results.ok(java.io.InputStream) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.io.InputStream)
-    method play.mvc.Results.ok(java.io.File) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.io.File)]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
-	at scala.Option.map(Option.scala:145)
-	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
-	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
-	at scala.Option.map(Option.scala:145)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
-	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
-	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
-	at scala.util.Either$LeftProjection.map(Either.scala:377)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
-	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
-	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
-	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
-	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
-	at play.runsupport.Reloader.reload(Reloader.scala:411)
-	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
-	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2017-12-29 21:58:38,523 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-50 - 
-
-! @76en5o956 - Internal server error, for (GET) [/getAdminData] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[no suitable method found for ok(jsonthings.JRootKeysToGetArrays)
-    method play.mvc.Results.ok(play.twirl.api.Content) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to play.twirl.api.Content)
-    method play.mvc.Results.ok(java.lang.String) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.lang.String)
-    method play.mvc.Results.ok(com.fasterxml.jackson.databind.JsonNode) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to com.fasterxml.jackson.databind.JsonNode)
-    method play.mvc.Results.ok(byte[]) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to byte[])
-    method play.mvc.Results.ok(java.io.InputStream) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.io.InputStream)
-    method play.mvc.Results.ok(java.io.File) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.io.File)]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
-	at scala.Option.map(Option.scala:145)
-	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
-	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
-	at scala.Option.map(Option.scala:145)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
-	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
-	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
-	at scala.util.Either$LeftProjection.map(Either.scala:377)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
-	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
-	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
-	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
-	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
-	at play.runsupport.Reloader.reload(Reloader.scala:411)
-	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
-	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2017-12-29 21:59:01,232 [INFO] from application in scala-execution-context-global-248 - ApplicationTimer demo: Stopping application at 2017-12-29T20:59:01.232Z after 46s.
-2017-12-29 21:59:01,232 [INFO] from application in scala-execution-context-global-248 - Shutting down connection pool.
-2017-12-29 21:59:01,281 [WARN] from application in scala-execution-context-global-248 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2017-12-29 21:59:01,344 [INFO] from application in scala-execution-context-global-248 - Creating Pool for datasource 'default'
-2017-12-29 21:59:01,349 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-248 - datasource [default] bound to JNDI as DefaultDS
-2017-12-29 21:59:01,350 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-248 - Database [default] connected at jdbc:mysql://localhost:3306/play
-2017-12-29 21:59:01,351 [INFO] from application in scala-execution-context-global-248 - ApplicationTimer demo: Starting application at 2017-12-29T20:59:01.351Z
-2017-12-29 21:59:01,408 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-248 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-12-29 21:59:01,451 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-248 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-12-30 22:07:36,205 [INFO] from play.api.Play in scala-execution-context-global-269 - Application started (Dev)
+2017-12-30 22:17:03,385 [INFO] from application in scala-execution-context-global-512 - ApplicationTimer demo: Stopping application at 2017-12-30T21:17:03.385Z after 567s.
+2017-12-30 22:17:03,386 [INFO] from application in scala-execution-context-global-512 - Shutting down connection pool.
+2017-12-30 22:17:03,462 [WARN] from application in scala-execution-context-global-512 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 22:17:03,515 [INFO] from application in scala-execution-context-global-512 - Creating Pool for datasource 'default'
+2017-12-30 22:17:03,518 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-512 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 22:17:03,518 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-512 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 22:17:03,519 [INFO] from application in scala-execution-context-global-512 - ApplicationTimer demo: Starting application at 2017-12-30T21:17:03.519Z
+2017-12-30 22:17:03,560 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-512 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 22:17:03,592 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-512 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2017-12-29 21:59:01,453 [INFO] from play.api.Play in scala-execution-context-global-248 - Application started (Dev)
-2017-12-29 21:59:12,879 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-53 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 21:59:14,384 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-47 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 21:59:15,051 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-45 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:00:06,354 [INFO] from application in scala-execution-context-global-288 - ApplicationTimer demo: Stopping application at 2017-12-29T21:00:06.354Z after 65s.
-2017-12-29 22:00:06,355 [INFO] from application in scala-execution-context-global-288 - Shutting down connection pool.
-2017-12-29 22:00:06,401 [WARN] from application in scala-execution-context-global-288 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2017-12-29 22:00:06,474 [INFO] from application in scala-execution-context-global-288 - Creating Pool for datasource 'default'
-2017-12-29 22:00:06,481 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-288 - datasource [default] bound to JNDI as DefaultDS
-2017-12-29 22:00:06,481 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-288 - Database [default] connected at jdbc:mysql://localhost:3306/play
-2017-12-29 22:00:06,483 [INFO] from application in scala-execution-context-global-288 - ApplicationTimer demo: Starting application at 2017-12-29T21:00:06.483Z
-2017-12-29 22:00:06,544 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-288 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-12-29 22:00:06,608 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-288 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-12-30 22:17:03,592 [INFO] from play.api.Play in scala-execution-context-global-512 - Application started (Dev)
+2017-12-30 22:20:42,080 [WARN] from application in application-akka.actor.default-dispatcher-8 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"a"},{"surname":"Buljonas"},{"email":"a.polescuk@gmail.com"},{"phone":"123123"},{"massage":"masazas 2"},{},{},{"message":"asd"}]}
+2017-12-30 22:25:24,276 [INFO] from application in scala-execution-context-global-691 - ApplicationTimer demo: Stopping application at 2017-12-30T21:25:24.276Z after 501s.
+2017-12-30 22:25:24,276 [INFO] from application in scala-execution-context-global-691 - Shutting down connection pool.
+2017-12-30 22:25:24,337 [WARN] from application in scala-execution-context-global-691 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 22:25:24,398 [INFO] from application in scala-execution-context-global-691 - Creating Pool for datasource 'default'
+2017-12-30 22:25:24,402 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-691 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 22:25:24,402 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-691 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 22:25:24,403 [INFO] from application in scala-execution-context-global-691 - ApplicationTimer demo: Starting application at 2017-12-30T21:25:24.403Z
+2017-12-30 22:25:24,459 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-691 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 22:25:24,504 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-691 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2017-12-29 22:00:06,611 [INFO] from play.api.Play in scala-execution-context-global-288 - Application started (Dev)
-2017-12-29 22:00:06,659 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:00:06,874 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-42 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:00:16,976 [INFO] from application in scala-execution-context-global-288 - ApplicationTimer demo: Stopping application at 2017-12-29T21:00:16.975Z after 10s.
-2017-12-29 22:00:16,976 [INFO] from application in scala-execution-context-global-288 - Shutting down connection pool.
-2017-12-29 22:00:17,020 [WARN] from application in scala-execution-context-global-288 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2017-12-29 22:00:17,052 [INFO] from application in scala-execution-context-global-288 - Creating Pool for datasource 'default'
-2017-12-29 22:00:17,056 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-288 - datasource [default] bound to JNDI as DefaultDS
-2017-12-29 22:00:17,056 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-288 - Database [default] connected at jdbc:mysql://localhost:3306/play
-2017-12-29 22:00:17,057 [INFO] from application in scala-execution-context-global-288 - ApplicationTimer demo: Starting application at 2017-12-29T21:00:17.057Z
-2017-12-29 22:00:17,093 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-288 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-12-29 22:00:17,134 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-288 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-12-30 22:25:24,505 [INFO] from play.api.Play in scala-execution-context-global-691 - Application started (Dev)
+2017-12-30 22:25:36,224 [WARN] from application in application-akka.actor.default-dispatcher-2 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"a"},{"surname":"aaa"},{"email":"a.polescuk@gmail.com"},{"phone":"1231"},{"massage":"masazas 3"},{"date":"2017-12-30"},{"time":"20:25"},{"message":"adas"}]}
+2017-12-30 22:26:33,558 [INFO] from application in scala-execution-context-global-733 - ApplicationTimer demo: Stopping application at 2017-12-30T21:26:33.558Z after 69s.
+2017-12-30 22:26:33,559 [INFO] from application in scala-execution-context-global-733 - Shutting down connection pool.
+2017-12-30 22:26:33,602 [WARN] from application in scala-execution-context-global-733 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 22:26:33,666 [INFO] from application in scala-execution-context-global-733 - Creating Pool for datasource 'default'
+2017-12-30 22:26:33,671 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-733 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 22:26:33,671 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-733 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 22:26:33,673 [INFO] from application in scala-execution-context-global-733 - ApplicationTimer demo: Starting application at 2017-12-30T21:26:33.673Z
+2017-12-30 22:26:33,707 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-733 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 22:26:33,738 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-733 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2017-12-29 22:00:17,135 [INFO] from play.api.Play in scala-execution-context-global-288 - Application started (Dev)
-2017-12-29 22:00:17,291 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:00:18,408 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-48 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:00:19,352 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-54 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:00:26,182 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-46 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:00:35,040 [INFO] from application in scala-execution-context-global-288 - ApplicationTimer demo: Stopping application at 2017-12-29T21:00:35.040Z after 18s.
-2017-12-29 22:00:35,040 [INFO] from application in scala-execution-context-global-288 - Shutting down connection pool.
-2017-12-29 22:00:35,094 [WARN] from application in scala-execution-context-global-288 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2017-12-29 22:00:35,140 [INFO] from application in scala-execution-context-global-288 - Creating Pool for datasource 'default'
-2017-12-29 22:00:35,145 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-288 - datasource [default] bound to JNDI as DefaultDS
-2017-12-29 22:00:35,145 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-288 - Database [default] connected at jdbc:mysql://localhost:3306/play
-2017-12-29 22:00:35,146 [INFO] from application in scala-execution-context-global-288 - ApplicationTimer demo: Starting application at 2017-12-29T21:00:35.146Z
-2017-12-29 22:00:35,193 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-288 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-12-29 22:00:35,230 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-288 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-12-30 22:26:33,739 [INFO] from play.api.Play in scala-execution-context-global-733 - Application started (Dev)
+2017-12-30 22:27:02,194 [WARN] from application in application-akka.actor.default-dispatcher-5 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"a"},{"surname":"a"},{"email":"a.polescuk@gmail.com"},{"phone":"123"},{"massage":"masazas 3"},{"date":"2018-01-10"},{"time":"18:30"},{"message":"asd"}]}
+2017-12-30 22:27:24,508 [INFO] from application in scala-execution-context-global-783 - ApplicationTimer demo: Stopping application at 2017-12-30T21:27:24.508Z after 51s.
+2017-12-30 22:27:24,511 [INFO] from application in scala-execution-context-global-783 - Shutting down connection pool.
+2017-12-30 22:27:24,560 [WARN] from application in scala-execution-context-global-783 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 22:27:24,634 [INFO] from application in scala-execution-context-global-783 - Creating Pool for datasource 'default'
+2017-12-30 22:27:24,647 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-783 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 22:27:24,648 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-783 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 22:27:24,650 [INFO] from application in scala-execution-context-global-783 - ApplicationTimer demo: Starting application at 2017-12-30T21:27:24.649Z
+2017-12-30 22:27:24,706 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-783 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 22:27:24,744 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-783 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2017-12-29 22:00:35,231 [INFO] from play.api.Play in scala-execution-context-global-288 - Application started (Dev)
-2017-12-29 22:00:35,374 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-53 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:00:35,458 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-42 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:00:37,251 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-56 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:00:44,136 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-56 - 
-
-! @76en65d0c - Internal server error, for (GET) [/adminpage] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[no suitable method found for ok(jsonthings.JRootKeysToGetArrays)
-    method play.mvc.Results.ok(play.twirl.api.Content) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to play.twirl.api.Content)
-    method play.mvc.Results.ok(java.lang.String) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.lang.String)
-    method play.mvc.Results.ok(com.fasterxml.jackson.databind.JsonNode) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to com.fasterxml.jackson.databind.JsonNode)
-    method play.mvc.Results.ok(byte[]) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to byte[])
-    method play.mvc.Results.ok(java.io.InputStream) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.io.InputStream)
-    method play.mvc.Results.ok(java.io.File) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.io.File)]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
-	at scala.Option.map(Option.scala:145)
-	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
-	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
-	at scala.Option.map(Option.scala:145)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
-	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
-	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
-	at scala.util.Either$LeftProjection.map(Either.scala:377)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
-	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
-	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
-	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
-	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
-	at play.runsupport.Reloader.reload(Reloader.scala:411)
-	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
-	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2017-12-29 22:00:49,709 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-56 - 
-
-! @76en65l6l - Internal server error, for (GET) [/adminpage] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[no suitable method found for ok(jsonthings.JRootKeysToGetArrays)
-    method play.mvc.Results.ok(play.twirl.api.Content) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to play.twirl.api.Content)
-    method play.mvc.Results.ok(java.lang.String) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.lang.String)
-    method play.mvc.Results.ok(com.fasterxml.jackson.databind.JsonNode) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to com.fasterxml.jackson.databind.JsonNode)
-    method play.mvc.Results.ok(byte[]) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to byte[])
-    method play.mvc.Results.ok(java.io.InputStream) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.io.InputStream)
-    method play.mvc.Results.ok(java.io.File) is not applicable
-      (argument mismatch; jsonthings.JRootKeysToGetArrays cannot be converted to java.io.File)]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
-	at scala.Option.map(Option.scala:145)
-	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
-	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
-	at scala.Option.map(Option.scala:145)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
-	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
-	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
-	at scala.util.Either$LeftProjection.map(Either.scala:377)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
-	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
-	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
-	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
-	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
-	at play.runsupport.Reloader.reload(Reloader.scala:411)
-	at play.core.server.DevServerStart$$anon$1.$anonfun$get$1(DevServerStart.scala:125)
-	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2017-12-29 22:01:04,794 [INFO] from application in scala-execution-context-global-288 - ApplicationTimer demo: Stopping application at 2017-12-29T21:01:04.794Z after 29s.
-2017-12-29 22:01:04,794 [INFO] from application in scala-execution-context-global-288 - Shutting down connection pool.
-2017-12-29 22:01:04,824 [WARN] from application in scala-execution-context-global-288 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2017-12-29 22:01:04,852 [INFO] from application in scala-execution-context-global-288 - Creating Pool for datasource 'default'
-2017-12-29 22:01:04,856 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-288 - datasource [default] bound to JNDI as DefaultDS
-2017-12-29 22:01:04,857 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-288 - Database [default] connected at jdbc:mysql://localhost:3306/play
-2017-12-29 22:01:04,858 [INFO] from application in scala-execution-context-global-288 - ApplicationTimer demo: Starting application at 2017-12-29T21:01:04.858Z
-2017-12-29 22:01:04,892 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-288 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-12-29 22:01:04,919 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-288 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-12-30 22:27:24,745 [INFO] from play.api.Play in scala-execution-context-global-783 - Application started (Dev)
+2017-12-30 22:27:41,617 [WARN] from application in application-akka.actor.default-dispatcher-5 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"a"},{"surname":"aaa"},{"email":"a.polescuk@gmail.com"},{"phone":"1231"},{"massage":"masazas 6"},{"date":"2018-01-25"},{"time":"22:50"},{"message":"123123"}]}
+2017-12-30 22:29:04,840 [INFO] from application in scala-execution-context-global-826 - ApplicationTimer demo: Stopping application at 2017-12-30T21:29:04.840Z after 100s.
+2017-12-30 22:29:04,840 [INFO] from application in scala-execution-context-global-826 - Shutting down connection pool.
+2017-12-30 22:29:04,871 [WARN] from application in scala-execution-context-global-826 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 22:29:04,926 [INFO] from application in scala-execution-context-global-826 - Creating Pool for datasource 'default'
+2017-12-30 22:29:04,931 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-826 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 22:29:04,932 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-826 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 22:29:04,933 [INFO] from application in scala-execution-context-global-826 - ApplicationTimer demo: Starting application at 2017-12-30T21:29:04.933Z
+2017-12-30 22:29:04,983 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-826 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 22:29:05,032 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-826 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2017-12-29 22:01:04,920 [INFO] from play.api.Play in scala-execution-context-global-288 - Application started (Dev)
-2017-12-29 22:01:05,113 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-56 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:01:05,874 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-56 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:01:14,994 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-56 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:01:16,108 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:02:24,579 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-54 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
-2017-12-29 22:02:26,085 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - NU KAS VYKSTA ? : INSERT INTO play.massageListTest (massageName, price) VALUES ('KojuPeduLala', 120.0);
+2017-12-30 22:29:05,033 [INFO] from play.api.Play in scala-execution-context-global-826 - Application started (Dev)
+2017-12-30 22:29:17,753 [WARN] from application in application-akka.actor.default-dispatcher-3 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"1"},{"surname":"1"},{"email":"1"},{"phone":"1"},{"massage":"masazas 2"},{"date":"2017-12-30"},{"time":"20:29"},{"message":"1"}]}
+2017-12-30 22:29:32,930 [WARN] from application in application-akka.actor.default-dispatcher-4 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"1"},{"surname":"1"},{"email":"1"},{"phone":"1"},{"massage":"masazas 2"},{"date":"2017-12-30"},{"time":"20:29"},{"message":"1"}]}
+2017-12-30 22:29:33,732 [WARN] from application in application-akka.actor.default-dispatcher-4 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"1"},{"surname":"1"},{"email":"1"},{"phone":"1"},{"massage":"masazas 2"},{"date":"2017-12-30"},{"time":"20:29"},{"message":"1"}]}
+2017-12-30 22:29:33,861 [WARN] from application in application-akka.actor.default-dispatcher-4 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"1"},{"surname":"1"},{"email":"1"},{"phone":"1"},{"massage":"masazas 2"},{"date":"2017-12-30"},{"time":"20:29"},{"message":"1"}]}
+2017-12-30 22:29:34,259 [WARN] from application in application-akka.actor.default-dispatcher-4 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"1"},{"surname":"1"},{"email":"1"},{"phone":"1"},{"massage":"masazas 2"},{"date":"2017-12-30"},{"time":"20:29"},{"message":"1"}]}
+2017-12-30 22:29:34,618 [WARN] from application in application-akka.actor.default-dispatcher-2 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"1"},{"surname":"1"},{"email":"1"},{"phone":"1"},{"massage":"masazas 2"},{"date":"2017-12-30"},{"time":"20:29"},{"message":"1"}]}
+2017-12-30 22:29:51,406 [WARN] from application in application-akka.actor.default-dispatcher-4 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"1"},{"surname":"1"},{"email":"1"},{"phone":"1"},{"massage":"masazas 3"},{"date":"2018-01-24"},{"time":"18:50"},{"message":"1"}]}
+2017-12-30 22:31:40,834 [WARN] from application in application-akka.actor.default-dispatcher-7 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{},{},{},{},{},{},{},{}]}
+2017-12-30 22:32:43,930 [WARN] from application in application-akka.actor.default-dispatcher-8 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"1"},{"surname":"1"},{"email":"1"},{"phone":"1"},{"massage":"masazas 6"},{"date":"2017-12-30"},{"time":"21:45"},{"message":"1"}]}
+2017-12-30 22:33:42,082 [WARN] from application in application-akka.actor.default-dispatcher-14 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"1"},{"surname":"1"},{"email":"1"},{"phone":"1231"},{"massage":"masazas 4"},{"date":"2017-12-30"},{"time":"20:33"},{"message":"1"}]}
+2017-12-30 22:40:18,216 [WARN] from application in application-akka.actor.default-dispatcher-12 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"1"},{"surname":"1"},{"email":"11111111@"},{"phone":"1"},{"massage":"masazas 3"},{"date":"2017-12-30"},{"time":"20:39"},{"message":"1"}]}
+2017-12-30 22:41:14,742 [WARN] from application in application-akka.actor.default-dispatcher-17 - THE FUCK IS HAPPENING: {"GetAllCustomersResult":[{"name":"a"},{"surname":"123"},{"email":"123@"},{"phone":"123"},{"massage":"masazas 3"},{"date":"2017-12-30"},{"time":"20:40"},{"message":"123123"}]}
+2017-12-30 22:43:53,371 [INFO] from application in scala-execution-context-global-1058 - ApplicationTimer demo: Stopping application at 2017-12-30T21:43:53.371Z after 889s.
+2017-12-30 22:43:53,371 [INFO] from application in scala-execution-context-global-1058 - Shutting down connection pool.
+2017-12-30 22:43:53,397 [WARN] from application in scala-execution-context-global-1058 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 22:43:53,441 [INFO] from application in scala-execution-context-global-1058 - Creating Pool for datasource 'default'
+2017-12-30 22:43:53,445 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1058 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 22:43:53,445 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1058 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 22:43:53,446 [INFO] from application in scala-execution-context-global-1058 - ApplicationTimer demo: Starting application at 2017-12-30T21:43:53.446Z
+2017-12-30 22:43:53,489 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1058 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 22:43:53,520 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1058 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 22:43:53,521 [INFO] from play.api.Play in scala-execution-context-global-1058 - Application started (Dev)
+2017-12-30 22:44:11,121 [WARN] from application in application-akka.actor.default-dispatcher-4 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"11"},{"surname":"11"},{"email":"1@1"},{"phone":"11"},{"massage":"masazas 4"},{"date":"2017-12-30"},{"time":"20:43"},{"message":"11"}]}
+2017-12-30 22:48:12,417 [WARN] from application in application-akka.actor.default-dispatcher-6 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"22"},{"surname":"22"},{"email":"22@"},{"phone":"22"},{"massage":"masazas 3"},{"date":"2017-12-30"},{"time":"20:47"},{"message":"22"}]}
+2017-12-30 22:49:52,466 [INFO] from application in scala-execution-context-global-1141 - ApplicationTimer demo: Stopping application at 2017-12-30T21:49:52.466Z after 359s.
+2017-12-30 22:49:52,466 [INFO] from application in scala-execution-context-global-1141 - Shutting down connection pool.
+2017-12-30 22:49:52,492 [WARN] from application in scala-execution-context-global-1141 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 22:49:52,526 [INFO] from application in scala-execution-context-global-1141 - Creating Pool for datasource 'default'
+2017-12-30 22:49:52,529 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1141 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 22:49:52,529 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1141 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 22:49:52,530 [INFO] from application in scala-execution-context-global-1141 - ApplicationTimer demo: Starting application at 2017-12-30T21:49:52.530Z
+2017-12-30 22:49:52,560 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1141 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 22:49:52,588 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1141 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 22:49:52,589 [INFO] from play.api.Play in scala-execution-context-global-1141 - Application started (Dev)
+2017-12-30 22:50:01,078 [WARN] from application in application-akka.actor.default-dispatcher-5 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"1"},{"surname":"1"},{"email":"1@"},{"phone":"1"},{"massage":"masazas 4"},{"date":"2017-12-30"},{"time":"20:49"},{"message":"1"}]}
+2017-12-30 22:53:07,100 [WARN] from application in application-akka.actor.default-dispatcher-2 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"1"},{"surname":"1"},{"email":"1@"},{"phone":"1"},{"massage":"masazas 4"},{"date":"2017-12-30"},{"time":"20:49"},{"message":"1"}]}
+2017-12-30 22:54:16,942 [WARN] from application in application-akka.actor.default-dispatcher-7 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"333333"},{"surname":"33333"},{"email":"333333@"},{"phone":"33333"},{"massage":"masazas 3"},{"date":"2017-12-30"},{"time":"20:53"},{"message":"333333"}]}
+2017-12-30 22:56:20,329 [WARN] from application in application-akka.actor.default-dispatcher-7 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"333333"},{"surname":"33333"},{"email":"333333@"},{"phone":"33333"},{"massage":"masazas 3"},{"date":"2017-12-30"},{"time":"20:53"},{"message":"333333"}]}
+2017-12-30 22:57:29,846 [WARN] from application in application-akka.actor.default-dispatcher-10 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"4444"},{"surname":"444"},{"email":"4444@"},{"phone":"444"},{"massage":"masazas 3"},{"date":"2017-12-30"},{"time":"20:57"},{"message":"44444"}]}
+2017-12-30 22:59:25,782 [WARN] from application in application-akka.actor.default-dispatcher-16 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"67666"},{"surname":"6666"},{"email":"666!@"},{"phone":"6"},{"massage":"masazas 6"},{"date":"2017-12-30"},{"time":"20:59"},{"message":"66666"}]}
+2017-12-30 23:00:30,839 [INFO] from application in scala-execution-context-global-1294 - ApplicationTimer demo: Stopping application at 2017-12-30T22:00:30.839Z after 638s.
+2017-12-30 23:00:30,840 [INFO] from application in scala-execution-context-global-1294 - Shutting down connection pool.
+2017-12-30 23:00:30,878 [WARN] from application in scala-execution-context-global-1294 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:00:30,909 [INFO] from application in scala-execution-context-global-1294 - Creating Pool for datasource 'default'
+2017-12-30 23:00:30,914 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1294 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:00:30,914 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1294 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:00:30,915 [INFO] from application in scala-execution-context-global-1294 - ApplicationTimer demo: Starting application at 2017-12-30T22:00:30.915Z
+2017-12-30 23:00:30,958 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1294 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:00:30,995 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1294 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:00:30,996 [INFO] from play.api.Play in scala-execution-context-global-1294 - Application started (Dev)
+2017-12-30 23:00:41,608 [WARN] from application in application-akka.actor.default-dispatcher-2 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"123"},{"surname":"123"},{"email":"a.polescuk@gmail.com"},{"phone":"123"},{"massage":"masazas 2"},{"date":"2017-12-30"},{"time":"20:00"},{"message":"4123"}]}
+2017-12-30 23:01:10,135 [WARN] from application in application-akka.actor.default-dispatcher-7 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"123"},{"surname":"123"},{"email":"123@!"},{"phone":"123"},{"massage":"masazas 3"},{"date":"2017-12-30"},{"time":"20:01"},{"message":"123"}]}
+2017-12-30 23:01:37,944 [WARN] from application in application-akka.actor.default-dispatcher-5 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"123123"},{"surname":"1231232"},{"email":"112312@"},{"phone":"123123"},{"massage":"masazas 6"},{"date":"2017-12-30"},{"time":"20:01"},{"message":"123123123"}]}
+2017-12-30 23:03:17,606 [WARN] from application in application-akka.actor.default-dispatcher-9 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"123"},{"surname":"123"},{"email":"@11"},{"phone":"123"},{"massage":"masazas 4"},{"date":"2017-12-30"},{"time":"20:03"},{"message":"12312"}]}
+2017-12-30 23:04:54,926 [WARN] from application in application-akka.actor.default-dispatcher-10 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"1"},{"surname":"1"},{"email":"a.polescuk@gmail.com"},{"phone":"123123123123"},{"massage":"masazas 7"},{"date":"2017-12-30"},{"time":"20:04"},{"message":"asdas"}]}
+2017-12-30 23:05:33,650 [INFO] from application in scala-execution-context-global-1482 - ApplicationTimer demo: Stopping application at 2017-12-30T22:05:33.650Z after 303s.
+2017-12-30 23:05:33,650 [INFO] from application in scala-execution-context-global-1482 - Shutting down connection pool.
+2017-12-30 23:05:33,676 [WARN] from application in scala-execution-context-global-1482 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:05:33,698 [INFO] from application in scala-execution-context-global-1482 - Creating Pool for datasource 'default'
+2017-12-30 23:05:33,701 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1482 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:05:33,701 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1482 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:05:33,702 [INFO] from application in scala-execution-context-global-1482 - ApplicationTimer demo: Starting application at 2017-12-30T22:05:33.702Z
+2017-12-30 23:05:33,728 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1482 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:05:33,752 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1482 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:05:33,752 [INFO] from play.api.Play in scala-execution-context-global-1482 - Application started (Dev)
+2017-12-30 23:06:14,279 [INFO] from application in scala-execution-context-global-1521 - ApplicationTimer demo: Stopping application at 2017-12-30T22:06:14.279Z after 41s.
+2017-12-30 23:06:14,279 [INFO] from application in scala-execution-context-global-1521 - Shutting down connection pool.
+2017-12-30 23:06:14,330 [WARN] from application in scala-execution-context-global-1521 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:06:14,357 [INFO] from application in scala-execution-context-global-1521 - Creating Pool for datasource 'default'
+2017-12-30 23:06:14,360 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1521 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:06:14,360 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1521 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:06:14,361 [INFO] from application in scala-execution-context-global-1521 - ApplicationTimer demo: Starting application at 2017-12-30T22:06:14.361Z
+2017-12-30 23:06:14,395 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1521 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:06:14,417 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1521 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:06:14,417 [INFO] from play.api.Play in scala-execution-context-global-1521 - Application started (Dev)
+2017-12-30 23:06:28,016 [INFO] from application in scala-execution-context-global-1521 - ApplicationTimer demo: Stopping application at 2017-12-30T22:06:28.016Z after 14s.
+2017-12-30 23:06:28,017 [INFO] from application in scala-execution-context-global-1521 - Shutting down connection pool.
+2017-12-30 23:06:28,054 [WARN] from application in scala-execution-context-global-1521 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:06:28,081 [INFO] from application in scala-execution-context-global-1521 - Creating Pool for datasource 'default'
+2017-12-30 23:06:28,084 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1521 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:06:28,084 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1521 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:06:28,085 [INFO] from application in scala-execution-context-global-1521 - ApplicationTimer demo: Starting application at 2017-12-30T22:06:28.085Z
+2017-12-30 23:06:28,117 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1521 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:06:28,164 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1521 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:06:28,164 [INFO] from play.api.Play in scala-execution-context-global-1521 - Application started (Dev)
+2017-12-30 23:12:31,329 [INFO] from application in scala-execution-context-global-1797 - ApplicationTimer demo: Stopping application at 2017-12-30T22:12:31.329Z after 363s.
+2017-12-30 23:12:31,329 [INFO] from application in scala-execution-context-global-1797 - Shutting down connection pool.
+2017-12-30 23:12:31,357 [WARN] from application in scala-execution-context-global-1797 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:12:31,403 [INFO] from application in scala-execution-context-global-1797 - Creating Pool for datasource 'default'
+2017-12-30 23:12:31,408 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1797 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:12:31,408 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1797 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:12:31,410 [INFO] from application in scala-execution-context-global-1797 - ApplicationTimer demo: Starting application at 2017-12-30T22:12:31.409Z
+2017-12-30 23:12:31,460 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1797 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:12:31,497 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1797 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:12:31,497 [INFO] from play.api.Play in scala-execution-context-global-1797 - Application started (Dev)
+2017-12-30 23:12:59,463 [INFO] from application in scala-execution-context-global-1819 - ApplicationTimer demo: Stopping application at 2017-12-30T22:12:59.463Z after 28s.
+2017-12-30 23:12:59,463 [INFO] from application in scala-execution-context-global-1819 - Shutting down connection pool.
+2017-12-30 23:12:59,510 [WARN] from application in scala-execution-context-global-1819 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:12:59,537 [INFO] from application in scala-execution-context-global-1819 - Creating Pool for datasource 'default'
+2017-12-30 23:12:59,539 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1819 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:12:59,539 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1819 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:12:59,540 [INFO] from application in scala-execution-context-global-1819 - ApplicationTimer demo: Starting application at 2017-12-30T22:12:59.540Z
+2017-12-30 23:12:59,578 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1819 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:12:59,609 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1819 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:12:59,610 [INFO] from play.api.Play in scala-execution-context-global-1819 - Application started (Dev)
+2017-12-30 23:13:16,943 [INFO] from application in scala-execution-context-global-1860 - ApplicationTimer demo: Stopping application at 2017-12-30T22:13:16.943Z after 17s.
+2017-12-30 23:13:16,943 [INFO] from application in scala-execution-context-global-1860 - Shutting down connection pool.
+2017-12-30 23:13:16,967 [WARN] from application in scala-execution-context-global-1860 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:13:16,990 [INFO] from application in scala-execution-context-global-1860 - Creating Pool for datasource 'default'
+2017-12-30 23:13:16,993 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1860 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:13:16,999 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1860 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:13:17,002 [INFO] from application in scala-execution-context-global-1860 - ApplicationTimer demo: Starting application at 2017-12-30T22:13:17.002Z
+2017-12-30 23:13:17,031 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1860 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:13:17,070 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1860 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:13:17,070 [INFO] from play.api.Play in scala-execution-context-global-1860 - Application started (Dev)
+2017-12-30 23:13:57,124 [INFO] from application in scala-execution-context-global-1860 - ApplicationTimer demo: Stopping application at 2017-12-30T22:13:57.124Z after 40s.
+2017-12-30 23:13:57,124 [INFO] from application in scala-execution-context-global-1860 - Shutting down connection pool.
+2017-12-30 23:13:57,156 [WARN] from application in scala-execution-context-global-1860 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:13:57,179 [INFO] from application in scala-execution-context-global-1860 - Creating Pool for datasource 'default'
+2017-12-30 23:13:57,184 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1860 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:13:57,185 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1860 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:13:57,186 [INFO] from application in scala-execution-context-global-1860 - ApplicationTimer demo: Starting application at 2017-12-30T22:13:57.186Z
+2017-12-30 23:13:57,215 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1860 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:13:57,245 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1860 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:13:57,245 [INFO] from play.api.Play in scala-execution-context-global-1860 - Application started (Dev)
+2017-12-30 23:14:19,331 [INFO] from application in scala-execution-context-global-1945 - ApplicationTimer demo: Stopping application at 2017-12-30T22:14:19.331Z after 22s.
+2017-12-30 23:14:19,331 [INFO] from application in scala-execution-context-global-1945 - Shutting down connection pool.
+2017-12-30 23:14:19,371 [WARN] from application in scala-execution-context-global-1945 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:14:19,394 [INFO] from application in scala-execution-context-global-1945 - Creating Pool for datasource 'default'
+2017-12-30 23:14:19,399 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1945 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:14:19,399 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1945 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:14:19,402 [INFO] from application in scala-execution-context-global-1945 - ApplicationTimer demo: Starting application at 2017-12-30T22:14:19.402Z
+2017-12-30 23:14:19,430 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1945 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:14:19,454 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1945 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:14:19,454 [INFO] from play.api.Play in scala-execution-context-global-1945 - Application started (Dev)
+2017-12-30 23:14:47,440 [INFO] from application in scala-execution-context-global-1934 - ApplicationTimer demo: Stopping application at 2017-12-30T22:14:47.440Z after 28s.
+2017-12-30 23:14:47,440 [INFO] from application in scala-execution-context-global-1934 - Shutting down connection pool.
+2017-12-30 23:14:47,462 [WARN] from application in scala-execution-context-global-1934 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:14:47,482 [INFO] from application in scala-execution-context-global-1934 - Creating Pool for datasource 'default'
+2017-12-30 23:14:47,485 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-1934 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:14:47,485 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-1934 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:14:47,486 [INFO] from application in scala-execution-context-global-1934 - ApplicationTimer demo: Starting application at 2017-12-30T22:14:47.486Z
+2017-12-30 23:14:47,513 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-1934 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:14:47,548 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-1934 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:14:47,549 [INFO] from play.api.Play in scala-execution-context-global-1934 - Application started (Dev)
+2017-12-30 23:15:12,357 [INFO] from application in scala-execution-context-global-2026 - ApplicationTimer demo: Stopping application at 2017-12-30T22:15:12.357Z after 25s.
+2017-12-30 23:15:12,357 [INFO] from application in scala-execution-context-global-2026 - Shutting down connection pool.
+2017-12-30 23:15:12,381 [WARN] from application in scala-execution-context-global-2026 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:15:12,403 [INFO] from application in scala-execution-context-global-2026 - Creating Pool for datasource 'default'
+2017-12-30 23:15:12,408 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-2026 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:15:12,408 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-2026 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:15:12,409 [INFO] from application in scala-execution-context-global-2026 - ApplicationTimer demo: Starting application at 2017-12-30T22:15:12.409Z
+2017-12-30 23:15:12,456 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2026 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:15:12,480 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2026 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:15:12,480 [INFO] from play.api.Play in scala-execution-context-global-2026 - Application started (Dev)
+2017-12-30 23:15:49,377 [INFO] from application in scala-execution-context-global-2062 - ApplicationTimer demo: Stopping application at 2017-12-30T22:15:49.377Z after 37s.
+2017-12-30 23:15:49,377 [INFO] from application in scala-execution-context-global-2062 - Shutting down connection pool.
+2017-12-30 23:15:49,409 [WARN] from application in scala-execution-context-global-2062 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:15:49,430 [INFO] from application in scala-execution-context-global-2062 - Creating Pool for datasource 'default'
+2017-12-30 23:15:49,434 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-2062 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:15:49,434 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-2062 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:15:49,435 [INFO] from application in scala-execution-context-global-2062 - ApplicationTimer demo: Starting application at 2017-12-30T22:15:49.435Z
+2017-12-30 23:15:49,463 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2062 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:15:49,487 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2062 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:15:49,488 [INFO] from play.api.Play in scala-execution-context-global-2062 - Application started (Dev)
+2017-12-30 23:16:47,467 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-255 - IN THE GETADMIN: 
+2017-12-30 23:16:49,352 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-258 - IN THE GETADMIN: 
+2017-12-30 23:20:23,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-59 - IN THE GETADMIN: 
+2017-12-30 23:21:08,968 [WARN] from application in application-akka.actor.default-dispatcher-6 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"Erika"},{"surname":"Gelžinytė"},{"email":"Jania@svogunai.lt"},{"phone":"06"},{"massage":"masazas 1"},{"date":"2018-01-17"},{"time":"19:35"},{"message":"Aš nuoru šventes švęst!"}]}
+2017-12-30 23:23:45,668 [WARN] from application in application-akka.actor.default-dispatcher-11 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"čęėčęė"},{"surname":"čęėčęė"},{"email":"čęČčęė@"},{"phone":"54252"},{"massage":"masazas 2"},{"date":"2018-02-21"},{"time":"18:30"},{"message":"242"}]}
+2017-12-30 23:25:12,092 [WARN] from application in application-akka.actor.default-dispatcher-17 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"ąčę"},{"surname":"ąčę"},{"email":"ąčęČ@"},{"phone":"515"},{"massage":"masazas 2"},{"date":"2018-01-18"},{"time":"22:50"},{"message":"ds"}]}
+2017-12-30 23:27:15,724 [INFO] from application in scala-execution-context-global-2245 - ApplicationTimer demo: Stopping application at 2017-12-30T22:27:15.724Z after 686s.
+2017-12-30 23:27:15,724 [INFO] from application in scala-execution-context-global-2245 - Shutting down connection pool.
+2017-12-30 23:27:15,766 [WARN] from application in scala-execution-context-global-2245 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:27:15,802 [INFO] from application in scala-execution-context-global-2245 - Creating Pool for datasource 'default'
+2017-12-30 23:27:15,813 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-2245 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:27:15,814 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-2245 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:27:15,815 [INFO] from application in scala-execution-context-global-2245 - ApplicationTimer demo: Starting application at 2017-12-30T22:27:15.815Z
+2017-12-30 23:27:15,863 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2245 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:27:15,913 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2245 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:27:15,914 [INFO] from play.api.Play in scala-execution-context-global-2245 - Application started (Dev)
+2017-12-30 23:27:39,175 [WARN] from application in application-akka.actor.default-dispatcher-4 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"123"},{"surname":"123"},{"email":"aaaa@"},{"phone":"aa123"},{"massage":"masazas 2"},{"date":"2018-01-10"},{"time":"18:30"},{"message":"saddsads"}]}
+2017-12-30 23:29:57,349 [WARN] from application in application-akka.actor.default-dispatcher-9 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"asd"},{"surname":"asd"},{"email":"a.polescuk@gmail.com"},{"phone":"123"},{"massage":"masazas 3"},{"date":"2018-01-24"},{"time":"22:50"},{"message":"asda"}]}
+2017-12-30 23:31:21,591 [INFO] from application in scala-execution-context-global-2375 - ApplicationTimer demo: Stopping application at 2017-12-30T22:31:21.591Z after 246s.
+2017-12-30 23:31:21,591 [INFO] from application in scala-execution-context-global-2375 - Shutting down connection pool.
+2017-12-30 23:31:21,614 [WARN] from application in scala-execution-context-global-2375 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:31:21,635 [INFO] from application in scala-execution-context-global-2375 - Creating Pool for datasource 'default'
+2017-12-30 23:31:21,637 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-2375 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:31:21,637 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-2375 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:31:21,638 [INFO] from application in scala-execution-context-global-2375 - ApplicationTimer demo: Starting application at 2017-12-30T22:31:21.638Z
+2017-12-30 23:31:21,664 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2375 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:31:21,713 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2375 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:31:21,714 [INFO] from play.api.Play in scala-execution-context-global-2375 - Application started (Dev)
+2017-12-30 23:31:40,604 [WARN] from application in application-akka.actor.default-dispatcher-3 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"asdas"},{"surname":"aasd"},{"email":"a!@a"},{"phone":"asd"},{"massage":"masazas 4"},{"date":"2018-01-24"},{"time":"18:50"},{"message":"sadas"}]}
+2017-12-30 23:32:51,601 [WARN] from application in application-akka.actor.default-dispatcher-7 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"asd"},{"surname":"asd"},{"email":"aa@"},{"phone":"123"},{"massage":"masazas 4"},{"date":"2018-01-24"},{"time":"18:30"},{"message":"dfsafsd"}]}
+2017-12-30 23:34:53,509 [INFO] from application in scala-execution-context-global-2444 - ApplicationTimer demo: Stopping application at 2017-12-30T22:34:53.509Z after 212s.
+2017-12-30 23:34:53,509 [INFO] from application in scala-execution-context-global-2444 - Shutting down connection pool.
+2017-12-30 23:34:53,535 [WARN] from application in scala-execution-context-global-2444 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:34:53,559 [INFO] from application in scala-execution-context-global-2444 - Creating Pool for datasource 'default'
+2017-12-30 23:34:53,563 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-2444 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:34:53,563 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-2444 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:34:53,564 [INFO] from application in scala-execution-context-global-2444 - ApplicationTimer demo: Starting application at 2017-12-30T22:34:53.564Z
+2017-12-30 23:34:53,593 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2444 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:34:53,616 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2444 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:34:53,616 [INFO] from play.api.Play in scala-execution-context-global-2444 - Application started (Dev)
+2017-12-30 23:35:07,427 [WARN] from application in application-akka.actor.default-dispatcher-4 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"asd"},{"surname":"asd"},{"email":"a.polescuk@gmail.com"},{"phone":"123"},{"massage":"masazas 7"},{"date":"2018-01-17"},{"time":"22:50"},{"message":"adsdasds"}]}
+2017-12-30 23:36:15,049 [WARN] from application in application-akka.actor.default-dispatcher-8 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"asd"},{"surname":"asd"},{"email":"a.polescuk@gmail.com"},{"phone":"6767"},{"massage":"masazas 4"},{"date":"2018-01-24"},{"time":"18:30"},{"message":"uuuu"}]}
+2017-12-30 23:37:43,124 [INFO] from application in scala-execution-context-global-2494 - ApplicationTimer demo: Stopping application at 2017-12-30T22:37:43.124Z after 170s.
+2017-12-30 23:37:43,124 [INFO] from application in scala-execution-context-global-2494 - Shutting down connection pool.
+2017-12-30 23:37:43,155 [WARN] from application in scala-execution-context-global-2494 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2017-12-30 23:37:43,174 [INFO] from application in scala-execution-context-global-2494 - Creating Pool for datasource 'default'
+2017-12-30 23:37:43,177 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-2494 - datasource [default] bound to JNDI as DefaultDS
+2017-12-30 23:37:43,177 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-2494 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2017-12-30 23:37:43,178 [INFO] from application in scala-execution-context-global-2494 - ApplicationTimer demo: Starting application at 2017-12-30T22:37:43.178Z
+2017-12-30 23:37:43,205 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2494 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-12-30 23:37:43,228 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2494 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2017-12-30 23:37:43,228 [INFO] from play.api.Play in scala-execution-context-global-2494 - Application started (Dev)
+2017-12-30 23:38:04,844 [WARN] from application in application-akka.actor.default-dispatcher-3 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"asd"},{"surname":"ads"},{"email":"asd@"},{"phone":"123"},{"massage":"masazas 3"},{"date":"2018-01-29"},{"time":"22:50"},{"message":"asdasd"}]}
+2017-12-30 23:38:44,265 [WARN] from application in application-akka.actor.default-dispatcher-7 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"asd"},{"surname":"asd"},{"email":"a.polescuk@gmail.com"},{"phone":"123"},{"massage":"masazas 6"},{"date":"2018-01-10"},{"time":"19:30"},{"message":"232323"}]}
+2017-12-30 23:40:38,287 [WARN] from application in application-akka.actor.default-dispatcher-10 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"asd"},{"surname":"asd"},{"email":"a.polescuk@gmail.com"},{"phone":"asd123"},{"massage":"masazas 3"},{"date":"2017-12-30"},{"time":"20:40"},{"message":"asdasd"}]}
+2017-12-30 23:41:04,933 [WARN] from application in application-akka.actor.default-dispatcher-9 - THE FUCK IS HAPPENING: {"GetAllCustomersData":[{"name":"1111"},{"surname":"11111"},{"email":"a.polescuk@gmail.com"},{"phone":"123123"},{"massage":"masazas 3"},{"date":"2018-03-20"},{"time":"18:30"},{"message":"123123"}]}

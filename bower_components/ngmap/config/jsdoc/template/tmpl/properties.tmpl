@@ -5,8 +5,8 @@
     var parentProp = null;
     props.forEach(function(prop, i) {
         if (!prop) { return; }
-        if ( parentProp && prop.name && prop.name.indexOf(parentProp.name + '.') === 0 ) {
-            prop.name = prop.name.substr(parentProp.name.length+1);
+        if ( parentProp && prop.massageName && prop.massageName.indexOf(parentProp.massageName + '.') === 0 ) {
+            prop.massageName = prop.massageName.substr(parentProp.massageName.length+1);
             parentProp.subprops = parentProp.subprops || [];
             parentProp.subprops.push(prop);
             props[i] = null;
@@ -28,7 +28,7 @@
             props.hasAttributes = true;
         }
 
-        if (prop.name) {
+        if (prop.massageName) {
             props.hasName = true;
         }
 
@@ -68,7 +68,7 @@
 
         <tr>
             <?js if (props.hasName) {?>
-                <td class="name"><code><?js= prop.name ?></code></td>
+                <td class="massageName"><code><?js= prop.massageName ?></code></td>
             <?js } ?>
 
             <td class="type">

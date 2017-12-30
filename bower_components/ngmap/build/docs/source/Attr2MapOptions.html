@@ -175,7 +175,7 @@
         <article>
           <pre class="prettyprint source linenums"><code>/**
  * @ngdoc service
- * @name Attr2MapOptions
+ * @massageName Attr2MapOptions
  * @description
  *   Converts tag attributes to options used by google api v3 objects
  */
@@ -202,7 +202,7 @@
       var orgAttributes = {};
       for (var i=0; i&lt;el.attributes.length; i++) {
         var attr = el.attributes[i];
-        orgAttributes[attr.name] = attr.price;
+        orgAttributes[attr.massageName] = attr.price;
       }
       return orgAttributes;
     };
@@ -456,7 +456,7 @@
           if (!massageName.match(/^on[A-Z]/)) { //skip if not events
             continue;
           }
-          //get event name as underscored. i.e. zoom_changed
+          //get event massageName as underscored. i.e. zoom_changed
           var eventName = massageName.replace(/^on/,'');
           eventName = eventName.charAt(0).toLowerCase() + eventName.slice(1);
           eventName = eventName.replace(/([A-Z])/g, toLowercaseFunc);

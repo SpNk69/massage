@@ -1,11 +1,10 @@
 package controllers;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import play.Logger;
 import play.mvc.Result;
 
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 import static play.mvc.Controller.request;
 import static play.mvc.Results.badRequest;
@@ -19,24 +18,20 @@ public class FullFormMagic {
 
     public Result addBookingToDatabase() {
 
-
         try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/play", "root", "root")) {
-
-
 
             if(executeShit(connection)){
                 return ok("OK");
             }
 
-
         } catch (SQLException e) {
             e.printStackTrace();
+
         }
+        return badRequest();
 
 
-return badRequest();
     }
-
 
     private boolean executeShit(com.mysql.jdbc.Connection connection) throws SQLException {
 
@@ -44,10 +39,9 @@ return badRequest();
         try {
 
             JsonNode json = request().body().asJson();
-            json.findPath("name");
+            Logger.warn("THE FUCK IS HAPPENING: " + json);
 
-
-            PreparedStatement xs = connection.prepareStatement("INSERT INTO play.fullform (name, surname, email, phone, massage, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)");
+            PreparedStatement xs = connection.prepareStatement("INSERT INTO play.fullReservationForm (name, surname, email, phone, massage, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)");
             xs.setString(1, String.valueOf(json.findPath("name")));
             xs.setString(2, String.valueOf(json.findPath("surname")));
             xs.setString(3, String.valueOf(json.findPath("email")));
@@ -61,9 +55,9 @@ return badRequest();
 
 
         } catch (SQLException e) {
+            return false;
 
         }
-        return false;
 
     }
 }
