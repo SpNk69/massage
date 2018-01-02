@@ -95,7 +95,7 @@ public class JFullFormSubmit {
     @Override
     public String toString() {
         return "JFullFormSubmit{" +
-                "massageName='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +

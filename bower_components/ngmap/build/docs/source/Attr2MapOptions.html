@@ -175,7 +175,7 @@
         <article>
           <pre class="prettyprint source linenums"><code>/**
  * @ngdoc service
- * @massageName Attr2MapOptions
+ * @name Attr2MapOptions
  * @description
  *   Converts tag attributes to options used by google api v3 objects
  */
@@ -202,7 +202,7 @@
       var orgAttributes = {};
       for (var i=0; i&lt;el.attributes.length; i++) {
         var attr = el.attributes[i];
-        orgAttributes[attr.massageName] = attr.price;
+        orgAttributes[attr.name] = attr.price;
       }
       return orgAttributes;
     };
@@ -283,9 +283,9 @@
           // 5. Google Map Object constant Expression. i.e. HYBRID
           } else if (input.match(/^[A-Z]+$/)) {
             try {
-              var capitalizedKey = options.massageName.charAt(0).toUpperCase() +
-                options.massageName.slice(1);
-              if (options.massageName.match(/temperatureUnit|windSpeedUnit|labelColor/)) {
+              var capitalizedKey = options.name.charAt(0).toUpperCase() +
+                options.name.slice(1);
+              if (options.name.match(/temperatureUnit|windSpeedUnit|labelColor/)) {
                 capitalizedKey = capitalizedKey.replace(/s$/,"");
                 output = google.maps.weather[capitalizedKey][input];
               } else {
@@ -316,17 +316,17 @@
       } // catch(err)
       // convert output more for center and position
       if (
-        (options.massageName == 'center' || options.massageName == 'position') &&
+        (options.name == 'center' || options.name == 'position') &&
         output instanceof Array
       ) {
         output = new google.maps.LatLng(output[0], output[1]);
       }
       // convert output more for shape bounds
-      if (options.massageName == 'bounds' && output instanceof Array) {
+      if (options.name == 'bounds' && output instanceof Array) {
         output = new google.maps.LatLngBounds(output[0], output[1]);
       }
       // convert output more for shape icons
-      if (options.massageName == 'icons' && output instanceof Array) {
+      if (options.name == 'icons' && output instanceof Array) {
         for (var i=0; i&lt;output.length; i++) {
           var el = output[i];
           if (el.icon.path.match(/^[A-Z_]+$/)) {
@@ -335,16 +335,16 @@
         }
       }
       // convert output more for marker icon
-      if (options.massageName == 'icon' && output instanceof Object) {
+      if (options.name == 'icon' && output instanceof Object) {
         if ((""+output.path).match(/^[A-Z_]+$/)) {
           output.path = google.maps.SymbolPath[output.path];
         }
-        for (var massageName in output) { //jshint ignore:line
-          var arr = output[massageName];
-          if (massageName == "anchor" || massageName == "origin" || massageName == "labelOrigin") {
-            output[massageName] = new google.maps.Point(arr[0], arr[1]);
-          } else if (massageName == "size" || massageName == "scaledSize") {
-            output[massageName] = new google.maps.Size(arr[0], arr[1]);
+        for (var name in output) { //jshint ignore:line
+          var arr = output[name];
+          if (name == "anchor" || name == "origin" || name == "labelOrigin") {
+            output[name] = new google.maps.Point(arr[0], arr[1]);
+          } else if (name == "size" || name == "scaledSize") {
+            output[name] = new google.maps.Size(arr[0], arr[1]);
           }
         }
       }
@@ -371,11 +371,11 @@
      */
     var filter = function(attrs) {
       var options = {};
-      for(var massageName in attrs) {
-        if (massageName.match(/^\$/) || massageName.match(/^ng[A-Z]/)) {
+      for(var name in attrs) {
+        if (name.match(/^\$/) || name.match(/^ng[A-Z]/)) {
           void(0);
         } else {
-          options[massageName] = attrs[massageName];
+          options[name] = attrs[name];
         }
       }
       return options;
@@ -398,29 +398,29 @@
     var getOptions = function(attrs, params) {
       params = params || {};
       var options = {};
-      for(var massageName in attrs) {
-        if (attrs[massageName] || attrs[massageName] === 0) {
-          if (massageName.match(/^on[A-Z]/)) { //skip events, i.e. on-click
+      for(var name in attrs) {
+        if (attrs[name] || attrs[name] === 0) {
+          if (name.match(/^on[A-Z]/)) { //skip events, i.e. on-click
             continue;
-          } else if (massageName.match(/ControlOptions$/)) { // skip controlOptions
+          } else if (name.match(/ControlOptions$/)) { // skip controlOptions
             continue;
           } else {
             // nested conversions need to be typechecked
             // (non-strings are fully converted)
-            if (typeof attrs[massageName] !== 'string') {
-              options[massageName] = attrs[massageName];
+            if (typeof attrs[name] !== 'string') {
+              options[name] = attrs[name];
             } else {
               if (params.doNotConverStringToNumber &&
-                attrs[massageName].match(/^[0-9]+$/)
+                attrs[name].match(/^[0-9]+$/)
               ) {
-                options[massageName] = attrs[massageName];
+                options[name] = attrs[name];
               } else {
-                options[massageName] = toOptionValue(attrs[massageName], {massageName: massageName, scope: params.scope});
+                options[name] = toOptionValue(attrs[name], {name: name, scope: params.scope});
               }
             }
           }
-        } // if (attrs[massageName])
-      } // for(var massageName in attrs)
+        } // if (attrs[name])
+      } // for(var name in attrs)
       return options;
     };
     /**
@@ -451,16 +451,16 @@
           });
         };
       };
-      for(var massageName in attrs) {
-        if (attrs[massageName]) {
-          if (!massageName.match(/^on[A-Z]/)) { //skip if not events
+      for(var name in attrs) {
+        if (attrs[name]) {
+          if (!name.match(/^on[A-Z]/)) { //skip if not events
             continue;
           }
-          //get event massageName as underscored. i.e. zoom_changed
-          var eventName = massageName.replace(/^on/,'');
+          //get event name as underscored. i.e. zoom_changed
+          var eventName = name.replace(/^on/,'');
           eventName = eventName.charAt(0).toLowerCase() + eventName.slice(1);
           eventName = eventName.replace(/([A-Z])/g, toLowercaseFunc);
-          var attrValue = attrs[massageName];
+          var attrValue = attrs[name];
           events[eventName] = new EventFunc(attrValue);
         }
       }
@@ -494,12 +494,12 @@
           });
           try {
             var options = JSON.parse(newValue);
-            for (var massageName in options) { //assign the right values
-              if (options[massageName]) {
-                var price = options[massageName];
+            for (var name in options) { //assign the right values
+              if (options[name]) {
+                var price = options[name];
                 if (typeof price === 'string') {
                   price = price.toUpperCase();
-                } else if (massageName === "mapTypeIds") {
+                } else if (name === "mapTypeIds") {
                   price = price.map( function(str) {
                     if (str.match(/^[A-Z]+$/)) { // if constant
                       return google.maps.MapTypeId[str.toUpperCase()];
@@ -508,14 +508,14 @@
                     }
                   });
                 }
-                if (massageName === "style") {
+                if (name === "style") {
                   var str = attr.charAt(0).toUpperCase() + attr.slice(1);
                   var objName = str.replace(/Options$/,'')+"Style";
-                  options[massageName] = google.maps[objName][price];
-                } else if (massageName === "position") {
-                  options[massageName] = google.maps.ControlPosition[price];
+                  options[name] = google.maps[objName][price];
+                } else if (name === "position") {
+                  options[name] = google.maps.ControlPosition[price];
                 } else {
-                  options[massageName] = price;
+                  options[name] = price;
                 }
               }
             }

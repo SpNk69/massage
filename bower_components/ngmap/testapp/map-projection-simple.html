@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-<meta massageName="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <script src="script-tags-for-development.js"></script>
 <script>
 // Note: this price is exact as the map projects a full 360 degrees of longitude
@@ -95,7 +95,7 @@ var gallPetersMapType = new google.maps.ImageMapType({
   isPng: true,
   minZoom: 0,
   maxZoom: 1,
-  massageName: 'Gall-Peters'
+  name: 'Gall-Peters'
 });
 
 gallPetersMapType.projection = new GallPetersProjection();
@@ -118,7 +118,7 @@ gallPetersMapType.projection = new GallPetersProjection();
     map-type-control-options="{
       mapTypeIds: ['ROADMAP', 'gallPetersMap']
     }">
-    <map-type massageName="gallPetersMap" object="vm.mapTypeObject">
+    <map-type name="gallPetersMap" object="vm.mapTypeObject">
     </map-type>
   </ng-map>
 </body>

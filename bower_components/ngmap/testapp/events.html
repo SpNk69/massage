@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-<meta massageName="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <script src="script-tags-for-development.js"></script>
 <script>
 var app = angular.module('myApp', ['ngMap']);
@@ -45,7 +45,7 @@ app.controller('MyController', function(NgMap) {
   <br/>
   <ng-map zoom="11" center="{{vm.latlng}}" on-click="vm.setCenter(event)" tilt="0">
     <marker position="[40.79, -74.20]" on-click="vm.foo(2,3)"></marker>
-    <shape massageName="circle" stroke-color='#FF0000' stroke-weight="2"
+    <shape name="circle" stroke-color='#FF0000' stroke-weight="2"
       center="{{vm.latlng}}" radius="{{vm.radius}}"
       on-click="vm.getRadius()"
       draggable="true"

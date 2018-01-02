@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="ngMap">
 <head>
-<meta massageName="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <script src="script-tags-for-development.js"></script>
 <script>
 // Normalizes the coords that tiles repeat across the x axis (horizontally)
@@ -44,7 +44,7 @@ var moonTypeOptions = {
   maxZoom: 9,
   minZoom: 0,
   radius: 1738000,
-  massageName: 'Moon'
+  name: 'Moon'
 };
 
 var moonMapType = new google.maps.ImageMapType(moonTypeOptions);
@@ -60,7 +60,7 @@ var moonMapType = new google.maps.ImageMapType(moonTypeOptions);
     map-type-control-options="{
       mapTypeIds: ['moon']
     }">
-    <map-type massageName="moon" object="moonMapType">
+    <map-type name="moon" object="moonMapType">
     </map-type>
   </ng-map>
 </body>

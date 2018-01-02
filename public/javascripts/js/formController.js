@@ -48,6 +48,7 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
         return type != 'hour' || date.format('HH') != $scope.takenOrOffTime;
     };
 
+
     // validate that input was entered
     function validate(){
         var check1=false;
@@ -64,7 +65,6 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
              check1=false;
         }else{
             $scope.invalidName="";
-            $scope.submittedFirstName = $scope.user.firstName;
             check1=true;
         }
 
@@ -73,7 +73,6 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
             check2=false;
         }else{
             $scope.invalidLastName="";
-            $scope.submittedLastName = $scope.user.lastName;
             check2=true;
 
         }
@@ -84,7 +83,6 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
         }else{
             $scope.invalidEmail="";
 
-            $scope.submittedEmail = $scope.user.email;
             check3=true;
 
         }
@@ -94,7 +92,6 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
             check4=false;
         }else{
             $scope.invalidPhone="";
-            $scope.submittedPhone = $scope.user.phone;
             check4=true;
         }
 
@@ -104,7 +101,6 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
             check5=false;
         }else{
             $scope.invalidMassage="";
-            $scope.submittedMassage = $scope.user.massage.massageName +' : '+$scope.user.massage.price +' chf '+ $scope.user.massage.length+ ' min';
             check5=true;
 
         }
@@ -113,7 +109,6 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
             check7=false;
         }else{
             $scope.invalidDate="";
-            $scope.submittedDate = $scope.chosenDate;
             check7=true;
 
         }
@@ -122,18 +117,17 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
             check8=false;
         }else{
             $scope.invalidTime="";
-            $scope.submittedTime = $scope.chosenTime;
             check8=true;
 
         }
 
-
-      if($scope.user.message.length <1){
+        // To Do specific validation
+      // if($scope.user.message.length <1){
+      if(false){
             $scope.invalidMessage="Ner zinuts";
           check6=false;
         }else{
           $scope.invalidMessage="";
-          $scope.submittedMessage = $scope.user.message;
           check6=true;
 
       }
@@ -143,7 +137,8 @@ return check1 && check2 && check3 && check4 && check5 && check6 && check7 && che
     }
 
     $scope.checkSubmittedData = function () {
-
+        console.log("lala");
+        console.log("SO " + $scope.user.massage.massageName);
         if(validate()){
             $scope.submittedFirstName = $scope.user.firstName;
             $scope.submittedLastName = $scope.user.lastName;
@@ -186,6 +181,7 @@ return check1 && check2 && check3 && check4 && check5 && check6 && check7 && che
     $scope.submitFullForm = function () {
         $scope.submittedFail="";
         $scope.submittedSuccess="";
+        $scope.submitError="";
         if($scope.checkSubmittedData()){
 
         var sendStuff = {
@@ -217,22 +213,23 @@ return check1 && check2 && check3 && check4 && check5 && check6 && check7 && che
                     }
                 ]
         };
-
+// TO FIX THIS SHIT !!!!
         $http({
             method: "POST",
             url: "/submitFullForm",
             data: JSON.stringify(sendStuff)
         }).then(function mySuccess(response) {
             $scope.submitStatus = response.status;
-        }, function myError(response) {
-            $scope.submitError = response.statusText;
-        });
-
-        // TO DO: make a proper check on response? request delivered, cleanup
             $scope.submittedSuccess="Thank you. Your Booking Received."
             resetForm();
+        }, function myError(response) {
+            $scope.submitError = response.data;
+            $scope.submittedFail="THE FUCK HAPPENED???? CALL THE POLICE"
+            });
 
-        }else{
+
+    }
+     else{
             $scope.submittedFail="Something Horrible Happened! Call 911."
         };
     };

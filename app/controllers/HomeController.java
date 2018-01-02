@@ -20,6 +20,11 @@ import views.html.*;
 import javax.inject.Inject;
 import java.io.IOException;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 /**
@@ -200,6 +205,32 @@ public class HomeController extends Controller {
             JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
             topKey.setFullFormSubmit(jTopRootList);
             String out = initializeObjectMapper().writeValueAsString(topKey);
+
+
+
+            // additional implementation to read database max size of each type of table
+            ResultSet rs = prepareStatementSelectAll(connection,"SHOW FIELDS FROM  play.fullReservationForm;");
+            String rx=null;
+            String ry=null;
+            HashMap<String, String> hashMap = new HashMap<>();
+            while (rs.next()){
+
+                rx=rs.getString(2);
+                ry=rs.getString(1);
+                Logger.warn("STUFF : "+ ry +" " +rx);
+
+                hashMap.put(ry,rx);
+            }
+
+//            list2.forEach(x->{Logger.warn(x.replaceAll("\\D+",""));});
+
+            HashMap<String, String> anotherMap = new HashMap<>();
+            hashMap.forEach((x,y)->{anotherMap.put(x,
+                y.replaceAll("\\D+",""));
+            });
+            anotherMap.forEach((x,y)->Logger.warn("MAP : " +x+ " " + y ));
+
+
 
             return ok(out);
 

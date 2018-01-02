@@ -175,7 +175,7 @@
         <article>
           <pre class="prettyprint source linenums"><code>/**
  * @ngdoc provider
- * @massageName NgMap
+ * @name NgMap
  * @description
  *  common utility service for ng-map
  */
@@ -323,7 +323,7 @@
   /**
    * @memberof NgMap
    * @function observeAndSet
-   * @param {String} attrName attribute massageName
+   * @param {String} attrName attribute name
    * @param {Object} object A Google maps object to be changed
    * @returns attribue observe function
    */
@@ -332,7 +332,7 @@
     return function(val) {
       if (val) {
         var setMethod = camelCaseFilter('set-'+attrName);
-        var optionValue = Attr2MapOptions.toOptionValue(val, {massageName: attrName});
+        var optionValue = Attr2MapOptions.toOptionValue(val, {name: attrName});
         if (object[setMethod]) { //if set method does exist
           console.log('observing', attrName, 'and setting', optionValue);
           /* if an location is being observed */

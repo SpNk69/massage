@@ -44,7 +44,7 @@ public class JEntryMassagePriceLength {
     @Override
     public String toString() {
         return "JEntryMassagePriceLength{" +
-                "massageName='" + massageName + '\'' +
+                "name='" + massageName + '\'' +
                 ", price=" + price +
                 ", length=" + length +
                 '}';

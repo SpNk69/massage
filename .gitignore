@@ -1,6 +1,6 @@
 target/*
 /target/*
 project/*
-bower_components/ngmap/testapp/*
-
+bower_components/*
+bower_components/ngmap/testapp/user-editable-shapes.html
 

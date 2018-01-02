@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myapp">
 <head>
-<meta massageName="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <link href="lib/prettify-tomorrow-night.css" type="text/css" rel="stylesheet" />
 <script src="lib/prettify.js"></script>
 <script src="lib/angular.js"></script>
@@ -18,9 +18,9 @@
 angular.module('myapp',[]);
 var hash2arr = function(hash) {
   var arr = [];
-  for (var massageName in hash) {
-    hash[massageName].massageName = massageName;
-    arr.push(hash[massageName]);
+  for (var name in hash) {
+    hash[name].name = name;
+    arr.push(hash[name]);
   }
   return arr;
 };
@@ -36,11 +36,11 @@ angular.module('myapp').directive('allExamples', function() {
       'tags[]': 'auglarjs',
       'files[index.html]': html
     };
-    for(var massageName in postData) {
+    for(var name in postData) {
       var input = document.createElement('input');
       input.type = "hidden";
-      input.massageName = massageName;
-      input.price = postData[massageName];
+      input.name = name;
+      input.price = postData[name];
       form.appendChild(input);
     }
     form.submit();
@@ -83,10 +83,10 @@ angular.module('myapp').directive('allExamples', function() {
       };
       $http.get(url).then(function(resp) {
         vm.iframeSource = resp.data;
-        for(var massageName in replMap) {
-          var re = new RegExp(massageName.replace(/&lt;/g, '<'), 'g');
+        for(var name in replMap) {
+          var re = new RegExp(name.replace(/&lt;/g, '<'), 'g');
           vm.iframeSource = vm.iframeSource.replace(re,
-            replMap[massageName].replace(/&lt;/g, '<'));
+            replMap[name].replace(/&lt;/g, '<'));
         }
         submitToPlunker(vm.iframeSource);
         console.log(vm.iframeSource);
@@ -128,8 +128,8 @@ angular.module('myapp').directive('allExamples', function() {
       Search: <input ng-model="search" />
       <ul>
         <li ng-repeat="example in vm.allExamples | filter:search | filter:'!all-examples' ">
-          <a href="#{{example.massageName}}" ng-click="vm.viewIframe(example.massageName)">
-            {{example.massageName}}
+          <a href="#{{example.name}}" ng-click="vm.viewIframe(example.name)">
+            {{example.name}}
           </a>
         </li>
       </ul>
@@ -141,7 +141,7 @@ angular.module('myapp').directive('allExamples', function() {
         <button ng-click="vm.viewInPlunker()">Plunker</button>
       </div>
       <iframe ng-hide="vm.viewSource"
-        src="map-simple.html" massageName="iframe" frameborder="0">
+        src="map-simple.html" name="iframe" frameborder="0">
       </iframe>
       <pre ng-show="vm.viewSource"
         class="source prettyprint lang-html" >{{vm.iframeSource}}</pre>

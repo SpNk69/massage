@@ -48,6 +48,7 @@
             <input type="text" ng-model="user.firstName" placeholder="Vardas" id="labelFirstName" name="sname" ><br>
 
             <span>{{invalidName}}</span>
+           <!-- {{myForm | json}} -->
             <br>
 
             <label for="labelSurname">Pavardė:</label> <br/>
@@ -134,6 +135,7 @@
             <button ng-click="submitFullForm()">Užsakyti/Rezervuoti</button> {{pizdiec}}
             {{submittedSuccess}}
             {{submittedFail}}
+            {{submitError}}
             <br>
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-<meta massageName="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <script src="script-tags-for-development.js"></script>
 <script>
   var app = angular.module('myApp', ['ngMap']);
@@ -22,7 +22,7 @@
 
 <body ng-controller="CircleSimpleCtrl as vm">
   <ng-map center="37.09024, -95.712891" zoom="4" mayTypeId="TERRAIN">
-    <shape massageName="circle" ng-repeat="city in vm.cities" no-watcher="true"
+    <shape name="circle" ng-repeat="city in vm.cities" no-watcher="true"
       stroke-color="#FF0000"
       stroke-opacity="0.8"
       stroke-weight="2"

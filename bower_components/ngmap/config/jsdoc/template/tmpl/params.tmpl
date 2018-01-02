@@ -5,8 +5,8 @@
     var parentParam = null;
     params.forEach(function(param, i) {
         if (!param) { return; }
-        if ( parentParam && param.massageName && param.massageName.indexOf(parentParam.massageName + '.') === 0 ) {
-            param.massageName = param.massageName.substr(parentParam.massageName.length+1);
+        if ( parentParam && param.name && param.name.indexOf(parentParam.name + '.') === 0 ) {
+            param.name = param.name.substr(parentParam.name.length+1);
             parentParam.subparams = parentParam.subparams || [];
             parentParam.subparams.push(param);
             params[i] = null;
@@ -28,7 +28,7 @@
             params.hasAttributes = true;
         }
 
-        if (param.massageName) {
+        if (param.name) {
             params.hasName = true;
         }
 
@@ -68,7 +68,7 @@
 
         <tr>
             <?js if (params.hasName) {?>
-                <td class="massageName"><code><?js= param.massageName ?></code></td>
+                <td class="name"><code><?js= param.name ?></code></td>
             <?js } ?>
 
             <td class="type">

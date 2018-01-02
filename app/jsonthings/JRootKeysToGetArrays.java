@@ -6,7 +6,7 @@ package jsonthings;
 public class JRootKeysToGetArrays {
 
 
-//    String massageName;
+//    String name;
 
     JTopRootList massageInfo;
     JTopRootList leTesto;
@@ -26,12 +26,12 @@ public class JRootKeysToGetArrays {
     }
 
 
-//    public String getMassageName() {
-//        return massageName;
+//    public String getName() {
+//        return name;
 //    }
 //
-//    public void setMassageName(String massageName) {
-//        this.massageName = massageName;
+//    public void setName(String name) {
+//        this.name = name;
 //    }
 
     public JTopRootList getLeTesto() {
@@ -54,7 +54,7 @@ public class JRootKeysToGetArrays {
 
 //    @Override
 //    public String toString() {
-//        return "JRootKeysToGetArrays [massageName=" + massageName + ", massageInfo=" + massageInfo + "]";
+//        return "JRootKeysToGetArrays [name=" + name + ", massageInfo=" + massageInfo + "]";
 //    }
 
 }

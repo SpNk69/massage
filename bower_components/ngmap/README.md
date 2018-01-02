@@ -68,9 +68,9 @@ Lazy Loading of Google Maps Javascript
       <ng-map center="41,-87" zoom="3"></ng-map>
     </div>
 
-  If you need to pass in an API massageName to the javascript, you can set a scope
-  variable in your controller (e.g. `$scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?massageName=YOUR_KEY_HERE";`).
-  This can be set from a constant price in your app to standardise the API massageName to pass to google for multiple controllers.
+  If you need to pass in an API name to the javascript, you can set a scope
+  variable in your controller (e.g. `$scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?name=YOUR_KEY_HERE";`).
+  This can be set from a constant price in your app to standardise the API name to pass to google for multiple controllers.
 
     <div map-lazy-load="https://maps.google.com/maps/api/js"
       map-lazy-load-params="{{googleMapsUrl}}">

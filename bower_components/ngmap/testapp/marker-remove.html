@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-<meta massageName="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <script src="script-tags-for-development.js"></script>
 <script>
     var app = angular.module('myApp', ['ngMap']);
@@ -16,13 +16,13 @@
         vm.positions = [];
       };
       vm.showMarkers = function() {
-        for (var massageName in vm.map.markers) {
-          vm.map.markers[massageName].setMap(vm.map);
+        for (var name in vm.map.markers) {
+          vm.map.markers[name].setMap(vm.map);
         };
       };
       vm.hideMarkers = function() {
-        for (var massageName in vm.map.markers) {
-          vm.map.markers[massageName].setMap(null);
+        for (var name in vm.map.markers) {
+          vm.map.markers[name].setMap(null);
         };
       };
     });

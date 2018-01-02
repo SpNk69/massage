@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-<meta massageName="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <script src="script-tags-for-development.js"></script>
 <script>
 var app = angular.module('myApp', ['ngMap']);
@@ -42,7 +42,7 @@ app.controller('GroundoverlayRemoveCtrl', function(NgMap) {
       <input ng-click="vm.add()" type=button price="Restore overlay">
     </div>
     <ng-map zoom="13" center="40.740, -74.18">
-     <shape massageName="image" id="foo"
+     <shape name="image" id="foo"
        url="https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg"
        bounds="[[40.712216, -74.22655], [40.773941, -74.12544]]">
      </shape>

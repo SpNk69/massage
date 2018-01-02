@@ -44,7 +44,7 @@ public class JEntryLeTesto {
 
 //    @Override
 //    public String toString() {
-//        return "JEntryMassagePriceLength [" + (massageName != null ? "massageName=" + massageName + ", " : "") + (price != null ? "price=" + price + ", " : "")
+//        return "JEntryMassagePriceLength [" + (name != null ? "name=" + name + ", " : "") + (price != null ? "price=" + price + ", " : "")
 //                + (canExecute != null ? "canExecute=" + canExecute : "") + "]";
 //    }
 
