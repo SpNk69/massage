@@ -1,16 +1,32 @@
-2018-01-20 14:38:00,585 [WARN] from application in scala-execution-context-global-64 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2018-01-20 14:38:01,640 [INFO] from application in scala-execution-context-global-64 - Creating Pool for datasource 'default'
-2018-01-20 14:38:02,042 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-64 - datasource [default] bound to JNDI as DefaultDS
-2018-01-20 14:38:02,060 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-64 - Database [default] connected at jdbc:mysql://localhost:3306/play
-2018-01-20 14:38:02,302 [INFO] from application in scala-execution-context-global-64 - ApplicationTimer demo: Starting application at 2018-01-20T13:38:02.301Z
-2018-01-20 14:38:02,681 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-64 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-01-20 14:38:02,849 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-64 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2018-01-20 18:02:41,777 [WARN] from application in scala-execution-context-global-66 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-20 18:02:42,779 [INFO] from application in scala-execution-context-global-66 - Creating Pool for datasource 'default'
+2018-01-20 18:02:43,056 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-66 - datasource [default] bound to JNDI as DefaultDS
+2018-01-20 18:02:43,069 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-66 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2018-01-20 18:02:43,252 [INFO] from application in scala-execution-context-global-66 - ApplicationTimer demo: Starting application at 2018-01-20T17:02:43.251Z
+2018-01-20 18:02:43,705 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-66 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-20 18:02:43,926 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-66 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2018-01-20 14:38:02,855 [INFO] from play.api.Play in scala-execution-context-global-64 - Application started (Dev)
-2018-01-20 14:38:18,684 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-4 - Stopping server...
-2018-01-20 14:38:18,729 [INFO] from application in pool-5-thread-4 - ApplicationTimer demo: Stopping application at 2018-01-20T13:38:18.729Z after 16s.
-2018-01-20 14:38:18,730 [INFO] from application in pool-5-thread-4 - Shutting down connection pool.
+2018-01-20 18:02:43,932 [INFO] from play.api.Play in scala-execution-context-global-66 - Application started (Dev)
+2018-01-20 18:02:44,073 [WARN] from play.filters.hosts.AllowedHostsFilter in play-dev-mode-akka.actor.default-dispatcher-6 - Host not allowed: localhost:9000
+2018-01-20 18:03:08,919 [INFO] from application in scala-execution-context-global-101 - ApplicationTimer demo: Stopping application at 2018-01-20T17:03:08.919Z after 25s.
+2018-01-20 18:03:08,920 [INFO] from application in scala-execution-context-global-101 - Shutting down connection pool.
+2018-01-20 18:03:08,978 [WARN] from application in scala-execution-context-global-101 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-20 18:03:09,030 [INFO] from application in scala-execution-context-global-101 - Creating Pool for datasource 'default'
+2018-01-20 18:03:09,035 [INFO] from play.api.db.HikariCPConnectionPool in scala-execution-context-global-101 - datasource [default] bound to JNDI as DefaultDS
+2018-01-20 18:03:09,035 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-101 - Database [default] connected at jdbc:mysql://localhost:3306/play
+2018-01-20 18:03:09,036 [INFO] from application in scala-execution-context-global-101 - ApplicationTimer demo: Starting application at 2018-01-20T17:03:09.036Z
+2018-01-20 18:03:09,099 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-101 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-20 18:03:09,150 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-101 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-01-20 18:03:09,151 [INFO] from play.api.Play in scala-execution-context-global-101 - Application started (Dev)
+2018-01-20 18:03:13,547 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-6 - Stopping server...
+2018-01-20 18:03:13,563 [INFO] from application in pool-5-thread-6 - ApplicationTimer demo: Stopping application at 2018-01-20T17:03:13.563Z after 4s.
+2018-01-20 18:03:13,564 [INFO] from application in pool-5-thread-6 - Shutting down connection pool.
