@@ -8,11 +8,11 @@ GET     /sitemap.xml             controllers.Assets.at(path="/public", file="sit
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 GET     /lt            controllers.HomeController.pagrindinisLT
-GET     /TEST           controllers.HomeController.pagrindinisLTTEST
+GET     /           controllers.HomeController.pagrindinisLTTEST
 
 GET    /toFaceBook    controllers.HomeController.toFaceBook
 
-GET     /                 controllers.HomeController.germanVersion()
+#GET     /                 controllers.HomeController.germanVersion()
 
 GET     /ru                 controllers.HomeController.russianVersion()
 

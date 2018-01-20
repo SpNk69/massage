@@ -432,7 +432,7 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
             $scope.submittedFail = "Something Horrible Happened! Call 911."
         }
     };
- 
+
 
     // get massage list to pick from
     $http({
