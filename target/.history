@@ -1,1 +1,8 @@
+prod
+run prod
+run
+prod
+runProd
+playGenerateSecret
+playUpdateSecret
 runProd

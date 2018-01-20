@@ -1,0 +1,882 @@
+@(message: String, style: String = "java", contactForm: Form[_])
+@import helper._
+@defining(play.core.PlayVersion.current) { version =>
+
+<body id="page-top">
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">{{data.titlePage.title}}</a>
+        <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#{{aboutMe}}">{{data.navBar.about}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#{{gallery}}">{{data.navBar.gallery}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#{{massagesId}}">{{data.navBar.massages}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#{{pricesId}}">{{data.navBar.prices}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#{{bookit}}">{{data.navBar.book}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#{{contactMe}}">{{data.navBar.contacts}}</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="page-scroll" ng-click="doTranslate(de)"><img
+                            src='@routes.Assets.at("images/img/flag-de2.png")' alt="Vokiečių kalba"/></a>
+                </li>
+                <li class="nav-item">
+                    <a class="page-scroll" ng-click="doTranslate(lt)"><img
+                            src='@routes.Assets.at("images/img/flag-lt2.png")' alt="Vokiečių kalba"/></a>
+                </li>
+                <li class="nav-item">
+                    <a class="page-scroll" ng-click="doTranslate(ru)"><img
+                            src='@routes.Assets.at("images/img/flag-rus.png")' alt="Vokiečių kalba"/></a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+        <div class="row">
+            <!--<div class="col-lg-10 mx-auto">-->
+            <!--<h1 class="text-uppercase">-->
+            <!--<strong>Your Favorite Source of Free Bootstrap Themes</strong>-->
+            <!--</h1>-->
+            <!--<hr>-->
+            <!--</div>-->
+            <div class="col-lg-8 mx-auto">
+                <!--text-faded-->
+                <p class="text-white mb-5">{{data.introText.intro}}</p>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#{{inAHurry}}">{{data.introText.findMore}}</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--in a hurry section-->
+<section class="bg-primary" id="{{inAHurry}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading text-white">{{data.inAHurry.title}}</h2>
+                <hr class="light my-4">
+                <!--<p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>-->
+                <p class="text-faded mb-4">{{data.inAHurry.sentence}}</p>
+                <a class="btn btn-light btn-xl js-scroll-trigger" href="#{{bookit}}">{{data.inAHurry.button}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--about me section-->
+<section id="{{aboutMe}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{data.aboutMeTitle.title}}!</h2>
+                <hr class="my-4">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box mt-5 mx-auto ">
+                    <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+                    <h3 class="mb-3 ">{{data.aboutMeTitle.whoIAm}}</h3>
+                    <!--<li class="text-muted mb-0  tc">Mano vardas Vida. Atvykau iš Lietuvos. Gyvenu Šveicarijoje, Schaffhausen mieste.</li>-->
+                    <!--<li class="text-muted mb-0  tc">Man masažai - tai iššūkis ir malonumas.</li>-->
+                    <!--<li class="text-muted mb-0  tc">Iššūkis - panaikinti skausmus žmogaus kūne.</li>-->
+                    <!--<li class="text-muted mb-0  tc">Malonumas - kai nebelieka skausmų, dingsta įtampa, sugražinama gera savijauta, o žmogaus veide atsiranda šypsena.</li>-->
+                    <!--<li class="text-muted mb-0  tc">Mano tikslas yra padėti žmonėms jaustis puikiai bet kuriuo amžiaus periodu.</li>-->
+
+                    <li class="text-muted mb-0  tc"
+                        ng-repeat="item in data.aboutMeBody.whoIAm">{{item}}
+                    </li>
+
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box mt-5 mx-auto">
+                    <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+                    <h3 class="mb-3">{{data.aboutMeTitle.exp}}</h3>
+                    <!--<p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>-->
+
+                    <li class="text-muted mb-0  tc"
+                        ng-repeat="item in data.aboutMeBody.exp">{{item}}
+                    </li>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box mt-5 mx-auto">
+                    <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+                    <h3 class="mb-3">{{data.aboutMeTitle.workExp}}</h3>
+                    <!--<p class="text-muted mb-0">We update dependencies to keep things fresh.</p>-->
+
+                    <li class="text-muted mb-0  tc"
+                        ng-repeat="item in data.aboutMeBody.workExp">{{item}}
+                    </li>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box mt-5 mx-auto">
+                    <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+                    <h3 class="mb-3">{{data.aboutMeTitle.spa}}</h3>
+                    <!--<p class="text-muted mb-0">You have to make your websites with love these days!</p>-->
+                    <li class="text-muted mb-0  tc"
+                        ng-repeat="item in data.aboutMeBody.spa">{{item}}
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--gallery-->
+<section class="p-0">
+    <div class="container-fluid p-0" id="{{gallery}}">
+        <div class="row no-gutters popup-gallery">
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/fullsize/testPhoto.jpg")'>
+                    <img class="img-fluid" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testPhoto.jpg")'
+                         alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/fullsize/4.jpg")'>
+                    <img class="img-fluid" src='@routes.Assets.at("design2/img/portfolio/thumbnails/4.jpg")' alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/d.jpg")'>
+                    <img class="img-fluid" src='@routes.Assets.at("design2/img/portfolio/d.jpg")' alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/fullsize/4.jpg")'>
+                    <img class="img-fluid" src='@routes.Assets.at("design2/img/portfolio/thumbnails/4.jpg")' alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/fullsize/5.jpg")'>
+                    <img class="img-fluid" src='@routes.Assets.at("design2/img/portfolio/thumbnails/5.jpg")' alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/fullsize/6.jpg")'>
+                    <img class="img-fluid" src='@routes.Assets.at("design2/img/portfolio/thumbnails/6.jpg")' alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<script src="http://maps.google.com/maps/api/js"></script>-->
+<!--<script src='@routes.Assets.at("design2/ng-map.min.js")'></script>-->
+<section class="container">
+    <!--<div class="container">-->
+    <!--<div class="row" >-->
+    <!--<div class="col-lg-12 text-center">-->
+    <h2 class="section-heading text-center">{{data.navBar.massages}}</h2>
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <hr class="my-4">
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="row   " id="{{massagesId}}">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.limphoBody}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.limphoBody"
+                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.limphoBody}}</p>
+                    <p><a ng-click="pickMassage()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.limphoFace}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.limphoFace"
+                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.limphoFace}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.stoneHotCold}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.stoneHotCold"
+                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.stoneHotCold}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.backSpin}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.backSpin" ng-tt-chars-threshold="{{truncateSize}}">
+                        {{data.massageBody.backSpin}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.older}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.older" ng-tt-chars-threshold="{{truncateSize}}">
+                        {{data.massageBody.older}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.relaxBody}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.relaxBody"
+                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.relaxBody}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.ajurved}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.ajurved" ng-tt-chars-threshold="{{truncateSize}}">
+                        {{data.massageBody.ajurved}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.antice}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.antice" ng-tt-chars-threshold="{{truncateSize}}">
+                        {{data.massageBody.antice}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.relaxFoot}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.relaxFoot"
+                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.relaxFoot}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.sepHead}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.sepHead"
+                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepHead}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.sepNeck}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.sepNeck"
+                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepNeck}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.sepStoma}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.sepStoma"
+                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepStoma}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail ">
+                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                     alt="...">
+                <div class="caption">
+                    <h3 class="tc2">{{data.massageTitle.sepWaist}}</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.sepWaist"
+                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepWaist}}</p>
+                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+<section class="container ">
+    <div class=" col-lg-12 text-center" id="{{pricesId}}">
+
+        <h2 class="section-heading">{{data.prices.title}}</h2>
+        <hr class="my-4">
+
+        <table class="table">
+
+
+            <thead class="thead-default">
+            <tr>
+                <th></th>
+                <th ng-repeat="value in data.prices.spaTitle track by $index">{{value}}</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <!--spa-->
+            <tr>
+                <th scope="row">1</th>
+                <td ng-repeat="value in data.prices.limphoBody track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td ng-repeat="value in data.prices.limphoFace track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td ng-repeat="value in data.prices.stoneHotCold track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td ng-repeat="value in data.prices.backSpin track by $index">{{value}}</td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">5</th>
+                <td ng-repeat="value in data.prices.relaxBody track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td ng-repeat="value in data.prices.ajurved track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td ng-repeat="value in data.prices.relaxFoot track by $index">{{value}}</td>
+            </tr>
+
+            <!--Anti cel-->
+            <tr>
+                <th></th>
+                <th ng-repeat="value in data.prices.anticel track by $index">{{value}}</th>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td ng-repeat="value in data.prices.antiSed track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td ng-repeat="value in data.prices.antiTig track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td ng-repeat="value in data.prices.antiSto track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td ng-repeat="value in data.prices.antiTro track by $index">{{value}}</td>
+            </tr>
+
+            <!--Separate body parts-->
+            <tr>
+                <th></th>
+                <th ng-repeat="value in data.prices.sepPar track by $index">{{value}}</th>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td ng-repeat="value in data.prices.waist track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td ng-repeat="value in data.prices.neck track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td ng-repeat="value in data.prices.head track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td ng-repeat="value in data.prices.stoma track by $index">{{value}}</td>
+            </tr>
+
+            <!--For kids-->
+            <tr>
+                <th></th>
+                <th ng-repeat="value in data.prices.kidsMas track by $index">{{value}}</th>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td ng-repeat="value in data.prices.kidBackSpin track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td ng-repeat="value in data.prices.kidsNeck track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td ng-repeat="value in data.prices.kidsWaist track by $index">{{value}}</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td ng-repeat="value in data.prices.kidsFull track by $index">{{value}}</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</section>
+<!--class="bg-dark text-white"-->
+<section class="" id="{{bookit}}">
+
+
+    <div class="  col-md-8  col-lg-8 mx-auto text-center ">
+        <h3 class="labelDiv">{{data.formNames.title}}</h3>
+        <hr class="my-4">
+
+        <br>
+
+        <form name="myForm" novalidate>
+
+            <div class="inputDiv  ">
+                <label for="labelFirstName" class="labelDiv">{{data.formNames.name}}</label>
+                <input class="col-lg-8 mx-auto text-center bookingForm form-control " type="text" ng-model="user.firstName"
+                       placeholder={{data.formPH.name}}
+                       id="labelFirstName" name="sname">
+
+                <span class="submitError">{{errors.invalidName}}</span>
+                <!-- {{myForm | json}} -->
+            </div>
+
+            <br>
+
+            <div class="inputDiv ">
+                <label for="labelSurname" class="labelDiv">{{data.formNames.surname}}</label>
+                <input class=" col-lg-8 mx-auto text-center bookingForm form-control" type="text" ng-model="user.lastName"
+                       placeholder={{data.formPH.surname}} id="labelSurname" name="sname">
+                <span class="submitError">{{errors.invalidLastName}}</span>
+
+            </div>
+            <br>
+
+            <div class="inputDiv ">
+                <label class="item item-input labelDiv">{{data.formNames.email}}</label>
+                <input class=" col-lg-8 mx-auto text-center bookingForm form-control" type="text" placeholder={{data.formPH.email}}
+                       ng-model="user.email"
+                       name="email">
+                <span class="submitError">{{errors.invalidEmail || invalidEmailFormat}}</span>
+            </div>
+            <br>
+            <div class="inputDiv ">
+                <label class="item item-input labelDiv">{{data.formNames.phone}}</label>
+                <input class=" col-lg-8 mx-auto text-center bookingForm form-control" type="tel" placeholder={{data.formPH.phone}}
+                       ng-model="user.phone"
+                       name="number">
+                <span class="submitError">{{errors.invalidPhone}}</span>
+            </div>
+            <br>
+
+
+            <div class="inputDiv ">
+                <label class="item item-input labelDiv">{{data.formNames.massage}}</label>
+                <select class=" col-lg-8 mx-auto text-center bookingForm form-control" ng-model="user.massage"
+                        ng-options="item.massageName  +' = '+  item.price +' CHF '+'('+ item.length + 'min)' +'' for item in loxx.massageInfo"
+                        <!--ng-change="pickMassage(lala)"-->
+                >
+
+                    <option  class="labelDiv " value="">{{data.formPH.massage}}</option>
+                </select>
+                <span class="submitError">{{errors.invalidMassage}}</span>
+            </div>
+            </br>
+
+            <div class="row">
+                <div class=" col-sm-6 ">
+                    <label class="item item-input labelDiv">{{data.formNames.date}}</label>
+                    <div class=" col-lg-8 mx-auto text-center bookingForm form-control" moment-picker="chosenDate"
+                         format="YYYY-MM-DD"
+                         selectable="disabledDates(date, type)"
+                         max-view="month"
+                         min-view="mindate"
+                         min-date="startDate"
+                         start-view="month"
+                         autoclose="true"
+                         today="true"
+                         start-date="startDate">
+
+                        {{ chosenDate || data.formPH.date }}
+                    </div>
+                    <span class="submitError">{{errors.invalidDate}}</span>
+
+                </div>
+
+                <div class=" col-sm-6  ">
+                    <label class="item item-input labelDiv">{{data.formNames.time}}</label>
+                    <div class=" col-lg-8 mx-auto text-center bookingForm form-control" moment-picker="chosenTime"
+                         format="HH:mm"
+                         max-view="hour"
+                         autoclose="true"
+                         selectable="disabledTimes(date, type)"
+                         min-date="startHour"
+                         max-date="endHour"
+                         today="true"
+                         show-header="false">
+
+                        {{ chosenTime || data.formPH.time }}
+                    </div>
+                    <span class="submitError">{{errors.invalidTime}}</span>
+
+                </div>
+            </div>
+
+            <br>
+
+            <!-- <span>Pasirinkite Laiką</span>-->
+
+            <br>
+            <div class="inputDiv ">
+
+
+                <label class="item item-input labelDiv">{{data.formNames.message}}</label>
+                <textarea class=" col-lg-8 mx-auto text-center bookingForm" placeholder={{data.formPH.message}}
+                          ng-model="user.message"
+                          name="textarea" rows="3" cols="30"></textarea>
+                <br>
+
+
+            </div>
+            <div class="labelDiv">
+                <!--<br>
+                <button ng-click="checkSubmittedData()">Tikrinti kas įvesta</button> {{pizdiec}}
+                <br>
+                {{megaFail}}
+                <br>-->
+
+
+                <button ng-click="submitFullForm()">{{data.formNames.button}}</button>
+                <br>
+                <span class="submitSuccess">{{submittedSuccess}}</span>
+                <span class="submitError">{{submittedFail}}</span>
+                <span class="submitError">{{submitError}}</span>
+                <br>
+            </div>
+
+
+        </form>
+        <!--{{loxx}}-->
+        <!--
+                <div>
+                    <h3>Jūsų pateikėte šią informaciją:</h3>
+                    First Name: {{submittedFirstName}}<br>
+                    Last Name: {{submittedLastName}}<br>
+                    Email: {{submittedEmail}}<br>
+                    Phone: {{submittedPhone}}<br>
+                    Massage: {{submittedMassage}}<br>
+                    Date: {{submittedDate}}<br>
+                    Time: {{submittedTime}}<br>
+                    Message: {{submittedMessage}}<br>
+
+
+
+                </div>-->
+    </div>
+
+
+    <!--<div class="container text-center">-->
+    <!--<h2 class="mb-4">BOOKING FORM HERE</h2>-->
+    <!--<a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download-->
+    <!--Now!</a>-->
+    <!--</div>-->
+</section>
+
+<!--<section id="{{contactMe}}">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-lg-8 mx-auto text-center">-->
+<!--<h2 class="section-heading">Let's Get In Touch!</h2>-->
+<!--<hr class="my-4">-->
+<!--<p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an-->
+<!--email and we will get back to you as soon as possible!</p>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="row">-->
+<!--<div class="col-lg-4 ml-auto text-center">-->
+<!--<i class="fa fa-phone fa-3x mb-3 sr-contact"></i>-->
+<!--<p>+41-79789 7010</p>-->
+<!--</div>-->
+<!--<div class="col-lg-4 mr-auto text-center">-->
+<!--<i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>-->
+<!--<p>-->
+<!--<a href="mailto:info@@vidamassage.ch">info@@vidamassage.ch</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+<!--<script src='@routes.Assets.at("design2/angular-recaptcha.js")'></script>-->
+
+
+<hr>
+
+<script src='@routes.Assets.at("design2/ng-map.min.js")'></script>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading">{{data.contactForm.secTitle}}</h2>
+                <hr class="my-4">
+                <p class="mb-5">{{data.contactForm.sentence}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6  ">
+                <div class="well well-sm ">
+                    <form class="form-horizontal " >
+                        <fieldset class="">
+                            <legend class="text-center">{{data.contactForm.title}}</legend>
+
+                            <!-- Name input-->
+                            <div class="form-group ">
+                                <label class="col-md-12 control-label  text-center" for="name">{{data.contactForm.name}}</label>
+                                <div class="col-md-9 centerContactUs ">
+                                    <input id="name" ng-model="cfName" name="name" type="text" placeholder="{{data.contactForm.namePH}}"
+                                           class="form-control">
+                                    <span class="submitError">{{contactFormErrors.name}}</span>
+                                </div>
+                            </div>
+
+                            <!-- Email input-->
+                            <div class="form-group">
+                                <label class="col-md-12 control-label text-center" for="email">{{data.contactForm.email}}</label>
+                                <div class="col-md-9 centerContactUs">
+                                    <input id="email" ng-model="cfEmail" name="email" type="text" placeholder="{{data.contactForm.emailPH}}"
+                                           class="form-control">
+                                    <span class="submitError">{{contactFormErrors.email}}</span>
+
+                                </div>
+                            </div>
+
+                            <!-- Message body -->
+                            <div class="form-group">
+                                <label class="col-md-12 control-label text-center" for="message">{{data.contactForm.question}}</label>
+                                <div class="col-md-9 control-label centerContactUs">
+                                    <textarea class="form-control" ng-model="cfMessage" id="message" name="message"
+                                              placeholder="{{data.contactForm.questionPH}}" rows="5"></textarea>
+                                    <span class="submitError">{{contactFormErrors.message}}</span>
+
+                                </div>
+                            </div>
+
+                            <!-- Form actions -->
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button ng-click="submitFunctionForm()" class="btn btn-primary btn-lg">{{data.contactForm.button}}</button>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!--<div class="g-recaptcha" data-sitekey="6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8"></div>-->
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6  text-center ">
+
+
+                <ul class="list-inline banner-social-buttons">
+                    <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+                    <p>+41-79789 7010</p>
+                </ul>
+
+                <ul class="list-inline banner-social-buttons">
+                    <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+                    <p>
+                        <a href="mailto:info@@vidamassage.ch">info@@vidamassage.ch</a>
+                    </p>
+                </ul>
+
+                <!--<h3>Mūsų socialiniai tinklai</h3>-->
+                <legend class="text-center">{{data.contactForm.socNet}}</legend>
+
+                <ul class="list-inline banner-social-buttons">
+                    <li><a href="@routes.HomeController.toFaceBook" class="btn btn-default btn-lg"><i
+                            class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<hr>
+<section class="">
+    <div class="row">
+    <div class="col-lg-12 mx-auto text-center" map-lazy-load="https://maps.google.com/maps/api/js"
+         map-lazy-load-params="{{googleMapsUrl}}">
+        <ng-map center="47.6966658,8.6320883" zoom="18"></ng-map>
+
+    </div>
+    </div>
+</section>
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src='@routes.Assets.at("design2/vendor/jquery/jquery.min.js")'></script>
+<script src='@routes.Assets.at("design2/vendor/bootstrap/js/bootstrap.bundle.min.js")'></script>
+
+<!-- Plugin JavaScript -->
+<script src='@routes.Assets.at("design2/vendor/jquery-easing/jquery.easing.min.js")'></script>
+<script src='@routes.Assets.at("design2/vendor/scrollreveal/scrollreveal.min.js")'></script>
+<script src='@routes.Assets.at("design2/vendor/magnific-popup/jquery.magnific-popup.min.js")'></script>
+
+<!-- Custom scripts for this template -->
+<script src='@routes.Assets.at("design2/js/creative.min.js")'></script>
+
+</body>
+
+}

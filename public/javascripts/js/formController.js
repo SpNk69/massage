@@ -1,4 +1,5 @@
-var app = angular.module('myFormApp', ['moment-picker']); //ngMessages
+// var app = angular.module('myFormApp', ['moment-picker']); //ngMessages
+var app = angular.module('myTestApp', ['moment-picker']); //ngMessages
 
 app.config(['momentPickerProvider', function (momentPickerProvider) {
     momentPickerProvider.options({
@@ -7,6 +8,199 @@ app.config(['momentPickerProvider', function (momentPickerProvider) {
 }]);
 
 app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
+    $scope.language = document.getElementsByTagName("html").item(0).getAttribute("lang");
+
+
+    var formNames = {
+        "name": {
+            "lt": "Vardas",
+            "de": "Name",
+            "ru": "Имя"
+        },
+        "surname": {
+            "lt": "Pavardė",
+            "de": "Nachname",
+            "ru": "Фамилия"
+        },
+        "email": {
+            "lt": "Elektroninis paštas",
+            "de": "E-Mail",
+            "ru": "Электронная почта"
+        }
+        ,
+        "phone": {
+            "lt": "Telefono numeris",
+            "de": "Telefonnummer",
+            "ru": "Номер телефона"
+        }
+        ,
+        "massage": {
+            "lt": "Masažas",
+            "de": "Massage",
+            "ru": "Массаж"
+        },
+        "date": {
+            "lt": "Data",
+            "de": "Datum",
+            "ru": "Дата"
+        },
+        "time": {
+            "lt": "Laikas",
+            "de": "Zeit",
+            "ru": "Время"
+        },
+        "message": {
+            "lt": "Žinutė",
+            "de": "Nachricht",
+            "ru": "Сообщение"
+        }
+        ,
+        "button": {
+            "lt": "Rezervuoti",
+            "de": "Buche es",
+            "ru": "Забронировать"
+        },
+        "title": {
+            "lt": "Užsisakykite masažą jums patogiu laiku!",
+            "de": "Buchen Sie Ihre Massage nach Ihren Wünschen!",
+            "ru": "Закажите свой массаж в удобное для вас время!\n"
+        }
+    };
+
+
+    var placeHolderNames={
+        "name": {
+            "lt": "Įveskite vardą",
+            "de": "Geben Sie einen Namen ein",
+            "ru": "Введите имя"
+        },
+        "surname": {
+            "lt": "Įveskite pavardę",
+            "de": "Geben Sie einen Nachnamen ein",
+            "ru": "Введите фамилию"
+        },
+        "email": {
+            "lt": "Įveskite elektroninį paštą",
+            "de": "E-Mail eingeben",
+            "ru": "Введите адрес электронной почты"
+        }
+        ,
+        "phone": {
+            "lt": "Įveskite telefono numerį",
+            "de": "Geben Sie eine Telefonnummer ein",
+            "ru": "Введите номер телефона"
+        }
+        ,
+        "massage": {
+            "lt": "Pasirinkite masažą",
+            "de": "Wählen Sie eine Massage",
+            "ru": "Выберите массаж"
+        },
+        "date": {
+            "lt": "Pasirinkite datą",
+            "de": "Wählen Sie ein Datum aus",
+            "ru": "Выберите дату"
+        },
+        "time": {
+            "lt": "Pasirinkite laiką",
+            "de": "Wähle eine Zeit aus",
+            "ru": "Выберите время"
+        },
+        "message": {
+            "lt": "Papildomi pageidavimai",
+            "de": "Zusätzliche Anfragen",
+            "ru": "Дополнительные запросы"
+        }
+    };
+
+
+
+
+    var errorCodesWhenNotFilled={
+        "name": {
+            "lt": "Neįvestas vardas",
+            "de": "Kein Name eingegeben",
+            "ru": "Имя не введено"
+        },
+        "surname": {
+            "lt": "Neįvesta pavardė",
+            "de": "Nachname nicht eingegeben",
+            "ru": "Фамилия не введена"
+        },
+        "email": {
+            "lt": "Neįvestas elektroninis paštas",
+            "de": "Keine E-Mail-Adresse eingegeben",
+            "ru": "Не введено электронное письмо"
+        }
+        ,
+        "phone": {
+            "lt": "Neįvestas telefono numeris",
+            "de": "Telefonnummer nicht eingegeben",
+            "ru": "Номер телефона не введен"
+        }
+        ,
+        "massage": {
+            "lt": "Nepasirinktas masažas",
+            "de": "Massage ist nicht ausgewählt",
+            "ru": "Массаж не выбран"
+        },
+        "date": {
+            "lt": "Nepasirinkta data",
+            "de": "Kein Datum ausgewählt",
+            "ru": "Дата не выбрана"
+        },
+        "time": {
+            "lt": "Nepasirinktas laikas",
+            "de": "Keine Zeit ausgewählt",
+            "ru": "Не выбрано времени"
+        },
+        "emailBadFormat": {
+            "lt": "Neteisingas elektroninio pašto adresas",
+            "de": "Ungültige E-Mail-Adresse",
+            "ru": "Недопустимый адрес электронной почты"
+        }
+    };
+
+
+
+
+
+
+    function getValueByLang(langValue,mapMultipleLanguages,topKey){
+        if(langValue === "lt"){
+            return mapMultipleLanguages[topKey]["lt"];
+        }else if(langValue === "de"){
+            return mapMultipleLanguages[topKey]["de"];
+
+        }else if(langValue === "ru"){
+            return mapMultipleLanguages[topKey]["ru"];
+        }else{
+            return "SHIT HAPPENED";
+        }
+    }
+
+    $scope.dynamicName=getValueByLang($scope.language,formNames,"name");
+    $scope.dynamicSurname=getValueByLang($scope.language,formNames,"surname");
+    $scope.dynamicEmail=getValueByLang($scope.language,formNames,"email");
+    $scope.dynamicPhone=getValueByLang($scope.language,formNames,"phone");
+    $scope.dynamicMassage=getValueByLang($scope.language,formNames,"massage");
+    $scope.dynamicDate=getValueByLang($scope.language,formNames,"date");
+    $scope.dynamicTime=getValueByLang($scope.language,formNames,"time");
+    $scope.dynamicMessage=getValueByLang($scope.language,formNames,"message");
+    $scope.dynamicButton=getValueByLang($scope.language,formNames,"button");
+    $scope.dynamicTitle=getValueByLang($scope.language,formNames,"title");
+
+    $scope.dynamicPHName= getValueByLang($scope.language,placeHolderNames,"name")
+    $scope.dynamicPHSurname=getValueByLang($scope.language,placeHolderNames,"surname");
+    $scope.dynamicPHEmail=getValueByLang($scope.language,placeHolderNames,"email");
+    $scope.dynamicPHPhone=getValueByLang($scope.language,placeHolderNames,"phone");
+    $scope.dynamicPHMassage=getValueByLang($scope.language,placeHolderNames,"massage");
+    $scope.dynamicPHDate=getValueByLang($scope.language,placeHolderNames,"date");
+    $scope.dynamicPHTime=getValueByLang($scope.language,placeHolderNames,"time");
+    $scope.dynamicPHMessage=getValueByLang($scope.language,placeHolderNames,"message");
+    // console.log(document.getElementsByTagName("html").item(0).getAttribute("lang"));
+
+
 
     $scope.user = {
         firstName: "",
@@ -15,27 +209,31 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
         phone: "",
         massage: "",
         message: ""
+        // defaultDate:"Pasirinkite datą",
+        // defaultTime:"Pasirinkite laiką"
     };
-    // $scope.chosenDate="";
-    // $scope.chosenTime="";
+    $scope.chosenDate="";
+    $scope.chosenTime="";
+    // $scope.stuff="Pasirinkite laiką";
+
 
     // range of available (not disabled) hours
-    $scope.startHour = "09:00"
-    $scope.endHour = "23:00"
+    $scope.startHour = "09:00";
+    $scope.endHour = "23:00";
 
     //format
     // commented out so nothing is preset
-    $scope.chosenDate = moment().format('YYYY-MM-DD');
-    $scope.chosenTime = moment.locale('lt');
-    $scope.chosenTime = moment().format('L LTS');
+    // $scope.chosenDate = moment().format('YYYY-MM-DD');
+    // $scope.chosenTime = moment.locale('lt');
+    // $scope.chosenTime = moment().format('LTS');
     $scope.startDate = moment().format('YYYY-MM-DD')
 
     // function to disable dates in calendar if needed
     $scope.disabledDates = function (date, type) {
-        $scope.suka = date.format('DDDo');
-        $scope.suka2 = type;
+        // $scope.suka = date.format('DDDo');
+        // $scope.suka2 = type;
         //formatas parinktas kad 2'a metu diena 'laisva'
-        $scope.takenOrOffDate = "2";
+        $scope.takenOrOffDate = "15";
         // disable all Sundays and Saturdays in the Month View
         return type != 'day' || date.format('dddd') != 'Sunday' && date.format('dddd') != 'Saturday' && date.format('DDD') != $scope.takenOrOffDate;
     };
@@ -48,98 +246,62 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
         return type != 'hour' || date.format('HH') != $scope.takenOrOffTime;
     };
 
+    function emptyOrUndefined(field, error){
+        if (angular.isUndefined(field) || field.length <1){
+            return error;
+        }else{
+            return "";
+        }
+    }
+
+    function returnTrueIfValid(x){
+        if(x === ""){
+            return true;
+        }
+    }
+
+    function ifNotFilled(field,error){
+        if(field.length <1){
+            return error;
+        }else{
+            return "";
+        }
+    }
+
+    function checkEmail(field,error1,error2){
+        if(field.length<1){
+            return error1;
+        }else if(!field.includes("@")  && field.length>0){
+            return error2;
+        }else{
+            return "";
+        }
+    }
 
     // validate that input was entered
     function validate(){
-        var check1=false;
-        var check2=false;
-        var check3=false;
-        var check4=false;
-        var check5=false;
-        var check6=false;
-        var check7=false;
-        var check8=false;
 
-        if($scope.user.firstName.length <1){
-            $scope.invalidName="Neivestas Vardas";
-             check1=false;
-        }else{
-            $scope.invalidName="";
-            check1=true;
-        }
+        $scope.invalidName=ifNotFilled($scope.user.firstName,getValueByLang($scope.language,errorCodesWhenNotFilled,"name"));
+        $scope.invalidLastName=ifNotFilled($scope.user.lastName,getValueByLang($scope.language,errorCodesWhenNotFilled,"surname"));
+        $scope.invalidEmail=checkEmail($scope.user.email,getValueByLang($scope.language,errorCodesWhenNotFilled,"email"),getValueByLang($scope.language,errorCodesWhenNotFilled,"emailBadFormat"));
+        $scope.invalidPhone=ifNotFilled($scope.user.phone,getValueByLang($scope.language,errorCodesWhenNotFilled,"phone"));
+        $scope.invalidMassage=ifNotFilled($scope.user.massage,getValueByLang($scope.language,errorCodesWhenNotFilled,"massage"));
+        $scope.invalidDate=emptyOrUndefined($scope.chosenDate,getValueByLang($scope.language,errorCodesWhenNotFilled,"date"));
+        $scope.invalidTime=emptyOrUndefined($scope.chosenTime,getValueByLang($scope.language,errorCodesWhenNotFilled,"time"));
 
-        if($scope.user.lastName.length <1){
-            $scope.invalidLastName="Neivesta Pavarde";
-            check2=false;
-        }else{
-            $scope.invalidLastName="";
-            check2=true;
-
-        }
-
-        if($scope.user.email.length <2 || !$scope.user.email.match("@")){
-            $scope.invalidEmail="Neivestas Email arba blogas formatas";
-            check3=false;
-        }else{
-            $scope.invalidEmail="";
-
-            check3=true;
-
-        }
-
-        if($scope.user.phone.length <1){
-            $scope.invalidPhone="Neivestas Tel.nr";
-            check4=false;
-        }else{
-            $scope.invalidPhone="";
-            check4=true;
-        }
-
-
-        if($scope.user.massage.length <1){
-            $scope.invalidMassage="Nepasirinktas masazas";
-            check5=false;
-        }else{
-            $scope.invalidMassage="";
-            check5=true;
-
-        }
-        if($scope.chosenDate.length <1){
-            $scope.invalidDate="Nepasirinkta data";
-            check7=false;
-        }else{
-            $scope.invalidDate="";
-            check7=true;
-
-        }
-        if($scope.chosenTime.length <1){
-            $scope.invalidTime="Nepasirinktas laikas";
-            check8=false;
-        }else{
-            $scope.invalidTime="";
-            check8=true;
-
-        }
-
-        // To Do specific validation
-      // if($scope.user.message.length <1){
-      if(false){
-            $scope.invalidMessage="Ner zinuts";
-          check6=false;
-        }else{
-          $scope.invalidMessage="";
-          check6=true;
-
-      }
-
-return check1 && check2 && check3 && check4 && check5 && check6 && check7 && check8;
-
+        return returnTrueIfValid($scope.invalidName) &&
+               returnTrueIfValid($scope.invalidLastName) &&
+               returnTrueIfValid($scope.invalidEmail) &&
+               returnTrueIfValid($scope.invalidPhone) &&
+               returnTrueIfValid($scope.invalidMassage) &&
+               returnTrueIfValid($scope.invalidDate) &&
+               returnTrueIfValid($scope.invalidTime);
     }
 
     $scope.checkSubmittedData = function () {
-        console.log("lala");
-        console.log("SO " + $scope.user.massage.massageName);
+
         if(validate()){
+
             $scope.submittedFirstName = $scope.user.firstName;
             $scope.submittedLastName = $scope.user.lastName;
             $scope.submittedEmail = $scope.user.email;
@@ -159,21 +321,25 @@ return check1 && check2 && check3 && check4 && check5 && check6 && check7 && che
     };
 
     function resetForm(){
-        $scope.ggg="";
         $scope.user = {
             firstName: "",
             lastName: "",
             email: "",
             phone: "",
             massage: "",
-            message: ""
+            message: "",
+            // defaultDate:"Pasirinkite datą",
+            // defaultTime:"Pasirinkite laiką"
         };
+        $scope.chosenDate="";
+        $scope.chosenTime="";
 
 
-        $scope.chosenDate = moment().format('YYYY-MM-DD');
-        $scope.chosenTime = moment.locale('lt');
-        $scope.chosenTime = moment().format('L LTS');
-        $scope.startDate = moment().format('YYYY-MM-DD')
+
+        // $scope.chosenDate = moment().format('YYYY-MM-DD');
+        // $scope.chosenTime = moment.locale('lt');
+        // $scope.chosenTime = moment().format('L LTS');
+        // $scope.startDate = moment().format('YYYY-MM-DD')
     }
 
 

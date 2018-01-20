@@ -6,7 +6,8 @@
 *@
 @(title: String)(content: Html)
 <!DOCTYPE html>
-<html lang=en >
+
+<html lang=lt>
 <head>
 
 </head>
@@ -20,7 +21,7 @@
 <script src='@routes.Assets.at("javascripts/js/formController.js")'></script>
 <!--<script src='@routes.Assets.at("javascripts/js/moment.min.js")'></script>-->
 <script src='@routes.Assets.at("javascripts/js/moment-with-locales.min.js")'></script>
-<link href='@routes.Assets.at("javascripts/js/turbo.css")' rel=stylesheet>
+<link href='@routes.Assets.at("javascripts/js/formStyle.css")' rel=stylesheet>
 
 <script src='@routes.Assets.at("javascripts/js/angular-moment-picker.js")'></script>
 <script src='@routes.Assets.at("javascripts/js/angular-moment-picker.min.js")'></script>
@@ -32,115 +33,135 @@
 
 
 
-
-<div ng-app="myFormApp" class="center-div">
-
+<section>
 
 
+    <div ng-app="myFormApp" class="formMainContainer" >
 
 
-    <div  ng-controller="FormController">
-        <h3>Užpildykite formą :)</h3>
+
+    <div  ng-controller="FormController" class="formDiv">
+
+        <h3 class="labelDiv">{{dynamicTitle}}</h3>
+        <br>
 
         <form name="myForm" novalidate>
 
-            <label for="labelFirstName">Vardas:</label> <br/>
-            <input type="text" ng-model="user.firstName" placeholder="Vardas" id="labelFirstName" name="sname" ><br>
+            <div class="inputDiv row ">
+            <label for="labelFirstName" class="labelDiv">{{dynamicName}}</label>
+            <input class="justrying"type="text" ng-model="user.firstName" placeholder={{dynamicPHName}} id="labelFirstName" name="sname" >
 
-            <span>{{invalidName}}</span>
+            <span class="submitError">{{invalidName}}</span>
            <!-- {{myForm | json}} -->
-            <br>
-
-            <label for="labelSurname">Pavardė:</label> <br/>
-            <input type="text" ng-model="user.lastName" placeholder="Pavardė" id="labelSurname" name="sname"><br>
-            <span>{{invalidLastName}}</span>
-
-            <br>
-
-            <label class="item item-input">Elektroninis Paštas </label> <br/>
-            <input type="text" placeholder="Email" ng-model="user.email" name="email" ><br>
-            <span>{{invalidEmail}}</span>
-
-            <br>
-
-            <label class="item item-input">Telefono Numeris</label> <br/>
-            <input type="tel" placeholder="Phone" ng-model="user.phone" name="number" > <br>
-            <span>{{invalidPhone}}</span>
-
-            <br>
-
-
-            <label class="item item-input">Pasirinkite Masažą</label> <br/>
-            <select ng-model="user.massage"
-                    ng-options="item.massageName  +' = '+  item.price +' CHF '+'('+ item.length + 'min)' +'' for item in loxx.massageInfo">
-                <option value="">--------------</option>
-            </select>
-            <br>
-            <span>{{invalidMassage}}</span>
-
-
-
-            <br/><br>
-            <label class="item item-input">Pasirinkite Datą</label> <br/>
-            <div moment-picker="chosenDate"
-                 format="YYYY-MM-DD"
-                 selectable="disabledDates(date, type)"
-                 max-view="month"
-                 min-view="mindate"
-                 min-date="startDate"
-                 start-view="month"
-                 autoclose="true"
-                 today="true"
-                 start-date="chosenDate">
-
-                {{ chosenDate || "--------" }}
             </div>
-            <span >{{invalidDate}}</span>
+
+                <br>
+
+            <div class="inputDiv row ">
+            <label for="labelSurname" class="labelDiv">{{dynamicSurname}}</label>
+            <input class="justrying" type="text" ng-model="user.lastName" placeholder={{dynamicPHSurname}} id="labelSurname" name="sname">
+            <span class="submitError">{{invalidLastName}}</span>
+
+            </div>
+            <br>
+
+            <div class="inputDiv row ">
+            <label class="item item-input labelDiv">{{dynamicEmail}}</label>
+            <input class="justrying" type="text" placeholder={{dynamicPHEmail}} ng-model="user.email" name="email" >
+            <span class="submitError">{{invalidEmail || invalidEmailFormat}}</span>
+            </div>
+            <br>
+            <div class="inputDiv row ">
+            <label class="item item-input labelDiv" >{{dynamicPhone}}</label>
+            <input class="justrying" type="tel" placeholder={{dynamicPHPhone}} ng-model="user.phone" name="number" >
+            <span class="submitError">{{invalidPhone}}</span>
+            </div>
+            <br>
+
+
+            <div class="inputDiv row ">
+            <label class="item item-input labelDiv">{{dynamicMassage}}</label>
+            <select class="justrying" ng-model="user.massage"
+                    ng-options="item.massageName  +' = '+  item.price +' CHF '+'('+ item.length + 'min)' +'' for item in loxx.massageInfo">
+                <option class="labelDiv" value="">{{dynamicPHMassage}}</option>
+            </select>
+            <span class="submitError">{{invalidMassage}}</span>
+            </div>
+            </br>
+
+            <div class="row">
+            <div  class=" col-sm-6 ">
+                <label class="item item-input labelDiv">{{dynamicDate}}</label>
+                <div class="justrying" moment-picker="chosenDate"
+                     format="YYYY-MM-DD"
+                     selectable="disabledDates(date, type)"
+                     max-view="month"
+                     min-view="mindate"
+                     min-date="startDate"
+                     start-view="month"
+                     autoclose="true"
+                     today="true"
+                     start-date="startDate">
+
+                    {{  chosenDate || dynamicPHDate }}
+                </div>
+                <span class="submitError">{{invalidDate}}</span>
+
+            </div>
+
+                <div  class=" col-sm-6 ">
+                    <label class="item item-input labelDiv">{{dynamicTime}}</label>
+                    <div class="justrying" moment-picker="chosenTime"
+                         format="HH:mm"
+                         max-view="hour"
+                         autoclose="true"
+                         selectable="disabledTimes(date, type)"
+                         min-date="startHour"
+                         max-date="endHour"
+                         today="true"
+                         show-header="false">
+
+                        {{ chosenTime || dynamicPHTime }}
+                    </div>
+                    <span class="submitError">{{invalidTime}}</span>
+
+                </div>
+            </div>
+
             <br>
 
            <!-- <span>Pasirinkite Laiką</span>-->
-            <label class="item item-input">Pasirinkite Datą</label> <br/>
-            <div moment-picker="chosenTime"
-                 format="HH:mm"
-                 max-view="hour"
-                 autoclose="true"
-                 selectable="disabledTimes(date, type)"
-                 min-date="startHour"
-                 max-date="endHour"
-                 today="true"
-                 start-date="chosenTime"
-                 show-header="false">
 
-            {{ chosenTime || "----------" }}
+            <br>
+            <div class="inputDiv row ">
+
+
+            <label class="item item-input labelDiv">{{dynamicMessage}}</label>
+            <textarea class="justrying" placeholder={{dynamicPHMessage}} ng-model="user.message" name="textarea" rows="3" cols="30"></textarea>
+            <br>
+
+
             </div>
-            <span >{{invalidTime}}</span>
-            <br>
-
-            <label class="item item-input">Jūsų žinutė</label> <br/>
-            <textarea placeholder="Pageidavimai" ng-model="user.message" name="textarea" rows="4" cols="30"></textarea>
-            <br>
-            <span >{{invalidMessage}}</span>
-            <br>
-            <br>
-
-            <br>
+            <div class="labelDiv">
+            <!--<br>
             <button ng-click="checkSubmittedData()">Tikrinti kas įvesta</button> {{pizdiec}}
             <br>
             {{megaFail}}
+            <br>-->
+
+
+
+
+            <button ng-click="submitFullForm()">{{dynamicButton}}</button><br>
+            <span class="submitSuccess">{{submittedSuccess}}</span>
+            <span class="submitError">{{submittedFail}}</span>
+            <span class="submitError">{{submitError}}</span>
             <br>
-
-
-
-
-            <button ng-click="submitFullForm()">Užsakyti/Rezervuoti</button> {{pizdiec}}
-            {{submittedSuccess}}
-            {{submittedFail}}
-            {{submitError}}
-            <br>
+            </div>
 
 
         </form>
-
+<!--
         <div>
             <h3>Jūsų pateikėte šią informaciją:</h3>
             First Name: {{submittedFirstName}}<br>
@@ -154,7 +175,7 @@
 
 
 
-        </div>
+        </div>-->
     </div>
 
 
@@ -162,7 +183,7 @@
 
 </div>
 
-
+</section>
 
 </body>
 

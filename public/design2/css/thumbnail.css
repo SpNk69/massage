@@ -1,0 +1,87 @@
+.provideBorder{
+    border: 1px solid #81a2be;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.doCenter{
+    align-self: center;
+    display:block;
+}
+
+.tc{
+    text-align: justify;
+    margin:auto;
+}
+.tc2{
+    text-align: center;
+}
+.tc3{
+    text-align: center;
+}
+.centerContactUs {
+    float: none;
+    margin: 0 auto;
+}
+
+.bookingForm{
+    border:2px solid #d28f40;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /*height:28px;*/
+
+}
+
+/*.chi{*/
+    /*margin:1px;*/
+/*}*/
+
+/*.imgSize{*/
+    /*max-height:400px;*/
+/*}*/
+.padla{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.kurva{
+    align-self: flex-end;
+}
+
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.list-item {
+    display: flex;
+    padding: 0.5em;
+    width: 100%;
+}
+
+
+.list-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1em;
+    width: 100%;
+}
+.list-content p {
+    flex: 1 0 auto;
+}
+
+
+
+
+

@@ -2,240 +2,118 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec72ac84-4374-4999-8edc-66fc5f9faa8c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/intro-background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/navbar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/navbar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/nav.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/testingThumbnail.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/css/PRmiXeptR36kaC0GEAetxhgVThLs8Y7ETJzDCYFCSLE.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/css/PRmiXeptR36kaC0GEAetxpiMaisvaUVUsYyVzOmndek.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/main2TEST.scala.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/css/creative.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/css/creative.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/css/thumbnail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/js/creative.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/js/creative.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/myTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/ng-text-truncate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_bootstrap-overrides.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_global.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_masthead.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_navbar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_portfolio.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_services.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/creative.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap-grid.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap-reboot.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap-reboot.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/js/bootstrap.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/js/bootstrap.bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/screen-reader.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_screen-reader.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/jquery-easing/jquery.easing.compatibility.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/jquery-easing/jquery.easing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/jquery-easing/jquery.easing.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/magnific-popup/jquery.magnific-popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/magnific-popup/jquery.magnific-popup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/magnific-popup/magnific-popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/scrollreveal/scrollreveal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/scrollreveal/scrollreveal.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/zeba.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/js/formStyle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/FullFormMagic.java" afterPath="$PROJECT_DIR$/app/controllers/FullFormMagic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jsonthings/JEntryLeTesto.java" afterPath="$PROJECT_DIR$/app/jsonthings/JEntryLeTesto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jsonthings/JEntryMassagePriceLength.java" afterPath="$PROJECT_DIR$/app/jsonthings/JEntryMassagePriceLength.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java" afterPath="$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java" afterPath="$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/actualPage.scala.html" afterPath="$PROJECT_DIR$/app/views/actualPage.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main2.scala.html" afterPath="$PROJECT_DIR$/app/views/main2.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main2de.scala.html" afterPath="$PROJECT_DIR$/app/views/main2de.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main2ru.scala.html" afterPath="$PROJECT_DIR$/app/views/main2ru.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/README.md" afterPath="$PROJECT_DIR$/bower_components/ngmap/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/Attr2MapOptions.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/Attr2MapOptions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/GeoCoder.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/GeoCoder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/GoogleMapsApi.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/GoogleMapsApi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/NavigatorGeolocation.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/NavigatorGeolocation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/NgMap.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/NgMap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/NgMapPool.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/NgMapPool.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/StreetView.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/StreetView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/bicycling-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/bicycling-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/custom-control.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/custom-control.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/directions.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/directions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/drawing-manager.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/drawing-manager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/dynamic-maps-engine-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/dynamic-maps-engine-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fusion-tables-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/fusion-tables-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/heatmap-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/heatmap-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/index.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/info-window.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/info-window.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/kml-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/kml-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/map-data.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/map-data.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/map-lazy-load.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/map-lazy-load.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/map-type.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/map-type.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/maps-engine-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/maps-engine-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/marker.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/marker.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/ngMap.ng-map.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/ngMap.ng-map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/ngmap.custom-marker.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/ngmap.custom-marker.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/overlay-map-type.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/overlay-map-type.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/places-auto-complete.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/places-auto-complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/shape.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/shape.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/Attr2MapOptions.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/Attr2MapOptions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/GeoCoder.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/GeoCoder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/GoogleMapsApi.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/GoogleMapsApi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/NavigatorGeolocation.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/NavigatorGeolocation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/NgMap.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/NgMap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/NgMapPool.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/NgMapPool.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/StreetView.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/StreetView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/bicycling-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/bicycling-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/custom-control.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/custom-control.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/directions.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/directions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/drawing-manager.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/drawing-manager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/dynamic-maps-engine-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/dynamic-maps-engine-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/fusion-tables-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/fusion-tables-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/heatmap-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/heatmap-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/info-window.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/info-window.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/kml-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/kml-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/map-data.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/map-data.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/map-lazy-load.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/map-lazy-load.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/map-type.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/map-type.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/maps-engine-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/maps-engine-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/marker.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/marker.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/ngMap.ng-map.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/ngMap.ng-map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/ngmap.custom-marker.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/ngmap.custom-marker.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/overlay-map-type.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/overlay-map-type.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/places-auto-complete.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/places-auto-complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/shape.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/shape.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/streetview-panorama.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/streetview-panorama.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/traffic-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/traffic-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/transit-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/source/transit-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/streetview-panorama.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/streetview-panorama.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/traffic-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/traffic-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/build/docs/transit-layer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/build/docs/transit-layer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/scripts/prettify/Apache-License-2.0.txt" afterPath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/static/scripts/prettify/Apache-License-2.0.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/container.tmpl" afterPath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/container.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/mainpage.tmpl" afterPath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/mainpage.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/members.tmpl" afterPath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/members.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/method.tmpl" afterPath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/method.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/params.tmpl" afterPath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/params.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/properties.tmpl" afterPath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/properties.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/tutorial.tmpl" afterPath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/tutorial.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/type.tmpl" afterPath="$PROJECT_DIR$/bower_components/ngmap/config/jsdoc/template/tmpl/type.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/aerial-rotate.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/aerial-rotate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/aerial-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/aerial-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/all-examples.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/all-examples.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/circle-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/circle-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-custom-state.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-custom-state.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-custom.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-custom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-disableUI.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-disableUI.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-options.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-options.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-positioning.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-positioning.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/control-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-control.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-control.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker-2.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker-clusterer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker-clusterer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker-custom-style.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker-custom-style.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker-ng-repeat.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker-ng-repeat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker-two-way-binding.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker-two-way-binding.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/custom-marker.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions-with-current-location.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions-with-current-location.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions-with-custom-marker.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions-with-custom-marker.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions-with-ng-repeat-panels.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions-with-ng-repeat-panels.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions2.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/directions2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/drawing-manager.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/drawing-manager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-arguments.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-arguments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-domlistener.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-domlistener.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-properties.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-properties.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/event-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/events.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/geojson.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/geojson.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/groundoverlay-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/groundoverlay-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/icon-complex.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/icon-complex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/icon-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/icon-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow-simple-max.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow-simple-max.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow-template.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow-template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_compile.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_compile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_geolookup.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_geolookup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_ng_click.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_ng_click.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-bicycling.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-bicycling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-dynamic.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-dynamic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-quakes-advanced.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-quakes-advanced.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-quakes-default.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-quakes-default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-quakes-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-quakes-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-style.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-data-style.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-dynamicmapsengine.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-dynamicmapsengine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-heatmap.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-heatmap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-query.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-query.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-styling.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-fusiontables-styling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-georss.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-georss.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-heatmap.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-heatmap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-kml-features.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-kml-features.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-kml.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-kml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-mapsengine.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-mapsengine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-style-event.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-style-event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-traffic.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-traffic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-transit.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/layer-transit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-coordinates.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-coordinates.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-geolocation.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-geolocation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-gulp-usemin.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-gulp-usemin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-gulp-usemin/map-gulp-usemin.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-gulp-usemin/map-gulp-usemin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-initialized-callback.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-initialized-callback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-initialized.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-initialized.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-lazy-inint.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-lazy-inint.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-lazy-load-params.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-lazy-load-params.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-projection-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-projection-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-with-dynamic-id.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map-with-dynamic-id.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_app.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_app.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_control.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_control.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_events.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_fit_bounds.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_fit_bounds.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_geo_fallback_center.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_geo_fallback_center.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_no_default_style.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_no_default_style.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_options.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_options.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_address.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_address.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_current_position.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_current_position.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_dynamic_address.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_dynamic_address.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_dynamic_center.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_with_dynamic_center.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_zoom_to_include_markers.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/map_zoom_to_include_markers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/mapsenginelayer-noauth-layerid.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/mapsenginelayer-noauth-layerid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/mapsenginelayer-noauth-layerkey.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/mapsenginelayer-noauth-layerkey.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-base.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-image-overlay.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-image-overlay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-image.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-image.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-overlay.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-overlay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-styled-complex.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-styled-complex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-styled-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/maptype-styled-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-animations-iteration.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-animations-iteration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-animations.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-animations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-clusterer.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-clusterer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-remove.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-remove.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-symbol-custom.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-symbol-custom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-symbol-predefined.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-symbol-predefined.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-with-default-options.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker-with-default-options.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_data_with_ng_repeat.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_data_with_ng_repeat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_dynamic_ng_repeat.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_dynamic_ng_repeat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_icon.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_icon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_on_street_view.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_on_street_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_address.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_address.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_current_position.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_current_position.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_dynamic_address.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_dynamic_address.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_ng_repeat_dynamic.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_ng_repeat_dynamic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_ng_repeat_no_watcher.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_ng_repeat_no_watcher.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_parent_controller.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/marker_with_parent_controller.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/multiple_maps_on_a_page.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/multiple_maps_on_a_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-custom.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-custom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-hideshow.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-hideshow.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-remove.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-remove.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-animate.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-animate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-arrow.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-arrow.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-custom.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-custom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-dashed.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/overlay-symbol-dashed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/places-auto-complete.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/places-auto-complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-arrays.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-arrays.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-autoclose.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-autoclose.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-draggable.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-draggable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/polygon-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polyline-complex.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/polyline-complex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polyline-remove.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/polyline-remove.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/polyline-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/polyline-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-event.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-simple.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-zoom.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-zoom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape_circle_with_current_position.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape_circle_with_current_position.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape_circle_with_dynamic_address.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape_circle_with_dynamic_address.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape_with_ng_repeat.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/shape_with_ng_repeat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view-panorama.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view-panorama.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view-panorama_container.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view-panorama_container.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view-panorama_container2.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view-panorama_container2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view_road_trip.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/street-view_road_trip.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/ui-bootstrap.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/ui-bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/ui-router.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/ui-router.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/ui-router2.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/ui-router2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/ngmap/testapp/user-editable-shapes.html" afterPath="$PROJECT_DIR$/bower_components/ngmap/testapp/user-editable-shapes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" afterPath="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/application.conf" afterPath="$PROJECT_DIR$/conf/application.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/production.conf" afterPath="$PROJECT_DIR$/conf/production.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-google-map/README.md" afterPath="$PROJECT_DIR$/node_modules/angular-google-map/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-google-map/src/index.html" afterPath="$PROJECT_DIR$/node_modules/angular-google-map/src/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/js/formController.js" afterPath="$PROJECT_DIR$/public/javascripts/js/formController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/index.html" afterPath="$PROJECT_DIR$/public/stylesheets/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/less/grayscale.less" afterPath="$PROJECT_DIR$/public/stylesheets/less/grayscale.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/sass/grayscale.scss" afterPath="$PROJECT_DIR$/public/stylesheets/sass/grayscale.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/public/stylesheets/vendor/font-awesome/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/js/turbo.css" afterPath="$PROJECT_DIR$/public/javascripts/js/turbo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/.history" afterPath="$PROJECT_DIR$/target/.history" />
     </list>
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -261,124 +139,94 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.28562692">
+    <splitter split-orientation="horizontal" split-proportion="0.23571898">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file leaf-file-name="actualPage.scala.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/actualPage.scala.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="820">
-                  <caret line="69" column="16" lean-forward="false" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-                  <folding>
-                    <marker date="1514738222616" expanded="true" signature="3088:3497" ph="..." />
-                    <marker date="1514738222616" expanded="true" signature="3726:4128" ph="..." />
-                    <marker date="1514738222616" expanded="true" signature="4877:5304" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="calledFromRoutes.scala.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/calledFromRoutes.scala.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                <state relative-caret-position="3720">
+                  <caret line="186" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="adminPage.scala.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/adminPage.scala.html">
+          <file leaf-file-name="pagrindinisContentTEST.scala.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1028">
+                  <caret line="238" column="30" lean-forward="false" selection-start-line="238" selection-start-column="30" selection-end-line="238" selection-end-column="30" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="production.conf" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/conf/production.conf">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ng-map.min.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/design2/ng-map.min.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-4057">
+                  <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pagrindinisContent.scala.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="220">
+                  <caret line="125" column="60" lean-forward="false" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="60" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="russianContent.scala.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/russianContent.scala.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="580">
-                  <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                  <caret line="131" column="169" lean-forward="false" selection-start-line="127" selection-start-column="97" selection-end-line="131" selection-end-column="169" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="turbo.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/javascripts/js/turbo.css">
+          <file leaf-file-name="germanContent.scala.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+                <state relative-caret-position="160">
+                  <caret line="128" column="97" lean-forward="false" selection-start-line="128" selection-start-column="97" selection-end-line="132" selection-end-column="87" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="JRootKeysToGetArrays.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java">
+          <file leaf-file-name="main2TEST.scala.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#858#859#0" expanded="true" />
-                    <element signature="e#904#905#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JTopRootList.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/jsonthings/JTopRootList.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+                <state relative-caret-position="260">
+                  <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="JFullFormSubmit.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java">
+          <file leaf-file-name="whatever.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/design2/vendor/font-awesome/css/whatever.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-329">
-                  <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JEntryMassagePriceLength.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/jsonthings/JEntryMassagePriceLength.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#389#390#0" expanded="true" />
-                    <element signature="e#423#424#0" expanded="true" />
-                    <element signature="e#477#478#0" expanded="true" />
-                    <element signature="e#523#524#0" expanded="true" />
-                    <element signature="e#555#556#0" expanded="true" />
-                    <element signature="e#583#584#0" expanded="true" />
-                    <element signature="e#625#626#0" expanded="true" />
-                    <element signature="e#659#660#0" expanded="true" />
-                    <element signature="e#689#690#0" expanded="true" />
-                    <element signature="e#718#719#0" expanded="true" />
-                    <element signature="e#759#760#0" expanded="true" />
-                    <element signature="e#795#796#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/conf/logback.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="329">
-                  <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="application.conf" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/conf/application.conf">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="560">
-                  <caret line="367" column="23" lean-forward="false" selection-start-line="367" selection-start-column="23" selection-end-line="367" selection-end-column="23" />
+                <state relative-caret-position="40">
+                  <caret line="2" column="127" lean-forward="false" selection-start-line="2" selection-start-column="127" selection-end-line="2" selection-end-column="127" />
                   <folding />
                 </state>
               </provider>
@@ -387,110 +235,32 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
+        <leaf>
+          <file leaf-file-name="formController.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/javascripts/js/formController.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="316">
-                  <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="156" selection-end-column="5" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FullFormMagic.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/FullFormMagic.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#3664#3665#0" expanded="true" />
-                    <element signature="e#3717#3718#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="rectangle-zoom.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-zoom.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="10" />
+                <state relative-caret-position="0">
+                  <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="map-lazy-load.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/bower_components/ngmap/build/docs/map-lazy-load.html">
+          <file leaf-file-name="myTest.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="358">
-                  <caret line="244" column="194" lean-forward="false" selection-start-line="244" selection-start-column="194" selection-end-line="244" selection-end-column="194" />
+                <state relative-caret-position="447">
+                  <caret line="450" column="0" lean-forward="false" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="info-window.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/bower_components/ngmap/build/docs/info-window.html">
+          <file leaf-file-name="application.conf" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/conf/application.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="358">
-                  <caret line="250" column="21" lean-forward="false" selection-start-line="250" selection-start-column="21" selection-end-line="250" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="infowindow_ng_click.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_ng_click.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="icon-simple.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/bower_components/ngmap/testapp/icon-simple.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="routes" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/conf/routes">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="700">
-                  <caret line="35" column="70" lean-forward="false" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JEntryLeTesto.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/jsonthings/JEntryLeTesto.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#486#487#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="adminController.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/javascripts/js/adminController.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+                <state relative-caret-position="920">
+                  <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -510,36 +280,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>submitFullForm</find>
-      <find>member</find>
-      <find>submitMe</find>
-      <find>membersince</find>
-      <find>selectedItem</find>
-      <find>Item</find>
-      <find>chosenDate</find>
-      <find>email</find>
-      <find>submittedFirstName</find>
-      <find>mas</find>
-      <find>massa</find>
-      <find>massage</find>
-      <find>c</find>
-      <find>conf</find>
-      <find>confi</find>
-      <find>config</find>
-      <find>configu</find>
-      <find>configura</find>
-      <find>configuratio</find>
-      <find>configuration</find>
-      <find>&lt;</find>
-      <find>&lt;c</find>
-      <find>&lt;conf</find>
-      <find>&lt;confi</find>
-      <find>&lt;config</find>
-      <find>&lt;configu</find>
-      <find>&lt;configuration</find>
-      <find>&lt;configuration&gt;</find>
-      <find>massageName</find>
-      <find>name</find>
+      <find>open</find>
+      <find>opensan</find>
+      <find>opensans</find>
+      <find>wh</find>
+      <find>url</find>
+      <find>scroll</find>
+      <find>https://fonts.gstatic.com/s/opensans/v15/</find>
+      <find>revea</find>
+      <find>More</find>
+      <find>getMap()</find>
+      <find>xxx</find>
+      <find>bandymas</find>
+      <find>bandy</find>
+      <find>getMassage</find>
+      <find>dynamic</find>
+      <find>header.jpg</find>
+      <find>bg-primary</find>
+      <find>masažai</find>
+      <find>myTestController</find>
+      <find>shit happened</find>
+      <find>checksubmittedData</find>
+      <find>fullform</find>
+      <find>provideBorder</find>
+      <find>data</find>
+      <find>provideborder</find>
+      <find>provide</find>
+      <find>dark</find>
+      <find>angular</find>
+      <find>truncate</find>
+      <find>nafik</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -547,6 +317,11 @@
       <replace>&lt;/em&gt;</replace>
       <replace>name</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/public/design2/scss</dir>
+      <dir>$PROJECT_DIR$/public/design2/vendor</dir>
+      <dir>$PROJECT_DIR$/public/design2</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -559,27 +334,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/js/mypage.html" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/angular-material.min.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/angular-messages.min.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/angular-aria.min.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/angular-animate.min.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/angular-material.min.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/kendo.common-material.min.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/kendo.material.min.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/kendo.material.mobile.min.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/jquery.min.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/what.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/kendo.all.min.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/moment-with-locales.min.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/angular-messages.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/angular.min.js" />
-        <option value="$PROJECT_DIR$/app/jsonthings/JEntry.java" />
-        <option value="$PROJECT_DIR$/app/views/germanContent.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/russianContent.scala.html" />
-        <option value="$PROJECT_DIR$/app/jsonthings/JSuperRoot.java" />
-        <option value="$PROJECT_DIR$/app/jsonthings/massagePriceList.java" />
         <option value="$PROJECT_DIR$/app/jsonthings/JsonRoot.java" />
         <option value="$PROJECT_DIR$/app/jsonthings/MassagePriceList.java" />
         <option value="$PROJECT_DIR$/app/jsonthings/OtherTestThings.java" />
@@ -594,22 +348,43 @@
         <option value="$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java" />
         <option value="$PROJECT_DIR$/app/jsonthings/JEntryMassageAndPrices.java" />
         <option value="$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java" />
-        <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/public/javascripts/js/adminController.js" />
         <option value="$PROJECT_DIR$/public/javascripts/js/route.js" />
         <option value="$PROJECT_DIR$/test/JsonTest.java" />
         <option value="$PROJECT_DIR$/conf/logback.xml" />
         <option value="$PROJECT_DIR$/build.sbt" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/turbo.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/index.html" />
         <option value="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_ng_click.html" />
-        <option value="$PROJECT_DIR$/app/views/actualPage.scala.html" />
         <option value="$PROJECT_DIR$/app/jsonthings/JEntryMassagePriceLength.java" />
-        <option value="$PROJECT_DIR$/app/controllers/HomeController.java" />
-        <option value="$PROJECT_DIR$/conf/application.conf" />
-        <option value="$PROJECT_DIR$/public/javascripts/js/formController.js" />
         <option value="$PROJECT_DIR$/app/views/adminPage.scala.html" />
         <option value="$PROJECT_DIR$/app/controllers/FullFormMagic.java" />
+        <option value="$PROJECT_DIR$/public/javascripts/js/turbo.css" />
+        <option value="$PROJECT_DIR$/app/views/actualPage.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/pagrindinis.scala.html" />
+        <option value="$PROJECT_DIR$/app/controllers/HomeController.java" />
+        <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/app/views/pagrindinisTEST.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/main2de.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/germanContent.scala.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/css/whatever.css" />
+        <option value="$PROJECT_DIR$/public/stylesheets/css/whatever2.css" />
+        <option value="$PROJECT_DIR$/public/javascripts/js/TEST.js" />
+        <option value="$PROJECT_DIR$/public/design2/css/creative.css" />
+        <option value="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" />
+        <option value="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/public/design2/vendor/font-awesome/css/whatever.css" />
+        <option value="$PROJECT_DIR$/public/design2/css/creative.min.css" />
+        <option value="$PROJECT_DIR$/public/javascripts/js/formController.js" />
+        <option value="$PROJECT_DIR$/public/design2/ng-map.min.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/js/formStyle.css" />
+        <option value="$PROJECT_DIR$/public/design2/css/thumbnail.css" />
+        <option value="$PROJECT_DIR$/public/design2/zeba.js" />
+        <option value="$PROJECT_DIR$/app/views/main2TEST.scala.html" />
+        <option value="$PROJECT_DIR$/public/design2/ng-text-truncate.js" />
+        <option value="$PROJECT_DIR$/public/design2/myTest.js" />
+        <option value="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
+        <option value="$PROJECT_DIR$/conf/application.conf" />
       </list>
     </option>
   </component>
@@ -621,11 +396,12 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/bower_components/ngmap/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="3840" />
     <option name="y" value="-4" />
-    <option name="width" value="1855" />
+    <option name="width" value="1920" />
     <option name="height" value="1204" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -804,7 +580,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="design2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -822,7 +598,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="design2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -844,29 +620,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="design2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="play-java-starter-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -884,11 +642,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
+              <option name="myItemId" value="design2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="play-java-starter-example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fullsize" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1023,20 +815,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="logbac&#9;FILE&#9;file:///home/alex/git/web/conf/logback.xml&#10;LoggerAction&#9;PSI&#9;JAVA://ch.qos.logback.classic.joran.action.LoggerAction&#10; mass&#9;FILE&#9;file:///home/alex/git/web/app/jsonthings/massagePriceList.java&#10;science&#9;FILE&#9;file:///home/alex/git/web/app/views/science.scala.js" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/javascripts/js" />
-      <recent name="$PROJECT_DIR$/app/views" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/public/images/img" />
-      <recent name="$PROJECT_DIR$/app/lt/views" />
+      <recent name="$PROJECT_DIR$/public/design2" />
+      <recent name="$PROJECT_DIR$/public/design2/img/portfolio" />
+      <recent name="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails" />
+      <recent name="$PROJECT_DIR$/public/design2/img/portfolio/fullsize" />
+      <recent name="$PROJECT_DIR$/public/design2/img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="jsonthings" />
       <recent name="views.formdata" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails" />
+      <recent name="$PROJECT_DIR$/public/design2/vendor/font-awesome/css" />
       <recent name="$PROJECT_DIR$/public/javascripts/js" />
       <recent name="$PROJECT_DIR$/public/images/img" />
     </key>
@@ -1443,6 +1238,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1500135523417</updated>
+      <workItem from="1515097933674" duration="96019000" />
+      <workItem from="1515844366342" duration="70617000" />
     </task>
     <servers />
   </component>
@@ -1473,16 +1270,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33508000" />
+    <option name="totallyTimeSpent" value="207871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1204" extended-state="6" />
+    <frame x="3840" y="-4" width="1920" height="1204" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16076294" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11989101" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1495,7 +1292,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11859838" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20677084" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328792" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1529,8 +1326,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27247956" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.206469" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328792" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13541667" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287796" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1561,279 +1358,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/what.js" />
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/kendo.all.min.js" />
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/angular-moment-picker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/angular-moment-picker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/angular-material.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="30957" lean-forward="false" selection-start-line="3" selection-start-column="30957" selection-end-line="3" selection-end-column="30957" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/moment-with-locales.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="307810" lean-forward="false" selection-start-line="0" selection-start-column="307810" selection-end-line="0" selection-end-column="307810" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main2.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/angular-messages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="649" column="41" lean-forward="false" selection-start-line="649" selection-start-column="41" selection-end-line="649" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/srcs/scala-parser-combinators_2.12-1.0.6-sources.jar!/scala/util/parsing/json/Parser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="106" column="11" lean-forward="false" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/russianContent.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JsonKeys.java" />
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/OtherTestThings.java" />
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JsonKeyToGetArray.java" />
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JsonRoot.java" />
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JSuperRoot.java" />
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/MassagePriceList.java" />
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/TestClass.java" />
-    <entry file="file://$PROJECT_DIR$/app/views/calledFromRoutesAdmin.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="304" column="40" lean-forward="false" selection-start-line="304" selection-start-column="40" selection-end-line="304" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.d.ts" />
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JTopRootList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.8.9-sources.jar!/com/fasterxml/jackson/databind/JsonNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="863" column="77" lean-forward="false" selection-start-line="863" selection-start-column="69" selection-end-line="863" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/calledFromRoutes.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13409">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/JsonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.2.3-sources.jar!/ch/qos/logback/classic/joran/action/LoggerAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/turbo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1790">
-          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/ngmap/build/docs/map-lazy-load.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="244" column="194" lean-forward="false" selection-start-line="244" selection-start-column="194" selection-end-line="244" selection-end-column="194" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/ngmap/build/docs/info-window.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="250" column="21" lean-forward="false" selection-start-line="250" selection-start-column="21" selection-end-line="250" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_ng_click.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/ngmap/testapp/icon-simple.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JEntryLeTesto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="e#486#487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-329">
-          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="35" column="70" lean-forward="false" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="156" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/jsonthings/JEntryMassagePriceLength.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/production.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1841,46 +1369,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/application.conf">
+    <entry file="file://$PROJECT_DIR$/app/views/adminPage.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="367" column="23" lean-forward="false" selection-start-line="367" selection-start-column="23" selection-end-line="367" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="1332">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/formdata/ContactFormData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/js/angular-moment-picker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-zoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/FullFormMagic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="e#3717#3718#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/formController.js">
+    <entry file="file://$PROJECT_DIR$/app/views/germanPagrindinis.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="149" column="38" lean-forward="false" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
+        <state relative-caret-position="420">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/actualPage.scala.html">
+    <entry file="file://$PROJECT_DIR$/app/views/calledFromRoutes.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="69" column="16" lean-forward="false" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-          <folding>
-            <marker date="1514738222616" expanded="true" signature="3088:3497" ph="..." />
-            <marker date="1514738222616" expanded="true" signature="3726:4128" ph="..." />
-            <marker date="1514738222616" expanded="true" signature="4877:5304" ph="..." />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pagrindinis.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1888,22 +1432,284 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/js/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main2de.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pagrindinisTEST.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/russianPagrindinis.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/css/grayscale.css" />
+    <entry file="file://$PROJECT_DIR$/public/design2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main2.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/js/TEST.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/css/creative.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/img/hot-cold-stones.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/css/grayscale.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="2126" lean-forward="false" selection-start-line="4" selection-start-column="2123" selection-end-line="4" selection-end-column="2126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/vendor/font-awesome/css/whatever.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1004">
+          <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/nav.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5228#5229#0" expanded="true" />
+            <element signature="e#5288#5289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/img/portfolio/fullsize/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="3977" column="261" lean-forward="false" selection-start-line="3977" selection-start-column="25" selection-end-line="3977" selection-end-column="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/vendor/font-awesome/css/whatever.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="127" lean-forward="false" selection-start-line="2" selection-start-column="127" selection-end-line="2" selection-end-column="127" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/adminPage.scala.html">
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/img/header.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/img/intro-background.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/css/creative.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/actualPage.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3720">
+          <caret line="186" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/js/formController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/russianContent.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <caret line="131" column="169" lean-forward="false" selection-start-line="127" selection-start-column="97" selection-end-line="131" selection-end-column="169" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/ngmap/testapp/rectangle-zoom.html">
+    <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="128" column="97" lean-forward="false" selection-start-line="128" selection-start-column="97" selection-end-line="132" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/ng-map.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4057">
+          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="125" column="60" lean-forward="false" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/js/turbo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/js/formStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/css/thumbnail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/angular-recaptcha.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/ng-text-truncate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/zeba.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4820">
+          <caret line="567" column="25" lean-forward="false" selection-start-line="567" selection-start-column="21" selection-end-line="567" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="450" column="0" lean-forward="false" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1028">
+          <caret line="238" column="30" lean-forward="false" selection-start-line="238" selection-start-column="30" selection-end-line="238" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/production.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="10" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
           <folding />
         </state>
       </provider>

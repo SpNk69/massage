@@ -52,6 +52,15 @@ public class HomeController extends Controller {
         return ok(pagrindinis.render("", userForm));
     }
 
+
+
+    public Result pagrindinisLTTEST() {
+        Form<ContactFormData> userForm = formFactory.form(ContactFormData.class).bindFromRequest();
+        return ok(pagrindinisTEST.render("", userForm));
+    }
+
+
+
     public Result germanVersion() {
 
         Form<ContactFormDataDE> userForm = formFactory.form(ContactFormDataDE.class).bindFromRequest();

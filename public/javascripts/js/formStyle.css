@@ -1,0 +1,72 @@
+.center-main {
+    margin: auto;
+    width: 100%;
+    /*border: 3px solid #ad7448;*/
+    padding: 10px;
+}
+
+.formBorder{
+    border: 3px solid #be702d;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.formMainContainer {
+    margin: auto;
+    /*width: 60%;*/
+    border: 3px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+.justrying{
+    height: auto;
+    width: 50%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border-color: #d28f40;
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    background-color: #F5F5F5;
+    min-width:250px;
+}
+
+.formDiv{
+    align-items: center;
+}
+
+.inputDiv{
+    /*border: 2px dashed #2196F3;*/
+}
+.inputDivMassage{
+    /*border: 2px dashed #2196F3;*/
+}
+
+
+.labelDiv{
+    align-self: center;
+    /*border: 2px dashed #950B02;*/
+    margin: auto;
+    width:50%;
+    text-align: center;
+    display: block;
+    padding-bottom: 5px;
+}
+
+
+.submitError{
+    text-align: center;
+    display: block;
+    color: crimson;
+    font-size:90%;
+}
+.submitSuccess{
+    text-align: center;
+    display: block;
+    color: green;
+    font-size:90%;
+}
