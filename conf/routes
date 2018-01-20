@@ -9,6 +9,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 GET     /lt            controllers.HomeController.pagrindinisLT
 GET     /           controllers.HomeController.pagrindinisLTTEST
+GET     /TEST           controllers.HomeController.pagrindinisLTTEST
 
 GET    /toFaceBook    controllers.HomeController.toFaceBook
 
