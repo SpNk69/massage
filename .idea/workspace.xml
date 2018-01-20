@@ -2,118 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec72ac84-4374-4999-8edc-66fc5f9faa8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/header.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/intro-background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/navbar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/navbar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/nav.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/testingThumbnail.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/css/PRmiXeptR36kaC0GEAetxhgVThLs8Y7ETJzDCYFCSLE.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/css/PRmiXeptR36kaC0GEAetxpiMaisvaUVUsYyVzOmndek.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/main2TEST.scala.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/css/creative.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/css/creative.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/css/thumbnail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/js/creative.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/js/creative.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/myTest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/ng-text-truncate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_bootstrap-overrides.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_global.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_masthead.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_navbar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_portfolio.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_services.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/scss/creative.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap-grid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap-grid.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap-reboot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap-reboot.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/js/bootstrap.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/js/bootstrap.bundle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/screen-reader.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_screen-reader.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/jquery-easing/jquery.easing.compatibility.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/jquery-easing/jquery.easing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/jquery-easing/jquery.easing.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/magnific-popup/jquery.magnific-popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/magnific-popup/jquery.magnific-popup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/magnific-popup/magnific-popup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/scrollreveal/scrollreveal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/vendor/scrollreveal/scrollreveal.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/design2/zeba.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/js/formStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/actualPage.scala.html" afterPath="$PROJECT_DIR$/app/views/actualPage.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" afterPath="$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/application.conf" afterPath="$PROJECT_DIR$/conf/application.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/js/formController.js" afterPath="$PROJECT_DIR$/public/javascripts/js/formController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/js/turbo.css" afterPath="$PROJECT_DIR$/public/javascripts/js/turbo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/.history" afterPath="$PROJECT_DIR$/target/.history" />
     </list>
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -139,7 +28,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.23571898">
+    <splitter split-orientation="horizontal" split-proportion="0.15101773">
       <split-first>
         <leaf>
           <file leaf-file-name="actualPage.scala.html" pinned="false" current-in-tab="false">
@@ -259,8 +148,8 @@
           <file leaf-file-name="application.conf" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/conf/application.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="920">
-                  <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+                <state relative-caret-position="460">
+                  <caret line="290" column="150" lean-forward="false" selection-start-line="290" selection-start-column="150" selection-end-line="290" selection-end-column="150" />
                   <folding />
                 </state>
               </provider>
@@ -1708,8 +1597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        <state relative-caret-position="460">
+          <caret line="290" column="150" lean-forward="false" selection-start-line="290" selection-start-column="150" selection-end-line="290" selection-end-column="150" />
           <folding />
         </state>
       </provider>
