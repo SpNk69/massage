@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec72ac84-4374-4999-8edc-66fc5f9faa8c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ec72ac84-4374-4999-8edc-66fc5f9faa8c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -148,8 +146,8 @@
           <file leaf-file-name="application.conf" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/conf/application.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="298" column="13" lean-forward="true" selection-start-line="298" selection-start-column="13" selection-end-line="298" selection-end-column="13" />
+                <state relative-caret-position="600">
+                  <caret line="297" column="1" lean-forward="false" selection-start-line="297" selection-start-column="1" selection-end-line="297" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -281,9 +279,9 @@
         <option value="$PROJECT_DIR$/app/views/main2TEST.scala.html" />
         <option value="$PROJECT_DIR$/public/design2/ng-text-truncate.js" />
         <option value="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
-        <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/public/design2/myTest.js" />
         <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/conf/application.conf" />
       </list>
     </option>
   </component>
@@ -1608,8 +1606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="298" column="13" lean-forward="true" selection-start-line="298" selection-start-column="13" selection-end-line="298" selection-end-column="13" />
+        <state relative-caret-position="600">
+          <caret line="297" column="1" lean-forward="false" selection-start-line="297" selection-start-column="1" selection-end-line="297" selection-end-column="1" />
           <folding />
         </state>
       </provider>
