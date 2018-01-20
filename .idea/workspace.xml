@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec72ac84-4374-4999-8edc-66fc5f9faa8c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/application.conf" afterPath="$PROJECT_DIR$/conf/application.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/design2/myTest.js" afterPath="$PROJECT_DIR$/public/design2/myTest.js" />
     </list>
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -28,7 +28,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.15101773">
+    <splitter split-orientation="horizontal" split-proportion="0.22358176">
       <split-first>
         <leaf>
           <file leaf-file-name="actualPage.scala.html" pinned="false" current-in-tab="false">
@@ -51,7 +51,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="production.conf" pinned="false" current-in-tab="true">
+          <file leaf-file-name="production.conf" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/conf/production.conf">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
@@ -61,10 +61,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ng-map.min.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ng-map.min.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/design2/ng-map.min.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-4057">
+                <state relative-caret-position="-11117">
                   <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
                   <folding />
                 </state>
@@ -135,21 +135,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="myTest.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="myTest.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="447">
-                  <caret line="450" column="0" lean-forward="false" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
+                <state relative-caret-position="141">
+                  <caret line="434" column="1" lean-forward="false" selection-start-line="434" selection-start-column="1" selection-end-line="434" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application.conf" pinned="false" current-in-tab="true">
+          <file leaf-file-name="application.conf" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/conf/application.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="290" column="150" lean-forward="false" selection-start-line="290" selection-start-column="150" selection-end-line="290" selection-end-column="150" />
+                <state relative-caret-position="540">
+                  <caret line="294" column="8" lean-forward="true" selection-start-line="294" selection-start-column="8" selection-end-line="294" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -271,9 +271,9 @@
         <option value="$PROJECT_DIR$/public/design2/zeba.js" />
         <option value="$PROJECT_DIR$/app/views/main2TEST.scala.html" />
         <option value="$PROJECT_DIR$/public/design2/ng-text-truncate.js" />
-        <option value="$PROJECT_DIR$/public/design2/myTest.js" />
         <option value="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
+        <option value="$PROJECT_DIR$/public/design2/myTest.js" />
       </list>
     </option>
   </component>
@@ -1181,7 +1181,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20677084" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14427084" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328792" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1505,14 +1505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/ng-map.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4057">
-          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1571,14 +1563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="450" column="0" lean-forward="false" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1028">
@@ -1597,8 +1581,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="290" column="150" lean-forward="false" selection-start-line="290" selection-start-column="150" selection-end-line="290" selection-end-column="150" />
+        <state relative-caret-position="540">
+          <caret line="294" column="8" lean-forward="true" selection-start-line="294" selection-start-column="8" selection-end-line="294" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/ng-map.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11117">
+          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="434" column="1" lean-forward="false" selection-start-line="434" selection-start-column="1" selection-end-line="434" selection-end-column="1" />
           <folding />
         </state>
       </provider>
