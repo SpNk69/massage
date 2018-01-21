@@ -40,13 +40,15 @@ public class FullFormMagic {
         String password = dbUri.getUserInfo().split(":")[1];
         String dbUrl = "jdbc:mysql://" + dbUri.getHost() + dbUri.getPath();
 
+        Logger.warn("SUP: " + dbUrl);
+
         return (Connection) DriverManager.getConnection(dbUrl, username, password);
     }
 
     public Result addBookingToDatabase() throws UnsupportedEncodingException, URISyntaxException {
         JsonNode json = request().body().asJson();
-//        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/play", "root", "root")) {
-        try (com.mysql.jdbc.Connection connection = getConnection()) {
+        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/play", "root", "root")) {
+//        try (com.mysql.jdbc.Connection connection = getConnection()) {
 
             PreparedStatement xs = connection.prepareStatement("INSERT INTO play.fullReservationForm (name, surname, email, phone, massage, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)");
             xs.setString(1, setMaxColTypeLen(findJson(json, NAME), getMaxSize(connection, NAME)));

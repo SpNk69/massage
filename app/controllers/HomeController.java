@@ -19,6 +19,8 @@ import views.html.*;
 
 import javax.inject.Inject;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -174,9 +176,13 @@ public class HomeController extends Controller {
 //good
     public Result getMassagesData() throws IOException {
 
-        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/play", "root", "root")) {
+//        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/play", "root", "root")) {
+
+        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3")) {
+
+
             JTopRootList massageList = new JTopRootList();
-            String query="SELECT * FROM play.massageInfo";
+            String query="SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;";
             // reassignment - shorter name for now
            ResultSet data= prepareStatementSelectAll(connection,query);
 
@@ -197,7 +203,7 @@ public class HomeController extends Controller {
     }
 
 
-    public Result getAdminClientData() throws SQLException, IOException {
+    public Result getAdminClientData() throws SQLException, IOException, URISyntaxException {
 
         try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/play", "root", "root")) {
 
@@ -248,6 +254,22 @@ public class HomeController extends Controller {
             return badRequest("asd");
         }
 
+    }
+
+    private static Connection getConnection() throws URISyntaxException, SQLException {
+        URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
+
+//        String username = dbUri.getUserInfo().split(":")[0];
+//        String password = dbUri.getUserInfo().split(":")[1];
+//        String dbUrl = "jdbc:mysql://" + dbUri.getHost() + dbUri.getPath();
+
+        String dbUrl="eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f?reconnect=true";
+        String password ="809360b3";
+        String username="b2945c551737ae";
+
+        Logger.warn("SUP: " + dbUrl);
+
+        return (Connection) DriverManager.getConnection(dbUrl, username, password);
     }
 
 
