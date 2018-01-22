@@ -126,9 +126,8 @@ public class FullFormMagic {
     private ResultSet prepareStatementSelectAll(Connection con, String query) throws SQLException {
 
         PreparedStatement preparedStatement = con.prepareStatement(query);
-        ResultSet resultSet = preparedStatement.executeQuery();
 
-        return resultSet;
+        return preparedStatement.executeQuery();
     }
 
 }

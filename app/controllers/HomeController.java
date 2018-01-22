@@ -140,9 +140,8 @@ public class HomeController extends Controller {
     private ResultSet prepareStatementSelectAll(Connection con, String query) throws SQLException {
 
         PreparedStatement preparedStatement = con.prepareStatement(query);
-        ResultSet resultSet = preparedStatement.executeQuery();
 
-        return resultSet;
+        return preparedStatement.executeQuery();
     }
     private ObjectMapper initializeObjectMapper(){
         ObjectMapper objectMapper = new ObjectMapper();

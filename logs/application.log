@@ -1,11 +1,14 @@
-2018-01-22 20:55:06,859 [WARN] from application in scala-execution-context-global-68 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2018-01-22 20:55:07,537 [INFO] from application in scala-execution-context-global-68 - Creating Pool for datasource 'default'
-2018-01-22 20:55:08,616 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-68 - Database [default] connected at jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f
-2018-01-22 20:55:08,773 [INFO] from application in scala-execution-context-global-68 - ApplicationTimer demo: Starting application at 2018-01-22T19:55:08.773Z
-2018-01-22 20:55:09,107 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-68 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-01-22 20:55:09,214 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-68 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2018-01-22 22:35:35,912 [WARN] from application in scala-execution-context-global-64 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-22 22:35:36,665 [INFO] from application in scala-execution-context-global-64 - Creating Pool for datasource 'default'
+2018-01-22 22:35:37,829 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-64 - Database [default] connected at jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f
+2018-01-22 22:35:37,985 [INFO] from application in scala-execution-context-global-64 - ApplicationTimer demo: Starting application at 2018-01-22T21:35:37.984Z
+2018-01-22 22:35:38,430 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-64 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-22 22:35:38,489 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-64 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2018-01-22 20:55:09,280 [INFO] from play.api.Play in scala-execution-context-global-68 - Application started (Dev)
+2018-01-22 22:35:38,542 [INFO] from play.api.Play in scala-execution-context-global-64 - Application started (Dev)
+2018-01-22 22:46:42,157 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-5 - Stopping server...
+2018-01-22 22:46:42,196 [INFO] from application in pool-5-thread-5 - ApplicationTimer demo: Stopping application at 2018-01-22T21:46:42.196Z after 665s.
+2018-01-22 22:46:42,197 [INFO] from application in pool-5-thread-5 - Shutting down connection pool.
