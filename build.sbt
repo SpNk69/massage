@@ -1,6 +1,6 @@
-name := """play-java-starter-example"""
+name := """webv2"""
 
-version := "1.0-SNAPSHOT"
+version := "2.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayJava)
 

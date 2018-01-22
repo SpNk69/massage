@@ -47,7 +47,11 @@ public class FullFormMagic {
 
     public Result addBookingToDatabase() throws UnsupportedEncodingException, URISyntaxException {
         JsonNode json = request().body().asJson();
-        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3")) {
+
+        Connection connection=null;
+        try {
+            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3");
+
 //        try (com.mysql.jdbc.Connection connection = getConnection()) {
 
             PreparedStatement xs = connection.prepareStatement("INSERT INTO heroku_e3d8ce5aa92835f.fullreservationform (name, surname, email, phone, massage, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)");
@@ -62,13 +66,23 @@ public class FullFormMagic {
 
             xs.execute();
 
-            connection.close();
 
             return ok();
         } catch (SQLException e) {
 
             Logger.warn("LOG 2:  1: " + e.getErrorCode() + " 2: " + e.getSQLState() + " 3: " + e.getNextException());
             return badRequest(Json.toJson(e.getErrorCode()));
+        }finally{
+
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
         }
     }
 
@@ -101,6 +115,7 @@ public class FullFormMagic {
                 red[0] = Integer.parseInt(y);
             }
         });
+
         return red[0];
     }
 

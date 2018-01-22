@@ -152,19 +152,21 @@ public class HomeController extends Controller {
     }
 
 //good
-    public Result getMassagesData() throws IOException, URISyntaxException {
+    public Result getMassagesData() throws IOException, URISyntaxException  {
 
 //        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/play", "root", "root")) {
 
-        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3")) {
+        Connection connection=null;
+        ResultSet data=null;
+        try {
+            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3");
 
 
-//            getConnection();
 
             JTopRootList massageList = new JTopRootList();
             String query="SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;";
             // reassignment - shorter name for now
-           ResultSet data= prepareStatementSelectAll(connection,query);
+           data= prepareStatementSelectAll(connection,query);
 
             while (data.next()) {
                 massageList.add(new JEntryMassagePriceLength(data.getString(2), data.getDouble(3), data.getInt(4)));
@@ -175,24 +177,49 @@ public class HomeController extends Controller {
 
 
             String serializedData = initializeObjectMapper().writeValueAsString(topKey);
-            connection.close();
 
             return ok(serializedData);
-        } catch (SQLException e) {
+        } catch(SQLException e){
             e.printStackTrace();
             return badRequest("Shit Happened");
+        }finally{
+
+            if (data != null) {
+                try {
+                    data.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
         }
-    }
+
+
+
+}
 
 
     public Result getAdminClientData() throws SQLException, IOException, URISyntaxException {
 
-        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3")) {
+
+        Connection connection=null;
+        ResultSet data=null;
+        try {
+            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3");
+
 
             Logger.warn("IN THE GETADMIN: ");
             JTopRootList jTopRootList = new JTopRootList();
             String query = "SELECT * from heroku_e3d8ce5aa92835f.fullreservationform";
-            ResultSet data = prepareStatementSelectAll(connection,query);
+            data = prepareStatementSelectAll(connection,query);
 
             while (data.next()) {
                 jTopRootList.add(new JFullFormSubmit(data.getString("name")
@@ -203,7 +230,6 @@ public class HomeController extends Controller {
             JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
             topKey.setFullFormSubmit(jTopRootList);
             String out = initializeObjectMapper().writeValueAsString(topKey);
-            connection.close();
 
 
 
@@ -230,13 +256,30 @@ public class HomeController extends Controller {
             anotherMap.forEach((x,y)->Logger.warn("MAP : " +x+ " " + y ));
 
 
-            connection.close();
 
             return ok(out);
 
         } catch (SQLException e) {
             e.printStackTrace();
             return badRequest("asd");
+        }finally{
+
+            if (data != null) {
+                try {
+                    data.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
         }
 
     }
