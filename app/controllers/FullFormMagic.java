@@ -47,10 +47,10 @@ public class FullFormMagic {
 
     public Result addBookingToDatabase() throws UnsupportedEncodingException, URISyntaxException {
         JsonNode json = request().body().asJson();
-        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/play", "root", "root")) {
+        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3")) {
 //        try (com.mysql.jdbc.Connection connection = getConnection()) {
 
-            PreparedStatement xs = connection.prepareStatement("INSERT INTO play.fullReservationForm (name, surname, email, phone, massage, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)");
+            PreparedStatement xs = connection.prepareStatement("INSERT INTO heroku_e3d8ce5aa92835f.fullreservationform (name, surname, email, phone, massage, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)");
             xs.setString(1, setMaxColTypeLen(findJson(json, NAME), getMaxSize(connection, NAME)));
             xs.setString(2, setMaxColTypeLen(findJson(json, SURNAME), getMaxSize(connection, SURNAME)));
             xs.setString(3, setMaxColTypeLen(findJson(json, EMAIL), getMaxSize(connection, EMAIL)));
@@ -61,6 +61,8 @@ public class FullFormMagic {
             xs.setString(8, setMaxColTypeLen(findJson(json, MESSAGE), getMaxSize(connection, MESSAGE)));
 
             xs.execute();
+
+            connection.close();
 
             return ok();
         } catch (SQLException e) {
@@ -76,7 +78,7 @@ public class FullFormMagic {
     }
 
     private int getMaxSize(Connection connection, String param1) throws SQLException {
-        ResultSet rs = prepareStatementSelectAll(connection, "SHOW FIELDS FROM  play.fullReservationForm;");
+        ResultSet rs = prepareStatementSelectAll(connection, "SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;");
         HashMap<String, String> hashMap = new HashMap<>();
         HashMap<String, String> anotherMap = new HashMap<>();
         while (rs.next()) {

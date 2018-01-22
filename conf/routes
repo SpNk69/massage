@@ -7,27 +7,9 @@ GET     /sitemap.xml             controllers.Assets.at(path="/public", file="sit
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
-GET     /lt            controllers.HomeController.pagrindinisLT
-GET     /TEST           controllers.HomeController.pagrindinisLTTEST
-
-GET    /toFaceBook    controllers.HomeController.toFaceBook
-
-GET     /                 controllers.HomeController.germanVersion()
-
-GET     /ru                 controllers.HomeController.russianVersion()
-
-GET    /submitLT              controllers.HomeController.submitLT()
-GET    /submitLT              controllers.HomeController.submitLT()
-
-GET    /submitRU              controllers.HomeController.submitRU()
-
-GET    /submitDE              controllers.HomeController.submitDE()
+GET     /           controllers.HomeController.pagrindinisLTTEST
 
 GET     /public/*file      controllers.Assets.at(path="/public", file)
-
-
-
-#GET    /playdb         controllers.HomeController.connection()
 
 #form page
 GET    /actualpage              controllers.HomeController.testing()
@@ -40,3 +22,5 @@ POST    /submitFullForm              controllers.FullFormMagic.addBookingToDatab
 GET    /getMassagesData              controllers.HomeController.getMassagesData()
 #fetch data from mysql for admins
 GET    /getAdminClientData              controllers.HomeController.getAdminClientData()
+
+GET    /toFaceBook    controllers.HomeController.toFaceBook
