@@ -1,14 +1,954 @@
-2018-01-22 22:35:35,912 [WARN] from application in scala-execution-context-global-64 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2018-01-22 22:35:36,665 [INFO] from application in scala-execution-context-global-64 - Creating Pool for datasource 'default'
-2018-01-22 22:35:37,829 [INFO] from play.api.db.DefaultDBApi in scala-execution-context-global-64 - Database [default] connected at jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f
-2018-01-22 22:35:37,985 [INFO] from application in scala-execution-context-global-64 - ApplicationTimer demo: Starting application at 2018-01-22T21:35:37.984Z
-2018-01-22 22:35:38,430 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-64 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-01-22 22:35:38,489 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-64 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2018-01-23 20:49:16,699 [WARN] from application in scala-execution-context-global-65 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-23 20:49:17,763 [INFO] from application in scala-execution-context-global-65 - ApplicationTimer demo: Starting application at 2018-01-23T19:49:17.762Z
+2018-01-23 20:49:18,297 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-65 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-23 20:49:18,357 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-65 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2018-01-22 22:35:38,542 [INFO] from play.api.Play in scala-execution-context-global-64 - Application started (Dev)
-2018-01-22 22:46:42,157 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-5 - Stopping server...
-2018-01-22 22:46:42,196 [INFO] from application in pool-5-thread-5 - ApplicationTimer demo: Stopping application at 2018-01-22T21:46:42.196Z after 665s.
-2018-01-22 22:46:42,197 [INFO] from application in pool-5-thread-5 - Shutting down connection pool.
+2018-01-23 20:49:18,512 [INFO] from play.api.Play in scala-execution-context-global-65 - Application started (Dev)
+2018-01-23 20:49:20,255 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - CONNECTcom.mysql.jdbc.JDBC4Connection@6d23ef83
+2018-01-23 20:49:20,385 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@682be6ef
+2018-01-23 20:49:20,385 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@12812aa0: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:49:20,385 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY3: com.mysql.jdbc.JDBC4Connection@6d23ef83
+2018-01-23 20:49:20,386 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@682be6ef
+2018-01-23 20:49:20,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@12812aa0: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:49:20,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY32: com.mysql.jdbc.JDBC4Connection@6d23ef83
+2018-01-23 20:49:26,426 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - CONNECTcom.mysql.jdbc.JDBC4Connection@170e0d48
+2018-01-23 20:49:26,495 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@520c81cd
+2018-01-23 20:49:26,495 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@7ce5ea12: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:49:26,495 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY3: com.mysql.jdbc.JDBC4Connection@170e0d48
+2018-01-23 20:49:26,496 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@520c81cd
+2018-01-23 20:49:26,496 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@7ce5ea12: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:49:26,496 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY32: com.mysql.jdbc.JDBC4Connection@170e0d48
+2018-01-23 20:49:42,226 [INFO] from application in scala-execution-context-global-65 - ApplicationTimer demo: Stopping application at 2018-01-23T19:49:42.226Z after 25s.
+2018-01-23 20:49:42,334 [WARN] from application in scala-execution-context-global-65 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-23 20:49:42,419 [INFO] from application in scala-execution-context-global-65 - ApplicationTimer demo: Starting application at 2018-01-23T19:49:42.419Z
+2018-01-23 20:49:42,481 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-65 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-23 20:49:42,486 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-65 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-01-23 20:49:42,555 [INFO] from play.api.Play in scala-execution-context-global-65 - Application started (Dev)
+2018-01-23 20:49:43,508 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - CONNECTcom.mysql.jdbc.JDBC4Connection@305b9bcf
+2018-01-23 20:49:43,578 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@717078e
+2018-01-23 20:49:43,578 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@409d7e7: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:49:43,578 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY3: com.mysql.jdbc.JDBC4Connection@305b9bcf
+2018-01-23 20:49:43,578 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@717078e
+2018-01-23 20:49:43,578 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@409d7e7: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:49:43,578 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY32: com.mysql.jdbc.JDBC4Connection@305b9bcf
+2018-01-23 20:50:24,831 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - CONNECTcom.mysql.jdbc.JDBC4Connection@2d1e31c3
+2018-01-23 20:50:24,896 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@1b3c996d
+2018-01-23 20:50:24,896 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@ce8f4c8: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:50:24,896 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY3: com.mysql.jdbc.JDBC4Connection@2d1e31c3
+2018-01-23 20:50:24,897 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@1b3c996d
+2018-01-23 20:50:24,897 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@ce8f4c8: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:50:24,897 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY32: com.mysql.jdbc.JDBC4Connection@2d1e31c3
+2018-01-23 20:51:14,252 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - CONNECTcom.mysql.jdbc.JDBC4Connection@3217a22e
+2018-01-23 20:51:14,323 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@7a39e055
+2018-01-23 20:51:14,323 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@184b3861: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:51:14,323 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY3: com.mysql.jdbc.JDBC4Connection@3217a22e
+2018-01-23 20:51:14,323 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@7a39e055
+2018-01-23 20:51:14,323 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@184b3861: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:51:14,323 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY32: com.mysql.jdbc.JDBC4Connection@3217a22e
+2018-01-23 20:52:06,039 [INFO] from application in scala-execution-context-global-142 - ApplicationTimer demo: Stopping application at 2018-01-23T19:52:06.039Z after 144s.
+2018-01-23 20:52:06,085 [WARN] from application in scala-execution-context-global-142 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-23 20:52:06,150 [INFO] from application in scala-execution-context-global-142 - ApplicationTimer demo: Starting application at 2018-01-23T19:52:06.150Z
+2018-01-23 20:52:06,202 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-142 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-23 20:52:06,206 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-142 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-01-23 20:52:06,239 [INFO] from play.api.Play in scala-execution-context-global-142 - Application started (Dev)
+2018-01-23 20:52:07,082 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - CONNECTcom.mysql.jdbc.JDBC4Connection@5de9a490
+2018-01-23 20:52:07,151 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@3f40b4a9
+2018-01-23 20:52:07,151 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@5e7bb194: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:52:07,151 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY3: com.mysql.jdbc.JDBC4Connection@5de9a490
+2018-01-23 20:52:07,152 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@3f40b4a9
+2018-01-23 20:52:07,152 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@5e7bb194: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:07,152 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY32: com.mysql.jdbc.JDBC4Connection@5de9a490
+2018-01-23 20:52:09,600 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - CONNECTcom.mysql.jdbc.JDBC4Connection@5acf3a2c
+2018-01-23 20:52:09,665 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@1f3d039d
+2018-01-23 20:52:09,665 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@2b417ad9: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:52:09,665 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY3: com.mysql.jdbc.JDBC4Connection@5acf3a2c
+2018-01-23 20:52:09,665 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@1f3d039d
+2018-01-23 20:52:09,665 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@2b417ad9: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:09,666 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY32: com.mysql.jdbc.JDBC4Connection@5acf3a2c
+2018-01-23 20:52:12,553 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - CONNECTcom.mysql.jdbc.JDBC4Connection@67fba59c
+2018-01-23 20:52:12,619 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@379cd3ec
+2018-01-23 20:52:12,619 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@d7157c6: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:52:12,619 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY3: com.mysql.jdbc.JDBC4Connection@67fba59c
+2018-01-23 20:52:12,619 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@379cd3ec
+2018-01-23 20:52:12,619 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@d7157c6: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:12,619 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY32: com.mysql.jdbc.JDBC4Connection@67fba59c
+2018-01-23 20:52:22,687 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - CONNECTcom.mysql.jdbc.JDBC4Connection@34bf5f84
+2018-01-23 20:52:22,696 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - IN THE GETADMIN: 
+2018-01-23 20:52:22,752 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@5227e02c
+2018-01-23 20:52:22,757 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@31549de3: SELECT * from heroku_e3d8ce5aa92835f.fullreservationform
+2018-01-23 20:52:22,757 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY3: com.mysql.jdbc.JDBC4Connection@543cfb20
+2018-01-23 20:52:22,761 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@1a31cd5c
+2018-01-23 20:52:22,761 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@31549de3: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:22,761 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY32: com.mysql.jdbc.JDBC4Connection@543cfb20
+2018-01-23 20:52:25,053 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - IN THE GETADMIN: 
+2018-01-23 20:52:25,080 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - CONNECTcom.mysql.jdbc.JDBC4Connection@3a9e5c13
+2018-01-23 20:52:25,205 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : id int(11)
+2018-01-23 20:52:25,205 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : name varchar(255)
+2018-01-23 20:52:25,205 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : surname varchar(255)
+2018-01-23 20:52:25,205 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : email varchar(365)
+2018-01-23 20:52:25,205 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : phone varchar(255)
+2018-01-23 20:52:25,205 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : massage varchar(255)
+2018-01-23 20:52:25,205 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : date varchar(255)
+2018-01-23 20:52:25,205 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : time varchar(255)
+2018-01-23 20:52:25,205 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : message varchar(1000)
+2018-01-23 20:52:25,206 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : date 255
+2018-01-23 20:52:25,206 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : phone 255
+2018-01-23 20:52:25,206 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : surname 255
+2018-01-23 20:52:25,206 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : name 255
+2018-01-23 20:52:25,206 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : id 11
+2018-01-23 20:52:25,206 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : time 255
+2018-01-23 20:52:25,206 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : massage 255
+2018-01-23 20:52:25,206 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : message 1000
+2018-01-23 20:52:25,206 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : email 365
+2018-01-23 20:52:25,209 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@152acf8e
+2018-01-23 20:52:25,210 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@7ab6d430: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:25,210 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY3: com.mysql.jdbc.JDBC4Connection@3a9e5c13
+2018-01-23 20:52:25,210 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@152acf8e
+2018-01-23 20:52:25,210 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@7ab6d430: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:25,210 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY32: com.mysql.jdbc.JDBC4Connection@3a9e5c13
+2018-01-23 20:52:27,524 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - IN THE GETADMIN: 
+2018-01-23 20:52:27,537 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - CONNECTcom.mysql.jdbc.JDBC4Connection@51825aae
+2018-01-23 20:52:27,601 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@454d36ef
+2018-01-23 20:52:27,601 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@61d65928: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:52:27,601 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY3: com.mysql.jdbc.JDBC4Connection@51825aae
+2018-01-23 20:52:27,601 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@454d36ef
+2018-01-23 20:52:27,601 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@61d65928: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:27,601 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY32: com.mysql.jdbc.JDBC4Connection@51825aae
+2018-01-23 20:52:48,843 [INFO] from application in scala-execution-context-global-166 - ApplicationTimer demo: Stopping application at 2018-01-23T19:52:48.843Z after 42s.
+2018-01-23 20:52:48,885 [WARN] from application in scala-execution-context-global-166 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-23 20:52:48,939 [INFO] from application in scala-execution-context-global-166 - ApplicationTimer demo: Starting application at 2018-01-23T19:52:48.938Z
+2018-01-23 20:52:48,970 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-166 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-23 20:52:48,974 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-166 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-01-23 20:52:49,005 [INFO] from play.api.Play in scala-execution-context-global-166 - Application started (Dev)
+2018-01-23 20:52:49,444 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - CONNECTcom.mysql.jdbc.JDBC4Connection@2132c3c0
+2018-01-23 20:52:49,452 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - IN THE GETADMIN: 
+2018-01-23 20:52:49,512 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@221fd861
+2018-01-23 20:52:49,512 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@68adca44: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:52:49,512 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - FINALLY3: com.mysql.jdbc.JDBC4Connection@2132c3c0
+2018-01-23 20:52:49,512 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@221fd861
+2018-01-23 20:52:49,512 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@68adca44: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:49,512 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - FINALLY32: com.mysql.jdbc.JDBC4Connection@2132c3c0
+2018-01-23 20:52:49,589 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : id int(11)
+2018-01-23 20:52:49,589 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : name varchar(255)
+2018-01-23 20:52:49,589 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : surname varchar(255)
+2018-01-23 20:52:49,589 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : email varchar(365)
+2018-01-23 20:52:49,590 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : phone varchar(255)
+2018-01-23 20:52:49,590 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : massage varchar(255)
+2018-01-23 20:52:49,590 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : date varchar(255)
+2018-01-23 20:52:49,590 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : time varchar(255)
+2018-01-23 20:52:49,590 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : message varchar(1000)
+2018-01-23 20:52:49,590 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : date 255
+2018-01-23 20:52:49,590 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : phone 255
+2018-01-23 20:52:49,590 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : surname 255
+2018-01-23 20:52:49,591 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : name 255
+2018-01-23 20:52:49,591 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : id 11
+2018-01-23 20:52:49,591 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : time 255
+2018-01-23 20:52:49,591 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : massage 255
+2018-01-23 20:52:49,591 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : message 1000
+2018-01-23 20:52:49,591 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : email 365
+2018-01-23 20:52:50,152 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - IN THE GETADMIN: 
+2018-01-23 20:52:50,175 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - CONNECTcom.mysql.jdbc.JDBC4Connection@4eb4d546
+2018-01-23 20:52:50,240 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@6896c689
+2018-01-23 20:52:50,240 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@3436c663: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:52:50,240 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY3: com.mysql.jdbc.JDBC4Connection@4eb4d546
+2018-01-23 20:52:50,240 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@6896c689
+2018-01-23 20:52:50,241 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@3436c663: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:50,241 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY32: com.mysql.jdbc.JDBC4Connection@4eb4d546
+2018-01-23 20:52:50,283 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : id int(11)
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : name varchar(255)
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : surname varchar(255)
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : email varchar(365)
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : phone varchar(255)
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : massage varchar(255)
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : date varchar(255)
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : time varchar(255)
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : message varchar(1000)
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : date 255
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : phone 255
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : surname 255
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : name 255
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : id 11
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : time 255
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : massage 255
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : message 1000
+2018-01-23 20:52:50,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : email 365
+2018-01-23 20:52:52,008 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - CONNECTcom.mysql.jdbc.JDBC4Connection@746943e2
+2018-01-23 20:52:52,014 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - IN THE GETADMIN: 
+2018-01-23 20:52:52,075 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@6a2cf05e
+2018-01-23 20:52:52,076 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@390358c: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:52:52,076 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - FINALLY3: com.mysql.jdbc.JDBC4Connection@746943e2
+2018-01-23 20:52:52,076 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@6a2cf05e
+2018-01-23 20:52:52,076 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@390358c: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:52,076 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - FINALLY32: com.mysql.jdbc.JDBC4Connection@746943e2
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : id int(11)
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : name varchar(255)
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : surname varchar(255)
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : email varchar(365)
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : phone varchar(255)
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : massage varchar(255)
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : date varchar(255)
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : time varchar(255)
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : message varchar(1000)
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : date 255
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : phone 255
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : surname 255
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : name 255
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : id 11
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : time 255
+2018-01-23 20:52:52,137 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : massage 255
+2018-01-23 20:52:52,141 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : message 1000
+2018-01-23 20:52:52,141 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : email 365
+2018-01-23 20:52:53,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - IN THE GETADMIN: 
+2018-01-23 20:52:53,626 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - CONNECTcom.mysql.jdbc.JDBC4Connection@1a88ec3b
+2018-01-23 20:52:53,691 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@14042e54
+2018-01-23 20:52:53,691 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@986c67e: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:52:53,691 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY3: com.mysql.jdbc.JDBC4Connection@1a88ec3b
+2018-01-23 20:52:53,691 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@14042e54
+2018-01-23 20:52:53,691 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@986c67e: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:53,691 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-8 - FINALLY32: com.mysql.jdbc.JDBC4Connection@1a88ec3b
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : id int(11)
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : name varchar(255)
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : surname varchar(255)
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : email varchar(365)
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : phone varchar(255)
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : massage varchar(255)
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : date varchar(255)
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : time varchar(255)
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : message varchar(1000)
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : date 255
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : phone 255
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : surname 255
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : name 255
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : id 11
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : time 255
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : massage 255
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : message 1000
+2018-01-23 20:52:53,743 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : email 365
+2018-01-23 20:52:54,699 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - CONNECTcom.mysql.jdbc.JDBC4Connection@2e45073c
+2018-01-23 20:52:54,710 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - IN THE GETADMIN: 
+2018-01-23 20:52:54,765 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@193d2fcf
+2018-01-23 20:52:54,766 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@a322370: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:52:54,766 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY3: com.mysql.jdbc.JDBC4Connection@2e45073c
+2018-01-23 20:52:54,766 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@193d2fcf
+2018-01-23 20:52:54,766 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@a322370: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:54,766 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY32: com.mysql.jdbc.JDBC4Connection@2e45073c
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : id int(11)
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : name varchar(255)
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : surname varchar(255)
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : email varchar(365)
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : phone varchar(255)
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : massage varchar(255)
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : date varchar(255)
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : time varchar(255)
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : message varchar(1000)
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : date 255
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : phone 255
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : surname 255
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : name 255
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : id 11
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : time 255
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : massage 255
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : message 1000
+2018-01-23 20:52:54,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : email 365
+2018-01-23 20:52:55,486 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - IN THE GETADMIN: 
+2018-01-23 20:52:55,510 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - CONNECTcom.mysql.jdbc.JDBC4Connection@3431a4be
+2018-01-23 20:52:55,581 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@6aa5ae8c
+2018-01-23 20:52:55,581 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@35241c5f: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:52:55,581 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - FINALLY3: com.mysql.jdbc.JDBC4Connection@3431a4be
+2018-01-23 20:52:55,581 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@6aa5ae8c
+2018-01-23 20:52:55,581 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@35241c5f: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:52:55,581 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - FINALLY32: com.mysql.jdbc.JDBC4Connection@3431a4be
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - STUFF : id int(11)
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - STUFF : name varchar(255)
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - STUFF : surname varchar(255)
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - STUFF : email varchar(365)
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - STUFF : phone varchar(255)
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - STUFF : massage varchar(255)
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - STUFF : date varchar(255)
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - STUFF : time varchar(255)
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - STUFF : message varchar(1000)
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - MAP : date 255
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - MAP : phone 255
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - MAP : surname 255
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - MAP : name 255
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - MAP : id 11
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - MAP : time 255
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - MAP : massage 255
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - MAP : message 1000
+2018-01-23 20:52:55,611 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - MAP : email 365
+2018-01-23 20:53:01,557 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - CONNECTcom.mysql.jdbc.JDBC4Connection@77fb74c
+2018-01-23 20:53:01,578 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - IN THE GETADMIN: 
+2018-01-23 20:53:01,624 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@bf6509e
+2018-01-23 20:53:01,624 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@59f6cae6: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:53:01,624 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - FINALLY3: com.mysql.jdbc.JDBC4Connection@77fb74c
+2018-01-23 20:53:01,624 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@bf6509e
+2018-01-23 20:53:01,624 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@59f6cae6: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:53:01,624 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - FINALLY32: com.mysql.jdbc.JDBC4Connection@77fb74c
+2018-01-23 20:53:01,700 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : id int(11)
+2018-01-23 20:53:01,700 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : name varchar(255)
+2018-01-23 20:53:01,700 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : surname varchar(255)
+2018-01-23 20:53:01,700 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : email varchar(365)
+2018-01-23 20:53:01,700 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : phone varchar(255)
+2018-01-23 20:53:01,700 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : massage varchar(255)
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : date varchar(255)
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : time varchar(255)
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - STUFF : message varchar(1000)
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : date 255
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : phone 255
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : surname 255
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : name 255
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : id 11
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : time 255
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : massage 255
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : message 1000
+2018-01-23 20:53:01,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-12 - MAP : email 365
+2018-01-23 20:53:11,467 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - CONNECTcom.mysql.jdbc.JDBC4Connection@2780ba3
+2018-01-23 20:53:11,531 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@46695e63
+2018-01-23 20:53:11,531 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@7463d80c: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:53:11,531 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY3: com.mysql.jdbc.JDBC4Connection@2780ba3
+2018-01-23 20:53:11,531 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@46695e63
+2018-01-23 20:53:11,531 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@7463d80c: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:53:11,531 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY32: com.mysql.jdbc.JDBC4Connection@2780ba3
+2018-01-23 20:53:14,284 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - CONNECTcom.mysql.jdbc.JDBC4Connection@19fad66
+2018-01-23 20:53:14,349 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@14a2a711
+2018-01-23 20:53:14,349 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@71aea4d3: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:53:14,349 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY3: com.mysql.jdbc.JDBC4Connection@19fad66
+2018-01-23 20:53:14,349 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@14a2a711
+2018-01-23 20:53:14,350 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@71aea4d3: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:53:14,350 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY32: com.mysql.jdbc.JDBC4Connection@19fad66
+2018-01-23 20:53:20,830 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - CONNECTcom.mysql.jdbc.JDBC4Connection@123dc660
+2018-01-23 20:53:20,895 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@573f5a43
+2018-01-23 20:53:20,895 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@62a7c099: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:53:20,895 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY3: com.mysql.jdbc.JDBC4Connection@123dc660
+2018-01-23 20:53:20,895 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@573f5a43
+2018-01-23 20:53:20,895 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@62a7c099: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:53:20,895 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY32: com.mysql.jdbc.JDBC4Connection@123dc660
+2018-01-23 20:53:38,908 [INFO] from application in scala-execution-context-global-207 - ApplicationTimer demo: Stopping application at 2018-01-23T19:53:38.908Z after 50s.
+2018-01-23 20:53:38,944 [WARN] from application in scala-execution-context-global-207 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-23 20:53:39,005 [INFO] from application in scala-execution-context-global-207 - ApplicationTimer demo: Starting application at 2018-01-23T19:53:39.005Z
+2018-01-23 20:53:39,050 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-207 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-23 20:53:39,054 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-207 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-01-23 20:53:39,090 [INFO] from play.api.Play in scala-execution-context-global-207 - Application started (Dev)
+2018-01-23 20:53:39,984 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-29 - CONNECTcom.mysql.jdbc.JDBC4Connection@3ba06a46
+2018-01-23 20:53:40,048 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-29 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@3a57c8db
+2018-01-23 20:53:40,049 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-29 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@6d4554c8: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:53:40,049 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-29 - FINALLY3: com.mysql.jdbc.JDBC4Connection@3ba06a46
+2018-01-23 20:53:40,049 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-29 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@3a57c8db
+2018-01-23 20:53:40,049 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-29 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@6d4554c8: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:53:40,049 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-29 - FINALLY32: com.mysql.jdbc.JDBC4Connection@3ba06a46
+2018-01-23 20:53:48,553 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - CONNECTcom.mysql.jdbc.JDBC4Connection@6963144c
+2018-01-23 20:53:48,622 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@440117be
+2018-01-23 20:53:48,622 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@11b67efa: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:53:48,622 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - FINALLY3: com.mysql.jdbc.JDBC4Connection@6963144c
+2018-01-23 20:53:48,622 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@440117be
+2018-01-23 20:53:48,622 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@11b67efa: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:53:48,622 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - FINALLY32: com.mysql.jdbc.JDBC4Connection@6963144c
+2018-01-23 20:54:44,520 [INFO] from application in scala-execution-context-global-282 - ApplicationTimer demo: Stopping application at 2018-01-23T19:54:44.520Z after 65s.
+2018-01-23 20:54:44,568 [WARN] from application in scala-execution-context-global-282 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-23 20:54:44,633 [INFO] from application in scala-execution-context-global-282 - ApplicationTimer demo: Starting application at 2018-01-23T19:54:44.633Z
+2018-01-23 20:54:44,683 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-282 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-23 20:54:44,690 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-282 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-01-23 20:54:44,734 [INFO] from play.api.Play in scala-execution-context-global-282 - Application started (Dev)
+2018-01-23 20:54:45,581 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - CONNECTcom.mysql.jdbc.JDBC4Connection@75a222c5
+2018-01-23 20:54:45,651 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@66ba7ba8
+2018-01-23 20:54:45,651 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@3c09eaa3: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:54:45,651 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY3: com.mysql.jdbc.JDBC4Connection@75a222c5
+2018-01-23 20:54:45,651 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@66ba7ba8
+2018-01-23 20:54:45,651 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@3c09eaa3: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:54:45,651 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - FINALLY32: com.mysql.jdbc.JDBC4Connection@75a222c5
+2018-01-23 20:54:49,251 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - CONNECTcom.mysql.jdbc.JDBC4Connection@72cb8162
+2018-01-23 20:54:49,262 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - IN THE GETADMIN: 
+2018-01-23 20:54:49,321 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@6a8e52d7
+2018-01-23 20:54:49,321 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@5a7300cb: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:54:49,321 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY3: com.mysql.jdbc.JDBC4Connection@72cb8162
+2018-01-23 20:54:49,322 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@6a8e52d7
+2018-01-23 20:54:49,322 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@5a7300cb: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:54:49,322 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY32: com.mysql.jdbc.JDBC4Connection@72cb8162
+2018-01-23 20:54:49,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - STUFF : id int(11)
+2018-01-23 20:54:49,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - STUFF : name varchar(255)
+2018-01-23 20:54:49,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - STUFF : surname varchar(255)
+2018-01-23 20:54:49,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - STUFF : email varchar(365)
+2018-01-23 20:54:49,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - STUFF : phone varchar(255)
+2018-01-23 20:54:49,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - STUFF : massage varchar(255)
+2018-01-23 20:54:49,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - STUFF : date varchar(255)
+2018-01-23 20:54:49,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - STUFF : time varchar(255)
+2018-01-23 20:54:49,397 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - STUFF : message varchar(1000)
+2018-01-23 20:54:49,398 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - MAP : date 255
+2018-01-23 20:54:49,398 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - MAP : phone 255
+2018-01-23 20:54:49,398 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - MAP : surname 255
+2018-01-23 20:54:49,398 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - MAP : name 255
+2018-01-23 20:54:49,398 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - MAP : id 11
+2018-01-23 20:54:49,398 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - MAP : time 255
+2018-01-23 20:54:49,398 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - MAP : massage 255
+2018-01-23 20:54:49,398 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - MAP : message 1000
+2018-01-23 20:54:49,398 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-13 - MAP : email 365
+2018-01-23 20:56:44,317 [INFO] from application in scala-execution-context-global-333 - ApplicationTimer demo: Stopping application at 2018-01-23T19:56:44.317Z after 120s.
+2018-01-23 20:56:44,342 [WARN] from application in scala-execution-context-global-333 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-23 20:56:44,397 [INFO] from application in scala-execution-context-global-333 - ApplicationTimer demo: Starting application at 2018-01-23T19:56:44.397Z
+2018-01-23 20:56:44,445 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-333 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-23 20:56:44,451 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-333 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-01-23 20:56:44,487 [INFO] from play.api.Play in scala-execution-context-global-333 - Application started (Dev)
+2018-01-23 20:56:45,036 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - CONNECTcom.mysql.jdbc.JDBC4Connection@26162f13
+2018-01-23 20:56:45,111 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@72123492
+2018-01-23 20:56:45,111 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@7e61545: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:45,111 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY3: com.mysql.jdbc.JDBC4Connection@26162f13
+2018-01-23 20:56:45,111 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@72123492
+2018-01-23 20:56:45,112 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@7e61545: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:45,112 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY32: com.mysql.jdbc.JDBC4Connection@26162f13
+2018-01-23 20:56:45,170 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - STUFF : id int(11)
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - STUFF : name varchar(255)
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - STUFF : surname varchar(255)
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - STUFF : email varchar(365)
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - STUFF : phone varchar(255)
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - STUFF : massage varchar(255)
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - STUFF : date varchar(255)
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - STUFF : time varchar(255)
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - STUFF : message varchar(1000)
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - MAP : date 255
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - MAP : phone 255
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - MAP : surname 255
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - MAP : name 255
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - MAP : id 11
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - MAP : time 255
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - MAP : massage 255
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - MAP : message 1000
+2018-01-23 20:56:45,171 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - MAP : email 365
+2018-01-23 20:56:48,922 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - CONNECTcom.mysql.jdbc.JDBC4Connection@236dc345
+2018-01-23 20:56:48,988 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@4924cc9c
+2018-01-23 20:56:48,988 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@10946148: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:48,988 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY3: com.mysql.jdbc.JDBC4Connection@236dc345
+2018-01-23 20:56:48,988 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@4924cc9c
+2018-01-23 20:56:48,988 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@10946148: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:48,988 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY32: com.mysql.jdbc.JDBC4Connection@236dc345
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : id int(11)
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : name varchar(255)
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : surname varchar(255)
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : email varchar(365)
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : phone varchar(255)
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : massage varchar(255)
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : date varchar(255)
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : time varchar(255)
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : message varchar(1000)
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : date 255
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : phone 255
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : surname 255
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : name 255
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : id 11
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : time 255
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : massage 255
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : message 1000
+2018-01-23 20:56:49,044 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : email 365
+2018-01-23 20:56:49,875 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - CONNECTcom.mysql.jdbc.JDBC4Connection@c8e02f3
+2018-01-23 20:56:49,942 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@2e72bb71
+2018-01-23 20:56:49,942 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@75af242c: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:49,942 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY3: com.mysql.jdbc.JDBC4Connection@c8e02f3
+2018-01-23 20:56:49,942 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@2e72bb71
+2018-01-23 20:56:49,942 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@75af242c: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:49,942 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY32: com.mysql.jdbc.JDBC4Connection@c8e02f3
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : id int(11)
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : name varchar(255)
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : surname varchar(255)
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : email varchar(365)
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : phone varchar(255)
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : massage varchar(255)
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : date varchar(255)
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : time varchar(255)
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : message varchar(1000)
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : date 255
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : phone 255
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : surname 255
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : name 255
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : id 11
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : time 255
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : massage 255
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : message 1000
+2018-01-23 20:56:49,989 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : email 365
+2018-01-23 20:56:50,783 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - CONNECTcom.mysql.jdbc.JDBC4Connection@6bb249fd
+2018-01-23 20:56:50,846 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@59a16ebd
+2018-01-23 20:56:50,846 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@19807e95: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:50,846 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY3: com.mysql.jdbc.JDBC4Connection@6bb249fd
+2018-01-23 20:56:50,846 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@59a16ebd
+2018-01-23 20:56:50,846 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@19807e95: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:50,846 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY32: com.mysql.jdbc.JDBC4Connection@6bb249fd
+2018-01-23 20:56:50,880 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : id int(11)
+2018-01-23 20:56:50,880 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : name varchar(255)
+2018-01-23 20:56:50,880 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : surname varchar(255)
+2018-01-23 20:56:50,880 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : email varchar(365)
+2018-01-23 20:56:50,880 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : phone varchar(255)
+2018-01-23 20:56:50,880 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : massage varchar(255)
+2018-01-23 20:56:50,880 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : date varchar(255)
+2018-01-23 20:56:50,880 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : time varchar(255)
+2018-01-23 20:56:50,880 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - STUFF : message varchar(1000)
+2018-01-23 20:56:50,881 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : date 255
+2018-01-23 20:56:50,881 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : phone 255
+2018-01-23 20:56:50,881 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : surname 255
+2018-01-23 20:56:50,881 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : name 255
+2018-01-23 20:56:50,881 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : id 11
+2018-01-23 20:56:50,881 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : time 255
+2018-01-23 20:56:50,881 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : massage 255
+2018-01-23 20:56:50,881 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : message 1000
+2018-01-23 20:56:50,881 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - MAP : email 365
+2018-01-23 20:56:51,311 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - CONNECTcom.mysql.jdbc.JDBC4Connection@7975ec85
+2018-01-23 20:56:51,375 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@766f9306
+2018-01-23 20:56:51,376 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@1ec0dc8f: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:51,376 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY3: com.mysql.jdbc.JDBC4Connection@7975ec85
+2018-01-23 20:56:51,376 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@766f9306
+2018-01-23 20:56:51,376 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@1ec0dc8f: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:51,376 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY32: com.mysql.jdbc.JDBC4Connection@7975ec85
+2018-01-23 20:56:51,444 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : id int(11)
+2018-01-23 20:56:51,444 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : name varchar(255)
+2018-01-23 20:56:51,444 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : surname varchar(255)
+2018-01-23 20:56:51,444 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : email varchar(365)
+2018-01-23 20:56:51,444 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : phone varchar(255)
+2018-01-23 20:56:51,444 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : massage varchar(255)
+2018-01-23 20:56:51,444 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : date varchar(255)
+2018-01-23 20:56:51,444 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : time varchar(255)
+2018-01-23 20:56:51,444 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : message varchar(1000)
+2018-01-23 20:56:51,445 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : date 255
+2018-01-23 20:56:51,445 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : phone 255
+2018-01-23 20:56:51,445 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : surname 255
+2018-01-23 20:56:51,445 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : name 255
+2018-01-23 20:56:51,445 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : id 11
+2018-01-23 20:56:51,445 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : time 255
+2018-01-23 20:56:51,445 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : massage 255
+2018-01-23 20:56:51,445 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : message 1000
+2018-01-23 20:56:51,445 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : email 365
+2018-01-23 20:56:51,507 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - CONNECTcom.mysql.jdbc.JDBC4Connection@6ee9bb43
+2018-01-23 20:56:51,571 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@5d124127
+2018-01-23 20:56:51,571 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@fe9aa3b: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:51,571 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY3: com.mysql.jdbc.JDBC4Connection@6ee9bb43
+2018-01-23 20:56:51,571 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@5d124127
+2018-01-23 20:56:51,571 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@fe9aa3b: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:51,571 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-16 - FINALLY32: com.mysql.jdbc.JDBC4Connection@6ee9bb43
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : id int(11)
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : name varchar(255)
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : surname varchar(255)
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : email varchar(365)
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : phone varchar(255)
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : massage varchar(255)
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : date varchar(255)
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : time varchar(255)
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : message varchar(1000)
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : date 255
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : phone 255
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : surname 255
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : name 255
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : id 11
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : time 255
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : massage 255
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : message 1000
+2018-01-23 20:56:51,617 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : email 365
+2018-01-23 20:56:51,699 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - CONNECTcom.mysql.jdbc.JDBC4Connection@293dacac
+2018-01-23 20:56:51,763 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@472cf2a2
+2018-01-23 20:56:51,763 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@24c0e6dc: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:51,763 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY3: com.mysql.jdbc.JDBC4Connection@293dacac
+2018-01-23 20:56:51,763 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@472cf2a2
+2018-01-23 20:56:51,763 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@24c0e6dc: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:51,763 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-10 - FINALLY32: com.mysql.jdbc.JDBC4Connection@293dacac
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - STUFF : id int(11)
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - STUFF : name varchar(255)
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - STUFF : surname varchar(255)
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - STUFF : email varchar(365)
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - STUFF : phone varchar(255)
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - STUFF : massage varchar(255)
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - STUFF : date varchar(255)
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - STUFF : time varchar(255)
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - STUFF : message varchar(1000)
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - MAP : date 255
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - MAP : phone 255
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - MAP : surname 255
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - MAP : name 255
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - MAP : id 11
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - MAP : time 255
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - MAP : massage 255
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - MAP : message 1000
+2018-01-23 20:56:51,827 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-18 - MAP : email 365
+2018-01-23 20:56:51,905 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - CONNECTcom.mysql.jdbc.JDBC4Connection@2e9c1f58
+2018-01-23 20:56:51,970 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@47fcc8dd
+2018-01-23 20:56:51,970 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@3535870e: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:51,970 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY3: com.mysql.jdbc.JDBC4Connection@2e9c1f58
+2018-01-23 20:56:51,970 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@47fcc8dd
+2018-01-23 20:56:51,970 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@3535870e: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:51,970 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY32: com.mysql.jdbc.JDBC4Connection@2e9c1f58
+2018-01-23 20:56:52,028 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : id int(11)
+2018-01-23 20:56:52,028 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : name varchar(255)
+2018-01-23 20:56:52,028 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : surname varchar(255)
+2018-01-23 20:56:52,028 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : email varchar(365)
+2018-01-23 20:56:52,028 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : phone varchar(255)
+2018-01-23 20:56:52,028 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : massage varchar(255)
+2018-01-23 20:56:52,028 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : date varchar(255)
+2018-01-23 20:56:52,028 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : time varchar(255)
+2018-01-23 20:56:52,028 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - STUFF : message varchar(1000)
+2018-01-23 20:56:52,028 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : date 255
+2018-01-23 20:56:52,029 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : phone 255
+2018-01-23 20:56:52,029 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : surname 255
+2018-01-23 20:56:52,029 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : name 255
+2018-01-23 20:56:52,029 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : id 11
+2018-01-23 20:56:52,029 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : time 255
+2018-01-23 20:56:52,029 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : massage 255
+2018-01-23 20:56:52,029 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : message 1000
+2018-01-23 20:56:52,029 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-2 - MAP : email 365
+2018-01-23 20:56:52,092 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - CONNECTcom.mysql.jdbc.JDBC4Connection@113ded36
+2018-01-23 20:56:52,157 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@614985d7
+2018-01-23 20:56:52,157 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@1f639095: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:52,157 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY3: com.mysql.jdbc.JDBC4Connection@113ded36
+2018-01-23 20:56:52,157 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@614985d7
+2018-01-23 20:56:52,158 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@1f639095: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:52,158 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY32: com.mysql.jdbc.JDBC4Connection@113ded36
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : id int(11)
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : name varchar(255)
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : surname varchar(255)
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : email varchar(365)
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : phone varchar(255)
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : massage varchar(255)
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : date varchar(255)
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : time varchar(255)
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - STUFF : message varchar(1000)
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : date 255
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : phone 255
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : surname 255
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : name 255
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : id 11
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : time 255
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : massage 255
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : message 1000
+2018-01-23 20:56:52,220 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - MAP : email 365
+2018-01-23 20:56:52,278 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - CONNECTcom.mysql.jdbc.JDBC4Connection@4f3efda5
+2018-01-23 20:56:52,341 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@727ad54d
+2018-01-23 20:56:52,341 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@62e1e1ba: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:52,341 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY3: com.mysql.jdbc.JDBC4Connection@4f3efda5
+2018-01-23 20:56:52,341 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@727ad54d
+2018-01-23 20:56:52,341 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@62e1e1ba: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:52,341 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY32: com.mysql.jdbc.JDBC4Connection@4f3efda5
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - STUFF : id int(11)
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - STUFF : name varchar(255)
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - STUFF : surname varchar(255)
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - STUFF : email varchar(365)
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - STUFF : phone varchar(255)
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - STUFF : massage varchar(255)
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - STUFF : date varchar(255)
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - STUFF : time varchar(255)
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - STUFF : message varchar(1000)
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - MAP : date 255
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - MAP : phone 255
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - MAP : surname 255
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - MAP : name 255
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - MAP : id 11
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - MAP : time 255
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - MAP : massage 255
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - MAP : message 1000
+2018-01-23 20:56:52,402 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-7 - MAP : email 365
+2018-01-23 20:56:52,448 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - CONNECTcom.mysql.jdbc.JDBC4Connection@7f11bc47
+2018-01-23 20:56:52,511 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@3a133dc1
+2018-01-23 20:56:52,511 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@1f805db: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:56:52,511 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY3: com.mysql.jdbc.JDBC4Connection@7f11bc47
+2018-01-23 20:56:52,511 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@3a133dc1
+2018-01-23 20:56:52,511 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@1f805db: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:56:52,511 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY32: com.mysql.jdbc.JDBC4Connection@7f11bc47
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : id int(11)
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : name varchar(255)
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : surname varchar(255)
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : email varchar(365)
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : phone varchar(255)
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : massage varchar(255)
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : date varchar(255)
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : time varchar(255)
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : message varchar(1000)
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : date 255
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : phone 255
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : surname 255
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : name 255
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : id 11
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : time 255
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : massage 255
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : message 1000
+2018-01-23 20:56:52,575 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : email 365
+2018-01-23 20:57:20,503 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - CONNECTcom.mysql.jdbc.JDBC4Connection@d64ec49
+2018-01-23 20:57:20,566 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@1470071c
+2018-01-23 20:57:20,566 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@c52875: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:57:20,566 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY3: com.mysql.jdbc.JDBC4Connection@d64ec49
+2018-01-23 20:57:20,566 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@1470071c
+2018-01-23 20:57:20,566 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@c52875: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:57:20,566 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - FINALLY32: com.mysql.jdbc.JDBC4Connection@d64ec49
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : id int(11)
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : name varchar(255)
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : surname varchar(255)
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : email varchar(365)
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : phone varchar(255)
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : massage varchar(255)
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : date varchar(255)
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : time varchar(255)
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : message varchar(1000)
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : date 255
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : phone 255
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : surname 255
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : name 255
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : id 11
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : time 255
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : massage 255
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : message 1000
+2018-01-23 20:57:20,615 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : email 365
+2018-01-23 20:57:21,050 [INFO] from application in scala-execution-context-global-355 - ApplicationTimer demo: Stopping application at 2018-01-23T19:57:21.050Z after 37s.
+2018-01-23 20:57:21,082 [WARN] from application in scala-execution-context-global-355 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-01-23 20:57:21,134 [INFO] from application in scala-execution-context-global-355 - ApplicationTimer demo: Starting application at 2018-01-23T19:57:21.134Z
+2018-01-23 20:57:21,173 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-355 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-01-23 20:57:21,177 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-355 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-01-23 20:57:21,205 [INFO] from play.api.Play in scala-execution-context-global-355 - Application started (Dev)
+2018-01-23 20:57:21,732 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - CONNECTcom.mysql.jdbc.JDBC4Connection@670ed74e
+2018-01-23 20:57:21,798 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@72138ba4
+2018-01-23 20:57:21,798 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@7130a5e6: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:57:21,798 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY3: com.mysql.jdbc.JDBC4Connection@670ed74e
+2018-01-23 20:57:21,798 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@72138ba4
+2018-01-23 20:57:21,798 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@7130a5e6: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:57:21,798 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY32: com.mysql.jdbc.JDBC4Connection@670ed74e
+2018-01-23 20:57:21,831 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : id int(11)
+2018-01-23 20:57:21,831 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : name varchar(255)
+2018-01-23 20:57:21,831 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : surname varchar(255)
+2018-01-23 20:57:21,831 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : email varchar(365)
+2018-01-23 20:57:21,831 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : phone varchar(255)
+2018-01-23 20:57:21,831 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : massage varchar(255)
+2018-01-23 20:57:21,831 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : date varchar(255)
+2018-01-23 20:57:21,831 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : time varchar(255)
+2018-01-23 20:57:21,831 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : message varchar(1000)
+2018-01-23 20:57:21,832 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : date 255
+2018-01-23 20:57:21,832 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : phone 255
+2018-01-23 20:57:21,832 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : surname 255
+2018-01-23 20:57:21,832 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : name 255
+2018-01-23 20:57:21,832 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : id 11
+2018-01-23 20:57:21,832 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : time 255
+2018-01-23 20:57:21,832 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : massage 255
+2018-01-23 20:57:21,832 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : message 1000
+2018-01-23 20:57:21,832 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : email 365
+2018-01-23 20:57:25,756 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - CONNECTcom.mysql.jdbc.JDBC4Connection@3c961ce3
+2018-01-23 20:57:25,823 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@6be1f9ff
+2018-01-23 20:57:25,823 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@3eb252a3: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:57:25,823 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY3: com.mysql.jdbc.JDBC4Connection@3c961ce3
+2018-01-23 20:57:25,824 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@6be1f9ff
+2018-01-23 20:57:25,824 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@3eb252a3: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:57:25,824 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY32: com.mysql.jdbc.JDBC4Connection@3c961ce3
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : id int(11)
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : name varchar(255)
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : surname varchar(255)
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : email varchar(365)
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : phone varchar(255)
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : massage varchar(255)
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : date varchar(255)
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : time varchar(255)
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : message varchar(1000)
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : date 255
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : phone 255
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : surname 255
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : name 255
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : id 11
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : time 255
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : massage 255
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : message 1000
+2018-01-23 20:57:25,885 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : email 365
+2018-01-23 20:57:26,973 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - CONNECTcom.mysql.jdbc.JDBC4Connection@39d9fbcf
+2018-01-23 20:57:27,035 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@15d2811d
+2018-01-23 20:57:27,035 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@311a0716: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:57:27,035 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY3: com.mysql.jdbc.JDBC4Connection@39d9fbcf
+2018-01-23 20:57:27,035 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@15d2811d
+2018-01-23 20:57:27,035 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@311a0716: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:57:27,035 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-9 - FINALLY32: com.mysql.jdbc.JDBC4Connection@39d9fbcf
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - STUFF : id int(11)
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - STUFF : name varchar(255)
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - STUFF : surname varchar(255)
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - STUFF : email varchar(365)
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - STUFF : phone varchar(255)
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - STUFF : massage varchar(255)
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - STUFF : date varchar(255)
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - STUFF : time varchar(255)
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - STUFF : message varchar(1000)
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - MAP : date 255
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - MAP : phone 255
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - MAP : surname 255
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - MAP : name 255
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - MAP : id 11
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - MAP : time 255
+2018-01-23 20:57:27,095 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - MAP : massage 255
+2018-01-23 20:57:27,096 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - MAP : message 1000
+2018-01-23 20:57:27,096 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - MAP : email 365
+2018-01-23 20:57:27,595 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - CONNECTcom.mysql.jdbc.JDBC4Connection@598e742d
+2018-01-23 20:57:27,658 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@2f913120
+2018-01-23 20:57:27,658 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@594c4b76: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:57:27,658 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY3: com.mysql.jdbc.JDBC4Connection@598e742d
+2018-01-23 20:57:27,659 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@2f913120
+2018-01-23 20:57:27,659 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@594c4b76: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:57:27,659 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY32: com.mysql.jdbc.JDBC4Connection@598e742d
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : id int(11)
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : name varchar(255)
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : surname varchar(255)
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : email varchar(365)
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : phone varchar(255)
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : massage varchar(255)
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : date varchar(255)
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : time varchar(255)
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : message varchar(1000)
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : date 255
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : phone 255
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : surname 255
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : name 255
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : id 11
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : time 255
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : massage 255
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : message 1000
+2018-01-23 20:57:27,720 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : email 365
+2018-01-23 20:57:28,237 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - CONNECTcom.mysql.jdbc.JDBC4Connection@15b999b0
+2018-01-23 20:57:28,300 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@2e15678a
+2018-01-23 20:57:28,300 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@23ac401e: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:57:28,300 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY3: com.mysql.jdbc.JDBC4Connection@15b999b0
+2018-01-23 20:57:28,300 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@2e15678a
+2018-01-23 20:57:28,300 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@23ac401e: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:57:28,300 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - FINALLY32: com.mysql.jdbc.JDBC4Connection@15b999b0
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : id int(11)
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : name varchar(255)
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : surname varchar(255)
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : email varchar(365)
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : phone varchar(255)
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : massage varchar(255)
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : date varchar(255)
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : time varchar(255)
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - STUFF : message varchar(1000)
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : date 255
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : phone 255
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : surname 255
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : name 255
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : id 11
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : time 255
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : massage 255
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : message 1000
+2018-01-23 20:57:28,353 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - MAP : email 365
+2018-01-23 20:57:33,238 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - CONNECTcom.mysql.jdbc.JDBC4Connection@6d814944
+2018-01-23 20:57:33,305 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@2f6f67ce
+2018-01-23 20:57:33,305 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@4a3016b7: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:57:33,305 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY3: com.mysql.jdbc.JDBC4Connection@6d814944
+2018-01-23 20:57:33,305 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@2f6f67ce
+2018-01-23 20:57:33,305 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@4a3016b7: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:57:33,305 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY32: com.mysql.jdbc.JDBC4Connection@6d814944
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : id int(11)
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : name varchar(255)
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : surname varchar(255)
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : email varchar(365)
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : phone varchar(255)
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : massage varchar(255)
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : date varchar(255)
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : time varchar(255)
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : message varchar(1000)
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : date 255
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : phone 255
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : surname 255
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : name 255
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : id 11
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : time 255
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : massage 255
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : message 1000
+2018-01-23 20:57:33,372 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : email 365
+2018-01-23 20:57:33,919 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - CONNECTcom.mysql.jdbc.JDBC4Connection@4892e7f7
+2018-01-23 20:57:33,982 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@4bf63148
+2018-01-23 20:57:33,982 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@1c1fa2ee: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:57:33,982 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY3: com.mysql.jdbc.JDBC4Connection@4892e7f7
+2018-01-23 20:57:33,983 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@4bf63148
+2018-01-23 20:57:33,983 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@1c1fa2ee: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:57:33,983 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-28 - FINALLY32: com.mysql.jdbc.JDBC4Connection@4892e7f7
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : id int(11)
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : name varchar(255)
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : surname varchar(255)
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : email varchar(365)
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : phone varchar(255)
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : massage varchar(255)
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : date varchar(255)
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : time varchar(255)
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - STUFF : message varchar(1000)
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : date 255
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : phone 255
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : surname 255
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : name 255
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : id 11
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : time 255
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : massage 255
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : message 1000
+2018-01-23 20:57:34,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - MAP : email 365
+2018-01-23 20:57:34,601 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - CONNECTcom.mysql.jdbc.JDBC4Connection@6eb00877
+2018-01-23 20:57:34,666 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@3abc7792
+2018-01-23 20:57:34,666 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@784882b7: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:57:34,666 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY3: com.mysql.jdbc.JDBC4Connection@6eb00877
+2018-01-23 20:57:34,666 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@3abc7792
+2018-01-23 20:57:34,666 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@784882b7: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:57:34,667 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-4 - FINALLY32: com.mysql.jdbc.JDBC4Connection@6eb00877
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : id int(11)
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : name varchar(255)
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : surname varchar(255)
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : email varchar(365)
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : phone varchar(255)
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : massage varchar(255)
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : date varchar(255)
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : time varchar(255)
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : message varchar(1000)
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : date 255
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : phone 255
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : surname 255
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : name 255
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : id 11
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : time 255
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : massage 255
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : message 1000
+2018-01-23 20:57:34,735 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : email 365
+2018-01-23 20:57:35,631 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - CONNECTcom.mysql.jdbc.JDBC4Connection@28495577
+2018-01-23 20:57:35,700 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY1: com.mysql.jdbc.JDBC42ResultSet@7d2987ef
+2018-01-23 20:57:35,700 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY2: com.mysql.jdbc.JDBC42PreparedStatement@3076eebd: SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;
+2018-01-23 20:57:35,700 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY3: com.mysql.jdbc.JDBC4Connection@28495577
+2018-01-23 20:57:35,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY12: com.mysql.jdbc.JDBC42ResultSet@7d2987ef
+2018-01-23 20:57:35,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY22: com.mysql.jdbc.JDBC42PreparedStatement@3076eebd: EXCEPTION: java.sql.SQLException: No operations allowed after statement closed.
+2018-01-23 20:57:35,701 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-19 - FINALLY32: com.mysql.jdbc.JDBC4Connection@28495577
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : id int(11)
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : name varchar(255)
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : surname varchar(255)
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : email varchar(365)
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : phone varchar(255)
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : massage varchar(255)
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : date varchar(255)
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : time varchar(255)
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - STUFF : message varchar(1000)
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : date 255
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : phone 255
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : surname 255
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : name 255
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : id 11
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : time 255
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : massage 255
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : message 1000
+2018-01-23 20:57:35,736 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-3 - MAP : email 365
+2018-01-23 20:58:38,293 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-3 - Stopping server...
+2018-01-23 20:58:38,309 [INFO] from application in pool-5-thread-3 - ApplicationTimer demo: Stopping application at 2018-01-23T19:58:38.309Z after 77s.

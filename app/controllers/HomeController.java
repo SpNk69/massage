@@ -140,7 +140,6 @@ public class HomeController extends Controller {
     private ResultSet prepareStatementSelectAll(Connection con, String query) throws SQLException {
 
         PreparedStatement preparedStatement = con.prepareStatement(query);
-
         return preparedStatement.executeQuery();
     }
     private ObjectMapper initializeObjectMapper(){
@@ -151,21 +150,23 @@ public class HomeController extends Controller {
     }
 
 //good
-    public Result getMassagesData() throws IOException, URISyntaxException  {
+    public Result getMassagesData() throws IOException, URISyntaxException, SQLException {
 
 //        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/play", "root", "root")) {
 
         Connection connection=null;
         ResultSet data=null;
+        PreparedStatement preparedStatement = null;
         try {
             connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3");
 
-
-
+            Logger.warn("CONNECT" + connection.toString());
             JTopRootList massageList = new JTopRootList();
             String query="SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;";
+            preparedStatement=connection.prepareStatement(query);
             // reassignment - shorter name for now
-           data= prepareStatementSelectAll(connection,query);
+//           data= prepareStatementSelectAll(connection,query);
+           data=preparedStatement.executeQuery();
 
             while (data.next()) {
                 massageList.add(new JEntryMassagePriceLength(data.getString(2), data.getDouble(3), data.getInt(4)));
@@ -174,7 +175,6 @@ public class HomeController extends Controller {
             JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
             topKey.setMassageInfo(massageList);
 
-
             String serializedData = initializeObjectMapper().writeValueAsString(topKey);
 
             return ok(serializedData);
@@ -182,6 +182,9 @@ public class HomeController extends Controller {
             e.printStackTrace();
             return badRequest("Shit Happened");
         }finally{
+            Logger.warn("FINALLY1: " + data);
+            Logger.warn("FINALLY2: " + preparedStatement);
+            Logger.warn("FINALLY3: " + connection);
 
             if (data != null) {
                 try {
@@ -190,6 +193,17 @@ public class HomeController extends Controller {
                     e.printStackTrace();
                 }
             }
+
+            if (preparedStatement != null) {
+                try {
+                    preparedStatement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+
             if (connection != null) {
                 try {
                     connection.close();
@@ -198,11 +212,10 @@ public class HomeController extends Controller {
                 }
             }
 
-
+            Logger.warn("FINALLY12: " + data);
+            Logger.warn("FINALLY22: " + preparedStatement);
+            Logger.warn("FINALLY32: " + connection);
         }
-
-
-
 }
 
 
@@ -210,20 +223,26 @@ public class HomeController extends Controller {
 
 
         Connection connection=null;
-        ResultSet data=null;
+        ResultSet rs1=null;
+        PreparedStatement preparedStatement = null;
+        ResultSet rs2 =null;
+        String query = "SELECT * from heroku_e3d8ce5aa92835f.fullreservationform";
+
         try {
             connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3");
-
-
-            Logger.warn("IN THE GETADMIN: ");
             JTopRootList jTopRootList = new JTopRootList();
-            String query = "SELECT * from heroku_e3d8ce5aa92835f.fullreservationform";
-            data = prepareStatementSelectAll(connection,query);
 
-            while (data.next()) {
-                jTopRootList.add(new JFullFormSubmit(data.getString("name")
-                            ,data.getString("surname"),data.getString("email"),data.getString("phone"),data.getString("massage"),
-                            data.getString("date"),data.getString("time"),data.getString("message")));
+//            preparedStatement=connection.prepareStatement(query);
+
+            rs1=prepareStatementSelectAll(connection,query);
+
+
+//            data = prepareStatementSelectAll(connection,query);
+
+            while (rs1.next()) {
+                jTopRootList.add(new JFullFormSubmit(rs1.getString("name")
+                            ,rs1.getString("surname"),rs1.getString("email"),rs1.getString("phone"),rs1.getString("massage"),
+                            rs1.getString("date"),rs1.getString("time"),rs1.getString("message")));
             }
 
             JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
@@ -233,14 +252,14 @@ public class HomeController extends Controller {
 
 
             // additional implementation to read database max size of each type of table
-            ResultSet rs = prepareStatementSelectAll(connection,"SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;");
+             rs2 = prepareStatementSelectAll(connection,"SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;");
             String rx=null;
             String ry=null;
             HashMap<String, String> hashMap = new HashMap<>();
-            while (rs.next()){
+            while (rs2.next()){
 
-                rx=rs.getString(2);
-                ry=rs.getString(1);
+                rx=rs2.getString(2);
+                ry=rs2.getString(1);
                 Logger.warn("STUFF : "+ ry +" " +rx);
 
                 hashMap.put(ry,rx);
@@ -263,13 +282,33 @@ public class HomeController extends Controller {
             return badRequest("asd");
         }finally{
 
-            if (data != null) {
+            if (rs1 != null) {
                 try {
-                    data.close();
+                    rs1.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
+
+
+            if (rs2 != null) {
+                try {
+                    rs2.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (preparedStatement != null) {
+                try {
+                    preparedStatement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+
             if (connection != null) {
                 try {
                     connection.close();
@@ -277,8 +316,6 @@ public class HomeController extends Controller {
                     e.printStackTrace();
                 }
             }
-
-
         }
 
     }

@@ -45,16 +45,23 @@ public class FullFormMagic {
         return (Connection) DriverManager.getConnection(dbUrl, username, password);
     }
 
+
+
+
+
+
+
     public Result addBookingToDatabase() throws UnsupportedEncodingException, URISyntaxException {
         JsonNode json = request().body().asJson();
 
         Connection connection=null;
+        PreparedStatement xs=null;
         try {
             connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3");
 
 //        try (com.mysql.jdbc.Connection connection = getConnection()) {
 
-            PreparedStatement xs = connection.prepareStatement("INSERT INTO heroku_e3d8ce5aa92835f.fullreservationform (name, surname, email, phone, massage, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)");
+             xs = connection.prepareStatement("INSERT INTO heroku_e3d8ce5aa92835f.fullreservationform (name, surname, email, phone, massage, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)");
             xs.setString(1, setMaxColTypeLen(findJson(json, NAME), getMaxSize(connection, NAME)));
             xs.setString(2, setMaxColTypeLen(findJson(json, SURNAME), getMaxSize(connection, SURNAME)));
             xs.setString(3, setMaxColTypeLen(findJson(json, EMAIL), getMaxSize(connection, EMAIL)));
@@ -81,7 +88,13 @@ public class FullFormMagic {
                     e.printStackTrace();
                 }
             }
-
+            if (xs != null) {
+                try {
+                    xs.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
 
         }
     }
@@ -92,7 +105,15 @@ public class FullFormMagic {
     }
 
     private int getMaxSize(Connection connection, String param1) throws SQLException {
-        ResultSet rs = prepareStatementSelectAll(connection, "SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;");
+
+        PreparedStatement ps=null;
+        ResultSet rs =null;
+        String query="SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;";
+        ps=connection.prepareStatement(query);
+
+//         rs = prepareStatementSelectAll(connection, "SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;");
+
+         rs =ps.executeQuery();
         HashMap<String, String> hashMap = new HashMap<>();
         HashMap<String, String> anotherMap = new HashMap<>();
         while (rs.next()) {
@@ -115,6 +136,22 @@ public class FullFormMagic {
                 red[0] = Integer.parseInt(y);
             }
         });
+        if (rs != null) {
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+        if (ps != null) {
+            try {
+                ps.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
 
         return red[0];
     }
