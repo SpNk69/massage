@@ -225,6 +225,55 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
         $scope.contactFormErrors.email=checkEmail($scope.cfEmail, $scope.data.contactFormErrors.email,$scope.data.contactFormErrors.emailBadFormat);
         $scope.contactFormErrors.message=ifNotFilled($scope.cfMessage, $scope.data.contactFormErrors.message)
 
+
+
+
+
+
+        var sendStuff2 = {
+            "getCustomerQuestion":
+                [
+                    {
+                        "name": $scope.cfName
+                    },
+                    {
+                        "email": $scope.cfEmail
+                    },
+                    {
+                        "message": $scope.cfMessage
+                    }
+                ]
+        };
+
+
+
+        if($scope.contactFormErrors.name.length === 0 && $scope.contactFormErrors.email.length === 0 && $scope.contactFormErrors.message.length === 0){
+
+
+            $http({
+                method: "POST",
+                url: "/sendEmail",
+                data: JSON.stringify(sendStuff2)
+            }).then(function mySuccess(response) {
+                $scope.submitContact = response.status;
+                $scope.submittedSuccessContact = "Thank you. Your Question sent.";
+
+                $scope.cfEmail="";
+                $scope.cfName="";
+                $scope.cfMessage="";
+
+
+            }, function myError(response) {
+                $scope.submitErrorContact = response.data;
+                $scope.submittedFailContact = "THE FUCK HAPPENED???? CALL THE POLICE"
+            });
+        }
+
+
+
+
+
+
     };
 
 

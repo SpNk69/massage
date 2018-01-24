@@ -2,11 +2,13 @@ package controllers;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mysql.jdbc.Connection;
 import jsonthings.*;
 import play.Logger;
 import play.data.FormFactory;
+import play.libs.mailer.Email;
 import play.libs.mailer.MailerClient;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -182,9 +184,6 @@ public class HomeController extends Controller {
             e.printStackTrace();
             return badRequest("Shit Happened");
         }finally{
-            Logger.warn("FINALLY1: " + data);
-            Logger.warn("FINALLY2: " + preparedStatement);
-            Logger.warn("FINALLY3: " + connection);
 
             if (data != null) {
                 try {
@@ -212,9 +211,6 @@ public class HomeController extends Controller {
                 }
             }
 
-            Logger.warn("FINALLY12: " + data);
-            Logger.warn("FINALLY22: " + preparedStatement);
-            Logger.warn("FINALLY32: " + connection);
         }
 }
 
@@ -320,7 +316,38 @@ public class HomeController extends Controller {
 
     }
 
-    private static Connection getConnection() throws URISyntaxException, SQLException {
+
+    public Result sendEmail()   {
+
+
+        JsonNode json = request().body().asJson();
+
+        Logger.warn("RECEIVED EMAIL REQEUST??? name : " + json.findPath("name"));
+        Logger.warn("RECEIVED EMAIL REQEUST??? email : " + json.findPath("email"));
+        Logger.warn("RECEIVED EMAIL REQEUST??? qq : " + json.findPath("message"));
+
+
+
+
+
+        // fix - setFrom - getting  [EmailException: javax.mail.internet.AddressException: Missing final '@domain' in string ``"sdf@asd.lt"'']
+        Email email = new Email().setFrom("Jane@vania.lt")
+                .addTo("info@vidamassage.ch")
+                .setBodyText("Vardas: " + json.findPath("name") +
+                        "\n" + "Email: " + json.findPath("email") +
+                        "\n Zinute: " + json.findPath("message"));
+        mailerClient.send(email);
+
+
+
+
+        return ok("LALA");
+
+    }
+
+
+
+        private static Connection getConnection() throws URISyntaxException, SQLException {
         URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
 
         String username = dbUri.getUserInfo().split(":")[0];

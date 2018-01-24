@@ -24,3 +24,5 @@ GET    /getMassagesData              controllers.HomeController.getMassagesData(
 GET    /getAdminClientData              controllers.HomeController.getAdminClientData()
 
 GET    /toFaceBook    controllers.HomeController.toFaceBook
+
+POST /sendEmail controllers.HomeController.sendEmail()

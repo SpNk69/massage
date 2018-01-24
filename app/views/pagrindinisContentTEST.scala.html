@@ -608,7 +608,7 @@
             <div class="inputDiv ">
                 <label class="item item-input labelDiv">{{data.formNames.massage}}</label>
                 <select class=" col-lg-8 mx-auto text-center bookingForm form-control" ng-model="user.massage"
-                        ng-options="item.massageName  +' = '+  item.price +' CHF '+'('+ item.length + 'min)' +'' for item in loxx.massageInfo"
+                        ng-options="item.massageName  +' ('+ item.length + 'min) ' + ' = ' + item.price +' CHF ' +'' for item in loxx.massageInfo"
                 >
 
                     <option  class="labelDiv " value="">{{data.formPH.massage}}</option>
@@ -664,7 +664,7 @@
 
 
                 <label class="item item-input labelDiv">{{data.formNames.message}}</label>
-                <textarea class=" col-lg-8 mx-auto text-center bookingForm" placeholder={{data.formPH.message}}
+                <textarea class=" col-lg-8 mx-auto text-center bookingForm form-control" placeholder={{data.formPH.message}}
                           ng-model="user.message"
                           name="textarea" rows="3" cols="30"></textarea>
                 <br>
@@ -749,6 +749,13 @@
                             <div class="form-group">
                                 <div class="col-md-12 text-center">
                                     <button ng-click="submitFunctionForm()" class="btn btn-primary btn-lg">{{data.contactForm.button}}</button>
+
+                                    <br>
+                                    <span class="submitSuccess">{{submittedSuccessContact}}</span>
+                                    <span class="submitError">{{submittedFailContact}}</span>
+                                    <!--<span class="submitError">{{submitError}}</span>-->
+                                    <br>
+
                                 </div>
                             </div>
                         </fieldset>
