@@ -135,6 +135,14 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
 
     $scope.truncateSize = 50;
 
+
+
+    // function xxxxx(xer){
+    //     return myFactory(xer);
+    // }
+    // xxxxx("asd");
+
+
     function getMassageTitlesFromFactory() {
         return myFactory.getMassagesTitles();
     }

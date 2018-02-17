@@ -57,7 +57,7 @@ public class FullFormMagic {
         Connection connection=null;
         PreparedStatement xs=null;
         try {
-            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3");
+            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f?useUnicode=yes&characterEncoding=UTF-8", "b2945c551737ae", "809360b3");
 
 //        try (com.mysql.jdbc.Connection connection = getConnection()) {
 
@@ -70,6 +70,16 @@ public class FullFormMagic {
             xs.setString(6, setMaxColTypeLen(findJson(json, DATE), getMaxSize(connection, DATE)));
             xs.setString(7, setMaxColTypeLen(findJson(json, TIME), getMaxSize(connection, TIME)));
             xs.setString(8, setMaxColTypeLen(findJson(json, MESSAGE), getMaxSize(connection, MESSAGE)));
+
+            Logger.warn("name :" +findJson(json, NAME));
+            Logger.warn("surname :" +findJson(json, SURNAME));
+            Logger.warn("email :" +findJson(json, EMAIL));
+            Logger.warn("phone :" +findJson(json, PHONE));
+            Logger.warn("massage :" +findJson(json, MASSAGE));
+            Logger.warn("date :" +findJson(json, DATE));
+            Logger.warn("time :" +findJson(json, TIME));
+            Logger.warn("message :" +findJson(json, MESSAGE));
+
 
             xs.execute();
 

@@ -14,6 +14,8 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.*;
 import javax.inject.Inject;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -160,7 +162,7 @@ public class HomeController extends Controller {
         ResultSet data=null;
         PreparedStatement preparedStatement = null;
         try {
-            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3");
+            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f?useUnicode=yes&characterEncoding=UTF-8", "b2945c551737ae", "809360b3");
 
             Logger.warn("CONNECT" + connection.toString());
             JTopRootList massageList = new JTopRootList();
@@ -225,7 +227,7 @@ public class HomeController extends Controller {
         String query = "SELECT * from heroku_e3d8ce5aa92835f.fullreservationform";
 
         try {
-            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f", "b2945c551737ae", "809360b3");
+            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f?useUnicode=yes&characterEncoding=UTF-8", "b2945c551737ae", "809360b3");
             JTopRootList jTopRootList = new JTopRootList();
 
 //            preparedStatement=connection.prepareStatement(query);
@@ -317,32 +319,20 @@ public class HomeController extends Controller {
     }
 
 
-    public Result sendEmail()   {
-
+    public Result sendEmail() {
 
         JsonNode json = request().body().asJson();
 
-        Logger.warn("RECEIVED EMAIL REQEUST??? name : " + json.findPath("name"));
-        Logger.warn("RECEIVED EMAIL REQEUST??? email : " + json.findPath("email"));
-        Logger.warn("RECEIVED EMAIL REQEUST??? qq : " + json.findPath("message"));
-
-
-
-
-
-        // fix - setFrom - getting  [EmailException: javax.mail.internet.AddressException: Missing final '@domain' in string ``"sdf@asd.lt"'']
-        Email email = new Email().setFrom("Jane@vania.lt")
+        //might be solved?
+        Email email = new Email().setSubject("Klausimas")
+                .setFrom("info@vidamassage.ch")
                 .addTo("info@vidamassage.ch")
                 .setBodyText("Vardas: " + json.findPath("name") +
                         "\n" + "Email: " + json.findPath("email") +
-                        "\n Zinute: " + json.findPath("message"));
+                        "\n" + "Zinute: " + json.findPath("message"));
         mailerClient.send(email);
 
-
-
-
         return ok("LALA");
-
     }
 
 
