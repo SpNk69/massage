@@ -3174,3 +3174,254 @@ Caused by: javax.mail.internet.AddressException: Missing final '@domain'
 2018-02-17 14:29:12,583 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-288 - MAP : email 365
 2018-02-17 14:29:26,255 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-292 - CONNECTcom.mysql.jdbc.JDBC4Connection@4823bc63
 2018-02-17 14:32:09,541 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-297 - CONNECTcom.mysql.jdbc.JDBC4Connection@1b5492fa
+2018-02-17 14:40:09,590 [INFO] from application in scala-execution-context-global-2148 - ApplicationTimer demo: Stopping application at 2018-02-17T13:40:09.590Z after 662s.
+2018-02-17 14:40:09,616 [WARN] from application in scala-execution-context-global-2148 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:40:09,648 [INFO] from application in scala-execution-context-global-2148 - ApplicationTimer demo: Starting application at 2018-02-17T13:40:09.648Z
+2018-02-17 14:40:09,681 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2148 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:40:09,685 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2148 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:40:09,707 [INFO] from play.api.Play in scala-execution-context-global-2148 - Application started (Dev)
+2018-02-17 14:40:10,606 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-296 - CONNECTcom.mysql.jdbc.JDBC4Connection@35d13c97
+2018-02-17 14:44:01,013 [INFO] from application in scala-execution-context-global-2199 - ApplicationTimer demo: Stopping application at 2018-02-17T13:44:01.013Z after 232s.
+2018-02-17 14:44:01,046 [WARN] from application in scala-execution-context-global-2199 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:44:01,079 [INFO] from application in scala-execution-context-global-2199 - ApplicationTimer demo: Starting application at 2018-02-17T13:44:01.079Z
+2018-02-17 14:44:01,118 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2199 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:44:01,121 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2199 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:44:01,142 [INFO] from play.api.Play in scala-execution-context-global-2199 - Application started (Dev)
+2018-02-17 14:44:02,337 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-315 - CONNECTcom.mysql.jdbc.JDBC4Connection@26ad523b
+2018-02-17 14:45:33,706 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-314 - CONNECTcom.mysql.jdbc.JDBC4Connection@6a9f30a8
+2018-02-17 14:45:43,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-310 - CONNECTcom.mysql.jdbc.JDBC4Connection@e362e05
+2018-02-17 14:45:46,982 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-311 - CONNECTcom.mysql.jdbc.JDBC4Connection@47c88310
+2018-02-17 14:46:00,436 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-320 - CONNECTcom.mysql.jdbc.JDBC4Connection@46990e89
+2018-02-17 14:46:30,789 [INFO] from application in scala-execution-context-global-2241 - ApplicationTimer demo: Stopping application at 2018-02-17T13:46:30.789Z after 149s.
+2018-02-17 14:46:30,810 [WARN] from application in scala-execution-context-global-2241 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:46:30,829 [INFO] from application in scala-execution-context-global-2241 - ApplicationTimer demo: Starting application at 2018-02-17T13:46:30.829Z
+2018-02-17 14:46:30,854 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2241 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:46:30,857 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2241 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:46:30,874 [INFO] from play.api.Play in scala-execution-context-global-2241 - Application started (Dev)
+2018-02-17 14:46:31,909 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-282 - CONNECTcom.mysql.jdbc.JDBC4Connection@3fc30809
+2018-02-17 14:46:34,151 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-282 - CONNECTcom.mysql.jdbc.JDBC4Connection@1132d6e1
+2018-02-17 14:46:45,473 [INFO] from application in scala-execution-context-global-2241 - ApplicationTimer demo: Stopping application at 2018-02-17T13:46:45.472Z after 15s.
+2018-02-17 14:46:45,490 [WARN] from application in scala-execution-context-global-2241 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:46:45,510 [INFO] from application in scala-execution-context-global-2241 - ApplicationTimer demo: Starting application at 2018-02-17T13:46:45.509Z
+2018-02-17 14:46:45,538 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2241 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:46:45,540 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2241 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:46:45,557 [INFO] from play.api.Play in scala-execution-context-global-2241 - Application started (Dev)
+2018-02-17 14:46:46,749 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-324 - CONNECTcom.mysql.jdbc.JDBC4Connection@7bfb688a
+2018-02-17 14:46:48,471 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-316 - CONNECTcom.mysql.jdbc.JDBC4Connection@2ccf19bc
+2018-02-17 14:47:18,296 [INFO] from application in scala-execution-context-global-2274 - ApplicationTimer demo: Stopping application at 2018-02-17T13:47:18.296Z after 33s.
+2018-02-17 14:47:18,326 [WARN] from application in scala-execution-context-global-2274 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:47:18,358 [INFO] from application in scala-execution-context-global-2274 - ApplicationTimer demo: Starting application at 2018-02-17T13:47:18.358Z
+2018-02-17 14:47:18,401 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2274 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:47:18,405 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2274 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:47:18,428 [INFO] from play.api.Play in scala-execution-context-global-2274 - Application started (Dev)
+2018-02-17 14:47:19,585 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-282 - CONNECTcom.mysql.jdbc.JDBC4Connection@531f8111
+2018-02-17 14:47:23,023 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-307 - CONNECTcom.mysql.jdbc.JDBC4Connection@61b6af4c
+2018-02-17 14:47:46,196 [INFO] from application in scala-execution-context-global-2339 - ApplicationTimer demo: Stopping application at 2018-02-17T13:47:46.196Z after 28s.
+2018-02-17 14:47:46,290 [WARN] from application in scala-execution-context-global-2339 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:47:46,323 [INFO] from application in scala-execution-context-global-2339 - ApplicationTimer demo: Starting application at 2018-02-17T13:47:46.323Z
+2018-02-17 14:47:46,368 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2339 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:47:46,373 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2339 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:47:46,453 [INFO] from play.api.Play in scala-execution-context-global-2339 - Application started (Dev)
+2018-02-17 14:47:47,763 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-319 - CONNECTcom.mysql.jdbc.JDBC4Connection@6e3d4a43
+2018-02-17 14:47:49,434 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-307 - CONNECTcom.mysql.jdbc.JDBC4Connection@d8ea7b0
+2018-02-17 14:48:06,038 [INFO] from application in scala-execution-context-global-2379 - ApplicationTimer demo: Stopping application at 2018-02-17T13:48:06.038Z after 20s.
+2018-02-17 14:48:06,069 [WARN] from application in scala-execution-context-global-2379 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:48:06,090 [INFO] from application in scala-execution-context-global-2379 - ApplicationTimer demo: Starting application at 2018-02-17T13:48:06.090Z
+2018-02-17 14:48:06,124 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2379 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:48:06,127 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2379 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:48:06,154 [INFO] from play.api.Play in scala-execution-context-global-2379 - Application started (Dev)
+2018-02-17 14:48:07,758 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-328 - CONNECTcom.mysql.jdbc.JDBC4Connection@31741542
+2018-02-17 14:48:09,514 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-317 - CONNECTcom.mysql.jdbc.JDBC4Connection@2da640f0
+2018-02-17 14:48:17,635 [INFO] from application in scala-execution-context-global-2423 - ApplicationTimer demo: Stopping application at 2018-02-17T13:48:17.635Z after 11s.
+2018-02-17 14:48:17,655 [WARN] from application in scala-execution-context-global-2423 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:48:17,672 [INFO] from application in scala-execution-context-global-2423 - ApplicationTimer demo: Starting application at 2018-02-17T13:48:17.672Z
+2018-02-17 14:48:17,698 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2423 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:48:17,701 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2423 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:48:17,717 [INFO] from play.api.Play in scala-execution-context-global-2423 - Application started (Dev)
+2018-02-17 14:48:19,374 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-300 - CONNECTcom.mysql.jdbc.JDBC4Connection@2dc93932
+2018-02-17 14:48:32,225 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-307 - CONNECTcom.mysql.jdbc.JDBC4Connection@484ee866
+2018-02-17 14:57:32,385 [INFO] from application in scala-execution-context-global-2456 - ApplicationTimer demo: Stopping application at 2018-02-17T13:57:32.385Z after 555s.
+2018-02-17 14:57:32,404 [WARN] from application in scala-execution-context-global-2456 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:57:32,422 [INFO] from application in scala-execution-context-global-2456 - ApplicationTimer demo: Starting application at 2018-02-17T13:57:32.422Z
+2018-02-17 14:57:32,447 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2456 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:57:32,449 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2456 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:57:32,465 [INFO] from play.api.Play in scala-execution-context-global-2456 - Application started (Dev)
+2018-02-17 14:58:37,873 [INFO] from application in scala-execution-context-global-2511 - ApplicationTimer demo: Stopping application at 2018-02-17T13:58:37.873Z after 65s.
+2018-02-17 14:58:37,891 [WARN] from application in scala-execution-context-global-2511 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:58:37,910 [INFO] from application in scala-execution-context-global-2511 - ApplicationTimer demo: Starting application at 2018-02-17T13:58:37.910Z
+2018-02-17 14:58:37,939 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2511 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:58:37,941 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2511 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:58:37,957 [INFO] from play.api.Play in scala-execution-context-global-2511 - Application started (Dev)
+2018-02-17 14:59:04,426 [INFO] from application in scala-execution-context-global-2534 - ApplicationTimer demo: Stopping application at 2018-02-17T13:59:04.426Z after 27s.
+2018-02-17 14:59:04,453 [WARN] from application in scala-execution-context-global-2534 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:59:04,477 [INFO] from application in scala-execution-context-global-2534 - ApplicationTimer demo: Starting application at 2018-02-17T13:59:04.477Z
+2018-02-17 14:59:04,506 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2534 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:59:04,509 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2534 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:59:04,526 [INFO] from play.api.Play in scala-execution-context-global-2534 - Application started (Dev)
+2018-02-17 14:59:29,854 [INFO] from application in scala-execution-context-global-2574 - ApplicationTimer demo: Stopping application at 2018-02-17T13:59:29.854Z after 25s.
+2018-02-17 14:59:29,880 [WARN] from application in scala-execution-context-global-2574 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:59:29,897 [INFO] from application in scala-execution-context-global-2574 - ApplicationTimer demo: Starting application at 2018-02-17T13:59:29.897Z
+2018-02-17 14:59:29,923 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2574 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:59:29,928 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2574 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:59:29,952 [INFO] from play.api.Play in scala-execution-context-global-2574 - Application started (Dev)
+2018-02-17 14:59:36,149 [INFO] from application in scala-execution-context-global-2574 - ApplicationTimer demo: Stopping application at 2018-02-17T13:59:36.149Z after 7s.
+2018-02-17 14:59:36,168 [WARN] from application in scala-execution-context-global-2574 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 14:59:36,201 [INFO] from application in scala-execution-context-global-2574 - ApplicationTimer demo: Starting application at 2018-02-17T13:59:36.201Z
+2018-02-17 14:59:36,228 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2574 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 14:59:36,232 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2574 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 14:59:36,252 [INFO] from play.api.Play in scala-execution-context-global-2574 - Application started (Dev)
+2018-02-17 15:00:09,877 [INFO] from application in scala-execution-context-global-2647 - ApplicationTimer demo: Stopping application at 2018-02-17T14:00:09.877Z after 33s.
+2018-02-17 15:00:09,901 [WARN] from application in scala-execution-context-global-2647 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 15:00:09,923 [INFO] from application in scala-execution-context-global-2647 - ApplicationTimer demo: Starting application at 2018-02-17T14:00:09.923Z
+2018-02-17 15:00:09,948 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2647 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 15:00:09,952 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2647 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 15:00:09,969 [INFO] from play.api.Play in scala-execution-context-global-2647 - Application started (Dev)
+2018-02-17 15:15:26,480 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-418 - CONNECTcom.mysql.jdbc.JDBC4Connection@5d401f6d
+2018-02-17 15:15:57,330 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-398 - CONNECTcom.mysql.jdbc.JDBC4Connection@68850552
+2018-02-17 15:17:03,136 [INFO] from application in scala-execution-context-global-2843 - ApplicationTimer demo: Stopping application at 2018-02-17T14:17:03.136Z after 1014s.
+2018-02-17 15:17:03,168 [WARN] from application in scala-execution-context-global-2843 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 15:17:03,207 [INFO] from application in scala-execution-context-global-2843 - ApplicationTimer demo: Starting application at 2018-02-17T14:17:03.207Z
+2018-02-17 15:17:03,253 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2843 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 15:17:03,257 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2843 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 15:17:03,283 [INFO] from play.api.Play in scala-execution-context-global-2843 - Application started (Dev)
+2018-02-17 15:17:04,890 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-404 - CONNECTcom.mysql.jdbc.JDBC4Connection@41b7e002
+2018-02-17 15:17:15,231 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-331 - CONNECTcom.mysql.jdbc.JDBC4Connection@1c8f8259
+2018-02-17 15:17:40,749 [INFO] from application in scala-execution-context-global-2843 - ApplicationTimer demo: Stopping application at 2018-02-17T14:17:40.749Z after 37s.
+2018-02-17 15:17:40,793 [WARN] from application in scala-execution-context-global-2843 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 15:17:40,815 [INFO] from application in scala-execution-context-global-2843 - ApplicationTimer demo: Starting application at 2018-02-17T14:17:40.814Z
+2018-02-17 15:17:40,846 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2843 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 15:17:40,849 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2843 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 15:17:40,868 [INFO] from play.api.Play in scala-execution-context-global-2843 - Application started (Dev)
+2018-02-17 15:17:42,066 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-400 - CONNECTcom.mysql.jdbc.JDBC4Connection@54ce65d2
+2018-02-17 15:18:06,306 [INFO] from application in scala-execution-context-global-2843 - ApplicationTimer demo: Stopping application at 2018-02-17T14:18:06.306Z after 26s.
+2018-02-17 15:18:06,327 [WARN] from application in scala-execution-context-global-2843 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 15:18:06,348 [INFO] from application in scala-execution-context-global-2843 - ApplicationTimer demo: Starting application at 2018-02-17T14:18:06.348Z
+2018-02-17 15:18:06,374 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2843 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 15:18:06,377 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2843 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 15:18:06,394 [INFO] from play.api.Play in scala-execution-context-global-2843 - Application started (Dev)
+2018-02-17 15:18:07,739 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-387 - CONNECTcom.mysql.jdbc.JDBC4Connection@3948ba8
+2018-02-17 15:22:46,362 [INFO] from application in scala-execution-context-global-2951 - ApplicationTimer demo: Stopping application at 2018-02-17T14:22:46.362Z after 280s.
+2018-02-17 15:22:46,390 [WARN] from application in scala-execution-context-global-2951 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 15:22:46,413 [INFO] from application in scala-execution-context-global-2951 - ApplicationTimer demo: Starting application at 2018-02-17T14:22:46.413Z
+2018-02-17 15:22:46,440 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2951 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 15:22:46,444 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2951 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 15:22:46,465 [INFO] from play.api.Play in scala-execution-context-global-2951 - Application started (Dev)
+2018-02-17 15:23:37,529 [INFO] from application in scala-execution-context-global-2994 - ApplicationTimer demo: Stopping application at 2018-02-17T14:23:37.529Z after 51s.
+2018-02-17 15:23:37,571 [WARN] from application in scala-execution-context-global-2994 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 15:23:37,595 [INFO] from application in scala-execution-context-global-2994 - ApplicationTimer demo: Starting application at 2018-02-17T14:23:37.595Z
+2018-02-17 15:23:37,625 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-2994 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 15:23:37,630 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-2994 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 15:23:37,648 [INFO] from play.api.Play in scala-execution-context-global-2994 - Application started (Dev)
+2018-02-17 15:23:40,880 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-394 - CONNECTcom.mysql.jdbc.JDBC4Connection@4dcf7876
+2018-02-17 15:23:41,627 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-359 - CONNECTcom.mysql.jdbc.JDBC4Connection@1c5fc7b3
+2018-02-17 15:27:24,639 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-435 - CONNECTcom.mysql.jdbc.JDBC4Connection@7ef21d
+2018-02-17 15:28:06,278 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-419 - CONNECTcom.mysql.jdbc.JDBC4Connection@1f2eae76
+2018-02-17 15:28:09,378 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-432 - CONNECTcom.mysql.jdbc.JDBC4Connection@68b96d56
+2018-02-17 15:31:18,562 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-441 - CONNECTcom.mysql.jdbc.JDBC4Connection@76a9398b
+2018-02-17 15:31:49,651 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-394 - CONNECTcom.mysql.jdbc.JDBC4Connection@401e2c99
+2018-02-17 15:31:52,646 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-443 - CONNECTcom.mysql.jdbc.JDBC4Connection@9e90209
+2018-02-17 15:32:01,445 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-449 - CONNECTcom.mysql.jdbc.JDBC4Connection@fb0653b
+2018-02-17 15:32:04,251 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-400 - CONNECTcom.mysql.jdbc.JDBC4Connection@4dfdacf0
+2018-02-17 15:32:08,241 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-420 - CONNECTcom.mysql.jdbc.JDBC4Connection@71a7d0cf
+2018-02-17 15:32:58,406 [INFO] from application in scala-execution-context-global-3152 - ApplicationTimer demo: Stopping application at 2018-02-17T14:32:58.406Z after 561s.
+2018-02-17 15:32:58,438 [WARN] from application in scala-execution-context-global-3152 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 15:32:58,471 [INFO] from application in scala-execution-context-global-3152 - ApplicationTimer demo: Starting application at 2018-02-17T14:32:58.471Z
+2018-02-17 15:32:58,505 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-3152 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 15:32:58,508 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3152 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 15:32:58,529 [INFO] from play.api.Play in scala-execution-context-global-3152 - Application started (Dev)
+2018-02-17 15:32:59,886 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-400 - CONNECTcom.mysql.jdbc.JDBC4Connection@45bc8dd3
+2018-02-17 15:33:05,329 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-398 - CONNECTcom.mysql.jdbc.JDBC4Connection@62893fb4
+2018-02-17 15:33:12,279 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-400 - CONNECTcom.mysql.jdbc.JDBC4Connection@7261035c
+2018-02-17 15:38:37,077 [INFO] from application in scala-execution-context-global-3197 - ApplicationTimer demo: Stopping application at 2018-02-17T14:38:37.076Z after 339s.
+2018-02-17 15:38:37,107 [WARN] from application in scala-execution-context-global-3197 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-17 15:38:37,138 [INFO] from application in scala-execution-context-global-3197 - ApplicationTimer demo: Starting application at 2018-02-17T14:38:37.137Z
+2018-02-17 15:38:37,172 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-3197 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-17 15:38:37,177 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-3197 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-17 15:38:37,201 [INFO] from play.api.Play in scala-execution-context-global-3197 - Application started (Dev)
+2018-02-17 15:38:41,065 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-449 - CONNECTcom.mysql.jdbc.JDBC4Connection@25bd14a5
+2018-02-17 15:38:55,596 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-434 - CONNECTcom.mysql.jdbc.JDBC4Connection@251cb66c
+2018-02-17 15:38:59,513 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-449 - CONNECTcom.mysql.jdbc.JDBC4Connection@4776d778

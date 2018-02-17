@@ -2,133 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec72ac84-4374-4999-8edc-66fc5f9faa8c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__aopalliance_aopalliance_1_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__cglib_cglib_nodep_3_2_4_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__ch_qos_logback_logback_classic_1_2_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__ch_qos_logback_logback_core_1_2_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_classmate_1_3_1_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_annotations_2_8_9_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_core_2_8_9_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_databind_2_8_9_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_8_9_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_8_9_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_code_findbugs_jsr305_1_3_9_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_code_findbugs_jsr305_3_0_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_code_gson_gson_2_8_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_errorprone_error_prone_annotations_2_0_18_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_guava_guava_22_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_inject_extensions_guice_assistedinject_4_1_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_inject_guice_4_1_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_j2objc_j2objc_annotations_1_1_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_googlecode_usc_jdbcdslog_1_0_6_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_h2database_h2_1_4_194_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_jolbox_bonecp_0_8_0_RELEASE_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_novocode_junit_interface_0_11_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_mail_javax_mail_1_5_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_akka_akka_actor_2_12_2_5_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_akka_akka_http_core_2_12_10_0_8_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_akka_akka_parsing_2_12_10_0_8_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_akka_akka_slf4j_2_12_2_5_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_akka_akka_stream_2_12_2_5_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_config_1_3_1_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_build_link_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_filters_helpers_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_akka_http_server_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_enhancer_1_1_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_exceptions_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_functional_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_guice_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_java_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_java_forms_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_java_jdbc_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_jdbc_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_jdbc_api_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_json_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_logback_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_mailer_2_12_6_0_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_mailer_guice_2_12_6_0_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_netty_utils_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_server_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_streams_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_test_2_12_2_6_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_twirl_api_2_12_1_3_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_ssl_config_core_2_12_0_2_1_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_zaxxer_HikariCP_2_6_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_codec_commons_codec_1_10_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_io_commons_io_2_5_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_logging_commons_logging_1_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_jsonwebtoken_jjwt_0_7_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__javax_activation_activation_1_1_1_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__javax_inject_javax_inject_1_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__javax_transaction_jta_1_1_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__javax_validation_validation_api_1_1_0_Final_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__joda_time_joda_time_2_9_9_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__junit_junit_4_12_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__mysql_mysql_connector_java_5_1_40_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_java_dev_jna_jna_4_1_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_java_dev_jna_jna_platform_4_1_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_jodah_typetools_0_5_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_sourceforge_cssparser_cssparser_0_9_23_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_sourceforge_htmlunit_htmlunit_2_27_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_sourceforge_htmlunit_htmlunit_core_js_2_27_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_sourceforge_htmlunit_neko_htmlunit_2_27_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_email_1_4_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_exec_1_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_lang3_3_6_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_httpcomponents_httpclient_4_5_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_httpcomponents_httpcore_4_4_6_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_httpcomponents_httpmime_4_5_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_assertj_assertj_core_3_6_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_atteo_classindex_classindex_3_4_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_awaitility_awaitility_2_0_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_mojo_animal_sniffer_annotations_1_14_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_eclipse_jetty_jetty_client_9_4_5_v20170502_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_eclipse_jetty_jetty_http_9_4_5_v20170502_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_eclipse_jetty_jetty_io_9_4_5_v20170502_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_eclipse_jetty_jetty_util_9_4_5_v20170502_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_eclipse_jetty_websocket_websocket_api_9_4_5_v20170502_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_eclipse_jetty_websocket_websocket_client_9_4_5_v20170502_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_eclipse_jetty_websocket_websocket_common_9_4_5_v20170502_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_fluentlenium_fluentlenium_core_3_2_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_glassfish_javax_json_1_0_4_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_hamcrest_hamcrest_core_1_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_hamcrest_hamcrest_library_1_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_hibernate_hibernate_validator_5_4_1_Final_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_javassist_javassist_3_21_0_GA_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_jboss_logging_jboss_logging_3_3_0_Final_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_objenesis_objenesis_2_1_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_reactivestreams_reactive_streams_1_0_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_reflections_reflections_0_9_11_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_modules_scala_java8_compat_2_12_0_8_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_modules_scala_parser_combinators_2_12_1_0_6_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_modules_scala_xml_2_12_1_0_6_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_library_2_12_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_reflect_2_12_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_sbt_test_interface_1_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_seleniumhq_selenium_htmlunit_driver_2_27_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_seleniumhq_selenium_selenium_api_3_4_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_seleniumhq_selenium_selenium_firefox_driver_3_4_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_seleniumhq_selenium_selenium_remote_driver_3_4_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_seleniumhq_selenium_selenium_support_3_4_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_jcl_over_slf4j_1_7_25_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_jul_to_slf4j_1_7_25_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_slf4j_api_1_7_25_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_beans_4_3_9_RELEASE_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_context_4_3_9_RELEASE_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_core_4_3_9_RELEASE_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_typelevel_macro_compat_2_12_1_1_1_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_w3c_css_sac_1_3_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__tyrex_tyrex_1_0_1_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__xalan_serializer_2_7_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__xalan_xalan_2_7_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__xerces_xercesImpl_2_11_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/SBT__xml_apis_xml_apis_1_4_01_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/root-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/FullFormMagic.java" afterPath="$PROJECT_DIR$/app/controllers/FullFormMagic.java" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" />
+      <change beforePath="$PROJECT_DIR$/app/views/main2TEST.scala.html" afterPath="$PROJECT_DIR$/app/views/main2TEST.scala.html" />
       <change beforePath="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" afterPath="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
       <change beforePath="$PROJECT_DIR$/public/design2/myTest.js" afterPath="$PROJECT_DIR$/public/design2/myTest.js" />
@@ -157,17 +31,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/routes">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="21" column="67" lean-forward="false" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2880">
@@ -186,31 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/application.conf">
+      <file leaf-file-name="angular-recaptcha.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/design2/angular-recaptcha.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="331" column="80" lean-forward="false" selection-start-line="331" selection-start-column="80" selection-end-line="331" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.sbt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.sbt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="672">
+              <caret line="297" column="78" lean-forward="false" selection-start-line="297" selection-start-column="60" selection-end-line="297" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -232,8 +76,8 @@
       <file leaf-file-name="myTest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3245">
-              <caret line="7" column="103" lean-forward="false" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="103" />
+            <state relative-caret-position="180">
+              <caret line="241" column="0" lean-forward="false" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -249,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pagrindinisContentTEST.scala.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pagrindinisContentTEST.scala.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="377" column="33" lean-forward="true" selection-start-line="377" selection-start-column="33" selection-end-line="377" selection-end-column="34" />
+            <state relative-caret-position="680">
+              <caret line="710" column="87" lean-forward="false" selection-start-line="710" selection-start-column="87" selection-end-line="710" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -262,8 +106,8 @@
       <file leaf-file-name="main2TEST.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="216">
+              <caret line="15" column="103" lean-forward="true" selection-start-line="15" selection-start-column="103" selection-end-line="15" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -281,10 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bandymas</find>
-      <find>bandy</find>
-      <find>getMassage</find>
-      <find>dynamic</find>
       <find>header.jpg</find>
       <find>bg-primary</find>
       <find>masažai</find>
@@ -311,6 +151,10 @@
       <find>logger</find>
       <find>anticel</find>
       <find>antice</find>
+      <find>rec</find>
+      <find>recap</find>
+      <find>g-reca</find>
+      <find>vcRecaptchaService</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -377,15 +221,15 @@
         <option value="$PROJECT_DIR$/public/design2/ng-text-truncate.js" />
         <option value="$PROJECT_DIR$/conf/production.conf" />
         <option value="$PROJECT_DIR$/app/views/pagrindinisTEST.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/main2TEST.scala.html" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/public/design2/myTest.js" />
         <option value="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" />
-        <option value="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/controllers/FullFormMagic.java" />
         <option value="$PROJECT_DIR$/app/controllers/HomeController.java" />
+        <option value="$PROJECT_DIR$/app/views/main2TEST.scala.html" />
+        <option value="$PROJECT_DIR$/public/design2/myTest.js" />
+        <option value="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
       </list>
     </option>
   </component>
@@ -462,18 +306,31 @@
               <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="design2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -908,7 +765,7 @@
       <workItem from="1516469167945" duration="655000" />
       <workItem from="1518463659656" duration="2850000" />
       <workItem from="1518720947266" duration="795000" />
-      <workItem from="1518721773425" duration="10237000" />
+      <workItem from="1518721773425" duration="14215000" />
     </task>
     <servers />
   </component>
@@ -939,7 +796,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224804000" />
+    <option name="totallyTimeSpent" value="228782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-4" width="1920" height="1204" extended-state="6" />
@@ -965,7 +822,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27247956" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19427083" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.190625" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1130,13 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/angular-recaptcha.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/design2/ng-text-truncate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1272,30 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3245">
-          <caret line="7" column="103" lean-forward="false" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="377" column="33" lean-forward="true" selection-start-line="377" selection-start-column="33" selection-end-line="377" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
@@ -1329,6 +1155,38 @@
             <element signature="e#1545#1546#0" expanded="true" />
             <marker date="1518874145892" expanded="true" signature="5923:5971" ph="SELECT * FRO... massageinfo" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/angular-recaptcha.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="297" column="78" lean-forward="false" selection-start-line="297" selection-start-column="60" selection-end-line="297" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="103" lean-forward="true" selection-start-line="15" selection-start-column="103" selection-end-line="15" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="241" column="0" lean-forward="false" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="710" column="87" lean-forward="false" selection-start-line="710" selection-start-column="87" selection-end-line="710" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>

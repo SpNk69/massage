@@ -707,6 +707,10 @@
             <div class="labelDiv">
 
 
+                <br>
+                <div class="g-recaptcha col-md-9 control-label centerContactUs captcha2" data-sitekey="6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8"></div>
+                <br>
+
 
                 <button ng-click="submitFullForm()">{{data.formNames.button}}</button>
                 <br>
@@ -729,7 +733,7 @@
 <hr>
 
 <script src='@routes.Assets.at("design2/ng-map.min.js")'></script>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 <section id="{{contactMe}}">
     <div class="container">
         <div class="row">
@@ -776,7 +780,11 @@
                                     <span class="submitError">{{contactFormErrors.message}}</span>
 
                                 </div>
+                                <br>
+                                <div class="g-recaptcha col-md-9 control-label centerContactUs captcha1" data-sitekey="6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8"></div>
+                                <br>
                             </div>
+
 
                             <!-- Form actions -->
                             <div class="form-group">
@@ -791,9 +799,10 @@
 
                                 </div>
                             </div>
+
+
                         </fieldset>
 
-                        <!--<div class="g-recaptcha" data-sitekey="6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8"></div>-->
 
 
                     </form>

@@ -19,6 +19,13 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
         console.log('shapes', map.shapes);
     });
 
+
+
+
+
+
+
+
     $scope.languageParameter = "lt";
     $scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEYVMDc9EIG4zsSYD6SXJ7gzk05BOinH0";
 
@@ -231,7 +238,7 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
         console.log("STUFF: " + $scope.cfMessage);
         $scope.contactFormErrors.name=ifNotFilled($scope.cfName, $scope.data.contactFormErrors.name);
         $scope.contactFormErrors.email=checkEmail($scope.cfEmail, $scope.data.contactFormErrors.email,$scope.data.contactFormErrors.emailBadFormat);
-        $scope.contactFormErrors.message=ifNotFilled($scope.cfMessage, $scope.data.contactFormErrors.message)
+        $scope.contactFormErrors.message=ifNotFilled($scope.cfMessage, $scope.data.contactFormErrors.message);
 
 
 
