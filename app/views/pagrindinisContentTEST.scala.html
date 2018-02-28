@@ -707,12 +707,12 @@
             <div class="labelDiv">
 
 
-                <br>
-                <div class="g-recaptcha col-md-9 control-label centerContactUs captcha2" data-sitekey="6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8"></div>
-                <br>
+                @*<br>*@
+                @*<div class="g-recaptcha col-md-9 control-label centerContactUs captcha2" data-sitekey="6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8"></div>*@
+                @*<br>*@
 
 
-                <button ng-click="submitFullForm()">{{data.formNames.button}}</button>
+                <button ng-click="submitFullForm()" class="btn btn-primary btn-md">{{data.formNames.button}}</button>
                 <br>
                 <span class="submitSuccess">{{submittedSuccess}}</span>
                 <span class="submitError">{{submittedFail}}</span>
@@ -780,20 +780,50 @@
                                     <span class="submitError">{{contactFormErrors.message}}</span>
 
                                 </div>
-                                <br>
-                                <div class="g-recaptcha col-md-9 control-label centerContactUs captcha1" data-sitekey="6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8"></div>
-                                <br>
+
+                                @*<br>*@
+                                @*<div class="g-recaptcha col-md-9 control-label centerContactUs captcha1" data-sitekey="6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8"></div>*@
+                                @*<br>*@
                             </div>
+
+
+
+                            <div class="col-md-9 control-label centerContactUs"
+                            vc-recaptcha
+                            theme="'light'"
+                            key="model.key"
+                            on-create="setWidgetId(widgetId)"
+                            on-success="setResponse(response)"
+                            on-expire="cbExpiration()"
+                                lang="languageParameter"
+                            ></div>
+                            <span class="submitError">{{contactFormErrors.captcha}}</span>
+                            <br>
+
+
+
+
+
 
 
                             <!-- Form actions -->
                             <div class="form-group">
                                 <div class="col-md-12 text-center">
-                                    <button ng-click="submitFunctionForm()" class="btn btn-primary btn-lg">{{data.contactForm.button}}</button>
+                                    <button ng-click="submitFunctionForm()" class="btn btn-primary btn-md">{{data.contactForm.button}}</button>
 
                                     <br>
                                     <span class="submitSuccess">{{submittedSuccessContact}}</span>
                                     <span class="submitError">{{submittedFailContact}}</span>
+                                    <p>SCIENE : {{submitErrorContact}}</p>
+                                   <br>
+                                    {{lalala}}
+                                    <br>
+                                    zero{{submitErrorContact.contactFormErrors[0]}}
+                                    <br>
+                                    one{{lalala.contactFormErrors}}
+
+                                    <br>
+                                    {{loxx.massageInfo}}
                                     <!--<span class="submitError">{{submitError}}</span>-->
                                     <br>
 

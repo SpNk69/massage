@@ -9,13 +9,27 @@ public class JRootKeysToGetArrays {
 //    String name;
 
     JTopRootList massageInfo;
+
+    public JRootKeysToGetArrays() {
+
+    }
+
+    public JTopRootList getContactFormErrors() {
+        return contactFormErrors;
+    }
+
+    public void setContactFormErrors(JTopRootList contactFormErrors) {
+        this.contactFormErrors = contactFormErrors;
+    }
+
     JTopRootList leTesto;
     JTopRootList fullFormSubmit;
+    JTopRootList contactFormErrors;
 
 
-
-
-
+    public JRootKeysToGetArrays(JTopRootList contactFormErrors) {
+        this.contactFormErrors = contactFormErrors;
+    }
 
     public JTopRootList getFullFormSubmit() {
         return fullFormSubmit;

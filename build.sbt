@@ -13,6 +13,10 @@ libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.40"
 
 libraryDependencies += guice
 libraryDependencies += javaJdbc
+libraryDependencies ++= Seq(
+  ws
+)
+libraryDependencies += ehcache
 // Test Database
 libraryDependencies += "com.h2database" % "h2" % "1.4.194"
 

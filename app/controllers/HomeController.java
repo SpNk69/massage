@@ -1,6 +1,7 @@
 package controllers;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,22 +13,25 @@ import play.libs.mailer.Email;
 import play.libs.mailer.MailerClient;
 import play.mvc.Controller;
 import play.mvc.Result;
+import validation.ValidationUtility;
 import views.html.*;
+
 import javax.inject.Inject;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.*;
 import java.util.HashMap;
+import java.util.concurrent.CompletionStage;
+
+import play.libs.ws.*;
 
 
 /**
  * This controller contains an action to handle HTTP requests
  * to the application's home page.
  */
-public class HomeController extends Controller {
+public class HomeController extends Controller implements WSBodyReadables, WSBodyWritables {
 
     /**
      * An action that renders an HTML page with a welcome message.
@@ -42,9 +46,14 @@ public class HomeController extends Controller {
     @Inject
     MailerClient mailerClient;
 
+    ValidationUtility validationHelper = new ValidationUtility();
 
+    private final WSClient ws;
 
-
+    @Inject
+    public HomeController(WSClient ws) {
+        this.ws = ws;
+    }
 
 
     public Result pagrindinisLTTEST() {
@@ -52,83 +61,11 @@ public class HomeController extends Controller {
     }
 
 
-
-
-
-
-
     public Result toFaceBook() {
         return redirect("http://facebook.com");
     }
 
 
-    private String cleanUp(String input) {
-        return input.replaceAll("[^\\w ]+", "");
-    }
-
-//    public Result submitLT() {
-//        Form<ContactFormData> userForm = formFactory.form(ContactFormData.class).bindFromRequest();
-//        try {
-//
-//            Logger.info("UserFormLT: " + userForm.get().toString());
-//        } catch (IllegalStateException e) {
-//            return badRequest(views.html.pagrindinis.render("", userForm));
-//        }
-//        //TO DO: Make email content look better
-//        Email email = new Email().setFrom(userForm.get().getEmail())
-//                .addTo("info@vidamassage.ch")
-//                .setBodyText("Vardas: " + cleanUp(userForm.get().getFirstName()) +
-//                        "\n" + "Email: " + userForm.get().getEmail() +
-//                        "\n Zinute: " + cleanUp(userForm.get().getTextbox()));
-//        mailerClient.send(email);
-//
-//
-//        flash("success", "Ačiū už klausimą! Susisieksime kai tik galėsime.");
-//        return redirect("/lt#klausk");
-//    }
-//
-//    public Result submitRU() {
-//        Form<ContactFormDataRU> userForm = formFactory.form(ContactFormDataRU.class).bindFromRequest();
-//        try {
-//
-//            Logger.info("UserFormRU: " + userForm.get().toString());
-//        } catch (IllegalStateException e) {
-//            return badRequest(views.html.russianPagrindinis.render("", userForm));
-//        }
-//        //TO DO: Make email content look better
-//        Email email = new Email().setFrom(userForm.get().getEmail())
-//                .addTo("info@vidamassage.ch")
-//                .setBodyText("Vardas: " + cleanUp(userForm.get().getFirstName()) +
-//                        "\n" + "Email: " + userForm.get().getEmail() +
-//                        "\n Zinute: " + cleanUp(userForm.get().getTextbox()));
-//        mailerClient.send(email);
-//
-//
-//        flash("success", "Спасибо за вопрос! Мы свяжемся с вами, как только сможем.");
-//        return redirect("/ru#bonpoc");
-//    }
-//
-//    public Result submitDE() {
-//        Form<ContactFormDataDE> userForm = formFactory.form(ContactFormDataDE.class).bindFromRequest();
-//        try {
-//
-//            Logger.info("UserFormDE: " + userForm.get().toString());
-//        } catch (IllegalStateException e) {
-//            return badRequest(views.html.germanPagrindinis.render("", userForm));
-//        }
-//        //TO DO: Make email content look better
-//        Email email = new Email().setFrom(userForm.get().getEmail())
-//                .addTo("info@vidamassage.ch")
-//                .setBodyText("Vardas: " + cleanUp(userForm.get().getFirstName()) +
-//                        "\n" + "Email: " + userForm.get().getEmail() +
-//                        "\n Zinute: " + cleanUp(userForm.get().getTextbox()));
-//        mailerClient.send(email);
-//
-//
-//        flash("success", "Vielen Dank für die Frage! Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.");
-//        return redirect("/#fragen");
-//    }
-//
 
 
 
@@ -146,31 +83,32 @@ public class HomeController extends Controller {
         PreparedStatement preparedStatement = con.prepareStatement(query);
         return preparedStatement.executeQuery();
     }
-    private ObjectMapper initializeObjectMapper(){
+
+    private ObjectMapper initializeObjectMapper() {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         return objectMapper;
     }
 
-//good
+    //good
     public Result getMassagesData() throws IOException, URISyntaxException, SQLException {
 
 //        try (com.mysql.jdbc.Connection connection = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/play", "root", "root")) {
 
-        Connection connection=null;
-        ResultSet data=null;
+        Connection connection = null;
+        ResultSet data = null;
         PreparedStatement preparedStatement = null;
         try {
             connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f?useUnicode=yes&characterEncoding=UTF-8", "b2945c551737ae", "809360b3");
 
             Logger.warn("CONNECT" + connection.toString());
             JTopRootList massageList = new JTopRootList();
-            String query="SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;";
-            preparedStatement=connection.prepareStatement(query);
+            String query = "SELECT * FROM heroku_e3d8ce5aa92835f.massageinfo;";
+            preparedStatement = connection.prepareStatement(query);
             // reassignment - shorter name for now
 //           data= prepareStatementSelectAll(connection,query);
-           data=preparedStatement.executeQuery();
+            data = preparedStatement.executeQuery();
 
             while (data.next()) {
                 massageList.add(new JEntryMassagePriceLength(data.getString(2), data.getDouble(3), data.getInt(4)));
@@ -182,10 +120,10 @@ public class HomeController extends Controller {
             String serializedData = initializeObjectMapper().writeValueAsString(topKey);
 
             return ok(serializedData);
-        } catch(SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             return badRequest("Shit Happened");
-        }finally{
+        } finally {
 
             if (data != null) {
                 try {
@@ -204,7 +142,6 @@ public class HomeController extends Controller {
             }
 
 
-
             if (connection != null) {
                 try {
                     connection.close();
@@ -214,16 +151,16 @@ public class HomeController extends Controller {
             }
 
         }
-}
+    }
 
 
     public Result getAdminClientData() throws SQLException, IOException, URISyntaxException {
 
 
-        Connection connection=null;
-        ResultSet rs1=null;
+        Connection connection = null;
+        ResultSet rs1 = null;
         PreparedStatement preparedStatement = null;
-        ResultSet rs2 =null;
+        ResultSet rs2 = null;
         String query = "SELECT * from heroku_e3d8ce5aa92835f.fullreservationform";
 
         try {
@@ -232,15 +169,15 @@ public class HomeController extends Controller {
 
 //            preparedStatement=connection.prepareStatement(query);
 
-            rs1=prepareStatementSelectAll(connection,query);
+            rs1 = prepareStatementSelectAll(connection, query);
 
 
 //            data = prepareStatementSelectAll(connection,query);
 
             while (rs1.next()) {
                 jTopRootList.add(new JFullFormSubmit(rs1.getString("name")
-                            ,rs1.getString("surname"),rs1.getString("email"),rs1.getString("phone"),rs1.getString("massage"),
-                            rs1.getString("date"),rs1.getString("time"),rs1.getString("message")));
+                        , rs1.getString("surname"), rs1.getString("email"), rs1.getString("phone"), rs1.getString("massage"),
+                        rs1.getString("date"), rs1.getString("time"), rs1.getString("message")));
             }
 
             JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
@@ -248,29 +185,28 @@ public class HomeController extends Controller {
             String out = initializeObjectMapper().writeValueAsString(topKey);
 
 
-
             // additional implementation to read database max size of each type of table
-             rs2 = prepareStatementSelectAll(connection,"SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;");
-            String rx=null;
-            String ry=null;
+            rs2 = prepareStatementSelectAll(connection, "SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;");
+            String rx = null;
+            String ry = null;
             HashMap<String, String> hashMap = new HashMap<>();
-            while (rs2.next()){
+            while (rs2.next()) {
 
-                rx=rs2.getString(2);
-                ry=rs2.getString(1);
-                Logger.warn("STUFF : "+ ry +" " +rx);
+                rx = rs2.getString(2);
+                ry = rs2.getString(1);
+                Logger.warn("STUFF : " + ry + " " + rx);
 
-                hashMap.put(ry,rx);
+                hashMap.put(ry, rx);
             }
 
 //            list2.forEach(x->{Logger.warn(x.replaceAll("\\D+",""));});
 
             HashMap<String, String> anotherMap = new HashMap<>();
-            hashMap.forEach((x,y)->{anotherMap.put(x,
-                y.replaceAll("\\D+",""));
+            hashMap.forEach((x, y) -> {
+                anotherMap.put(x,
+                        y.replaceAll("\\D+", ""));
             });
-            anotherMap.forEach((x,y)->Logger.warn("MAP : " +x+ " " + y ));
-
+            anotherMap.forEach((x, y) -> Logger.warn("MAP : " + x + " " + y));
 
 
             return ok(out);
@@ -278,7 +214,7 @@ public class HomeController extends Controller {
         } catch (SQLException e) {
             e.printStackTrace();
             return badRequest("asd");
-        }finally{
+        } finally {
 
             if (rs1 != null) {
                 try {
@@ -306,7 +242,6 @@ public class HomeController extends Controller {
             }
 
 
-
             if (connection != null) {
                 try {
                     connection.close();
@@ -319,25 +254,89 @@ public class HomeController extends Controller {
     }
 
 
-    public Result sendEmail() {
 
-        JsonNode json = request().body().asJson();
-
-        //might be solved?
-        Email email = new Email().setSubject("Klausimas")
+    private void deliverEmail(JsonNode name, JsonNode email, JsonNode message) {
+        Email readyEmail = new Email().setSubject("Klausimas")
                 .setFrom("info@vidamassage.ch")
                 .addTo("info@vidamassage.ch")
-                .setBodyText("Vardas: " + json.findPath("name") +
-                        "\n" + "Email: " + json.findPath("email") +
-                        "\n" + "Zinute: " + json.findPath("message"));
-        mailerClient.send(email);
+                .setBodyText("Vardas: " + name.asText() +
+                        "\n" + "Email: " + email.asText() +
+                        "\n" + "Zinute: " + message.asText());
+        mailerClient.send(readyEmail);
 
-        return ok("LALA");
     }
 
 
+    private String prepareResponse(ContactFormErrors form) throws JsonProcessingException {
+        JTopRootList jTopRootList = new JTopRootList();
+        JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
+        jTopRootList.add(form);
+        topKey.setContactFormErrors(jTopRootList);
+        return initializeObjectMapper().writeValueAsString(topKey);
+    }
 
-        private static Connection getConnection() throws URISyntaxException, SQLException {
+
+    public Result sendEmail() throws IOException {
+
+        JsonNode json = request().body().asJson();
+
+        JsonNode nameNode = json.findPath("name");
+        JsonNode emailNode = json.findPath("email");
+        JsonNode messageNode = json.findPath("message");
+        JsonNode captchaNode = json.findPath("captcha");
+
+        String nameER = validationHelper.validateName(nameNode);
+        String emailER = validationHelper.validateEmail(emailNode);
+        String messageER = validationHelper.validateMessage(messageNode);
+        String captchaER = "";
+
+        String response;
+
+        if (nameER.equalsIgnoreCase("") && emailER.equalsIgnoreCase("") && messageER.equalsIgnoreCase("")) {
+            Logger.warn("HAPPENED IN IF");
+
+            captchaER = captchaValidation2(captchaNode);
+            if (!captchaER.equalsIgnoreCase("")) {
+                response = prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
+                Logger.warn("Happened in IF IF ");
+                return badRequest(response);
+            }
+
+            deliverEmail(nameNode, emailNode, messageNode);
+            response = prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
+
+            return ok(response);
+
+        } else if (!nameER.equalsIgnoreCase("") || !emailER.equalsIgnoreCase("") || !messageER.equalsIgnoreCase("")) {
+            Logger.warn("Happened in ELSE IF ");
+            response = prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
+            return badRequest(response);
+        }
+
+        return badRequest("Something absolutely went wrong");
+    }
+
+
+    private String captchaValidation2(JsonNode captcha) {
+        String x = captcha.asText();
+        String urlTo = "https://www.google.com/recaptcha/api/siteverify";
+        WSRequest request = ws.url(urlTo);
+        request.addQueryParameter("secret", "6Lfg2z8UAAAAACiagKKEsYHfi0RdFce0HQf9XLfo");
+        request.addQueryParameter("response", x);
+//        CompletionStage jsonPromise = ws.url(urlTo).setContentType("application/x-www-form-urlencoded; charset=utf-8").post("secret=6Lfg2z8UAAAAACiagKKEsYHfi0RdFce0HQf9XLfo&response=" + x).thenApply(WSResponse::asJson);
+        CompletionStage<WSResponse> responsePromise = request.post("x");
+        CompletionStage<JsonNode> jsonPromise = responsePromise.thenApply(WSResponse::asJson);
+        JsonNode jsonData = jsonPromise.toCompletableFuture().join();
+        String answer = jsonData.findPath("success").asText();
+        Logger.warn("CAPTCHA: " + answer);
+        if (!answer.equalsIgnoreCase("true")) {
+            return "captchaNotSolved";
+        }
+        return "";
+    }
+
+
+    private static Connection getConnection() throws URISyntaxException, SQLException {
         URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
 
         String username = dbUri.getUserInfo().split(":")[0];

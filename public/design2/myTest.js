@@ -1,12 +1,65 @@
-var app = angular.module('myTestApp', ['ngTextTruncate', 'myTestApp2', 'moment-picker','ngMap']); //ngMessages
+var app = angular.module('myTestApp', ['ngTextTruncate', 'myTestApp2', 'moment-picker','ngMap','vcRecaptcha']); //ngMessages
 app.config(['momentPickerProvider', function (momentPickerProvider) {
     momentPickerProvider.options({
         minutesFormat: 'HH:mm'
     });
 }]);
 
-app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', function ($scope, myFactory, $http,NgMap) {
+app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', function ($scope, myFactory, $http,NgMap,vcRecaptchaService) {
     // $scope.language = document.getElementsByTagName("html").item(0).getAttribute("lang");
+
+
+
+    console.log("this is your app's controller");
+    $scope.response = null;
+    $scope.widgetId = null;
+    $scope.model = {
+        key: '6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8'
+    };
+    $scope.setResponse = function (response) {
+        console.info('Response available');
+        console.info("THE RESPONSE1: " + response);
+        console.log("vcRecaptchaService : " + vcRecaptchaService);
+
+        $scope.response = response;
+        console.info("THE RESPONSE2: " + $scope.response);
+
+    };
+    $scope.setWidgetId = function (widgetId) {
+        console.info('Created widget ID: %s', widgetId);
+        $scope.widgetId = widgetId;
+        console.log("YES RESP: " + $scope.response)
+    };
+    $scope.cbExpiration = function() {
+        console.info('Captcha expired. Resetting response object');
+        vcRecaptchaService.reload($scope.widgetId);
+        $scope.response = null;
+    };
+    $scope.submit2 = function () {
+        var valid;
+        /**
+         * SERVER SIDE VALIDATION
+         *
+         * You need to implement your server side validation here.
+         * Send the reCaptcha response to the server and use some of the server side APIs to validate it
+         * See https://developers.google.com/recaptcha/docs/verify
+         */
+        console.log('sending the captcha response to the server', $scope.response);
+        if (valid) {
+            console.log('Success');
+        } else {
+            console.log('Failed validation');
+            // In case of a failed validation you need to reload the captcha
+            // because each response can be checked just once
+            vcRecaptchaService.reload($scope.widgetId);
+        }
+    };
+
+
+
+
+
+
 
     $scope.cfName="";
     $scope.cfEmail="";
@@ -68,7 +121,8 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
     $scope.contactFormErrors = {
         name:"",
         email:"",
-        message:""
+        message:"",
+        captcha:""
 
     };
 
@@ -105,6 +159,8 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
 
 
         };
+
+// $scope.cbExpiration();
 
         $scope.cfName="";
         $scope.cfEmail="";
@@ -232,13 +288,54 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
     }
 
 
+    function checkForNull(x,y){
+        if(x==null){
+            return y;
+
+
+        }else{
+            return "";
+        }
+
+    }
+
+
+
+function setCrapIfBadResponse(par1, par2, par3, par4){
+        if(par1 !== ""){
+            $scope.contactFormErrors.name="Please make sure that name is set properly";
+        }
+    if(par2 !== "") {
+        $scope.contactFormErrors.email="Please make sure that email is set properly";
+
+    }
+    if(par3 !== "") {
+
+        $scope.contactFormErrors.message="Please make sure that message entered";
+
+
+    }
+    if(par4 !== "") {
+        $scope.contactFormErrors.captcha="Please validate captcha 4 real"
+
+    }
+}
+
+
+
     $scope.submitFunctionForm= function (){
-        console.log("STUFF: " + $scope.cfName);
-        console.log("STUFF: " + $scope.cfEmail);
-        console.log("STUFF: " + $scope.cfMessage);
+        console.log("STUFF1: " + $scope.cfName);
+        console.log("STUFF2: " + $scope.cfEmail);
+        console.log("STUFF3: " + $scope.cfMessage);
         $scope.contactFormErrors.name=ifNotFilled($scope.cfName, $scope.data.contactFormErrors.name);
         $scope.contactFormErrors.email=checkEmail($scope.cfEmail, $scope.data.contactFormErrors.email,$scope.data.contactFormErrors.emailBadFormat);
         $scope.contactFormErrors.message=ifNotFilled($scope.cfMessage, $scope.data.contactFormErrors.message);
+        $scope.contactFormErrors.captcha=checkForNull($scope.response,$scope.data.contactFormErrors.captcha);
+
+
+        $scope.captchaResponse=$scope.response;
+
+
 
 
 
@@ -256,6 +353,9 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
                     },
                     {
                         "message": $scope.cfMessage
+                    },
+                    {
+                        "captcha": $scope.captchaResponse
                     }
                 ]
         };
@@ -272,6 +372,13 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
             }).then(function mySuccess(response) {
                 $scope.submitContact = response.status;
                 $scope.submittedSuccessContact = "Thank you. Your Question sent.";
+                console.log("STATUS: ");
+                console.log(response.data.contactFormErrors);
+                console.log(response.data.contactFormErrors[0].name);
+                console.log(response.data.contactFormErrors[0].email);
+                console.log(response.data.contactFormErrors[0].message);
+                console.log(response.data.contactFormErrors[0].captcha);
+                $scope.lalala=response.data;
 
                 $scope.cfEmail="";
                 $scope.cfName="";
@@ -280,6 +387,16 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
 
             }, function myError(response) {
                 $scope.submitErrorContact = response.data;
+                console.log($scope.submitErrorContact);
+
+
+
+                setCrapIfBadResponse($scope.submitErrorContact.contactFormErrors[0].name,$scope.submitErrorContact.contactFormErrors[0].email,$scope.submitErrorContact.contactFormErrors[0].message,$scope.submitErrorContact.contactFormErrors[0].captcha);
+
+
+                // if($scope.submitErrorContact.contactFormErrors[0].name === "x"){
+                //     $scope.contactFormErrors.name="FUCK THAT SHIT  " + $scope.submitErrorContact.contactFormErrors[0].name;
+                // }
                 $scope.submittedFailContact = "THE FUCK HAPPENED???? CALL THE POLICE"
             });
         }

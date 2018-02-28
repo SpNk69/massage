@@ -568,20 +568,23 @@ gg.factory('myFactory', function () {
                     "name":"Neįvestas vardas",
                     "email":"Neįvestas elektroninis paštas",
                     "emailBadFormat":"Neteisingas elektroninio pašto adresas",
-                    "message":"Neįvesta žinutė"
+                    "message":"Neįvesta žinutė",
+                    "captcha":"Patvirtinkite, kad esate ne robotas"
                 },
                 "de":{
                     "name":"Kein Name eingegeben",
                     "email":"Keine E-Mail-Adresse eingegeben",
                     "emailBadFormat":"Ungültige E-Mail-Adresse",
-                    "message":"Nachricht nicht eingegeben"
+                    "message":"Nachricht nicht eingegeben",
+                    "captcha":"Bitte bestätigen Sie, dass Sie kein Roboter sind"
 
                 },
                 "ru":{
                     "name":"Имя не введено",
                     "email":"Не введено электронное письмо",
                     "emailBadFormat":"Недопустимый адрес электронной почты",
-                    "message":"Сообщение не введено"
+                    "message":"Сообщение не введено",
+                    "captcha":"Пожалуйста, подтвердите, что вы не робот"
 
                 }
             }
