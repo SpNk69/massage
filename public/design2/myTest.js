@@ -5,11 +5,19 @@ app.config(['momentPickerProvider', function (momentPickerProvider) {
     });
 }]);
 
-app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', function ($scope, myFactory, $http,NgMap,vcRecaptchaService) {
+app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRecaptchaService', function ($scope, myFactory, $http,NgMap,vcRecaptchaService) {
     // $scope.language = document.getElementsByTagName("html").item(0).getAttribute("lang");
 
 
 
+
+
+    $scope.captchaLang="lt";
+
+    $scope.changeCaptchaLang = function(languageParameter){
+        console.log("sup   " + languageParameter);
+
+    };
     console.log("this is your app's controller");
     $scope.response = null;
     $scope.widgetId = null;
@@ -18,42 +26,47 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
     };
     $scope.setResponse = function (response) {
         console.info('Response available');
-        console.info("THE RESPONSE1: " + response);
-        console.log("vcRecaptchaService : " + vcRecaptchaService);
 
         $scope.response = response;
-        console.info("THE RESPONSE2: " + $scope.response);
 
     };
-    $scope.setWidgetId = function (widgetId) {
+    $scope.setWidgetId = function (widgetId,langMy) {
+
+        vcRecaptchaService.reload(widgetId);
+
+        vcRecaptchaService.useLang(widgetId,langMy);
+
         console.info('Created widget ID: %s', widgetId);
+
         $scope.widgetId = widgetId;
-        console.log("YES RESP: " + $scope.response)
     };
+
     $scope.cbExpiration = function() {
         console.info('Captcha expired. Resetting response object');
         vcRecaptchaService.reload($scope.widgetId);
+        vcRecaptchaService.useLang($scope.widgetId,$scope.languageParameter);
         $scope.response = null;
     };
-    $scope.submit2 = function () {
-        var valid;
-        /**
-         * SERVER SIDE VALIDATION
-         *
-         * You need to implement your server side validation here.
-         * Send the reCaptcha response to the server and use some of the server side APIs to validate it
-         * See https://developers.google.com/recaptcha/docs/verify
-         */
-        console.log('sending the captcha response to the server', $scope.response);
-        if (valid) {
-            console.log('Success');
-        } else {
-            console.log('Failed validation');
-            // In case of a failed validation you need to reload the captcha
-            // because each response can be checked just once
-            vcRecaptchaService.reload($scope.widgetId);
-        }
-    };
+
+
+        // var valid;
+        // /**
+        //  * SERVER SIDE VALIDATION
+        //  *
+        //  * You need to implement your server side validation here.
+        //  * Send the reCaptcha response to the server and use some of the server side APIs to validate it
+        //  * See https://developers.google.com/recaptcha/docs/verify
+        //  */
+        // console.log('sending the captcha response to the server', $scope.response);
+        // if (valid) {
+        //     console.log('Success');
+        // } else {
+        //     console.log('Failed validation');
+        //     // In case of a failed validation you need to reload the captcha
+        //     // because each response can be checked just once
+        //     vcRecaptchaService.reload($scope.widgetId);
+        // }
+
 
 
 
@@ -137,7 +150,10 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap', func
 
 
     $scope.doTranslate = function xxx(langToSetTo) {
+        $scope.setWidgetId($scope.widgetId,langToSetTo);
 
+
+        $scope.languageParameter=langToSetTo;
 
         $scope.data = {
             titlePage: setLanguage(langToSetTo, getPageTitleFromFactory()),
@@ -372,6 +388,10 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
             }).then(function mySuccess(response) {
                 $scope.submitContact = response.status;
                 $scope.submittedSuccessContact = "Thank you. Your Question sent.";
+
+                $scope.setWidgetId($scope.widgetId,$scope.languageParameter);
+
+
                 console.log("STATUS: ");
                 console.log(response.data.contactFormErrors);
                 console.log(response.data.contactFormErrors[0].name);

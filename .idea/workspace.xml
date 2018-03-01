@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec72ac84-4374-4999-8edc-66fc5f9faa8c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/jsonthings/ContactFormErrors.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/validation/ValidationUtility.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" />
-      <change beforePath="$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java" afterPath="$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java" />
-      <change beforePath="$PROJECT_DIR$/app/views/main2TEST.scala.html" afterPath="$PROJECT_DIR$/app/views/main2TEST.scala.html" />
       <change beforePath="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" afterPath="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
       <change beforePath="$PROJECT_DIR$/public/design2/myTest.js" afterPath="$PROJECT_DIR$/public/design2/myTest.js" />
-      <change beforePath="$PROJECT_DIR$/public/design2/zeba.js" afterPath="$PROJECT_DIR$/public/design2/zeba.js" />
     </list>
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -39,7 +29,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42937854">
+    <splitter split-orientation="horizontal" split-proportion="0.49333334">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="routes" pinned="false" current-in-tab="false">
@@ -52,7 +42,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="446">
@@ -149,11 +139,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="myTest.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="myTest.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="878">
-                  <caret line="388" column="41" lean-forward="false" selection-start-line="388" selection-start-column="23" selection-end-line="388" selection-end-column="41" />
+                <state relative-caret-position="2880">
+                  <caret line="160" column="27" lean-forward="true" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -163,21 +153,31 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="myTest.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
+          <file leaf-file-name="angular-recaptcha.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/design2/angular-recaptcha.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="742">
-                  <caret line="620" column="30" lean-forward="false" selection-start-line="620" selection-start-column="15" selection-end-line="620" selection-end-column="30" />
+                <state relative-caret-position="176">
+                  <caret line="357" column="81" lean-forward="false" selection-start-line="357" selection-start-column="81" selection-end-line="357" selection-end-column="81" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pagrindinisContentTEST.scala.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="pagrindinisContentTEST.scala.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="802">
-                  <caret line="827" column="40" lean-forward="false" selection-start-line="827" selection-start-column="40" selection-end-line="827" selection-end-column="40" />
+                <state relative-caret-position="434">
+                  <caret line="795" column="50" lean-forward="false" selection-start-line="795" selection-start-column="39" selection-end-line="795" selection-end-column="50" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main2TEST.scala.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="324">
+                  <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -209,17 +209,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>play.filters.hosts</find>
-      <find>play.</find>
-      <find>connec</find>
-      <find>gstatic</find>
-      <find>hikaricp</find>
-      <find>maximumpoolsize</find>
-      <find>{{contactMe}}</find>
-      <find>logger</find>
-      <find>anticel</find>
-      <find>antice</find>
-      <find>rec</find>
       <find>recap</find>
       <find>g-reca</find>
       <find>vcRecaptchaService</find>
@@ -228,7 +217,6 @@
       <find>maps</find>
       <find>response</find>
       <find>verification</find>
-      <find>submit2</find>
       <find>doTran</find>
       <find>error</find>
       <find>submit</find>
@@ -237,8 +225,20 @@
       <find>gimme</find>
       <find>key</find>
       <find>FINAL</find>
+      <find>recaptcha</find>
+      <find>angular-re</find>
       <find>loxx</find>
+      <find>$scope.submit2</find>
       <find>ws</find>
+      <find>dotran</find>
+      <find>dotra</find>
+      <find>thank yu</find>
+      <find>thank</find>
+      <find>thank you</find>
+      <find>recaptcha widget id not</find>
+      <find>send</find>
+      <find>setWidgetId</find>
+      <find>submit2</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -308,12 +308,12 @@
         <option value="$PROJECT_DIR$/app/jsonthings/contactFormErrors.java" />
         <option value="$PROJECT_DIR$/app/jsonthings/ContactFormErrors.java" />
         <option value="$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java" />
-        <option value="$PROJECT_DIR$/public/design2/myTest.js" />
-        <option value="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/validation/ValidateForms.java" />
         <option value="$PROJECT_DIR$/app/validation/ValidationUtility.java" />
         <option value="$PROJECT_DIR$/app/controllers/HomeController.java" />
+        <option value="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
+        <option value="$PROJECT_DIR$/public/design2/myTest.js" />
       </list>
     </option>
   </component>
@@ -349,7 +349,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="154" />
+    <option name="x" value="52" />
     <option name="y" value="24" />
     <option name="width" value="1855" />
     <option name="height" value="919" />
@@ -872,7 +872,7 @@
       <workItem from="1516469167945" duration="655000" />
       <workItem from="1518463659656" duration="2850000" />
       <workItem from="1518720947266" duration="795000" />
-      <workItem from="1518721773425" duration="81578000" />
+      <workItem from="1518721773425" duration="88906000" />
     </task>
     <servers />
   </component>
@@ -903,7 +903,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296145000" />
+    <option name="totallyTimeSpent" value="303473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1204" extended-state="6" />
@@ -930,7 +930,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27247956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1412399" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07008086" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1176,22 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/angular-recaptcha.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="36" column="45" lean-forward="false" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/design2/zeba.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
@@ -1285,14 +1269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="620" column="30" lean-forward="false" selection-start-line="620" selection-start-column="15" selection-end-line="620" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1326,16 +1302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/validation/ValidationUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -1353,10 +1319,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/validation/ValidationUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="827" column="40" lean-forward="false" selection-start-line="827" selection-start-column="40" selection-end-line="827" selection-end-column="40" />
+        <state relative-caret-position="434">
+          <caret line="795" column="50" lean-forward="false" selection-start-line="795" selection-start-column="39" selection-end-line="795" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/angular-recaptcha.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="357" column="81" lean-forward="false" selection-start-line="357" selection-start-column="81" selection-end-line="357" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="160" column="27" lean-forward="true" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
           <folding />
         </state>
       </provider>

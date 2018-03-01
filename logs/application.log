@@ -7749,3 +7749,191 @@ Caused by: java.lang.NullPointerException: null
 2018-02-28 22:30:38,596 [WARN] from application in application-akka.actor.default-dispatcher-4 - Happened in ELSE IF 
 2018-02-28 22:30:42,688 [WARN] from application in application-akka.actor.default-dispatcher-4 - HAPPENED IN IF
 2018-02-28 22:30:42,957 [WARN] from application in application-akka.actor.default-dispatcher-4 - CAPTCHA: true
+2018-02-28 22:34:58,328 [INFO] from application in scala-execution-context-global-8870 - ApplicationTimer demo: Stopping application at 2018-02-28T21:34:58.327Z after 458s.
+2018-02-28 22:34:58,359 [WARN] from application in scala-execution-context-global-8870 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-28 22:34:58,393 [INFO] from application in scala-execution-context-global-8870 - ApplicationTimer demo: Starting application at 2018-02-28T21:34:58.393Z
+2018-02-28 22:34:58,459 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-8870 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-28 22:34:58,463 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-8870 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-28 22:34:58,463 [INFO] from play.api.Play in scala-execution-context-global-8870 - Application started (Dev)
+2018-02-28 22:34:59,837 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1306 - CONNECTcom.mysql.jdbc.JDBC4Connection@b74c322
+2018-02-28 22:35:33,999 [WARN] from application in application-akka.actor.default-dispatcher-2 - EMAIL VALIDATION WORKS!
+2018-02-28 22:35:33,999 [WARN] from application in application-akka.actor.default-dispatcher-2 - Happened in ELSE IF 
+2018-02-28 22:35:37,589 [WARN] from application in application-akka.actor.default-dispatcher-2 - HAPPENED IN IF
+2018-02-28 22:35:37,873 [WARN] from application in application-akka.actor.default-dispatcher-2 - CAPTCHA: true
+2018-02-28 22:42:43,480 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1322 - CONNECTcom.mysql.jdbc.JDBC4Connection@5eb5ab67
+2018-02-28 22:42:45,117 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1323 - CONNECTcom.mysql.jdbc.JDBC4Connection@1e7e103
+2018-02-28 22:42:54,081 [WARN] from application in application-akka.actor.default-dispatcher-2 - HAPPENED IN IF
+2018-02-28 22:42:54,306 [WARN] from application in application-akka.actor.default-dispatcher-2 - CAPTCHA: true
+2018-02-28 22:49:02,083 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1349 - CONNECTcom.mysql.jdbc.JDBC4Connection@36e5b974
+2018-02-28 22:49:03,467 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1332 - CONNECTcom.mysql.jdbc.JDBC4Connection@2d424f5f
+2018-02-28 22:49:20,183 [WARN] from application in application-akka.actor.default-dispatcher-2 - HAPPENED IN IF
+2018-02-28 22:49:20,410 [WARN] from application in application-akka.actor.default-dispatcher-2 - CAPTCHA: true
+2018-02-28 23:11:22,110 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1362 - CONNECTcom.mysql.jdbc.JDBC4Connection@70751e4
+2018-02-28 23:11:27,661 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1380 - CONNECTcom.mysql.jdbc.JDBC4Connection@39353230
+2018-02-28 23:11:46,022 [WARN] from application in application-akka.actor.default-dispatcher-2 - HAPPENED IN IF
+2018-02-28 23:11:46,293 [WARN] from application in application-akka.actor.default-dispatcher-2 - CAPTCHA: true
+2018-02-28 23:30:32,306 [INFO] from application in scala-execution-context-global-9121 - ApplicationTimer demo: Stopping application at 2018-02-28T22:30:32.306Z after 3334s.
+2018-02-28 23:30:32,343 [WARN] from application in scala-execution-context-global-9121 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-28 23:30:32,388 [INFO] from application in scala-execution-context-global-9121 - ApplicationTimer demo: Starting application at 2018-02-28T22:30:32.388Z
+2018-02-28 23:30:32,458 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9121 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-28 23:30:32,461 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9121 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-28 23:30:32,461 [INFO] from play.api.Play in scala-execution-context-global-9121 - Application started (Dev)
+2018-02-28 23:30:33,671 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1395 - CONNECTcom.mysql.jdbc.JDBC4Connection@7ef14005
+2018-02-28 23:30:48,001 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1395 - CONNECTcom.mysql.jdbc.JDBC4Connection@1b91e0c0
+2018-02-28 23:32:42,909 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1417 - CONNECTcom.mysql.jdbc.JDBC4Connection@2396e219
+2018-02-28 23:34:36,156 [INFO] from application in scala-execution-context-global-9262 - ApplicationTimer demo: Stopping application at 2018-02-28T22:34:36.156Z after 244s.
+2018-02-28 23:34:36,189 [WARN] from application in scala-execution-context-global-9262 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-28 23:34:36,217 [INFO] from application in scala-execution-context-global-9262 - ApplicationTimer demo: Starting application at 2018-02-28T22:34:36.217Z
+2018-02-28 23:34:36,269 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9262 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-28 23:34:36,271 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9262 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-28 23:34:36,272 [INFO] from play.api.Play in scala-execution-context-global-9262 - Application started (Dev)
+2018-02-28 23:34:37,548 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1409 - CONNECTcom.mysql.jdbc.JDBC4Connection@2366d79c
+2018-02-28 23:36:21,661 [INFO] from application in scala-execution-context-global-9337 - ApplicationTimer demo: Stopping application at 2018-02-28T22:36:21.661Z after 105s.
+2018-02-28 23:36:21,693 [WARN] from application in scala-execution-context-global-9337 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-28 23:36:21,746 [INFO] from application in scala-execution-context-global-9337 - ApplicationTimer demo: Starting application at 2018-02-28T22:36:21.746Z
+2018-02-28 23:36:21,853 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9337 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-28 23:36:21,858 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9337 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-28 23:36:21,858 [INFO] from play.api.Play in scala-execution-context-global-9337 - Application started (Dev)
+2018-02-28 23:36:23,183 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1397 - CONNECTcom.mysql.jdbc.JDBC4Connection@6112f6aa
+2018-02-28 23:36:27,313 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1397 - CONNECTcom.mysql.jdbc.JDBC4Connection@71193cdc
+2018-02-28 23:36:57,689 [INFO] from application in scala-execution-context-global-9362 - ApplicationTimer demo: Stopping application at 2018-02-28T22:36:57.689Z after 36s.
+2018-02-28 23:36:57,802 [WARN] from application in scala-execution-context-global-9362 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-28 23:36:57,913 [INFO] from application in scala-execution-context-global-9362 - ApplicationTimer demo: Starting application at 2018-02-28T22:36:57.913Z
+2018-02-28 23:36:58,106 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9362 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-28 23:36:58,110 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9362 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-28 23:36:58,111 [INFO] from play.api.Play in scala-execution-context-global-9362 - Application started (Dev)
+2018-02-28 23:36:59,253 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1391 - CONNECTcom.mysql.jdbc.JDBC4Connection@568d9bb1
+2018-02-28 23:37:36,613 [INFO] from application in scala-execution-context-global-9468 - ApplicationTimer demo: Stopping application at 2018-02-28T22:37:36.613Z after 39s.
+2018-02-28 23:37:36,638 [WARN] from application in scala-execution-context-global-9468 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-02-28 23:37:36,672 [INFO] from application in scala-execution-context-global-9468 - ApplicationTimer demo: Starting application at 2018-02-28T22:37:36.672Z
+2018-02-28 23:37:36,736 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9468 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-02-28 23:37:36,741 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9468 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-02-28 23:37:36,741 [INFO] from play.api.Play in scala-execution-context-global-9468 - Application started (Dev)
+2018-02-28 23:37:37,811 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-1389 - CONNECTcom.mysql.jdbc.JDBC4Connection@10ebedd5
+2018-03-01 18:54:53,629 [INFO] from application in scala-execution-context-global-9530 - ApplicationTimer demo: Stopping application at 2018-03-01T17:54:53.629Z after 69437s.
+2018-03-01 18:54:53,658 [WARN] from application in scala-execution-context-global-9530 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-03-01 18:54:53,698 [INFO] from application in scala-execution-context-global-9530 - ApplicationTimer demo: Starting application at 2018-03-01T17:54:53.698Z
+2018-03-01 18:54:53,765 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9530 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-01 18:54:53,771 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9530 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-01 18:54:53,771 [INFO] from play.api.Play in scala-execution-context-global-9530 - Application started (Dev)
+2018-03-01 18:55:27,555 [INFO] from application in scala-execution-context-global-9555 - ApplicationTimer demo: Stopping application at 2018-03-01T17:55:27.555Z after 34s.
+2018-03-01 18:55:27,584 [WARN] from application in scala-execution-context-global-9555 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-03-01 18:55:27,612 [INFO] from application in scala-execution-context-global-9555 - ApplicationTimer demo: Starting application at 2018-03-01T17:55:27.612Z
+2018-03-01 18:55:27,707 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9555 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-01 18:55:27,711 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9555 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-01 18:55:27,712 [INFO] from play.api.Play in scala-execution-context-global-9555 - Application started (Dev)
+2018-03-01 18:59:13,222 [INFO] from application in scala-execution-context-global-9754 - ApplicationTimer demo: Stopping application at 2018-03-01T17:59:13.222Z after 226s.
+2018-03-01 18:59:13,255 [WARN] from application in scala-execution-context-global-9754 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-03-01 18:59:13,286 [INFO] from application in scala-execution-context-global-9754 - ApplicationTimer demo: Starting application at 2018-03-01T17:59:13.286Z
+2018-03-01 18:59:13,363 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9754 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-01 18:59:13,367 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9754 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-01 18:59:13,367 [INFO] from play.api.Play in scala-execution-context-global-9754 - Application started (Dev)
+2018-03-01 18:59:42,134 [INFO] from application in scala-execution-context-global-9779 - ApplicationTimer demo: Stopping application at 2018-03-01T17:59:42.134Z after 29s.
+2018-03-01 18:59:42,240 [WARN] from application in scala-execution-context-global-9779 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-03-01 18:59:42,329 [INFO] from application in scala-execution-context-global-9779 - ApplicationTimer demo: Starting application at 2018-03-01T17:59:42.329Z
+2018-03-01 18:59:42,483 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9779 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-01 18:59:42,499 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9779 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-01 18:59:42,499 [INFO] from play.api.Play in scala-execution-context-global-9779 - Application started (Dev)
+2018-03-01 19:02:23,541 [INFO] from application in scala-execution-context-global-9907 - ApplicationTimer demo: Stopping application at 2018-03-01T18:02:23.541Z after 161s.
+2018-03-01 19:02:23,563 [WARN] from application in scala-execution-context-global-9907 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-03-01 19:02:23,590 [INFO] from application in scala-execution-context-global-9907 - ApplicationTimer demo: Starting application at 2018-03-01T18:02:23.590Z
+2018-03-01 19:02:23,644 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-9907 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-01 19:02:23,647 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-9907 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-01 19:02:23,648 [INFO] from play.api.Play in scala-execution-context-global-9907 - Application started (Dev)
+2018-03-01 19:07:20,705 [INFO] from application in scala-execution-context-global-10022 - ApplicationTimer demo: Stopping application at 2018-03-01T18:07:20.705Z after 297s.
+2018-03-01 19:07:20,763 [WARN] from application in scala-execution-context-global-10022 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-03-01 19:07:20,797 [INFO] from application in scala-execution-context-global-10022 - ApplicationTimer demo: Starting application at 2018-03-01T18:07:20.797Z
+2018-03-01 19:07:20,857 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-10022 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-01 19:07:20,860 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-10022 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-01 19:07:20,860 [INFO] from play.api.Play in scala-execution-context-global-10022 - Application started (Dev)
+2018-03-01 19:09:12,898 [INFO] from application in scala-execution-context-global-10115 - ApplicationTimer demo: Stopping application at 2018-03-01T18:09:12.898Z after 112s.
+2018-03-01 19:09:12,992 [WARN] from application in scala-execution-context-global-10115 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-03-01 19:09:13,039 [INFO] from application in scala-execution-context-global-10115 - ApplicationTimer demo: Starting application at 2018-03-01T18:09:13.039Z
+2018-03-01 19:09:13,152 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-10115 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-01 19:09:13,159 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-10115 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-01 19:09:13,159 [INFO] from play.api.Play in scala-execution-context-global-10115 - Application started (Dev)
+2018-03-01 19:12:55,865 [INFO] from application in scala-execution-context-global-10213 - ApplicationTimer demo: Stopping application at 2018-03-01T18:12:55.864Z after 222s.
+2018-03-01 19:12:55,889 [WARN] from application in scala-execution-context-global-10213 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2018-03-01 19:12:55,914 [INFO] from application in scala-execution-context-global-10213 - ApplicationTimer demo: Starting application at 2018-03-01T18:12:55.914Z
+2018-03-01 19:12:55,969 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-10213 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-03-01 19:12:55,972 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-10213 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-03-01 19:12:55,972 [INFO] from play.api.Play in scala-execution-context-global-10213 - Application started (Dev)
+2018-03-01 19:13:15,574 [WARN] from application in application-akka.actor.default-dispatcher-5 - EMAIL VALIDATION WORKS!
+2018-03-01 19:13:15,574 [WARN] from application in application-akka.actor.default-dispatcher-5 - Happened in ELSE IF 
+2018-03-01 19:13:20,303 [WARN] from application in application-akka.actor.default-dispatcher-5 - HAPPENED IN IF
+2018-03-01 19:13:20,579 [WARN] from application in application-akka.actor.default-dispatcher-5 - CAPTCHA: true
+2018-03-01 19:16:54,700 [WARN] from application in application-akka.actor.default-dispatcher-3 - EMAIL VALIDATION WORKS!
+2018-03-01 19:16:54,700 [WARN] from application in application-akka.actor.default-dispatcher-3 - Happened in ELSE IF 
+2018-03-01 19:16:57,116 [WARN] from application in application-akka.actor.default-dispatcher-3 - HAPPENED IN IF
+2018-03-01 19:16:57,356 [WARN] from application in application-akka.actor.default-dispatcher-3 - CAPTCHA: true
+2018-03-01 19:24:03,113 [WARN] from application in application-akka.actor.default-dispatcher-3 - Happened in ELSE IF 
+2018-03-01 19:24:07,223 [WARN] from application in application-akka.actor.default-dispatcher-3 - HAPPENED IN IF
+2018-03-01 19:24:07,452 [WARN] from application in application-akka.actor.default-dispatcher-3 - CAPTCHA: true
+2018-03-01 19:26:50,769 [WARN] from application in application-akka.actor.default-dispatcher-3 - HAPPENED IN IF
+2018-03-01 19:26:50,997 [WARN] from application in application-akka.actor.default-dispatcher-3 - CAPTCHA: true
+2018-03-01 19:28:17,956 [WARN] from application in application-akka.actor.default-dispatcher-3 - HAPPENED IN IF
+2018-03-01 19:28:18,189 [WARN] from application in application-akka.actor.default-dispatcher-3 - CAPTCHA: true
+2018-03-01 19:31:41,088 [WARN] from application in application-akka.actor.default-dispatcher-3 - HAPPENED IN IF
+2018-03-01 19:31:41,340 [WARN] from application in application-akka.actor.default-dispatcher-3 - CAPTCHA: true
+2018-03-01 19:35:50,806 [WARN] from application in application-akka.actor.default-dispatcher-3 - HAPPENED IN IF
+2018-03-01 19:35:51,040 [WARN] from application in application-akka.actor.default-dispatcher-3 - CAPTCHA: true
+2018-03-01 19:37:39,549 [WARN] from application in application-akka.actor.default-dispatcher-3 - HAPPENED IN IF
+2018-03-01 19:37:39,781 [WARN] from application in application-akka.actor.default-dispatcher-3 - CAPTCHA: true
+2018-03-01 19:38:03,133 [WARN] from application in application-akka.actor.default-dispatcher-3 - HAPPENED IN IF
+2018-03-01 19:38:03,297 [WARN] from application in application-akka.actor.default-dispatcher-3 - CAPTCHA: true

@@ -731,6 +731,7 @@
 
 
 <hr>
+    <script src='@routes.Assets.at("design2/angular-recaptcha.js")'></script>
 
 <script src='@routes.Assets.at("design2/ng-map.min.js")'></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -792,10 +793,9 @@
                             vc-recaptcha
                             theme="'light'"
                             key="model.key"
-                            on-create="setWidgetId(widgetId)"
+                            on-create="setWidgetId(widgetId,languageParameter)"
                             on-success="setResponse(response)"
                             on-expire="cbExpiration()"
-                                lang="languageParameter"
                             ></div>
                             <span class="submitError">{{contactFormErrors.captcha}}</span>
                             <br>
