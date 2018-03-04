@@ -27,6 +27,7 @@ import java.util.concurrent.CompletionStage;
 import play.libs.ws.*;
 
 
+
 /**
  * This controller contains an action to handle HTTP requests
  * to the application's home page.
@@ -54,6 +55,7 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
     public HomeController(WSClient ws) {
         this.ws = ws;
     }
+
 
 
     public Result pagrindinisLTTEST() {
@@ -176,7 +178,7 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
 
             while (rs1.next()) {
                 jTopRootList.add(new JFullFormSubmit(rs1.getString("name")
-                        , rs1.getString("surname"), rs1.getString("email"), rs1.getString("phone"), rs1.getString("massage"),
+                        , rs1.getString("surname"), rs1.getString("email"), rs1.getString("phone"), rs1.getString("massage"), rs1.getString("massageOption"),
                         rs1.getString("date"), rs1.getString("time"), rs1.getString("message")));
             }
 
@@ -317,10 +319,13 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
     }
 
 
-    private String captchaValidation2(JsonNode captcha) {
+    protected String captchaValidation2(JsonNode captcha) {
         String x = captcha.asText();
         String urlTo = "https://www.google.com/recaptcha/api/siteverify";
+        Logger.warn("BEFORE REQUEST");
         WSRequest request = ws.url(urlTo);
+        Logger.warn("AFTER REQUEST");
+
         request.addQueryParameter("secret", "6Lfg2z8UAAAAACiagKKEsYHfi0RdFce0HQf9XLfo");
         request.addQueryParameter("response", x);
 //        CompletionStage jsonPromise = ws.url(urlTo).setContentType("application/x-www-form-urlencoded; charset=utf-8").post("secret=6Lfg2z8UAAAAACiagKKEsYHfi0RdFce0HQf9XLfo&response=" + x).thenApply(WSResponse::asJson);
@@ -329,6 +334,8 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
         JsonNode jsonData = jsonPromise.toCompletableFuture().join();
         String answer = jsonData.findPath("success").asText();
         Logger.warn("CAPTCHA: " + answer);
+        Logger.warn("BEFORE CAPTCHA VALIDATION");
+
         if (!answer.equalsIgnoreCase("true")) {
             return "captchaNotSolved";
         }

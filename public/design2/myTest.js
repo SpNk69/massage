@@ -10,8 +10,16 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
 
 
 
+    $scope.pickedMassage="masazas1";
 
 
+    // $scope.niam=getTimesFromBackend();
+    $scope.niam="";
+
+console.log("PRICES FROM BACKEND");
+console.log($scope.niam);
+
+    $scope.formCaptcha="";
     $scope.captchaLang="lt";
 
     $scope.changeCaptchaLang = function(languageParameter){
@@ -28,7 +36,8 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
         console.info('Response available');
 
         $scope.response = response;
-
+        console.log(response)
+        console.log($scope.widgetId)
     };
     $scope.setWidgetId = function (widgetId,langMy) {
 
@@ -93,6 +102,24 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
 
 
     $scope.languageParameter = "lt";
+
+    if($scope.languageParameter ==="lt"){
+        $scope.megaCheck2=false;
+        $scope.megaCheck1=true;
+        $scope.megaCheck3=true}
+    else if($scope.languageParameter ==="de"){
+        $scope.megaCheck1=false;
+        $scope.megaCheck2=true;
+        $scope.megaCheck3=true;
+    }else if($scope.languageParameter==="ru"){
+        $scope.megaCheck3=false;
+        $scope.megaCheck2=true;
+        $scope.megaCheck1=true;
+    }
+
+
+
+
     $scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEYVMDc9EIG4zsSYD6SXJ7gzk05BOinH0";
 
     //init
@@ -110,7 +137,10 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
         formPH: setLanguage($scope.languageParameter, getFormPlaceHoldersFromFactory()),
         formErrors: setLanguage($scope.languageParameter, getFormErrorCodes()),
         contactForm: setLanguage($scope.languageParameter,getContactFormDataFromFactory()),
-        contactFormErrors: setLanguage($scope.languageParameter,getContactFormErrorsFromFactory())
+        contactFormErrors: setLanguage($scope.languageParameter,getContactFormErrorsFromFactory()),
+        backendPricesTest: setLanguage($scope.languageParameter,getBackendPricesTest()),
+        fullFormBackendErrorMessages:setLanguage($scope.languageParameter,backendFullForm()),
+        contactFormBackendErrorMessages:setLanguage($scope.languageParameter,backendFullForm2())
 
 
     };
@@ -126,8 +156,11 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
         invalidEmail: "",
         invalidPhone: "",
         invalidMassage: "",
+        invalidMassageOption: "",
         invalidDate: "",
-        invalidTime: ""
+        invalidTime: "",
+        invalidMessage:"",
+        invalidCaptcha:""
 
     };
 
@@ -150,7 +183,25 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
 
 
     $scope.doTranslate = function xxx(langToSetTo) {
-        $scope.setWidgetId($scope.widgetId,langToSetTo);
+        $scope.myForm.$setPristine();
+
+
+        if(langToSetTo ==="lt"){
+        $scope.megaCheck2=false;
+        $scope.megaCheck1=true;
+        $scope.megaCheck3=true}
+        else if(langToSetTo ==="de"){
+            $scope.megaCheck1=false;
+            $scope.megaCheck2=true;
+            $scope.megaCheck3=true;
+        }else if(langToSetTo==="ru"){
+            $scope.megaCheck3=false;
+            $scope.megaCheck2=true;
+            $scope.megaCheck1=true;
+        }
+
+        $scope.setWidgetId(0,langToSetTo);
+        $scope.setWidgetId(1,langToSetTo);
 
 
         $scope.languageParameter=langToSetTo;
@@ -169,7 +220,13 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
             formPH: setLanguage(langToSetTo, getFormPlaceHoldersFromFactory()),
             formErrors: setLanguage(langToSetTo, getFormErrorCodes()),
             contactForm: setLanguage(langToSetTo,getContactFormDataFromFactory()),
-            contactFormErrors: setLanguage(langToSetTo,getContactFormErrorsFromFactory())
+            contactFormErrors: setLanguage(langToSetTo,getContactFormErrorsFromFactory()),
+            backendPricesTest: setLanguage(langToSetTo,getBackendPricesTest()),
+            fullFormBackendErrorMessages: setLanguage(langToSetTo,backendFullForm()),
+            contactFormBackendErrorMessages:setLanguage(langToSetTo,backendFullForm2())
+
+
+
 
 
 
@@ -188,8 +245,11 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
             invalidEmail: "",
             invalidPhone: "",
             invalidMassage: "",
+            invalidMassageOption:"",
             invalidDate: "",
-            invalidTime: ""
+            invalidTime: "",
+            invalidMessage:"",
+            invalidCaptcha:""
         };
         $scope.contactFormErrors = {
             name:"",
@@ -206,9 +266,18 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
         alert("la");
     };
 
-    $scope.pickMassage= function(item){
-        $scope.user.massage=item;
-        console.log($scope.user.massage);
+
+
+
+    $scope.pickMassage= function(item,number){
+
+
+        $scope.testError="";
+        console.log("number" + number);
+
+        $scope.niam=getTimesFromBackend(number)
+        $scope.data.formPH.massage=item;
+        console.log("PICKED MASSAGE " + item);
 
     };
 
@@ -278,6 +347,20 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
         return myFactory.getContactFormErrors()
     }
 
+    function getBackendPricesTest(){
+        return myFactory.getMassagesFromBackend()
+    }
+
+
+    function getTimesFromBackend(x){
+        return myFactory.getTimesAndPricesFromBackend(x);
+    }
+
+    function getContactErorrMessagesFromBackend(){
+        return myFactory.getContactFormBackendErrorMessages;
+    }
+
+
 
     function setLanguage(langCheck, data) {
 
@@ -316,40 +399,29 @@ app.controller('myTestController', ['$scope', 'myFactory', '$http','NgMap','vcRe
     }
 
 
+    function callin(name,email,message,captcha){
+        console.log("sup dude");
+        console.log($scope.data.contactFormBackendErrorMessages);
 
-function setCrapIfBadResponse(par1, par2, par3, par4){
-        if(par1 !== ""){
-            $scope.contactFormErrors.name="Please make sure that name is set properly";
-        }
-    if(par2 !== "") {
-        $scope.contactFormErrors.email="Please make sure that email is set properly";
-
-    }
-    if(par3 !== "") {
-
-        $scope.contactFormErrors.message="Please make sure that message entered";
-
+        $scope.contactFormErrors.name = processResponse(name, "nameFormat","nameLength", $scope.data.contactFormBackendErrorMessages.nameFormat, $scope.data.contactFormBackendErrorMessages.nameLength);
+        $scope.contactFormErrors.email = processResponse(email, "emailFormat","emailLength", $scope.data.contactFormBackendErrorMessages.emailFormat, $scope.data.contactFormBackendErrorMessages.emailLength);
+        $scope.contactFormErrors.message = processResponse(message, "messageFormat","messageLength", $scope.data.contactFormBackendErrorMessages.messageFormat, $scope.data.contactFormBackendErrorMessages.messageLength);
+        $scope.contactFormErrors.captcha = processResponse(captcha, "captchaFormat","xxxx", $scope.data.contactFormBackendErrorMessages.captchaFormat, "xxx");
 
     }
-    if(par4 !== "") {
-        $scope.contactFormErrors.captcha="Please validate captcha 4 real"
-
-    }
-}
-
 
 
     $scope.submitFunctionForm= function (){
         console.log("STUFF1: " + $scope.cfName);
         console.log("STUFF2: " + $scope.cfEmail);
         console.log("STUFF3: " + $scope.cfMessage);
+
+        $scope.cfCaptcha=$scope.response;
+
         $scope.contactFormErrors.name=ifNotFilled($scope.cfName, $scope.data.contactFormErrors.name);
         $scope.contactFormErrors.email=checkEmail($scope.cfEmail, $scope.data.contactFormErrors.email,$scope.data.contactFormErrors.emailBadFormat);
         $scope.contactFormErrors.message=ifNotFilled($scope.cfMessage, $scope.data.contactFormErrors.message);
-        $scope.contactFormErrors.captcha=checkForNull($scope.response,$scope.data.contactFormErrors.captcha);
-
-
-        $scope.captchaResponse=$scope.response;
+        $scope.contactFormErrors.captcha=checkForNull($scope.cfCaptcha,$scope.data.contactFormErrors.captcha);
 
 
 
@@ -358,28 +430,30 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
 
 
 
-        var sendStuff2 = {
-            "getCustomerQuestion":
-                [
-                    {
-                        "name": $scope.cfName
-                    },
-                    {
-                        "email": $scope.cfEmail
-                    },
-                    {
-                        "message": $scope.cfMessage
-                    },
-                    {
-                        "captcha": $scope.captchaResponse
-                    }
-                ]
-        };
+
+
+
 
 
 
         if($scope.contactFormErrors.name.length === 0 && $scope.contactFormErrors.email.length === 0 && $scope.contactFormErrors.message.length === 0){
-
+            var sendStuff2 = {
+                "getCustomerQuestion":
+                    [
+                        {
+                            "name": $scope.cfName
+                        },
+                        {
+                            "email": $scope.cfEmail
+                        },
+                        {
+                            "message": $scope.cfMessage
+                        },
+                        {
+                            "captcha": $scope.cfCaptcha
+                        }
+                    ]
+            };
 
             $http({
                 method: "POST",
@@ -389,7 +463,7 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
                 $scope.submitContact = response.status;
                 $scope.submittedSuccessContact = "Thank you. Your Question sent.";
 
-                $scope.setWidgetId($scope.widgetId,$scope.languageParameter);
+                $scope.setWidgetId(1,$scope.languageParameter);
 
 
                 console.log("STATUS: ");
@@ -400,18 +474,28 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
                 console.log(response.data.contactFormErrors[0].captcha);
                 $scope.lalala=response.data;
 
+
                 $scope.cfEmail="";
                 $scope.cfName="";
                 $scope.cfMessage="";
 
 
             }, function myError(response) {
+                console.log("IN THE FAILED: ");
                 $scope.submitErrorContact = response.data;
                 console.log($scope.submitErrorContact);
+                $scope.sendThisToShow=$scope.submitErrorContact.contactFormErrors[0];
 
 
 
-                setCrapIfBadResponse($scope.submitErrorContact.contactFormErrors[0].name,$scope.submitErrorContact.contactFormErrors[0].email,$scope.submitErrorContact.contactFormErrors[0].message,$scope.submitErrorContact.contactFormErrors[0].captcha);
+                callin($scope.sendThisToShow.name,$scope.sendThisToShow.email,$scope.sendThisToShow.message,$scope.sendThisToShow.captcha);
+
+
+
+
+
+
+
 
 
                 // if($scope.submitErrorContact.contactFormErrors[0].name === "x"){
@@ -437,10 +521,98 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
         email: "",
         phone: "",
         massage: "",
-        message: ""
+        massageOption: "",
+        message: "",
+        captcha:""
         // defaultDate:"Pasirinkite datą",
         // defaultTime:"Pasirinkite laiką"
     };
+
+
+   $scope.$watch('myForm.xxx.$dirty' , function() {
+        console.log("IN WATCHER 11111");
+        console.log("massage: " + $scope.user.massage);
+       if($scope.user.massage==null){
+           $scope.user.massage="";
+       }
+
+       if($scope.user.massage !== "") {
+
+           $scope.testError = "";
+       }
+
+
+       $scope.niam=getTimesFromBackend($scope.user.massage[1]);
+        console.log("IN WATCHER BEFORE PRISTILINE: " + $scope.user.massage);
+
+
+        $scope.myForm.$setPristine();
+
+
+       console.log("IN WATCHER AFTER PRISTILINE: " + $scope.user.massage);
+
+
+
+    });
+
+
+
+
+
+    // $scope.$watch('myForm.xxx2.$touched', function() {
+    //
+    //         if($scope.user.massage === ""){
+    //             console.log("BLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+    //
+    //             $scope.testError="Please make sure that massage chosen first";
+    //         }
+    //
+    //
+    //
+    // });
+
+
+
+
+
+
+    // $scope.$watch('!myForm.xxx.$pristine', function() {
+    //     $scope.availableOptions=[];
+    //
+    //
+    //     console.log("IN WATCHER 22222");
+    //     if($scope.myForm.xxx.$dirty && $scope.user.massage !=="Limfodrenažinis kūno masažas"){
+    //         $scope.availableOptions=[];
+    //
+    //         console.log("EMPTY NOW")
+    //
+    //
+    //     }
+    //
+    // });
+
+    //
+    // if($scope.myForm.xxx.$dirty){
+    //     $scope.availableOptions=["90","120"];
+    //
+    //     console.log("PERFORMING");
+    // x();
+    // }
+
+    function x(){
+        $scope.availableOptions=["90","120"];
+
+    }
+
+
+    function xx(){
+        $scope.availableOptions=[];
+
+    }
+
+
+
+
     $scope.chosenDate = "";
     $scope.chosenTime = "";
     // $scope.stuff="Pasirinkite laiką";
@@ -510,14 +682,18 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
     // validate that input was entered
     function validate() {
 
+        $scope.user.captcha=$scope.response;
+
 
         $scope.errors.invalidName = ifNotFilled($scope.user.firstName, $scope.data.formErrors.name);
         $scope.errors.invalidLastName = ifNotFilled($scope.user.lastName, $scope.data.formErrors.surname);
         $scope.errors.invalidEmail = checkEmail($scope.user.email, $scope.data.formErrors.email, $scope.data.formErrors.emailBadFormat);
         $scope.errors.invalidPhone = ifNotFilled($scope.user.phone, $scope.data.formErrors.phone);
-        $scope.errors.invalidMassage = ifNotFilled($scope.user.massage, $scope.data.formErrors.massage);
+        $scope.errors.invalidMassage = emptyOrUndefined($scope.user.massage[0], $scope.data.formErrors.massage);
+        $scope.errors.invalidMassageOption=emptyOrUndefined($scope.user.massageOption,$scope.data.formErrors.massageOption);
         $scope.errors.invalidDate = emptyOrUndefined($scope.chosenDate, $scope.data.formErrors.date);
         $scope.errors.invalidTime = emptyOrUndefined($scope.chosenTime, $scope.data.formErrors.time);
+        $scope.errors.invalidCaptcha = emptyOrUndefined($scope.user.captcha, $scope.data.formErrors.captcha);
 
 
         return returnTrueIfValid($scope.errors.invalidName) &&
@@ -525,12 +701,14 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
             returnTrueIfValid($scope.errors.invalidEmail) &&
             returnTrueIfValid($scope.errors.invalidPhone) &&
             returnTrueIfValid($scope.errors.invalidMassage) &&
+            returnTrueIfValid($scope.errors.invalidMassageOption) &&
             returnTrueIfValid($scope.errors.invalidDate) &&
-            returnTrueIfValid($scope.errors.invalidTime);
+            returnTrueIfValid($scope.errors.invalidTime) && returnTrueIfValid($scope.errors.invalidCaptcha);
     }
 
     $scope.checkSubmittedData = function () {
         console.log("SD2");
+        console.log($scope.user.captcha);
 
         if (validate()) {
             console.log("SD");
@@ -539,10 +717,12 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
             $scope.submittedLastName = $scope.user.lastName;
             $scope.submittedEmail = $scope.user.email;
             $scope.submittedPhone = $scope.user.phone;
-            $scope.submittedMassage = $scope.user.massage.massageName;
+            $scope.submittedMassage = $scope.user.massage[0];
+            $scope.submittedMassageOption=$scope.user.massageOption;
             $scope.submittedDate = $scope.chosenDate;
             $scope.submittedTime = $scope.chosenTime;
             $scope.submittedMessage = $scope.user.message;
+            $scope.submittedCaptcha = $scope.user.captcha;
             $scope.megaFail = "";
             return true;
 
@@ -560,12 +740,15 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
             email: "",
             phone: "",
             massage: "",
+            massageOption:"",
             message: "",
+            captcha:""
             // defaultDate:"Pasirinkite datą",
             // defaultTime:"Pasirinkite laiką"
         };
         $scope.chosenDate = "";
         $scope.chosenTime = "";
+        $scope.niam="";
 
 
         // $scope.chosenDate = moment().format('YYYY-MM-DD');
@@ -577,12 +760,17 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
 
     // function for full form submission
     $scope.submitFullForm = function () {
+        $scope.myForm.$setPristine();
 
+        console.log("DID VALUE CHANGE " + $scope.data.formPH.massage);
 
         $scope.submittedFail = "";
         $scope.submittedSuccess = "";
         $scope.submitError = "";
         if ($scope.checkSubmittedData()) {
+
+
+
 
             var sendStuff = {
                 "GetAllCustomersData":
@@ -603,6 +791,9 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
                             "massage": $scope.submittedMassage
                         },
                         {
+                            "massageOption": $scope.submittedMassageOption
+                        },
+                        {
                             "date": $scope.submittedDate
                         },
                         {
@@ -610,6 +801,9 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
                         },
                         {
                             "message": $scope.submittedMessage
+                        },
+                        {
+                            "captcha": $scope.submittedCaptcha
                         }
                     ]
             };
@@ -619,11 +813,23 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
                 url: "/submitFullForm",
                 data: JSON.stringify(sendStuff)
             }).then(function mySuccess(response) {
+                console.log("SucRespons: ");
+                console.log(response)
                 $scope.submitStatus = response.status;
-                $scope.submittedSuccess = "Thank you. Your Booking Received."
+                $scope.submittedSuccess = "Thank you. Your Booking Received.";
+                $scope.setWidgetId(0,$scope.languageParameter);
+
                 resetForm();
             }, function myError(response) {
+                console.log("FailRespons: ");
+                console.log(response);
+
                 $scope.submitError = response.data;
+                $scope.er=$scope.submitError.contactFormErrors[0];
+
+                errorMassagesFromBackend($scope.er.name,$scope.er.surname,$scope.er.email,$scope.er.phone,$scope.er.massage,$scope.er.massageOption,$scope.er.date,$scope.er.time,$scope.er.message,$scope.er.captcha);
+
+
                 $scope.submittedFail = "THE FUCK HAPPENED???? CALL THE POLICE"
             });
 
@@ -635,19 +841,81 @@ function setCrapIfBadResponse(par1, par2, par3, par4){
     };
 
 
+
+
+    function errorMassagesFromBackend(name,surname,email,phone,massage,massageOption,date,time,message,captcha) {
+
+        $scope.ax=$scope.data.fullFormBackendErrorMessages;
+        console.log("Inside validation");
+        console.log(name);
+        $scope.errors.invalidName = processResponse(name, "nameFormat","nameLength", $scope.ax.nameFormat, $scope.ax.nameLength);
+        $scope.errors.invalidLastName = processResponse(surname, "surnameFormat","surnameLength", $scope.ax.surnameFormat, $scope.ax.surnameLength);
+        $scope.errors.invalidEmail = processResponse(email, "emailFormat","emailLength", $scope.ax.emailFormat, $scope.ax.emailLength);
+        $scope.errors.invalidPhone = processResponse(phone, "phoneFormat","phoneLength", $scope.ax.phoneFormat, $scope.ax.phoneLength);
+        $scope.errors.invalidMassage = processResponse(massage, "massageFormat","massageLength", $scope.ax.massageFormat, $scope.ax.massageLength);
+        $scope.errors.invalidMassageOption = processResponse(massageOption, "massageOptionFormat","massageOptionLength", $scope.ax.massageOptionFormat, $scope.ax.massageOptionLength);
+        $scope.errors.invalidDate = processResponse(date, "dateFormat","dateLength", $scope.ax.dateFormat, $scope.ax.dateLength);
+        $scope.errors.invalidTime = processResponse(time, "timeFormat","timeLength", $scope.ax.timeFormat, $scope.ax.timeLength);
+        $scope.errors.invalidMessage = processResponse(message, "messageFormat","messageLength", $scope.ax.messageFormat, $scope.ax.messageLength);
+        $scope.errors.invalidCaptcha = processResponse(captcha, "captchaFormat","xxxxx", $scope.data.ax.captchaFormat,"xxxxx");
+
+
+    }
+
+
+    function processResponse(x, error1, error2, message1, message2) {
+        if (x === error1) {
+            return message1;
+        } else if (x === error2) {
+            return message2;
+        } else {
+            return "";
+        }
+
+    }
+
+
+    function backendFullForm(){
+        return myFactory.getFullFormBackendErrorMessages();
+    }
+
+
+    function backendFullForm2(){
+        return myFactory.getContactFormBackendErrorMessages();
+    }
+
+
+    $scope.copyOfData="";
     // get massage list to pick from
     $http({
         method: "GET",
         url: "/getMassagesData",
     }).then(function mySuccess(response) {
-        // console.log("DATA: " + response.data.state)
+        console.log("DATA: " + response.data.state)
 
         $scope.myWelcome2 = response.data;
+        $scope.copyOfData=angular.copy($scope.myWelcome2);
         //NICE
         $scope.loxx = response.data;
     }, function myError(response) {
+        console.log("FAIL DATA: " + response)
+
         $scope.myWelcome2 = response.statusText;
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }]);

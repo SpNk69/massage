@@ -15,7 +15,6 @@ import java.io.IOException;
  */
 public class JsonTest {
 
-    @Ignore
     @Test
     public void leMega() throws IOException {
 

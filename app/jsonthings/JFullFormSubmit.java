@@ -1,7 +1,5 @@
 package jsonthings;
 
-import java.util.Date;
-
 /**
  * Created by alex on 2017-12-24.
  */
@@ -13,9 +11,20 @@ public class JFullFormSubmit {
     private String email;
     private String phone;
     private String massage;
+    private String massageOption;
     private String date;
     private String time;
     private String message;
+
+    public String getCaptcha() {
+        return captcha;
+    }
+
+    public void setCaptcha(String captcha) {
+        this.captcha = captcha;
+    }
+
+    private String captcha;
 
     public String getMassage() {
         return massage;
@@ -25,16 +34,40 @@ public class JFullFormSubmit {
         this.massage = massage;
     }
 
-    public JFullFormSubmit(String name, String surname, String email, String phone,String massage, String date, String time, String message) {
+    public String getMassageOption() {
+        return massageOption;
+    }
+
+    public void setMassageOption(String massageOption) {
+        this.massageOption = massageOption;
+    }
+
+    public JFullFormSubmit(String name, String surname, String email, String phone, String massage, String massageOption, String date, String time, String message, String captcha) {
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.phone = phone;
         this.massage=massage;
+        this.massageOption = massageOption;
+        this.date = date;
+        this.time = time;
+        this.message = message;
+        this.captcha = captcha;
+    }
+
+
+    public JFullFormSubmit(String name, String surname, String email, String phone, String massage, String massageOption, String date, String time, String message) {
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+        this.massage=massage;
+        this.massageOption = massageOption;
         this.date = date;
         this.time = time;
         this.message = message;
     }
+
 
     public String getName() {
         return name;
@@ -100,6 +133,7 @@ public class JFullFormSubmit {
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", massage='" + massage + '\'' +
+                ", massageOption='" + massageOption + '\'' +
                 ", date='" + date + '\'' +
                 ", time='" + time + '\'' +
                 ", message='" + message + '\'' +

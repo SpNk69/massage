@@ -7,15 +7,13 @@ import java.util.regex.Pattern;
 
 public class ValidationUtility {
 
+
     public ValidationUtility() {
-
     }
-
-
 
     public String validateName(JsonNode nameNode) {
         String name = nameNode.asText();
-        String pattern = "[^\\p{L}.']+";
+        String pattern = "[^\\p{L}.' ]+";
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(name);
 
@@ -26,6 +24,26 @@ public class ValidationUtility {
         }
         return "";
     }
+
+
+
+
+    public String validateSurname(JsonNode surnameNode) {
+        String surname = surnameNode.asText();
+        String pattern = "[^\\p{L}.' ]+";
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(surname);
+
+        if (surname.length() < 1 || surname.length() > 100) {
+            return "surnameLength";
+        } else if (m.find()) {
+            return "surnameFormat";
+        }
+        return "";
+    }
+
+
+
 
 
     public String validateEmail(JsonNode emailNode) {
@@ -50,11 +68,36 @@ public class ValidationUtility {
 
         //check messagefield for something
         String message = messageNode.asText();
+        //make regex from malicous crap
         String pattern = "";
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(message);
 
         if (message.length() < 1 || message.length() > 1000) {
+            return "messageLength";
+        } else if (m.find()) {
+            //do something here!!
+            return "messageFormat";
+
+        }
+
+        return "";
+    }
+
+
+
+
+
+    public String validateMessageFullForm(JsonNode messageNode) {
+
+        //check messagefield for something
+        String message = messageNode.asText();
+        //make regex from malicous crap
+        String pattern = "";
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(message);
+
+        if (message.length() > 1000) {
             return "messageLength";
         } else if (m.find()) {
             //do something here!!
@@ -64,6 +107,105 @@ public class ValidationUtility {
         return "";
     }
 
+
+
+
+
+    public String validateDate(JsonNode dateNode) {
+        Logger.warn("inside dateNode: " + dateNode);
+        String date = dateNode.asText();
+        String pattern = "^\\d{4}-\\d{2}-\\d{2}$";
+//        (?s)^(?!\d{4}-\d{2}-\d{2}$).* -opposite
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(date);
+
+        if (date.length() < 1 || date.length() > 10) {
+            return "dateLength";
+        } else if (!m.find()) {
+            return "dateFormat";
+        }
+        return "";
+    }
+
+
+
+
+    public String validateTime(JsonNode timeNode) {
+        Logger.warn("inside dateNode: " + timeNode);
+        String time = timeNode.asText();
+        String pattern = "^\\d{2}:\\d{2}$";
+//        (?s)^(?!\d{4}-\d{2}-\d{2}$).* -opposite
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(time);
+
+        if (time.length() < 1 || time.length() > 5) {
+            return "timeLength";
+        } else if (!m.find()) {
+            return "timeFormat";
+        }
+        return "";
+    }
+
+
+
+
+
+
+
+
+
+    public String validatePhone(JsonNode phoneNode) {
+        String phone = phoneNode.asText();
+        //To do: add regex for phone numbers
+                String pattern = "[^\\d+\\\\() -]";
+
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(phone);
+
+        if (phone.length() < 1 || phone.length() > 20) {
+            return "phoneLength";
+        } else if (m.find()) {
+            return "phoneFormat";
+        }
+        return "";
+    }
+
+
+
+
+
+    public String validateMassageOption(JsonNode massageOptionNode) {
+        String massageOption = massageOptionNode.asText();
+        String pattern = "^\\d{2,3}$";
+
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(massageOption);
+
+        if (massageOption.length() < 1 || massageOption.length() > 3) {
+            return "massageOptionLength";
+        } else if (!m.find()) {
+            return "massageOptionFormat";
+        }
+        return "";
+    }
+
+
+
+
+    public String validateMassage(JsonNode massageNode) {
+        String massage = massageNode.asText();
+        String pattern = "[^\\p{L}.' -]";
+
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(massage);
+
+        if (massage.length() < 1 || massage.length() > 100) {
+            return "massageLength";
+        } else if (m.find()) {
+            return "massageFormat";
+        }
+        return "";
+    }
 
 
 

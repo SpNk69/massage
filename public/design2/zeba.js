@@ -1,6 +1,7 @@
 var gg = angular.module('myTestApp2', []); //ngMessages
 
 gg.factory('myFactory', function () {
+
     return {
         getInaHurryData: function(){
             return {
@@ -25,13 +26,13 @@ gg.factory('myFactory', function () {
         getPageTitle: function(){
             return{
                 "lt":{
-                    "title":"Vidos Masažai"
+                    "title":"Grįžti į pradžią"
                 },
                 "de":{
-                    "title":"Vida Massagen"
+                    "title":"Gehe zurück nach oben"
                 },
                 "ru":{
-                    "title":"Vida Mассажы"
+                    "title":"Вернуться в начало"
                 }
             }
 
@@ -411,6 +412,7 @@ gg.factory('myFactory', function () {
                     "email":"Elektroninis paštas",
                     "phone":"Telefono numeris",
                     "massage":"Masažas",
+                    "massageOption":"Trukmė",
                     "date":"Data",
                     "time":"Laikas",
                     "message":"Žinutė",
@@ -423,6 +425,7 @@ gg.factory('myFactory', function () {
                     "email":"E-Mail",
                     "phone":"Telefonnummer",
                     "massage":"Massage",
+                    "massageOption":"Dauer",
                     "date":"Datum",
                     "time":"Zeit",
                     "message":"Nachricht",
@@ -436,6 +439,7 @@ gg.factory('myFactory', function () {
                     "email":"Электронная почта",
                     "phone":"Номер телефона",
                     "massage":"Массаж",
+                    "massageOption":"Продолжительность",
                     "date":"Дата",
                     "time":"Время",
                     "message":"Сообщение",
@@ -453,6 +457,7 @@ gg.factory('myFactory', function () {
                     "email":"Įveskite elektroninį paštą",
                     "phone":"Įveskite telefono numerį",
                     "massage":"Pasirinkite masažą",
+                    "massageOption":"Pasirinkitę masažo trukmę",
                     "date":"Pasirinkite datą",
                     "time":"Pasirinkite laiką",
                     "message":"Papildomi pageidavimai",
@@ -464,6 +469,7 @@ gg.factory('myFactory', function () {
                     "email":"E-Mail eingeben",
                     "phone":"Geben Sie eine Telefonnummer ein",
                     "massage":"Wählen Sie eine Massage",
+                    "massageOption":"Die Dauer der Massage gewählt haben",
                     "date":"Wählen Sie ein Datum aus",
                     "time":"Wähle eine Zeit aus",
                     "message":"Zusätzliche Anfragen"
@@ -475,6 +481,7 @@ gg.factory('myFactory', function () {
                     "email":"Введите адрес электронной почты",
                     "phone":"Введите номер телефона",
                     "massage":"Выберите массаж",
+                    "massageOption":"Выберите продолжительность массажа",
                     "date":"Выберите дату",
                     "time":"Выберите время",
                     "message":"Дополнительные запросы"
@@ -491,9 +498,11 @@ gg.factory('myFactory', function () {
                     "email":"Neįvestas elektroninis paštas",
                     "phone":"Neįvestas telefono numeris",
                     "massage":"Nepasirinktas masažas",
+                    "massageOption":"Nepasirinkta masažo trukmė",
                     "date":"Nepasirinkta data",
                     "time":"Nepasirinktas laikas",
-                    "emailBadFormat":"Neteisingas elektroninio pašto adresas"
+                    "emailBadFormat":"Neteisingas elektroninio pašto adresas",
+                    "captcha":"Patvirtinkite, kad esate ne robotas"
                 },
                 "de":{
                     "name":"Kein Name eingegeben",
@@ -501,9 +510,12 @@ gg.factory('myFactory', function () {
                     "email":"Keine E-Mail-Adresse eingegeben",
                     "phone":"Telefonnummer nicht eingegeben",
                     "massage":"Massage ist nicht ausgewählt",
+                    "massageOption":"Die Massagezeit ist nicht ausgewählt",
                     "date":"Kein Datum ausgewählt",
                     "time":"Keine Zeit ausgewählt",
-                    "emailBadFormat":"Ungültige E-Mail-Adresse"
+                    "emailBadFormat":"Ungültige E-Mail-Adresse",
+                    "captcha":"Patvirtinkite, kad esate ne robotas"
+
 
                 },
                 "ru":{
@@ -512,9 +524,12 @@ gg.factory('myFactory', function () {
                     "email":"Не введено электронное письмо",
                     "phone":"Номер телефона не введен",
                     "massage":"Массаж не выбран",
+                    "massageOption":"Продолжительность массажа не выбрано",
                     "date":"Дата не выбрана",
                     "time":"Не выбрано времени",
-                    "emailBadFormat":"Недопустимый адрес электронной почты"
+                    "emailBadFormat":"Недопустимый адрес электронной почты",
+                    "captcha":"Patvirtinkite, kad esate ne robotas"
+
 
                 }
             }
@@ -589,7 +604,187 @@ gg.factory('myFactory', function () {
                 }
             }
 
+        },
+
+        getMassagesFromBackend: function(){
+            return{
+                "lt":{
+                    "limphoBody":[
+                        ["Limfodrenažinis kūno masažas","0"],["Limfodrenažinis veido masažas","1"],["Karštų-šaltų akmenų masažas","2"],["Klasikinis – segmentinis nugaros masažas","3"],["Atpalaiduojantis viso kūno masažas","4"],["Ajurvedinis krūtų masažas moterims","5"],["Atpalaiduojantis pėdų masažas","6"]]
+
+                },
+                "de":{
+                    "limphoBody":[
+                        ["Manuelle Lymphdrainage","0"],["Manuelle Lymphdrainage Gesicht","1"],["Heiß-kalt Steinmassage","2"],["Rücken Massage","3"],["Entspannende Ganzkörpermassagе","4"],["Ayurvedische Brüstmassage für Frauen","5"],["Entspannende Fussmassage","6"]]
+
+                },
+                "ru":{
+                    "limphoBody":[
+                        ["Лимфодренажный массаж тела","0"],["Лимфодренажный массаж лица","1"],["Горячих - холодных камней массаж","2"],["Классический - Сегментный массаж спины","3"],["Расслабляющий массаж всего тела","4"],["Аюрведический массаж грудей","5"],["Расслабляющий массаж стоп","6"]]
+
+                }
+            }
+        },
+
+        getTimesAndPricesFromBackend: function(value){
+
+            var limphoBody=["90","120"];
+            var limphoFace=["60"];
+            var stoneHotCold=["90","120"];
+            var backSpin=["60","120"];
+            var relaxBody=["120"];
+            var ajurved=["60"];
+            var relaxFoot=["60"];
+
+            if(value==0){
+                return{
+                    "x":limphoBody
+
+                }
+            }else if(value == 1){
+                return{
+                    "x":limphoFace
+
+                }
+            }else if(value == 2){
+                return{
+                    "x":stoneHotCold
+
+                }
+            }else if(value == 3){
+                return{
+                    "x":backSpin
+
+                }
+            }else if(value == 4){
+                return{
+                    "x":relaxBody
+
+                }
+            }else if(value == 5){
+                return{
+                    "x":ajurved
+
+                }
+            }else if(value == 6){
+                return{
+                    "x":relaxFoot
+
+                }
+            }
+
+
+
+        },
+        getFullFormBackendErrorMessages: function(){
+            return{
+                "lt":{
+                    "nameFormat":"Vardas negali turėti skaičių bei specialių simbolių",
+                    "nameLength":"Vardas negali būti tuščias arba ilgesnis nei 100 simbolių",
+                    "surnameFormat":"Pavardė negali turėti skaičių bei specialių simbolių",
+                    "surnameLength":"Pavardė negali būti tuščia arba ilgesnė nei 100 simbolių",
+                    "emailFormat":"Pasitikrinkite ar teisingai įvedėte elektroninio pašto adresą",
+                    "emailLength":"Elektroninis paštas negali viršyti 100 simbolių",
+                    "phoneFormat":"Neteisingai įvestas telefono numeris",
+                    "phoneLength":"Telefono numeris negali būti ilgesnis nei 20 simbolių",
+                    "massageFormat":"Shit happened1",
+                    "massageLength":"Shit happened2",
+                    "massageOptionFormat":"Shit happened3",
+                    "massageOptionLength":"Shit happened4",
+                    "dateFormat":"Neteisingas datos formatas",
+                    "dateLength":"Shit happened5",
+                    "timeFormat":"Neteisingas laiko formatas",
+                    "timeLength":"Shit happened5",
+                    "messageLength":"Žinutė negali viršyti 1000 simbolių",
+                    "messageFormat":"Shit happened6",
+                    "captchaFormat":"Išspręskite užduotį, kad patvirtintumėte, jog nesate robotas"
+                },
+                "de":{
+                    "nameFormat":"blah blah",
+                    "nameLength":"",
+                    "surnameFormat":"",
+                    "surnameLength":"",
+                    "emailFormat":"",
+                    "emailLength":"",
+                    "phoneFormat":"",
+                    "phoneLength":"",
+                    "massageFormat":"",
+                    "massageLength":"",
+                    "massageOptionFormat":"",
+                    "massageOptionLength":"",
+                    "dateFormat":"",
+                    "dateLength":"",
+                    "timeFormat":"",
+                    "timeLength":"",
+                    "messageLength":"",
+                    "messageFormat":"",
+                    "captchaFormat":""
+
+
+                },
+                "ru":{
+                    "nameFormat":"blah blah",
+                    "nameLength":"",
+                    "surnameFormat":"",
+                    "surnameLength":"",
+                    "emailFormat":"",
+                    "emailLength":"",
+                    "phoneFormat":"",
+                    "phoneLength":"",
+                    "massageFormat":"",
+                    "massageLength":"",
+                    "massageOptionFormat":"",
+                    "massageOptionLength":"",
+                    "dateFormat":"",
+                    "dateLength":"",
+                    "timeFormat":"",
+                    "timeLength":"",
+                    "messageLength":"",
+                    "messageFormat":"",
+                    "captchaFormat":""
+
+
+                }
+            }
+        },
+        getContactFormBackendErrorMessages: function(){
+            return{
+                "lt":{
+                    "nameFormat":"Vardas negali turėti skaičių bei specialių simbolių",
+                    "nameLength":"Vardas negali būti tuščias arba ilgesnis nei 100 simbolių",
+                    "emailFormat":"Pasitikrinkite ar teisingai įvedėte elektroninio pašto adresą",
+                    "emailLength":"Elektroninis paštas negali viršyti 100 simbolių",
+                    "messageLength":"Žinutė negali viršyti 1000 simbolių",
+                    "messageFormat":"Shit happened6",
+                    "captchaFormat":"Išspręskite užduotį, kad patvirtintumėte, jog nesate robotas"
+                },
+                "de":{
+                    "nameFormat":"blah blah",
+                    "nameLength":"",
+                    "emailFormat":"",
+                    "emailLength":"",
+                    "messageLength":"",
+                    "messageFormat":"",
+                    "captchaFormat":""
+
+
+                },
+                "ru":{
+                    "nameFormat":"blah blah",
+                    "nameLength":"",
+                    "emailFormat":"",
+                    "emailLength":"",
+                    "messageLength":"",
+                    "messageFormat":"",
+                    "captchaFormat":""
+
+
+                }
+            }
+
         }
+
+
     }
 });
 

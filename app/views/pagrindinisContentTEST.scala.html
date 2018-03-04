@@ -36,15 +36,15 @@
                     <a class="nav-link js-scroll-trigger" href="#{{contactMe}}">{{data.navBar.contacts}}</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" ng-show="megaCheck1">
                     <a class="page-scroll" ng-click="doTranslate(de)"><img
                             src='@routes.Assets.at("images/img/flag-de2.png")' alt="Vokiečių kalba"/></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" ng-show="megaCheck2">
                     <a class="page-scroll" ng-click="doTranslate(lt)"><img
                             src='@routes.Assets.at("images/img/flag-lt2.png")' alt="Vokiečių kalba"/></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" ng-show="megaCheck3">
                     <a class="page-scroll" ng-click="doTranslate(ru)"><img
                             src='@routes.Assets.at("images/img/flag-rus.png")' alt="Vokiečių kalba"/></a>
 
@@ -88,8 +88,8 @@
 </section>
 
 <!--about me section-->
-<section id="{{aboutMe}}">
-    <div class="container">
+<section id="{{aboutMe}}" class=" ">
+    <div class="container ">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">{{data.aboutMeTitle.title}}!</h2>
@@ -97,7 +97,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container ">
         <div class="row">
             <div class="col-lg-3 col-md-6 text-center ">
                 <div class="service-box mt-5 mx-auto ">
@@ -128,6 +128,13 @@
 
                 </div>
             </div>
+            @*/home/alex/git/web/public/images/img/Vida.jpg*@
+
+            @*<div class="col-lg-3 col-md-6 text-center">*@
+                   @*<img class="customImage" src='@routes.Assets.at("images/img/Vida-Polescuk.jpg")' alt="">*@
+
+            @*</div>*@
+
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box mt-5 mx-auto">
                     <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
@@ -205,8 +212,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/fullsize/4.jpg")'>
-                    <img class="img-fluid" src='@routes.Assets.at("design2/img/portfolio/thumbnails/4.jpg")' alt="">
+                <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/fullsize/Vida5.png")'>
+                    <img class="img-fluid" src='@routes.Assets.at("design2/img/portfolio/thumbnails/Vida5.png")' alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -259,48 +266,41 @@
     <div class="row   " id="{{massagesId}}">
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
             <div class="thumbnail ">
-                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+                <img class="tc2 sizeLimit" src='@routes.Assets.at("design2/img/portfolio/thumbnails/stones-oil.jpg")'
                      alt="...">
                 <div class="caption">
                     <h3 class="tc2">{{data.massageTitle.limphoBody}}</h3>
-                    <p class="tc" ng-text-truncate="data.massageBody.limphoBody"
+                    <p class="tc"  ng-text-truncate="data.massageBody.limphoBody"
                        ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.limphoBody}}</p>
                     <p>
-                <h4>Rezervuoti</h4>
-
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  90min</a>
-                        <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  120min</a></p>
-
+                <p><a href="#{{bookit}}" ng-click="pickMassage(data.massageTitle.limphoBody,0)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">Rezervuoti</a></p>
                 </div>
             </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
-            <div class="thumbnail ">
-                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+            <div class="thumbnail  ">
+                <img class="tc2 sizeLimit" src='@routes.Assets.at("design2/img/portfolio/thumbnails/stones-oil.jpg")'
                      alt="...">
                 <div class="caption">
                     <h3 class="tc2">{{data.massageTitle.limphoFace}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.limphoFace"
                        ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.limphoFace}}</p>
-                    <p><h4>Rezervuoti</h4>
-                        <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  60min</a>
+                    <p><a href="#{{bookit}}"ng-click="pickMassage(data.massageTitle.limphoFace,1)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">Rezervuoti</a></p>
 
                 </div>
             </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
-            <div class="thumbnail ">
-                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
+            <div class="thumbnail">
+                <img class="tc2 sizeLimit" src='@routes.Assets.at("design2/img/portfolio/thumbnails/stones-oil.jpg")'
                      alt="...">
                 <div class="caption">
                     <h3 class="tc2">{{data.massageTitle.stoneHotCold}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.stoneHotCold"
                        ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.stoneHotCold}}</p>
-                    <p>
-                <h4>Rezervuoti</h4>
 
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  90min</a>
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  120min</a></p>
+                    <p><a href="#{{bookit}}"ng-click="pickMassage(data.massageTitle.stoneHotCold,2)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">Rezervuoti</a></p>
+
                 </div>
             </div>
         </div>
@@ -313,11 +313,9 @@
                     <h3 class="tc2">{{data.massageTitle.backSpin}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.backSpin" ng-tt-chars-threshold="{{truncateSize}}">
                         {{data.massageBody.backSpin}}</p>
-                    <p>
-                <h4>Rezervuoti</h4>
 
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  60min</a>
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  120min</a></p>
+                    <p><a href="#{{bookit}}" ng-click="pickMassage(data.massageTitle.backSpin,3)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">Rezervuoti</a></p>
+
                 </div>
             </div>
         </div>
@@ -329,7 +327,8 @@
                     <h3 class="tc2">{{data.massageTitle.older}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.older" ng-tt-chars-threshold="{{truncateSize}}">
                         {{data.massageBody.older}}</p>
-                    <p><a ng-click="doSomeShit()" class="btn btn-primary" role="button">Rezervuoti</a></p>
+                    <p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
+
 
                 </div>
             </div>
@@ -342,10 +341,7 @@
                     <h3 class="tc2">{{data.massageTitle.relaxBody}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.relaxBody"
                        ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.relaxBody}}</p>
-                    <p>
-                <h4>Rezervuoti</h4>
-
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  120min</a></p>
+                    <p><a href="#{{bookit}}" ng-click="pickMassage(data.massageTitle.relaxBody,4)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">Rezervuoti</a></p>
                 </div>
             </div>
         </div>
@@ -358,10 +354,8 @@
                     <h3 class="tc2">{{data.massageTitle.ajurved}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.ajurved" ng-tt-chars-threshold="{{truncateSize}}">
                         {{data.massageBody.ajurved}}</p>
-                    <p>
-                <h4>Rezervuoti</h4>
+                    <p><a href="#{{bookit}}" ng-click="pickMassage(data.massageTitle.ajurved,5)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">Rezervuoti</a></p>
 
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  60min</a></p>
 
                 </div>
             </div>
@@ -374,12 +368,9 @@
                     <h3 class="tc2">{{data.massageTitle.antice}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.antice" ng-tt-chars-threshold="{{truncateSize}}">
                         {{data.massageBody.antice}}</p>
-                    <p>
-                <h4>Rezervuoti</h4>
 
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  30min</a>
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  60min</a>
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  90min</a></p>
+                <p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
+
 
                 </div>
             </div>
@@ -392,10 +383,8 @@
                     <h3 class="tc2">{{data.massageTitle.relaxFoot}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.relaxFoot"
                        ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.relaxFoot}}</p>
-                    <p>
-                <h4>Rezervuoti</h4>
+                    <p><a href="#{{bookit}}" ng-click="pickMassage(data.massageTitle.relaxFoot,6)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">Rezervuoti</a></p>
 
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  30min</a></p>
                 </div>
             </div>
         </div>
@@ -407,10 +396,8 @@
                     <h3 class="tc2">{{data.massageTitle.sepHead}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.sepHead"
                        ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepHead}}</p>
-                    <p>
-                <h4>Rezervuoti</h4>
+                    <p><a href="#{{bookit}}" ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
 
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  30min</a></p>
                 </div>
             </div>
         </div>
@@ -424,11 +411,8 @@
                     <h3 class="tc2">{{data.massageTitle.sepNeck}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.sepNeck"
                        ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepNeck}}</p>
-                    <p>
-                <h4>Rezervuoti</h4>
+                    <p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
 
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  30min</a>
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  60min</a></p>
                 </div>
             </div>
         </div>
@@ -440,11 +424,8 @@
                     <h3 class="tc2">{{data.massageTitle.sepStoma}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.sepStoma"
                        ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepStoma}}</p>
-                    <p>
-                <h4>Rezervuoti</h4>
+                <p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
 
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  30min</a>
-                   </p>
                 </div>
             </div>
         </div>
@@ -456,10 +437,8 @@
                     <h3 class="tc2">{{data.massageTitle.sepWaist}}</h3>
                     <p class="tc" ng-text-truncate="data.massageBody.sepWaist"
                        ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepWaist}}</p>
-                    <p>
-                <h4>Rezervuoti</h4>
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  30min</a>
-                    <a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">  60min</a></p>
+                <p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
+
                 </div>
             </div>
         </div>
@@ -638,10 +617,27 @@
             <br>
 
 
+            @*<div class="inputDiv ">*@
+                @*<label class="item item-input labelDiv">{{data.formNames.massage}}</label>*@
+                @*<select class=" col-lg-8 mx-auto text-center bookingForm form-control" ng-model="user.massage"*@
+                        @*ng-options="item.massageName  +' ('+ item.length + 'min) ' + ' = ' + item.price +' CHF ' +'' for item in loxx.massageInfo"*@
+                @*>*@
+
+                    @*<option  class="labelDiv " value="">{{data.formPH.massage}}</option>*@
+                @*</select>*@
+                @*<span class="submitError">{{errors.invalidMassage}}</span>*@
+            @*</div>*@
+            @*</br>*@
+
+
+
+
+
+
             <div class="inputDiv ">
                 <label class="item item-input labelDiv">{{data.formNames.massage}}</label>
-                <select class=" col-lg-8 mx-auto text-center bookingForm form-control" ng-model="user.massage"
-                        ng-options="item.massageName  +' ('+ item.length + 'min) ' + ' = ' + item.price +' CHF ' +'' for item in loxx.massageInfo"
+                <select class=" col-lg-8 mx-auto text-center bookingForm form-control" ng-model="user.massage" name="xxx"
+                ng-options="item[0] for item in data.backendPricesTest.limphoBody"
                 >
 
                     <option  class="labelDiv " value="">{{data.formPH.massage}}</option>
@@ -649,6 +645,39 @@
                 <span class="submitError">{{errors.invalidMassage}}</span>
             </div>
             </br>
+
+            @*pristine? : {{myForm.xxx.$pristine}}*@
+            @*<br>*@
+            @*dirty? : {{myForm.xxx.$dirty}}*@
+            @*<br>*@
+
+
+            @*touiched? : {{myForm.xxx.$touched}}*@
+            @*<br>*@
+
+            @*Chosen value: {{user.massage}}*@
+
+
+
+            <div class="inputDiv ">
+                <label class="item item-input labelDiv">{{data.formNames.massageOption}}</label>
+                <select class=" col-lg-8 mx-auto text-center bookingForm form-control" ng-model="user.massageOption" name="xxx2"
+                    ng-options="item for item in niam.x"
+                >
+
+                    <option  class="labelDiv " value="">{{data.formPH.massageOption}}</option>
+                </select>
+                <span class="submitError">{{errors.invalidMassageOption}}</span>
+                <span class="submitError">{{testError}}</span>
+
+            </div>
+            </br>
+
+
+
+
+
+
 
             <div class="row">
                 <div class=" col-sm-6 ">
@@ -712,16 +741,54 @@
                 @*<br>*@
 
 
+
+
+                <div class="col-md-9 control-label centerContactUs"
+                vc-recaptcha
+                theme="'light'"
+                key="model.key"
+                on-create="setWidgetId(widgetId,languageParameter)"
+                on-success="setResponse(response)"
+                on-expire="cbExpiration()"
+                ></div>
+                <span class="submitError">{{contactFormErrors.captcha}}</span>
+                <br>
+
+
+
+
+
+
                 <button ng-click="submitFullForm()" class="btn btn-primary btn-md">{{data.formNames.button}}</button>
                 <br>
                 <span class="submitSuccess">{{submittedSuccess}}</span>
-                <span class="submitError">{{submittedFail}}</span>
-                <span class="submitError">{{submitError}}</span>
+                <span class="submitError">{{submittedFail}}</span>  <br>
+                <span class="submitError">a{{submitError.contactFormErrors[0].name}}</span>                <br>
+
+                <span class="submitError">b{{submitError.contactFormErrors[0].phone}}</span>                <br>
+
+                <span class="submitError">c{{submitError.contactFormErrors[0]}}</span>
                 <br>
             </div>
 
 
         </form>
+
+        @*{{copyOfData}}*@
+        @*<br>*@
+        @*{{data.backendPricesTest.limphoBody}}*@
+        @*<br>*@
+
+    @*{{data.backendPricesTest.limphoBody[0]}}*@
+        @*<br>*@
+    @*{{data.backendPricesTest.limphoBody[1]}}*@
+        @*<br>*@
+
+    @*{{data.backendPricesTest.limphoBody[1][0]}}*@
+        @*<br>*@
+
+    @*{{data.backendPricesTest.limphoBody[2]}}*@
+
 
     </div>
 
@@ -789,17 +856,17 @@
 
 
 
-                            <div class="col-md-9 control-label centerContactUs"
+                            <div class="col-md-9 control-label centerContactUs "
                             vc-recaptcha
                             theme="'light'"
                             key="model.key"
                             on-create="setWidgetId(widgetId,languageParameter)"
                             on-success="setResponse(response)"
                             on-expire="cbExpiration()"
+                                ng-model="user.captcha"
                             ></div>
                             <span class="submitError">{{contactFormErrors.captcha}}</span>
                             <br>
-
 
 
 
@@ -815,17 +882,17 @@
                                     <span class="submitSuccess">{{submittedSuccessContact}}</span>
                                     <span class="submitError">{{submittedFailContact}}</span>
                                     <p>SCIENE : {{submitErrorContact}}</p>
-                                   <br>
-                                    {{lalala}}
-                                    <br>
-                                    zero{{submitErrorContact.contactFormErrors[0]}}
-                                    <br>
-                                    one{{lalala.contactFormErrors}}
+                                   @*<br>*@
+                                    @*{{lalala}}*@
+                                    @*<br>*@
+                                    @*zero{{submitErrorContact.contactFormErrors[0]}}*@
+                                    @*<br>*@
+                                    @*one{{lalala.contactFormErrors}}*@
 
-                                    <br>
-                                    {{loxx.massageInfo}}
-                                    <!--<span class="submitError">{{submitError}}</span>-->
-                                    <br>
+                                    @*<br>*@
+                                    @*{{loxx.massageInfo}}*@
+                                    @*<!--<span class="submitError">{{submitError}}</span>-->*@
+                                    @*<br>*@
 
                                 </div>
                             </div>

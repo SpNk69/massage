@@ -36,6 +36,10 @@
 
 }
 
+
+.customImage{
+    max-height: 35%;}
+
 /*.chi{*/
     /*margin:1px;*/
 /*}*/
@@ -67,6 +71,11 @@
     display: flex;
     padding: 0.5em;
     width: 100%;
+}
+
+.sizeLimit{
+    max-width:242px;
+    max-height:200px;
 }
 
 

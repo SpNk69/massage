@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" line="648" mnemonic="4" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ec72ac84-4374-4999-8edc-66fc5f9faa8c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/HelperClass.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/fullsize/Vida5.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/Vida5.xcf" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/FullFormMagic.java" afterPath="$PROJECT_DIR$/app/controllers/FullFormMagic.java" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" />
+      <change beforePath="$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java" afterPath="$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java" />
+      <change beforePath="$PROJECT_DIR$/app/validation/ValidationUtility.java" afterPath="$PROJECT_DIR$/app/validation/ValidationUtility.java" />
+      <change beforePath="$PROJECT_DIR$/app/views/adminPage.scala.html" afterPath="$PROJECT_DIR$/app/views/adminPage.scala.html" />
       <change beforePath="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" afterPath="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
+      <change beforePath="$PROJECT_DIR$/public/design2/css/thumbnail.css" afterPath="$PROJECT_DIR$/public/design2/css/thumbnail.css" />
       <change beforePath="$PROJECT_DIR$/public/design2/myTest.js" afterPath="$PROJECT_DIR$/public/design2/myTest.js" />
+      <change beforePath="$PROJECT_DIR$/public/design2/zeba.js" afterPath="$PROJECT_DIR$/public/design2/zeba.js" />
+      <change beforePath="$PROJECT_DIR$/test/JsonTest.java" afterPath="$PROJECT_DIR$/test/JsonTest.java" />
+      <change beforePath="$PROJECT_DIR$/test/UnitTest.java" afterPath="$PROJECT_DIR$/test/UnitTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -29,112 +45,15 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49333334">
+    <splitter split-orientation="horizontal" split-proportion="0.32183224">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="routes" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/conf/routes">
+        <leaf>
+          <file leaf-file-name="pagrindinisContentTEST.scala.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+                <state relative-caret-position="292">
+                  <caret line="826" column="86" lean-forward="false" selection-start-line="826" selection-start-column="64" selection-end-line="826" selection-end-column="86" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1526#1527#0" expanded="true" />
-                    <element signature="e#1554#1555#0" expanded="true" />
-                    <element signature="e#1596#1597#0" expanded="true" />
-                    <element signature="e#1649#1650#0" expanded="true" />
-                    <element signature="e#1684#1685#0" expanded="true" />
-                    <element signature="e#1738#1739#0" expanded="true" />
-                    <marker date="1519853238586" expanded="true" signature="3224:3272" ph="SELECT * FRO... massageinfo" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JEntryMassagePriceLength.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/jsonthings/JEntryMassagePriceLength.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JFullFormSubmit.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JTopRootList.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/jsonthings/JTopRootList.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JRootKeysToGetArrays.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="756">
-                  <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#243#244#0" expanded="true" />
-                    <element signature="e#283#284#0" expanded="true" />
-                    <element signature="e#355#356#0" expanded="true" />
-                    <element signature="e#413#414#0" expanded="true" />
-                    <element signature="e#577#578#0" expanded="true" />
-                    <element signature="e#635#636#0" expanded="true" />
-                    <element signature="e#785#786#0" expanded="true" />
-                    <element signature="e#837#838#0" expanded="true" />
-                    <element signature="e#1280#1281#0" expanded="true" />
-                    <element signature="e#1326#1327#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ContactFormErrors.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/jsonthings/ContactFormErrors.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#406#407#0" expanded="true" />
-                    <element signature="e#433#434#0" expanded="true" />
-                    <element signature="e#473#474#0" expanded="true" />
-                    <element signature="e#505#506#0" expanded="true" />
-                    <element signature="e#537#538#0" expanded="true" />
-                    <element signature="e#565#566#0" expanded="true" />
-                    <element signature="e#607#608#0" expanded="true" />
-                    <element signature="e#641#642#0" expanded="true" />
-                    <element signature="e#675#676#0" expanded="true" />
-                    <element signature="e#705#706#0" expanded="true" />
-                    <element signature="e#751#752#0" expanded="true" />
-                    <element signature="e#789#790#0" expanded="true" />
-                    <element signature="e#823#824#0" expanded="true" />
-                    <element signature="e#853#854#0" expanded="true" />
-                    <element signature="e#899#900#0" expanded="true" />
-                    <element signature="e#937#938#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -142,42 +61,8 @@
           <file leaf-file-name="myTest.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2880">
-                  <caret line="160" column="27" lean-forward="true" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="angular-recaptcha.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/design2/angular-recaptcha.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="357" column="81" lean-forward="false" selection-start-line="357" selection-start-column="81" selection-end-line="357" selection-end-column="81" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pagrindinisContentTEST.scala.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="434">
-                  <caret line="795" column="50" lean-forward="false" selection-start-line="795" selection-start-column="39" selection-end-line="795" selection-end-column="50" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main2TEST.scala.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                <state relative-caret-position="310">
+                  <caret line="403" column="63" lean-forward="false" selection-start-line="403" selection-start-column="32" selection-end-line="403" selection-end-column="63" />
                   <folding />
                 </state>
               </provider>
@@ -186,10 +71,58 @@
           <file leaf-file-name="ValidationUtility.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/validation/ValidationUtility.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+                <state relative-caret-position="292">
+                  <caret line="114" column="18" lean-forward="false" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="zeba.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/design2/zeba.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="616">
+                  <caret line="749" column="42" lean-forward="false" selection-start-line="749" selection-start-column="8" selection-end-line="749" selection-end-column="42" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FullFormMagic.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/FullFormMagic.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="580">
+                  <caret line="168" column="186" lean-forward="false" selection-start-line="168" selection-start-column="186" selection-end-line="168" selection-end-column="186" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1625#1626#0" expanded="true" />
+                    <element signature="e#1653#1654#0" expanded="true" />
+                    <marker date="1520192661024" expanded="true" signature="4383:4548" ph="INSERT INTO heroku_e3d8ce5aa92835f.fullreservationform... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="596">
+                  <caret line="320" column="0" lean-forward="true" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1527#1528#0" expanded="true" />
+                    <element signature="e#1555#1556#0" expanded="true" />
+                    <element signature="e#1598#1599#0" expanded="true" />
+                    <element signature="e#1651#1652#0" expanded="true" />
+                    <element signature="e#1686#1687#0" expanded="true" />
+                    <element signature="e#1740#1741#0" expanded="true" />
+                    <marker date="1520172468192" expanded="true" signature="3226:3274" ph="SELECT * FRO... massageinfo" />
                   </folding>
                 </state>
               </provider>
@@ -209,36 +142,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>recap</find>
-      <find>g-reca</find>
-      <find>vcRecaptchaService</find>
-      <find>inH</find>
-      <find>maps.googleapis.com/maps/api</find>
-      <find>maps</find>
-      <find>response</find>
-      <find>verification</find>
-      <find>doTran</find>
-      <find>error</find>
-      <find>submit</find>
-      <find>sendEm</find>
-      <find>asjson</find>
-      <find>gimme</find>
-      <find>key</find>
-      <find>FINAL</find>
-      <find>recaptcha</find>
-      <find>angular-re</find>
-      <find>loxx</find>
-      <find>$scope.submit2</find>
-      <find>ws</find>
-      <find>dotran</find>
-      <find>dotra</find>
-      <find>thank yu</find>
-      <find>thank</find>
-      <find>thank you</find>
-      <find>recaptcha widget id not</find>
-      <find>send</find>
+      <find>captchavalida</find>
+      <find>phone</find>
+      <find>reset</find>
+      <find>contactform</find>
+      <find>$scope.setWidgetId</find>
+      <find>dotrans</find>
       <find>setWidgetId</find>
-      <find>submit2</find>
+      <find>provide</find>
+      <find>submitError</find>
+      <find>$scope.data.formErrors</find>
+      <find>$scope.data</find>
+      <find>setLanguage($scope.languageParameter, getFormErrorCodes()</find>
+      <find>backendErrorMessages</find>
+      <find>errors.invalidName</find>
+      <find>invalidname</find>
+      <find>massage</find>
+      <find>$scope.errors</find>
+      <find>are we here</find>
+      <find>$scope.errors = {</find>
+      <find>contactFormBackendErrorMessages</find>
+      <find>getContactErorrMessagesFromBackend</find>
+      <find>contactFormErrors</find>
+      <find>submiterrorcon</find>
+      <find>stuff</find>
+      <find>contactFormErrors.name</find>
+      <find>are we</find>
+      <find>404</find>
+      <find>backendFullForm</find>
+      <find>fullFormBackendErrorMessages</find>
+      <find>contactformerrors</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -263,22 +196,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/jsonthings/TestClass.java" />
-        <option value="$PROJECT_DIR$/app/jsonthings/JRoot.java" />
-        <option value="$PROJECT_DIR$/app/jsonthings/JRootList.java" />
-        <option value="$PROJECT_DIR$/app/jsonthings/JEntryLeTesto.java" />
         <option value="$PROJECT_DIR$/app/jsonthings/FullFormSubmit.java" />
         <option value="$PROJECT_DIR$/app/views/calledFromRoutesAdmin.scala.html" />
-        <option value="$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java" />
         <option value="$PROJECT_DIR$/app/jsonthings/JEntryMassageAndPrices.java" />
         <option value="$PROJECT_DIR$/public/javascripts/js/adminController.js" />
         <option value="$PROJECT_DIR$/public/javascripts/js/route.js" />
-        <option value="$PROJECT_DIR$/test/JsonTest.java" />
         <option value="$PROJECT_DIR$/conf/logback.xml" />
         <option value="$PROJECT_DIR$/public/stylesheets/index.html" />
         <option value="$PROJECT_DIR$/bower_components/ngmap/testapp/infowindow_ng_click.html" />
         <option value="$PROJECT_DIR$/app/jsonthings/JEntryMassagePriceLength.java" />
-        <option value="$PROJECT_DIR$/app/views/adminPage.scala.html" />
         <option value="$PROJECT_DIR$/public/javascripts/js/turbo.css" />
         <option value="$PROJECT_DIR$/app/views/actualPage.scala.html" />
         <option value="$PROJECT_DIR$/app/views/pagrindinis.scala.html" />
@@ -295,23 +221,30 @@
         <option value="$PROJECT_DIR$/public/javascripts/js/formController.js" />
         <option value="$PROJECT_DIR$/public/design2/ng-map.min.js" />
         <option value="$PROJECT_DIR$/public/javascripts/js/formStyle.css" />
-        <option value="$PROJECT_DIR$/public/design2/css/thumbnail.css" />
         <option value="$PROJECT_DIR$/public/design2/ng-text-truncate.js" />
         <option value="$PROJECT_DIR$/conf/production.conf" />
         <option value="$PROJECT_DIR$/app/views/pagrindinisTEST.scala.html" />
         <option value="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
-        <option value="$PROJECT_DIR$/app/controllers/FullFormMagic.java" />
         <option value="$PROJECT_DIR$/app/views/main2TEST.scala.html" />
-        <option value="$PROJECT_DIR$/public/design2/zeba.js" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/app/jsonthings/contactFormErrors.java" />
-        <option value="$PROJECT_DIR$/app/jsonthings/ContactFormErrors.java" />
         <option value="$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java" />
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/validation/ValidateForms.java" />
-        <option value="$PROJECT_DIR$/app/validation/ValidationUtility.java" />
+        <option value="$PROJECT_DIR$/test/JsonTest.java" />
+        <option value="$PROJECT_DIR$/test/UnitTest.java" />
+        <option value="$PROJECT_DIR$/app/views/adminPage.scala.html" />
+        <option value="$PROJECT_DIR$/app/jsonthings/ContactFormErrors.java" />
+        <option value="$PROJECT_DIR$/app/jsonthings/FullFormErrors.java" />
+        <option value="$PROJECT_DIR$/app/controllers/HelperClass.java" />
+        <option value="$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java" />
         <option value="$PROJECT_DIR$/app/controllers/HomeController.java" />
+        <option value="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/scriptFile.scala" />
+        <option value="$PROJECT_DIR$/public/design2/css/thumbnail.css" />
+        <option value="$PROJECT_DIR$/app/validation/ValidationUtility.java" />
+        <option value="$PROJECT_DIR$/app/controllers/FullFormMagic.java" />
+        <option value="$PROJECT_DIR$/public/design2/zeba.js" />
         <option value="$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html" />
         <option value="$PROJECT_DIR$/public/design2/myTest.js" />
       </list>
@@ -349,9 +282,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="52" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
+    <option name="x" value="1313" />
+    <option name="y" value="65" />
+    <option name="width" value="3637" />
     <option name="height" value="919" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -430,6 +363,58 @@
               <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="design2" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="design2" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="design2" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="thumbnails" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="design2" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="design2" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="creative.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -438,6 +423,11 @@
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="javascripts" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webv2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -459,10 +449,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/design2" />
-      <recent name="$PROJECT_DIR$/public/design2/img/portfolio" />
       <recent name="$PROJECT_DIR$/public/design2/img/portfolio/thumbnails" />
       <recent name="$PROJECT_DIR$/public/design2/img/portfolio/fullsize" />
+      <recent name="$PROJECT_DIR$/public/design2" />
+      <recent name="$PROJECT_DIR$/public/design2/img/portfolio" />
       <recent name="$PROJECT_DIR$/public/design2/img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -488,7 +478,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AccessDataBase">
+  <component name="RunManager" selected="JUnit.JsonTest.leMega">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -823,6 +813,11 @@
       <item index="2" class="java.lang.String" itemvalue="JUnit.JsonTest.leMega" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.leTest.usingForm" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JsonTest.leMega" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
     <option name="lastUpdateTimestamp" value="1518977131806" />
@@ -872,14 +867,11 @@
       <workItem from="1516469167945" duration="655000" />
       <workItem from="1518463659656" duration="2850000" />
       <workItem from="1518720947266" duration="795000" />
-      <workItem from="1518721773425" duration="88906000" />
+      <workItem from="1518721773425" duration="155511000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JsonTest - 2017.12.20 at 22h 21m 53s.xml">
-      <configuration name="JsonTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JsonTest - 2017.12.20 at 22h 23m 11s.xml">
       <configuration name="JsonTest" configurationId="JUnit" />
     </history-entry>
@@ -895,6 +887,15 @@
     <history-entry file="JsonTest_leMega - 2017.12.20 at 22h 18m 26s.xml">
       <configuration name="JsonTest.leMega" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JsonTest_leMega - 2018.03.03 at 22h 48m 47s.xml">
+      <configuration name="JsonTest.leMega" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JsonTest_leMega - 2018.03.03 at 22h 49m 03s.xml">
+      <configuration name="JsonTest.leMega" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JsonTest_leMega - 2018.03.03 at 22h 49m 42s.xml">
+      <configuration name="JsonTest.leMega" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="leTest_usingForm - 2017.09.09 at 01h 15m 19s.xml">
       <configuration name="leTest.usingForm" configurationId="JUnit" />
     </history-entry>
@@ -903,10 +904,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303473000" />
+    <option name="totallyTimeSpent" value="370078000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1204" extended-state="6" />
+    <frame x="1920" y="-4" width="1920" height="1204" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -927,10 +928,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27247956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12477231" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07008086" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -973,66 +974,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/design2/vendor/font-awesome/css/whatever.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1004">
-          <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/nav.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/img/portfolio/fullsize/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/vendor/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="3977" column="261" lean-forward="false" selection-start-line="3977" selection-start-column="25" selection-end-line="3977" selection-end-column="261" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/vendor/font-awesome/css/whatever.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="127" lean-forward="false" selection-start-line="2" selection-start-column="127" selection-end-line="2" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/img/header.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/img/intro-background.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/css/creative.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/js/formController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/russianContent.scala.html" />
     <entry file="file://$PROJECT_DIR$/app/views/germanContent.scala.html" />
     <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContent.scala.html" />
@@ -1047,13 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="622">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/css/thumbnail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1176,14 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/design2/zeba.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="581" column="22" lean-forward="false" selection-start-line="581" selection-start-column="22" selection-end-line="581" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -1208,139 +1134,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/FullFormMagic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="59" column="130" lean-forward="false" selection-start-line="59" selection-start-column="130" selection-end-line="59" selection-end-column="169" />
-          <folding>
-            <marker date="1518874020180" expanded="true" signature="2076:2224" ph="INSERT INTO heroku_e3d8ce5aa92835f.fullreservationform... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JEntryLeTesto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JTopRootList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JEntryMassagePriceLength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#1280#1281#0" expanded="true" />
-            <element signature="e#1326#1327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jsonthings/ContactFormErrors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1596#1597#0" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
-            <element signature="e#1684#1685#0" expanded="true" />
-            <element signature="e#1738#1739#0" expanded="true" />
-            <marker date="1519853238586" expanded="true" signature="3224:3272" ph="SELECT * FRO... massageinfo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/validation/ValidationUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="795" column="50" lean-forward="false" selection-start-line="795" selection-start-column="39" selection-end-line="795" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1353,11 +1150,251 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/js/formController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="118" column="31" lean-forward="false" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/leTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1009#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/UnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/JsonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jsonthings/JRootKeysToGetArrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+          <folding>
+            <element signature="e#243#244#0" expanded="false" />
+            <element signature="e#283#284#0" expanded="false" />
+            <element signature="e#355#356#0" expanded="false" />
+            <element signature="e#413#414#0" expanded="false" />
+            <element signature="e#577#578#0" expanded="false" />
+            <element signature="e#635#636#0" expanded="false" />
+            <element signature="e#785#786#0" expanded="false" />
+            <element signature="e#837#838#0" expanded="false" />
+            <element signature="e#1280#1281#0" expanded="false" />
+            <element signature="e#1326#1327#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jsonthings/JTopRootList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jsonthings/JEntryMassagePriceLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jsonthings/JEntryLeTesto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/adminPage.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jsonthings/FullFormErrors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jsonthings/ContactFormErrors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#406#407#0" expanded="false" />
+            <element signature="e#433#434#0" expanded="false" />
+            <element signature="e#473#474#0" expanded="false" />
+            <element signature="e#505#506#0" expanded="false" />
+            <element signature="e#537#538#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#641#642#0" expanded="false" />
+            <element signature="e#675#676#0" expanded="false" />
+            <element signature="e#705#706#0" expanded="false" />
+            <element signature="e#751#752#0" expanded="false" />
+            <element signature="e#789#790#0" expanded="false" />
+            <element signature="e#823#824#0" expanded="false" />
+            <element signature="e#853#854#0" expanded="false" />
+            <element signature="e#899#900#0" expanded="false" />
+            <element signature="e#937#938#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jsonthings/JFullFormSubmit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <folding>
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#403#404#0" expanded="false" />
+            <element signature="e#449#450#0" expanded="false" />
+            <element signature="e#487#488#0" expanded="false" />
+            <element signature="e#704#705#0" expanded="false" />
+            <element signature="e#740#741#0" expanded="false" />
+            <element signature="e#798#799#0" expanded="false" />
+            <element signature="e#848#849#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/img/Vida.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main2TEST.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="25" column="56" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/img/portfolio/thumbnails/scriptFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/css/thumbnail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1039">
+          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/HelperClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/FullFormMagic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="168" column="186" lean-forward="false" selection-start-line="168" selection-start-column="186" selection-end-line="168" selection-end-column="186" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+            <marker date="1520192661024" expanded="true" signature="4383:4548" ph="INSERT INTO heroku_e3d8ce5aa92835f.fullreservationform... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/ngmap/testapp/map-gulp-usemin/myapp.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="3" column="5560" lean-forward="false" selection-start-line="3" selection-start-column="5560" selection-end-line="3" selection-end-column="5560" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pagrindinisContentTEST.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="826" column="86" lean-forward="false" selection-start-line="826" selection-start-column="64" selection-end-line="826" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/validation/ValidationUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="114" column="18" lean-forward="false" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/design2/zeba.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="749" column="42" lean-forward="false" selection-start-line="749" selection-start-column="8" selection-end-line="749" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/design2/myTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="160" column="27" lean-forward="true" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
+        <state relative-caret-position="310">
+          <caret line="403" column="63" lean-forward="false" selection-start-line="403" selection-start-column="32" selection-end-line="403" selection-end-column="63" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="320" column="0" lean-forward="true" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1527#1528#0" expanded="true" />
+            <element signature="e#1555#1556#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1686#1687#0" expanded="true" />
+            <element signature="e#1740#1741#0" expanded="true" />
+            <marker date="1520172468192" expanded="true" signature="3226:3274" ph="SELECT * FRO... massageinfo" />
+          </folding>
         </state>
       </provider>
     </entry>
