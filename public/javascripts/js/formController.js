@@ -288,6 +288,7 @@ app.controller('FormController', ['$scope', '$http', function ($scope, $http) {
         $scope.invalidMassage=ifNotFilled($scope.user.massage,getValueByLang($scope.language,errorCodesWhenNotFilled,"massage"));
         $scope.invalidDate=emptyOrUndefined($scope.chosenDate,getValueByLang($scope.language,errorCodesWhenNotFilled,"date"));
         $scope.invalidTime=emptyOrUndefined($scope.chosenTime,getValueByLang($scope.language,errorCodesWhenNotFilled,"time"));
+        $scope.invalidCaptcha=emptyOrUndefined($scope.response,getValueByLang($scope.language,errorCodesWhenNotFilled,"captcha"));
 
         return returnTrueIfValid($scope.invalidName) &&
                returnTrueIfValid($scope.invalidLastName) &&

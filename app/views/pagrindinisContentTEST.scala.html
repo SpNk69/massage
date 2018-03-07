@@ -751,7 +751,8 @@
                 on-success="setResponse(response)"
                 on-expire="cbExpiration()"
                 ></div>
-                <span class="submitError">{{contactFormErrors.captcha}}</span>
+                @*<span class="submitError">{{contactFormErrors.captcha}}</span>*@
+                <span class="submitError">{{errors.invalidCaptcha}}</span>
                 <br>
 
 
@@ -763,12 +764,12 @@
                 <br>
                 <span class="submitSuccess">{{submittedSuccess}}</span>
                 <span class="submitError">{{submittedFail}}</span>  <br>
-                <span class="submitError">a{{submitError.contactFormErrors[0].name}}</span>                <br>
+                @*<span class="submitError">a{{submitError.contactFormErrors[0].name}}</span>                <br>*@
 
-                <span class="submitError">b{{submitError.contactFormErrors[0].phone}}</span>                <br>
+                @*<span class="submitError">b{{submitError.contactFormErrors[0].phone}}</span>                <br>*@
 
-                <span class="submitError">c{{submitError.contactFormErrors[0]}}</span>
-                <br>
+                @*<span class="submitError">c{{submitError.contactFormErrors[0]}}</span>*@
+                @*<br>*@
             </div>
 
 
@@ -881,7 +882,7 @@
                                     <br>
                                     <span class="submitSuccess">{{submittedSuccessContact}}</span>
                                     <span class="submitError">{{submittedFailContact}}</span>
-                                    <p>SCIENE : {{submitErrorContact}}</p>
+                                    @*<p>SCIENE : {{submitErrorContact}}</p>*@
                                    @*<br>*@
                                     @*{{lalala}}*@
                                     @*<br>*@

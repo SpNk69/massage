@@ -682,7 +682,12 @@ console.log($scope.niam);
     // validate that input was entered
     function validate() {
 
-        $scope.user.captcha=$scope.response;
+        if($scope.response === null){
+            $scope.user.captcha="";
+        }else{
+            $scope.user.captcha=$scope.response;
+
+        }
 
 
         $scope.errors.invalidName = ifNotFilled($scope.user.firstName, $scope.data.formErrors.name);
