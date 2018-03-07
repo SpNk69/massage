@@ -75,11 +75,12 @@ public class ValidationUtility {
 
         if (message.length() < 1 || message.length() > 1000) {
             return "messageLength";
-        } else if (m.find()) {
-            //do something here!!
-            return "messageFormat";
-
         }
+//         else if (m.find()) {
+//            //do something here!!
+//            return "messageFormat";
+//
+//        }
 
         return "";
     }
