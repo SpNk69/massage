@@ -64,8 +64,7 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
 
 
     public Result toFaceBook() {
-        Logger.warn(System.getenv("JUST_TESTING"));
-        return redirect(System.getenv("JUST_TESTING"));
+        return redirect("http://facebook.com");
     }
 
 

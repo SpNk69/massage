@@ -112,9 +112,8 @@ public class FullFormMagic extends Controller implements WSBodyReadables, WSBody
         Connection connection=null;
         PreparedStatement xs=null;
         try {
-            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f?useUnicode=yes&characterEncoding=UTF-8", "b2945c551737ae", "809360b3");
+            connection = (Connection) DriverManager.getConnection(System.getenv("DB_URL"), System.getenv("DB_USER"), System.getenv("DB_PASS"));
 
-//        try (com.mysql.jdbc.Connection connection = getConnection()) {
 
             xs = connection.prepareStatement("INSERT INTO heroku_e3d8ce5aa92835f.fullreservationform (name, surname, email, phone, massage,massageOption, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?)");
             xs.setString(1, setMaxColTypeLen(findJson(json, NAME), getMaxSize(connection, NAME)));
@@ -150,8 +149,6 @@ public class FullFormMagic extends Controller implements WSBodyReadables, WSBody
             String dateError=validationUtility.validateDate(dateNode);
             String timeError=validationUtility.validateTime(timeNode);
             String messageError=validationUtility.validateMessageFullForm(messageNode);
-            String captchaError= validateCaptcha(captchaNode);
-            Logger.warn("CaptchaError: " + captchaError);
 
 
 
@@ -170,14 +167,23 @@ public class FullFormMagic extends Controller implements WSBodyReadables, WSBody
 
                 return badRequest(x);
 
-            }else if(captchaError.equalsIgnoreCase("")){
-                Logger.warn("In the else if captcha validation");
-                helperClass = new HelperClass();
-                helperClass.initializeObjectMapper();
-                String x =helperClass.prepareResponse(new JFullFormSubmit(nameError,surnameError,emailError,phoneError,massageError,massageOptionError,dateError,timeError,messageError,captchaError));
+            }else {
+                String captchaError= validateCaptcha(captchaNode);
+                Logger.warn("CaptchaError: " + captchaError);
 
-                return ok(x);
+                if(captchaError.equalsIgnoreCase("")){
+                    Logger.warn("In the else if captcha validation");
+                    helperClass = new HelperClass();
+                    helperClass.initializeObjectMapper();
+                    String x =helperClass.prepareResponse(new JFullFormSubmit(nameError,surnameError,emailError,phoneError,massageError,massageOptionError,dateError,timeError,messageError,captchaError));
 
+
+                    Logger.warn("Sending data to DB");
+                    xs.execute();
+
+                    return ok(x);
+
+                }
             }
             Logger.warn("After validation");
 
@@ -189,7 +195,6 @@ public class FullFormMagic extends Controller implements WSBodyReadables, WSBody
             }
 
 
-            xs.execute();
 
 
             return ok();
