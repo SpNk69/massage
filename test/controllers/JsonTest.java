@@ -16,7 +16,7 @@ import java.io.IOException;
 public class JsonTest {
 
     @Test
-    public void leMega() throws IOException {
+    public void createAndSerializeJson() throws IOException {
 
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
@@ -27,7 +27,7 @@ public class JsonTest {
         JRootKeysToGetArrays superRoot = new JRootKeysToGetArrays();
 
 
-        rootList.add(new JEntryMassagePriceLength("Massageą",12.0,50));
+        rootList.add(new JEntryMassagePriceLength("Massage1",12.0,50));
 
 
 

@@ -56,7 +56,6 @@ public class ValidationUtility {
         if (email.length() < 1 || email.length() > 100) {
             return "emailLength";
         } else if (!m.find()) {
-            Logger.warn("EMAIL VALIDATION WORKS!");
             return "emailFormat";
         }
         return "";
@@ -114,7 +113,6 @@ public class ValidationUtility {
 
 
     public String validateDate(JsonNode dateNode) {
-        Logger.warn("inside dateNode: " + dateNode);
         String date = dateNode.asText();
         String pattern = "^\\d{4}-\\d{2}-\\d{2}$";
 //        (?s)^(?!\d{4}-\d{2}-\d{2}$).* -opposite
@@ -149,7 +147,6 @@ public class ValidationUtility {
 
 
     public String validateTime(JsonNode timeNode) {
-        Logger.warn("inside dateNode: " + timeNode);
         String time = timeNode.asText();
         String pattern = "^\\d{2}:\\d{2}$";
 //        (?s)^(?!\d{4}-\d{2}-\d{2}$).* -opposite

@@ -1,9 +1,8 @@
-package validation2;
+package validation;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.Test;
 import play.libs.Json;
-import validation.ValidationUtility;
 
 import static org.junit.Assert.assertEquals;
 

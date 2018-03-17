@@ -59,8 +59,8 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
 
 
 
-    public Result pagrindinisLTTEST() {
-        return ok(pagrindinisTEST.render(""));
+    public Result singlePageApplication() {
+        return ok(SPAcalledFromController.render(""));
     }
 
 
@@ -68,13 +68,6 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
         return redirect("http://facebook.com");
     }
 
-
-
-
-
-    public Result testing() {
-        return ok(calledFromRoutes.render("x"));
-    }
 
     public Result adminPage() {
         return ok(calledFromRoutesAdmin.render("x"));

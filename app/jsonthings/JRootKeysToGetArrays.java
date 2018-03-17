@@ -22,7 +22,6 @@ public class JRootKeysToGetArrays {
         this.contactFormErrors = contactFormErrors;
     }
 
-    JTopRootList leTesto;
     JTopRootList fullFormSubmit;
     JTopRootList contactFormErrors;
 
@@ -48,13 +47,7 @@ public class JRootKeysToGetArrays {
 //        this.name = name;
 //    }
 
-    public JTopRootList getLeTesto() {
-        return leTesto;
-    }
 
-    public void setLeTesto(JTopRootList leTesto) {
-        this.leTesto = leTesto;
-    }
 
     public JTopRootList getMassageInfo() {
         return massageInfo;
