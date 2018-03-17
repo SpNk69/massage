@@ -42,9 +42,7 @@ public class FullFormMagic extends Controller implements WSBodyReadables, WSBody
 
 
     ValidationUtility validationUtility = new ValidationUtility();
-    JFullFormSubmit jFullFormSubmit;
     HelperClass helperClass;
-    HomeController homeController;
 
 
 
@@ -54,6 +52,7 @@ public class FullFormMagic extends Controller implements WSBodyReadables, WSBody
     public FullFormMagic(WSClient ws) {
         this.ws = ws;
     }
+
 
 
     private static Connection getConnection() throws URISyntaxException, SQLException {

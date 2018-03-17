@@ -91,7 +91,7 @@ public class ValidationUtility {
 
     public String validateMessageFullForm(JsonNode messageNode) {
 
-        //check messagefield for something
+        //check messagefield for something or encode
         String message = messageNode.asText();
         //make regex from malicous crap
         String pattern = "";
@@ -112,6 +112,7 @@ public class ValidationUtility {
 
 
 
+
     public String validateDate(JsonNode dateNode) {
         Logger.warn("inside dateNode: " + dateNode);
         String date = dateNode.asText();
@@ -120,10 +121,26 @@ public class ValidationUtility {
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(date);
 
+
+        //parse month
+        String pattern2="(?<=-)(.*0[1-9]|1[0-2])(?=-)";
+        Pattern r2 = Pattern.compile(pattern2);
+        Matcher m2 = r2.matcher(date);
+
+        //parse day
+        String pattern3="(?<=-..-)(.*0[1-9]|1[0-9]|2[0-9]|3[0-1])";
+        Pattern r3 = Pattern.compile(pattern3);
+        Matcher m3 = r3.matcher(date);
+
         if (date.length() < 1 || date.length() > 10) {
             return "dateLength";
         } else if (!m.find()) {
             return "dateFormat";
+        }else if(!m2.find()){
+            return "dateFormat";
+        }else if(!m3.find()){
+            return "dateFormat";
+
         }
         return "";
     }
@@ -182,7 +199,7 @@ public class ValidationUtility {
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(massageOption);
 
-        if (massageOption.length() < 1 || massageOption.length() > 3) {
+        if (massageOption.length() < 2 || massageOption.length() > 3) {
             return "massageOptionLength";
         } else if (!m.find()) {
             return "massageOptionFormat";
@@ -195,7 +212,7 @@ public class ValidationUtility {
 
     public String validateMassage(JsonNode massageNode) {
         String massage = massageNode.asText();
-        String pattern = "[^\\p{L}.' -]";
+        String pattern = "[^\\p{L}\\p{Pd}.' -]";
 
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(massage);

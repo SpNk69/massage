@@ -1,11 +1,11 @@
+package controllers;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jsonthings.JEntryLeTesto;
 import jsonthings.JEntryMassagePriceLength;
 import jsonthings.JRootKeysToGetArrays;
 import jsonthings.JTopRootList;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -24,17 +24,14 @@ public class JsonTest {
 
 
         JTopRootList rootList = new JTopRootList();
-        JTopRootList rootList2 = new JTopRootList();
         JRootKeysToGetArrays superRoot = new JRootKeysToGetArrays();
 
 
-        rootList.add(new JEntryMassagePriceLength("LOX",12.0,50));
-        rootList2.add(new JEntryLeTesto("GAY","dux"));
+        rootList.add(new JEntryMassagePriceLength("Massageą",12.0,50));
 
 
 
         superRoot.setMassageInfo(rootList);
-        superRoot.setLeTesto(rootList2);
 
 
 

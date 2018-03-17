@@ -40,6 +40,7 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
      * this method will be called when the application receives a
      * <code>GET</code> request with a path of <code>/</code>.
      */
+    HelperClass helperClass = new HelperClass();
 
 
     @Inject
@@ -268,16 +269,6 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
 
     }
 
-
-    private String prepareResponse(ContactFormErrors form) throws JsonProcessingException {
-        JTopRootList jTopRootList = new JTopRootList();
-        JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
-        jTopRootList.add(form);
-        topKey.setContactFormErrors(jTopRootList);
-        return initializeObjectMapper().writeValueAsString(topKey);
-    }
-
-
     public Result sendEmail() throws IOException {
 
         JsonNode json = request().body().asJson();
@@ -299,19 +290,19 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
 
             captchaER = captchaValidation2(captchaNode);
             if (!captchaER.equalsIgnoreCase("")) {
-                response = prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
+                response = helperClass.prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
                 Logger.warn("Happened in IF IF ");
                 return badRequest(response);
             }
 
             deliverEmail(nameNode, emailNode, messageNode);
-            response = prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
+            response = helperClass.prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
 
             return ok(response);
 
         } else if (!nameER.equalsIgnoreCase("") || !emailER.equalsIgnoreCase("") || !messageER.equalsIgnoreCase("")) {
             Logger.warn("Happened in ELSE IF ");
-            response = prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
+            response = helperClass.prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
             return badRequest(response);
         }
 

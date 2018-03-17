@@ -36,15 +36,15 @@
                     <a class="nav-link js-scroll-trigger" href="#{{contactMe}}">{{data.navBar.contacts}}</a>
                 </li>
 
-                <li class="nav-item" ng-show="megaCheck1">
+                <li class="nav-item" ng-show="isLangDE">
                     <a class="page-scroll" ng-click="doTranslate(de)"><img
                             src='@routes.Assets.at("images/img/flag-de2.png")' alt="Vokiečių kalba"/></a>
                 </li>
-                <li class="nav-item" ng-show="megaCheck2">
+                <li class="nav-item" ng-show="isLangLT">
                     <a class="page-scroll" ng-click="doTranslate(lt)"><img
                             src='@routes.Assets.at("images/img/flag-lt2.png")' alt="Vokiečių kalba"/></a>
                 </li>
-                <li class="nav-item" ng-show="megaCheck3">
+                <li class="nav-item" ng-show="isLangRU">
                     <a class="page-scroll" ng-click="doTranslate(ru)"><img
                             src='@routes.Assets.at("images/img/flag-rus.png")' alt="Vokiečių kalba"/></a>
 
@@ -57,35 +57,29 @@
 <header class="masthead text-center text-white d-flex">
     <div class="container my-auto">
         <div class="row">
-            <!--<div class="col-lg-10 mx-auto">-->
-            <!--<h1 class="text-uppercase">-->
-            <!--<strong>Your Favorite Source of Free Bootstrap Themes</strong>-->
-            <!--</h1>-->
-            <!--<hr>-->
-            <!--</div>-->
             <div class="col-lg-8 mx-auto">
-                <!--text-faded-->
                 <p class="text-white mb-5">{{data.introText.intro}}</p>
-                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#{{inAHurry}}">{{data.introText.findMore}}</a>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#{{aboutMe}}">{{data.introText.findMore}}</a>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#{{bookit}}">{{data.introText.bookNow}}</a>
             </div>
         </div>
     </div>
 </header>
 
-<!--in a hurry section-->
-<section class="bg-primary" id="{{inAHurry}}">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-heading text-white">{{data.inAHurry.title}}</h2>
-                <hr class="light my-4">
-                <!--<p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>-->
-                <p class="text-faded mb-4">{{data.inAHurry.sentence}}</p>
-                <a class="btn btn-light btn-xl js-scroll-trigger" href="#{{bookit}}">{{data.inAHurry.button}}</a>
-            </div>
-        </div>
-    </div>
-</section>
+@*<!--in a hurry section-->*@
+@*<section class="bg-primary" id="{{inAHurry}}">*@
+    @*<div class="container">*@
+        @*<div class="row">*@
+            @*<div class="col-lg-8 mx-auto text-center">*@
+                @*<h2 class="section-heading text-white">{{data.inAHurry.title}}</h2>*@
+                @*<hr class="light my-4">*@
+                @*<!--<p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>-->*@
+                @*<p class="text-faded mb-4">{{data.inAHurry.sentence}}</p>*@
+                @*<a class="btn btn-light btn-xl js-scroll-trigger" href="#{{bookit}}">{{data.inAHurry.button}}</a>*@
+            @*</div>*@
+        @*</div>*@
+    @*</div>*@
+@*</section>*@
 
 <!--about me section-->
 <section id="{{aboutMe}}" class=" ">
@@ -103,11 +97,6 @@
                 <div class="service-box mt-5 mx-auto ">
                     <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
                     <h3 class="mb-3 ">{{data.aboutMeTitle.whoIAm}}</h3>
-                    <!--<li class="text-muted mb-0  tc">Mano vardas Vida. Atvykau iš Lietuvos. Gyvenu Šveicarijoje, Schaffhausen mieste.</li>-->
-                    <!--<li class="text-muted mb-0  tc">Man masažai - tai iššūkis ir malonumas.</li>-->
-                    <!--<li class="text-muted mb-0  tc">Iššūkis - panaikinti skausmus žmogaus kūne.</li>-->
-                    <!--<li class="text-muted mb-0  tc">Malonumas - kai nebelieka skausmų, dingsta įtampa, sugražinama gera savijauta, o žmogaus veide atsiranda šypsena.</li>-->
-                    <!--<li class="text-muted mb-0  tc">Mano tikslas yra padėti žmonėms jaustis puikiai bet kuriuo amžiaus periodu.</li>-->
 
                     <li class="text-muted mb-0  tc"
                         ng-repeat="item in data.aboutMeBody.whoIAm">{{item}}
@@ -128,12 +117,6 @@
 
                 </div>
             </div>
-            @*/home/alex/git/web/public/images/img/Vida.jpg*@
-
-            @*<div class="col-lg-3 col-md-6 text-center">*@
-                   @*<img class="customImage" src='@routes.Assets.at("images/img/Vida-Polescuk.jpg")' alt="">*@
-
-            @*</div>*@
 
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box mt-5 mx-auto">
@@ -455,7 +438,6 @@
 
         <table class="table">
 
-
             <thead class="thead-default">
             <tr>
                 <th></th>
@@ -499,68 +481,72 @@
             <!--Anti cel-->
             <tr>
                 <th></th>
-                <th ng-repeat="value in data.prices.anticel track by $index">{{value}}</th>
+                <th ng-repeat="value in data.prices.otherTitle track by $index">{{value}}</th>
             </tr>
             <tr>
                 <th scope="row">1</th>
-                <td ng-repeat="value in data.prices.antiSed track by $index">{{value}}</td>
+                <td ng-repeat="value in data.prices.anticel track by $index">{{value}}</td>
             </tr>
             <tr>
                 <th scope="row">2</th>
-                <td ng-repeat="value in data.prices.antiTig track by $index">{{value}}</td>
+                <td ng-repeat="value in data.prices.sepPar track by $index">{{value}}</td>
             </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td ng-repeat="value in data.prices.antiSto track by $index">{{value}}</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td ng-repeat="value in data.prices.antiTro track by $index">{{value}}</td>
-            </tr>
+                @*<tr>*@
+                @*<th scope="row">2</th>*@
+                @*<td ng-repeat="value in data.prices.antiTig track by $index">{{value}}</td>*@
+            @*</tr>*@
+            @*<tr>*@
+                @*<th scope="row">3</th>*@
+                @*<td ng-repeat="value in data.prices.antiSto track by $index">{{value}}</td>*@
+            @*</tr>*@
+            @*<tr>*@
+                @*<th scope="row">4</th>*@
+                @*<td ng-repeat="value in data.prices.antiTro track by $index">{{value}}</td>*@
+            @*</tr>*@
 
             <!--Separate body parts-->
-            <tr>
-                <th></th>
-                <th ng-repeat="value in data.prices.sepPar track by $index">{{value}}</th>
-            </tr>
-            <tr>
-                <th scope="row">1</th>
-                <td ng-repeat="value in data.prices.waist track by $index">{{value}}</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td ng-repeat="value in data.prices.neck track by $index">{{value}}</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td ng-repeat="value in data.prices.head track by $index">{{value}}</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td ng-repeat="value in data.prices.stoma track by $index">{{value}}</td>
-            </tr>
+            @*<tr>*@
+                @*<th></th>*@
+                @*<th ng-repeat="value in data.prices.sepPar track by $index">{{value}}</th>*@
+            @*</tr>*@
+            @*<tr>*@
+                @*<th scope="row">1</th>*@
+                @*<td ng-repeat="value in data.prices.waist track by $index">{{value}}</td>*@
+            @*</tr>*@
+            @*<tr>*@
+                @*<th scope="row">2</th>*@
+                @*<td ng-repeat="value in data.prices.neck track by $index">{{value}}</td>*@
+            @*</tr>*@
+            @*<tr>*@
+                @*<th scope="row">3</th>*@
+                @*<td ng-repeat="value in data.prices.head track by $index">{{value}}</td>*@
+            @*</tr>*@
+            @*<tr>*@
+                @*<th scope="row">4</th>*@
+                @*<td ng-repeat="value in data.prices.stoma track by $index">{{value}}</td>*@
+            @*</tr>*@
 
-            <!--For kids-->
-            <tr>
-                <th></th>
-                <th ng-repeat="value in data.prices.kidsMas track by $index">{{value}}</th>
-            </tr>
-            <tr>
-                <th scope="row">1</th>
-                <td ng-repeat="value in data.prices.kidBackSpin track by $index">{{value}}</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td ng-repeat="value in data.prices.kidsNeck track by $index">{{value}}</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td ng-repeat="value in data.prices.kidsWaist track by $index">{{value}}</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td ng-repeat="value in data.prices.kidsFull track by $index">{{value}}</td>
-            </tr>
+            @*<!--For kids-->*@
+            @*<tr>*@
+                @*<th></th>*@
+                @*<th ng-repeat="value in data.prices.kidsMas track by $index">{{value}}</th>*@
+            @*</tr>*@
+            @*<tr>*@
+                @*<th scope="row">1</th>*@
+                @*<td ng-repeat="value in data.prices.kidBackSpin track by $index">{{value}}</td>*@
+            @*</tr>*@
+            @*<tr>*@
+                @*<th scope="row">2</th>*@
+                @*<td ng-repeat="value in data.prices.kidsNeck track by $index">{{value}}</td>*@
+            @*</tr>*@
+            @*<tr>*@
+                @*<th scope="row">3</th>*@
+                @*<td ng-repeat="value in data.prices.kidsWaist track by $index">{{value}}</td>*@
+            @*</tr>*@
+            @*<tr>*@
+                @*<th scope="row">4</th>*@
+                @*<td ng-repeat="value in data.prices.kidsFull track by $index">{{value}}</td>*@
+            @*</tr>*@
 
             </tbody>
         </table>
@@ -573,7 +559,6 @@
     <div class="  col-md-8  col-lg-8 mx-auto text-center ">
         <h3 class="labelDiv">{{data.formNames.title}}</h3>
         <hr class="my-4">
-
         <br>
 
         <form name="myForm" novalidate>
@@ -616,24 +601,6 @@
             </div>
             <br>
 
-
-            @*<div class="inputDiv ">*@
-                @*<label class="item item-input labelDiv">{{data.formNames.massage}}</label>*@
-                @*<select class=" col-lg-8 mx-auto text-center bookingForm form-control" ng-model="user.massage"*@
-                        @*ng-options="item.massageName  +' ('+ item.length + 'min) ' + ' = ' + item.price +' CHF ' +'' for item in loxx.massageInfo"*@
-                @*>*@
-
-                    @*<option  class="labelDiv " value="">{{data.formPH.massage}}</option>*@
-                @*</select>*@
-                @*<span class="submitError">{{errors.invalidMassage}}</span>*@
-            @*</div>*@
-            @*</br>*@
-
-
-
-
-
-
             <div class="inputDiv ">
                 <label class="item item-input labelDiv">{{data.formNames.massage}}</label>
                 <select class=" col-lg-8 mx-auto text-center bookingForm form-control" ng-model="user.massage" name="xxx"
@@ -646,23 +613,10 @@
             </div>
             </br>
 
-            @*pristine? : {{myForm.xxx.$pristine}}*@
-            @*<br>*@
-            @*dirty? : {{myForm.xxx.$dirty}}*@
-            @*<br>*@
-
-
-            @*touiched? : {{myForm.xxx.$touched}}*@
-            @*<br>*@
-
-            @*Chosen value: {{user.massage}}*@
-
-
-
             <div class="inputDiv ">
                 <label class="item item-input labelDiv">{{data.formNames.massageOption}}</label>
                 <select class=" col-lg-8 mx-auto text-center bookingForm form-control" ng-model="user.massageOption" name="xxx2"
-                    ng-options="item for item in niam.x"
+                    ng-options="item for item in massagePickedFromDescriptions.x"
                 >
 
                     <option  class="labelDiv " value="">{{data.formPH.massageOption}}</option>
@@ -672,12 +626,6 @@
 
             </div>
             </br>
-
-
-
-
-
-
 
             <div class="row">
                 <div class=" col-sm-6 ">
@@ -696,7 +644,6 @@
                         {{ chosenDate || data.formPH.date }}
                     </div>
                     <span class="submitError">{{errors.invalidDate}}</span>
-
                 </div>
 
                 <div class=" col-sm-6  ">
@@ -719,30 +666,16 @@
             </div>
 
             <br>
-
-
             <br>
             <div class="inputDiv ">
-
-
                 <label class="item item-input labelDiv">{{data.formNames.message}}</label>
                 <textarea class=" col-lg-8 mx-auto text-center bookingForm form-control" placeholder={{data.formPH.message}}
                           ng-model="user.message"
                           name="textarea" rows="3" cols="30"></textarea>
                 <br>
-
-
             </div>
+
             <div class="labelDiv">
-
-
-                @*<br>*@
-                @*<div class="g-recaptcha col-md-9 control-label centerContactUs captcha2" data-sitekey="6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8"></div>*@
-                @*<br>*@
-
-
-
-
                 <div class="col-md-9 control-label centerContactUs"
                 vc-recaptcha
                 theme="'light'"
@@ -751,57 +684,22 @@
                 on-success="setResponse(response)"
                 on-expire="cbExpiration()"
                 ></div>
-                @*<span class="submitError">{{contactFormErrors.captcha}}</span>*@
                 <span class="submitError">{{errors.invalidCaptcha}}</span>
                 <br>
-
-
-
-
-
 
                 <button ng-click="submitFullForm()" class="btn btn-primary btn-md">{{data.formNames.button}}</button>
                 <br>
                 <span class="submitSuccess">{{submittedSuccess}}</span>
                 <span class="submitError">{{submittedFail}}</span>  <br>
-                @*<span class="submitError">a{{submitError.contactFormErrors[0].name}}</span>                <br>*@
-
-                @*<span class="submitError">b{{submitError.contactFormErrors[0].phone}}</span>                <br>*@
-
-                @*<span class="submitError">c{{submitError.contactFormErrors[0]}}</span>*@
-                @*<br>*@
             </div>
-
-
         </form>
-
-        @*{{copyOfData}}*@
-        @*<br>*@
-        @*{{data.backendPricesTest.limphoBody}}*@
-        @*<br>*@
-
-    @*{{data.backendPricesTest.limphoBody[0]}}*@
-        @*<br>*@
-    @*{{data.backendPricesTest.limphoBody[1]}}*@
-        @*<br>*@
-
-    @*{{data.backendPricesTest.limphoBody[1][0]}}*@
-        @*<br>*@
-
-    @*{{data.backendPricesTest.limphoBody[2]}}*@
-
-
     </div>
-
-
 </section>
 
 
 
 <hr>
-    <script src='@routes.Assets.at("design2/angular-recaptcha.js")'></script>
 
-<script src='@routes.Assets.at("design2/ng-map.min.js")'></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 <section id="{{contactMe}}">
     <div class="container">
@@ -850,12 +748,7 @@
 
                                 </div>
 
-                                @*<br>*@
-                                @*<div class="g-recaptcha col-md-9 control-label centerContactUs captcha1" data-sitekey="6Lfg2z8UAAAAAPQjJGsDU4A6Wfn6LZHxdqraiHv8"></div>*@
-                                @*<br>*@
                             </div>
-
-
 
                             <div class="col-md-9 control-label centerContactUs "
                             vc-recaptcha
@@ -869,11 +762,6 @@
                             <span class="submitError">{{contactFormErrors.captcha}}</span>
                             <br>
 
-
-
-
-
-
                             <!-- Form actions -->
                             <div class="form-group">
                                 <div class="col-md-12 text-center">
@@ -882,18 +770,7 @@
                                     <br>
                                     <span class="submitSuccess">{{submittedSuccessContact}}</span>
                                     <span class="submitError">{{submittedFailContact}}</span>
-                                    @*<p>SCIENE : {{submitErrorContact}}</p>*@
-                                   @*<br>*@
-                                    @*{{lalala}}*@
-                                    @*<br>*@
-                                    @*zero{{submitErrorContact.contactFormErrors[0]}}*@
-                                    @*<br>*@
-                                    @*one{{lalala.contactFormErrors}}*@
 
-                                    @*<br>*@
-                                    @*{{loxx.massageInfo}}*@
-                                    @*<!--<span class="submitError">{{submitError}}</span>-->*@
-                                    @*<br>*@
 
                                 </div>
                             </div>
@@ -907,6 +784,7 @@
                 </div>
             </div>
             <div class="col-lg-6  text-center ">
+                <legend class="text-center">{{data.contactForm.contacts}}</legend>
 
 
                 <ul class="list-inline banner-social-buttons">
