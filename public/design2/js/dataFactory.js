@@ -151,7 +151,7 @@ gg.factory('myDataFactory', function () {
                     "older": "Masažas vyresnio amžiaus žmonėms",
                     "relaxBody": "Atpalaiduojantis viso kūno masažas",
                     "ajurved": "Ajurvedinis krūtų masažas moterims",
-                    "antice": "Anticeliulitinis masažas rankomis",
+                    "antice": "Anticeliulitiniai masažai",
                     "relaxFoot": "Atpalaiduojantis pėdų – blauzdų masažas",
                     "sepHead": "Galvos masažas",
                     "sepNeck": "Pečių – kaklo – rankų masažas",
@@ -187,8 +187,8 @@ gg.factory('myDataFactory', function () {
                     "older": "Массаж для пожилых людей",
                     "relaxBody": "Расслабляющий массаж всего тела",
                     "ajurved": "Аюрведический массаж грудей",
-                    "antice": "Антицеллюлитный массаж",
-                    "relaxFoot": "Расслабляющий массаж стоп–голень",
+                    "antice": "Антицеллюлитные массажы",
+                    "relaxFoot": "Расслабляющий массаж стоп – голень",
                     "sepHead": "Массаж головы",
                     "sepNeck": "Плечо – шеи – рук массаж",
                     "sepStoma": "Абдоминальный массаж",
@@ -404,7 +404,7 @@ gg.factory('myDataFactory', function () {
                     "ajurved": ["Аюрведический массаж грудей", "100 CHF", "–", "–"],
                     // "antice": ["Антицеллюлитный массаж"],
                     "relaxFoot": ["Расслабляющий массаж стоп–голень", "100 CHF", "–", "–"],
-                    "anticel": ["Антицеллюлитные массажы ", "–", "130 CHF", "180 CHF"],
+                    "anticel": ["Антицеллюлитные массажы", "–", "130 CHF", "180 CHF"],
                     "antiSed": ["Ягодицы", "–", "130", "180"],
                     "antiTig": ["Бедры", "–", "130", "180"],
                     "antiSto": ["Живота", "70", "130", "180"],
@@ -637,17 +637,17 @@ gg.factory('myDataFactory', function () {
             return {
                 "lt": {
                     "limphoBody": [
-                        ["Limfodrenažinis kūno masažas", "0"], ["Limfodrenažinis veido masažas", "1"], ["Karštų – šaltų akmenų masažas", "2"], ["Klasikinis – segmentinis nugaros masažas", "3"], ["Atpalaiduojantis viso kūno masažas", "4"], ["Ajurvedinis krūtų masažas moterims", "5"], ["Atpalaiduojantis pėdų masažas", "6"]]
+                        ["Limfodrenažinis kūno masažas", "0"], ["Limfodrenažinis veido masažas", "1"], ["Karštų – šaltų akmenų masažas", "2"], ["Klasikinis – segmentinis nugaros masažas", "3"], ["Atpalaiduojantis viso kūno masažas", "4"], ["Ajurvedinis krūtų masažas moterims", "5"], ["Atpalaiduojantis pėdų – blauzdų masažas", "6"],["Anticeliulitiniai masažai","7"],["Atskirų kūno dalių masažai","8"]]
 
                 },
                 "de": {
                     "limphoBody": [
-                        ["Manuelle Lymphdrainage", "0"], ["Manuelle Lymphdrainage Gesicht", "1"], ["Heiß – kalt Steinmassage", "2"], ["Rücken Massage", "3"], ["Entspannende Ganzkörpermassagе", "4"], ["Ayurvedische Brüstmassage für Frauen", "5"], ["Entspannende Fussmassage", "6"]]
+                        ["Manuelle Lymphdrainage", "0"], ["Manuelle Lymphdrainage Gesicht", "1"], ["Heiß – kalt Steinmassage", "2"], ["Rücken Massage", "3"], ["Entspannende Ganzkörpermassagе", "4"], ["Ayurvedische Brüstmassage für Frauen", "5"], ["Entspannende Füße – Waden massage", "6"],["Anti–Cellulite–Massagen","7"],["Teilkörpermassage","8"]]
 
                 },
                 "ru": {
                     "limphoBody": [
-                        ["Лимфодренажный массаж тела", "0"], ["Лимфодренажный массаж лица", "1"], ["Горячих – холодных камней массаж", "2"], ["Классический – Сегментный массаж спины", "3"], ["Расслабляющий массаж всего тела", "4"], ["Аюрведический массаж грудей", "5"], ["Расслабляющий массаж стоп", "6"]]
+                        ["Лимфодренажный массаж тела", "0"], ["Лимфодренажный массаж лица", "1"], ["Горячих – холодных камней массаж", "2"], ["Классический – Сегментный массаж спины", "3"], ["Расслабляющий массаж всего тела", "4"], ["Аюрведический массаж грудей", "5"], ["Расслабляющий массаж стоп – голень", "6"],["Антицеллюлитные массажы","7"],["Массаж отдельнных частей тело","8"]]
 
                 }
             }

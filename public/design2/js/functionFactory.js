@@ -39,13 +39,15 @@ gg.factory('myFunctionsFactory', function () {
         },
         getTimesAndPricesFromBackend: function(value){
 
-            var limphoBody=["90"];
-            var limphoFace=["60"];
-            var stoneHotCold=["120"];
-            var backSpin=["60","90"];
-            var relaxBody=["120"];
-            var ajurved=["60"];
-            var relaxFoot=["60"];
+            var limphoBody=["90 min. (140 CHF)"];
+            var limphoFace=["60 min. (100 CHF)"];
+            var stoneHotCold=["120 min. (220 CHF)"];
+            var backSpin=["60 min. (100 CHF)","90 min. (150 CHF)"];
+            var relaxBody=["120 min. (200 CHF)"];
+            var ajurved=["60 min. (100 CHF)"];
+            var relaxFoot=["60 min. (100 CHF)"];
+            var antiCel=["60 min. (130 CHF)","90 min. (180 CHF)"];
+            var sepPar=["30 min. (50 CHF)","60 min. (100 CHF)"];
 
             if(value==0){
                 return{
@@ -81,6 +83,14 @@ gg.factory('myFunctionsFactory', function () {
                 return{
                     "x":relaxFoot
 
+                }
+            }else if(value == 7){
+                return{
+                    "x":antiCel
+                }
+            }else if(value == 8){
+                return {
+                    "x":sepPar
                 }
             }
 
