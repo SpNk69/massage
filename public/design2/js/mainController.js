@@ -9,7 +9,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
 
     //global ones for now (needed)
     $scope.languageParameter = "lt";
-    $scope.truncateSize = 50;
+    $scope.truncateSize = 100;
     resetOrInitFormsVars();
     $scope.massagePickedFromDescriptions = "";
 

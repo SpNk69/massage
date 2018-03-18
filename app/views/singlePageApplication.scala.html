@@ -88,8 +88,11 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">{{data.aboutMeTitle.title}}!</h2>
                 <hr class="my-4">
+
+                    <img class="img-circle myTestImage" src='@routes.Assets.at("design2/img/portfolio/thumbnails/Vida5.png")' alt="">
+
+                    </div>
             </div>
-        </div>
     </div>
     <div class="container ">
         <div class="row">
@@ -195,8 +198,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/fullsize/Vida5.png")'>
-                    <img class="img-fluid" src='@routes.Assets.at("design2/img/portfolio/thumbnails/Vida5.png")' alt="">
+                <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/d.jpg")'>
+                    <img class="img-fluid" src='@routes.Assets.at("design2/img/portfolio/d.jpg")' alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -302,20 +305,20 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
-            <div class="thumbnail ">
-                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
-                     alt="...">
-                <div class="caption">
-                    <h3 class="tc2">{{data.massageTitle.older}}</h3>
-                    <p class="tc" ng-text-truncate="data.massageBody.older" ng-tt-chars-threshold="{{truncateSize}}">
-                        {{data.massageBody.older}}</p>
-                    <p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
+        @*<div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">*@
+            @*<div class="thumbnail ">*@
+                @*<img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'*@
+                     @*alt="...">*@
+                @*<div class="caption">*@
+                    @*<h3 class="tc2">{{data.massageTitle.older}}</h3>*@
+                    @*<p class="tc" ng-text-truncate="data.massageBody.older" ng-tt-chars-threshold="{{truncateSize}}">*@
+                        @*{{data.massageBody.older}}</p>*@
+                    @*<p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>*@
 
 
-                </div>
-            </div>
-        </div>
+                @*</div>*@
+            @*</div>*@
+        @*</div>*@
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
             <div class="thumbnail ">
                 <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
@@ -371,60 +374,74 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
-            <div class="thumbnail ">
-                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
-                     alt="...">
-                <div class="caption">
-                    <h3 class="tc2">{{data.massageTitle.sepHead}}</h3>
-                    <p class="tc" ng-text-truncate="data.massageBody.sepHead"
-                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepHead}}</p>
-                    <p><a href="#{{bookit}}" ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
-
-                </div>
-            </div>
-        </div>
-
 
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
             <div class="thumbnail ">
                 <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
-                     alt="...">
+                alt="...">
                 <div class="caption">
-                    <h3 class="tc2">{{data.massageTitle.sepNeck}}</h3>
-                    <p class="tc" ng-text-truncate="data.massageBody.sepNeck"
-                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepNeck}}</p>
-                    <p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
+                    <h3 class="tc2">Atskiru kuno daliu masazai</h3>
+                    <p class="tc" ng-text-truncate="data.massageBody.relaxFoot"
+                    ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.relaxFoot}}</p>
+                    <p><a href="#{{bookit}}" ng-click="pickMassage(data.massageTitle.relaxFoot,6)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">Rezervuoti</a></p>
 
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
-            <div class="thumbnail ">
-                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
-                     alt="...">
-                <div class="caption">
-                    <h3 class="tc2">{{data.massageTitle.sepStoma}}</h3>
-                    <p class="tc" ng-text-truncate="data.massageBody.sepStoma"
-                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepStoma}}</p>
-                <p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
+        @*<div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">*@
+            @*<div class="thumbnail ">*@
+                @*<img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'*@
+                     @*alt="...">*@
+                @*<div class="caption">*@
+                    @*<h3 class="tc2">{{data.massageTitle.sepHead}}</h3>*@
+                    @*<p class="tc" ng-text-truncate="data.massageBody.sepHead"*@
+                       @*ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepHead}}</p>*@
+                    @*<p><a href="#{{bookit}}" ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>*@
 
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">
-            <div class="thumbnail ">
-                <img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'
-                     alt="...">
-                <div class="caption">
-                    <h3 class="tc2">{{data.massageTitle.sepWaist}}</h3>
-                    <p class="tc" ng-text-truncate="data.massageBody.sepWaist"
-                       ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepWaist}}</p>
-                <p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>
+                @*</div>*@
+            @*</div>*@
+        @*</div>*@
 
-                </div>
-            </div>
-        </div>
+
+        @*<div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">*@
+            @*<div class="thumbnail ">*@
+                @*<img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'*@
+                     @*alt="...">*@
+                @*<div class="caption">*@
+                    @*<h3 class="tc2">{{data.massageTitle.sepNeck}}</h3>*@
+                    @*<p class="tc" ng-text-truncate="data.massageBody.sepNeck"*@
+                       @*ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepNeck}}</p>*@
+                    @*<p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>*@
+
+                @*</div>*@
+            @*</div>*@
+        @*</div>*@
+        @*<div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">*@
+            @*<div class="thumbnail ">*@
+                @*<img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'*@
+                     @*alt="...">*@
+                @*<div class="caption">*@
+                    @*<h3 class="tc2">{{data.massageTitle.sepStoma}}</h3>*@
+                    @*<p class="tc" ng-text-truncate="data.massageBody.sepStoma"*@
+                       @*ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepStoma}}</p>*@
+                @*<p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>*@
+
+                @*</div>*@
+            @*</div>*@
+        @*</div>*@
+        @*<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 tc3  d-flex align-content-stretch flex-wrap  ">*@
+            @*<div class="thumbnail ">*@
+                @*<img class="tc2" src='@routes.Assets.at("design2/img/portfolio/thumbnails/testingThumbnail.jpg")'*@
+                     @*alt="...">*@
+                @*<div class="caption">*@
+                    @*<h3 class="tc2">{{data.massageTitle.sepWaist}}</h3>*@
+                    @*<p class="tc" ng-text-truncate="data.massageBody.sepWaist"*@
+                       @*ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.sepWaist}}</p>*@
+                @*<p><a ng-click="pickMassage()" class="btn btn-primary btn-group-justified" role="button">Rezervuoti</a></p>*@
+
+                @*</div>*@
+            @*</div>*@
+        @*</div>*@
 
 
     </div>
@@ -477,8 +494,15 @@
                 <th scope="row">7</th>
                 <td ng-repeat="value in data.prices.relaxFoot track by $index">{{value}}</td>
             </tr>
-
+</br>
             <!--Anti cel-->
+                <tr>
+                    <th ></th>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
             <tr>
                 <th></th>
                 <th ng-repeat="value in data.prices.otherTitle track by $index">{{value}}</th>
@@ -675,8 +699,8 @@
                 <br>
             </div>
 
-            <div class="labelDiv">
-                <div class="col-md-9 control-label centerContactUs"
+            <div class="labelDiv provideBorder">
+                <div class="col-md-9 control-label centerContactUs provideBorder"
                 vc-recaptcha
                 theme="'light'"
                 key="model.key"
@@ -712,8 +736,8 @@
         </div>
         <div class="row">
             <div class="col-lg-6  ">
-                <div class="well well-sm ">
-                    <form class="form-horizontal " >
+                <div class="well well-sm  ">
+                    <form class="form-horizontal provideBorder" >
                         <fieldset class="">
                             <legend class="text-center">{{data.contactForm.title}}</legend>
 
@@ -739,9 +763,9 @@
                             </div>
 
                             <!-- Message body -->
-                            <div class="form-group">
-                                <label class="col-md-12 control-label text-center" for="message">{{data.contactForm.question}}</label>
-                                <div class="col-md-9 control-label centerContactUs">
+                            <div class="form-group provideBorder">
+                                <label class="col-md-12 control-label text-center " for="message">{{data.contactForm.question}}</label>
+                                <div class="col-md-9 control-label centerContactUs provideBorder">
                                     <textarea class="form-control" ng-model="cfMessage" id="message" name="message"
                                               placeholder="{{data.contactForm.questionPH}}" rows="5"></textarea>
                                     <span class="submitError">{{contactFormErrors.message}}</span>
@@ -749,18 +773,21 @@
                                 </div>
 
                             </div>
-
-                            <div class="col-md-9 control-label centerContactUs "
+                            <div class="form-group provideBorder ">
+                            <div class=" col-md-9  col-lg-9 col-xl-9 col-sm-9 col-xs-9  centerContactUs provideBorder "
                             vc-recaptcha
                             theme="'light'"
                             key="model.key"
                             on-create="setWidgetId(widgetId,languageParameter)"
                             on-success="setResponse(response)"
                             on-expire="cbExpiration()"
+                                size="normal"
                                 ng-model="user.captcha"
                             ></div>
                             <span class="submitError">{{contactFormErrors.captcha}}</span>
                             <br>
+
+                            </div>
 
                             <!-- Form actions -->
                             <div class="form-group">

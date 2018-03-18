@@ -39,10 +39,10 @@ gg.factory('myFunctionsFactory', function () {
         },
         getTimesAndPricesFromBackend: function(value){
 
-            var limphoBody=["90","120"];
+            var limphoBody=["90"];
             var limphoFace=["60"];
-            var stoneHotCold=["90","120"];
-            var backSpin=["60","120"];
+            var stoneHotCold=["120"];
+            var backSpin=["60","90"];
             var relaxBody=["120"];
             var ajurved=["60"];
             var relaxFoot=["60"];
