@@ -157,6 +157,7 @@ gg.factory('myDataFactory', function () {
                     "sepNeck": "Pečių – kaklo – rankų masažas",
                     "sepStoma": "Pilvo masažas",
                     "sepWaist": "Juosmens – sėdmenų – kojų masažas",
+                    "sepPar":"Atskirų kūno dalių masažai",
                     "labelMore":"Daugiau",
                     "labelLess":"Mažiau"
                 },
@@ -174,6 +175,7 @@ gg.factory('myDataFactory', function () {
                     "sepNeck": "Massage Schulter – Hals – Hände",
                     "sepStoma": "Bauchmassage",
                     "sepWaist": "Lendenwirbel – Gesäß – Beinmassage",
+                    "sepPar":"Teilkörpermassage",
                     "labelMore":"Mehr",
                     "labelLess":"Weniger"
                 },
@@ -191,6 +193,7 @@ gg.factory('myDataFactory', function () {
                     "sepNeck": "Плечо – шеи – рук массаж",
                     "sepStoma": "Абдоминальный массаж",
                     "sepWaist": "Поясницы – Ягодицы – Ног Массаж",
+                    "sepPar":"Массаж отдельнных частей тело",
                     "labelMore":"Больше",
                     "labelLess":"Меньше"
                 }
