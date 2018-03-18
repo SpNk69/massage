@@ -536,7 +536,7 @@ gg.factory('myDataFactory', function () {
                     "date": "Kein Datum ausgewählt",
                     "time": "Keine Zeit ausgewählt",
                     "emailBadFormat": "Ungültige E–Mail–Adresse",
-                    "captcha": "Patvirtinkite, kad esate ne robotas"
+                    "captcha": "Bestätigen Sie, dass Sie sind kein Roboter"
 
 
                 },
@@ -550,7 +550,7 @@ gg.factory('myDataFactory', function () {
                     "date": "Дата не выбрана",
                     "time": "Не выбрано времени",
                     "emailBadFormat": "Недопустимый адрес электронной почты",
-                    "captcha": "Patvirtinkite, kad esate ne robotas"
+                    "captcha": "Подтвердите, что вы не робот"
 
 
                 }
@@ -642,7 +642,7 @@ gg.factory('myDataFactory', function () {
                 },
                 "de": {
                     "limphoBody": [
-                        ["Manuelle Lymphdrainage", "0"], ["Manuelle Lymphdrainage Gesicht", "1"], ["Heiß – kalt Steinmassage", "2"], ["Rücken Massage", "3"], ["Entspannende Ganzkörpermassagе", "4"], ["Ayurvedische Brüstmassage für Frauen", "5"], ["Entspannende Füße – Waden massage", "6"],["Anti–Cellulite–Massagen","7"],["Teilkörpermassage","8"]]
+                        ["Manuelle Lymphdrainage", "0"], ["Manuelle Lymphdrainage Gesicht", "1"], ["Heiß – kalt Steinmassage", "2"], ["Rücken Massage", "3"], ["Entspannende Ganzkörpermassagе", "4"], ["Ayurvedische Brüstmassage für Frauen", "5"], ["Entspannende Füße – Waden massage", "6"],["Anti – Cellulite massage","7"],["Teilkörpermassage","8"]]
 
                 },
                 "ru": {
