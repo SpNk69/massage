@@ -156,7 +156,9 @@ gg.factory('myDataFactory', function () {
                     "sepHead": "Galvos masažas",
                     "sepNeck": "Pečių – kaklo – rankų masažas",
                     "sepStoma": "Pilvo masažas",
-                    "sepWaist": "Juosmens – sėdmenų – kojų masažas"
+                    "sepWaist": "Juosmens – sėdmenų – kojų masažas",
+                    "labelMore":"Daugiau",
+                    "labelLess":"Mažiau"
                 },
                 "de": {
                     "limphoBody": "Manuelle Lymphdrainage",
@@ -171,7 +173,9 @@ gg.factory('myDataFactory', function () {
                     "sepHead": "Kopfmassage",
                     "sepNeck": "Massage Schulter – Hals – Hände",
                     "sepStoma": "Bauchmassage",
-                    "sepWaist": "Lendenwirbel – Gesäß – Beinmassage"
+                    "sepWaist": "Lendenwirbel – Gesäß – Beinmassage",
+                    "labelMore":"Mehr",
+                    "labelLess":"Weniger"
                 },
                 "ru": {
                     "limphoBody": "Лимфодренажный массаж тела",
@@ -186,7 +190,9 @@ gg.factory('myDataFactory', function () {
                     "sepHead": "Массаж головы",
                     "sepNeck": "Плечо – шеи – рук массаж",
                     "sepStoma": "Абдоминальный массаж",
-                    "sepWaist": "Поясницы – Ягодицы – Ног Массаж"
+                    "sepWaist": "Поясницы – Ягодицы – Ног Массаж",
+                    "labelMore":"Больше",
+                    "labelLess":"Меньше"
                 }
             };
         },
@@ -785,7 +791,7 @@ gg.factory('myDataFactory', function () {
 
                 }
             }
-        }
+        },
     }
 
 
