@@ -47,7 +47,7 @@ gg.factory('myFunctionsFactory', function () {
             var ajurved=["60 min. (100 CHF)"];
             var relaxFoot=["60 min. (100 CHF)"];
             var antiCel=["60 min. (130 CHF)","90 min. (180 CHF)"];
-            var sepPar=["30 min. (50 CHF)","60 min. (100 CHF)"];
+            var sepPar=["30 min. (50 CHF)","60 min. (100 CHF)", "90 min. (150 CHF)"];
 
             if(value==0){
                 return{
