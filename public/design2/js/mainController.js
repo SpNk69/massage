@@ -36,6 +36,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
 
     $scope.doTranslate = function (langToSetTo) {
         $scope.myForm.$setPristine();
+        $scope.submittedSuccess="";
 
 
         hideFlagOfCurrentLang(langToSetTo);
@@ -303,6 +304,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
             }, function myError(response) {
                 console.log("FailRespons: ");
                 console.log(response);
+                $scope.submitError=response.data;
 
                 $scope.er = $scope.submitError.contactFormErrors[0];
 
@@ -376,6 +378,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
             message: "",
             captcha: ""
         };
+
     }
 
 

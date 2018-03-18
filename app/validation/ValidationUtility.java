@@ -189,17 +189,18 @@ public class ValidationUtility {
 
 
 
+    //TO DO: Apply/Fix regex
     public String validateMassageOption(JsonNode massageOptionNode) {
         String massageOption = massageOptionNode.asText();
-        String pattern = "^\\d{2,3}$";
+//        String pattern = "^\\d{2,30}$";
 
-        Pattern r = Pattern.compile(pattern);
-        Matcher m = r.matcher(massageOption);
+//        Pattern r = Pattern.compile(pattern);
+//        Matcher m = r.matcher(massageOption);
 
-        if (massageOption.length() < 2 || massageOption.length() > 3) {
+        if (massageOption.length() < 2 || massageOption.length() > 25) {
             return "massageOptionLength";
-        } else if (!m.find()) {
-            return "massageOptionFormat";
+//        } else if (!m.find()) {
+//            return "massageOptionFormat";
         }
         return "";
     }

@@ -717,7 +717,7 @@
                 key="model.key"
                 on-create="setWidgetId(widgetId,languageParameter)"
                 on-success="setResponse(response)"
-                on-expire="cbExpiration()"
+                on-expire="cbExpiration(widgetId,languageParameter)"
                 ></div>
                 <span class="submitError">{{errors.invalidCaptcha}}</span>
                 <br>

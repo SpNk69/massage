@@ -24,11 +24,17 @@ app.captchaController = function ($scope, vcRecaptchaService) {
         $scope.widgetId = widgetId;
     };
 
-    $scope.cbExpiration = function () {
-        console.info('Captcha expired. Resetting response object');
-        vcRecaptchaService.reload($scope.widgetId);
-        vcRecaptchaService.useLang($scope.widgetId, $scope.languageParameter);
+    $scope.cbExpiration = function (widget,langMy) {
         $scope.response = null;
+
+        console.info('Captcha expired. Resetting response object');
+        vcRecaptchaService.reload(widget);
+
+        vcRecaptchaService.useLang(widget, langMy);
+
+        console.info('Created widget AFTER CBEXPIRATION ID: %s', widget);
+
+        // $scope.setWidgetId(widget,langMy);
     };
 };
 
