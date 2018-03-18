@@ -699,8 +699,8 @@
                 <br>
             </div>
 
-            <div class="labelDiv provideBorder">
-                <div class="col-md-9 control-label centerContactUs provideBorder"
+            <div class="labelDiv ">
+                <div class="col-md-9 control-label centerContactUs "
                 vc-recaptcha
                 theme="'light'"
                 key="model.key"
@@ -737,7 +737,7 @@
         <div class="row">
             <div class="col-lg-6  ">
                 <div class="well well-sm  ">
-                    <form class="form-horizontal provideBorder" >
+                    <form class="form-horizontal " >
                         <fieldset class="">
                             <legend class="text-center">{{data.contactForm.title}}</legend>
 
@@ -763,9 +763,9 @@
                             </div>
 
                             <!-- Message body -->
-                            <div class="form-group provideBorder">
+                            <div class="form-group ">
                                 <label class="col-md-12 control-label text-center " for="message">{{data.contactForm.question}}</label>
-                                <div class="col-md-9 control-label centerContactUs provideBorder">
+                                <div class="col-md-9 control-label centerContactUs ">
                                     <textarea class="form-control" ng-model="cfMessage" id="message" name="message"
                                               placeholder="{{data.contactForm.questionPH}}" rows="5"></textarea>
                                     <span class="submitError">{{contactFormErrors.message}}</span>
@@ -773,8 +773,8 @@
                                 </div>
 
                             </div>
-                            <div class="form-group provideBorder ">
-                            <div class=" col-md-9  col-lg-9 col-xl-9 col-sm-9 col-xs-9  centerContactUs provideBorder "
+                            <div class="form-group  ">
+                            <div class=" col-md-9  col-lg-9 col-xl-9 col-sm-9 col-xs-9  centerContactUs  "
                             vc-recaptcha
                             theme="'light'"
                             key="model.key"
