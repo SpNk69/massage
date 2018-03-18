@@ -12,10 +12,10 @@
 }
 
 .tc {
-    text-align: justify;
+    text-align: left;
     margin: auto;
     /*text-justify: distribute;*/
-    word-break: break-all;
+    /*word-break: break-all;*/
 }
 
 .tc2 {
@@ -24,6 +24,13 @@
 
 .tc3 {
     text-align: center;
+}
+
+.tc4 {
+    text-align: justify;
+    margin: auto;
+    /*text-justify: distribute;*/
+    /*word-break: break-all;*/
 }
 
 .centerContactUs {
