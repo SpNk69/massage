@@ -2,6 +2,10 @@ package validation;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import play.Logger;
+import play.api.cache.ehcache.NamedEhCacheProvider;
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -221,6 +225,24 @@ public class ValidationUtility {
             return "massageFormat";
         }
         return "";
+    }
+
+
+
+    public Map<String,String> mergedValidation (Map<String, JsonNode> hashMap){
+        HashMap<String,String> hashMap2 = new HashMap<>();
+
+        hashMap2.put("name",validateName(hashMap.get("name")));
+        hashMap2.put("surname",validateSurname(hashMap.get("surname")));
+        hashMap2.put("email",validateEmail(hashMap.get("email")));
+        hashMap2.put("phone",validatePhone(hashMap.get("phone")));
+        hashMap2.put("massage",validateMassage(hashMap.get("massage")));
+        hashMap2.put("massageOption",validateMassageOption(hashMap.get("massageOption")));
+        hashMap2.put("date",validateDate(hashMap.get("date")));
+        hashMap2.put("time",validateTime(hashMap.get("time")));
+        hashMap2.put("message",validateMessageFullForm(hashMap.get("message")));
+
+        return hashMap2;
     }
 
 

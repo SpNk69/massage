@@ -1,5 +1,7 @@
 package jsonthings;
 
+import java.util.Map;
+
 /**
  * Created by alex on 2017-12-24.
  */
@@ -67,6 +69,23 @@ public class JFullFormSubmit {
         this.time = time;
         this.message = message;
     }
+
+
+    public JFullFormSubmit(Map<String,String> params, String captcha) {
+        this.name = params.get("name");
+        this.surname = params.get("surname");
+        this.email = params.get("email");
+        this.phone = params.get("phone");
+        this.massage=params.get("massage");
+        this.massageOption = params.get("massageOption");
+        this.date = params.get("date");
+        this.time = params.get("time");
+        this.message = params.get("message");
+        this.captcha = captcha;
+    }
+
+
+
 
 
     public String getName() {

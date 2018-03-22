@@ -3,6 +3,7 @@ package controllers;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.SocketMetadata;
 import jsonthings.JFullFormSubmit;
 import play.Logger;
 import play.libs.Json;
@@ -12,14 +13,16 @@ import play.mvc.Result;
 import validation.ValidationUtility;
 
 import javax.inject.Inject;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CompletionStage;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import static play.mvc.Results.badRequest;
 import static play.mvc.Results.ok;
@@ -28,7 +31,6 @@ import static play.mvc.Results.ok;
  * Created by alex on 2017-12-26.
  */
 public class FullFormMagic extends Controller implements WSBodyReadables, WSBodyWritables {
-    //
     private static final String NAME = "name";
     private static final String SURNAME = "surname";
     private static final String EMAIL = "email";
@@ -40,13 +42,11 @@ public class FullFormMagic extends Controller implements WSBodyReadables, WSBody
     private static final String MESSAGE = "message";
     private static final String CAPTCHA = "captcha";
 
+    private static final List<String> nodeNamesList = Arrays.asList(NAME, SURNAME, EMAIL, PHONE, MASSAGE, MASSAGE_OPTION, DATE, TIME, MESSAGE);
 
-    ValidationUtility validationUtility = new ValidationUtility();
-    HelperClass helperClass;
+    private ValidationUtility validationUtility = new ValidationUtility();
 
-
-
-   private final WSClient ws;
+    private final WSClient ws;
 
     @Inject
     public FullFormMagic(WSClient ws) {
@@ -54,36 +54,19 @@ public class FullFormMagic extends Controller implements WSBodyReadables, WSBody
     }
 
 
-
-    private static Connection getConnection() throws URISyntaxException, SQLException {
-        URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
-
-        String username = dbUri.getUserInfo().split(":")[0];
-        String password = dbUri.getUserInfo().split(":")[1];
-        String dbUrl = "jdbc:mysql://" + dbUri.getHost() + dbUri.getPath();
-
-        Logger.warn("SUP: " + dbUrl);
-
-        return (Connection) DriverManager.getConnection(dbUrl, username, password);
-    }
-
-
     protected String validateCaptcha(JsonNode captcha) {
-        String x = captcha.asText();
+        String captchaResponse = captcha.asText();
         String urlTo = "https://www.google.com/recaptcha/api/siteverify";
-        Logger.warn("BEFORE REQUEST");
         WSRequest request = ws.url(urlTo);
-        Logger.warn("AFTER REQUEST");
+        String secret = "6Lfg2z8UAAAAACiagKKEsYHfi0RdFce0HQf9XLfo";
 
-        request.addQueryParameter("secret", "6Lfg2z8UAAAAACiagKKEsYHfi0RdFce0HQf9XLfo");
-        request.addQueryParameter("response", x);
+        request.addQueryParameter("secret", secret);
+        request.addQueryParameter("response", captchaResponse);
 //        CompletionStage jsonPromise = ws.url(urlTo).setContentType("application/x-www-form-urlencoded; charset=utf-8").post("secret=6Lfg2z8UAAAAACiagKKEsYHfi0RdFce0HQf9XLfo&response=" + x).thenApply(WSResponse::asJson);
-        CompletionStage<WSResponse> responsePromise = request.post("x");
+        CompletionStage<WSResponse> responsePromise = request.post("");
         CompletionStage<JsonNode> jsonPromise = responsePromise.thenApply(WSResponse::asJson);
         JsonNode jsonData = jsonPromise.toCompletableFuture().join();
         String answer = jsonData.findPath("success").asText();
-        Logger.warn("CAPTCHA: " + answer);
-        Logger.warn("BEFORE CAPTCHA VALIDATION");
 
         if (!answer.equalsIgnoreCase("true")) {
             return "captchaFormat";
@@ -92,134 +75,96 @@ public class FullFormMagic extends Controller implements WSBodyReadables, WSBody
     }
 
 
+    private boolean containsErrors(Map<String, String> map1) {
+        AtomicBoolean value = new AtomicBoolean(false);
+        map1.forEach((x, y) -> {
+            if (!y.equalsIgnoreCase("")) {
+                value.set(true);
+            }
+        });
+
+        return value.get();
+    }
+
+    private boolean isValid(String value) {
+        return value.equalsIgnoreCase("");
+    }
+
+    private String getEnv(String name) {
+        return System.getenv(name);
+    }
+
+
+    private Connection getConnection() {
+        try {
+            return (Connection) DriverManager.getConnection(getEnv("DB_URL"), getEnv("DB_USER"), getEnv("DB_PASS"));
+
+        } catch (SQLException e) {
+            Logger.error("Connection went to hell: ", e);
+        }
+        return null;
+    }
 
 
     public Result addBookingToDatabase() throws JsonProcessingException {
+        HelperClass helperClass = new HelperClass();
+        helperClass.initializeObjectMapper();
+        String sqlStatement = "INSERT INTO heroku_e3d8ce5aa92835f.fullreservationform (name, surname, email, phone, massage,massageOption, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         JsonNode json = request().body().asJson();
-
-        JsonNode nameNode=json.findPath(NAME);
-        JsonNode surnameNode = json.findPath(SURNAME);
-        JsonNode emailNode = json.findPath(EMAIL);
-        JsonNode phoneNode = json.findPath(PHONE);
-        JsonNode massageNode = json.findPath(MASSAGE);
-        JsonNode massageOptionNode = json.findPath(MASSAGE_OPTION);
-        JsonNode dateNode = json.findPath(DATE);
-        JsonNode timeNode = json.findPath(TIME);
-        JsonNode messageNode = json.findPath(MESSAGE);
+        HashMap<String, JsonNode> dataHashMap = new HashMap<>();
         JsonNode captchaNode = json.findPath(CAPTCHA);
 
-        Connection connection=null;
-        PreparedStatement xs=null;
+        for (String item : nodeNamesList) {
+            dataHashMap.put(item, json.findPath(item));
+        }
+
         try {
-            connection = (Connection) DriverManager.getConnection(System.getenv("DB_URL"), System.getenv("DB_USER"), System.getenv("DB_PASS"));
+            try (Connection connection = getConnection()) {
+                if (connection == null) return badRequest("Connection is null");
+                try (PreparedStatement preparedStatement = connection.prepareStatement(sqlStatement)) {
+                    Map<String, String> errorCodesAfterValidation = validationUtility.mergedValidation(dataHashMap);
+                    if (containsErrors(errorCodesAfterValidation)) {
+                        String response = helperClass.prepareResponse(new JFullFormSubmit(errorCodesAfterValidation, ""));
+                        Logger.debug("Form contains errors...");
 
+                        return badRequest(response);
+                    } else {
+                        String captchaError = validateCaptcha(captchaNode);
+                        if (isValid(captchaError)) {
+                            String response = helperClass.prepareResponse(new JFullFormSubmit(errorCodesAfterValidation, captchaError));
 
-            xs = connection.prepareStatement("INSERT INTO heroku_e3d8ce5aa92835f.fullreservationform (name, surname, email, phone, massage,massageOption, date, time, message)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-            xs.setString(1, setMaxColTypeLen(findJson(json, NAME), getMaxSize(connection, NAME)));
-            xs.setString(2, setMaxColTypeLen(findJson(json, SURNAME), getMaxSize(connection, SURNAME)));
-            xs.setString(3, setMaxColTypeLen(findJson(json, EMAIL), getMaxSize(connection, EMAIL)));
-            xs.setString(4, setMaxColTypeLen(findJson(json, PHONE), getMaxSize(connection, PHONE)));
-            xs.setString(5, setMaxColTypeLen(findJson(json, MASSAGE), getMaxSize(connection, MASSAGE)));
-            xs.setString(6, setMaxColTypeLen(findJson(json, MASSAGE_OPTION), getMaxSize(connection, MASSAGE_OPTION)));
-            xs.setString(7, setMaxColTypeLen(findJson(json, DATE), getMaxSize(connection, DATE)));
-            xs.setString(8, setMaxColTypeLen(findJson(json, TIME), getMaxSize(connection, TIME)));
-            xs.setString(9, setMaxColTypeLen(findJson(json, MESSAGE), getMaxSize(connection, MESSAGE)));
+                            writeToDatabase(nodeNamesList, preparedStatement, dataHashMap, connection).execute();
 
-            Logger.warn("name :" +findJson(json, NAME));
-            Logger.warn("surname :" +findJson(json, SURNAME));
-            Logger.warn("email :" +findJson(json, EMAIL));
-            Logger.warn("phone :" +findJson(json, PHONE));
-            Logger.warn("massage :" +findJson(json, MASSAGE));
-            Logger.warn("massageOption :" +findJson(json, MASSAGE_OPTION));
-            Logger.warn("date :" +findJson(json, DATE));
-            Logger.warn("time :" +findJson(json, TIME));
-            Logger.warn("message :" +findJson(json, MESSAGE));
-            Logger.warn("captcha :" +findJson(json, CAPTCHA));
-
-            validationUtility = new ValidationUtility();
-
-
-            String nameError=validationUtility.validateName(nameNode);
-            String surnameError=validationUtility.validateSurname(surnameNode);
-            String emailError=validationUtility.validateEmail(emailNode);
-            String phoneError=validationUtility.validatePhone(phoneNode);
-            String massageError=validationUtility.validateMassage(massageNode);
-            String massageOptionError=validationUtility.validateMassageOption(massageOptionNode);
-            String dateError=validationUtility.validateDate(dateNode);
-            String timeError=validationUtility.validateTime(timeNode);
-            String messageError=validationUtility.validateMessageFullForm(messageNode);
-
-
-
-            Logger.warn("Before validation1");
-            if(!nameError.equalsIgnoreCase("") || !surnameError.equalsIgnoreCase("")
-                    || !emailError.equalsIgnoreCase("") || !phoneError.equalsIgnoreCase("")
-                    || !massageError.equalsIgnoreCase("") || !massageOptionError.equalsIgnoreCase("")
-                    || !dateError.equalsIgnoreCase("") || !timeError.equalsIgnoreCase("")
-                    || !messageError.equalsIgnoreCase("")){
-
-                Logger.warn("are we here?");
-
-                helperClass = new HelperClass();
-                helperClass.initializeObjectMapper();
-                String x =helperClass.prepareResponse(new JFullFormSubmit(nameError,surnameError,emailError,phoneError,massageError,massageOptionError,dateError,timeError,messageError,""));
-
-                return badRequest(x);
-
-            }else {
-                String captchaError= validateCaptcha(captchaNode);
-                Logger.warn("CaptchaError: " + captchaError);
-
-                if(captchaError.equalsIgnoreCase("")){
-                    Logger.warn("In the else if captcha validation");
-                    helperClass = new HelperClass();
-                    helperClass.initializeObjectMapper();
-                    String x =helperClass.prepareResponse(new JFullFormSubmit(nameError,surnameError,emailError,phoneError,massageError,massageOptionError,dateError,timeError,messageError,captchaError));
-
-
-                    Logger.warn("Sending data to DB");
-                    xs.execute();
-
-                    return ok(x);
-
+                            return ok(response);
+                        }
+                    }
                 }
             }
-            Logger.warn("After validation");
+            Logger.debug("Not written to DB");
 
-
-
-            String ErTest=validationUtility.validateDate(json.findPath("date"));
-            if(!ErTest.equalsIgnoreCase("")){
-                return badRequest("CRY HARD");
-            }
-
-
-
-
-            return ok();
+            return badRequest("Something went very very wrong");
         } catch (SQLException e) {
 
-            Logger.warn("LOG 2:  1: " + e.getErrorCode() + " 2: " + e.getSQLState() + " 3: " + e.getNextException());
+            Logger.warn("SQLEXCEPTION: " + e.getErrorCode() + " 2: " + e.getSQLState() + " 3: " + e.getNextException());
             return badRequest(Json.toJson(e.getErrorCode()));
-        }finally{
-
-            if (connection != null) {
-                try {
-                    connection.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
-            if (xs != null) {
-                try {
-                    xs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
-
         }
     }
+
+
+    private PreparedStatement writeToDatabase(List<String> list, PreparedStatement ps, HashMap hashMap, Connection conn) {
+        try {
+            int i = 0;
+            for (String item : list) {
+                i++;
+                ps.setString(i, setMaxColTypeLen(String.valueOf(hashMap.get(item)), getMaxSize(conn, item)));
+            }
+        } catch (SQLException e) {
+            Logger.error("Stuff went very wrong on writeToDb");
+        }
+        return ps;
+
+    }
+
 
     // To Do, Fetch size of i.e. varchar automatically from DB.
     private String setMaxColTypeLen(String toBeTrimmed, int maxSize) {
@@ -228,65 +173,36 @@ public class FullFormMagic extends Controller implements WSBodyReadables, WSBody
 
     private int getMaxSize(Connection connection, String param1) throws SQLException {
 
-        PreparedStatement ps=null;
-        ResultSet rs =null;
-        String query="SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;";
-        ps=connection.prepareStatement(query);
+        //to add as env var/hide
+        String query = "SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;";
+        int[] red;
+        try (PreparedStatement ps = connection.prepareStatement(query)) {
 
-//         rs = prepareStatementSelectAll(connection, "SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;");
+            try (ResultSet rs = ps.executeQuery()) {
+                HashMap<String, String> hashMap = new HashMap<>();
+                HashMap<String, String> anotherMap = new HashMap<>();
 
-         rs =ps.executeQuery();
-        HashMap<String, String> hashMap = new HashMap<>();
-        HashMap<String, String> anotherMap = new HashMap<>();
-        while (rs.next()) {
+                while (rs.next()) {
+                    Logger.warn("Inside getMaxSize: " + rs);
 
-            String rx = rs.getString(2);
-            String ry = rs.getString(1);
+                    String rx = rs.getString(2);
+                    String ry = rs.getString(1);
 
-            hashMap.put(ry, rx);
-        }
+                    hashMap.put(ry, rx);
+                }
 
-        hashMap.forEach((x, y) -> {
-            anotherMap.put(x,
-                    y.replaceAll("\\D+", ""));
-        });
-        final int[] red = new int[1];
+                hashMap.forEach((x, y) -> anotherMap.put(x,
+                        y.replaceAll("\\D+", "")));
+                red = new int[1];
 
 
-        anotherMap.forEach((x, y) -> {
-            if (x.equalsIgnoreCase(param1)) {
-                red[0] = Integer.parseInt(y);
-            }
-        });
-        if (rs != null) {
-            try {
-                rs.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
+                anotherMap.forEach((x, y) -> {
+                    if (x.equalsIgnoreCase(param1)) {
+                        red[0] = Integer.parseInt(y);
+                    }
+                });
             }
         }
-
-
-        if (ps != null) {
-            try {
-                ps.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
         return red[0];
     }
-
-    private String findJson(JsonNode node, String path) {
-        return node.findPath(path).toString();
-    }
-
-    private ResultSet prepareStatementSelectAll(Connection con, String query) throws SQLException {
-
-        PreparedStatement preparedStatement = con.prepareStatement(query);
-
-        return preparedStatement.executeQuery();
-    }
-
 }

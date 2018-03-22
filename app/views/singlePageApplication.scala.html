@@ -721,9 +721,19 @@
                 ></div>
                 <span class="submitError">{{errors.invalidCaptcha}}</span>
                 <br>
+                <div class="alert alert-success"  ng-show="showIt1"  role="alert">
+                    <a  class="alert-link">{{submittedSuccess}}</a>
+                </div>
+
+
 
                 <button ng-click="submitFullForm()" class="btn btn-primary btn-md">{{data.formNames.button}}</button>
                 <br>
+                <br>
+
+                <div class="alert alert-success"  ng-show="showIt1"  role="alert">
+                    <a  class="alert-link">{{submittedSuccess}}</a>
+                </div>
                 <span class="submitSuccess">{{submittedSuccess}}</span>
                 <span class="submitError">{{submittedFail}}</span>  <br>
             </div>

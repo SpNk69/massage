@@ -12,7 +12,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
     $scope.truncateSize = 100;
     resetOrInitFormsVars();
     $scope.massagePickedFromDescriptions = "";
-
+    $scope.showIt1=false;
 
 
 
@@ -35,6 +35,8 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
 
 
     $scope.doTranslate = function (langToSetTo) {
+        $scope.showIt1=false;
+
         $scope.myForm.$setPristine();
         $scope.submittedSuccess="";
 
@@ -243,6 +245,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
     // function for full form submission
     $scope.submitFullForm = function () {
         $scope.myForm.$setPristine();
+        $scope.showIt1=false;
 
         console.log("DID VALUE CHANGE " + $scope.data.formPH.massage);
 
@@ -294,6 +297,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
                 url: "/submitFullForm",
                 data: JSON.stringify(sendStuff)
             }).then(function mySuccess(response) {
+                $scope.showIt1=true;
                 console.log("SucRespons: ");
                 console.log(response);
                 $scope.submittedSuccess = $scope.data.sucRespBookForm.response;
@@ -307,6 +311,11 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
                 $scope.submitError=response.data;
 
                 $scope.er = $scope.submitError.contactFormErrors[0];
+
+                if($scope.er.captcha !==""){
+                    $scope.setWidgetId(0, $scope.languageParameter);
+
+                }
 
                 errorMassagesFromBackend($scope.er.name, $scope.er.surname, $scope.er.email, $scope.er.phone, $scope.er.massage, $scope.er.massageOption, $scope.er.date, $scope.er.time, $scope.er.message, $scope.er.captcha);
 
