@@ -3,20 +3,31 @@ package controllers;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mysql.jdbc.Connection;
 import jsonthings.JRootKeysToGetArrays;
 import jsonthings.JTopRootList;
 import play.Logger;
+import play.libs.ws.WSRequest;
+import play.libs.ws.WSResponse;
+
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Map;
+import java.util.concurrent.CompletionStage;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class HelperClass {
+public class HelperUtilityClass {
 
-    public HelperClass() {
+    /*
+    Constructor for class initialization
+     */
+    public HelperUtilityClass() {
     }
+
+    public static final String CAPTCHA_API_URL = "https://www.google.com/recaptcha/api/siteverify";
+    public static final String CAPTCHA_SECRET = getEnvVar("CAPTCHA_SECRET_FF");
 
     /*
     Initialize object mapper for further usage
@@ -28,18 +39,16 @@ public class HelperClass {
         return objectMapper;
     }
 
-
     /*
     Prepare Json response
          */
-    public String prepareResponse(Object form) throws JsonProcessingException {
+    public String prepareJsonResponse(Object form) throws JsonProcessingException {
         JTopRootList jTopRootList = new JTopRootList();
         JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
         jTopRootList.add(form);
         topKey.setContactFormErrors(jTopRootList);
         return initializeObjectMapper().writeValueAsString(topKey);
     }
-
 
     /*
     Check if form contains any errors.
@@ -65,7 +74,7 @@ public class HelperClass {
     /*
     Get variable from the system environment
      */
-    public String getEnvVar(String name) {
+    public static String getEnvVar(String name) {
         return System.getenv(name);
     }
 
@@ -81,6 +90,18 @@ public class HelperClass {
         }
         return null;
     }
+
+
+
+        public String getCaptchaResponseFromGoogleAPI(WSRequest request, String captchaResponse) {
+        request.addQueryParameter("secret", CAPTCHA_SECRET);
+        request.addQueryParameter("response", captchaResponse);
+        CompletionStage<WSResponse> responsePromise = request.execute();
+        CompletionStage<JsonNode> jsonPromise = responsePromise.thenApply(WSResponse::asJson);
+        JsonNode jsonData = jsonPromise.toCompletableFuture().join();
+        return jsonData.findPath("success").asText();
+    }
+
 
 
 }

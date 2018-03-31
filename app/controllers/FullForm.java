@@ -10,7 +10,6 @@ import play.libs.ws.*;
 import play.mvc.Controller;
 import play.mvc.Result;
 import validation.ValidationUtility;
-
 import javax.inject.Inject;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -19,7 +18,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.CompletionStage;
 
 /**
  * Created by alex on 2017-12-26.
@@ -37,15 +35,11 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
     private static final String MESSAGE = "message";
     private static final String CAPTCHA = "captcha";
 
-    private static final String CAPTCHA_API_URL = "https://www.google.com/recaptcha/api/siteverify";
-
     private static final List<String> nodeNamesList = Arrays.asList(NAME, SURNAME, EMAIL, PHONE, MASSAGE, MASSAGE_OPTION, DATE, TIME, MESSAGE);
 
     private ValidationUtility validationUtility = new ValidationUtility();
-    private HelperClass helperClass = new HelperClass();
+    private HelperUtilityClass helperUC = new HelperUtilityClass();
     private HashMap<String, String> dbColumnSize;
-
-    private final String secret = helperClass.getEnvVar("CAPTCHA_SECRET_FF");
 
     private final WSClient ws;
 
@@ -58,8 +52,8 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
     Method which handles validation of data and writes to DB
      */
     public Result addBookingToDatabase() throws JsonProcessingException {
-        helperClass.initializeObjectMapper();
-        String sqlStatement = helperClass.getEnvVar("TABLE_FULLFORM");
+        helperUC.initializeObjectMapper();
+        String sqlStatement = helperUC.getEnvVar("TABLE_FULLFORM");
         JsonNode json = request().body().asJson();
         HashMap<String, JsonNode> dataFromFullForm = new HashMap<>();
         JsonNode captchaNode = json.findPath(CAPTCHA);
@@ -70,21 +64,21 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
         }
 
         try {
-            try (Connection connection = helperClass.getConnection()) {
+            try (Connection connection = helperUC.getConnection()) {
                 if (connection == null) return badRequest("Connection is null");
                 try (PreparedStatement preparedStatement = connection.prepareStatement(sqlStatement)) {
                     // perform validation on all fields in FullForm except captcha
                     Map<String, String> errorCodesAfterValidation = validationUtility.mergedValidationForFF(dataFromFullForm);
-                    if (helperClass.containsErrors(errorCodesAfterValidation)) {
-                        String response = helperClass.prepareResponse(new JFullFormSubmit(errorCodesAfterValidation, ""));
+                    if (helperUC.containsErrors(errorCodesAfterValidation)) {
+                        String response = helperUC.prepareJsonResponse(new JFullFormSubmit(errorCodesAfterValidation, ""));
                         Logger.debug("Form contains errors...");
 
                         return badRequest(response);
                     } else {
                         // captcha separately as it can be checked ONCE on google api side, otherwise gets invalid
-                        captchaError = validateCaptcha(captchaNode);
-                        if (helperClass.isValid(captchaError)) {
-                            String response = helperClass.prepareResponse(new JFullFormSubmit(errorCodesAfterValidation, captchaError));
+                        captchaError = validateCaptchaFF(captchaNode);
+                        if (helperUC.isValid(captchaError)) {
+                            String response = helperUC.prepareJsonResponse(new JFullFormSubmit(errorCodesAfterValidation, captchaError));
 
                             writeToDatabase(nodeNamesList, preparedStatement, dataFromFullForm, connection).execute();
 
@@ -93,7 +87,7 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
                     }
                     //Probably captcha validation
                     Logger.warn("Something went very wrong");
-                    String response = helperClass.prepareResponse(new JFullFormSubmit(errorCodesAfterValidation, captchaError));
+                    String response = helperUC.prepareJsonResponse(new JFullFormSubmit(errorCodesAfterValidation, captchaError));
                     return badRequest(response);
                 }
             }
@@ -143,7 +137,7 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
         HashMap<String, String> tableColumnDataMap = new HashMap<>();
 
         //to add as env var/hide
-        String query = helperClass.getEnvVar("FIELDS_FULLFORM");
+        String query = helperUC.getEnvVar("FIELDS_FULLFORM");
         try (PreparedStatement ps = connection.prepareStatement(query)) {
             try (ResultSet rs = ps.executeQuery()) {
 
@@ -162,15 +156,10 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
     /*
     Communication towards google API for captcha verification
      */
-    protected String validateCaptcha(JsonNode captcha) {
+    protected String validateCaptchaFF(JsonNode captcha) {
         String captchaResponse = captcha.asText();
-        WSRequest request = ws.url(CAPTCHA_API_URL);
-        request.addQueryParameter("secret", secret);
-        request.addQueryParameter("response", captchaResponse);
-        CompletionStage<WSResponse> responsePromise = request.post("");
-        CompletionStage<JsonNode> jsonPromise = responsePromise.thenApply(WSResponse::asJson);
-        JsonNode jsonData = jsonPromise.toCompletableFuture().join();
-        String answer = jsonData.findPath("success").asText();
+        WSRequest request = ws.url(HelperUtilityClass.CAPTCHA_API_URL);
+        String answer = helperUC.getCaptchaResponseFromGoogleAPI(request, captchaResponse);
 
         if (!answer.equalsIgnoreCase("true")) {
             return "captchaFormat";

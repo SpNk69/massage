@@ -1,7 +1,6 @@
 package controllers;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -40,22 +39,7 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
      * this method will be called when the application receives a
      * <code>GET</code> request with a path of <code>/</code>.
      */
-    HelperClass helperClass = new HelperClass();
 
-
-    @Inject
-    FormFactory formFactory;
-    @Inject
-    MailerClient mailerClient;
-
-    ValidationUtility validationHelper = new ValidationUtility();
-
-    private final WSClient ws;
-
-    @Inject
-    public HomeController(WSClient ws) {
-        this.ws = ws;
-    }
 
 
 
@@ -251,99 +235,12 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
 
 
 
-    private void deliverEmail(JsonNode name, JsonNode email, JsonNode message) {
-        Email readyEmail = new Email().setSubject("Klausimas")
-                .setFrom("info@vidamassage.ch")
-                .addTo("info@vidamassage.ch")
-                .setBodyText("Vardas: " + name.asText() +
-                        "\n" + "Email: " + email.asText() +
-                        "\n" + "Zinute: " + message.asText());
-        mailerClient.send(readyEmail);
-
-    }
-
-    public Result sendEmail() throws IOException {
-
-        JsonNode json = request().body().asJson();
-
-        JsonNode nameNode = json.findPath("name");
-        JsonNode emailNode = json.findPath("email");
-        JsonNode messageNode = json.findPath("message");
-        JsonNode captchaNode = json.findPath("captcha");
-
-        String nameER = validationHelper.validateName(nameNode);
-        String emailER = validationHelper.validateEmail(emailNode);
-        String messageER = validationHelper.validateMessage(messageNode);
-        String captchaER = "";
-
-        String response;
-
-        if (nameER.equalsIgnoreCase("") && emailER.equalsIgnoreCase("") && messageER.equalsIgnoreCase("")) {
-            Logger.warn("HAPPENED IN IF");
-
-            captchaER = captchaValidation2(captchaNode);
-            if (!captchaER.equalsIgnoreCase("")) {
-                response = helperClass.prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
-                Logger.warn("Happened in IF IF ");
-                return badRequest(response);
-            }
-
-            deliverEmail(nameNode, emailNode, messageNode);
-            response = helperClass.prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
-
-            return ok(response);
-
-        } else if (!nameER.equalsIgnoreCase("") || !emailER.equalsIgnoreCase("") || !messageER.equalsIgnoreCase("")) {
-            Logger.warn("Happened in ELSE IF ");
-            response = helperClass.prepareResponse(new ContactFormErrors(nameER, emailER, messageER, captchaER));
-            return badRequest(response);
-        }
-
-        return badRequest("Something absolutely went wrong");
-    }
 
 
-    protected String captchaValidation2(JsonNode captcha) {
-        String x = captcha.asText();
-        String urlTo = "https://www.google.com/recaptcha/api/siteverify";
-        Logger.warn("BEFORE REQUEST");
-        WSRequest request = ws.url(urlTo);
-        Logger.warn("AFTER REQUEST");
-
-        request.addQueryParameter("secret", "6Lfg2z8UAAAAACiagKKEsYHfi0RdFce0HQf9XLfo");
-        request.addQueryParameter("response", x);
-//        CompletionStage jsonPromise = ws.url(urlTo).setContentType("application/x-www-form-urlencoded; charset=utf-8").post("secret=6Lfg2z8UAAAAACiagKKEsYHfi0RdFce0HQf9XLfo&response=" + x).thenApply(WSResponse::asJson);
-        CompletionStage<WSResponse> responsePromise = request.post("x");
-        CompletionStage<JsonNode> jsonPromise = responsePromise.thenApply(WSResponse::asJson);
-        JsonNode jsonData = jsonPromise.toCompletableFuture().join();
-        String answer = jsonData.findPath("success").asText();
-        Logger.warn("CAPTCHA: " + answer);
-        Logger.warn("BEFORE CAPTCHA VALIDATION");
-
-        if (!answer.equalsIgnoreCase("true")) {
-            return "captchaNotSolved";
-        }
-        return "";
-    }
 
 
-    private static Connection getConnection() throws URISyntaxException, SQLException {
-        URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
 
-        String username = dbUri.getUserInfo().split(":")[0];
-        String password = dbUri.getUserInfo().split(":")[1];
-        String dbUrl = "jdbc:mysql://" + dbUri.getHost() + dbUri.getPath();
-//
-//        String dbUrl="eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f?reconnect=true";
-//        String password ="809360b3";
-//        String username="b2945c551737ae";
 
-        Logger.warn("dbUrl: " + dbUrl);
-        Logger.warn("password: " + password);
-        Logger.warn("username: " + username);
-
-        return (Connection) DriverManager.getConnection(dbUrl, username, password);
-    }
 
 
 }

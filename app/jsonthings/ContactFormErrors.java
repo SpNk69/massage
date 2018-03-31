@@ -1,6 +1,9 @@
 package jsonthings;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ContactFormErrors{
 
     private String name;
@@ -13,6 +16,13 @@ public class ContactFormErrors{
         this.email = email;
         this.message = message;
         this.captcha = captcha;
+    }
+    public ContactFormErrors(Map<String,String> params, String captcha){
+        this.name=params.get("name");
+        this.email=params.get("email");
+        this.message=params.get("message");
+        this.captcha=captcha;
+
     }
 
     public String getName() {

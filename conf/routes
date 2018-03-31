@@ -23,6 +23,6 @@ GET    /getAdminClientData              controllers.HomeController.getAdminClien
 
 GET    /toFaceBook    controllers.HomeController.toFaceBook
 
-POST /sendEmail controllers.HomeController.sendEmail()
+POST /sendEmail controllers.ContactUsForm.sendEmail()
 
 

@@ -245,6 +245,14 @@ public class ValidationUtility {
         return hashMap2;
     }
 
+    public Map<String,String> mergedValidationForCF(Map<String, JsonNode> hashMap){
+                HashMap<String,String> hashMap2 = new HashMap<>();
+                hashMap2.put("name",validateName(hashMap.get("name")));
+                hashMap2.put("email",validateEmail(hashMap.get("email")));
+                hashMap2.put("message",validateMessage(hashMap.get("message")));
+
+                return hashMap2;
+    }
 
 
 }
