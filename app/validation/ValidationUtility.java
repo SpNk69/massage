@@ -229,7 +229,7 @@ public class ValidationUtility {
 
 
 
-    public Map<String,String> mergedValidation (Map<String, JsonNode> hashMap){
+    public Map<String,String> mergedValidationForFF(Map<String, JsonNode> hashMap){
         HashMap<String,String> hashMap2 = new HashMap<>();
 
         hashMap2.put("name",validateName(hashMap.get("name")));
