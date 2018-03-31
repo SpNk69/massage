@@ -26,7 +26,7 @@ public class HelperUtilityClass {
     public HelperUtilityClass() {
     }
 
-    public static final String CAPTCHA_API_URL = "https://www.google.com/recaptcha/api/siteverify";
+    public static final String CAPTCHA_API_URL = getEnvVar("GOOGLE_API");
     public static final String CAPTCHA_SECRET = getEnvVar("CAPTCHA_SECRET_FF");
 
     /*

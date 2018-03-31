@@ -84,7 +84,17 @@ public class JFullFormSubmit {
         this.captcha = captcha;
     }
 
-
+    public JFullFormSubmit(Map<String,String> params) {
+        this.name = params.get("name");
+        this.surname = params.get("surname");
+        this.email = params.get("email");
+        this.phone = params.get("phone");
+        this.massage=params.get("massage");
+        this.massageOption = params.get("massageOption");
+        this.date = params.get("date");
+        this.time = params.get("time");
+        this.message = params.get("message");
+    }
 
 
 

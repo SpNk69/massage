@@ -1,30 +1,25 @@
 package controllers;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mysql.jdbc.Connection;
 import jsonthings.*;
 import play.Logger;
-import play.data.FormFactory;
-import play.libs.mailer.Email;
-import play.libs.mailer.MailerClient;
 import play.mvc.Controller;
 import play.mvc.Result;
-import validation.ValidationUtility;
 import views.html.*;
 
-import javax.inject.Inject;
 import java.io.IOException;
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.*;
+import java.util.Arrays;
 import java.util.HashMap;
-import java.util.concurrent.CompletionStage;
+import java.util.List;
+import java.util.Map;
 
 import play.libs.ws.*;
-
 
 
 /**
@@ -41,6 +36,10 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
      */
 
 
+    private static final List<String> fullFormNames = Arrays.asList("name", "surname", "email", "phone", "massage", "massageOption", "date", "time", "message");
+
+
+    HelperUtilityClass helperUC = new HelperUtilityClass();
 
 
     public Result singlePageApplication() {
@@ -57,12 +56,6 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
         return ok(calledFromRoutesAdmin.render("x"));
     }
 
-
-    private ResultSet prepareStatementSelectAll(Connection con, String query) throws SQLException {
-
-        PreparedStatement preparedStatement = con.prepareStatement(query);
-        return preparedStatement.executeQuery();
-    }
 
     private ObjectMapper initializeObjectMapper() {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -134,113 +127,40 @@ public class HomeController extends Controller implements WSBodyReadables, WSBod
     }
 
 
-    public Result getAdminClientData() throws SQLException, IOException, URISyntaxException {
+    private Map dataFromDB(ResultSet rs, List<String> list) {
+        Map<String, String> map = new HashMap<>();
+        for (String item : list) {
+            try {
+                map.put(item, rs.getString(item));
+            } catch (SQLException e) {
+                Logger.debug("ResultSet failed while fetching from DB...", e);
+            }
+        }
+        return map;
+    }
 
-
-        Connection connection = null;
-        ResultSet rs1 = null;
-        PreparedStatement preparedStatement = null;
-        ResultSet rs2 = null;
-        String query = "SELECT * from heroku_e3d8ce5aa92835f.fullreservationform";
-
+    public Result getAdminClientData() throws JsonProcessingException {
+        String query= HelperUtilityClass.getEnvVar("ADMIN_DATA");
         try {
-            connection = (Connection) DriverManager.getConnection("jdbc:mysql://eu-cdbr-west-02.cleardb.net/heroku_e3d8ce5aa92835f?useUnicode=yes&characterEncoding=UTF-8", "b2945c551737ae", "809360b3");
-            JTopRootList jTopRootList = new JTopRootList();
-
-//            preparedStatement=connection.prepareStatement(query);
-
-            rs1 = prepareStatementSelectAll(connection, query);
-
-
-//            data = prepareStatementSelectAll(connection,query);
-
-            while (rs1.next()) {
-                jTopRootList.add(new JFullFormSubmit(rs1.getString("name")
-                        , rs1.getString("surname"), rs1.getString("email"), rs1.getString("phone"), rs1.getString("massage"), rs1.getString("massageOption"),
-                        rs1.getString("date"), rs1.getString("time"), rs1.getString("message")));
+            try (Connection connection = helperUC.getConnection()) {
+                JTopRootList dataToBeSentToFE = new JTopRootList();
+                JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
+                try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+                    try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                        while (resultSet.next()) {
+                            dataToBeSentToFE.add(dataFromDB(resultSet, fullFormNames));
+                        }
+                        topKey.setFullFormSubmit(dataToBeSentToFE);
+                        String out = initializeObjectMapper().writeValueAsString(topKey);
+                        return ok(out);
+                    }
+                }
             }
-
-            JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
-            topKey.setFullFormSubmit(jTopRootList);
-            String out = initializeObjectMapper().writeValueAsString(topKey);
-
-
-            // additional implementation to read database max size of each type of table
-            rs2 = prepareStatementSelectAll(connection, "SHOW FIELDS FROM  heroku_e3d8ce5aa92835f.fullreservationform;");
-            String rx = null;
-            String ry = null;
-            HashMap<String, String> hashMap = new HashMap<>();
-            while (rs2.next()) {
-
-                rx = rs2.getString(2);
-                ry = rs2.getString(1);
-                Logger.warn("STUFF : " + ry + " " + rx);
-
-                hashMap.put(ry, rx);
-            }
-
-//            list2.forEach(x->{Logger.warn(x.replaceAll("\\D+",""));});
-
-            HashMap<String, String> anotherMap = new HashMap<>();
-            hashMap.forEach((x, y) -> {
-                anotherMap.put(x,
-                        y.replaceAll("\\D+", ""));
-            });
-            anotherMap.forEach((x, y) -> Logger.warn("MAP : " + x + " " + y));
-
-
-            return ok(out);
-
         } catch (SQLException e) {
-            e.printStackTrace();
-            return badRequest("asd");
-        } finally {
-
-            if (rs1 != null) {
-                try {
-                    rs1.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
-
-
-            if (rs2 != null) {
-                try {
-                    rs2.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            if (preparedStatement != null) {
-                try {
-                    preparedStatement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
-
-
-            if (connection != null) {
-                try {
-                    connection.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
+            Logger.debug("SQL exception while getting admin data...",e);
+            return badRequest("Stuff went wrong");
         }
 
     }
-
-
-
-
-
-
-
-
-
-
 
 }

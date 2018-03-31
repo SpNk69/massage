@@ -35,7 +35,7 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
     private static final String MESSAGE = "message";
     private static final String CAPTCHA = "captcha";
 
-    private static final List<String> nodeNamesList = Arrays.asList(NAME, SURNAME, EMAIL, PHONE, MASSAGE, MASSAGE_OPTION, DATE, TIME, MESSAGE);
+    public static final List<String> nodeNamesList = Arrays.asList(NAME, SURNAME, EMAIL, PHONE, MASSAGE, MASSAGE_OPTION, DATE, TIME, MESSAGE);
 
     private ValidationUtility validationUtility = new ValidationUtility();
     private HelperUtilityClass helperUC = new HelperUtilityClass();
