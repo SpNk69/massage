@@ -4,3 +4,4 @@ project/*
 bower_components/*
 bower_components/ngmap/testapp/user-editable-shapes.html
 .idea/*
+log*

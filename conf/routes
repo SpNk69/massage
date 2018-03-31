@@ -15,7 +15,7 @@ GET     /public/*file      controllers.Assets.at(path="/public", file)
 GET    /adminpage              controllers.HomeController.adminPage()
 
 #form handling
-POST    /submitFullForm              controllers.FullFormMagic.addBookingToDatabase()
+POST    /submitFullForm              controllers.FullForm.addBookingToDatabase()
 #get massages,prices,lengths
 GET    /getMassagesData              controllers.HomeController.getMassagesData()
 #fetch data from mysql for admins
