@@ -11,6 +11,8 @@ public class MassageInfo {
     String code;
     String whatever;
     String col1;
+    String col2;
+    String col3;
 
     public String getCol1() {
         return col1;
@@ -35,9 +37,6 @@ public class MassageInfo {
     public void setCol3(String col3) {
         this.col3 = col3;
     }
-
-    String col2;
-    String col3;
 
 
     public MassageInfo(int id, String massageName, String code, String whatever, String col1, String col2, String col3) {

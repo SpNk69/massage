@@ -14,6 +14,8 @@ import play.libs.ws.WSResponse;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletionStage;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -24,10 +26,13 @@ public class HelperUtilityClass {
     Constructor for class initialization
      */
     public HelperUtilityClass() {
+        //initialized from another class
     }
 
     public static final String CAPTCHA_API_URL = getEnvVar("GOOGLE_API");
     public static final String CAPTCHA_SECRET = getEnvVar("CAPTCHA_SECRET_FF");
+    protected static final List<String> fullFormNames = Arrays.asList("name", "surname", "email", "phone", "massage", "massageOption", "date", "time", "message");
+    protected static final List<String> contactFormNames = Arrays.asList("name", "email", "message");
 
     /*
     Initialize object mapper for further usage
@@ -92,8 +97,7 @@ public class HelperUtilityClass {
     }
 
 
-
-        public String getCaptchaResponseFromGoogleAPI(WSRequest request, String captchaResponse) {
+    public String getCaptchaResponseFromGoogleAPI(WSRequest request, String captchaResponse) {
         request.addQueryParameter("secret", CAPTCHA_SECRET);
         request.addQueryParameter("response", captchaResponse);
         CompletionStage<WSResponse> responsePromise = request.execute();
@@ -102,6 +106,26 @@ public class HelperUtilityClass {
         return jsonData.findPath("success").asText();
     }
 
+    /*
+    Select specific table by language from DB
+     */
+    public String getSpecificQuery(JsonNode json) {
+        String table;
+        switch (json.asText()) {
+            case "lt":
+                table = getEnvVar("TABLE_LT");
+                break;
+            case "de":
+                table = getEnvVar("TABLE_DE");
+                break;
+            case "ru":
+                table = getEnvVar("TABLE_RU");
+                break;
+            default:
+                throw new IllegalArgumentException("No such language");
+        }
+        return table;
+    }
 
 
 }

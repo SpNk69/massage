@@ -7,7 +7,6 @@ import java.util.Map;
  */
 public class JFullFormSubmit {
 
-
     private String name;
     private String surname;
     private String email;
@@ -17,6 +16,20 @@ public class JFullFormSubmit {
     private String date;
     private String time;
     private String message;
+    private String captcha;
+
+    public JFullFormSubmit(Map<String, String> params, String captcha) {
+        this.name = params.get("name");
+        this.surname = params.get("surname");
+        this.email = params.get("email");
+        this.phone = params.get("phone");
+        this.massage = params.get("massage");
+        this.massageOption = params.get("massageOption");
+        this.date = params.get("date");
+        this.time = params.get("time");
+        this.message = params.get("message");
+        this.captcha = captcha;
+    }
 
     public String getCaptcha() {
         return captcha;
@@ -25,8 +38,6 @@ public class JFullFormSubmit {
     public void setCaptcha(String captcha) {
         this.captcha = captcha;
     }
-
-    private String captcha;
 
     public String getMassage() {
         return massage;
@@ -43,60 +54,6 @@ public class JFullFormSubmit {
     public void setMassageOption(String massageOption) {
         this.massageOption = massageOption;
     }
-
-    public JFullFormSubmit(String name, String surname, String email, String phone, String massage, String massageOption, String date, String time, String message, String captcha) {
-        this.name = name;
-        this.surname = surname;
-        this.email = email;
-        this.phone = phone;
-        this.massage=massage;
-        this.massageOption = massageOption;
-        this.date = date;
-        this.time = time;
-        this.message = message;
-        this.captcha = captcha;
-    }
-
-
-    public JFullFormSubmit(String name, String surname, String email, String phone, String massage, String massageOption, String date, String time, String message) {
-        this.name = name;
-        this.surname = surname;
-        this.email = email;
-        this.phone = phone;
-        this.massage=massage;
-        this.massageOption = massageOption;
-        this.date = date;
-        this.time = time;
-        this.message = message;
-    }
-
-
-    public JFullFormSubmit(Map<String,String> params, String captcha) {
-        this.name = params.get("name");
-        this.surname = params.get("surname");
-        this.email = params.get("email");
-        this.phone = params.get("phone");
-        this.massage=params.get("massage");
-        this.massageOption = params.get("massageOption");
-        this.date = params.get("date");
-        this.time = params.get("time");
-        this.message = params.get("message");
-        this.captcha = captcha;
-    }
-
-    public JFullFormSubmit(Map<String,String> params) {
-        this.name = params.get("name");
-        this.surname = params.get("surname");
-        this.email = params.get("email");
-        this.phone = params.get("phone");
-        this.massage=params.get("massage");
-        this.massageOption = params.get("massageOption");
-        this.date = params.get("date");
-        this.time = params.get("time");
-        this.message = params.get("message");
-    }
-
-
 
     public String getName() {
         return name;
@@ -154,18 +111,4 @@ public class JFullFormSubmit {
         this.message = message;
     }
 
-    @Override
-    public String toString() {
-        return "JFullFormSubmit{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                ", massage='" + massage + '\'' +
-                ", massageOption='" + massageOption + '\'' +
-                ", date='" + date + '\'' +
-                ", time='" + time + '\'' +
-                ", message='" + message + '\'' +
-                '}';
-    }
 }

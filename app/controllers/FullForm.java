@@ -14,7 +14,6 @@ import javax.inject.Inject;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,18 +23,7 @@ import java.util.Map;
  */
 public class FullForm extends Controller implements WSBodyReadables, WSBodyWritables {
 
-    private static final String NAME = "name";
-    private static final String SURNAME = "surname";
-    private static final String EMAIL = "email";
-    private static final String PHONE = "phone";
-    private static final String MASSAGE = "massage";
-    private static final String MASSAGE_OPTION = "massageOption";
-    private static final String DATE = "date";
-    private static final String TIME = "time";
-    private static final String MESSAGE = "message";
     private static final String CAPTCHA = "captcha";
-
-    public static final List<String> nodeNamesList = Arrays.asList(NAME, SURNAME, EMAIL, PHONE, MASSAGE, MASSAGE_OPTION, DATE, TIME, MESSAGE);
 
     private ValidationUtility validationUtility = new ValidationUtility();
     private HelperUtilityClass helperUC = new HelperUtilityClass();
@@ -53,19 +41,18 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
      */
     public Result addBookingToDatabase() throws JsonProcessingException {
         helperUC.initializeObjectMapper();
-        String sqlStatement = helperUC.getEnvVar("TABLE_FULLFORM");
+        String sqlStatement = HelperUtilityClass.getEnvVar("TABLE_FULLFORM");
         JsonNode json = request().body().asJson();
         HashMap<String, JsonNode> dataFromFullForm = new HashMap<>();
         JsonNode captchaNode = json.findPath(CAPTCHA);
         String captchaError;
 
-        for (String item : nodeNamesList) {
+        for (String item : HelperUtilityClass.fullFormNames) {
             dataFromFullForm.put(item, json.findPath(item));
         }
 
         try {
             try (Connection connection = helperUC.getConnection()) {
-                if (connection == null) return badRequest("Connection is null");
                 try (PreparedStatement preparedStatement = connection.prepareStatement(sqlStatement)) {
                     // perform validation on all fields in FullForm except captcha
                     Map<String, String> errorCodesAfterValidation = validationUtility.mergedValidationForFF(dataFromFullForm);
@@ -80,7 +67,7 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
                         if (helperUC.isValid(captchaError)) {
                             String response = helperUC.prepareJsonResponse(new JFullFormSubmit(errorCodesAfterValidation, captchaError));
 
-                            writeToDatabase(nodeNamesList, preparedStatement, dataFromFullForm, connection).execute();
+                            writeToDatabase(HelperUtilityClass.fullFormNames, preparedStatement, dataFromFullForm, connection).execute();
 
                             return ok(response);
                         }
@@ -137,7 +124,7 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
         HashMap<String, String> tableColumnDataMap = new HashMap<>();
 
         //to add as env var/hide
-        String query = helperUC.getEnvVar("FIELDS_FULLFORM");
+        String query = HelperUtilityClass.getEnvVar("FIELDS_FULLFORM");
         try (PreparedStatement ps = connection.prepareStatement(query)) {
             try (ResultSet rs = ps.executeQuery()) {
 
