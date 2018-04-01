@@ -16,7 +16,10 @@ app.controller('AdminController', ['$scope', '$http', function ($scope, $http) {
         };
     });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b0369db8f0d96d388df2cae82a467325939f899c
     $http({
         method: "GET",
         url: "/getMassagesData",
@@ -31,7 +34,10 @@ app.controller('AdminController', ['$scope', '$http', function ($scope, $http) {
     });
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b0369db8f0d96d388df2cae82a467325939f899c
 }]);
 
 
