@@ -12,36 +12,33 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
     $scope.truncateSize = 100;
     resetOrInitFormsVars();
     $scope.massagePickedFromDescriptions = "";
-    $scope.showIt1=false;
-
+    $scope.showIt1 = false;
 
 
     app.captchaController($scope, vcRecaptchaService);
 
-    app.mapsController($scope,NgMap);
+    app.mapsController($scope, NgMap);
 
 
-
-    hideFlagOfCurrentLang($scope.languageParameter)
+    myFunctionsFactory.hideFlagOfCurrentLang($scope, $scope.languageParameter);
 
 
     $scope.googleMapsUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCEYVMDc9EIG4zsSYD6SXJ7gzk05BOinH0";
     app.initController($scope, myDataFactory);
 
 
-
-
-
-
-
     $scope.doTranslate = function (langToSetTo) {
-        $scope.showIt1=false;
+
+        //to get specific table from db for multi lang purposes
+        getCurrentLangTableFromDB(langToSetTo);
+
+        $scope.showIt1 = false;
 
         $scope.myForm.$setPristine();
-        $scope.submittedSuccess="";
+        $scope.submittedSuccess = "";
 
 
-        hideFlagOfCurrentLang(langToSetTo);
+        myFunctionsFactory.hideFlagOfCurrentLang($scope, langToSetTo);
 
 
         $scope.setWidgetId(0, langToSetTo);
@@ -72,33 +69,37 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
             sucRespContactForm: setLanguage(langToSetTo, myDataFactory.getSucRespContactUsForm())
         };
 
+
         resetOrInitFormsVars();
-// $scope.cbExpiration();
-//
-//         $scope.cfName="";
-//         $scope.cfEmail="";
-//         $scope.cfMessage="";
 
 
         $scope.submittedFail = "";
     };
+
+
     $scope.lala = "asd";
 
-    $scope.doSomeShit = function () {
-        alert("la");
-    };
 
+    $scope.pickedCurrentItem = "";
 
-    $scope.pickMassage = function (item, number) {
+    $scope.pickMassage = function (number) {
+
+        getMassageOptionForSpecificPick(number);
+
+        for (var i = 0; i < $scope.massageInfoFromDB.length; i++) {
+            if ($scope.massageInfoFromDB[i].code == number) {
+                $scope.pickedCurrentItem = $scope.massageInfoFromDB[i];
+            }
+        }
 
 
         $scope.testError = "";
-        console.log("number" + number);
 
-        $scope.massagePickedFromDescriptions = myFunctionsFactory.getTimesAndPricesFromBackend(number);
-        $scope.data.formPH.massage = item;
-        $scope.user.massage = item;
-        console.log("PICKED MASSAGE " + item);
+        console.log("In a pick:");
+        console.log($scope.pickedCurrentItem);
+        $scope.data.formPH.massage = $scope.pickedCurrentItem.massageName;
+        $scope.user.massage = $scope.pickedCurrentItem;
+        console.log("PICKED MASSAGE " + $scope.pickedCurrentItem.massageName);
 
     };
 
@@ -132,26 +133,21 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
 
 
     $scope.$watch('myForm.xxx.$dirty', function () {
-        console.log("IN WATCHER 11111");
-        console.log("massage: " + $scope.user.massage);
-        if ($scope.user.massage == null) {
+        console.log("In a watcher");
+
+        //workaround temp
+        if ($scope.user.massage === null) {
             $scope.user.massage = "";
         }
-
-        if ($scope.user.massage !== "") {
-
-            $scope.testError = "";
+        if (!angular.isUndefined($scope.user.massage.code) && $scope.user.massage.code !== "") {
+            getMassageOptionForSpecificPick($scope.user.massage.code);
         }
 
-
-        $scope.massagePickedFromDescriptions = myFunctionsFactory.getTimesAndPricesFromBackend($scope.user.massage[1]);
-        console.log("IN WATCHER BEFORE PRISTILINE: " + $scope.user.massage);
-
+        console.log("In a watcher before setPristine: " + $scope.user.massage.massageName);
 
         $scope.myForm.$setPristine();
 
-
-        console.log("IN WATCHER AFTER PRISTILINE: " + $scope.user.massage);
+        console.log("In a watcher after setPristine: " + $scope.user.massage.massageName);
 
 
     });
@@ -159,8 +155,6 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
 
     $scope.chosenDate = "";
     $scope.chosenTime = "";
-    // $scope.stuff="Pasirinkite laiką";
-
 
     // range of available (not disabled) hours
     $scope.startHour = "09:00";
@@ -174,6 +168,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
     $scope.startDate = moment().format('YYYY-MM-DD')
 
     // function to disable dates in calendar if needed
+
     $scope.disabledDates = function (date, type) {
         //formatas parinktas kad 2'a metu diena 'laisva'
         $scope.takenOrOffDate = "15";
@@ -200,7 +195,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
         $scope.errors.invalidLastName = myFunctionsFactory.ifEmpty($scope.user.lastName, $scope.data.formErrors.surname);
         $scope.errors.invalidEmail = myFunctionsFactory.emailCheck($scope.user.email, $scope.data.formErrors.email, $scope.data.formErrors.emailBadFormat);
         $scope.errors.invalidPhone = myFunctionsFactory.ifEmpty($scope.user.phone, $scope.data.formErrors.phone);
-        $scope.errors.invalidMassage = myFunctionsFactory.ifEmptyNullOrUndefined($scope.user.massage[0], $scope.data.formErrors.massage);
+        $scope.errors.invalidMassage = myFunctionsFactory.ifEmptyNullOrUndefined($scope.user.massage.massageName, $scope.data.formErrors.massage);
         $scope.errors.invalidMassageOption = myFunctionsFactory.ifEmptyNullOrUndefined($scope.user.massageOption, $scope.data.formErrors.massageOption);
         $scope.errors.invalidDate = myFunctionsFactory.ifEmptyNullOrUndefined($scope.chosenDate, $scope.data.formErrors.date);
         $scope.errors.invalidTime = myFunctionsFactory.ifEmptyNullOrUndefined($scope.chosenTime, $scope.data.formErrors.time);
@@ -210,7 +205,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
     }
 
     $scope.checkSubmittedData = function () {
-        console.log("user data: " + $scope.user.massage);
+        console.log("user data: " + $scope.user.massage.massageName);
         console.log("In the checkSubmittedData");
 
         if (isBookingFormValid()) {
@@ -220,7 +215,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
             $scope.submittedLastName = $scope.user.lastName;
             $scope.submittedEmail = $scope.user.email;
             $scope.submittedPhone = $scope.user.phone;
-            $scope.submittedMassage = $scope.user.massage[0];
+            $scope.submittedMassage = $scope.user.massage.massageName;
             $scope.submittedMassageOption = $scope.user.massageOption;
             $scope.submittedDate = $scope.chosenDate;
             $scope.submittedTime = $scope.chosenTime;
@@ -236,24 +231,16 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
 
     };
 
-
-    // $scope.chosenDate = moment().format('YYYY-MM-DD');
-    // $scope.chosenTime = moment.locale('lt');
-    // $scope.chosenTime = moment().format('L LTS');
-    // $scope.startDate = moment().format('YYYY-MM-DD')
-
     // function for full form submission
     $scope.submitFullForm = function () {
-        $scope.myForm.$setPristine();
-        $scope.showIt1=false;
 
-        console.log("DID VALUE CHANGE " + $scope.data.formPH.massage);
+        $scope.myForm.$setPristine();
+        $scope.showIt1 = false;
 
         $scope.submittedFail = "";
         $scope.submittedSuccess = "";
         $scope.submitError = "";
         if ($scope.checkSubmittedData()) {
-
 
             var sendStuff = {
                 "GetAllCustomersData":
@@ -291,13 +278,12 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
                     ]
             };
 
-
             $http({
                 method: "POST",
                 url: "/submitFullForm",
                 data: JSON.stringify(sendStuff)
             }).then(function mySuccess(response) {
-                $scope.showIt1=true;
+                $scope.showIt1 = true;
                 console.log("SucRespons: ");
                 console.log(response);
                 $scope.submittedSuccess = $scope.data.sucRespBookForm.response;
@@ -308,13 +294,12 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
             }, function myError(response) {
                 console.log("FailRespons: ");
                 console.log(response);
-                $scope.submitError=response.data;
+                $scope.submitError = response.data;
 
                 $scope.er = $scope.submitError.contactFormErrors[0];
 
-                if($scope.er.captcha !==""){
+                if ($scope.er.captcha !== "") {
                     $scope.setWidgetId(0, $scope.languageParameter);
-
                 }
 
                 errorMassagesFromBackend($scope.er.name, $scope.er.surname, $scope.er.email, $scope.er.phone, $scope.er.massage, $scope.er.massageOption, $scope.er.date, $scope.er.time, $scope.er.message, $scope.er.captcha);
@@ -328,12 +313,10 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
         }
     };
 
-
     function errorMassagesFromBackend(name, surname, email, phone, massage, massageOption, date, time, message, captcha) {
 
         $scope.ax = $scope.data.fullFormBackendErrorMessages;
         console.log("Inside validation");
-        console.log(name);
         $scope.errors.invalidName = myFunctionsFactory.processBackendResponse(name, "nameFormat", "nameLength", $scope.ax.nameFormat, $scope.ax.nameLength);
         $scope.errors.invalidLastName = myFunctionsFactory.processBackendResponse(surname, "surnameFormat", "surnameLength", $scope.ax.surnameFormat, $scope.ax.surnameLength);
         $scope.errors.invalidEmail = myFunctionsFactory.processBackendResponse(email, "emailFormat", "emailLength", $scope.ax.emailFormat, $scope.ax.emailLength);
@@ -344,7 +327,6 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
         $scope.errors.invalidTime = myFunctionsFactory.processBackendResponse(time, "timeFormat", "timeLength", $scope.ax.timeFormat, $scope.ax.timeLength);
         $scope.errors.invalidMessage = myFunctionsFactory.processBackendResponse(message, "messageFormat", "messageLength", $scope.ax.messageFormat, $scope.ax.messageLength);
         $scope.errors.invalidCaptcha = myFunctionsFactory.processBackendResponse(captcha, "captchaFormat", "xxxxx", $scope.ax.captchaFormat, "xxxxx");
-
     }
 
 
@@ -391,23 +373,82 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
     }
 
 
-    function hideFlagOfCurrentLang(currentLang) {
-        $scope.isLangDE = true;
-        $scope.isLangLT = true;
-        $scope.isLangRU = true;
+    //get possible massages with codes from specific db table according to current language
 
-        if (currentLang === "lt") {
-            $scope.isLangLT = false;
-        } else if (currentLang === "de") {
-            $scope.isLangDE = false;
-        } else if (currentLang === "ru") {
-            $scope.isLangRU = false;
-        }
+    function getCurrentLangTableFromDB(currentLang) {
+        $http({
+            method: "POST",
+            url: "/getMassagesData",
+            data: JSON.stringify(currentLang)
+        }).then(function mySuccess(response) {
+            $scope.massageInfoFromDB = angular.copy(response.data.massageInfo);
 
+            sortSpaMassages($scope.massageInfoFromDB);
+            sortOtherMassages($scope.massageInfoFromDB);
+
+        }, function myError(response) {
+
+        });
     }
 
 
-}]);
+    getCurrentLangTableFromDB($scope.languageParameter);
+
+    //separate spa massages for Prices section
+    function sortSpaMassages(massageInfo) {
+        $scope.spaMassages = [];
+        for (var i = 0; i < 7; i++) {
+            $scope.spaMassages.push(massageInfo[i])
+        }
+        myFunctionsFactory.refactorArrayForDisplay($scope.spaMassages, 7);
+    }
+
+
+    //separate other massages for Prices section
+    function sortOtherMassages(massageInfo) {
+        $scope.otherMassages = [];
+        for (var i = 7; i < 9; i++) {
+            $scope.otherMassages.push(massageInfo[i])
+        }
+        myFunctionsFactory.refactorArrayForDisplay($scope.otherMassages, 2);
+
+    }
+
+    //Get prices from database
+    $scope.massageOptionsFromDB = "";
+
+    function getPricesFromDB() {
+        $http({
+            method: "GET",
+            url: "/getPrices"
+        }).then(function mySuccess(response) {
+
+            $scope.massageOptionsFromDB = response.data;
+
+        }, function myError(response) {
+
+        });
+    }
+
+    //prices for massage option field
+    getPricesFromDB();
+
+
+    //handle massageOption field
+    function getMassageOptionForSpecificPick(code) {
+        $scope.currentHolderForMassageOption = [];
+
+        for (var i = 0; i < $scope.massageOptionsFromDB.pricesInfo.length; i++) {
+            if ($scope.massageOptionsFromDB.pricesInfo[i].code == code) {
+                $scope.currentHolderForMassageOption.push($scope.massageOptionsFromDB.pricesInfo[i].time + " min – " + $scope.massageOptionsFromDB.pricesInfo[i].price + " CHF ");
+            }
+        }
+    }
+
+
+}
+
+]);
 
 
 

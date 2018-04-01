@@ -14,7 +14,7 @@
 
 <body class="center-main">
 
-<script src='@routes.Assets.at("javascripts/js/angular.min.js")'></script>
+<script src='@routes.Assets.at("../../public/design2/js/angular.min.js")'></script>
 <script src='@routes.Assets.at("javascripts/js/adminController.js")'></script>
 <link href='@routes.Assets.at("javascripts/js/turbo.css")' rel=stylesheet>
 
@@ -79,8 +79,8 @@
         ng-repeat="x in massagesData.info">
         <td>{{ $index + 1 }}</td>
         <td>{{x.massageName}}</td>
-        <td>{{x.price + ' CHF'}}</td>
-        <td>{{x.length + ' min'}}</td>
+        <td>{{x.code + ' CHF'}}</td>
+        <td>{{x.whatever + ' min'}}</td>
 
 
     </tr>

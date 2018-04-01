@@ -1,8 +1,0 @@
-2018-03-17 18:51:06,022 [WARN] from application in scala-execution-context-global-103 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2018-03-17 18:51:07,835 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in scala-execution-context-global-103 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-03-17 18:51:07,907 [INFO] from play.api.http.EnabledFilters in scala-execution-context-global-103 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2018-03-17 18:51:07,912 [INFO] from play.api.Play in scala-execution-context-global-103 - Application started (Dev)

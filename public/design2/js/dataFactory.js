@@ -44,20 +44,20 @@ gg.factory('myDataFactory', function () {
                 "lt": {
                     "intro": "Masažas yra vienas iš ypatingų veiksnių žmogaus gyvenime, padedančių palaikyti puikią kūno ir dvasios būseną. Ir nieko nėra geresnio, kaip po sunkios ir išvargintos darbo dienos atsipalaiduoti ir atgaivinti savo kūną masažo procedūromis.",
                     "findMore": "Sužinokite daugiau",
-                    "bookNow":"Rezervuokite laiką"
+                    "bookNow": "Rezervuokite laiką"
 
                 },
                 "de": {
                     "intro": "Massage ist eine der besonderen Faktoren in das Leben einer Person, zu helfen einen guten Körper und Seele zu halten. Und es gibt nichts Besseres als nach einem harten und müden Arbeitstag, entspannen und beleben Sie Ihren Körper mit Massage–Verfahren.",
                     "findMore": "Erfahren Sie mehr",
-                    "bookNow":"Sparen Sie Zeit"
+                    "bookNow": "Sparen Sie Zeit"
 
 
                 },
                 "ru": {
                     "intro": "Массаж является одним из особых факторов в жизни человека, помогая поддерживать хорошее тело и душу. И нет ничего лучше, чем после тяжелого и усталого рабочего дня, расслабиться и оживить cвое тело массажными процедурами.",
                     "findMore": "Узнайте больше",
-                    "bookNow":"резервировать время"
+                    "bookNow": "резервировать время"
 
                 }
             }
@@ -157,9 +157,9 @@ gg.factory('myDataFactory', function () {
                     "sepNeck": "Pečių – kaklo – rankų masažas",
                     "sepStoma": "Pilvo masažas",
                     "sepWaist": "Juosmens – sėdmenų – kojų masažas",
-                    "sepPar":"Atskirų kūno dalių masažai",
-                    "labelMore":"Daugiau",
-                    "labelLess":"Mažiau"
+                    "sepPar": "Atskirų kūno dalių masažai",
+                    "labelMore": "Daugiau",
+                    "labelLess": "Mažiau"
                 },
                 "de": {
                     "limphoBody": "Manuelle Lymphdrainage",
@@ -175,9 +175,9 @@ gg.factory('myDataFactory', function () {
                     "sepNeck": "Massage Schulter – Hals – Hände",
                     "sepStoma": "Bauchmassage",
                     "sepWaist": "Lendenwirbel – Gesäß – Beinmassage",
-                    "sepPar":"Teilkörpermassage",
-                    "labelMore":"Mehr",
-                    "labelLess":"Weniger"
+                    "sepPar": "Teilkörpermassage",
+                    "labelMore": "Mehr",
+                    "labelLess": "Weniger"
                 },
                 "ru": {
                     "limphoBody": "Лимфодренажный массаж тела",
@@ -193,9 +193,9 @@ gg.factory('myDataFactory', function () {
                     "sepNeck": "Плечо – шеи – рук массаж",
                     "sepStoma": "Абдоминальный массаж",
                     "sepWaist": "Поясницы – Ягодицы – Ног Массаж",
-                    "sepPar":"Массаж отдельнных частей тело",
-                    "labelMore":"Больше",
-                    "labelLess":"Меньше"
+                    "sepPar": "Массаж отдельнных частей тело",
+                    "labelMore": "Больше",
+                    "labelLess": "Меньше"
                 }
             };
         },
@@ -358,7 +358,6 @@ gg.factory('myDataFactory', function () {
                     "kidsWaist": ["Juosmens, sėdmenų, kojų masažas", "80", "–", "–"],
                     "kidsFull": ["Viso kūno masažas", "–", "–", "160"],
                     "otherTitle": ["Kiti masažai", "30min", "60min", "90min"],
-
 
 
                 },
@@ -637,17 +636,17 @@ gg.factory('myDataFactory', function () {
             return {
                 "lt": {
                     "limphoBody": [
-                        ["Limfodrenažinis kūno masažas", "0"], ["Limfodrenažinis veido masažas", "1"], ["Karštų – šaltų akmenų masažas", "2"], ["Klasikinis – segmentinis nugaros masažas", "3"], ["Atpalaiduojantis viso kūno masažas", "4"], ["Ajurvedinis krūtų masažas moterims", "5"], ["Atpalaiduojantis pėdų – blauzdų masažas", "6"],["Anticeliulitiniai masažai","7"],["Atskirų kūno dalių masažai","8"]]
+                        ["Limfodrenažinis kūno masažas", "0"], ["Limfodrenažinis veido masažas", "1"], ["Karštų – šaltų akmenų masažas", "2"], ["Klasikinis – segmentinis nugaros masažas", "3"], ["Atpalaiduojantis viso kūno masažas", "4"], ["Ajurvedinis krūtų masažas moterims", "5"], ["Atpalaiduojantis pėdų – blauzdų masažas", "6"], ["Anticeliulitiniai masažai", "7"], ["Atskirų kūno dalių masažai", "8"]]
 
                 },
                 "de": {
                     "limphoBody": [
-                        ["Manuelle Lymphdrainage", "0"], ["Manuelle Lymphdrainage Gesicht", "1"], ["Heiß – kalt Steinmassage", "2"], ["Rücken Massage", "3"], ["Entspannende Ganzkörpermassagе", "4"], ["Ayurvedische Brüstmassage für Frauen", "5"], ["Entspannende Füße – Waden massage", "6"],["Anti – Cellulite massage","7"],["Teilkörpermassage","8"]]
+                        ["Manuelle Lymphdrainage", "0"], ["Manuelle Lymphdrainage Gesicht", "1"], ["Heiß – kalt Steinmassage", "2"], ["Rücken Massage", "3"], ["Entspannende Ganzkörpermassagе", "4"], ["Ayurvedische Brüstmassage für Frauen", "5"], ["Entspannende Füße – Waden massage", "6"], ["Anti – Cellulite massage", "7"], ["Teilkörpermassage", "8"]]
 
                 },
                 "ru": {
                     "limphoBody": [
-                        ["Лимфодренажный массаж тела", "0"], ["Лимфодренажный массаж лица", "1"], ["Горячих – холодных камней массаж", "2"], ["Классический – Сегментный массаж спины", "3"], ["Расслабляющий массаж всего тела", "4"], ["Аюрведический массаж грудей", "5"], ["Расслабляющий массаж стоп – голень", "6"],["Антицеллюлитные массажы","7"],["Массаж отдельнных частей тело","8"]]
+                        ["Лимфодренажный массаж тела", "0"], ["Лимфодренажный массаж лица", "1"], ["Горячих – холодных камней массаж", "2"], ["Классический – Сегментный массаж спины", "3"], ["Расслабляющий массаж всего тела", "4"], ["Аюрведический массаж грудей", "5"], ["Расслабляющий массаж стоп – голень", "6"], ["Антицеллюлитные массажы", "7"], ["Массаж отдельнных частей тело", "8"]]
 
                 }
             }
@@ -794,9 +793,9 @@ gg.factory('myDataFactory', function () {
 
                 }
             }
-        },
-    }
+        }
 
+    }
 
 });
 

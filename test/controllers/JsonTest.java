@@ -3,7 +3,7 @@ package controllers;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jsonthings.JEntryMassagePriceLength;
+import jsonthings.MassageInfo;
 import jsonthings.JRootKeysToGetArrays;
 import jsonthings.JTopRootList;
 import org.junit.Test;
@@ -27,7 +27,7 @@ public class JsonTest {
         JRootKeysToGetArrays superRoot = new JRootKeysToGetArrays();
 
 
-        rootList.add(new JEntryMassagePriceLength("Massage1",12.0,50));
+        rootList.add(new MassageInfo("Massage1",12.0,50));
 
 
 

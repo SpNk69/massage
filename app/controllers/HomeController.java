@@ -1,12 +1,14 @@
 package controllers;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.mysql.jdbc.Connection;
 import jsonthings.*;
 import play.Logger;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.*;
+
 import java.sql.*;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -33,21 +35,42 @@ public class HomeController extends Controller {
         return ok(calledFromRoutesAdmin.render("x"));
     }
 
+
+    private String x(JsonNode json) {
+        String meh;
+        switch (json.asText()) {
+            case "lt":
+                meh = "SELECT * FROM heroku_e3d8ce5aa92835f.massagelt;";
+                break;
+            case "de":
+                meh = "SELECT * FROM heroku_e3d8ce5aa92835f.massagede;";
+                break;
+            case "ru":
+                meh = "SELECT * FROM heroku_e3d8ce5aa92835f.massageru;";
+                break;
+            default:
+                throw new IllegalArgumentException("No such language");
+        }
+        return meh;
+    }
+
     /*
     Display Massages data in admin page
      */
     public Result getMassagesData() throws JsonProcessingException {
-
         String query = HelperUtilityClass.getEnvVar("MASSAGES_DATA");
+
+        JsonNode json = request().body().asJson();
 
         try {
             try (Connection connection = helperUC.getConnection()) {
-                try (PreparedStatement preparedStatement1 = connection.prepareStatement(query)) {
+                try (PreparedStatement preparedStatement1 = connection.prepareStatement(x(json))) {
                     JTopRootList massageList = new JTopRootList();
                     try (ResultSet data = preparedStatement1.executeQuery()) {
 
                         while (data.next()) {
-                            massageList.add(new JEntryMassagePriceLength(data.getString(2), data.getDouble(3), data.getInt(4)));
+                            massageList.add(new MassageInfo(data.getInt(1), data.getString(3), data.getString(2), data.getString(4),
+                                    data.getString(5),data.getString(6),data.getString(7)));
                         }
                         JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
                         topKey.setMassageInfo(massageList);
@@ -62,6 +85,43 @@ public class HomeController extends Controller {
             return badRequest("Failed while getting MassagesData");
         }
     }
+
+
+    /*
+Display Massages data in admin page
+ */
+    public Result getPrices() throws JsonProcessingException {
+        String query = "SELECT * FROM heroku_e3d8ce5aa92835f.prices;";
+
+        try {
+            try (Connection connection = helperUC.getConnection()) {
+                try (PreparedStatement preparedStatement1 = connection.prepareStatement(query)) {
+                    JTopRootList pricesList = new JTopRootList();
+                    try (ResultSet data = preparedStatement1.executeQuery()) {
+
+                        while (data.next()) {
+                            Logger.warn("SUP1 " + data.getString(2));
+                            Logger.warn("SUP2 " +data.getString(3));
+                            Logger.warn("SUP3 " +data.getString(4));
+
+                            pricesList.add(new PricesInfo(data.getString(2),data.getString(3),data.getString(4)));
+
+                        }
+                        JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
+                        topKey.setPricesInfo(pricesList);
+
+                        String response = helperUC.initializeObjectMapper().writeValueAsString(topKey);
+                        Logger.warn("RESPONSE BACK: " + response);
+                        return ok(response);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            Logger.debug("Getting prices went wrong... ", e);
+            return badRequest("Failed while getting prices");
+        }
+    }
+
 
     /*
     Display clients in admin page
@@ -93,7 +153,7 @@ public class HomeController extends Controller {
     /*
     Fetch data from db
      */
-        private Map dataFromDB(ResultSet rs, List<String> list) {
+    private Map dataFromDB(ResultSet rs, List<String> list) {
         Map<String, String> map = new HashMap<>();
         for (String item : list) {
             try {
