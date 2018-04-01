@@ -7,93 +7,58 @@
 @(title: String)(content: Html)
 <!DOCTYPE html>
 <html lang=en >
-<head>
+    <head>
 
 </head>
 
 
-<body class="center-main">
+    <body class="center-main">
 
-<script src='@routes.Assets.at("../../public/design2/js/angular.min.js")'></script>
-<script src='@routes.Assets.at("javascripts/js/adminController.js")'></script>
-<link href='@routes.Assets.at("javascripts/js/turbo.css")' rel=stylesheet>
-
-
+        <script src='@routes.Assets.at("design2/js/angular.min.js")'></script>
+        <script src='@routes.Assets.at("design2/js/adminController.js")'></script>
+        <link href='@routes.Assets.at("design2/css/turbo.css")' rel=stylesheet>
 
 
+        <div ng-app="myAdminApp" class="center-div" ng-controller="AdminController">
+            <h1>Sveiki atvykę į administratoriaus puslapį :)</h1>
+            <br>
+            <br>
+            <div class="clients">
+                <h3>Klientai</h3>
+                <table class="clients-table">
+                    <tr>
+                        <th>Id</th>
+                        <th>Vardas</th>
+                        <th>Pavardė</th>
+                        <th>El.paštas</th>
+                        <th>Tel.nr</th>
+                        <th>Masažas</th>
+                        <th>Mas trukm</th>
+                        <th>Data</th>
+                        <th>Laikas</th>
+                        <th>Žinutė</th>
+                    </tr>
+                    <tr ng-repeat="x in clientsData.info">
+                        <td>{{ $index + 1 }}</td>
+                        <td>{{x.name}}</td>
+                        <td>{{x.surname}}</td>
+                        <td>{{x.email}}</td>
+                        <td>{{x.phone}}</td>
+                        <td>{{x.massage}}</td>
+                        <td>{{x.massageOption}}</td>
+                        <td>{{x.date}}</td>
+                        <td>{{x.time}}</td>
+                        <td>{{x.message}}</td>
 
+                    </tr>
+                </table>
 
-<div ng-app="myAdminApp" class="center-div" ng-controller="AdminController">
-<h1>Sveiki atvykę į administratoriaus puslapį :)</h1>
-    <br>
-    <br>
-    <div class="clients">
-        <h3>Klientai</h3>
-<table class="clients-table">
-    <tr>
-        <th>Id</th>
-        <th>Vardas</th>
-        <th>Pavardė</th>
-        <th>El.paštas</th>
-        <th>Tel.nr</th>
-        <th>Masažas</th>
-        <th>Mas trukm</th>
-        <th>Data</th>
-        <th>Laikas</th>
-        <th>Žinutė</th>
-    </tr>
-    <tr ng-repeat="x in clientsData.info">
-        <td>{{ $index + 1 }}</td>
-        <td>{{x.name}}</td>
-        <td>{{x.surname}}</td>
-        <td>{{x.email}}</td>
-        <td>{{x.phone}}</td>
-        <td>{{x.massage}}</td>
-        <td>{{x.massageOption}}</td>
-        <td>{{x.date}}</td>
-        <td>{{x.time}}</td>
-        <td>{{x.message}}</td>
+            </div>
 
-    </tr>
-</table>
+            <br>
 
-    </div>
+        </div>
 
-    <br>
-    <hr>
-    <hr>
-    <br>
-
-    <br>
-    <div class="clients">
-    <table class="clients-table">
-        <h3>Masažai</h3>
-        <tr>
-            <th>Id</th>
-            <th>Masažas</th>
-            <th>Kaina</th>
-            <th>Trukmė</th>
-        </tr>
-
-    <tr
-        ng-repeat="x in massagesData.info">
-        <td>{{ $index + 1 }}</td>
-        <td>{{x.massageName}}</td>
-        <td>{{x.code + ' CHF'}}</td>
-        <td>{{x.whatever + ' min'}}</td>
-
-
-    </tr>
-
-
-
-    </table>
-    </div>
-
-</div>
-
-
-
-</body>
+    </body>
 
 </html>

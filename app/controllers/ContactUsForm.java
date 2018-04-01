@@ -9,21 +9,16 @@ import play.libs.ws.*;
 import play.mvc.Controller;
 import play.mvc.Result;
 import validation.ValidationUtility;
+
 import javax.inject.Inject;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class ContactUsForm extends Controller implements WSBodyReadables, WSBodyWritables {
 
-    private static final String NAME = "name";
-    private static final String EMAIL = "email";
-    private static final String MESSAGE = "message";
     private static final String CAPTCHA = "captcha";
 
-    private static final List<String> nodeNamesList = Arrays.asList(NAME, EMAIL, MESSAGE);
     private HelperUtilityClass helperUC = new HelperUtilityClass();
 
     @Inject
@@ -45,7 +40,7 @@ public class ContactUsForm extends Controller implements WSBodyReadables, WSBody
         String captchaError;
         String response;
 
-        for (String item : nodeNamesList) {
+        for (String item : HelperUtilityClass.contactFormNames) {
             dataMapFromCF.put(item, json.findPath(item));
         }
         errorCodesAfterValidation = validationUtility.mergedValidationForCF(dataMapFromCF);

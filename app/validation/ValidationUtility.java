@@ -1,8 +1,6 @@
 package validation;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import play.Logger;
-import play.api.cache.ehcache.NamedEhCacheProvider;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,6 +11,7 @@ public class ValidationUtility {
 
 
     public ValidationUtility() {
+        // initialized from another class
     }
 
     public String validateName(JsonNode nameNode) {
@@ -30,8 +29,6 @@ public class ValidationUtility {
     }
 
 
-
-
     public String validateSurname(JsonNode surnameNode) {
         String surname = surnameNode.asText();
         String pattern = "[^\\p{L}.' ]+";
@@ -45,9 +42,6 @@ public class ValidationUtility {
         }
         return "";
     }
-
-
-
 
 
     public String validateEmail(JsonNode emailNode) {
@@ -64,7 +58,6 @@ public class ValidationUtility {
         }
         return "";
     }
-
 
 
     public String validateMessage(JsonNode messageNode) {
@@ -89,9 +82,6 @@ public class ValidationUtility {
     }
 
 
-
-
-
     public String validateMessageFullForm(JsonNode messageNode) {
 
         //check messagefield for something or encode
@@ -112,10 +102,6 @@ public class ValidationUtility {
     }
 
 
-
-
-
-
     public String validateDate(JsonNode dateNode) {
         String date = dateNode.asText();
         String pattern = "^\\d{4}-\\d{2}-\\d{2}$";
@@ -125,12 +111,12 @@ public class ValidationUtility {
 
 
         //parse month
-        String pattern2="(?<=-)(.*0[1-9]|1[0-2])(?=-)";
+        String pattern2 = "(?<=-)(.*0[1-9]|1[0-2])(?=-)";
         Pattern r2 = Pattern.compile(pattern2);
         Matcher m2 = r2.matcher(date);
 
         //parse day
-        String pattern3="(?<=-..-)(.*0[1-9]|1[0-9]|2[0-9]|3[0-1])";
+        String pattern3 = "(?<=-..-)(.*0[1-9]|1[0-9]|2[0-9]|3[0-1])";
         Pattern r3 = Pattern.compile(pattern3);
         Matcher m3 = r3.matcher(date);
 
@@ -138,16 +124,14 @@ public class ValidationUtility {
             return "dateLength";
         } else if (!m.find()) {
             return "dateFormat";
-        }else if(!m2.find()){
+        } else if (!m2.find()) {
             return "dateFormat";
-        }else if(!m3.find()){
+        } else if (!m3.find()) {
             return "dateFormat";
 
         }
         return "";
     }
-
-
 
 
     public String validateTime(JsonNode timeNode) {
@@ -166,17 +150,10 @@ public class ValidationUtility {
     }
 
 
-
-
-
-
-
-
-
     public String validatePhone(JsonNode phoneNode) {
         String phone = phoneNode.asText();
         //To do: add regex for phone numbers
-                String pattern = "[^\\d+\\\\() -]";
+        String pattern = "[^\\d+\\\\() -]";
 
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(phone);
@@ -188,9 +165,6 @@ public class ValidationUtility {
         }
         return "";
     }
-
-
-
 
 
     //TO DO: Apply/Fix regex
@@ -210,8 +184,6 @@ public class ValidationUtility {
     }
 
 
-
-
     public String validateMassage(JsonNode massageNode) {
         String massage = massageNode.asText();
         String pattern = "[^\\p{L}\\p{Pd}.' -]";
@@ -228,30 +200,29 @@ public class ValidationUtility {
     }
 
 
+    public Map<String, String> mergedValidationForFF(Map<String, JsonNode> hashMap) {
+        HashMap<String, String> hashMap2 = new HashMap<>();
 
-    public Map<String,String> mergedValidationForFF(Map<String, JsonNode> hashMap){
-        HashMap<String,String> hashMap2 = new HashMap<>();
-
-        hashMap2.put("name",validateName(hashMap.get("name")));
-        hashMap2.put("surname",validateSurname(hashMap.get("surname")));
-        hashMap2.put("email",validateEmail(hashMap.get("email")));
-        hashMap2.put("phone",validatePhone(hashMap.get("phone")));
-        hashMap2.put("massage",validateMassage(hashMap.get("massage")));
-        hashMap2.put("massageOption",validateMassageOption(hashMap.get("massageOption")));
-        hashMap2.put("date",validateDate(hashMap.get("date")));
-        hashMap2.put("time",validateTime(hashMap.get("time")));
-        hashMap2.put("message",validateMessageFullForm(hashMap.get("message")));
+        hashMap2.put("name", validateName(hashMap.get("name")));
+        hashMap2.put("surname", validateSurname(hashMap.get("surname")));
+        hashMap2.put("email", validateEmail(hashMap.get("email")));
+        hashMap2.put("phone", validatePhone(hashMap.get("phone")));
+        hashMap2.put("massage", validateMassage(hashMap.get("massage")));
+        hashMap2.put("massageOption", validateMassageOption(hashMap.get("massageOption")));
+        hashMap2.put("date", validateDate(hashMap.get("date")));
+        hashMap2.put("time", validateTime(hashMap.get("time")));
+        hashMap2.put("message", validateMessageFullForm(hashMap.get("message")));
 
         return hashMap2;
     }
 
-    public Map<String,String> mergedValidationForCF(Map<String, JsonNode> hashMap){
-                HashMap<String,String> hashMap2 = new HashMap<>();
-                hashMap2.put("name",validateName(hashMap.get("name")));
-                hashMap2.put("email",validateEmail(hashMap.get("email")));
-                hashMap2.put("message",validateMessage(hashMap.get("message")));
+    public Map<String, String> mergedValidationForCF(Map<String, JsonNode> hashMap) {
+        HashMap<String, String> hashMap2 = new HashMap<>();
+        hashMap2.put("name", validateName(hashMap.get("name")));
+        hashMap2.put("email", validateEmail(hashMap.get("email")));
+        hashMap2.put("message", validateMessage(hashMap.get("message")));
 
-                return hashMap2;
+        return hashMap2;
     }
 
 
