@@ -24,7 +24,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
 
 
     $scope.googleMapsUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCEYVMDc9EIG4zsSYD6SXJ7gzk05BOinH0";
-    app.initController($scope, myDataFactory);
+    app.initController($scope, myDataFactory,myFunctionsFactory);
 
 
     $scope.doTranslate = function (langToSetTo) {
@@ -48,25 +48,25 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
         $scope.languageParameter = langToSetTo;
 
         $scope.data = {
-            titlePage: setLanguage(langToSetTo, myDataFactory.getPageTitle()),
-            introText: setLanguage(langToSetTo, myDataFactory.getIntroData()),
-            navBar: setLanguage(langToSetTo, myDataFactory.getNavBarData()),
-            massageTitle: setLanguage(langToSetTo, myDataFactory.getMassagesTitles()),
-            massageBody: setLanguage(langToSetTo, myDataFactory.getMassageBodyData()),
-            aboutMeTitle: setLanguage(langToSetTo, myDataFactory.getAboutMeTitle()),
-            aboutMeBody: setLanguage(langToSetTo, myDataFactory.getAboutMeBody()),
-            inAHurry: setLanguage(langToSetTo, myDataFactory.getInaHurryData()),
-            prices: setLanguage(langToSetTo, myDataFactory.getPrices()),
-            formNames: setLanguage(langToSetTo, myDataFactory.getFormNames()),
-            formPH: setLanguage(langToSetTo, myDataFactory.getPlaceHolders()),
-            formErrors: setLanguage(langToSetTo, myDataFactory.getFormErrors()),
-            contactForm: setLanguage(langToSetTo, myDataFactory.getContactUsData()),
-            contactFormErrors: setLanguage(langToSetTo, myDataFactory.getContactFormErrors()),
-            backendPricesTest: setLanguage(langToSetTo, myDataFactory.getMassagesFromBackend()),
-            fullFormBackendErrorMessages: setLanguage(langToSetTo, myDataFactory.getFullFormBackendErrorMessages()),
-            contactFormBackendErrorMessages: setLanguage(langToSetTo, myDataFactory.getContactFormBackendErrorMessages()),
-            sucRespBookForm: setLanguage(langToSetTo, myDataFactory.getSucRespFullBookForm()),
-            sucRespContactForm: setLanguage(langToSetTo, myDataFactory.getSucRespContactUsForm())
+            titlePage: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getPageTitle(),$scope),
+            introText: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getIntroData(),$scope),
+            navBar: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getNavBarData(),$scope),
+            massageTitle: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getMassagesTitles(),$scope),
+            massageBody: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getMassageBodyData(),$scope),
+            aboutMeTitle: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getAboutMeTitle(),$scope),
+            aboutMeBody: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getAboutMeBody(),$scope),
+            inAHurry: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getInaHurryData(),$scope),
+            prices: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getPrices(),$scope),
+            formNames: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getFormNames(),$scope),
+            formPH: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getPlaceHolders(),$scope),
+            formErrors: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getFormErrors(),$scope),
+            contactForm: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getContactUsData(),$scope),
+            contactFormErrors: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getContactFormErrors(),$scope),
+            backendPricesTest: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getMassagesFromBackend(),$scope),
+            fullFormBackendErrorMessages: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getFullFormBackendErrorMessages(),$scope),
+            contactFormBackendErrorMessages: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getContactFormBackendErrorMessages(),$scope),
+            sucRespBookForm: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getSucRespFullBookForm(),$scope),
+            sucRespContactForm: myFunctionsFactory.setLanguage(langToSetTo, myDataFactory.getSucRespContactUsForm(),$scope)
         };
 
 
@@ -77,12 +77,9 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
     };
 
 
-    $scope.lala = "asd";
-
-
-    $scope.pickedCurrentItem = "";
-
     $scope.pickMassage = function (number) {
+
+
 
         getMassageOptionForSpecificPick(number);
 
@@ -97,33 +94,11 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
 
         console.log("In a pick:");
         console.log($scope.pickedCurrentItem);
-        $scope.data.formPH.massage = $scope.pickedCurrentItem.massageName;
+        // $scope.data.formPH.massage = $scope.pickedCurrentItem.massageName;
         $scope.user.massage = $scope.pickedCurrentItem;
         console.log("PICKED MASSAGE " + $scope.pickedCurrentItem.massageName);
 
     };
-
-
-    function setLanguage(langCheck, data) {
-
-        $scope.lt = "lt";
-        $scope.de = "de";
-        $scope.ru = "ru";
-
-        if (langCheck === $scope.lt) {
-            $scope.languageParameter = $scope.lt;
-            return data.lt;
-
-        } else if (langCheck === $scope.de) {
-            $scope.languageParameter = $scope.de;
-            return data.de;
-
-        } else if (langCheck === $scope.ru) {
-            $scope.languageParameter = $scope.ru;
-            return data.ru;
-        }
-    }
-
 
     $scope.submitFunctionForm = function () {
         console.log("Happened call to contactFormController");
@@ -142,6 +117,11 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
         if (!angular.isUndefined($scope.user.massage.code) && $scope.user.massage.code !== "") {
             getMassageOptionForSpecificPick($scope.user.massage.code);
         }
+        //clear massageOptionHolder if massage is unpicked
+        if(angular.isUndefined($scope.user.massage.massageName)){
+                        $scope.currentHolderForMassageOption = [];
+        }
+
 
         console.log("In a watcher before setPristine: " + $scope.user.massage.massageName);
 
@@ -183,6 +163,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
         $scope.takenOrOffTime = "13";
         return type != 'hour' || date.format('HH') != $scope.takenOrOffTime;
     };
+
 
 
     // validate that input was entered

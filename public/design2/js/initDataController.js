@@ -1,4 +1,4 @@
-app.initController = function ($scope, myDataFactory) {
+app.initController = function ($scope, myDataFactory,myFunctionsFactory) {
 
 
     //reference on click to another section
@@ -66,51 +66,28 @@ app.initController = function ($scope, myDataFactory) {
 
 
     $scope.data = {
-        titlePage: setLanguage($scope.languageParameter, myDataFactory.getPageTitle()),
-        introText: setLanguage($scope.languageParameter, myDataFactory.getIntroData()),
-        navBar: setLanguage($scope.languageParameter, myDataFactory.getNavBarData()),
-        massageTitle: setLanguage($scope.languageParameter, myDataFactory.getMassagesTitles()),
-        massageBody: setLanguage($scope.languageParameter, myDataFactory.getMassageBodyData()),
-        aboutMeTitle: setLanguage($scope.languageParameter, myDataFactory.getAboutMeTitle()),
-        aboutMeBody: setLanguage($scope.languageParameter, myDataFactory.getAboutMeBody()),
-        inAHurry: setLanguage($scope.languageParameter, myDataFactory.getInaHurryData()),
-        prices: setLanguage($scope.languageParameter, myDataFactory.getPrices()),
-        formNames: setLanguage($scope.languageParameter, myDataFactory.getFormNames()),
-        formPH: setLanguage($scope.languageParameter, myDataFactory.getPlaceHolders()),
-        formErrors: setLanguage($scope.languageParameter, myDataFactory.getFormErrors()),
-        contactForm: setLanguage($scope.languageParameter, myDataFactory.getContactUsData()),
-        contactFormErrors: setLanguage($scope.languageParameter, myDataFactory.getContactFormErrors()),
-        backendPricesTest: setLanguage($scope.languageParameter, myDataFactory.getMassagesFromBackend()),
-        fullFormBackendErrorMessages: setLanguage($scope.languageParameter, myDataFactory.getFullFormBackendErrorMessages()),
-        contactFormBackendErrorMessages: setLanguage($scope.languageParameter, myDataFactory.getContactFormBackendErrorMessages()),
-        sucRespBookForm: setLanguage($scope.languageParameter, myDataFactory.getSucRespFullBookForm()),
-        sucRespContactForm: setLanguage($scope.languageParameter, myDataFactory.getSucRespContactUsForm())
+        titlePage: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getPageTitle(),$scope),
+        introText: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getIntroData(),$scope),
+        navBar: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getNavBarData(),$scope),
+        massageTitle: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getMassagesTitles(),$scope),
+        massageBody: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getMassageBodyData(),$scope),
+        aboutMeTitle: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getAboutMeTitle(),$scope),
+        aboutMeBody: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getAboutMeBody(),$scope),
+        inAHurry: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getInaHurryData(),$scope),
+        prices: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getPrices(),$scope),
+        formNames: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getFormNames(),$scope),
+        formPH: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getPlaceHolders(),$scope),
+        formErrors: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getFormErrors(),$scope),
+        contactForm: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getContactUsData(),$scope),
+        contactFormErrors: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getContactFormErrors(),$scope),
+        backendPricesTest: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getMassagesFromBackend(),$scope),
+        fullFormBackendErrorMessages: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getFullFormBackendErrorMessages(),$scope),
+        contactFormBackendErrorMessages: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getContactFormBackendErrorMessages(),$scope),
+        sucRespBookForm: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getSucRespFullBookForm(),$scope),
+        sucRespContactForm: myFunctionsFactory.setLanguage($scope.languageParameter, myDataFactory.getSucRespContactUsForm(),$scope)
 
 
     };
-
-    function setLanguage(langCheck, data) {
-
-        $scope.lt = "lt";
-        $scope.de = "de";
-        $scope.ru = "ru";
-
-        if (langCheck === $scope.lt) {
-            $scope.languageParameter = $scope.lt;
-            return data.lt;
-
-        } else if (langCheck === $scope.de) {
-            $scope.languageParameter = $scope.de;
-            return data.de;
-
-        } else if (langCheck === $scope.ru) {
-            $scope.languageParameter = $scope.ru;
-            return data.ru;
-        }
-    }
-
-
-
 
 };
 

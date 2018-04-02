@@ -27,7 +27,7 @@ public class HomeController extends Controller {
     }
 
     public Result adminPage() {
-        return ok(calledFromRoutesAdmin.render("getSpecificQuery"));
+        return ok(calledFromRoutesAdmin.render(""));
     }
 
     /*
@@ -113,7 +113,6 @@ public class HomeController extends Controller {
             Logger.debug("SQL exception while getting admin data...", e);
             return badRequest("Getting admin client data went wrong");
         }
-
     }
 
     /*

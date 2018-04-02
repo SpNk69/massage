@@ -88,6 +88,26 @@ gg.factory('myFunctionsFactory', function () {
             } else if (currentLang === "ru") {
                 scope.isLangRU = false;
             }
+        },
+        setLanguage: function(langCheck, data, $scope){
+
+        $scope.lt = "lt";
+        $scope.de = "de";
+        $scope.ru = "ru";
+
+        if (langCheck === $scope.lt) {
+            $scope.languageParameter = $scope.lt;
+            return data.lt;
+
+        } else if (langCheck === $scope.de) {
+            $scope.languageParameter = $scope.de;
+            return data.de;
+
+        } else if (langCheck === $scope.ru) {
+            $scope.languageParameter = $scope.ru;
+            return data.ru;
+    }
+
         }
 
 
