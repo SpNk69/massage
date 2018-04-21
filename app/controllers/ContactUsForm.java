@@ -26,12 +26,23 @@ public class ContactUsForm extends Controller implements WSBodyReadables, WSBody
 
     private ValidationUtility validationUtility = new ValidationUtility();
 
-    private final WSClient ws;
+
+    public ContactUsForm() {
+
+    }
+
+    //to investigate
+
+//        private final WSClient ws;
+//
+//    @Inject
+//    public ContactUsForm(WSClient ws) {
+//        this.ws = ws;
+//    }
+
 
     @Inject
-    public ContactUsForm(WSClient ws) {
-        this.ws = ws;
-    }
+    WSClient ws1;
 
     public Result sendEmail() throws IOException {
         Map<String, String> errorCodesAfterValidation;
@@ -84,7 +95,7 @@ public class ContactUsForm extends Controller implements WSBodyReadables, WSBody
      */
     protected String validateCaptchaCF(JsonNode captcha) {
         String captchaResponse = captcha.asText();
-        WSRequest request = ws.url(HelperUtilityClass.CAPTCHA_API_URL);
+        WSRequest request = ws1.url(HelperUtilityClass.CAPTCHA_API_URL);
         String answer = helperUC.getCaptchaResponseFromGoogleAPI(request, captchaResponse);
 
         if (!answer.equalsIgnoreCase("true")) {

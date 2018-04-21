@@ -57,6 +57,18 @@
     padding-bottom: 5px;
 }
 
+.randomStuff{
+    color: #eeffd3;
+    background-color: #ffd2c7;
+
+}
+
+.text-success1{
+    background-color:red;
+    color:white;
+}
+
+
 
 .submitError{
     text-align: center;
@@ -64,9 +76,43 @@
     color: crimson;
     font-size:90%;
 }
+
+input.myBackGroundTest{
+    border: 2px solid #ff999c;
+
+}
+
+
+.input.myObj{
+    background-color:blue;
+}
 .submitSuccess{
     text-align: center;
     display: block;
     color: green;
     font-size:90%;
 }
+
+.strike {
+    text-decoration: line-through;
+    background-color:red;
+}
+.bold {
+    font-weight: bold;
+}
+.red {
+    color: red;
+}
+.has-error {
+    color: red;
+    background-color: yellow;
+}
+.orange {
+    color: orange;
+}
+
+
+.bottomBorder{
+    border-bottom: orange solid 1px;
+}
+

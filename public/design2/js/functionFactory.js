@@ -1,33 +1,8 @@
-var gg = angular.module('myTestApp22', []); //ngMessages
+var gg = angular.module('functionsFactory', []); //ngMessages
 
 gg.factory('myFunctionsFactory', function () {
 
     return {
-        ifEmpty: function (field, error) {
-            if (field.length < 1) {
-                return error;
-            } else {
-                return "";
-            }
-        },
-
-        emailCheck: function (field, error1, error2) {
-            if (field.length < 1) {
-                return error1;
-            } else if (!field.includes("@") && field.length > 0) {
-                return error2;
-            } else {
-                return "";
-            }
-
-        },
-        ifEmptyNullOrUndefined: function (field, error) {
-            if (field == null || angular.isUndefined(field) || field.length < 1) {
-                return error;
-            } else {
-                return "";
-            }
-        },
         processBackendResponse: function (x, error1, error2, message1, message2) {
             if (x === error1) {
                 return message1;
@@ -42,15 +17,6 @@ gg.factory('myFunctionsFactory', function () {
                 return true;
             }
 
-        },
-        isValidInput: function (object) {
-            var valid = true;
-            angular.forEach(object, function (value, key) {
-                if (value !== "") {
-                    valid = false;
-                }
-            });
-            return valid;
         },
         refactorArrayForDisplay: function (toRefactor, theSize) {
             for (var i = 0; i < theSize; i++) {
@@ -73,7 +39,6 @@ gg.factory('myFunctionsFactory', function () {
                 } else {
                     toRefactor[i].col3 = toRefactor[i].col3 + " CHF"
                 }
-
             }
         },
         hideFlagOfCurrentLang: function (scope, currentLang) {
@@ -89,27 +54,44 @@ gg.factory('myFunctionsFactory', function () {
                 scope.isLangRU = false;
             }
         },
-        setLanguage: function(langCheck, data, $scope){
+        setLanguage: function (langCheck, data, $scope) {
 
-        $scope.lt = "lt";
-        $scope.de = "de";
-        $scope.ru = "ru";
+            $scope.lt = "lt";
+            $scope.de = "de";
+            $scope.ru = "ru";
 
-        if (langCheck === $scope.lt) {
-            $scope.languageParameter = $scope.lt;
-            return data.lt;
+            if (langCheck === $scope.lt) {
+                $scope.languageParameter = $scope.lt;
+                return data.lt;
 
-        } else if (langCheck === $scope.de) {
-            $scope.languageParameter = $scope.de;
-            return data.de;
+            } else if (langCheck === $scope.de) {
+                $scope.languageParameter = $scope.de;
+                return data.de;
 
-        } else if (langCheck === $scope.ru) {
-            $scope.languageParameter = $scope.ru;
-            return data.ru;
-    }
+            } else if (langCheck === $scope.ru) {
+                $scope.languageParameter = $scope.ru;
+                return data.ru;
+            }
 
+        },
+        applyColor: function (x) {
+            if (x === "red") {
+                return {
+                    "border": "2px solid red",
+                    "background-color": "#ffd2c7"
+                };
+            } else if (x === "green") {
+                return {
+                    "border": "2px solid green",
+                    "background-color": "#eeffd3"
+                };
+            } else if (x === "none") {
+                return {
+                    "border": "",
+                    "background-color": ""
+                };
+            }
         }
-
 
     }
 

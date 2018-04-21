@@ -8,7 +8,7 @@ app.controller('AdminController', ['$scope', '$http', function ($scope, $http) {
         url: "/getAdminClientData",
     }).then(function mySuccess(response) {
         $scope.clientsData = {
-            info: response.data.fullFormSubmit
+            info: response.data
         };
     }, function myError(response) {
         $scope.clientsData = {

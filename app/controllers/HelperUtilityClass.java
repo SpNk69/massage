@@ -6,8 +6,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mysql.jdbc.Connection;
-import jsonthings.JRootKeysToGetArrays;
-import jsonthings.JTopRootList;
+import jsonthings.JsonDataArrayFromBeToFe;
 import play.Logger;
 import play.libs.ws.WSRequest;
 import play.libs.ws.WSResponse;
@@ -38,9 +37,16 @@ public class HelperUtilityClass {
     Initialize object mapper for further usage
      */
     public ObjectMapper initializeObjectMapper() {
+        Logger.debug("In initializeObjectMapper");
         ObjectMapper objectMapper = new ObjectMapper();
+                Logger.debug("In initializeObjectMapper 2");
+
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+                 Logger.debug("In initializeObjectMapper 3");
+
         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+                 Logger.debug("In initializeObjectMapper 4");
+
         return objectMapper;
     }
 
@@ -48,11 +54,11 @@ public class HelperUtilityClass {
     Prepare Json response
          */
     public String prepareJsonResponse(Object form) throws JsonProcessingException {
-        JTopRootList jTopRootList = new JTopRootList();
-        JRootKeysToGetArrays topKey = new JRootKeysToGetArrays();
+                Logger.debug("In prepareJsonResponse");
+
+        JsonDataArrayFromBeToFe jTopRootList = new JsonDataArrayFromBeToFe();
         jTopRootList.add(form);
-        topKey.setContactFormErrors(jTopRootList);
-        return initializeObjectMapper().writeValueAsString(topKey);
+        return initializeObjectMapper().writeValueAsString(jTopRootList);
     }
 
     /*

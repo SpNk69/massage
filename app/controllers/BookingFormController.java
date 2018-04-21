@@ -3,10 +3,11 @@ package controllers;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.mysql.jdbc.Connection;
-import jsonthings.JFullFormSubmit;
+import jsonthings.BookingFormErrors;
 import play.Logger;
 import play.libs.Json;
 import play.libs.ws.*;
+import play.mvc.Action;
 import play.mvc.Controller;
 import play.mvc.Result;
 import validation.ValidationUtility;
@@ -21,7 +22,7 @@ import java.util.Map;
 /**
  * Created by alex on 2017-12-26.
  */
-public class FullForm extends Controller implements WSBodyReadables, WSBodyWritables {
+public class BookingFormController extends Controller implements WSBodyReadables, WSBodyWritables {
 
     private static final String CAPTCHA = "captcha";
 
@@ -32,7 +33,7 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
     private final WSClient ws;
 
     @Inject
-    public FullForm(WSClient ws) {
+    public BookingFormController(WSClient ws) {
         this.ws = ws;
     }
 
@@ -47,6 +48,7 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
         JsonNode captchaNode = json.findPath(CAPTCHA);
         String captchaError;
 
+        Logger.warn("TIME!!!! : " + json.findPath("time"));
         for (String item : HelperUtilityClass.fullFormNames) {
             dataFromFullForm.put(item, json.findPath(item));
         }
@@ -54,10 +56,10 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
         try {
             try (Connection connection = helperUC.getConnection()) {
                 try (PreparedStatement preparedStatement = connection.prepareStatement(sqlStatement)) {
-                    // perform validation on all fields in FullForm except captcha
+                    // perform validation on all fields in BookingFormController except captcha
                     Map<String, String> errorCodesAfterValidation = validationUtility.mergedValidationForFF(dataFromFullForm);
                     if (helperUC.containsErrors(errorCodesAfterValidation)) {
-                        String response = helperUC.prepareJsonResponse(new JFullFormSubmit(errorCodesAfterValidation, ""));
+                        String response = helperUC.prepareJsonResponse(new BookingFormErrors(errorCodesAfterValidation, ""));
                         Logger.debug("Form contains errors...");
 
                         return badRequest(response);
@@ -65,21 +67,21 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
                         // captcha separately as it can be checked ONCE on google api side, otherwise gets invalid
                         captchaError = validateCaptchaFF(captchaNode);
                         if (helperUC.isValid(captchaError)) {
-                            String response = helperUC.prepareJsonResponse(new JFullFormSubmit(errorCodesAfterValidation, captchaError));
+                            String response = helperUC.prepareJsonResponse(new BookingFormErrors(errorCodesAfterValidation, captchaError));
 
-                            writeToDatabase(HelperUtilityClass.fullFormNames, preparedStatement, dataFromFullForm, connection).execute();
+                            prepareDataForWritingToDB(HelperUtilityClass.fullFormNames, preparedStatement, dataFromFullForm, connection).execute();
 
                             return ok(response);
                         }
                     }
                     //Probably captcha validation
                     Logger.warn("Something went very wrong");
-                    String response = helperUC.prepareJsonResponse(new JFullFormSubmit(errorCodesAfterValidation, captchaError));
+                    String response = helperUC.prepareJsonResponse(new BookingFormErrors(errorCodesAfterValidation, captchaError));
                     return badRequest(response);
                 }
             }
         } catch (SQLException e) {
-            Logger.debug("SQLException : ", e);
+            Logger.debug("SQLException : {}", e);
             return badRequest(Json.toJson(e.getErrorCode()));
         }
     }
@@ -87,15 +89,15 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
     /*
     Method which handles writing to DB, dynamically parsing length of input and etc
      */
-    private PreparedStatement writeToDatabase(List<String> nodeNameList, PreparedStatement ps, HashMap hashMap, Connection conn) {
+    private PreparedStatement prepareDataForWritingToDB(List<String> nodeNameList, PreparedStatement ps, HashMap hashMap, Connection conn) {
 
         try {
             this.dbColumnSize = new HashMap<>();
-            getMaxSize(conn);
+            getMaxSizeForEachCol(conn);
             int i = 0;
             for (String item : nodeNameList) {
                 i++;
-                ps.setString(i, setMaxColTypeLen(String.valueOf(hashMap.get(item)), getColumnSize(item)));
+                ps.setString(i, setMaxSizeForEachCol(String.valueOf(hashMap.get(item)), getColumnSize(item)));
             }
         } catch (SQLException e) {
             Logger.error("Stuff went very wrong on writeToDb: ", e);
@@ -106,7 +108,7 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
     /*
     Method for making sure that data fits into column of a table in the DB
      */
-    private String setMaxColTypeLen(String toBeTrimmed, int maxSize) {
+    private String setMaxSizeForEachCol(String toBeTrimmed, int maxSize) {
         return toBeTrimmed.substring(0, Math.min(toBeTrimmed.length(), maxSize));
     }
 
@@ -120,7 +122,7 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
     /*
     Fetches table columns information, such as name, length and prepares for further usage.
      */
-    private void getMaxSize(Connection connection) throws SQLException {
+    private void getMaxSizeForEachCol(Connection connection) throws SQLException {
         HashMap<String, String> tableColumnDataMap = new HashMap<>();
 
         //to add as env var/hide
@@ -153,4 +155,6 @@ public class FullForm extends Controller implements WSBodyReadables, WSBodyWrita
         }
         return "";
     }
+
+
 }

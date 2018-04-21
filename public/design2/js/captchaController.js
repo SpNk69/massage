@@ -8,19 +8,13 @@ app.captchaController = function ($scope, vcRecaptchaService) {
     };
     $scope.setResponse = function (response) {
         console.info('Response available');
-
         $scope.response = response;
-        console.log(response)
-        console.log($scope.widgetId)
     };
     $scope.setWidgetId = function (widgetId, langMy) {
 
         vcRecaptchaService.reload(widgetId);
-
         vcRecaptchaService.useLang(widgetId, langMy);
-
         console.info('Created widget ID: %s', widgetId);
-
         $scope.widgetId = widgetId;
     };
 
@@ -29,12 +23,7 @@ app.captchaController = function ($scope, vcRecaptchaService) {
 
         console.info('Captcha expired. Resetting response object');
         vcRecaptchaService.reload(widget);
-
         vcRecaptchaService.useLang(widget, langMy);
-
-        console.info('Created widget AFTER CBEXPIRATION ID: %s', widget);
-
-        // $scope.setWidgetId(widget,langMy);
     };
 };
 

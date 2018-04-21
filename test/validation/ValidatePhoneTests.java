@@ -3,6 +3,7 @@ package validation;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.Test;
 import play.libs.Json;
+import validation.ValidationUtility;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,9 +21,10 @@ public class ValidatePhoneTests {
     public void  validPhone(){
         assertEquals("",validatePhone("+37061805651"));
         assertEquals("",validatePhone("+41126511231"));
-        assertEquals("",validatePhone("861218755"));
+        assertEquals("",validatePhone("861218 755"));
         assertEquals("",validatePhone("+46(0)7679557"));
         assertEquals("",validatePhone("+0767-679557"));
+        assertEquals("",validatePhone("+0767–679557"));
     }
 
     @Test
@@ -34,7 +36,7 @@ public class ValidatePhoneTests {
     @Test
     public void invalidPhoneFormat(){
         assertEquals("phoneFormat",validatePhone("+37061218665a"));
-        assertEquals("phoneFormat",validatePhone("@#@#$"));
+        assertEquals("phoneFormat",validatePhone("@#@#$aa!!!!"));
     }
 
 

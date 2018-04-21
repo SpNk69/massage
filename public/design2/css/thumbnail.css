@@ -1,5 +1,5 @@
 .provideBorder {
-    border: 1px solid #81a2be;
+    border: 1px solid #1b51be;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -20,7 +20,13 @@
 
 .tc2 {
     text-align: center;
+    font-weight:600;
 }
+
+.jeezus{
+    position:relative;
+}
+
 
 .tc3 {
     text-align: center;
@@ -95,8 +101,11 @@
 }
 
 .sizeLimit {
-    max-width: 242px;
-    max-height: 200px;
+    max-width: 260px;
+    max-height: 240px;
+    -webkit-border-radius: 75%;
+    -moz-border-radius: 75%;
+    border-radius: 75%;
 }
 
 .list-content {
@@ -109,6 +118,12 @@
 
 .list-content p {
     flex: 1 0 auto;
+}
+
+
+.text-success1{
+    background-color:red;
+    color:white;
 }
 
 

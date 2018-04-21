@@ -4,8 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jsonthings.MassageInfo;
-import jsonthings.JRootKeysToGetArrays;
-import jsonthings.JTopRootList;
+import jsonthings.JsonDataArrayFromBeToFe;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -23,24 +22,25 @@ public class JsonTest {
         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
 
-        JTopRootList rootList = new JTopRootList();
-        JRootKeysToGetArrays superRoot = new JRootKeysToGetArrays();
+        JsonDataArrayFromBeToFe rootList = new JsonDataArrayFromBeToFe();
+//        JRootKeysToGetArrays superRoot = new JRootKeysToGetArrays();
 
 
-        rootList.add(new MassageInfo("Massage1",12.0,50));
-
-
-
-        superRoot.setMassageInfo(rootList);
+        rootList.add(new MassageInfo(1,"a","50", "","","",""));
+        rootList.add(new MassageInfo(1,"a","50", "","","",""));
 
 
 
-        String out = objectMapper.writeValueAsString(superRoot);
+//        superRoot.setMassageInfo(rootList);
+
+
+
+        String out = objectMapper.writeValueAsString(rootList);
 
         System.out.println(out);
 
 
-        JRootKeysToGetArrays in = objectMapper.readValue(out, JRootKeysToGetArrays.class);
+        JsonDataArrayFromBeToFe in = objectMapper.readValue(out, JsonDataArrayFromBeToFe.class);
 
 
         System.out.println("STUFF -> " + in);

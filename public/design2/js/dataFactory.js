@@ -1,4 +1,4 @@
-var gg = angular.module('myTestApp2', []); //ngMessages
+var gg = angular.module('dataFactoryApp', []); //ngMessages
 
 gg.factory('myDataFactory', function () {
 
@@ -159,7 +159,8 @@ gg.factory('myDataFactory', function () {
                     "sepWaist": "Juosmens – sėdmenų – kojų masažas",
                     "sepPar": "Atskirų kūno dalių masažai",
                     "labelMore": "Daugiau",
-                    "labelLess": "Mažiau"
+                    "labelLess": "Mažiau",
+                    "buttonReserve": "Rezervuoti"
                 },
                 "de": {
                     "limphoBody": "Manuelle Lymphdrainage",
@@ -177,7 +178,9 @@ gg.factory('myDataFactory', function () {
                     "sepWaist": "Lendenwirbel – Gesäß – Beinmassage",
                     "sepPar": "Teilkörpermassage",
                     "labelMore": "Mehr",
-                    "labelLess": "Weniger"
+                    "labelLess": "Weniger",
+                    "buttonReserve": "Reservieren"
+
                 },
                 "ru": {
                     "limphoBody": "Лимфодренажный массаж тела",
@@ -195,7 +198,9 @@ gg.factory('myDataFactory', function () {
                     "sepWaist": "Поясницы – Ягодицы – Ног Массаж",
                     "sepPar": "Массаж отдельнных частей тело",
                     "labelMore": "Больше",
-                    "labelLess": "Меньше"
+                    "labelLess": "Меньше",
+                    "buttonReserve": "Резервировать"
+
                 }
             };
         },
@@ -606,7 +611,8 @@ gg.factory('myDataFactory', function () {
         getContactFormErrors: function () {
             return {
                 "lt": {
-                    "name": "Neįvestas vardas",
+                    "nameLength": "Vardas turi būti tarp 2 ir 100 simbolių",
+                    "nameFormat": "Vardas negali turėti skaičių bei specialių simbolių",
                     "email": "Neįvestas elektroninis paštas",
                     "emailBadFormat": "Neteisingas elektroninio pašto adresas",
                     "message": "Neįvesta žinutė",
@@ -652,72 +658,74 @@ gg.factory('myDataFactory', function () {
             }
         },
 
-        getFullFormBackendErrorMessages: function () {
+        getFFBEErrorMessages: function () {
             return {
                 "lt": {
                     "nameFormat": "Vardas negali turėti skaičių bei specialių simbolių",
-                    "nameLength": "Vardas negali būti tuščias arba ilgesnis nei 100 simbolių",
+                    "nameLength": "Vardo ilgis turi būti nuo 2 iki 100 simbolių",
                     "surnameFormat": "Pavardė negali turėti skaičių bei specialių simbolių",
-                    "surnameLength": "Pavardė negali būti tuščia arba ilgesnė nei 100 simbolių",
-                    "emailFormat": "Pasitikrinkite ar teisingai įvedėte elektroninio pašto adresą",
-                    "emailLength": "Elektroninis paštas negali viršyti 100 simbolių",
+                    "surnameLength": "Pavardės ilgis turi būti tarp nuo 2 iki 100 simbolių",
+                    "emailFormat": "Neteisingas elektroninio pašto adreso formatas",
+                    "emailLength": "Elektroninio pašto adresas negali būti tuščias arba ilgesnis nei 100 simbolių",
                     "phoneFormat": "Neteisingai įvestas telefono numeris",
-                    "phoneLength": "Telefono numeris negali būti ilgesnis nei 20 simbolių",
-                    "massageFormat": "Shit happened1",
-                    "massageLength": "Shit happened2",
-                    "massageOptionFormat": "Shit happened3",
-                    "massageOptionLength": "Shit happened4",
-                    "dateFormat": "Neteisingas datos formatas",
-                    "dateLength": "Shit happened5",
-                    "timeFormat": "Neteisingas laiko formatas",
-                    "timeLength": "Shit happened5",
+                    "phoneLength": "Telefono numeris turi būti nuo 9 iki 20 simbolių",
+                    "massageFormat": "xxx1",
+                    "massageLength": "Pasirinkite masažą",
+                    "massageOptionFormat": "Pirmiausia pasirinkite masažą",
+                    "massageOptionLength": "Pasirinkite masažo variantą",
+                    "dateFormat": "Pasirinkite kitą datą",
+                    "dateLength": "Pasirinkite datą",
+                    "timeFormat": "Pirmiausia pasirinkite datą",
+                    "timeLength": "Pasirinkite laiką",
                     "messageLength": "Žinutė negali viršyti 1000 simbolių",
-                    "messageFormat": "Shit happened6",
-                    "captchaFormat": "Išspręskite užduotį, kad patvirtintumėte, jog nesate robotas"
+                    "messageFormat": "xxx5",
+                    "captchaFormat": "Patvirtinkite, kad esate ne robotas",
+                    "slots": "Atsiprašome, bet pasirinktai datai vietų nebėra. Pasirinkite kitą datą"
                 },
                 "de": {
-                    "nameFormat": "blah blah",
-                    "nameLength": "xxx",
-                    "surnameFormat": "xxx",
-                    "surnameLength": "xxx",
-                    "emailFormat": "xxx",
-                    "emailLength": "xxx",
-                    "phoneFormat": "xxx",
-                    "phoneLength": "xxx",
+                    "nameFormat": "Der Name darf keine Zahlen und Sonderzeichen enthalten",
+                    "nameLength": "Die Länge des Namens muss zwischen 2 und 100 Zeichen betragen",
+                    "surnameFormat": "Der Nachname darf keine Zahlen und Sonderzeichen enthalten",
+                    "surnameLength": "Der Nachname muss zwischen 2 und 100 Zeichen lang sein",
+                    "emailFormat": "Ungültiges E-Mail-Adressformat",
+                    "emailLength": "Die E-Mail-Adresse darf nicht leer oder länger als 100 Zeichen sein",
+                    "phoneFormat": "Ungültige Telefonnummer",
+                    "phoneLength": "Die Telefonnummer muss zwischen 9 und 20 Zeichen lang sein",
                     "massageFormat": "xxx",
-                    "massageLength": "xxx",
-                    "massageOptionFormat": "xxx",
-                    "massageOptionLength": "xxx",
-                    "dateFormat": "xxx",
-                    "dateLength": "xxx",
-                    "timeFormat": "xxx",
-                    "timeLength": "xxx",
-                    "messageLength": "xxx",
+                    "massageLength": "Wählen Sie eine Massage",
+                    "massageOptionFormat": "Wählen Sie zuerst eine Massage",
+                    "massageOptionLength": "Wählen Sie eine Massageoption",
+                    "dateFormat": "Wählen Sie ein anderes Datum",
+                    "dateLength": "Wählen Sie ein Datum aus",
+                    "timeFormat": "Wählen Sie zuerst ein Datum aus",
+                    "timeLength": "Wähle eine Zeit aus",
+                    "messageLength": "Die Nachricht darf nicht länger als 1000 Zeichen sein",
                     "messageFormat": "xxx",
-                    "captchaFormat": "xxx"
-
+                    "captchaFormat": "Bestätigen Sie, dass Sie kein Roboter sind",
+                    "slots": "Entschuldigung, aber für das ausgewählte Datum sind keine weiteren Standorte verfügbar. Wählen Sie ein anderes Datum"
 
                 },
                 "ru": {
-                    "nameFormat": "blah blah",
-                    "nameLength": "xxx",
-                    "surnameFormat": "xxx",
-                    "surnameLength": "xxx",
-                    "emailFormat": "xxx",
-                    "emailLength": "xxx",
-                    "phoneFormat": "xxx",
-                    "phoneLength": "xxx",
+                    "nameFormat": "Имя не может содержать числа и специальные символы",
+                    "nameLength": "Длина имени должна быть от 2 до 100 символов",
+                    "surnameFormat": "Фамилия не может содержать числа и специальные символы",
+                    "surnameLength": "Фамилия должна быть от 2 до 100 символов",
+                    "emailFormat": "Недопустимый формат адреса электронной почты",
+                    "emailLength": "Адрес электронной почты не может быть пустым или длиннее 100 символов",
+                    "phoneFormat": "Недопустимый номер телефона",
+                    "phoneLength": "Номер телефона должен быть от 9 до 20 символов.",
                     "massageFormat": "xxx",
-                    "massageLength": "xxx",
-                    "massageOptionFormat": "xxx",
-                    "massageOptionLength": "xxx",
-                    "dateFormat": "xxx",
-                    "dateLength": "xxx",
-                    "timeFormat": "xxx",
-                    "timeLength": "xxx",
-                    "messageLength": "xxx",
+                    "massageLength": "Выберите массаж",
+                    "massageOptionFormat": "Сначала выберите массаж",
+                    "massageOptionLength": "Выберите вариант массажа",
+                    "dateFormat": "Выберите другую дату",
+                    "dateLength": "Выберите дату",
+                    "timeFormat": "Сначала выберите дату",
+                    "timeLength": "Выберите время",
+                    "messageLength": "Сообщение не может превышать 1000 символов",
                     "messageFormat": "xxx",
-                    "captchaFormat": "xxx"
+                    "captchaFormat": "Потвердите что вы не робот",
+                    "slots": "Извините, но мест для выбранной даты больше нет. Выберите другую дату"
 
 
                 }
@@ -727,34 +735,32 @@ gg.factory('myDataFactory', function () {
             return {
                 "lt": {
                     "nameFormat": "Vardas negali turėti skaičių bei specialių simbolių",
-                    "nameLength": "Vardas negali būti tuščias arba ilgesnis nei 100 simbolių",
-                    "emailFormat": "Pasitikrinkite ar teisingai įvedėte elektroninio pašto adresą",
-                    "emailLength": "Elektroninis paštas negali viršyti 100 simbolių",
+                    "nameLength": "Vardo ilgis turi būti nuo 2 iki 100 simbolių",
+                    "emailFormat": "Neteisingas elektroninio pašto adreso formatas",
+                    "emailLength": "Elektroninio pašto adresas negali būti tuščias arba ilgesnis nei 100 simbolių",
                     "messageLength": "Žinutė negali viršyti 1000 simbolių",
-                    "messageFormat": "Shit happened6",
-                    "captchaFormat": "Išspręskite užduotį, kad patvirtintumėte, jog nesate robotas"
+                    "messageFormat": "xxx5",
+                    "captchaFormat": "Patvirtinkite, kad esate ne robotas"
                 },
                 "de": {
-                    "nameFormat": "blah blah",
-                    "nameLength": "",
-                    "emailFormat": "",
-                    "emailLength": "",
-                    "messageLength": "",
-                    "messageFormat": "",
-                    "captchaFormat": ""
+                    "nameFormat": "Der Name darf keine Zahlen und Sonderzeichen enthalten",
+                    "nameLength": "Die Länge des Namens muss zwischen 2 und 100 Zeichen betragen",
+                    "emailFormat": "Ungültiges E-Mail-Adressformat",
+                    "emailLength": "Die E-Mail-Adresse darf nicht leer oder länger als 100 Zeichen sein",
+                    "messageLength": "Die Nachricht darf nicht länger als 1000 Zeichen sein",
+                    "messageFormat": "xxx",
+                    "captchaFormat": "Bestätigen Sie, dass Sie kein Roboter sind"
 
 
                 },
                 "ru": {
-                    "nameFormat": "blah blah",
-                    "nameLength": "",
-                    "emailFormat": "",
-                    "emailLength": "",
-                    "messageLength": "",
-                    "messageFormat": "",
-                    "captchaFormat": ""
-
-
+                    "nameFormat": "Имя не может содержать числа и специальные символы",
+                    "nameLength": "Длина имени должна быть от 2 до 100 символов",
+                    "emailFormat": "Недопустимый формат адреса электронной почты",
+                    "emailLength": "Адрес электронной почты не может быть пустым или длиннее 100 символов",
+                    "messageLength": "Сообщение не может превышать 1000 символов",
+                    "messageFormat": "xxx",
+                    "captchaFormat": "Потвердите что вы не робот",
                 }
             }
         },

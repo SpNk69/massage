@@ -11,7 +11,7 @@ public class ValidationUtility {
 
 
     public ValidationUtility() {
-        // initialized from another class
+
     }
 
     public String validateName(JsonNode nameNode) {
@@ -20,7 +20,7 @@ public class ValidationUtility {
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(name);
 
-        if (name.length() < 1 || name.length() > 100) {
+        if (name.length() < 2 || name.length() > 100) {
             return "nameLength";
         } else if (m.find()) {
             return "nameFormat";
@@ -35,7 +35,7 @@ public class ValidationUtility {
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(surname);
 
-        if (surname.length() < 1 || surname.length() > 100) {
+        if (surname.length() < 2 || surname.length() > 100) {
             return "surnameLength";
         } else if (m.find()) {
             return "surnameFormat";
@@ -141,7 +141,7 @@ public class ValidationUtility {
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(time);
 
-        if (time.length() < 1 || time.length() > 5) {
+        if (time.length() < 1 || time.length() > 6 || time.equalsIgnoreCase("null")) {
             return "timeLength";
         } else if (!m.find()) {
             return "timeFormat";
@@ -153,12 +153,12 @@ public class ValidationUtility {
     public String validatePhone(JsonNode phoneNode) {
         String phone = phoneNode.asText();
         //To do: add regex for phone numbers
-        String pattern = "[^\\d+\\\\() -]";
+        String pattern = "[^\\d+\\\\() -–]";
 
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(phone);
 
-        if (phone.length() < 1 || phone.length() > 20) {
+        if (phone.length() < 9 || phone.length() > 20) {
             return "phoneLength";
         } else if (m.find()) {
             return "phoneFormat";
@@ -175,7 +175,7 @@ public class ValidationUtility {
 //        Pattern r = Pattern.compile(pattern);
 //        Matcher m = r.matcher(massageOption);
 
-        if (massageOption.length() < 2 || massageOption.length() > 25) {
+        if (massageOption.length() < 2 || massageOption.length() > 25 || massageOption.equalsIgnoreCase("null")) {
             return "massageOptionLength";
 //        } else if (!m.find()) {
 //            return "massageOptionFormat";

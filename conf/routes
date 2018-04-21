@@ -1,29 +1,35 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
-GET     /robots.txt             controllers.Assets.at(path="/public", file="robots.txt")
-GET     /sitemap.xml             controllers.Assets.at(path="/public", file="sitemap.xml")
+GET         /robots.txt                controllers.Assets.at(path="/public", file="robots.txt")
+GET         /sitemap.xml               controllers.Assets.at(path="/public", file="sitemap.xml")
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET         /assets/*file              controllers.Assets.versioned(path="/public", file: Asset)
 
-GET     /           controllers.HomeController.singlePageApplication
+GET         /                          controllers.HomeController.singlePageApplication
 
-GET     /public/*file      controllers.Assets.at(path="/public", file)
+GET         /public/*file              controllers.Assets.at(path="/public", file)
 
 #admin page
-GET    /adminpage              controllers.HomeController.adminPage()
+GET         /adminpage                 controllers.HomeController.adminPage()
 
 #form handling
-POST    /submitFullForm              controllers.FullForm.addBookingToDatabase()
+POST        /submitFullForm            controllers.BookingFormController.addBookingToDatabase()
 #get massages,prices,lengths
-POST    /getMassagesData              controllers.HomeController.getMassagesData()
-GET    /getPrices              controllers.HomeController.getPrices()
+POST        /getMassagesData           controllers.HomeController.getMassagesData()
+GET         /getPrices                 controllers.HomeController.getPrices()
 #fetch data from mysql for admins
-GET    /getAdminClientData              controllers.HomeController.getAdminClientData()
+GET         /getAdminClientData        controllers.HomeController.getAdminClientData()
 
-GET    /toFaceBook    controllers.HomeController.toFaceBook
+GET         /toFaceBook                controllers.HomeController.toFaceBook
 
-POST /sendEmail controllers.ContactUsForm.sendEmail()
+#only once when data model will be ready, to add data
+#GET         /loadData                  controllers.DatabaseController.loadDatabase()
+
+POST        /getTimeSlots              controllers.DatabaseController.getTimeSlots()
+
+POST        /sendEmail                 controllers.ContactUsForm.sendEmail()
+POST        /makeABooking              controllers.DatabaseController.makeABooking()
 
 
