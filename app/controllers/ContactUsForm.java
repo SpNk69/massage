@@ -18,32 +18,26 @@ import java.util.Map;
 public class ContactUsForm extends Controller implements WSBodyReadables, WSBodyWritables {
 
     private static final String CAPTCHA = "captcha";
-
     private HelperUtilityClass helperUC = new HelperUtilityClass();
+    private ValidationUtility validationUtility = new ValidationUtility();
+
+    public ContactUsForm() {
+        //empty
+    }
+
 
     @Inject
     MailerClient mailerClient;
 
-    private ValidationUtility validationUtility = new ValidationUtility();
-
-
-    public ContactUsForm() {
-
-    }
-
-    //to investigate
-
-//        private final WSClient ws;
-//
-//    @Inject
-//    public ContactUsForm(WSClient ws) {
-//        this.ws = ws;
-//    }
-
-
     @Inject
     WSClient ws1;
 
+    /**
+     * Method for processing the email before sending
+     *
+     * @return response
+     * @throws IOException
+     */
     public Result sendEmail() throws IOException {
         Map<String, String> errorCodesAfterValidation;
         JsonNode json = request().body().asJson();
@@ -77,8 +71,10 @@ public class ContactUsForm extends Controller implements WSBodyReadables, WSBody
         }
     }
 
-    /*
-    Method to send email
+    /**
+     * Method for preparing email for delivery
+     *
+     * @param data - data for email
      */
     private void deliverEmail(Map<String, JsonNode> data) {
         Email readyEmail = new Email().setSubject("Klausimas")
@@ -90,8 +86,11 @@ public class ContactUsForm extends Controller implements WSBodyReadables, WSBody
         mailerClient.send(readyEmail);
     }
 
-    /*
-    Communication towards google API for captcha verification
+    /**
+     * Method for processing response from GoogleAPI for contactUsForm
+     *
+     * @param captcha - captcha response from FE
+     * @return - empty on success, otherwise error - captchaNotSolved
      */
     protected String validateCaptchaCF(JsonNode captcha) {
         String captchaResponse = captcha.asText();

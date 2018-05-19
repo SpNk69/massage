@@ -21,50 +21,57 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class HelperUtilityClass {
 
-    /*
-    Constructor for class initialization
-     */
-    public HelperUtilityClass() {
-        //initialized from another class
-    }
-
     public static final String CAPTCHA_API_URL = getEnvVar("GOOGLE_API");
     public static final String CAPTCHA_SECRET = getEnvVar("CAPTCHA_SECRET_FF");
     protected static final List<String> fullFormNames = Arrays.asList("name", "surname", "email", "phone", "massage", "massageOption", "date", "time", "message");
     protected static final List<String> contactFormNames = Arrays.asList("name", "email", "message");
 
-    /*
-    Initialize object mapper for further usage
+    /**
+     * Constructor for class initialization
      */
+    public HelperUtilityClass() {
+        //initialized from another class
+    }
+
+    /**
+     * Method for serialization and deserialization JSON
+     *
+     * @return JSON data
+     */
+
     public ObjectMapper initializeObjectMapper() {
-        Logger.debug("In initializeObjectMapper");
+
         ObjectMapper objectMapper = new ObjectMapper();
-                Logger.debug("In initializeObjectMapper 2");
-
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-                 Logger.debug("In initializeObjectMapper 3");
-
         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-                 Logger.debug("In initializeObjectMapper 4");
 
         return objectMapper;
     }
 
-    /*
-    Prepare Json response
-         */
+    /**
+     * Wrap JsonResponse
+     *
+     * @param form in this case either bookingForm or contactUs data
+     * @return Serialized JSON
+     * @throws JsonProcessingException
+     */
     public String prepareJsonResponse(Object form) throws JsonProcessingException {
-                Logger.debug("In prepareJsonResponse");
 
         JsonDataArrayFromBeToFe jTopRootList = new JsonDataArrayFromBeToFe();
         jTopRootList.add(form);
+
         return initializeObjectMapper().writeValueAsString(jTopRootList);
     }
 
-    /*
-    Check if form contains any errors.
+
+    /**
+     * Check if form contains any errors
+     *
+     * @param dataFromFieldsAfterValidation Map of form fields to be checked if errors are present
+     * @return true if form contains errors, otherwise false
      */
     public boolean containsErrors(Map<String, String> dataFromFieldsAfterValidation) {
+
         AtomicBoolean value = new AtomicBoolean(false);
         dataFromFieldsAfterValidation.forEach((x, y) -> {
             if (!y.equalsIgnoreCase("")) {
@@ -75,24 +82,33 @@ public class HelperUtilityClass {
         return value.get();
     }
 
-    /*
-    Check if field is valid
+    /**
+     * Method for checking field of the form for validity
+     *
+     * @param value - field to be checked
+     * @return true if valid, false otherwise
      */
     public boolean isValid(String value) {
         return value.equalsIgnoreCase("");
     }
 
-    /*
-    Get variable from the system environment
+    /**
+     * Method to extract environment variables
+     *
+     * @param name - environment variable
+     * @return environment variable for usage
      */
     public static String getEnvVar(String name) {
         return System.getenv(name);
     }
 
-    /*
-    Initiate connection towards DB
+    /**
+     * Method for retrieving connection towards DB
+     *
+     * @return - connection
      */
     public Connection getConnection() {
+
         try {
             return (Connection) DriverManager.getConnection(getEnvVar("DB_URL"), getEnvVar("DB_USER"), getEnvVar("DB_PASS"));
 
@@ -102,7 +118,13 @@ public class HelperUtilityClass {
         return null;
     }
 
-
+    /**
+     * Check captcha validity against Google API
+     *
+     * @param request         - request to be sent towards google API
+     * @param captchaResponse - captcha response from FE to be sent for validation towards google API
+     * @return - true if captcha validated successfully, otherwise false
+     */
     public String getCaptchaResponseFromGoogleAPI(WSRequest request, String captchaResponse) {
         request.addQueryParameter("secret", CAPTCHA_SECRET);
         request.addQueryParameter("response", captchaResponse);
@@ -112,8 +134,11 @@ public class HelperUtilityClass {
         return jsonData.findPath("success").asText();
     }
 
-    /*
-    Select specific table by language from DB
+    /**
+     * Method for fetching specific table from DB according to current language
+     *
+     * @param json - json data with option which table to pick
+     * @return - table
      */
     public String getSpecificQuery(JsonNode json) {
         String table;
@@ -132,6 +157,5 @@ public class HelperUtilityClass {
         }
         return table;
     }
-
 
 }

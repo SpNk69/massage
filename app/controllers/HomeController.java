@@ -32,9 +32,11 @@ public class HomeController extends Controller {
         return ok(calledFromRoutesAdmin.render(""));
     }
 
-
-    /*
-    Display Massages data in admin page
+    /**
+     * Method for fetching data from DB related to Massage data, such as name, code, price and etc.
+     *
+     * @return response with data
+     * @throws JsonProcessingException
      */
     public Result getMassagesData() throws JsonProcessingException {
         JsonNode json = request().body().asJson();
@@ -49,19 +51,23 @@ public class HomeController extends Controller {
                                     data.getString(5), data.getString(6), data.getString(7)));
                         }
                         String response = helperUC.initializeObjectMapper().writeValueAsString(massageList);
+                        Logger.debug("Getting massageData...");
 
                         return ok(response);
                     }
                 }
             }
         } catch (SQLException e) {
-            Logger.debug("GetMassageData went wrong... ", e);
+            Logger.debug("GetMassageData went wrong... {}", e);
             return badRequest("Failed while getting MassagesData");
         }
     }
 
-    /*
-    Display Massages data in admin page
+    /**
+     * Method for fetching massages prices and code
+     *
+     * @return response with data
+     * @throws JsonProcessingException
      */
     public Result getPrices() throws JsonProcessingException {
         String query = HelperUtilityClass.getEnvVar("TABLE_PRICES");
@@ -76,6 +82,8 @@ public class HomeController extends Controller {
                             pricesList.add(new PricesInfo(data.getString(2), data.getString(3), data.getString(4)));
                         }
                         String response = helperUC.initializeObjectMapper().writeValueAsString(pricesList);
+                        Logger.debug("Getting prices for massages...");
+
                         return ok(response);
                     }
                 }
@@ -86,9 +94,11 @@ public class HomeController extends Controller {
         }
     }
 
-
-    /*
-    Display clients in admin page
+    /**
+     * Method for getting clients data for adminPage
+     *
+     * @return - response with data
+     * @throws JsonProcessingException
      */
     public Result getAdminClientData() throws JsonProcessingException {
         String query = HelperUtilityClass.getEnvVar("ADMIN_DATA");
@@ -101,31 +111,29 @@ public class HomeController extends Controller {
                         while (resultSet.next()) {
                             fullFormDataForFE.add(dataFromDB(resultSet, HelperUtilityClass.fullFormNames));
                         }
-                        String out = helperUC.initializeObjectMapper().writeValueAsString(fullFormDataForFE);
-                        Logger.warn("out:" +out);
-                        return ok(out);
+                        String response = helperUC.initializeObjectMapper().writeValueAsString(fullFormDataForFE);
+                        Logger.debug("Getting bookingForm data for adminPage...");
+
+                        return ok(response);
                     }
                 }
             }
         } catch (SQLException e) {
-            Logger.debug("SQL exception while getting admin data...", e);
-            return badRequest("Getting admin client data went wrong");
+            Logger.debug("SQL exception while getting adminData data... {}", e);
+            return badRequest("Getting adminData client data went wrong");
         }
     }
 
-    /*
-    Fetch data from db
-     */
+    // Fetch data from DB for bookingForm
     private Map dataFromDB(ResultSet rs, List<String> list) {
         Map<String, String> map = new HashMap<>();
         for (String item : list) {
             try {
-                map.put(item, rs.getString(item));
+                map.put(item, rs.getString(item).replace("\"", ""));
             } catch (SQLException e) {
                 Logger.debug("ResultSet failed while fetching from DB...", e);
             }
         }
         return map;
     }
-
 }

@@ -11,7 +11,7 @@ GET         /                          controllers.HomeController.singlePageAppl
 
 GET         /public/*file              controllers.Assets.at(path="/public", file)
 
-#admin page
+#adminData page
 GET         /adminpage                 controllers.HomeController.adminPage()
 
 #form handling
@@ -31,5 +31,8 @@ POST        /getTimeSlots              controllers.DatabaseController.getTimeSlo
 
 POST        /sendEmail                 controllers.ContactUsForm.sendEmail()
 POST        /makeABooking              controllers.DatabaseController.makeABooking()
+
+POST        /getAdminDates              controllers.AdminController.getAdminDates()
+POST        /updateAdminTimes              controllers.AdminController.updateAdminTimes()
 
 

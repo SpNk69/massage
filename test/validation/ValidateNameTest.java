@@ -10,13 +10,10 @@ public class ValidateNameTest {
 
     ValidationUtility validationUtility= new ValidationUtility();
 
-
-
     private String validateName(String value){
         JsonNode valueToJson= Json.toJson(value);
         return validationUtility.validateName(valueToJson);
     }
-
 
     @Test
     public void validName(){
@@ -47,6 +44,4 @@ public class ValidateNameTest {
         assertEquals("nameFormat",validateName("222222"));
         assertEquals("nameFormat",validateName("J0hn"));
     }
-
-
 }

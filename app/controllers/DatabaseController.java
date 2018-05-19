@@ -16,15 +16,16 @@ import java.util.Calendar;
 
 public class DatabaseController extends Controller {
 
+    HelperUtilityClass helperUC = new HelperUtilityClass();
 
-
-    HelperUtilityClass helperUtilityClass = new HelperUtilityClass();
-
-
-    /*
-    Method to populate local database so data can be exported and imported to the remote one. Usage -> in production should not be used ever.
+    /**
+     * Method for one-time usage to populate DB with needed data and then can be exported
+     *
+     * @return response
+     * @throws SQLException
+     * @throws ParseException
      */
-    public Result loadDatabase() throws SQLException, ParseException {
+    public Result loadDatabase() throws SQLException {
         final long incrementHour = 1800;
 
         // To Do: add env variables for this one as well
@@ -52,12 +53,15 @@ public class DatabaseController extends Controller {
         return ok("Finished...");
     }
 
-
-    HelperUtilityClass helperUC = new HelperUtilityClass();
-
+    /**
+     * Method for getting available timeSlots according to chosen date
+     *
+     * @return response with data
+     * @throws SQLException
+     * @throws JsonProcessingException
+     */
     public Result getTimeSlots() throws SQLException, JsonProcessingException {
         JsonNode json = request().body().asJson();
-        Logger.warn(json.findPath("date").asText());
 
         String query = "SELECT * FROM heroku_e3d8ce5aa92835f.bookingdata WHERE (date LIKE ? AND status=?)";
 
@@ -69,33 +73,36 @@ public class DatabaseController extends Controller {
                 JsonDataArrayFromBeToFe timeSlots = new JsonDataArrayFromBeToFe();
                 try (ResultSet data = preparedStatement1.executeQuery()) {
 
-                    Logger.debug("Inside getTimeSlotsFromDB");
+                    Logger.debug("Getting time slot(s) for chosen date...");
                     while (data.next()) {
                         timeSlots.add(new TimeSlot(data.getInt(1), data.getString(2), data.getBoolean(3), getTimeFromDate(data.getString(2))));
                     }
-                    Logger.debug("after getTimeSlotsFromDB");
-
                     String response = helperUC.initializeObjectMapper().writeValueAsString(timeSlots);
-                    Logger.warn(response);
 
                     return ok(response);
                 }
             }
         }
-
     }
 
+    /**
+     * Method for extracting time from i.e. TimeStamp format
+     *
+     * @param value - TimeStamp to be trimmed to time only
+     * @return
+     */
     private String getTimeFromDate(String value) {
         return String.valueOf(value.split(" ")[1].subSequence(0, 5));
     }
 
-
+    /**
+     * Method to handle a booking slot process.
+     *
+     * @return response with success or fail (ok,badRequest)
+     */
     public Result makeABooking() {
         JsonNode json = request().body().asJson();
         int rowId = json.findPath("id").asInt();
-        // for provoking the throw... while developing
-//        int rowId = 65;
-        Logger.debug("ID: " + rowId);
 
         String ultimateQuery = "UPDATE heroku_e3d8ce5aa92835f.bookingdata SET status= ? WHERE id=? AND status =?";
 
@@ -112,16 +119,14 @@ public class DatabaseController extends Controller {
                     return badRequest("SlotNotAvailable");
                 }
                 Logger.debug("Updating row {} in DB", rowId);
-
             }
             return ok();
 
-
         } catch (SQLException e) {
-            Logger.warn("SQL went to hell {}, {}", e, e.toString());
+            Logger.debug("SQL operation went to hell {}, {}", e, e.toString());
+
             return badRequest("SQLException happened");
         }
-
     }
 }
 

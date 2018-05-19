@@ -7,10 +7,10 @@ import jsonthings.BookingFormErrors;
 import play.Logger;
 import play.libs.Json;
 import play.libs.ws.*;
-import play.mvc.Action;
 import play.mvc.Controller;
 import play.mvc.Result;
 import validation.ValidationUtility;
+
 import javax.inject.Inject;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -37,8 +37,11 @@ public class BookingFormController extends Controller implements WSBodyReadables
         this.ws = ws;
     }
 
-    /*
-    Method which handles validation of data and writes to DB
+    /**
+     * Method which handles validation of bookingForm and writing to database on success
+     *
+     * @return response - success or fail (with options)
+     * @throws JsonProcessingException
      */
     public Result addBookingToDatabase() throws JsonProcessingException {
         helperUC.initializeObjectMapper();
@@ -86,8 +89,15 @@ public class BookingFormController extends Controller implements WSBodyReadables
         }
     }
 
-    /*
-    Method which handles writing to DB, dynamically parsing length of input and etc
+
+    /**
+     * Method for handle writing to the DB, dynamically parsing length of input according to the size of the column
+     *
+     * @param nodeNameList - List of form fields
+     * @param ps           - preparedStatement
+     * @param hashMap      - actual data from the form to be written to the DB
+     * @param conn         - DB Connection
+     * @return - a ready preparedStatement
      */
     private PreparedStatement prepareDataForWritingToDB(List<String> nodeNameList, PreparedStatement ps, HashMap hashMap, Connection conn) {
 
@@ -105,27 +115,36 @@ public class BookingFormController extends Controller implements WSBodyReadables
         return ps;
     }
 
-    /*
-    Method for making sure that data fits into column of a table in the DB
+    /**
+     * Method for limiting the length of the i.e. String to be written to DB specific column
+     *
+     * @param toBeTrimmed - input data
+     * @param maxSize     - maximum length allowed for specific DB column
+     * @return - trimmed input
      */
     private String setMaxSizeForEachCol(String toBeTrimmed, int maxSize) {
         return toBeTrimmed.substring(0, Math.min(toBeTrimmed.length(), maxSize));
     }
 
-    /*
-    Fetches specific column size of a table from DB
+    /**
+     * Method for fetching the max size of the specific column in a table
+     *
+     * @param columnName - column name in the table
+     * @return - size
      */
     private int getColumnSize(String columnName) {
         return Integer.valueOf(this.dbColumnSize.get(columnName));
     }
 
-    /*
-    Fetches table columns information, such as name, length and prepares for further usage.
+    /**
+     * Method for fetching table columns information, such as name, length and prepares for further usage.
+     *
+     * @param connection - DB connection
+     * @throws SQLException
      */
     private void getMaxSizeForEachCol(Connection connection) throws SQLException {
         HashMap<String, String> tableColumnDataMap = new HashMap<>();
 
-        //to add as env var/hide
         String query = HelperUtilityClass.getEnvVar("FIELDS_FULLFORM");
         try (PreparedStatement ps = connection.prepareStatement(query)) {
             try (ResultSet rs = ps.executeQuery()) {
@@ -142,8 +161,12 @@ public class BookingFormController extends Controller implements WSBodyReadables
         }
     }
 
-    /*
-    Communication towards google API for captcha verification
+
+    /**
+     * Method for processing response from GoogleAPI for bookingForm
+     *
+     * @param captcha - captcha response from FE
+     * @return - empty on success, otherwise error - captchaFormat
      */
     protected String validateCaptchaFF(JsonNode captcha) {
         String captchaResponse = captcha.asText();
@@ -155,6 +178,4 @@ public class BookingFormController extends Controller implements WSBodyReadables
         }
         return "";
     }
-
-
 }
