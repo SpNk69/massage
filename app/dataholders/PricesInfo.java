@@ -1,4 +1,4 @@
-package jsonthings;
+package dataholders;
 
 public class PricesInfo {
 

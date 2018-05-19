@@ -1,7 +1,7 @@
 package controllers;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import jsonthings.ContactFormErrors;
+import dataholders.ContactFormErrors;
 import play.Logger;
 import play.libs.mailer.Email;
 import play.libs.mailer.MailerClient;

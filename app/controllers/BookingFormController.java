@@ -3,7 +3,7 @@ package controllers;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.mysql.jdbc.Connection;
-import jsonthings.BookingFormErrors;
+import dataholders.BookingFormErrors;
 import play.Logger;
 import play.libs.Json;
 import play.libs.ws.*;

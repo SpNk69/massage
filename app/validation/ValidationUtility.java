@@ -141,7 +141,7 @@ public class ValidationUtility {
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(time);
 
-        if (time.length() < 1 || time.length() > 6 || time.equalsIgnoreCase("null")) {
+        if (time.length() < 1 || time.length() != 5 || time.equalsIgnoreCase("null")) {
             return "timeLength";
         } else if (!m.find()) {
             return "timeFormat";
@@ -153,7 +153,7 @@ public class ValidationUtility {
     public String validatePhone(JsonNode phoneNode) {
         String phone = phoneNode.asText();
         //To do: add regex for phone numbers
-        String pattern = "[^\\d+\\\\() -–]";
+        String pattern = "[^\\d+\\\\() –-]";
 
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(phone);
@@ -170,15 +170,15 @@ public class ValidationUtility {
     //TO DO: Apply/Fix regex
     public String validateMassageOption(JsonNode massageOptionNode) {
         String massageOption = massageOptionNode.asText();
-//        String pattern = "^\\d{2,30}$";
+        String pattern = "[^a-zA-Z0-9– -]+";
 
-//        Pattern r = Pattern.compile(pattern);
-//        Matcher m = r.matcher(massageOption);
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(massageOption);
 
         if (massageOption.length() < 2 || massageOption.length() > 25 || massageOption.equalsIgnoreCase("null")) {
             return "massageOptionLength";
-//        } else if (!m.find()) {
-//            return "massageOptionFormat";
+        } else if (m.find()) {
+            return "massageOptionFormat";
         }
         return "";
     }

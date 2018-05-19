@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mysql.jdbc.Connection;
-import jsonthings.JsonDataArrayFromBeToFe;
+import dataholders.JsonDataArrayFromBeToFe;
 import play.Logger;
 import play.libs.ws.WSRequest;
 import play.libs.ws.WSResponse;

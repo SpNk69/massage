@@ -1,4 +1,4 @@
-package jsonthings;
+package dataholders;
 
 import java.util.Map;
 

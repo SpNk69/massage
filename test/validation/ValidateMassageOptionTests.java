@@ -20,19 +20,22 @@ public class ValidateMassageOptionTests {
     public void validMassageOption(){
         assertEquals("",validateMassageOption("120"));
         assertEquals("",validateMassageOption("60"));
+        assertEquals("",validateMassageOption("100min - 220CHF"));
+        assertEquals("",validateMassageOption("100min – 220CHF"));
+        assertEquals("",validateMassageOption("100min – 220CHF"));
     }
 
     @Test
     public void invalidMassageOptionLength(){
         assertEquals("massageOptionLength",validateMassageOption("1"));
-        assertEquals("massageOptionLength",validateMassageOption("1000"));
+        assertEquals("massageOptionLength",validateMassageOption("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
     }
 
     @Test
     public void invalidMassageOptionFormat(){
         assertEquals("massageOptionFormat",validateMassageOption("@#@"));
-        assertEquals("massageOptionFormat",validateMassageOption("Lab"));
-        assertEquals("massageOptionFormat",validateMassageOption("ąčę"));
+        assertEquals("massageOptionFormat",validateMassageOption("laba!"));
+        assertEquals("massageOptionFormat",validateMassageOption("labas 120- 220chf#"));
     }
 
 

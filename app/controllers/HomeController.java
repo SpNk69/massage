@@ -3,14 +3,12 @@ package controllers;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.mysql.jdbc.Connection;
-import jsonthings.*;
+import dataholders.*;
 import play.Logger;
-import play.db.Database;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.*;
 
-import javax.inject.Inject;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.List;

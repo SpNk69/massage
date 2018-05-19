@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: 
+X-Permitted-Cross-Domain-Policies: master-only
+Date: Sat, 05 May 2018 10:14:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 43732
+

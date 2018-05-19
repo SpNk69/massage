@@ -3,8 +3,8 @@ package controllers;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jsonthings.MassageInfo;
-import jsonthings.JsonDataArrayFromBeToFe;
+import dataholders.MassageInfo;
+import dataholders.JsonDataArrayFromBeToFe;
 import org.junit.Test;
 
 import java.io.IOException;

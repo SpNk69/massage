@@ -1,4 +1,4 @@
-package jsonthings;
+package dataholders;
 
 /**
  * Created by alex on 2017-12-19.
