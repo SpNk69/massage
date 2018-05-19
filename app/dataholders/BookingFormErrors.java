@@ -1,5 +1,7 @@
 package dataholders;
 
+import common.Constants;
+
 import java.util.Map;
 
 /**
@@ -19,15 +21,15 @@ public class BookingFormErrors {
     private String captcha;
 
     public BookingFormErrors(Map<String, String> params, String captcha) {
-        this.name = params.get("name");
-        this.surname = params.get("surname");
-        this.email = params.get("email");
-        this.phone = params.get("phone");
-        this.massage = params.get("massage");
-        this.massageOption = params.get("massageOption");
-        this.date = params.get("date");
-        this.time = params.get("time");
-        this.message = params.get("message");
+        this.name = params.get(Constants.NAME);
+        this.surname = params.get(Constants.SURNAME);
+        this.email = params.get(Constants.EMAIL);
+        this.phone = params.get(Constants.PHONE);
+        this.massage = params.get(Constants.MASSAGE);
+        this.massageOption = params.get(Constants.MASSAGE_OPTION);
+        this.date = params.get(Constants.DATE);
+        this.time = params.get(Constants.TIME);
+        this.message = params.get(Constants.MESSAGE);
         this.captcha = captcha;
     }
 
@@ -35,80 +37,41 @@ public class BookingFormErrors {
         return captcha;
     }
 
-    public void setCaptcha(String captcha) {
-        this.captcha = captcha;
-    }
-
     public String getMassage() {
         return massage;
-    }
-
-    public void setMassage(String massage) {
-        this.massage = massage;
     }
 
     public String getMassageOption() {
         return massageOption;
     }
 
-    public void setMassageOption(String massageOption) {
-        this.massageOption = massageOption;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getSurname() {
         return surname;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
     public String getEmail() {
         return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
     public String getDate() {
         return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
     }
 
     public String getTime() {
         return time;
     }
 
-    public void setTime(String time) {
-        this.time = time;
-    }
-
     public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
 }

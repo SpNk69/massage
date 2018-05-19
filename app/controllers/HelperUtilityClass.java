@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mysql.jdbc.Connection;
+import common.Constants;
 import dataholders.JsonDataArrayFromBeToFe;
 import play.Logger;
 import play.libs.ws.WSRequest;
@@ -21,10 +22,11 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class HelperUtilityClass {
 
-    public static final String CAPTCHA_API_URL = getEnvVar("GOOGLE_API");
-    public static final String CAPTCHA_SECRET = getEnvVar("CAPTCHA_SECRET_FF");
-    protected static final List<String> fullFormNames = Arrays.asList("name", "surname", "email", "phone", "massage", "massageOption", "date", "time", "message");
-    protected static final List<String> contactFormNames = Arrays.asList("name", "email", "message");
+    protected static final String CAPTCHA_API_URL = getEnvVar("GOOGLE_API");
+    protected static final String CAPTCHA_SECRET = getEnvVar("CAPTCHA_SECRET_FF");
+    protected static final List<String> fullFormNames = Arrays.asList(Constants.NAME, Constants.SURNAME, Constants.EMAIL,
+            Constants.PHONE, Constants.MASSAGE, Constants.MASSAGE_OPTION, Constants.DATE, Constants.TIME, Constants.MESSAGE);
+    protected static final List<String> contactFormNames = Arrays.asList(Constants.NAME, Constants.EMAIL, Constants.MESSAGE);
 
     /**
      * Constructor for class initialization

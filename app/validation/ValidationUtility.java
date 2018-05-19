@@ -1,6 +1,7 @@
 package validation;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import common.Constants;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +9,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidationUtility {
-
 
     public ValidationUtility() {
 
@@ -60,11 +60,10 @@ public class ValidationUtility {
     }
 
 
+    //TODO: Validate against malicious but in non blocking way;)
     public String validateMessage(JsonNode messageNode) {
 
-        //check messagefield for something
         String message = messageNode.asText();
-        //make regex from malicous crap
         String pattern = "";
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(message);
@@ -72,45 +71,32 @@ public class ValidationUtility {
         if (message.length() < 1 || message.length() > 1000) {
             return "messageLength";
         }
-//         else if (m.find()) {
-//            //do something here!!
-//            return "messageFormat";
-//
-//        }
-
         return "";
     }
 
 
+    //TODO: Validate against malicious but in non blocking way;)
     public String validateMessageFullForm(JsonNode messageNode) {
 
-        // TO DO:
-        //check messagefield for something or encode
         String message = messageNode.asText();
-        //make regex from malicous crap
         String pattern = "";
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(message);
 
         if (message.length() > 1000) {
             return "messageLength";
-        } else if (m.find()) {
-            //do something here!!
-
         }
-
         return "";
     }
 
 
+    //TODO: Minimize regex patterns
     public String validateDate(JsonNode dateNode) {
+
         String date = dateNode.asText();
         String pattern = "^\\d{4}-\\d{2}-\\d{2}$";
-//        (?s)^(?!\d{4}-\d{2}-\d{2}$).* -opposite
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(date);
-
-
         //parse month
         String pattern2 = "(?<=-)(.*0[1-9]|1[0-2])(?=-)";
         Pattern r2 = Pattern.compile(pattern2);
@@ -129,16 +115,13 @@ public class ValidationUtility {
             return "dateFormat";
         } else if (!m3.find()) {
             return "dateFormat";
-
         }
         return "";
     }
 
-
     public String validateTime(JsonNode timeNode) {
         String time = timeNode.asText();
         String pattern = "(?:[01]\\d|2[0123]):(?:[012345]\\d)";
-//        (?s)^(?!\d{4}-\d{2}-\d{2}$).* -opposite
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(time);
 
@@ -153,7 +136,6 @@ public class ValidationUtility {
 
     public String validatePhone(JsonNode phoneNode) {
         String phone = phoneNode.asText();
-        //To do: add regex for phone numbers
         String pattern = "[^\\d+\\\\() –-]";
 
         Pattern r = Pattern.compile(pattern);
@@ -168,7 +150,6 @@ public class ValidationUtility {
     }
 
 
-    //TO DO: Apply/Fix regex
     public String validateMassageOption(JsonNode massageOptionNode) {
         String massageOption = massageOptionNode.asText();
         String pattern = "[^a-zA-Z0-9– -]+";
@@ -200,31 +181,28 @@ public class ValidationUtility {
         return "";
     }
 
+    public Map<String, String> mergedValidationForFF(Map<String, JsonNode> dataMap) {
+        HashMap<String, String> validationResult = new HashMap<>();
 
-    public Map<String, String> mergedValidationForFF(Map<String, JsonNode> hashMap) {
-        HashMap<String, String> hashMap2 = new HashMap<>();
+        validationResult.put(Constants.NAME, validateName(dataMap.get(Constants.NAME)));
+        validationResult.put(Constants.SURNAME, validateSurname(dataMap.get(Constants.SURNAME)));
+        validationResult.put(Constants.EMAIL, validateEmail(dataMap.get(Constants.EMAIL)));
+        validationResult.put(Constants.PHONE, validatePhone(dataMap.get(Constants.PHONE)));
+        validationResult.put(Constants.MASSAGE, validateMassage(dataMap.get(Constants.MASSAGE)));
+        validationResult.put(Constants.MASSAGE_OPTION, validateMassageOption(dataMap.get(Constants.MASSAGE_OPTION)));
+        validationResult.put(Constants.DATE, validateDate(dataMap.get(Constants.DATE)));
+        validationResult.put(Constants.TIME, validateTime(dataMap.get(Constants.TIME)));
+        validationResult.put(Constants.MESSAGE, validateMessageFullForm(dataMap.get(Constants.MESSAGE)));
 
-        hashMap2.put("name", validateName(hashMap.get("name")));
-        hashMap2.put("surname", validateSurname(hashMap.get("surname")));
-        hashMap2.put("email", validateEmail(hashMap.get("email")));
-        hashMap2.put("phone", validatePhone(hashMap.get("phone")));
-        hashMap2.put("massage", validateMassage(hashMap.get("massage")));
-        hashMap2.put("massageOption", validateMassageOption(hashMap.get("massageOption")));
-        hashMap2.put("date", validateDate(hashMap.get("date")));
-        hashMap2.put("time", validateTime(hashMap.get("time")));
-        hashMap2.put("message", validateMessageFullForm(hashMap.get("message")));
-
-        return hashMap2;
+        return validationResult;
     }
 
-    public Map<String, String> mergedValidationForCF(Map<String, JsonNode> hashMap) {
-        HashMap<String, String> hashMap2 = new HashMap<>();
-        hashMap2.put("name", validateName(hashMap.get("name")));
-        hashMap2.put("email", validateEmail(hashMap.get("email")));
-        hashMap2.put("message", validateMessage(hashMap.get("message")));
+    public Map<String, String> mergedValidationForCF(Map<String, JsonNode> dataMap) {
+        HashMap<String, String> validationResult = new HashMap<>();
+        validationResult.put(Constants.NAME, validateName(dataMap.get(Constants.NAME)));
+        validationResult.put(Constants.EMAIL, validateEmail(dataMap.get(Constants.EMAIL)));
+        validationResult.put(Constants.MESSAGE, validateMessage(dataMap.get(Constants.MESSAGE)));
 
-        return hashMap2;
+        return validationResult;
     }
-
-
 }

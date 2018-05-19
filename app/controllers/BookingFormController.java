@@ -51,7 +51,6 @@ public class BookingFormController extends Controller implements WSBodyReadables
         JsonNode captchaNode = json.findPath(CAPTCHA);
         String captchaError;
 
-        Logger.warn("TIME!!!! : " + json.findPath("time"));
         for (String item : HelperUtilityClass.fullFormNames) {
             dataFromFullForm.put(item, json.findPath(item));
         }

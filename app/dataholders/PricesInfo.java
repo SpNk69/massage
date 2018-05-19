@@ -23,5 +23,4 @@ public class PricesInfo {
     public String getTime() {
         return time;
     }
-
 }
