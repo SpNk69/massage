@@ -84,6 +84,7 @@ public class ValidationUtility {
 
     public String validateMessageFullForm(JsonNode messageNode) {
 
+        // TO DO:
         //check messagefield for something or encode
         String message = messageNode.asText();
         //make regex from malicous crap
@@ -136,7 +137,7 @@ public class ValidationUtility {
 
     public String validateTime(JsonNode timeNode) {
         String time = timeNode.asText();
-        String pattern = "^\\d{2}:\\d{2}$";
+        String pattern = "(?:[01]\\d|2[0123]):(?:[012345]\\d)";
 //        (?s)^(?!\d{4}-\d{2}-\d{2}$).* -opposite
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(time);
