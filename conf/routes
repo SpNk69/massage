@@ -15,8 +15,10 @@ GET         /public/*file              controllers.Assets.at(path="/public", fil
 GET         /adminpage                 controllers.HomeController.adminPage()
 
 #form handling
++ nocsrf
 POST        /submitFullForm            controllers.BookingFormController.addBookingToDatabase()
 #get massages,prices,lengths
++ nocsrf
 POST        /getMassagesData           controllers.HomeController.getMassagesData()
 GET         /getPrices                 controllers.HomeController.getPrices()
 #fetch data from mysql for admins
@@ -26,10 +28,11 @@ GET         /toFaceBook                controllers.HomeController.toFaceBook
 
 #only once when data model will be ready, to add data
 #GET         /loadData                  controllers.DatabaseController.loadDatabase()
-
++ nocsrf
 POST        /getTimeSlots              controllers.DatabaseController.getTimeSlots()
-
++ nocsrf
 POST        /sendEmail                 controllers.ContactUsForm.sendEmail()
++ nocsrf
 POST        /makeABooking              controllers.DatabaseController.makeABooking()
 
 POST        /getAdminDates              controllers.AdminController.getAdminDates()
