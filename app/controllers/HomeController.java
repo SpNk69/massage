@@ -18,6 +18,7 @@ public class HomeController extends Controller {
 
     HelperUtilityClass helperUC = new HelperUtilityClass();
 
+
     public Result singlePageApplication() {
         return ok(SPAcalledFromController.render(""));
     }
