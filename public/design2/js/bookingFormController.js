@@ -262,7 +262,10 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
     var nameRegex = /[\d<>!@#$%^&*()_+=?":;\]\[\\\/|–-]/g;
     var emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
 
-    var phoneRegex = /[^\d+\\() –-]/g;
+    var phoneRegex = /[^\d+\\() –-]/g
+
+    var messageRegex = /[<>`]/g;
+
 
     //name
     $scope.$watch('myForm.nameBF.$touched', function (newValue, oldValue) {
@@ -438,6 +441,35 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
             }
         }
     });
+
+
+
+        $scope.$watch('user.message', function (newValue, oldValue) {
+        $scope.statusBF.message = false;
+        $scope.errorsBF.message = "";
+        if (newValue !== oldValue && angular.isDefined(newValue)) {
+            if (newValue.length > 1000) {
+                $scope.errorsBF.message = $scope.data.BFErrorsBE.messageLength;
+                $scope.statusBF.message = true;
+                $scope.applyStyleBF.message = myFF.applyColor("red");
+            }
+            else if (newValue.match(messageRegex)) {
+                $scope.errorsBF.message = $scope.data.BFErrorsBE.messageFormat;
+                $scope.statusBF.message = true;
+                $scope.applyStyleBF.message = myFF.applyColor("red");
+            }
+            else {
+                $scope.applyStyleBF.message = myFF.applyColor("green");
+            }
+        }
+    });
+
+
+
+
+
+
+
 
 
     //captcha

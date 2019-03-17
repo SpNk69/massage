@@ -520,11 +520,13 @@
                         <label class="item item-input labelDiv">{{data.formNames.message}}</label>
                         <textarea class=" col-lg-8 mx-auto text-center bookingForm form-control" placeholder={{data.formPH.message}}
                         ng-model="user.message"
-                        name="textarea" rows="3" cols="30"></textarea>
+                        name="textarea" rows="3" cols="30" ng-style="applyStyleBF.message"></textarea>
                         <br>
+                        <span class="submitError" ng-show="statusBF.message">{{errorsBF.message}}</span>
+
                     </div>
 
-                    <div class="labelDiv ">
+                    <div class="labelDiv">
                         <div class="col-md-9 control-label centerContactUs "
                         vc-recaptcha
                         theme="'light'"

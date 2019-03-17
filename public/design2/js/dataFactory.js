@@ -678,7 +678,7 @@ gg.factory('myDataFactory', function () {
                     "timeFormat": "Pirmiausia pasirinkite datą",
                     "timeLength": "Pasirinkite laiką",
                     "messageLength": "Žinutė negali viršyti 1000 simbolių",
-                    "messageFormat": "xxx5",
+                    "messageFormat": "Prašome nenaudoti tokių simbolių kaip '<>`'",
                     "captchaFormat": "Patvirtinkite, kad esate ne robotas",
                     "slots": "Atsiprašome, bet pasirinktai datai vietų nebėra. Pasirinkite kitą datą"
                 },
@@ -700,7 +700,7 @@ gg.factory('myDataFactory', function () {
                     "timeFormat": "Wählen Sie zuerst ein Datum aus",
                     "timeLength": "Wähle eine Zeit aus",
                     "messageLength": "Die Nachricht darf nicht länger als 1000 Zeichen sein",
-                    "messageFormat": "xxx5",
+                    "messageFormat": "Bitte verwenden Sie nicht die folgenden Symbole '<>`'",
                     "captchaFormat": "Bestätigen Sie, dass Sie kein Roboter sind",
                     "slots": "Entschuldigung, aber für das ausgewählte Datum sind keine weiteren Standorte verfügbar. Wählen Sie ein anderes Datum"
 
@@ -723,7 +723,7 @@ gg.factory('myDataFactory', function () {
                     "timeFormat": "Сначала выберите дату",
                     "timeLength": "Выберите время",
                     "messageLength": "Сообщение не может превышать 1000 символов",
-                    "messageFormat": "xxx5",
+                    "messageFormat": "Пожалуйста, не используйте следующие символы '<>`'",
                     "captchaFormat": "Потвердите что вы не робот",
                     "slots": "Извините, но мест для выбранной даты больше нет. Выберите другую дату"
 
