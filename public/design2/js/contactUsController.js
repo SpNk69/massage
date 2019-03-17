@@ -29,6 +29,7 @@ app.controller('controllerContactUs', ['$scope', 'myDataFactory', 'myFunctionsFa
     // regex
     var nameRegex = /[\d<>!@#$%^&*()_+=?":;\]\[\\\/|–-]/g;
     var emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+    var messageRegex = /[<>`]/g;
 
     //name
     $scope.$watch('form1.nameCF.$touched', function (newValue, oldValue) {
@@ -112,12 +113,12 @@ app.controller('controllerContactUs', ['$scope', 'myDataFactory', 'myFunctionsFa
         $scope.status.message = false;
         $scope.displayErrors.message = "";
         if (newValue !== oldValue && angular.isDefined(newValue)) {
-            if (newValue.length < 2 || newValue.length > 100) {
+            if (newValue.length > 1000) {
                 $scope.displayErrors.message = $scope.data.cfErrorsBE.messageLength;
                 $scope.status.message = true;
                 $scope.applyStyle.myObj3 = myFF.applyColor("red");
             }
-            else if (newValue.match(nameRegex)) {
+            else if (newValue.match(messageRegex)) {
                 $scope.displayErrors.message = $scope.data.cfErrorsBE.messageFormat;
                 $scope.status.message = true;
                 $scope.applyStyle.myObj3 = myFF.applyColor("red");

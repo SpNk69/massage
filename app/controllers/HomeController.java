@@ -23,7 +23,7 @@ public class HomeController extends Controller {
     }
 
     public Result toFaceBook() {
-        return redirect("http://facebook.com");
+        return redirect("https://www.facebook.com/Vida-Massage-Schweiz-644545529337602/?modal=admin_todo_tour");
     }
 
     public Result adminPage() {
