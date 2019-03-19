@@ -7,6 +7,7 @@ import dataholders.*;
 import play.Logger;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.With;
 import views.html.*;
 
 import java.sql.*;
@@ -14,6 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@With(ForceHttps.class)
 public class HomeController extends Controller {
 
     HelperUtilityClass helperUC = new HelperUtilityClass();
