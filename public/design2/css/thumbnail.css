@@ -126,7 +126,40 @@
     color:white;
 }
 
+.testy11 {
+    font-weight: bold;
+    display:block;
+    /*border:1px black solid;*/
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.dzyzus {
+    list-style-type: square;
+    /*border:1px green solid;*/
+    text-align: right;
+
+}
+
+.dzyzus2 {
+      list-style-position: inside;
+    text-align:center
+}
 
 
+.bb1 {
+        /*border:1px black solid;*/
 
+}
+.bb2 {
+        /*border:1px red solid;*/
 
+}
+
+.bb3 {
+    margin-top: 10px;
+}
+.bb4 {
+    margin-top: 5px;
+}

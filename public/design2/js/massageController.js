@@ -12,7 +12,8 @@ app.controller('controllerMassage', ['$scope', 'myDataFactory', 'myFunctionsFact
         $scope.data = {
             massageTitle: myFF.setLanguage(currentLanguage, myDF.getMassagesTitles(), $scope),
             massageBody: myFF.setLanguage(currentLanguage, myDF.getMassageBodyData(), $scope),
-            navBar: myFF.setLanguage(currentLanguage, myDF.getNavBarData(), $scope)
+            navBar: myFF.setLanguage(currentLanguage, myDF.getNavBarData(), $scope),
+            massageBulletPoints: myFF.setLanguage(currentLanguage, myDF.getBulletPoints(), $scope)
         };
     }
 

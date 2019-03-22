@@ -237,30 +237,59 @@
             <hr class="my-4">
             <div class="row   " id="{{massagesId}}">
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
-                    <div class="thumbnail ">
+                    <div class="thumbnail bb1">
                         <img class="tc2 sizeLimit" src='@routes.Assets.at("design2/img/portfolio/thumbnails/limphBody.JPG")'
                         alt="...">
-                        <div class="caption">
-                            <h4 class="tc2 align-self-stretch">{{data.massageTitle.limphoBody}}</h4>
-                            <p class="tc" ng-text-truncate="data.massageBody.limphoBody"
-                            ng-tt-chars-threshold="{{truncateSize}}" ng-tt-more-label="{{data.massageTitle.labelMore}}" ng-tt-less-label="{{data.massageTitle.labelLess}}">
-                                >{{data.massageBody.limphoBody}}</p>
-                            <p></p>
+                        <div class="caption bb2">
+                            <h4 class="tc2 align-self-stretch bb1">{{data.massageTitle.limphoBody}}</h4>
+                            <p class="tc">{{data.massageBody.limphoBody}}</p>
+                            <div>
+                                <span ng-show="readmore" class="testy11 bb4">
+                                    {{data.massageBulletPoints.limphoBodyBulTit1[0]}}</span>
+                                <span ng-show="readmore">  <li class="text-justify dzyzus dzyzus2"
+                                ng-repeat="item in data.massageBulletPoints.limphoBodyBul1">{{item}}
+                                </li> </span>
+                                <span ng-show="readmore" class="testy11 bb4">
+                                    {{data.massageBulletPoints.limphoBodyBulTit1[1]}} </span>
+                                <span ng-show="readmore"><li class="text-justify dzyzus dzyzus2">
+                                    {{data.massageBulletPoints.limphoBodyBul2[0]}} </li> </span>
+                                <span ng-show="readmore"> <p class="tc bb3">{{data.massageBody.limphoBody2}} </p></span>
+                                <div ng-hide="readmore" ng-click="readmore = true" class="btn-link">
+                                    {{data.massageTitle.labelMore}}</div>
+                                <div ng-show="readmore" ng-click="readmore = false" class="btn-link">
+                                    {{data.massageTitle.labelLess}}</div>
+                            </div>
+                            <br>
                             <p><a href="#{{bookit}}" ng-click="pickMassage2(1)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">
                                 {{data.massageTitle.buttonReserve}}</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
-                    <div class="thumbnail  ">
+                    <div class="thumbnail bb1 ">
                         <img class="tc2 sizeLimit" src='@routes.Assets.at("design2/img/portfolio/thumbnails/limphoFace.JPG")'
                         alt="...">
-                        <div class="caption">
-                            <h4 class="tc2 align-self-stretch">{{data.massageTitle.limphoFace}}</h4>
-                            <p class="tc" ng-text-truncate="data.massageBody.limphoFace"
-                            ng-tt-more-label="{{data.massageTitle.labelMore}}" ng-tt-less-label="{{data.massageTitle.labelLess}}"
-                            ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.limphoFace}}</p>
-                            <p></p>
+
+                        <div class="caption bb2">
+                            <h4 class="tc2 align-self-stretch bb1">{{data.massageTitle.limphoFace}}</h4>
+                            <p class="tc">{{data.massageBody.limphoFace}}</p>
+                            <div>
+                                <span ng-show="readmore2" class="testy11 bb4">{{data.massageBulletPoints.limphoFaceBulTit1[0]}}</span>
+                                <span ng-show="readmore2">  <li class="text-justify dzyzus dzyzus2" ng-repeat="item in data.massageBulletPoints.limphoFaceBul1">{{item}}
+                                </li> </span>
+
+                                <span ng-show="readmore2" class="testy11 bb4">{{data.massageBulletPoints.limphoFaceBulTit1[1]}} </span>
+
+                                <span ng-show="readmore2">  <li class="text-justify dzyzus dzyzus2" ng-repeat="item in data.massageBulletPoints.limphoFaceBul2">{{item}}
+                                </li> </span>
+                                <span ng-show="readmore2"> <p class="tc bb3">{{data.massageBody.limphoFace2}} </p></span>
+
+                                <div ng-hide="readmore2" ng-click="readmore2 = true" class="btn-link">
+                                    {{data.massageTitle.labelMore}}</div>
+                                <div ng-show="readmore2" ng-click="readmore2 = false" class="btn-link">
+                                    {{data.massageTitle.labelLess}}</div>
+                            </div>
+                            <br>
                             <p><a href="#{{bookit}}" ng-click="pickMassage2(2)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">
                                 {{data.massageTitle.buttonReserve}}</a></p>
                         </div>
@@ -270,15 +299,31 @@
                     <div class="thumbnail">
                         <img class="tc2 sizeLimit" src='@routes.Assets.at("design2/img/portfolio/thumbnails/stoneMassage.JPG")'
                         alt="...">
-                        <div class="caption">
-                            <h4 class="tc2 align-self-stretch">{{data.massageTitle.stoneHotCold}}</h4>
-                            <p class="tc" ng-text-truncate="data.massageBody.stoneHotCold"
-                            ng-tt-more-label="{{data.massageTitle.labelMore}}" ng-tt-less-label="{{data.massageTitle.labelLess}}"
-                            ng-tt-chars-threshold="{{truncateSize}}">{{data.massageBody.stoneHotCold}}</p>
-                            <p></p>
+                               <div class="caption bb2">
+                            <h4 class="tc2 align-self-stretch bb1">{{data.massageTitle.stoneHotCold}}</h4>
+                            <p class="tc">{{data.massageBody.stoneHotCold}}</p>
+                            <div>
+                                <p ng-show="readmore3" class="tc">{{data.massageBody.stoneHotCold1}}</p>
+                                <span ng-show="readmore3" class="testy11 bb4">{{data.massageBulletPoints.HotColdStoneTit1[0]}}</span>
+                                <span ng-show="readmore3">  <li class="text-justify dzyzus dzyzus2" ng-repeat="item in data.massageBulletPoints.HotColdStoneBul1">{{item}}
+                                </li> </span>
+
+                                <span ng-show="readmore3" class="testy11 bb4">{{data.massageBulletPoints.HotColdStoneTit1[1]}} </span>
+
+                                <span ng-show="readmore3">  <li class="text-justify dzyzus dzyzus2" ng-repeat="item in data.massageBulletPoints.HotColdStoneBul2">{{item}}
+                                </li> </span>
+                                <span ng-show="readmore3"> <p class="tc bb3">{{data.massageBody.stoneHotCold2}} </p></span>
+
+                                <div ng-hide="readmore3" ng-click="readmore3 = true" class="btn-link">
+                                    {{data.massageTitle.labelMore}}</div>
+                                <div ng-show="readmore3" ng-click="readmore3 = false" class="btn-link">
+                                    {{data.massageTitle.labelLess}}</div>
+                            </div>
+                            <br>
                             <p><a href="#{{bookit}}" ng-click="pickMassage2(3)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">
                                 {{data.massageTitle.buttonReserve}}</a></p>
                         </div>
+
                     </div>
                 </div>
                 <br>
@@ -286,16 +331,30 @@
                     <div class="thumbnail ">
                         <img class="tc2 sizeLimit" src='@routes.Assets.at("design2/img/portfolio/thumbnails/classicMassage.jpg")'
                         alt="...">
-                        <div class="caption">
-                            <h4 class="tc2 align-self-stretch">{{data.massageTitle.backSpin}}</h4>
-                            <p class="tc" ng-text-truncate="data.massageBody.backSpin"
-                            ng-tt-more-label="{{data.massageTitle.labelMore}}" ng-tt-less-label="{{data.massageTitle.labelLess}}"
-                            ng-tt-chars-threshold="{{truncateSize}}">
-                                {{data.massageBody.backSpin}}</p>
-                            <p></p>
-                            <p><a href="#{{bookit}}" ng-click="pickMassage2(4)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">
+                                                <div class="caption bb2">
+                            <h4 class="tc2 align-self-stretch bb1">{{data.massageTitle.backSpin}}</h4>
+                            <p class="tc">{{data.massageBody.backSpin}}</p>
+                            <div>
+                                <span ng-show="readmore4">  <li class="text-justify dzyzus dzyzus2" ng-repeat="item in data.massageBulletPoints.backSpinBul1">{{item}}
+                                </li> </span>
+
+                             
+                                <span ng-show="readmore4"> <p class="tc bb3">{{data.massageBody.backSpin2}} </p></span>
+
+                                <div ng-hide="readmore4" ng-click="readmore4 = true" class="btn-link">
+                                    {{data.massageTitle.labelMore}}</div>
+                                <div ng-show="readmore4" ng-click="readmore4 = false" class="btn-link">
+                                    {{data.massageTitle.labelLess}}</div>
+                            </div>
+                            <br>
+                               <p><a href="#{{bookit}}" ng-click="pickMassage2(4)" class="btn btn-primary btn-group-justified js-scroll-trigger" role="button">
                                 {{data.massageTitle.buttonReserve}}</a></p>
                         </div>
+
+
+
+
+
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">

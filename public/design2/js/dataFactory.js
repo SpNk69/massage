@@ -141,12 +141,64 @@ gg.factory('myDataFactory', function () {
                 }
             }
         },
+
+        getBulletPoints: function(){
+            return {
+                "lt": {
+                    "limphoBodyBul1": ["Mažinant kūno svorį;", "Esant kojų patinimams;", "Esant odos suglebimui;", "Po operacijų ir t.t."],
+                    "limphoBodyBulTit1": ["Rekomenduojamas:", "Profilaktikai:"],
+                    "limphoBodyBul2": ["Išsiplėtusių kojų venų."],
+
+                    "limphoFaceBul1": ["Pašalinti iš organizmo nereikalingus skysčius, šlakus, pašalinti patinimus.", "Atsikratyti chroniško nuovargio, įtampos, galvos skausmų, taip pat pakrauti organizmą.", "Pagerinti veido spalvą ir odos būklę: pašalindamas nedidelę įtampą, manualinis limfodrenažas pagerina kraujotaką, todėl oda, gavusi pilnavertį maitinimą, atrodo elastingesnė, gyvesnė ir sveikesnė, be to, išsilygina raukšlės."],
+                    "limphoFaceBulTit1": ["Rankinis limfodrenažas leis per trumpą laiką:", "Veido limfodrenažas suteikia puikių rezultatų prie:"],
+                    "limphoFaceBul2": ["veido pabrinkimo,","išsausėjusios odos,","ankstyvojo senėjimo,","tamsių ratilų ir maišelių po akimis,","sumažėjusio audinių elastingumo,","kovojant su kuperoze."],
+
+                    "HotColdStoneBul1": ["pagerina miegą,","teigiamas poveikis širdies susitraukimų dažniui, kurį sukelia natūrali organizmo jėga, padedanti įveikti ligą, pagreitina srauto procesą."],
+                    "HotColdStoneTit1": ["Taip pat:", "Masažas yra efektyvus esant:"],
+                    "HotColdStoneBul2": ["nugaros ir kaklo skausmams,","teigiamai veikia nervų sistemą,","lėtiniam nuovargiui,","migrenai,","pirštų tirpimui,","šalčio pojūčiui galūnėse ir t.t."],
+
+                    "backSpinBul1": ["prie kompiuterio ar vairuodami automobilį,", "dirbantiems sėdimą ar sunkų fizinį darbą kai visa įtampa susikaupia stuburo dalyje, kaklo ir pečių, juosmens ir sėdmenų srityse, ir dėl to susiformuoja skausmingi raumenų mazgai.", "Šis masažas ypač tinka po treniruočių.","Be to, dėl netaisyklingos stuburo padėties dažnai skauda galvą."],
+                },
+                "de": {
+                    "limphoBodyBul1": ["Verringerung des Körpergewichts;", "Beinschwellung;", "Reduzierte Hautelastizität;", "nach der Operation usw."],
+                    "limphoBodyBulTit1": ["Empfohlen:", "Prophylaxe:"],
+                    "limphoBodyBul2": ["Krampfadern in den Beinen."],
+
+                    "limphoFaceBul1": ["Befreien von chronischer Müdigkeit, Verspannungen, Kopfschmerzen sowie der Belastung des Körpers.","Verbessern Sie die Gesichtsfarbe und den Hautzustand: Durch die Beseitigung von Verspannungen verbessert die manuelle Lymphdrainage die Blutzirkulation.  Die Haut nach der vollwertigen Ernährung elastischer, lebendiger und gesünder aussieht und Falten glättet."],
+                    "limphoFaceBulTit1": ["Manuelle Lymphdrainage gibt für kurze Zeit :", "Die Lymphdrainage des Gesichts liefert hervorragende Ergebnisse bei:"],
+                    "limphoFaceBul2": ["Schwellung des Gesichts,","trockene Haut,","frühes Altern,","dunkle Kreise und Taschen unter den Augen,","reduzierte Gewebeelastizität,","Bekämpfung von Kuperosis."],
+
+                    "HotColdStoneBul1": ["schmerzen im Rücken und Nacken,"],
+                    "HotColdStoneTit1": ["Massage ist wirksam bei:"],
+                    "HotColdStoneBul2": ["eine positive Wirkung auf das Nervensystem","chronische Müdigkeit","Migräne","Taubheit der Finger","Erkältung in den Gliedmaßen usw."],
+
+                    "backSpinBul1": ["am Computer oder beim Autofahren;", "sowie schwere körperliche Arbeit, wenn die ganze Macht in der Wirbelsäule, Nacken konzentriert, Schultern, Hüfte und Gesäß, Schmerzen in den Muskeln verursacht.", "Šis masažas ypač tinka po treniruočių.","Be to, dėl netaisyklingos stuburo padėties dažnai skauda galvą.","Diese Massage eignet sich besonders nach dem Training.","Außerdem verursacht die falsche Position der Wirbelsäule oft Kopfschmerzen."]
+
+                },
+                "ru": {
+                    "limphoBodyBul1": ["Cнижение массы тела;", "Oтечность ног;", "Пониженная упругость кожи;", "После операции и т. Д."],
+                    "limphoBodyBulTit1": ["Рекомендуется", "Профилактика:"],
+                    "limphoBodyBul2": ["Варикозное расширение вен на ногах."],
+
+                    "limphoFaceBul1": ["вывести лишнюю жидкость, шлаки, снять отёки и одутловатость лица.", "снять хроническую усталость, напряжение, подавленность, головные боли, зарядить организм энергией.", "улучшить цвет лица и состояние кожи: снимая малейшие мышечные напряжения, лимфодренаж улучшает кровообращение, получая полноценное питание, кожа выглядит более эластичной, свежей и здоровой, разглаживаются морщины."],
+                    "limphoFaceBulTit1": ["Позволит за короткий срок:", "Лимфодренаж лица обеспечивает отличные результаты при:"],
+                    "limphoFaceBul2": ["отеки лица,","сухости кожи,","раннем старении,","темных кругах и мешках под глазами,","снижение эластичности тканей,","борьбе с купоросом."],
+
+                    "HotColdStoneBul1": ["улучшает сон,","положительно влияет на частоту сердечных сокращений."],
+                    "HotColdStoneTit1": ["А также:", "Массаж эффективен при:"],
+                    "HotColdStoneBul2": ["боль в спине и шее,","положительно влияет на нервную систему,","хронической усталости,","мигрени,","онемение пальцев,","ощущение холода в конечностях и т. д."],
+
+                    "backSpinBul1": ["за компьютером или за рулем автомобиля,", "а также тяжело физически работая, когда все напряжение сосредоточено в позвоночнике, шее и плечах, поясе и ягодицах, вызывая болезненные ощущения в мышцах..", "Этот массаж особенно подходит после тренировки.","Кроме того, неправильное положение позвоночника часто вызывает головную боль."]
+                }
+            }
+        },
+
         getMassagesTitles: function () {
             return {
                 "lt": {
-                    "limphoBody": "Limfodrenažinis kūno masažas",
+                    "limphoBody": "Limfodrenažinis kūno masažas (metodika pagal Paskalis Kose)",
                     "limphoFace": "Limfodrenažinis veido masažas",
-                    "stoneHotCold": "Karštų–šaltų akmenų masažas",
+                    "stoneHotCold": "Karštų akmenų masažas",
                     "backSpin": "Klasikinis – segmentinis nugaros masažas",
                     "older": "Masažas vyresnio amžiaus žmonėms",
                     "relaxBody": "Atpalaiduojantis viso kūno masažas",
@@ -163,9 +215,9 @@ gg.factory('myDataFactory', function () {
                     "buttonReserve": "Rezervuoti"
                 },
                 "de": {
-                    "limphoBody": "Manuelle Lymphdrainage",
+                    "limphoBody": "Manuelle Lymphdrainage (Methodik von Pascal Kose)",
                     "limphoFace": "Manuelle Lymphdrainage Gesicht",
-                    "stoneHotCold": "Heiß – kalt Steinmassage",
+                    "stoneHotCold": "Hot Stone Massage",
                     "backSpin": "Rücken Massage",
                     "older": "Massage für ältere Menscher",
                     "relaxBody": "Entspannende Ganzkörpermassagе",
@@ -183,9 +235,9 @@ gg.factory('myDataFactory', function () {
 
                 },
                 "ru": {
-                    "limphoBody": "Лимфодренажный массаж тела",
+                    "limphoBody": "Лимфодренажный массаж тела (методика Паскаля Коше)",
                     "limphoFace": "Лимфодренажный массаж лица",
-                    "stoneHotCold": "Горячих – холодных камней массаж",
+                    "stoneHotCold": "Массаж горячими камнями",
                     "backSpin": "Классический – Сегментный массаж спины",
                     "older": "Массаж для пожилых людей",
                     "relaxBody": "Расслабляющий массаж всего тела",
@@ -207,32 +259,20 @@ gg.factory('myDataFactory', function () {
         getMassageBodyData: function () {
             return {
                 "lt": {
-                    "limphoBody": "Tai saugus efektyvus būdas sustiprinti sveikatą bei palaikyti gerą savijautą. Sveikiems žmonėms – tai profilaktinė priemonė, palaikanti normalią medžiagų apykaitą.\n" +
-                    "Masažo metu suaktyvinami pažeistų minkštųjų audinių regeneracijos procesai, slopinami uždegiminiai procesai, sustiprinamas imunitetas, pagerinamas audinių aprūpinimas deguonimi.\n" +
-                    "Limfodrenažinis masažas tinka visiems, kurie jaučia kojų pabrinkimą, patinimą ar tiesiog nuovargį. Po ilgos dienos jis puikiai atpalaiduoja pavargusias kojas ir suteikia lengvumo pojūtį. Taip pat tinka žmonėms, kurių kojos visada šaltos.\n" +
-                    "Šis masažas grožio tikslais naudojamas celiulito gydymui ir profilaktikai, odos stangrinimui, apimčių mažinimui, bendrai savijautai gerinti ir mažinti patinimus po plastinių operacijų.\n" +
-                    "Šis masažas atliekamas moterims ir vyrams. Gydymui ši procedūra skiriama kasdien, profilaktiškai – 2–3 kartus per savaitę. Norimas efektas pasiekiamas po 15 procedūrų.",
-                    "limphoFace": "Esant nuolatiniam stresui ir nuovargiui, veido raumenys sustingsta ,,liūdesio\" kaukėje. Sunkėja limfos nutekėjimas, o kartu toksinių medžiagų apykaitos produktų šalinimas.\n" +
-                    "Veido limfodrenažas suteikia puikių rezultatų:\n" +
-                    "veido pabrinimais,\n" +
-                    "išsausėjusia oda,\n" +
-                    "ankstyvuoju senejimu,\n" +
-                    "tamsiais ratilais ir maišeliais po akimis,\n" +
-                    "sumažėjusiu audinių bei raumenų elastingumu,\n" +
-                    "kovojant su kuperoze.\n" +
-                    "Sumažinę veido suglebimą, sulaukiame ryškaus standinamojo efekto, išsilygina raukšlės.",
-                    "stoneHotCold": "Akmenys turi savybę iš raumenų pašalinti toksines medžiagas, susikaupusias dėl streso ir nesveiko gyvenimo būdo, gerina miegą, padeda sureguliuoti kraujospūdį, teigiamai veikia širdies ritmą, sužadinamos natūralios organizmo galios, padedančios įveikti ligas, paspartinamas gijimo procesas. Ši terapija veikia daugelį organizmo grandžių:\n" +
-                    "Stimuliuoja imuninę sistemą;\n" +
-                    "Suaktyvina kraujotaką;\n" +
-                    "Pagerėja aprūpinimas deguonimi;\n" +
-                    "Lengvai ir maloniai numalšina raumenų, nugaros, galvos ir kaklo skausmus;\n" +
-                    "Teigiamai veikia nervinę sistemą;\n" +
-                    "Gerindama metabolizmą, padeda atsikratyti riebalų pertekliaus.\n" +
-                    "Šis masažas ypač tinka pervargus, patyrus gilų stresą, jaučiant nervingumą, apatiją, miego sutrikimus.",
-                    "backSpin": "Šis masažas idealiai tinka žmonėms, kurie visą dieną praleidžia stovėdami, sėdėdami pavyzdžiui: prie kompiuterio arba vairuodami automobilį taip pat dirbantiems sėdimą ar sunkų fizinį darbą, kai visa įtampa susikaupia stuburo dalyje, kaklo ir pečių, juosmens ir sėdmenų srityse, ir dėl to susiformuoja skausmingi raumenų mazgai. Šis masažas ypač tinka po treniruočių kai būna ilgalaikis ir trumpalaikis skausmas. Be to, dėl netaisyklingos stuburo padėties dažnai skauda galvą. \n" +
-                    "Periodiškai atliekamas masažas padės atsikratyti dažnų nugaros ir galvos skausmų, atpalaiduoti įtemptas raumenų grupes. \n" +
-                    "Po masažo atslūgsta nugaros, galvos, pečių, sėdmenų skausmai. \n" +
-                    "Po masažo Jūs jausitės pailsėję ir energingi.",
+                    "limphoBody": "Tai vienintelis būdas suaktyvinantis limfos tekėjimą, skatinantis skysčių, toksinų ir riebalų sankaupų pasišalinimą iš organizmo. Taip pagerėja galūnių kraujotaka, organizmas aprūpinamas deguonimi.",
+                    "limphoBody2": "Masažas yra neskausmingas, malonus, o tam, kad būtų atkurta limfinės sistemos veikla ir matomi akivaizdūs rezultatai, paprastai užtenka maždaug 10 seansų. Masažo metu limfos cirkuliacija suaktyvinama net iki 10 kartų!",
+                    "limphoFace": "Esant nuolatiniam stresui ir nuovargiui, veido raumenys sustingsta ,,liūdesio\" kaukėje.\n" +
+                    "Sunkėja limfos nutekėjimas, o kartu toksinių medžiagų apykaitos produktų šalinimas.",
+                    "limphoFace2": "Sumažinę veido suglebimą, sulaukiame ryškaus standinamojo efekto.\n" +
+                    "Terapijai ši procedūra skiriama kasdien arba kas 2 dieną, profilaktiškai – 2–3 kartus per savaitę. Norimas efektas pasiekiamas po 15 procedūrų.",
+                    "stoneHotCold": "Akmenys, naudojami masažui buvo surinkti Baltijos pakrantėje. Jie, tūkstantmečiais augdami jūros dugne prisisodrina didžiule sūrių vandenų galia ir išmesti į krantą susijungia su Saulės spindulių vibracijomis įgyja unikalias savybes, kurios veikia žmogaus kūną.",
+
+                    "stoneHotCold1":"Akmenys turi gebėjimą iš raumenų pašalinti toksinus, sukauptus dėl streso ir nesveiko gyvenimo būdo.",
+                    "stoneHotCold2": "Po masažo jausitės pailsėję ir atgausite jėgas, po kūną pasklis jauki šiluma, grįš fizinė ir emocinė pusiausvyra.\n" +
+                    "Nėštumo metu, vėžio ir infekcinių ligų atveju, šis masažas nerekomenduojamas.",
+
+                    "backSpin": "Šis masažas idealiai tinka žmonėms, kurie visą dieną praleidžia, pavyzdžiui: ",
+                    "backSpin2": "Periodiškai atliekamas masažas padės atsikratyti dažnų nugaros ir galvos skausmų, atpalaiduoti įtemptas raumenų grupes. ",
                     "older": "Masažas yra būtina ir labai naudinga procedūra pagyvenusiems žmonėms, pensininkams. Tyrimai parodė, kad masažas lėtina senėjimo procesą. Taip pat masažas veikia raminančiai visą organizmą ir gali sumažinti skausmus. Masažas gali padėti žmonėms, kenčiantiems raumenų skausmus ar sergantiems atritu. Kada žmogus kenčia, jis tampa vis mažiau aktyvus, nukenčia gyvenimo kokybė ir sveikata. Masažas gerina kraujotaką, pašalina raumenų nuovargį ir raumenys įgauna tonusą. Dėl to pagerėja pagyvenusio žmogaus gyvenimo kokybė. \n" +
                     "Prieš masažą Jums gerai būtų pasikonsultuoti su savo gydytoju. Kai tik gausite gydytojo leidimą masažui, jus drąsiai galite kreiptis pas mane.",
                     "relaxBody": "Atpalaiduojantis masažas tinka visiems, norintiems atsipalaiduoti po sunkios dienos, užsimiršti bei pabėgti nuo kasdienės rutinos. Pašalina įtampą ir stresą, atslūgsta nugaros ir galvos skausmai, atsipalaiduoja raumenys, teigiamai veikia vidinę organizmo būseną, pagerina nuotaiką bei grąžina energiją.",
@@ -252,21 +292,22 @@ gg.factory('myDataFactory', function () {
 
                 },
                 "de": {
-                    "limphoBody": "Es ist eine sichere effektive Möglichkeit, die Gesundheit zu fördern und zu pflegen Wohlbefinden . Bei gesunden Menschen – es ist eine vorbeugende Maßnahme normalen Stoffwechsel aufrecht zu erhalten. Während der Massage aktiviert die Regeneration geschädigter Weichgewebe, entzündliche Prozesse zu verlangsamen, stärkt das Immunsystem, verbessert die Sauerstoffversorgung der Gewebe. Dies hilft, überschüssige Flüssigkeit aus dem Gewebe und Organe zu beseitigen.\n" +
-                    "Lymphdrainage ist geeignet für diejenigen, die die Schwellung der Beine fühlen, Schwellungen oder einfach Müdigkeit. Nach einem langen Tag, er entspannt müde Beine und gibt ein Gefühl von Leichtigkeit. Es eignet sich auch für Menschen, deren Füße sind immer kalt.\n" +
-                    "Diese Massage ist für Frauen und Männer.\n" +
-                    "Für die Behandlung – empfiehlt jeden Tag, für die Prävention – 2–3 mal pro Woche.\n" +
-                    "Der gewünschte Effekt wird nach 15 Prozeduren erreicht.",
-                    "limphoFace": "NERA TEKSTO????NERA TEKSTO????NERA TEKSTO????NERA TEKSTO????NERA TEKSTO????NERA TEKSTO????NERA TEKSTO????NERA TEKSTO????NERA TEKSTO????NERA TEKSTO????NERA TEKSTO????NERA TEKSTO????",
-                    "stoneHotCold": "Die Steine, die bei dieser Massage eingesetzt werden, wurden an der Küste der Ostsee gesammelt. Über Tausende von Jahren waren sie den Kräften des Meeres ausgesetzt, wurden von Sonne, Luft und Winden geformt und erhielten so ihre einzigarten Formen und Eigenschaften, die den menschlichen Körper positiv beeinflussen.\n" +
-                    "Die Steine haben die Fähigkeit, Giftstoffe und angestauten Stress abzubauen sowie Anspannungen zu lösen. Sie verbessern den Schlaf, unterstützen den Blutdruck und ihre Energie wirkt sich positiv aufs Herz aus und reguliert so die körpereigenen, natürlichen Kräfte.\n" +
-                    "Diese Massage eignet sich deshalb besonders gegen Müdigkeit und Stress, da die Wärme der Steine muskelentspannend wirken. Die Abwechslung mit den kühlen Steinen wirkt sich dabei vitalisierend auf das vegetative Nervensystem aus und entspannt zudem verkrampfte Rücken–, Kopf– und Nackenmuskulatur.\n" +
+                    "limphoBody": "Dies ist die einzige Art und Weise löst Lymphfluss, ermutigende Flüssigkeiten, Toxine, die Entfernung von Fettablagerungen im Körper. Dies verbessert die Blutzirkulation der Gliedmaßen und versorgt den Körper mit Sauerstoff.",
+                    "limphoBody2": "Die Massage ist schmerzlos und angenehm. In der Regel reichen etwa 10 Sitzungen, um das Lymphsystem wieder Ergebnisse zu machen. Massage Lymphzirkulation wird bis zu 10 Mal aktiviert!",
+                    "limphoFace": "Bei konstantem Stress und Müdigkeit sind die Gesichtsmuskeln in der Maske der \"Traurigkeit\" eingefroren.\n" +
+                    "Die manuelle Lymphdrainage ist eine exklusive Prozedur.\n" +
+                    "Entfernt unnötige Flüssigkeiten, Schlacken und Schwellungen aus dem Körper.",
+                    "limphoFace2": "Durch die Verwendung einer Lymphdrainage-Massage können spürbare, effektive Ergebnisse erzielt werden!\n" +
+                    "Zur Behandlung wird dieses Verfahren täglich oder alle zwei Tage;\n" +
+                    " 2-3 Mal pro Woche zur Vorbeugung.\n" +
+                    " Die gewünschte Wirkung wird nach 15 Behandlungen erreicht.",
+                    "stoneHotCold": "Die Steine, die bei dieser Massage eingesetzt werden, wurden an der Küste der Ostsee gesammelt. Über Tausende von Jahren waren sie den Kräften des Meeres ausgesetzt, wurden von Sonne, Luft und Winden geformt und erhielten so ihre einzigarten Formen und Eigenschaften, die den menschlichen Körper positiv beeinflussen. ",
+                    "stoneHotCold1": "Die Steine haben die Fähigkeit, Giftstoffe und angestauten Stress abzubauen sowie Anspannungen zu lösen. Sie verbessern den Schlaf, unterstützen den Blutdruck und ihre Energie wirkt sich positiv aufs Herz aus und reguliert so die körpereigenen, natürlichen Kräfte. Diese Massage eignet sich deshalb besonders gegen Müdigkeit und Stress, da die Wärme der Steine muskelentspannend wirken. Die Abwechslung mit den kühlen Steinen wirkt sich dabei vitalisierend auf das vegetative Nervensystem aus und entspannt zudem verkrampfte Rücken–, Kopf– und Nackenmuskulatur. ",
+                    "stoneHotCold2": "Nach der Massage werden Sie sich entspannt fühlen und verjüngen den Körper verbreitet Wärme, die körperliche und emotionale Gleichgewicht zurückgibt.\n" +
                     "Bei Schwangerschaft, Infektions– und Krebskrankheiten wird diese Massage nicht empfohlen.",
-                    "backSpin": "Die Rücken Massage ist eine gelungene Synthese der unterschiedlichsten Techniken aus Ost und West mit dem einen Ziel: den Rücken und insbesondere den Schulter– und Nackenbereich optimal zu entspannen. Anschaulich, leicht verständlich und Schritt für Schritt erklärt erarbeiten wir Techniken und Griffe um die Rückenmuskulatur besonders tiefgehend zu entspannen und somit das Wohlbefinden erheblich zu steigern. Die Rücken Massage ist eine feinfühlige, stark energetische Rückenmassage, die imstande ist, Blockaden zu lösen. \n" +
-                    "Wirksam für folgende Indikationen: \n" +
-                    "Bei Verspannungen im Nacken und Schulterbereich \n" +
-                    "Wirkungsvolle Hilfe zur Stressbewältigung \n" +
-                    "Zur Linderung von spannungsbedingten Kopfschmerzen Regulation von Durchblutungsstörungen im Bereich des oberen Rücken.",
+
+                    "backSpin": "Die Rücken Massage den Rücken und insbesondere der Schulter– und Nackenbereich optimal zu entspannen. Ist eine stark energetische Massage, Blockaden zu lösen. Diese Massage ist ideal für Menschen, die den ganzen Tag im Stehen oder Sitzen verbringen, zum Beispiel:",
+                    "backSpin2": "Eine regelmäßige Massage hilft Ihnen dabei, sich zu befreien häufige Rückenschmerzen, Kopfschmerzen, Muskelverspannungen. Nach der Massage fühlen Sie sich entspannt und voller Energie.",
                     "older": "Massage ist ein notwendiges und sehr nützliches Verfahren für ältere Menschen, Rentner. Studien haben gezeigt, dass die Massage den Alterungsprozess verlangsamt. Auch Massage hat eine beruhigende Wirkung im ganzen Körper und kann Schmerzen reduzieren. \n" +
                     "Мassage kann Menschen helfen, die unter Muskelschmerzen leiden: Zum Beispiel, diejenigen, die an Arthritis leiden, Massage hilft, Schmerzen zu reduzieren, erhöht die Amplitude der Bewegung in den Gelenken. Wenn eine Person leidet, wird sie immer weniger aktiv und beeinflusst die Lebensqualität und Gesundheit. Massage verbessert die Durchblutung, beseitigt Muskelermüdung und Muskeln erhalten Ton. Dies verbessert die Lebensqualität einer älteren Person. \n" +
                     "Vor einer Massage ist es ratsam, einen Arzt zu konsultieren. Sobald Sie die Erlaubnis vom Arzt für eine Massage bekommen, können Sie sich mit mir in Verbindung setzen.",
@@ -289,29 +330,18 @@ gg.factory('myDataFactory', function () {
 
                 },
                 "ru": {
-                    "limphoBody": "Это безопасный эффективный способ укрепления здоровья и поддержания благосостояния. У здоровых людей это профилактическая мера для поддержания нормального метаболизма. Во время массажа регенерация поврежденных мягких тканей активирует воспалительные процессы, укрепляет иммунную систему, улучшает подачу кислорода в ткани. Это помогает устранить избыток жидкости из ткани и органов.\n" +
-                    "Лимфодренаж подходит для тех, кто чувствует отек ног, или просто усталость. После долгого дня, он расслабляет уставшие ноги и дает ощущение легкости. Он также подходит для людей, чьи ноги всегда холодные.\n" +
-                    "Эта цель красоты массажа используется для лечения и профилактики целлюлита, подтягивания кожи, улучшения общего состояния здоровья и уменьшить отек после пластической хирургии.\n" +
-                    "Этот массаж проводится для женщин и мужчин.\n" +
-                    "Для лечения – рекомендует делает каждый день, для профилактики – делать 2–3 раза в неделю. Желаемый эффект достигается после 15 процедур.",
-                    "limphoFace": "При постоянном напряжении и усталости, мышцы лица замерзает бывает маска ,,печаль\". Лимфа cтекает сложнее, удаляя токсичные и метаболические продукты.\n" +
-                    "Лицевой лимфатический дренаж дает отличные результаты:\n" +
-                    "при опухлости лица\n" +
-                    "при обезвоживание кожи\n" +
-                    "ранние старение\n" +
-                    "темные круги и мешки под глазами\n" +
-                    "снижение эластичности тканей и мышц,\n" +
-                    "Купероз на лицею\n" +
-                    "Уменьшаетса лица вялось, мы получаем выраженую упругость лица, разглаживаетса морщины.\n" +
-                    "Для профилактики – делать 2–3 раза в неделю. Желаемый эффект достигается после 15 процедур.",
-                    "stoneHotCold": "Камни, используемые в массаже, собранных на побережье Балтийского моря. Они растут на протяжении тысяч лет на морском дне обогащает огромную силу и солоноватой воды нити в сочетании с солнечным светом колебания приобретают уникальные характеристики, которые влияют на организм человека.\n" +
-                    "Камень имеет способность из мышц удалить токсины накопленные в результате стресса и нездорового образа жизни. Улучшает сон, помогает регулировать кровяное давление, положительно влияет на частоту сердечных сокращений, вызванные естественной силы тела, чтобы помочь преодолеть болезнь, ускоряет процесс потоков.\n" +
-                    "Этот массаж особенно подходит от усталости, перенеся глубокий стресс, чувствуя в себе неоправданные расстройства нервозности, апатия, плохой сон. Легко и приятно устраняет боль в мышцах, спины, головы и шеи.",
-                    "backSpin": "Этот массаж идеально подходит для людей, которые проводят весь день стоя или сидя, например, за компьютером или за рулем автомобиля, а также тяжело физически работая , когда все напряжение сосредоточено в позвоночнике, шее и плечах, поясе и ягодицах, вызывая болезненные ощущения в мышцах. Этот массаж особенно подходит после тренировки при длительной и кратковременной боли. Кроме того, неправильное положение позвоночника часто вызывает головную боль. \n" +
-                    "Периодический массаж поможет вам избавиться от: \n" +
-                    "частых болей в спине, \n" +
-                    "головных болей, \n" +
-                    "расслабить напряженные группы мышц. После массажа вы почувствуете себя расслабленным и энергичным.",
+                    "limphoBody": "Это единственный способ активировать лимфоток, способствующий удалению жидкости, токсинов и жировых отложений из организма. Это улучшает кровообращение конечностей и обеспечивает организм кислородом.",
+                    "limphoBody2": "Массаж безболезненный, приятный, и обычно достаточно около 10 сеансов, чтобы восстановить лимфатическую систему до видимых результатов. Массаж активизирует циркуляцию лимфы до 10 раз!",
+                    "limphoFace": "В случае постоянного стресса и усталости, мышцы лица замораживаются в маске «грусти».\n" +
+                    "Ручной лимфодренаж - эксклюзивная процедура. ",
+                    "limphoFace2": "Благодаря применению лимфодренажного массажа можно достигнуть ощутимых эффективных результатов!\n" +
+                    "Для лечения эту процедуру назначают ежедневно или каждые 2 дня, 2-3 раза в неделю для профилактики. Желаемый эффект достигается после 15 процедур.",
+                    "stoneHotCold": "Камни, используемые в массаже, собранных на побережье Балтийского моря. Они растут на протяжении тысяч лет на морском дне обогащает огромную силу и солоноватой воды нити в сочетании с солнечным светом колебания приобретают уникальные характеристики, которые влияют на организм человека.",
+                    "stoneHotCold1": "Камень имеет способность из мышц удалить токсины, накопленные в результате стресса и нездорового образа жизни.",
+                    "stoneHotCold2": "После массажа вы будете чувствовать себя отдохнувшими и восстановится силы по телу распространится тепло возвратится физический и эмоциональный баланс.\n" +
+                    "Во время беременности, рака и инфекционных заболеваний, этот массаж не рекомендуется.",
+                    "backSpin": "Этот массаж идеально подходит для людей, которые проводят весь день стоя или сидя, например:",
+                    "backSpin2": "Периодический массаж поможет вам избавиться от частых болей в спине, головных болей, расслабить напряженные группы мышц. После массажа вы почувствуете себя расслабленным и энергичным.",
                     "older": "Массаж – необходимая и очень полезная процедура для пожилых людей, пенсионеров. Исследования показали, что массаж замедляет процесс старения. Также массаж оказывает успокаивающее действие по всему телу и может уменьшить боль. Массаж может помочь людям, страдающим от мышечных болей : Например, те кто страдает от артрита, массаж помогает уменьшить боль, увеличивает амплитуду движения в суставах. Когда человек страдает, он становится все менее и менее активным, влияющий на качество жизни и здоровье. Массаж улучшает кровообращение, устраняет мышечную усталость, а мышцы получают тонус. Это улучшает качество жизни пожилого человека. \n" +
                     "Перед массажем необходимо проконсультироваться с врачом. Как только вы получите разрешение врача на массаж, вы можете спокойно связаться со мной.",
                     "relaxBody": "Aсслабляющий массаж для тех, кто хочет расслабиться после напряженного рабочего дня, забыть и уйти от ежедневной рутины. Устраняет напряжение и стресс, спазмы cпины и головные боли, расслабляет мышцы, позитивно влияет на внутреннее состояние организма, улучшает настроение и восстанавливает энергию.",
