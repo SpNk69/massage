@@ -172,7 +172,7 @@ gg.factory('myDataFactory', function () {
                     "HotColdStoneTit1": ["Massage ist wirksam bei:"],
                     "HotColdStoneBul2": ["eine positive Wirkung auf das Nervensystem","chronische Müdigkeit","Migräne","Taubheit der Finger","Erkältung in den Gliedmaßen usw."],
 
-                    "backSpinBul1": ["am Computer oder beim Autofahren;", "sowie schwere körperliche Arbeit, wenn die ganze Macht in der Wirbelsäule, Nacken konzentriert, Schultern, Hüfte und Gesäß, Schmerzen in den Muskeln verursacht.", "Šis masažas ypač tinka po treniruočių.","Be to, dėl netaisyklingos stuburo padėties dažnai skauda galvą.","Diese Massage eignet sich besonders nach dem Training.","Außerdem verursacht die falsche Position der Wirbelsäule oft Kopfschmerzen."]
+                    "backSpinBul1": ["am Computer oder beim Autofahren;", "sowie schwere körperliche Arbeit, wenn die ganze Macht in der Wirbelsäule, Nacken konzentriert, Schultern, Hüfte und Gesäß, Schmerzen in den Muskeln verursacht.", "Diese Massage eignet sich besonders nach dem Training.","Außerdem verursacht die falsche Position der Wirbelsäule oft Kopfschmerzen."]
 
                 },
                 "ru": {
