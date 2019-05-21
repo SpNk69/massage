@@ -30,7 +30,7 @@ GET         /toFaceBook                controllers.HomeController.toFaceBook
 POST        /getTimeSlots              controllers.DatabaseController.getTimeSlots()
 
 POST        /sendEmail                 controllers.ContactUsForm.sendEmail()
-POST        /makeABooking              controllers.DatabaseController.makeABooking() 
+POST        /makeABooking              controllers.DatabaseController.makeABooking()
 
 POST        /getAdminDates              controllers.AdminController.getAdminDates()
 POST        /updateAdminTimes              controllers.AdminController.updateAdminTimes()

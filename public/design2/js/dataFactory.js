@@ -67,7 +67,7 @@ gg.factory('myDataFactory', function () {
             return {
 
                 "lt": {
-                    "about": "Apie",
+                    "about": "Apie mane",
                     "massages": "Masažai",
                     "gallery": "Galerija",
                     "prices": "Kainos",
@@ -75,7 +75,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Kontaktai",
                 },
                 "de": {
-                    "about": "Über",
+                    "about": "Über mich",
                     "massages": "Massagen",
                     "gallery": "Galerie",
                     "prices": "Preise",
@@ -83,7 +83,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Kontakte",
                 },
                 "ru": {
-                    "about": "Oбо",
+                    "about": "Oбо мне",
                     "massages": "Mассажы",
                     "gallery": "Галерея",
                     "prices": "Цена",

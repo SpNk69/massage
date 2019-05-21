@@ -15,7 +15,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
     $scope.bookit = "bookit";
     $scope.contactMe = "contacts";
     //starting page language
-    $scope.languageParameter = "lt";
+    $scope.languageParameter = "de";
 
     $scope.$watch('languageParameter', function (newValue, oldValue) {
         if (newValue !== oldValue) {
