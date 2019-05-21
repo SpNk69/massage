@@ -8,12 +8,14 @@ import dataholders.TimeSlot;
 import play.Logger;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.With;
 
 import java.sql.*;
 import java.text.ParseException;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
+@With(ForceHttps.class)
 public class DatabaseController extends Controller {
 
     HelperUtilityClass helperUC = new HelperUtilityClass();

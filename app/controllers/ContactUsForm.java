@@ -8,6 +8,7 @@ import play.libs.mailer.MailerClient;
 import play.libs.ws.*;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.With;
 import validation.ValidationUtility;
 
 import javax.inject.Inject;
@@ -15,6 +16,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+@With(ForceHttps.class)
 public class ContactUsForm extends Controller implements WSBodyReadables, WSBodyWritables {
 
     private static final String CAPTCHA = "captcha";

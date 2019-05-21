@@ -163,3 +163,26 @@
 .bb4 {
     margin-top: 5px;
 }
+
+.bb5 {
+    font-weight: bold;
+}
+
+.borderOut{
+
+
+}
+
+
+.borderMode1{
+    border: #1c7430 solid 1px;
+}
+
+.bbg{
+    background-color: green;
+}
+
+
+.bbg2{
+    background-color: #3ca0dd;
+}

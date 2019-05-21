@@ -8,11 +8,13 @@ import dataholders.TimeSlot;
 import play.Logger;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.With;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+@With(ForceHttps.class)
 public class AdminController extends Controller {
 
     HelperUtilityClass helperUC = new HelperUtilityClass();

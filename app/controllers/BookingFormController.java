@@ -9,6 +9,7 @@ import play.libs.Json;
 import play.libs.ws.*;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.With;
 import validation.ValidationUtility;
 
 import javax.inject.Inject;
@@ -22,6 +23,7 @@ import java.util.Map;
 /**
  * Created by alex on 2017-12-26.
  */
+@With(ForceHttps.class)
 public class BookingFormController extends Controller implements WSBodyReadables, WSBodyWritables {
 
     private static final String CAPTCHA = "captcha";
