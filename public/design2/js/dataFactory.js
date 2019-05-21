@@ -84,7 +84,7 @@ gg.factory('myDataFactory', function () {
                 },
                 "ru": {
                     "about": "Oбо мне",
-                    "massages": "Mассажы",
+                    "massages": "Mассажи",
                     "gallery": "Галерея",
                     "prices": "Цена",
                     "book": "Заказать",
