@@ -99,7 +99,7 @@ gg.factory('myDataFactory', function () {
                     "whoIAm": "Kas aš?",
                     "exp": "Išsilavinimas",
                     "workExp": "Darbo patirtis",
-                    "spa": "Sertifikatai/Pažymėjimai",
+                    "spa": "Sertifikatai ir Pažymėjimai",
                     "title": "Jūsų paslaugoms"
                 },
                 "de": {
@@ -130,16 +130,20 @@ gg.factory('myDataFactory', function () {
                     "welcome2":["Linkiu gero laiko ir iki greito pasimatymo!"]
                 },
                 "de": {
-                    "whoIAm": ["Meine Name ist Vida. Ich komme aus Litauen. Ich wohne jetzt in der Schweiz, in der Stadt Schaffhausen.", "Für mich ist Massage eine Herausforderung und Vergnügen.", "Die Herausforderung – beseitigen Schmerzen im menschlichen Körper.", "Vergnügen – es mehr keinen Schmerz, verschwindet die Spannung, kommt die gut Gesundheit zurück, und ein Lächeln erscheint auf dem Gesicht der Mensch.", "Mein Ziel – den Leuten zu helfen, sich in jedem Alter gut zu fühlen."],
-                    "exp": ["Vilnius Höhere Medizinische Fakultät Litauen.", "Klaipeda Universität. Bachelor Öffentliches Gesundheitswesen verliehen. Litauen.", "2010 – \"Baltic SPA Profi\" Kurse (Lettland), Wellness–Massagen.", "2012 – Zentrum für Entwicklung und Spezialisierung des Pflegepersonals: Zertifikat Nr. 120146 KV – das Recht hat therapeutische Massage zu machen."],
-                    "workExp": ["27 Jahre: Krankenschwester.", "8 Jahre: Facharzt für öffentliche Gesundheit.", "8 Jahre: Masseurin."],
-                    "spa": ["Klassische segmentale Massage", "Hot Stone Massage", "Lymphdrainage-Massage", "Thai-Massage", "Traditionelle ayurvedische Keral-Massage", "Massage-Therapie"]
+                    "whoIAm": ["Meine Name ist Vida. Ich komme aus Litauen. Ich wohne jetzt in der Schweiz, in der Stadt Schaffhausen.", "Für mich ist Massage eine Herausforderung und Vergnügen.", "Die Herausforderung – beseitigen Schmerzen im menschlichen Körper.", "Vergnügen – es mehr keinen Schmerz, verschwindet die Spannung, kommt die gut Gesundheit zurück, und ein Lächeln erscheint auf dem Gesicht der Mensch.", "Mein Ziel – den Leuten zu helfen, sich in jedem Alter gut zu fühlen.","Hobbys: snowboarding, lesen, laufen und garten."],
+                    "exp": ["Vilnius Höhere Medizinische Fakultät Litauen.", "2009 – Klaipeda Universität. Bachelor \"Öffentliches Gesundheitswesen\" verliehen. Litauen.", "2010 – \"Baltic SPA Profi\" kurse (Lettland), Wellness–Massagen.", "2012 – Zentrum für Entwicklung und Spezialisierung des Pflegepersonals: Zertifikat Nr. 120146 KV – das Recht hat therapeutische Massage zu machen."],
+                    "workExp": ["27 Jahre: Krankenschwester.", "8 Jahre: Facharzt für öffentliche Gesundheit.", "9 Jahre: Masseurin.","2010-2013 - individuelle Aktivität \"Aktivitäten zum körperlichen Wohlbefinden\". Litauen"],
+                    "spa": ["Klassische segmentale Massage", "Hot Stone Massage", "Lymphdrainage-Massage", "Thai-Massage", "Traditionelle ayurvedische Keral-Massage", "Therapeutische Massage"],
+                    "welcome":["Ich freue mich, dich in meiner Massage-Praxis zu begrüssen!"],
+                    "welcome2":["Ich wünsche Dir eine gute Zeit und bis bald!"]
                 },
                 "ru": {
-                    "whoIAm": ["Меня зовут Вида. Я приехала из Литвы. Теперь живу в Швейцарии, в городе Шаффхаузен.", "Для меня массаж – это вызов и удовольствие.", "Вызов – устранить боль в теле человека.", "Удовольствие – когда нет больше боли, напряжение исчезает, возвращается хорошое самочувствие, а на лице человека появляется улыбка.", "Моя цель – помочь людям чувствовать себя прекрасно в любом возрасте."],
-                    "exp": ["Вильнюсская высшая медицинская школа. Литва.", "Клайпедский университет. Степень бакалавра в области общественного здравоохранения. Литва.", "2010 г. – \"Baltic SPA Professional\" курсы (Латвия), спа–массажы.", "2012 г. – Центр развития и специализации медсестринского персонала: Сертификат Нет. KV 120146 – предоставляется право делать терапевтические (лечебные) массажы."],
-                    "workExp": ["27 лет: медицинская сестра.", "8 лет: специалист общественного здравоохранения.", "7 лет: массажист."],
-                    "spa": ["Классический сегментарный массаж", "Массаж горячими камнями", "Лимфодренажный массаж", "Тайский массаж", "Традиционный aюрведический Керал массаж", "Терапевтические массажы"]
+                    "whoIAm": ["Меня зовут Вида. Я приехала из Литвы. Теперь живу в Швейцарии, в городе Шаффхаузен.", "Для меня массаж – это вызов и удовольствие.", "Вызов – устранить боль в теле человека.", "Удовольствие – когда нет больше боли, напряжение исчезает, возвращается хорошое самочувствие, а на лице человека появляется улыбка.", "Моя цель – помочь людям чувствовать себя прекрасно в любом возрасте.","Хобби: сноубординг, чтение, бег и сад."],
+                    "exp": ["Вильнюсская высшая медицинская школа. Литва.", "2009 – Клайпедский университет. Степень бакалавра в \"области общественного здравоохранения\". Литва.", "2010 г. – \"Baltic SPA Professional\" курсы (Латвия), спа–массажы.", "2012 г. – Центр развития и специализации медсестринского персонала: Сертификат Нет. KV 120146 – предоставляется право делать терапевтические (лечебные) массажы."],
+                    "workExp": ["27 лет: медицинская сестра.", "8 лет: специалист общественного здравоохранения.", "9 лет: массажист.","2010-2013 г. - индивидуальная деятельность «Физкультурно-оздоровительная деятельность». Литва"],
+                    "spa": ["Классический сегментарный массаж", "Массаж горячими камнями", "Лимфодренажный массаж", "Тайский массаж", "Традиционный aюрведический Керал массаж", "Лечебные массажи"],
+                    "welcome":["Я рада приветствовать Вас в моей массажной практике!"],
+                    "welcome2":["Желаю вам хорошего времени и до скорой встречи!"]
                 }
             }
         },
