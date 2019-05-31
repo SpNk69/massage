@@ -133,7 +133,7 @@ gg.factory('myDataFactory', function () {
                 },
                 "de": {
                     "whoIAm": ["Meine Name ist Vida. Ich komme aus Litauen. Ich wohne jetzt in der Schweiz, in der Stadt Schaffhausen.", "Für mich ist Massage eine Herausforderung und Vergnügen", "Die Herausforderung – beseitigen Schmerzen im menschlichen Körper", "Vergnügen – es mehr keinen Schmerz, verschwindet die Spannung, kommt die gut Gesundheit zurück, und ein Lächeln erscheint auf dem Gesicht der Mensch", "Mein Ziel – den Leuten zu helfen, sich in jedem Alter gut zu fühlen"],
-                    "exp": ["Vilnius Höhere Medizinische Fakultät Litauen", "Klaipeda Universität. Bachelor Öffentliches Gesundheitswesen verliehen. Litauen", "\"Baltic SPA Profi\" Kurse (Lettland), Wellness–Massagen", "Zentrum für Entwicklung und Spezialisierung des Pflegepersonals: Zertifikat Nr. 120146 KV – das Recht hat therapeutische Massage zu machen"],
+                    "exp": ["Vilnius Höhere Medizinische Fakultät Litauen", "Klaipeda Universität. Bachelor Öffentliches Gesundheitswesen verliehen. Litauen", "\"Baltic SPA Profi\" Kurse (Lettland), SPA–Massagen", "Zentrum für Entwicklung und Spezialisierung des Pflegepersonals: Zertifikat Nr. 120146 KV – das Recht hat therapeutische Massage zu machen"],
                     "workExp": ["27 Jahre Erfahrung Krankenschwester", "8 Jahre Erfahrung Facharzt für öffentliche Gesundheit", "9 Jahre Erfahrung Masseurin","3 Jagre individuelle Aktivität \"Aktivitäten zum körperlichen Wohlbefinden\". Litauen"],
                     "spa": ["Klassische segmentale Massage", "Hot Stone Massage", "Lymphdrainage-Massage", "Thai-Massage", "Traditionelle ayurvedische Kerala-Massage", "Therapeutische Massage"],
                     "welcome":["Ich freue mich, dich in meiner Massage-Praxis zu begrüssen!"],
@@ -562,7 +562,7 @@ gg.factory('myDataFactory', function () {
                     "present1":"DOVANŲ KUPONAI",
                     "present2":["Dovanų kuponai užsakomi pagal Jūsų pageidavimus.","Masažo kuponas yra ideali dovana gimtadieniui, vestuvėms, Kalėdoms ar kitoms progoms."],
                     "attention1":"ATKREIPKITE DĖMESĮ",
-                    "attention2":["Paslauga mokama kiekvieno masažo pabaigoje.","Galima mokėti tik grynaisiais pinigais.","Jei negalite atvykti į masažą. Prašome atšaukti savo užsakymą prieš 24 valandas iki sutartos datos elektroniniu paštu."]
+                    "attention2":["Atsiskaitymas tik grynaisiais pinigais (laikinai).","Paslauga mokama kiekvieno masažo pabaigoje.","Nuolaidos nesumuojamos.","Jei negalite atvykti į masažą. Prašome atšaukti savo užsakymą prieš 24 valandas iki sutartos datos elektroniniu paštu arba sms žinute."]
 
 
 
@@ -602,7 +602,7 @@ gg.factory('myDataFactory', function () {
                     "present1":"GUTSCHEINE",
                     "present2":["Geschenkgutscheine werden nach Ihren Wünschen bestellt.","Massagegutschein ist die ideale Geschenkidee zum Geburtstag, zur Hochzeit, zu Weihnachten oder zu jeder anderen Gelegenheit."],
                     "attention1":"BITTE BEACHTEN",
-                    "attention2":["Der Dienst ist am Ende jeder Massage zu bezahlen.","Nur Barzahlung möglich.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail."]
+                    "attention2":["Zahlen Sie nur in bar (vorübergehend).","Der Dienst ist am Ende jeder Massage zu bezahlen.","Rabatte können nicht kombiniert werden.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail/SMS."]
                 },
                 "ru": {
                     "title": "Цены",
@@ -639,7 +639,7 @@ gg.factory('myDataFactory', function () {
                     "present1":"ПОДАРОЧНЫЕ КУПОНЫ",
                     "present2":["Подарочные купоны заказываются  в соответствии с вашими пожеланиями.","Массажный купон - идеальная идея для подарка на день рождения, свадьбу, Рождество или любой другой случай."],
                     "attention1":"ОБРАТИТЕ ВНИМАНИЕ",
-                    "attention2":["Услуга оплачивается в конце каждого массажа.","Возможна только оплата наличными.","Если вы не можете прийти на массаж. Пожалуйста, отмените ваш заказ по электронной почте за 24 часа до согласованной даты."]
+                    "attention2":["Oплата только наличными (временно).","Услуга оплачивается в конце каждого массажа.","Скидки не могут быть объединены.","Если вы не можете прийти на массаж. Пожалуйста, отмените ваш заказ по электронной почте или смс за 24 часа до согласованной даты."]
                 }
             };
 
