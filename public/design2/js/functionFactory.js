@@ -39,6 +39,13 @@ gg.factory('myFunctionsFactory', function () {
                 } else {
                     toRefactor[i].col3 = toRefactor[i].col3 + " CHF"
                 }
+
+                if (toRefactor[i].col4 === "" || toRefactor[i].col4 == null) {
+                    toRefactor[i].col4 = "–"
+                } else {
+                    toRefactor[i].col4 = toRefactor[i].col4 + " CHF"
+                }
+
             }
         },
         hideFlagOfCurrentLang: function (scope, currentLang) {

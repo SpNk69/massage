@@ -165,6 +165,7 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
     function getMassageOptionForSpecificMassage(code) {
         //assign value for user.massage - which one picked
         for (var i = 0; i < $scope.massageInfoFromDB1.length; i++) {
+            console.log($scope.massageInfoFromDB1)
             if ($scope.massageInfoFromDB1[i].code == code) {
                 $scope.user.massage = $scope.massageInfoFromDB1[i];
             }

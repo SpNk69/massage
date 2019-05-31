@@ -186,3 +186,18 @@
 .bbg2{
     background-color: #3ca0dd;
 }
+.colorMe{
+    color:red;
+}
+.note1{
+    text-align: left;
+    /*font-size: 85%;*/
+    font-style: italic;
+}
+
+.note2{
+    text-align: left;
+    /*font-size: 85%;*/
+    font-weight: bold;
+    margin-bottom: 0;
+}

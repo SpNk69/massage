@@ -527,8 +527,10 @@ gg.factory('myDataFactory', function () {
             return {
                 "lt": {
                     "title": "Kainos",
-                    "spaTitle": ["Spa masažai", "60min", "90min", "120min"],
-                    "limphoBody": ["Limfodrenažinis kūno masažas", "–", "140 CHF", "–"],
+                    "length":"Trukmė",
+                    "spaTitle": ["Spa masažai", "40min", "60min", "90min","120min"],
+                    "spaTitle2":["","","","","","la"],
+                    "limphoBody": ["Limfodrenažinis kūno masažas", "–", "–","150 CHF", "–","-", "10%/13%"],
                     "limphoFace": ["Limfodrenažinis veido masažas", "100 CHF", "–", "–"],
                     "stoneHotCold": ["Karštų – šaltų akmenų masažas", "–", "–", "220 CHF"],
                     "backSpin": ["Klasikinis – segmentinis nugaros masažas", "100 CHF", "150 CHF", "–"],
@@ -554,13 +556,21 @@ gg.factory('myDataFactory', function () {
                     "kidsNeck": ["Pečių, kaklo, rankų masažas", "80", "–", "–"],
                     "kidsWaist": ["Juosmens, sėdmenų, kojų masažas", "80", "–", "–"],
                     "kidsFull": ["Viso kūno masažas", "–", "–", "160"],
-                    "otherTitle": ["Kiti masažai", "30min", "60min", "90min"],
+                    "otherTitle": ["Kiti masažai", "40min", "60min", "75min","90min"],
+                    "offers1":"PASIŪLYMAI",
+                    "offers2":["Senjorams suteikiama 15% nuolaida nuo kainos.","Užsisakius 7 masažus suteikiama 10% nuolaida.","Užsisakius 11 masažų suteikiama 13 % nuolaida."],
+                    "present1":"DOVANŲ KUPONAI",
+                    "present2":["Dovanų kuponai užsakomi pagal Jūsų pageidavimus.","Masažo kuponas yra ideali dovana gimtadieniui, vestuvėms, Kalėdoms ar kitoms progoms."],
+                    "attention1":"ATKREIPKITE DĖMESĮ",
+                    "attention2":["Paslauga mokama kiekvieno masažo pabaigoje.","Galima mokėti tik grynaisiais pinigais.","Jei negalite atvykti į masažą. Prašome atšaukti savo užsakymą prieš 24 valandas iki sutartos datos elektroniniu paštu."]
+
 
 
                 },
                 "de": {
                     "title": "Preise",
-                    "spaTitle": ["Spa–Massagen", "60min", "90min", "120min"],
+                    "length":"DAUER",
+                    "spaTitle": ["Spa–Massagen", "40min", "60min", "90min","120min"],
                     "limphoBody": ["Manuelle Lymphdrainage", "–", "140 CHF", "–"],
                     "limphoFace": ["Manuelle Lymphdrainage Gesicht", "100 CHF", "–", "–"],
                     "stoneHotCold": ["Heiß–kalt Steinmassage", "–", "–", "220 CHF"],
@@ -586,11 +596,18 @@ gg.factory('myDataFactory', function () {
                     "kidsNeck": ["Massage Schulter–Hals–Hände", "80", "–", "–"],
                     "kidsWaist": ["Lendenwirbel – Gesäß – Beinmassage", "80", "–", "–"],
                     "kidsFull": ["Ganzkörpermassagе", "–", "–", "160"],
-                    "otherTitle": ["Andere Massagen", "30min", "60min", "90min"]
+                    "otherTitle": ["Andere Massagen", "40min", "60min", "75min","90min"],
+                    "offers1":"ANGEBOTE",
+                    "offers2":["Senioren erhalten 15% Rabatt auf den Preis.","Wenn Sie bestellen 7 Massagen einen Rabatt von 10%.","Wenn Sie bestellen 11 Massagen einen Rabatt von 13%."],
+                    "present1":"GUTSCHEINE",
+                    "present2":["Geschenkgutscheine werden nach Ihren Wünschen bestellt.","Massagegutschein ist die ideale Geschenkidee zum Geburtstag, zur Hochzeit, zu Weihnachten oder zu jeder anderen Gelegenheit."],
+                    "attention1":"BITTE BEACHTEN",
+                    "attention2":["Der Dienst ist am Ende jeder Massage zu bezahlen.","Nur Barzahlung möglich.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail."]
                 },
                 "ru": {
                     "title": "Цены",
-                    "spaTitle": ["Спа–массажы", "60min", "90min", "120min"],
+                    "length":"ВРЕМЯ",
+                    "spaTitle": ["Спа–массажы", "40мин", "60мин", "90мин","120мин"],
                     "limphoBody": ["Лимфодренажный массаж тела", "–", "140 CHF", "–"],
                     "limphoFace": ["Лимфодренажный массаж лица", "100 CHF", "–", "–"],
                     "stoneHotCold": ["Горячих – холодных камней массаж", "–", "–", "220 CHF"],
@@ -616,7 +633,13 @@ gg.factory('myDataFactory', function () {
                     "kidsNeck": ["Плечо – шеи – рук массаж", "80", "–", "–"],
                     "kidsWaist": ["Поясницы– Ягодицы – Ног массаж", "80", "–", "–"],
                     "kidsFull": ["Массаж всего тела", "–", "–", "160"],
-                    "otherTitle": ["Другие массажи", "30min", "60min", "90min"]
+                    "otherTitle": ["Другие массажи", "40мин", "60мин", "75мин","90мин"],
+                    "offers1":"ПРЕДЛОЖЕНИЯ",
+                    "offers2":["Пожилые люди получают 15% скидку от цены.","Если закажете 7 массажей  предоставляется скидка 10%.","Если закажете  11 массажей скидка 13%."],
+                    "present1":"ПОДАРОЧНЫЕ КУПОНЫ",
+                    "present2":["Подарочные купоны заказываются  в соответствии с вашими пожеланиями.","Массажный купон - идеальная идея для подарка на день рождения, свадьбу, Рождество или любой другой случай."],
+                    "attention1":"ОБРАТИТЕ ВНИМАНИЕ",
+                    "attention2":["Услуга оплачивается в конце каждого массажа.","Возможна только оплата наличными.","Если вы не можете прийти на массаж. Пожалуйста, отмените ваш заказ по электронной почте за 24 часа до согласованной даты."]
                 }
             };
 
