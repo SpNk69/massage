@@ -792,7 +792,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Mūsų kontaktai",
                     "location":"Vieta",
                     "open":"Darbo laikas",
-                    "openHours":["Pi: 09:00 - 20:00","An: Geschlossen","Tr: 13:00 - 20:00","Ke: 16:00 - 20:00","Pe: 10:00 - 18:00","Še: 10:00 - 18:00","Se: Geschlossen"]
+                    "openHours":["Pi: 09:00 - 20:00","An: Uždaryta","Tr: 13:00 - 20:00","Ke: 16:00 - 20:00","Pe: 10:00 - 18:00","Še: 10:00 - 18:00","Se: Uždaryta"]
 
                 },
                 "de": {
@@ -828,7 +828,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Наши контакты",
                     "location":"Место",
                     "open":"Часы работы",
-                    "openHours":["По: 09:00 - 20:00","Вт: Geschlossen","Ср: 13:00 - 20:00","Че: 16:00 - 20:00","Пя: 10:00 - 18:00","Су: 10:00 - 18:00","Во: Geschlossen"]
+                    "openHours":["По: 09:00 - 20:00","Вт: Закрыто","Ср: 13:00 - 20:00","Че: 16:00 - 20:00","Пя: 10:00 - 18:00","Су: 10:00 - 18:00","Во: Закрыто"]
 
 
                 }
