@@ -792,7 +792,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Mūsų kontaktai",
                     "location":"Vieta",
                     "open":"Darbo laikas",
-                    "openHours":["Pi: 09:00 - 20:00","An: Uždaryta","Tr: 13:00 - 20:00","Ke: 16:00 - 20:00","Pe: 10:00 - 18:00","Še: 10:00 - 18:00","Se: Uždaryta"]
+                    "openHours":["Pi: 09:00 - 20:00","An: Uždaryta","Tr: 13:00 - 20:00","Ke: 16:00 - 20:00","Pe: 09:00 - 20:00","Še: 10:00 - 18:00","Se: Uždaryta"]
 
                 },
                 "de": {
@@ -810,7 +810,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Unsere Kontakte",
                     "location":"Lage",
                     "open":"Öffnungszeiten",
-                    "openHours":["Mo: 09:00 - 20:00","Di: Geschlossen","Mi: 13:00 - 20:00","Do: 16:00 - 20:00","Fr: 10:00 - 18:00","Sa: 10:00 - 18:00","So: Geschlossen"]
+                    "openHours":["Mo: 09:00 - 20:00","Di: Geschlossen","Mi: 13:00 - 20:00","Do: 16:00 - 20:00","Fr: 09:00 - 20:00","Sa: 10:00 - 18:00","So: Geschlossen"]
 
                 },
                 "ru": {
@@ -828,7 +828,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Наши контакты",
                     "location":"Место",
                     "open":"Часы работы",
-                    "openHours":["По: 09:00 - 20:00","Вт: Закрыто","Ср: 13:00 - 20:00","Че: 16:00 - 20:00","Пя: 10:00 - 18:00","Су: 10:00 - 18:00","Во: Закрыто"]
+                    "openHours":["По: 09:00 - 20:00","Вт: Закрыто","Ср: 13:00 - 20:00","Че: 16:00 - 20:00","Пя: 09:00 - 20:00","Су: 10:00 - 18:00","Во: Закрыто"]
 
 
                 }
