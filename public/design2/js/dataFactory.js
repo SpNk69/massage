@@ -789,7 +789,11 @@ gg.factory('myDataFactory', function () {
                     "questionPH": "Jūsų žinutė",
                     "button": "Siųsti",
                     "socNet": "Mūsų socialiniai tinklai",
-                    "contacts": "Mūsų kontaktai"
+                    "contacts": "Mūsų kontaktai",
+                    "location":"Vieta",
+                    "open":"Darbo laikas",
+                    "openHours":["Pi: 09:00 - 20:00","An: Geschlossen","Tr: 13:00 - 20:00","Ke: 16:00 - 20:00","Pe: 10:00 - 18:00","Še: 10:00 - 18:00","Se: Geschlossen"]
+
                 },
                 "de": {
                     "secTitle": "Kontaktiere uns",
@@ -803,7 +807,10 @@ gg.factory('myDataFactory', function () {
                     "questionPH": "Deine Frage",
                     "button": "Senden",
                     "socNet": "Unsere sozialen Netzwerke",
-                    "contacts": "Unsere Kontakte"
+                    "contacts": "Unsere Kontakte",
+                    "location":"Lage",
+                    "open":"Öffnungszeiten",
+                    "openHours":["Mo: 09:00 - 20:00","Di: Geschlossen","Mi: 13:00 - 20:00","Do: 16:00 - 20:00","Fr: 10:00 - 18:00","Sa: 10:00 - 18:00","So: Geschlossen"]
 
                 },
                 "ru": {
@@ -818,7 +825,11 @@ gg.factory('myDataFactory', function () {
                     "questionPH": "Ваш вопрос",
                     "button": "Послать",
                     "socNet": "Наши социальные сети",
-                    "contacts": "Наши контакты"
+                    "contacts": "Наши контакты",
+                    "location":"Место",
+                    "open":"Часы работы",
+                    "openHours":["По: 09:00 - 20:00","Вт: Geschlossen","Ср: 13:00 - 20:00","Че: 16:00 - 20:00","Пя: 10:00 - 18:00","Су: 10:00 - 18:00","Во: Geschlossen"]
+
 
                 }
             }
