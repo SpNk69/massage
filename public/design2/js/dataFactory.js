@@ -48,7 +48,7 @@ gg.factory('myDataFactory', function () {
 
                 },
                 "de": {
-                    "intro": "Massage ist eine der besonderen Faktoren in das Leben einer Person, zu helfen einen guten Körper und Seele zu halten. Und es gibt nichts Besseres als nach einem harten und müden Arbeitstag, entspannen und beleben Sie Ihren Körper mit Massage–Verfahren.",
+                    "intro": "Die Massage bietet eine heilsame Wirkung auf Körper und Seele. Es gibt nichts Schöneres als sich nach einem harten und müden Arbeitstag bei einer Massage Ihrer Wahl zu entspannen – gönnen Sie sich diese Auszeit!",
                     "findMore": "Erfahren Sie mehr",
                     "bookNow": "Sparen Sie Zeit"
 
@@ -245,23 +245,23 @@ gg.factory('myDataFactory', function () {
                 },
                 "de": {
                     "limphoBody": "Lymphdrainage-Körpermassage (Methodik von Pascal Kose)",
-                    "limphoFace": "Lymphdrainage Gesichtsmassage (Methodik von Pascal Kose)",
+                    "limphoFace": "Gesichtsmassage (Methodik von Pascal Kose)",
                     "stoneHotCold": "Hot Stone Massage",
-                    "backSpin": "Klassische – Segmentale Rückenmassage",
+                    "backSpin": "Klassische – segmentale Rückenmassage",
                     "older": "Massage für ältere Menscher",
                     "relaxBody": "Entspannende Ganzkörpermassagе",
                     "ajurved": "Ayurvedische Brust-Massage für Frauen",
-                    "antice": "Anti - Cellulite Massage (Beine und das Gesäß) von Hand und Vakuumschale",
-                    "relaxFoot": "Gesundheitsfördernde Füße Massage (+Waden)",
+                    "antice": "Anti - Cellulite Massage (Beine und das Gesäß) von Hand und mit der Vakuumschale",
+                    "relaxFoot": "Fuss- und Wadenmassage",
                     "sepHead": "Kopfmassage",
                     "sepNeck": "Massage Schulter – Hals – Hände",
                     "sepStoma": "Bauchmassage",
                     "sepWaist": "Lendenwirbel – Gesäß – Beinmassage",
-                    "sepPar": "Lendenwirbel – Gesäß - Beinmassage",
+                    "sepPar": "Lendenwirbel– Gesäß- und Beinmassage",
                     "labelMore": "Mehr",
                     "labelLess": "Weniger",
                     "buttonReserve": "Reservieren",
-                    "collar":"Massage des Hals und Kragen Bereichs und der Oberarme",
+                    "collar":"Oberarm- Nacken- und obere Rückenpartie Massage",
                     "senior":"Massage für Senioren"
 
                 },
@@ -368,80 +368,33 @@ gg.factory('myDataFactory', function () {
 
                 },
                 "de": {
-                    "limphoBody": "Dies ist eine spezielle Ganzkörpermassage, um überschüssige zelluläre Metaboliten, Toxine und Flüssigkeiten aus dem Gewebe zu entfernen. Die Massage eignet sich für alle, die sich ödematös oder müde fühlen. Nach einem langen Arbeitstag entspannt er müde Beine perfekt und vermittelt ein Gefühl von Leichtigkeit. Nach der Lymphdrainage verschwinden anhaltende chronische Müdigkeit und Kopfschmerzen, die Schwellung der Extremitäten nimmt ab - das Lymphödem (Lymphschwellung) und die Hautelastizität verbessern sich." +
-                    " Die gewünschte Wirkung wird nach etwa 15 Behandlungen erreicht." +
-                    " Aus prophylaktischer Sicht: 3 bis 5 Sitzungen mit manueller Lymphdrainage (alle zwei Wochen) verbessern Ihr Aussehen und Ihr Wohlbefinden auf lange Sicht." +
-                    "Die Lymphdrainage-Körpermassage wird sowohl für Frauen als auch für Männer durchgeführt.",
+                    "limphoBody": "Dies ist eine spezielle Ganzkörpermassage, um überschüssige zelluläre Metaboliten, Toxine und Flüssigkeiten aus dem Gewebe zu entfernen. Die Massage eignet sich für alle, die sich ödematös oder oft müde fühlen. Nach einem langen Arbeitstag können müde Beine perfekt entspannt werden und es stellt sich ein Gefühl von Leichtigkeit ein. Die Lymphdrainage vermindert anhaltende chronische Müdigkeit und Kopfschmerzen, Schwellungen nehmen ab und die Hautelastizität verbessert sich. Die gewünschte Wirkung wird nach etwa 15 Behandlungen erreicht. "+
+                                  " Aus vorbeugender Sicht verbessert die manuelle Lymphdrainage nach 3 bis 5 Sitzungen (alle zwei Wochen) nachhaltig Ihr Wohlbefinden und Ihr Aussehen.",
 
                     "limphoBody2": "Die Massage ist schmerzlos und angenehm. In der Regel reichen etwa 10 Sitzungen, um das Lymphsystem wieder Ergebnisse zu machen. Massage Lymphzirkulation wird bis zu 10 Mal aktiviert!",
-                    "limphoFace": "Bei konstantem Stress und Müdigkeit sind die Gesichtsmuskeln in der Maske der \"Traurigkeit\" eingefroren.\n" +
-                    "Die manuelle Lymphdrainage ist eine exklusive Prozedur.\n" +
-                    "In kurzer Zeit entfernt unnötige Flüssigkeiten, Schlacken und Schwellungen. Auch chronische Müdigkeit, Verspannungen, Kopfschmerzen.\n" +
-                    "Verbessern Sie die Gesichtsfarbe,  die Blutzirkulation. Die Haut nach der  elastischer, lebendiger und gesünder aussieht und Falten glättet.\n" +
-                    "Die Lymphdrainage des Gesichts liefert hervorragende Ergebnisse bei: Schwellung des Gesichts, trockene Haut, frühes Altern, dunkle Kreise und Taschen unter den Augen, reduzierte Gewebeelastizität, Bekämpfung von Couperosis.\n" +
-                    "Die gewünschte Wirkung wird nach etwa 15 Behandlungen erreicht. \n" +
-                    "Aus prophylaktischer Sicht: 3 bis 5 Sitzungen mit manueller Lymphdrainage (alle zwei Wochen) verbessern Ihr Aussehen und Ihr Wohlbefinden auf lange Sicht.\n" +
-                    "Die Lymphdrainage-Körpermassage wird sowohl für Frauen als auch für Männer durchgeführt.\n",
-                    "stoneHotCold": "Die Steine, die bei dieser Massage eingesetzt werden, wurden an der Küste der Ostsee gesammelt. Über Tausende von Jahren waren sie den Kräften des Meeres ausgesetzt, wurden von Sonne, Luft und Winden geformt und erhielten so ihre einzigartigen Formen und Eigenschaften, die den menschlichen Körper positiv beeinflussen. Die Steine haben die Fähigkeit, Giftstoffe und angestauten Stress abzubauen sowie Anspannungen zu lösen. Sie verbessern den Schlaf, unterstützen den Blutdruck und ihre Energie wirkt sich positiv aufs Herz aus und reguliert so die körpereigenen, natürlichen Kräfte. Diese Massage eignet sich deshalb besonders gegen Müdigkeit und Stress, da die Wärme der Steine muskelentspannend wirken. Die Abwechslung mit den kühlen Steinen wirkt sich dabei vitalisierend auf das vegetative Nervensystem aus und entspannt zudem verkrampfte Rücken–, Kopf– und Nackenmuskulatur.\n" +
-                    "Massage ist wirksam bei: schmerzen     im Rücken und Nacken eine positive Wirkung auf das Nervensystem chronische Müdigkeit, Migräne, Taubheit der Finger, Erkältung in den Gliedmaßen usw.\n" +
-                    "\n" +
-                    "\n" +
-                    "Nach der Massage werden Sie sich entspannt fühlen und verjüngen den Körper verbreitet Wärme, die körperliche und emotionale Gleichgewicht zurückgibt.\n" +
-                    "Bei Schwangerschaft, Infektions– und Krebskrankheiten wird diese Massage nicht empfohlen.\n",
-                    "stoneHotCold1": "Die Steine haben die Fähigkeit, Giftstoffe und angestauten Stress abzubauen sowie Anspannungen zu lösen. Sie verbessern den Schlaf, unterstützen den Blutdruck und ihre Energie wirkt sich positiv aufs Herz aus und reguliert so die körpereigenen, natürlichen Kräfte. Diese Massage eignet sich deshalb besonders gegen Müdigkeit und Stress, da die Wärme der Steine muskelentspannend wirken. Die Abwechslung mit den kühlen Steinen wirkt sich dabei vitalisierend auf das vegetative Nervensystem aus und entspannt zudem verkrampfte Rücken–, Kopf– und Nackenmuskulatur. ",
-                    "stoneHotCold2": "Nach der Massage werden Sie sich entspannt fühlen und verjüngen den Körper verbreitet Wärme, die körperliche und emotionale Gleichgewicht zurückgibt.\n" +
-                    "Bei Schwangerschaft, Infektions– und Krebskrankheiten wird diese Massage nicht empfohlen.",
+                    "limphoFace": "Bei konstantem Stress und Müdigkeit sind die Gesichtsmuskeln wie in einer Maske der \"Traurigkeit\" eingefroren. Die manuelle Lymphdrainage ist eine exklusive Prozedur, die in kurzer Zeit unnötige Flüssigkeiten, Schadstoffe und Schwellungen im Gesicht entfernt und dadurch chronische Müdigkeit, Verspannungen, Kopfschmerzen lindern kann. Ausserdem lassen diese Massagen die Haut elastischer, lebendiger und gesünder aussehen und auch Fältchen können geglättet werden. Die gewünschte Wirkung wird nach etwa 15 Behandlungen erreicht." +
+                                   "Bei einer vorbeugenden Answendung verbessert die manueller Lymphdrainage nach 3 bis 5 Sitzungen (alle zwei Wochen) Ihr Aussehen und Ihr Wohlbefinden auf lange Sicht.",
+                    "stoneHotCold": "Die Steine, die bei dieser Massage eingesetzt werden, wurden an der Küste der Ostsee gesammelt. Über Tausende von Jahren waren sie den Kräften des Meeres ausgesetzt, wurden von Sonne, Luft und Wind geformt und erhielten so ihre einzigartigen Formen und Eigenschaften, die den menschlichen Körper positiv beeinflussen. Die Steine haben die Fähigkeit, Giftstoffe und angestauten Stress abzubauen sowie Anspannungen zu lösen. Sie verbessern den Schlaf, unterstützen den Blutdruck, wirken sich positiv aufs Herz aus und regulieren so die körpereigenen, natürlichen Kräfte. Diese Massage eignet sich deshalb besonders bei Müdigkeit und Stress, da die Wärme der Steine muskelentspannend wirkt. Die Abwechslung mit den kühlen Steinen wirkt sich dabei vitalisierend auf das vegetative Nervensystem aus und entspannt verkrampfte Rücken–, Kopf– und Nackenmuskulatur. Ausserdem ist diese Massage wirksam bei Rücken- und Nackenschmerzen, chronischer Müdigkeit, Migräne, Taubheit der Finger, Erkältung in den Gliedmaßen usw. und hat eine positive Wirkung auf das Nervensystem. Die Anwendung bewirkt physisches und seelisches Gleichgewicht und lässt Sie rundum entspannt fühlen." +
+                                     "Bei Schwangerschaft, Infektions– und Krebskrankheiten wird diese Massage nicht empfohlen.",
 
-                    "backSpin": "Die Rückenmassage den Rücken und insbesondere der Schulter– und Nackenbereich optimal zu entspannen. Ist eine stark energetische Massage, Blockaden zu lösen. Diese Massage ist ideal für Menschen, die den ganzen Tag im Stehen oder Sitzen verbringen, zum Beispiel: am Computer oder beim Autofahren sowie schwere körperliche Arbeit. Wann die ganze Macht in der Wirbelsäule, Nacken konzentriert, Schultern, Hüfte und Gesäß, Schmerzen in den Muskeln verursacht.     \n" +
-                    "Diese Massage eignet sich besonders nach dem Training.     \n" +
-                    "Außerdem verursacht die falsche Position der Wirbelsäule oft Kopfschmerzen.     \n" +
-                    "Eine regelmäßige Massage hilft Ihnen dabei, sich zu befreien häufige Rückenschmerzen, Kopfschmerzen, Muskelverspannungen.\n" +
-                    " Nach der Massage fühlen Sie sich entspannt und voller Energie.\n",
+                    "backSpin": "Die Rückenmassage hilft, den Rücken und insbesondere den Schulter–, Kopf- und Nackenbereich optimal zu entspannen und Blockaden zu lösen. Diese Massage ist ideal für Menschen, die den ganzen Tag im Stehen oder Sitzen verbringen und dadurch häufig unter Rücken-, Kopfschmerzen und Muskelverspannungen leiden. Eine regelmässige Anwendung löst diese Muskelverspannungen und wirkt sich positiv auf Ihre Wirbelsäule aus und steigert das allgemeine körperliche Wohlbefinden.",
                     "backSpin2": "Eine regelmäßige Massage hilft Ihnen dabei, sich zu befreien häufige Rückenschmerzen, Kopfschmerzen, Muskelverspannungen. Nach der Massage fühlen Sie sich entspannt und voller Energie.",
                     "older": "Massage ist ein notwendiges und sehr nützliches Verfahren für ältere Menschen, Rentner. Studien haben gezeigt, dass die Massage den Alterungsprozess verlangsamt. Auch Massage hat eine beruhigende Wirkung im ganzen Körper und kann Schmerzen reduzieren. \n" +
                     "Мassage kann Menschen helfen, die unter Muskelschmerzen leiden: Zum Beispiel, diejenigen, die an Arthritis leiden, Massage hilft, Schmerzen zu reduzieren, erhöht die Amplitude der Bewegung in den Gelenken. Wenn eine Person leidet, wird sie immer weniger aktiv und beeinflusst die Lebensqualität und Gesundheit. Massage verbessert die Durchblutung, beseitigt Muskelermüdung und Muskeln erhalten Ton. Dies verbessert die Lebensqualität einer älteren Person. \n" +
                     "Vor einer Massage ist es ratsam, einen Arzt zu konsultieren. Sobald Sie die Erlaubnis vom Arzt für eine Massage bekommen, können Sie sich mit mir in Verbindung setzen.",
-                    "relaxBody": "Entspannungsmassage eignet sich für alle, die sich nach einem anstrengenden Tag erholen, vergessen und dem Alltag entfliehen möchten.\n" +
-                    "Entfernt: Spannung und Stress Rücken- und Kopfschmerzen, entspannt die Muskeln wirkt sich positiv auf den inneren Zustand des Organismus aus verbessert Stimmung und Energie.\n" +
-                    "Eine oder zwei diese entspannende Massage pro Woche garantieren Ihnen ein gutes Arbeitsleben, gute Laune und Wohlbefinden.\n",
+                    "relaxBody": "Eine Entspannungsmassage eignet sich für alle, die sich nach einem anstrengenden Tag erholen und dem Alltag entfliehen möchten. Sie entspannt die Muskeln, hilft bei Rücken- und Kopfschmerzen, wirkt sich positiv auf den inneren Zustand des Organismus aus und fördert Stimmung und Energie. Es wird bei jeder Massage individuell auf Ihre momentanen Beschwerden und Spannungen eingegangen. Die regelmässige Anwendung dieser entspannenden Massage garantieren Ihnen ein gutes Arbeitsleben, allgemeines Wohlbefinden und deutlich mehr Kraft und Leistungsfähigkeit.",
                     "relaxBody2":"Eine oder zwei diese entspannende Massage pro Woche garantieren Ihnen ein gutes Arbeitsleben, gute Laune und Wohlbefinden.",
-                    "ajurved": "Ayurveda empfiehlt der Brust-Massage, denn hierdurch entsteht ein optimaler Stimulus zur Harmonisierung des weiblichen Hormonzyklus.\n" +
-                    "Die Massage sorgt für straffe Haut und straffes Bindegewebe  verhindert Verspannungen und Entzündungen im Brustbereich, beugt Zystenbildung und Brustkrebs vor, aktiviert das Herz und das Herz Chakra.\n" +
-                    "Diese Massage verbessert Ihr Wohlbefinden, macht Ihre Brüste schöner, gibt Ihnen Sicherheit und hilft Ihnen, sich besser zu fühlen wie eine Frau.\n" +
-                    "Die Massage wird mit der Verwendung von Pflanzenölen durchgeführt und dauert bis zu einer Stunde.\n" +
-                    "Regelmäßige Massage hilft, Schmerzen in die Brüste zu beseitigen.\n",
-                    "antice": "Gemeinsam Cellulite gewinnen!\n" +
-                    "Viele Frauen suchen nach Wegen, um den größten Feind der schönen Beine zu besiegen - Cellulite.\n" +
-                    "Geförderte teure Produkte sind nicht immer wirksam, sie entfernen Cellulite nicht immer auf magische Weise. Wissenschaftler, die dieses Problem untersuchen, behaupten daher, dass nur eine komplexe Therapie: ausgewogene Ernährung + aktive körperliche Aktivität + Anti Cellulite-Massage wirksam sein kann und gute Ergebnisse verspricht.\n" +
-                    "Während der Massage erwärmt sich die Haut, der Stoffwechsel, die Durchblutung und die Lymphzirkulation werden angeregt. In Problembereichen werden bestimmte tiefe Bewegungen ausgeführt.\n" +
-                    "Also diese Massage verbessert den Lymphfluss, beseitigt Giftstoffe  und Flüssigkeit, die sich im Körpergewebe angesammelt haben, verbessert den Zellstoffwechsel, aktiviert     die Durchblutung, stellt die Mikrozirkulation wieder her erweicht Stoffe verbessert den Muskeltonus, stärkt die Haut.     \n" +
-                    "\n" +
-                    "Jeden zweiten Tag werden 10-15 Verfahren empfohlen. Anschließend werden die Verfahren mehrmals im Monat durchgeführt.\n",
-                    "relaxFoot": "Füße Massage wird verwendet für  um müde, schmerzende Beine zu entspannen,  Verbesserung der Vitalität des Körpers,  Stärkung des Immunsystems.\n" +
-                    "Zusätzlich wird diese Massage angewendet  Schlafstörungen,\n" +
-                    " Spannungen und Stress reduzieren.\n" +
-                    "Besonders geeignet für  Frauen oder Mädchen, die oft High Heels tragen,  Übergewichtige Menschen schwangere Frauen.\n" +
-                    "Bei einer regelmäßigen Füße Massage werden Sie Ihre Beschwerden und Schmerzen in den Beinen vergessen!\n" +
-                    "Empfohlene 10-12 Behandlungen, ein Kurs von 2-3 mal pro Woche.\n",
+                    "ajurved": "Diese wohltuende, etwas einstündige Brust-Massage sorgt für eine straffere Haut und ein straffes Bindegewebe, verhindert Verspannungen und Entzündungen im Brustbereich, beugt Zystenbildung vor und aktiviert das Herz und sein Chakra. Diese stimulierende Anwendung wirkt sich optimal auf die Harmonisierung des weiblichen Hormonzyklus aus. Die Verwendung von feinsten Planzenölen fördert ein harmonisches und lebensbejahendes Wohlgefühl.",
+                    "antice": "Gemeinsam Cellulite bekämpfen! Viele Frauen suchen nach Wegen, um den größten Feind der schönen Beine zu besiegen - Cellulite. Auch teure Produkte entfernen Cellulite nicht immer auf magische Weise. Wissenschaftler, die dieses Problem untersuchen, empfehlen, dass nur eine komplexe Therapie aus ausgewogener Ernährung, aktiver körperlicher Aktivität und Anti-Cellulite Massage gute Ergebnisse versprechen. Während der Massage erwärmt sich die Haut, der Stoffwechsel, die Durchblutung, und der Lymphfluss wird angeregt. In Problembereichen werden bestimmte tiefe Bewegungen ausgeführt. Diese fördern die Ausschwemmung von Schlackstoffen. Als Resultat werden die Verklebungen gelöst und das Bindegewebe gestrafft. Bei regelmässiger Anwendung, empfohlen sind 10 bis 15 Massagen im Zweitagesrythmus, sieht die Haut dauerhaft ebenmäßiger aus und das Bindegewebe erhält eine flexible, weiche und gesunde Struktur.",
+                    "relaxFoot": "Diese Anwendung hilft, müde, schmerzende Beine und Füsse zu entspannen, verbessert die Vitalität Ihres Körpers und stärkt auch das Immunsystem. Ausserdem wird diese Massage bei Schlafstörungen, Verspannungen und Stress angewendet. Besonders geeignet ist sie für Frauen, die oft High Heels tragen, übergewichtige Menschen und schwangere Frauen. Bei einer regelmäßigen Anwendung werden Sie Ihre Beschwerden und Schmerzen in den Füssen und Beinen rasch vergessen! Empfohlen sind 10-12 Behandlungen, bei zwei- bis drei Massagen pro Woche.",
 
                     "sepHead": "Entspannt bei Stress, lindert Krämpfe, verbessert den Blutkreislauf.",
                     "sepNeck": "Die effektivste Behandlung, sowie ein Heilmittel für die Beseitigung von unangenehmen Symptomen. Nach der ersten Massage des Halses, fühlen Sie eine allgemeine Verbesserung in Ihrem Gesundheitszustand. Nach einem vollen Massagen verschwinden schmerzhafte Empfindungen, die Arbeitskapazität steigt, Schlaflosigkeit und Reizbarkeit verschwinden. Nackenmassage ist ein ausgezeichnetes Werkzeug, um Kopfschmerzen loszuwerden. \n" +
                     "Dies ist eine hervorragende Maßnahme zur Reduzierung von Kopf, Hals, Schulter Schmerzen, Taubheit Hände.",
                     "sepStoma": "Regt die Verdauung an, wirkt sich positiv auf die intra–abdominalen Organe aus, verbessert Magen– und Darmfunktionen sowie die Gallensekretion, hilft bei Verstopfung oder Gasansammlung im Darm.",
-                    "sepPar":"Verbessert die Blut- und Lymphzirkulation im unteren Rücken und in den\n" +
-                    "Beinen, entspannt enge Muskeln, Gesäß, Beinschmerzen, stärkt die\n" +
-                    "geschwächten Muskeln. Diese Massage - entspannt angespannt Gewebe, entlastet  Gelenke, Muskeln Schmerzen in den Beinen, ist es in der Regel nach dem Trauma, Chirurgie, Bein Müdigkeit empfohlen.\n" +
-                    "Diese Massage eignet sich besonders nach dem Training.\n",
-                    "collar":"Der Kragenbereich des Rückens gilt als der problematischste.\n" +
-                    "Die Vorteile der Massage im Nackenbereich entfernt das muskulo-tonische Syndrom des Kragenbereichs. Stimuliert die Funktionalität der Muskelfasern des Kragenbereichs. Verbessert die Elastizität, Erregbarkeit und Dehnbarkeit der Muskelfasern verbessert die Haltung, normalisiert die Arbeit des Atmungssystems beseitigt Schwellungen im Kragenbereich. Verbessert die Durchblutung, sättigt das Gehirn mit Sauerstoff und beseitigt auch Kopfschmerzen.     \n" +
-                    "Normalisiert die allgemeine Gesundheit und verbessert die Leistung.\n" +
-                    "Die Massage des Hals- und Kragen Bereichs und der Oberarme hat folgende Hinweise: langer Aufenthalt der Halswirbelsäule in einer statischen Position; häufige Kopfschmerzen, vestibuläre Störungen; chronisches Ermüdungssyndrom; ständiger Stress; bei durch Osteochondrose, Arthrose, Skoliose verursachten Nackenschmerzen; stabile Schlafstörung; Zustand nach Schlaganfall.\n" +
-                    "  Die Massage kann für Patienten aller Altersgruppen machen werden.\n" +
-                    "\n" +
-                    "Machen Sie den Eingriff jeden zweiten Tag und noch besser - in 2-3 Tagen. Der durchschnittliche Kurs beträgt 10 mal.\n" +
-                    "Wiederholen Sie 2-3 mal pro Jahr.\n",
-                    "senior":"Massage ist eine notwendige und sehr nützliche Prozedur. Studien haben gezeigt, dass Massage den Alterungsprozess verlangsamt. Massage wirkt auch beruhigend auf den ganzen Körper und kann die Schmerzen lindern, unter denen ältere Menschen oft leiden. Wissenschaftler haben bewiesen, dass die Massage diese Veränderungen erfolgreich bekämpft. Zum Beispiel für diejenigen, die an Arthritis leiden, reduziert Massage Schmerzen und vergrößert den Bewegungsbereich in den Gelenken und hilft dem Körper, natürliche Flüssigkeit in den Gelenken zu produzieren, verbessert die Durchblutung und so weiter. Massage verbessert auch das Gedächtnis, was für ältere Menschen sehr wichtig ist. Dies verbessert die Lebensqualität eines älteren Menschen.\n" +
-                    "  Alle Massagebewegungen sind sanft und leicht.\n",
+                    "sepPar":"Diese Massage verbessert die Blut- und Lymphzirkulation im unteren Rücken und in den Beinen, entspannt und stärkt verkrampfte Muskeln, lindert Gesäßschmerzen und hilft dadurch auch bei Gelenk- und Beinschmerzen. Sie wird in der Regel nach einem Trauma, chirurgischen Eingriffen oder bei chronischer Müdigkeit empfohlen. Diese Massage eignet sich insbesondere auch nach einem intensiven Training.",
+                    "collar":"Kopfschmerzen und Schmerzen im Nackenbereich werden oft durch schlechte Haltung, viel Sitzen, Schlafstörungen und Bewegungsarmut hervorgerufen. Eine gezielte Massage des Nackens und oberen Rückenbereichs verbessert die Elastizität der Muskelfasern, die Durchblutung und dadurch auch den Sauerstoffzufuhr zum Gehirn. Diese Massage ist für Patienten aller Altersgruppen geeignet. Bei regelmässiger Anwendung, empfohlen sind etwa 10 Massagen alle zwei bis drei Tage, kann die Nacken- und Rückenmuskulatur massgeblich gelockert werden. Wiederholen Sie dies zwei bis dreimal pro Jahr, um eine vorbeugende Wirkung zu erzielen.",
+                    "senior":"Je älter ein Mensch wird, desto mehr verliert sein Körper an Elastizität, Beweglichkeit, Kraft und Stabilität. Dies sind die üblichen Zeichen des Alterns. Ältere Manschen leiden oft an schmerzhaften Verspannungen. Sanfte Massagen oder Teil-Massagen können bei solchen Verspannungen und Blockaden sehr wohltuend sein. Sie wirken entspannend und beruhigend und fördern den Bewegungsbereich und dadurch auch die Lebensqualität. Die Behandlung von älteren Personen wird nur sanft, schonend und einfühlsam vollzogen, da der Körper im Alter viel empfindlicher reagiert.",
                     "sepWaist": "Verbessert die Blut– und Lymphzirkulation im unteren Rücken und in den Beinen, entspannt enge Muskeln, Gesäß, Beinschmerzen, stärkt die geschwächten Muskeln. Verringert den Schmerz nach der Operation, reduziert die Entzündung der Nervenwurzeln."
 
 
@@ -588,13 +541,13 @@ gg.factory('myDataFactory', function () {
                     // "sepPar": ["Teilkörpermassage", "30min", "60min", "90min"],
                     "sepPar": ["Teilkörpermassage", "50 CHF", "100 CHF", "150 CHF"],
                     "waist": ["Massage Schulter–Hals–Hände", "50", "100", "–"],
-                    "neck": ["Lendenwirbel – Gesäß – Beinmassage", "50", "100", "–"],
+                    "neck": ["Lendenwirbel – Gesäß – und Beinmassage", "50", "100", "–"],
                     "head": ["Kopfmassage", "50", "–", "–"],
                     "stoma": ["Bauchmassage", "50", "–", "–"],
                     "kidsMas": ["Für kinder ab 12 bis 15 jahren", "60min", "90min", "120min"],
                     "kidBackSpin": ["Rückenmassage", "80", "120", "–"],
                     "kidsNeck": ["Massage Schulter–Hals–Hände", "80", "–", "–"],
-                    "kidsWaist": ["Lendenwirbel – Gesäß – Beinmassage", "80", "–", "–"],
+                    "kidsWaist": ["Lendenwirbel – Gesäß – und Beinmassage", "80", "–", "–"],
                     "kidsFull": ["Ganzkörpermassagе", "–", "–", "160"],
                     "otherTitle": ["Andere Massagen", "40min", "60min", "75min","90min"],
                     "offers1":"ANGEBOTE",
