@@ -12,7 +12,7 @@ GET         /                          controllers.HomeController.singlePageAppl
 GET         /public/*file              controllers.Assets.at(path="/public", file)
 
 #adminData page
-GET         /adminpage                 controllers.HomeController.adminPage()
+#GET         /adminpage                 controllers.HomeController.adminPage()
 
 #form handling
 POST        /submitFullForm            controllers.BookingFormController.addBookingToDatabase()
@@ -20,14 +20,14 @@ POST        /submitFullForm            controllers.BookingFormController.addBook
 POST        /getMassagesData           controllers.HomeController.getMassagesData()
 GET         /getPrices                 controllers.HomeController.getPrices()
 #fetch data from mysql for admins
-GET         /getAdminClientData        controllers.HomeController.getAdminClientData()
+#GET         /getAdminClientData        controllers.HomeController.getAdminClientData()
 
 GET         /toFaceBook                controllers.HomeController.toFaceBook
 
 #only once when data model will be ready, to add data
 #GET         /loadData                  controllers.DatabaseController.loadDatabase()
 
-POST        /getTimeSlots              controllers.DatabaseController.getTimeSlots()
+#POST        /getTimeSlots              controllers.DatabaseController.getTimeSlots()
 
 POST        /sendEmail                 controllers.ContactUsForm.sendEmail()
 POST        /makeABooking              controllers.DatabaseController.makeABooking()

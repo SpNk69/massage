@@ -225,7 +225,7 @@ gg.factory('myDataFactory', function () {
                 "lt": {
                     "limphoBody": "Limfodrenažinis kūno masažas (metodika pagal Pascal Kose)",
                     "limphoFace": "Limfodrenažinis veido masažas (metodika pagal Pascal Kose)",
-                    "stoneHotCold": "Karštų akmenų masažas",
+                    "stoneHotCold": "Viso kūno masažas su karštais ir šaltais akmenimis",
                     "backSpin": "Klasikinis – segmentinis nugaros masažas",
                     "older": "Masažas vyresnio amžiaus žmonėms",
                     "relaxBody": "Atpalaiduojantis viso kūno masažas",
@@ -241,12 +241,13 @@ gg.factory('myDataFactory', function () {
                     "labelLess": "Mažiau",
                     "buttonReserve": "Rezervuoti",
                     "collar":"Apykaklės masažas",
-                    "senior":"Masažas Senjorams"
+                    "senior":"Masažas Senjorams",
+                    "stoneHotSpin":"Nugaros karštų akmenų masažas"
                 },
                 "de": {
                     "limphoBody": "Lymphdrainage-Körpermassage (Methodik von Pascal Kose)",
                     "limphoFace": "Gesichtsmassage (Methodik von Pascal Kose)",
-                    "stoneHotCold": "Hot Stone Massage",
+                    "stoneHotCold": "Ganzkörpermassage mit heißen und kalten Steinen",
                     "backSpin": "Klassische – segmentale Rückenmassage",
                     "older": "Massage für ältere Menscher",
                     "relaxBody": "Entspannende Ganzkörpermassagе",
@@ -262,13 +263,14 @@ gg.factory('myDataFactory', function () {
                     "labelLess": "Weniger",
                     "buttonReserve": "Reservieren",
                     "collar":"Oberarm- Nacken- und obere Rückenpartie Massage",
-                    "senior":"Massage für Senioren"
+                    "senior":"Massage für Senioren",
+                    "stoneHotSpin":"Rückenmassage mit heißen Steinen"
 
                 },
                 "ru": {
                     "limphoBody": "Лимфодренажный массаж тела (методика Паскаль Коше)",
                     "limphoFace": "Лимфодренажный массаж лица (методика Паскаль Коше)",
-                    "stoneHotCold": "Массаж горячими камнями",
+                    "stoneHotCold": "Массаж всего тела с горячими и холодными камнями",
                     "backSpin": "Классический – Сегментный массаж спины",
                     "older": "Массаж для пожилых людей",
                     "relaxBody": "Расслабляющий массаж всего тела",
@@ -284,7 +286,8 @@ gg.factory('myDataFactory', function () {
                     "labelLess": "Меньше",
                     "buttonReserve": "Резервировать",
                     "collar":"Массаж шейно-воротниковой зоны",
-                    "senior":"Массаж для пенсионеров"
+                    "senior":"Массаж для пенсионеров",
+                    "stoneHotSpin":"Массаж спины с горячими камнями"
 
                 }
             };
@@ -361,7 +364,8 @@ gg.factory('myDataFactory', function () {
                     "senior":"Masažas yra būtina ir labai naudinga procedūra. Tyrimai parodė, kad masažas lėtina senėjimo procesą. Taip pat masažas veikia raminančiai visą organizmą ir gali sumažinti skausmus, nuo kurių dažnai kenčia pagyvenę žmonės. Mokslininkai įrodė, kad masažas sėkmingai kovoja su šiais pasikeitimais. Pavyzdžiui, tiems, kurie kenčia nuo artrito, masažas sumažina skausmą ir padidina judesių amplitudę sąnariuose ir padeda organizmui gaminti  natūraliai skystį sąnariuose, gerina kraujotaką ir t.t. Masažas pagerina taip pat ir atmintį, o tai labai svarbu pagyvenusiems žmonėms. Dėl to pagerėja pagyvenusio žmogaus gyvenimo kokybė.\n" +
                     "Visi masažo judesiai švelnūs  ir lengvi.\n",
 
-                    "sepWaist": "Gerina kraujo ir limfos apytaką juosmens bei kojų srityse, atpalaiduoja įsitempusius raumenis, mažina juosmens, sėdmenų, kojų skausmą, stiprina nusilpusius raumenis. Sumažina skausmą po operacijos, mažina nervinių šaknų uždegimą."
+                    "sepWaist": "Gerina kraujo ir limfos apytaką juosmens bei kojų srityse, atpalaiduoja įsitempusius raumenis, mažina juosmens, sėdmenų, kojų skausmą, stiprina nusilpusius raumenis. Sumažina skausmą po operacijos, mažina nervinių šaknų uždegimą.",
+                    "stoneHotSpin":""
 
 
 
@@ -395,7 +399,8 @@ gg.factory('myDataFactory', function () {
                     "sepPar":"Diese Massage verbessert die Blut- und Lymphzirkulation im unteren Rücken und in den Beinen, entspannt und stärkt verkrampfte Muskeln, lindert Gesäßschmerzen und hilft dadurch auch bei Gelenk- und Beinschmerzen. Sie wird in der Regel nach einem Trauma, chirurgischen Eingriffen oder bei chronischer Müdigkeit empfohlen. Diese Massage eignet sich insbesondere auch nach einem intensiven Training.",
                     "collar":"Kopfschmerzen und Schmerzen im Nackenbereich werden oft durch schlechte Haltung, viel Sitzen, Schlafstörungen und Bewegungsarmut hervorgerufen. Eine gezielte Massage des Nackens und oberen Rückenbereichs verbessert die Elastizität der Muskelfasern, die Durchblutung und dadurch auch den Sauerstoffzufuhr zum Gehirn. Diese Massage ist für Patienten aller Altersgruppen geeignet. Bei regelmässiger Anwendung, empfohlen sind etwa 10 Massagen alle zwei bis drei Tage, kann die Nacken- und Rückenmuskulatur massgeblich gelockert werden. Wiederholen Sie dies zwei bis dreimal pro Jahr, um eine vorbeugende Wirkung zu erzielen.",
                     "senior":"Je älter ein Mensch wird, desto mehr verliert sein Körper an Elastizität, Beweglichkeit, Kraft und Stabilität. Dies sind die üblichen Zeichen des Alterns. Ältere Manschen leiden oft an schmerzhaften Verspannungen. Sanfte Massagen oder Teil-Massagen können bei solchen Verspannungen und Blockaden sehr wohltuend sein. Sie wirken entspannend und beruhigend und fördern den Bewegungsbereich und dadurch auch die Lebensqualität. Die Behandlung von älteren Personen wird nur sanft, schonend und einfühlsam vollzogen, da der Körper im Alter viel empfindlicher reagiert.",
-                    "sepWaist": "Verbessert die Blut– und Lymphzirkulation im unteren Rücken und in den Beinen, entspannt enge Muskeln, Gesäß, Beinschmerzen, stärkt die geschwächten Muskeln. Verringert den Schmerz nach der Operation, reduziert die Entzündung der Nervenwurzeln."
+                    "sepWaist": "Verbessert die Blut– und Lymphzirkulation im unteren Rücken und in den Beinen, entspannt enge Muskeln, Gesäß, Beinschmerzen, stärkt die geschwächten Muskeln. Verringert den Schmerz nach der Operation, reduziert die Entzündung der Nervenwurzeln.",
+                    "stoneHotSpin":""
 
 
                 },
@@ -470,7 +475,8 @@ gg.factory('myDataFactory', function () {
                     "           Повторить 2-3 раза в год.",
                     "senior":"Массаж является необходимой и очень полезной процедурой. Исследования показали, что массаж замедляет процесс старения. Также массаж оказывает успокаивающее действие по всему телу и может уменьшить боль, которая часто страдает  пожилые люди. Ученые доказали, что массаж успешно борется с этими изменениями. Например, для тех, кто страдает от артрита, массаж уменьшает боль и увеличивает амплитуду движений в суставах и помогает организму вырабатывать естественную жидкость в суставах, улучшает кровообращение и так далее. Массаж также улучшает память и качество жизни, что очень важно для пожилых людей.\n" +
                     "Все массажные движения нежные и легкие.\n",
-                    "sepWaist": "Улучшает циркуляцию крови и лимфы в пояснице и ногах, расслабляет напряженные мышцы, уменьшает поясничные, ягодицы, ногах боль, укрепляет ослабленные мышцы. Уменьшает боль после операции, уменьшает воспаление нервных корешков."
+                    "sepWaist": "Улучшает циркуляцию крови и лимфы в пояснице и ногах, расслабляет напряженные мышцы, уменьшает поясничные, ягодицы, ногах боль, укрепляет ослабленные мышцы. Уменьшает боль после операции, уменьшает воспаление нервных корешков.",
+                    "stoneHotSpin":""
 
 
                 }
@@ -745,7 +751,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Mūsų kontaktai",
                     "location":"Vieta",
                     "open":"Darbo laikas",
-                    "openHours":["Pi: 09:00 - 20:00","An: Uždaryta","Tr: 13:00 - 20:00","Ke: 16:00 - 20:00","Pe: 09:00 - 20:00","Še: 10:00 - 18:00","Se: Uždaryta"]
+                    "openHours":["Pi: 09:00 - 18:00","An: Uždaryta","Tr: 15:00 - 20:00","Ke: 15:00 - 20:00","Pe: 09:00 - 18:00","Še: 10:00 - 18:00","Se: Uždaryta"]
 
                 },
                 "de": {
@@ -763,7 +769,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Unsere Kontakte",
                     "location":"Lage",
                     "open":"Öffnungszeiten",
-                    "openHours":["Mo: 09:00 - 20:00","Di: Geschlossen","Mi: 13:00 - 20:00","Do: 16:00 - 20:00","Fr: 09:00 - 20:00","Sa: 10:00 - 18:00","So: Geschlossen"]
+                    "openHours":["Mo: 09:00 - 18:00","Di: Geschlossen","Mi: 15:00 - 20:00","Do: 15:00 - 20:00","Fr: 09:00 - 18:00","Sa: 10:00 - 18:00","So: Geschlossen"]
 
                 },
                 "ru": {
@@ -781,7 +787,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Наши контакты",
                     "location":"Место",
                     "open":"Часы работы",
-                    "openHours":["По: 09:00 - 20:00","Вт: Закрыто","Ср: 13:00 - 20:00","Че: 16:00 - 20:00","Пя: 09:00 - 20:00","Су: 10:00 - 18:00","Во: Закрыто"]
+                    "openHours":["По: 09:00 - 18:00","Вт: Закрыто","Ср: 15:00 - 20:00","Че: 15:00 - 20:00","Пя: 09:00 - 18:00","Су: 10:00 - 18:00","Во: Закрыто"]
 
 
                 }
