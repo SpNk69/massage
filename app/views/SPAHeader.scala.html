@@ -8,63 +8,70 @@
 <!DOCTYPE html  >
 
 <html ng-app="myTestApp" ng-controller="myTestController" lang="{{languageParameter}}">
-    <head>
+<head>
 
-        <script src='@routes.Assets.at("design2/js/angular.min.js")'></script>
-        <script src='@routes.Assets.at("design2/js/angular-recaptcha.js")'></script>
-        <script src='@routes.Assets.at("design2/js/mainController.js")'></script>
-        <script src='@routes.Assets.at("design2/js/aboutMeController.js")'></script>
-        <script src='@routes.Assets.at("design2/js/pricesController.js")'></script>
-        <script src='@routes.Assets.at("design2/js/introAndNavigationController.js")'></script>
-        <script src='@routes.Assets.at("design2/js/bookingFormController.js")'></script>
-        <script src='@routes.Assets.at("design2/js/massageController.js")'></script>
-        <script src='@routes.Assets.at("design2/js/dataFactory.js")'></script>
-        <script src='@routes.Assets.at("design2/js/gMapsController.js")'></script>
-        <script src='@routes.Assets.at("design2/js/functionFactory.js")'></script>
-        <script src='@routes.Assets.at("design2/js/contactUsController.js")'></script>
-        <script src='@routes.Assets.at("design2/js/captchaController.js")'></script>
-        <script src='@routes.Assets.at("design2/js/ng-text-truncate.js")'></script>
-        <link href='@routes.Assets.at("design2/css/thumbnail.css")' rel=stylesheet>
-        <script src='@routes.Assets.at("design2/js/ng-map.min.js")'></script>
+    <script src='@routes.Assets.at("design2/js/angular.min.js")'></script>
+    <script src='@routes.Assets.at("design2/js/angular-recaptcha.js")'></script>
+    <script src='@routes.Assets.at("design2/js/mainController.js")'></script>
+    <script src='@routes.Assets.at("design2/js/aboutMeController.js")'></script>
+    <script src='@routes.Assets.at("design2/js/pricesController.js")'></script>
+    <script src='@routes.Assets.at("design2/js/introAndNavigationController.js")'></script>
+    <script src='@routes.Assets.at("design2/js/bookingFormController.js")'></script>
+    <script src='@routes.Assets.at("design2/js/massageController.js")'></script>
+    <script src='@routes.Assets.at("design2/js/dataFactory.js")'></script>
+    <script src='@routes.Assets.at("design2/js/gMapsController.js")'></script>
+    <script src='@routes.Assets.at("design2/js/functionFactory.js")'></script>
+    <script src='@routes.Assets.at("design2/js/contactUsController.js")'></script>
+    <script src='@routes.Assets.at("design2/js/captchaController.js")'></script>
+    <script src='@routes.Assets.at("design2/js/ng-text-truncate.js")'></script>
+    <link href='@routes.Assets.at("design2/css/thumbnail.css")' rel=stylesheet>
+    <script src='@routes.Assets.at("design2/js/ng-map.min.js")'></script>
 
-        <script src='@routes.Assets.at("design2/js/moment-with-locales.min.js")'></script>
-        <link href='@routes.Assets.at("design2/css/formStyle.css")' rel=stylesheet>
+    <script src='@routes.Assets.at("design2/js/moment-with-locales.min.js")'></script>
+    <link href='@routes.Assets.at("design2/css/formStyle.css")' rel=stylesheet>
 
-        <script src='@routes.Assets.at("design2/js/angular-moment-picker.min.js")'></script>
+    <script src='@routes.Assets.at("design2/js/angular-moment-picker.min.js")'></script>
 
-        <link href='@routes.Assets.at("design2/js/angular-moment-picker.min.css")' rel=stylesheet>
+    <link href='@routes.Assets.at("design2/js/angular-moment-picker.min.css")' rel=stylesheet>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        @*ongoing here...*@
-            <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline';
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Vida massage, Vida massage Schaffhausen, Wellness SPA Massage, Lymphdrainage-Körpermassage, Gesichtsmassage, Klassische – segmentale Rückenmassage, Entspannende Ganzkörpermassagе, Ayurvedische Brust-Massage für Frauen, Fuss- und Wadenmassage, Anti - Cellulite Massage, Lendenwirbel– Gesäß- und Beinmassage, Rückenmassage mit heißen Steinen ">
+    <meta name="author" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Vida massage, Vida massage Schaffhausen">
+
+    @*ongoing here...*@
+    <meta http-equiv="" content="default-src *; style-src 'self' 'unsafe-inline';
             script-src 'self' https://www.google.com/recaptcha/api.js https://www.gstatic.com/recaptcha/ https://maps.googleapis.com/ 'unsafe-inline' 'unsafe-eval';
              font-src 'self' https://fonts.gstatic.com/ https://fonts.googleapis.com ">
 
-        <title>Vida Massage</title>
+    <title>Vida Massage</title>
 
-            <!-- Bootstrap core CSS -->
-        <link href='@routes.Assets.at("design2/vendor/bootstrap/css/bootstrap.min.css")' rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href='@routes.Assets.at("design2/vendor/bootstrap/css/bootstrap.min.css")' rel="stylesheet">
 
-            <!-- Custom fonts for this template -->
-        <link href='@routes.Assets.at("design2/vendor/font-awesome/css/font-awesome.min.css")' rel="stylesheet" type="text/css">
-        <link href='@routes.Assets.at("design2/vendor/font-awesome/css/whatever.css")' rel="stylesheet" type="text/css">
-        <link href='@routes.Assets.at("design2/vendor/font-awesome/css/whatever.min.css")' rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Custom fonts for this template -->
+    <link href='@routes.Assets.at("design2/vendor/font-awesome/css/font-awesome.min.css")' rel="stylesheet"
+          type="text/css">
+    <link href='@routes.Assets.at("design2/vendor/font-awesome/css/whatever.css")' rel="stylesheet" type="text/css">
+    <link href='@routes.Assets.at("design2/vendor/font-awesome/css/whatever.min.css")' rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
 
-            <!-- Plugin CSS -->
-        <link href='@routes.Assets.at("design2/vendor/magnific-popup/magnific-popup.css")' rel="stylesheet">
+    <!-- Plugin CSS -->
+    <link href='@routes.Assets.at("design2/vendor/magnific-popup/magnific-popup.css")' rel="stylesheet">
 
-            <!-- Custom styles for this template -->
-        <link href='@routes.Assets.at("design2/css/creative.min.css")' rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href='@routes.Assets.at("design2/css/creative.min.css")' rel="stylesheet">
 
     </head>
-    <body >
-        @* And here's where we render the `Html` object containing
-        * the page content. *@
-        @content
-    </body >
+<body>
+@* And here's where we render the `Html` object containing
+* the page content. *@
+@content
+</body>
 </html>
