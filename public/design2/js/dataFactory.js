@@ -79,7 +79,7 @@ gg.factory('myDataFactory', function () {
                     "massages": "Massagen",
                     "gallery": "Galerie",
                     "prices": "Preise",
-                    "book": "Bestellen",
+                    "book": "Bestellung",
                     "contacts": "Kontakte",
                 },
                 "ru": {
@@ -751,11 +751,11 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Mūsų kontaktai",
                     "location":"Vieta",
                     "open":"Darbo laikas",
-                    "openHours":["Pi: 09:00 - 18:00","An: Uždaryta","Tr: 15:00 - 20:00","Ke: 15:00 - 20:00","Pe: 09:00 - 18:00","Še: 10:00 - 18:00","Se: Uždaryta"]
+                    "openHours":["Pi: 09:00 - 18:00","An: Uždaryta","Tr: 15:00 - 21:00","Ke: 15:00 - 21:00","Pe: 09:00 - 18:00","Še: 10:00 - 18:00","Se: Uždaryta"]
 
                 },
                 "de": {
-                    "secTitle": "Kontaktiere uns",
+                    "secTitle": "Kontaktieren Sie uns",
                     "sentence": "Haben Sie Fragen? Frage und antworte. Sie können uns auch in sozialen Netzwerken folgen.",
                     "title": "Fragen",
                     "name": "Name",
@@ -769,7 +769,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Unsere Kontakte",
                     "location":"Lage",
                     "open":"Öffnungszeiten",
-                    "openHours":["Mo: 09:00 - 18:00","Di: Geschlossen","Mi: 15:00 - 20:00","Do: 15:00 - 20:00","Fr: 09:00 - 18:00","Sa: 10:00 - 18:00","So: Geschlossen"]
+                    "openHours":["Mo: 09:00 - 18:00","Di: Geschlossen","Mi: 15:00 - 21:00","Do: 15:00 - 21:00","Fr: 09:00 - 18:00","Sa: 10:00 - 18:00","So: Geschlossen"]
 
                 },
                 "ru": {
@@ -787,7 +787,7 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Наши контакты",
                     "location":"Место",
                     "open":"Часы работы",
-                    "openHours":["По: 09:00 - 18:00","Вт: Закрыто","Ср: 15:00 - 20:00","Че: 15:00 - 20:00","Пя: 09:00 - 18:00","Су: 10:00 - 18:00","Во: Закрыто"]
+                    "openHours":["По: 09:00 - 18:00","Вт: Закрыто","Ср: 15:00 - 21:00","Че: 15:00 - 21:00","Пя: 09:00 - 18:00","Су: 10:00 - 18:00","Во: Закрыто"]
 
 
                 }
