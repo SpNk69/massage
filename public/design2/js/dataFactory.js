@@ -517,11 +517,11 @@ gg.factory('myDataFactory', function () {
                     "kidsFull": ["Viso kūno masažas", "–", "–", "160"],
                     "otherTitle": ["Kiti masažai", "40min", "60min", "75min","90min"],
                     "offers1":"PASIŪLYMAI",
-                    "offers2":["Senjorams suteikiama 15% nuolaida nuo kainos.","Užsisakius 7 masažus suteikiama 10% nuolaida.","Užsisakius 11 masažų suteikiama 13 % nuolaida."],
+                    "offers2":["Senjorams suteikiama 15% nuolaida nuo kainos.","Pirkdami 10ies kartų abonementą, nemokamai gausite 11-ąjį masažą!"],
                     "present1":"DOVANŲ KUPONAI",
-                    "present2":["Dovanų kuponai užsakomi pagal Jūsų pageidavimus.","Masažo kuponas yra ideali dovana gimtadieniui, vestuvėms, Kalėdoms ar kitoms progoms."],
+                    "present2":["Dovanų kuponai užsakomi pagal Jūsų pageidavimus.","Masažo kuponas yra ideali dovana gimtadieniui, vestuvėms, Kalėdoms ar kitoms progoms.","Dovanų kuponus galite įsigyti šiuo adresu: Oberstadt 22, 1. aukštas iš anksto susitarus telefonu ar info@vidamassage.ch (atsiprašome už laikinus nepatogumus)"],
                     "attention1":"ATKREIPKITE DĖMESĮ",
-                    "attention2":["Atsiskaitymas tik grynaisiais pinigais (laikinai).","Paslauga mokama kiekvieno masažo pabaigoje.","Nuolaidos nesumuojamos.","Jei negalite atvykti į masažą. Prašome atšaukti savo užsakymą prieš 24 valandas iki sutartos datos elektroniniu paštu arba sms žinute."]
+                    "attention2":["Atsiskaitymas tik grynaisiais pinigais (atsiprašome už laikinus nepatogumus).","Paslauga mokama kiekvieno masažo pabaigoje.","Nuolaidos nesumuojamos.","Jei negalite atvykti į masažą. Prašome atšaukti savo užsakymą prieš 24 valandas iki sutartos datos elektroniniu paštu arba sms žinute."]
 
 
 
@@ -557,11 +557,11 @@ gg.factory('myDataFactory', function () {
                     "kidsFull": ["Ganzkörpermassagе", "–", "–", "160"],
                     "otherTitle": ["Andere Massagen", "40min", "60min", "75min","90min"],
                     "offers1":"ANGEBOTE",
-                    "offers2":["Senioren erhalten 15% Rabatt auf den Preis.","Wenn Sie bestellen 7 Massagen einen Rabatt von 10%.","Wenn Sie bestellen 11 Massagen einen Rabatt von 13%."],
+                    "offers2":["Senioren erhalten 15% Rabatt auf den Preis.","Beim Kauf eines 10er Abos erhalten Sie die 11. Massage gratis!"],
                     "present1":"GUTSCHEINE",
-                    "present2":["Geschenkgutscheine werden nach Ihren Wünschen bestellt.","Massagegutschein ist die ideale Geschenkidee zum Geburtstag, zur Hochzeit, zu Weihnachten oder zu jeder anderen Gelegenheit."],
+                    "present2":["Geschenkgutscheine werden nach Ihren Wünschen bestellt.","Massagegutschein ist die ideale Geschenkidee zum Geburtstag, zur Hochzeit, zu Weihnachten oder zu jeder anderen Gelegenheit.","Geschenkgutscheine können unter folgenden Adresse erworben werden: 22 Oberstadt, 1. Stock im Voraus telefonisch oder info@vidamassage.ch (es tut uns leid für zeitweilig Unbequemlichkeiten)."],
                     "attention1":"BITTE BEACHTEN",
-                    "attention2":["Zahlen Sie nur in bar (vorübergehend).","Der Dienst ist am Ende jeder Massage zu bezahlen.","Rabatte können nicht kombiniert werden.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail/SMS."]
+                    "attention2":["Zahlen Sie nur in bar (es tut uns leid für zeitweilig Unbequemlichkeiten).","Der Dienst ist am Ende jeder Massage zu bezahlen.","Rabatte können nicht kombiniert werden.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail/SMS."]
                 },
                 "ru": {
                     "title": "Цены",
@@ -594,11 +594,11 @@ gg.factory('myDataFactory', function () {
                     "kidsFull": ["Массаж всего тела", "–", "–", "160"],
                     "otherTitle": ["Другие массажи", "40мин", "60мин", "75мин","90мин"],
                     "offers1":"ПРЕДЛОЖЕНИЯ",
-                    "offers2":["Пожилые люди получают 15% скидку от цены.","Если закажете 7 массажей  предоставляется скидка 10%.","Если закажете  11 массажей скидка 13%."],
+                    "offers2":["Пожилые люди получают 15% скидку от цены.","Купите 10х абонемент и получите 11 массаж бесплатно!"],
                     "present1":"ПОДАРОЧНЫЕ КУПОНЫ",
-                    "present2":["Подарочные купоны заказываются  в соответствии с вашими пожеланиями.","Массажный купон - идеальная идея для подарка на день рождения, свадьбу, Рождество или любой другой случай."],
+                    "present2":["Подарочные купоны заказываются  в соответствии с вашими пожеланиями.","Массажный купон - идеальная идея для подарка на день рождения, свадьбу, Рождество или любой другой случай.","Подарочные сертификаты можно приобрести по адресу: Оберштадт 22, первый этаж заранее по телефону или info@vidamassage.ch (извините за временое неудобство)."],
                     "attention1":"ОБРАТИТЕ ВНИМАНИЕ",
-                    "attention2":["Oплата только наличными (временно).","Услуга оплачивается в конце каждого массажа.","Скидки не могут быть объединены.","Если вы не можете прийти на массаж. Пожалуйста, отмените ваш заказ по электронной почте или смс за 24 часа до согласованной даты."]
+                    "attention2":["Oплата только наличными (извините за временое неудобство).","Услуга оплачивается в конце каждого массажа.","Скидки не могут быть объединены.","Если вы не можете прийти на массаж. Пожалуйста, отмените ваш заказ по электронной почте или смс за 24 часа до согласованной даты."]
                 }
             };
 
