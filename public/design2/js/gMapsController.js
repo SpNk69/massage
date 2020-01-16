@@ -6,8 +6,17 @@ app.mapsController = function ($scope, NgMap) {
         // console.log(map.getCenter());
         // console.log('markers', map.markers);
         // console.log('shapes', map.shapes);
+        map.setZoom(19);
     });
 
+
+
+
+
+$scope.customIcon = {
+        "scaledSize": [32, 32],
+        "url": "public/design2/img/marker.png"
+    };
 
 };
 
