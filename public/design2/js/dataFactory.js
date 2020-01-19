@@ -751,7 +751,10 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Mūsų kontaktai",
                     "location":"Vieta",
                     "open":"Darbo laikas",
-                    "openHours":["Pi: 10:00 - 21:00","An: Uždaryta","Tr: 15:00 - 21:00","Ke: 15:00 - 21:00","Pe: 10:00 - 21:00","Še: 10:00 - 21:00","Se: Uždaryta"]
+                    "openHours":["Pi: 10:00 - 21:00","An: Uždaryta","Tr: 15:00 - 21:00","Ke: 15:00 - 21:00","Pe: 10:00 - 21:00","Še: 10:00 - 21:00","Se: Uždaryta"],
+                    "privacyPolicy":"Aš sutinku su privatumo politika",
+                    "privacyPolicy2":"Privatumo politika"
+
 
                 },
                 "de": {
@@ -769,7 +772,11 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Unsere Kontakte",
                     "location":"Lage",
                     "open":"Öffnungszeiten",
-                    "openHours":["Mo: 10:00 - 21:00","Di: Geschlossen","Mi: 15:00 - 21:00","Do: 15:00 - 21:00","Fr: 10:00 - 21:00","Sa: 10:00 - 21:00","So: Geschlossen"]
+                    "openHours":["Mo: 10:00 - 21:00","Di: Geschlossen","Mi: 15:00 - 21:00","Do: 15:00 - 21:00","Fr: 10:00 - 21:00","Sa: 10:00 - 21:00","So: Geschlossen"],
+                    "privacyPolicy":"Ich stimme den Datenschutzbestimmungen zu",
+                    "privacyPolicy2":"Datenschutz-Bestimmungen"
+
+
 
                 },
                 "ru": {
@@ -787,7 +794,10 @@ gg.factory('myDataFactory', function () {
                     "contacts": "Наши контакты",
                     "location":"Место",
                     "open":"Часы работы",
-                    "openHours":["По: 10:00 - 21:00","Вт: Закрыто","Ср: 15:00 - 21:00","Че: 15:00 - 21:00","Пя: 10:00 - 21:00","Су: 10:00 - 21:00","Во: Закрыто"]
+                    "openHours":["По: 10:00 - 21:00","Вт: Закрыто","Ср: 15:00 - 21:00","Че: 15:00 - 21:00","Пя: 10:00 - 21:00","Су: 10:00 - 21:00","Во: Закрыто"],
+                    "privacyPolicy":"Я согласен с политикой конфиденциальности",
+                    "privacyPolicy2":"политика конфиденциальности"
+
 
 
                 }
@@ -925,7 +935,8 @@ gg.factory('myDataFactory', function () {
                     "emailLength": "Elektroninio pašto adresas negali būti tuščias arba ilgesnis nei 100 simbolių",
                     "messageLength": "Žinutė negali viršyti 1000 simbolių",
                     "messageFormat": "Prašome nenaudoti tokių simbolių kaip '<>`'",
-                    "captchaFormat": "Patvirtinkite, kad esate ne robotas"
+                    "captchaFormat": "Patvirtinkite, kad esate ne robotas",
+                    "privacyPolicy": "Turite sutikti su privatumo politika"
                 },
                 "de": {
                     "nameFormat": "Der Name darf keine Zahlen und Sonderzeichen enthalten",
@@ -934,7 +945,9 @@ gg.factory('myDataFactory', function () {
                     "emailLength": "Die E-Mail-Adresse darf nicht leer oder länger als 100 Zeichen sein",
                     "messageLength": "Die Nachricht darf nicht länger als 1000 Zeichen sein",
                     "messageFormat": "Bitte verwenden Sie nicht die folgenden Symbole '<>`'",
-                    "captchaFormat": "Bestätigen Sie, dass Sie kein Roboter sind"
+                    "captchaFormat": "Bestätigen Sie, dass Sie kein Roboter sind",
+                    "privacyPolicy": "Sie müssen den Datenschutzbestimmungen zustimmen"
+
 
 
                 },
@@ -946,6 +959,8 @@ gg.factory('myDataFactory', function () {
                     "messageLength": "Сообщение не может превышать 1000 символов",
                     "messageFormat": "Пожалуйста, не используйте следующие символы '<>`'",
                     "captchaFormat": "Потвердите что вы не робот",
+                    "privacyPolicy": "Вы должны согласиться с политикой конфиденциальности"
+
                 }
             }
         },
@@ -984,7 +999,15 @@ gg.factory('myDataFactory', function () {
 
                 }
             }
-        }
+        },
+        getFooterInfo: function(){
+        return{
+        "lt":{"priv":"testas"
+        },
+        "de":{"priv":"testas"
+        },
+        "ru":{"priv":"testas"
+        }}}
 
     }
 

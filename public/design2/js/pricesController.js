@@ -28,7 +28,7 @@ app.controller('controllerPrices', ['$scope', 'myDataFactory', 'myFunctionsFacto
 
     //fix to NOT be hardcoded! allow from 0 to 20 for spa massages and 20-40 for other massages (future-proof)
     function spaMassages(massageInfo) {
-        console.log(massageInfo)
+//        console.log(massageInfo)
         $scope.spaMassages = [];
         for (var i = 0; i < 9; i++) {
             $scope.spaMassages.push(massageInfo[i])

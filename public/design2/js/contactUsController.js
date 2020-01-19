@@ -23,7 +23,14 @@ app.controller('controllerContactUs', ['$scope', 'myDataFactory', 'myFunctionsFa
         };
         $scope.showCFSuccess = false;
         $scope.formListenerReset = false;
+
+         $scope.checkboxModel = {
+               value1 : false,
+             };
+
+             $scope.cfFields.cfPrivacyPolicy= false;
     }
+
 
 
     // regex
@@ -42,6 +49,44 @@ app.controller('controllerContactUs', ['$scope', 'myDataFactory', 'myFunctionsFa
             $scope.form1.nameCF.$setUntouched()
         }
     });
+
+
+
+        $scope.$watch('form1.privacyPolicyCF.$touched', function (newValue, oldValue) {
+            if (newValue !== oldValue) {
+                if (angular.isUndefined($scope.cfFields.cfPrivacyPolicy)) {
+                    $scope.displayErrors.privacyPolicy = $scope.data.cfErrorsBE.privacyPolicy;
+                    $scope.status.privacyPolicy = true;
+                    $scope.applyStyle.myObj4 = myFF.applyColor("red")
+                }
+                $scope.form1.privacyPolicyCF.$setUntouched()
+            }
+        });
+
+
+
+
+
+$scope.$watch('cfFields.cfPrivacyPolicy', function (newValue, oldValue) {
+        $scope.status.privacyPolicy = false;
+        $scope.displayErrors.privacyPolicy = "";
+        if (newValue !== oldValue && angular.isDefined(newValue)) {
+            if (newValue == false) {
+                $scope.displayErrors.privacyPolicy = $scope.data.cfErrorsBE.privacyPolicy;
+                $scope.status.privacyPolicy = true;
+                $scope.applyStyle.myObj4 = myFF.applyColor("red");
+
+            }
+
+            else {
+                $scope.applyStyle.myObj4 = myFF.applyColor("green");
+            }
+        }
+    });
+
+
+
+
 
     $scope.$watch('cfFields.cfName', function (newValue, oldValue) {
         $scope.status.name = false;
@@ -136,7 +181,7 @@ app.controller('controllerContactUs', ['$scope', 'myDataFactory', 'myFunctionsFa
             if (newValue !== null && newValue !== "") {
                 $scope.displayErrors.captcha = "";
                 $scope.status.captcha = false;
-                console.log("Captcha changed")
+//                console.log("Captcha changed")
             }
         }
     });
@@ -146,27 +191,39 @@ app.controller('controllerContactUs', ['$scope', 'myDataFactory', 'myFunctionsFa
         $scope.form1.nameCF.$setTouched();
         $scope.form1.emailCF.$setTouched();
         $scope.form1.messageCF.$setTouched();
+        $scope.form1.privacyPolicyCF.$setTouched();
+        if (! $scope.cfFields.cfPrivacyPolicy){
+            $scope.displayErrors.privacyPolicy = $scope.data.cfErrorsBE.privacyPolicy;
+                        $scope.status.privacyPolicy = true;
+                        $scope.applyStyle.myObj4 = myFF.applyColor("red");
+                        }
+
+
 
         if ($scope.cfFields.captcha === undefined || $scope.cfFields.captcha === null || $scope.cfFields.captcha === "") {
             $scope.displayErrors.captcha = $scope.data.cfErrorsBE.captchaFormat;
             $scope.status.captcha = true;
+
         }
     }
 
     function isContactFormValid() {
-        console.log("inside validation:");
-        console.log($scope.displayErrors);
+//        console.log("inside validation:");
+//        console.log($scope.displayErrors);
+//$scope.displayErrors.privacyPolicy = $scope.data.cfErrorsBE.privacyPolicy;
 
         return ($scope.displayErrors.name === "" && $scope.form1.nameCF.$dirty &&
             $scope.displayErrors.email === "" && $scope.form1.emailCF.$dirty &&
             $scope.displayErrors.message === "" && $scope.form1.messageCF.$dirty &&
-            $scope.displayErrors.captcha === "" && $scope.cfFields.captcha !== null)
+            $scope.displayErrors.privacyPolicy === "" && $scope.form1.privacyPolicyCF.$dirty
+            && $scope.cfFields.cfPrivacyPolicy != false &&
+            $scope.displayErrors.captcha === "" && $scope.cfFields.captcha !== null )
     }
 
     $scope.sendMailLikeNow = function () {
 
         if (isContactFormValid()) {
-            console.log("Sending email finally");
+//            console.log("Sending email finally");
 
             var question = {
                 "data":
@@ -196,10 +253,10 @@ app.controller('controllerContactUs', ['$scope', 'myDataFactory', 'myFunctionsFa
                 $scope.cfFields = {};
                 $scope.contactFormErrors = {};
 
-                console.log(response);
+//                console.log(response);
                 $scope.setWidgetId(1, $scope.languageParameter);
             }, function myError(response) {
-                console.log(response);
+//                console.log(response);
                 $scope.er = response.data[0];
                 processFailedResp($scope.er.name, $scope.er.email, $scope.er.message, $scope.er.captcha);
                 //if captcha failed from BE for some magical reason

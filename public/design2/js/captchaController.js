@@ -1,6 +1,6 @@
 app.captchaController = function ($scope, vcRecaptchaService) {
 
-    console.log("In the captchaController");
+//    console.log("In the captchaController");
     $scope.response = null;
     $scope.widgetId = null;
     $scope.model = {
@@ -14,7 +14,7 @@ app.captchaController = function ($scope, vcRecaptchaService) {
 
         vcRecaptchaService.reload(widgetId);
         vcRecaptchaService.useLang(widgetId, langMy);
-        console.info('Created widget ID: %s', widgetId);
+//        console.info('Created widget ID: %s', widgetId);
         $scope.widgetId = widgetId;
     };
 
