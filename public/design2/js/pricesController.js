@@ -30,16 +30,16 @@ app.controller('controllerPrices', ['$scope', 'myDataFactory', 'myFunctionsFacto
     function spaMassages(massageInfo) {
 //        console.log(massageInfo)
         $scope.spaMassages = [];
-        for (var i = 0; i < 11; i++) {
+        for (var i = 0; i < 10; i++) {
             $scope.spaMassages.push(massageInfo[i])
         }
-        myFF.refactorArrayForDisplay($scope.spaMassages, 11);
+        myFF.refactorArrayForDisplay($scope.spaMassages, 10);
     }
 
     //separate other massages for Prices section
     function otherMassages(massageInfo) {
         $scope.otherMassages = [];
-        for (var i = 11; i < 16; i++) {
+        for (var i = 10; i < 16; i++) {
             $scope.otherMassages.push(massageInfo[i])
         }
         myFF.refactorArrayForDisplay($scope.otherMassages, 5);
