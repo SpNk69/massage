@@ -253,7 +253,7 @@ gg.factory('myDataFactory', function () {
                     "relaxBody": "Entspannende Ganzkörpermassagе",
                     "ajurved": "Ayurvedische Brust-Massage für Frauen",
                     "antice": "Anti - Cellulite Massage (Beine und das Gesäß) von Hand und mit der Vakuumschale",
-                    "relaxFoot": "Fuss- und Wadenmassage",
+                    "relaxFoot": "Entspannende Fußmassage (+ Waden)",
                     "sepHead": "Kopfmassage",
                     "sepNeck": "Massage Schulter – Hals – Hände",
                     "sepStoma": "Bauchmassage",
