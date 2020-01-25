@@ -42,7 +42,7 @@ app.controller('controllerPrices', ['$scope', 'myDataFactory', 'myFunctionsFacto
         for (var i = 10; i < 16; i++) {
             $scope.otherMassages.push(massageInfo[i])
         }
-        myFF.refactorArrayForDisplay($scope.otherMassages, 5);
+        myFF.refactorArrayForDisplay($scope.otherMassages, 6);
     }
 }]);
 
