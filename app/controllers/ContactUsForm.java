@@ -79,12 +79,12 @@ public class ContactUsForm extends Controller implements WSBodyReadables, WSBody
      * @param data - data for email
      */
     private void deliverEmail(Map<String, JsonNode> data) {
-        Email readyEmail = new Email().setSubject("Klausimas")
+        Email readyEmail = new Email().setSubject("Frage")
                 .setFrom("info@vidamassage.ch")
                 .addTo("info@vidamassage.ch")
-                .setBodyText("Vardas: " + data.get("name").asText() +
-                        "\n" + "Email: " + data.get("email").asText() +
-                        "\n" + "Zinute: " + data.get("message").asText());
+                .setBodyText("Name: " + data.get("name").asText() +
+                        "\n\n" + "Email: " + data.get("email").asText() +
+                        "\n\n" + "Botschaft: " + data.get("message").asText());
         mailerClient.send(readyEmail);
     }
 
