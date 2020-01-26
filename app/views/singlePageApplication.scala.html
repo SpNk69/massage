@@ -73,8 +73,8 @@
                 </div>
             </div>
         </header>
-        <section id="{{aboutMe}}" class=" " ng-controller="controllerAboutMe">
-            <div class="container ">
+        <section  class="" ng-controller="controllerAboutMe">
+            <div class="container " id="{{aboutMe}}">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading">{{data.aboutMeTitle.title}}!</h2>
@@ -170,8 +170,11 @@
                     </div>
             </div>
         </section>
-        <section class="p-0">
+        <section class="p-0"  ng-controller="controllerIntroAndNavigation">
+
+
             <div class="container-fluid p-0" id="{{gallery}}">
+                <h2 class="section-heading text-center">{{data.navBar.gallery}}</h2>
                 <div class="row no-gutters popup-gallery">
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href='@routes.Assets.at("design2/img/portfolio/fullsize/Behandlungspraxis_Vida_galerie1.jpg")'>
@@ -277,10 +280,12 @@
                 </div>
             </div>
         </section>
-        <section class="container" ng-controller="controllerMassage">
+        <section class="container" ng-controller="controllerMassage" >
+            <div id="{{massagesId}}">
             <h2 class="section-heading text-center">{{data.navBar.massages}}</h2>
             <hr class="my-4">
-            <div class="row   " id="{{massagesId}}">
+
+            <div class="row" >
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap   ">
                     <div class="thumbnail bb1">
                         <img class="tc2 sizeLimit" src='@routes.Assets.at("design2/img/portfolio/thumbnails/limpho11.png")'
@@ -592,6 +597,8 @@
 
 
             </div>
+            </div>
+        </div>
         </section>
 
 
@@ -677,8 +684,8 @@
         </section>
         <div class="bottomBorder"></div>
             <!--class="bg-dark text-white"-->
-        <section id="{{bookit}}" ng-controller="controllerBookingForm" class="bottomBorder">
-            <div class="  col-md-8  col-lg-8 mx-auto text-center ">
+        <section  ng-controller="controllerBookingForm" class="bottomBorder">
+            <div class="  col-md-8  col-lg-8 mx-auto text-center " id="{{bookit}}">
                 <h3 class="labelDiv">{{data.formNames.title}}</h3>
                 <hr class="my-4">
                 <!--<form name="myForm" novalidate>-->
@@ -829,8 +836,8 @@
 
         </section>
         <script src='https://www.google.com/recaptcha/api.js'></script>
-        <section id="{{contactMe}}" class="">
-            <div class="la1" ng-controller="controllerContactUs">
+        <section  class="">
+            <div class="la1" ng-controller="controllerContactUs" id="{{contactMe}}">
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
                         <h2 class="section-heading">{{data.contactForm.secTitle}}</h2>
