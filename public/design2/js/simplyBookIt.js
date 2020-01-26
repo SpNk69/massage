@@ -215,7 +215,7 @@ SimplybookWidget.prototype.updateWidgetSize = function (data) {
 
 SimplybookWidget.prototype.displayIframe = function () {
     document.write(
-        '<iframe class="sb-widget-iframe" width="100%" border="0" frameborder="0" src="' + this.getUrl() + '" name="' + this.name + '" id="' + this.name + '"></iframe>'
+        '<iframe scrolling="no" class="sb-widget-iframe" width="100%" border="0" frameborder="0" src="' + this.getUrl() + '" name="' + this.name + '" id="' + this.name + '"></iframe>'
     );
     this.frame = document.getElementById(this.name);
 
@@ -380,6 +380,9 @@ SimplybookWidget.prototype.getIframeNode = function () {
         this.frame = document.createElement('iframe');
         this.frame.border = '0';
         this.frame.frameBorder = '0';
+        if (this.options.widget_type == 'iframe') {
+            this.frame.scrolling = 'no';
+        }
         this.frame.name = this.name;
         this.frame.id = this.name;
         this.frame.src = this.getUrl();
