@@ -28,12 +28,24 @@
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#{{pricesId}}">{{data.navBar.prices}}</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#{{bookit}}">{{data.navBar.book}}</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#{{giftCard}}">{{data.navBar.giftCard}}</a>
+                        </li>
+
+
+
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#{{contactMe}}">{{data.navBar.contacts}}</a>
                         </li>
+
+
+
+
 
                         <li class="nav-item" ng-show="isLangDE">
                             <a class="page-scroll" ng-click="doTranslate2(de)"><img
@@ -828,8 +840,36 @@
                 <script src="//simplybook.it/v2/widget/widget.js"></script>
                 <script>var widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/vidamassage.simplybook.it","theme":"space","theme_settings":{"sb_base_color":"#ee4b28","timeline_show_end_time":"0","timeline_modern_display":"as_slots","display_item_mode":"block","dark_font_color":"#474747","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","hide_img_mode":"0","show_sidebar":"1","sb_busy":"#dad2ce","sb_available":"#d3e0f1"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"predefined":[]}});</script>
 
+
             </div>
+
+
+
+
+            <div class="  col-md-8  col-lg-8 mx-auto text-center " id="{{giftCard}}">
+                <h3 class="labelDiv">{{data.formNames.title2}}</h3>
+                <hr class="my-4">
+                <script src='@routes.Assets.at("design2/js/simplyBookIt.js")'></script>
+
+                <script src="//simplybook.it/v2/widget/widget.js"></script>
+                <script>var widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/vidamassage.simplybook.it","navigate":"gift-card","theme":"space","theme_settings":{"sb_base_color":"#ee4b28","timeline_show_end_time":"0","timeline_modern_display":"as_slots","display_item_mode":"block","dark_font_color":"#474747","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","hide_img_mode":"0","show_sidebar":"1","sb_busy":"#dad2ce","sb_available":"#d3e0f1"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"predefined":[]}});</script>
+
+
+            </div>
+
+
+
+
         </section>
+
+
+
+            <!--<section  ng-controller="controllerBookingForm" class="bottomBorder">-->
+                <!---->
+
+            <!--</section>-->
+
+
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <section  class="">
             <div class="la1" ng-controller="controllerContactUs" id="{{contactMe}}">
@@ -1115,7 +1155,16 @@
 
             <!--</div>-->
 
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157036724-1">
+            </script>
+            <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-157036724-1');
+</script>
 
 
         </section>

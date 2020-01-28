@@ -72,6 +72,7 @@ gg.factory('myDataFactory', function () {
                     "gallery": "Galerija",
                     "prices": "Kainos",
                     "book": "Užsakyti",
+                    "giftCard":"Dovanų kuponai",
                     "contacts": "Kontaktai",
                 },
                 "de": {
@@ -80,6 +81,7 @@ gg.factory('myDataFactory', function () {
                     "gallery": "Galerie",
                     "prices": "Preise",
                     "book": "Bestellung",
+                    "giftCard":"Geschenkkarte",
                     "contacts": "Kontakte",
                 },
                 "ru": {
@@ -88,6 +90,7 @@ gg.factory('myDataFactory', function () {
                     "gallery": "Галерея",
                     "prices": "Цена",
                     "book": "Заказать",
+                    "giftCard":"подарочная карта",
                     "contacts": "Kонтакты",
                 }
             };
@@ -618,6 +621,8 @@ gg.factory('myDataFactory', function () {
                     "message": "Žinutė",
                     "button": "Rezervuoti",
                     "title": "Užsisakykite masažą jums patogiu laiku!",
+                    "title2": "Nustebinkite savo šeimą ar draugus dovanų kortele!"
+
                 },
                 "de": {
                     "name": "Name",
@@ -630,7 +635,8 @@ gg.factory('myDataFactory', function () {
                     "time": "Zeit",
                     "message": "Nachricht",
                     "button": "Buche es",
-                    "title": "Buchen Sie Ihre Massage nach Ihren Wünschen!"
+                    "title": "Buchen Sie Ihre Massage nach Ihren Wünschen!",
+                    "title2": "Überraschen Sie Ihre Familie oder Freunde mit einer Geschenkkarte!"
 
                 },
                 "ru": {
@@ -644,7 +650,8 @@ gg.factory('myDataFactory', function () {
                     "time": "Время",
                     "message": "Сообщение",
                     "button": "Забронировать",
-                    "title": "Зaкажите свой массаж в удобное для вас время!"
+                    "title": "Зaкажите свой массаж в удобное для вас время!",
+                    "title2": "Удивите свою семью или друзей подарочной картой!"
 
                 }
             }

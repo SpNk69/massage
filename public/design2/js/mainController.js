@@ -13,6 +13,7 @@ app.controller('myTestController', ['$scope', 'myDataFactory', '$http', 'NgMap',
     $scope.massagesId = "massages";
     $scope.pricesId = "prices";
     $scope.bookit = "bookit";
+    $scope.giftCard = "giftCard";
     $scope.contactMe = "contacts";
     //starting page language
     $scope.languageParameter = "de";
