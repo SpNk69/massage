@@ -220,7 +220,7 @@
     color: black;
 }
 .oppet{
-color: black;
+color: red;
     text-align: top;
     font-family: "SCript mt bold";
 }
@@ -233,7 +233,7 @@ text-align:center;
 }
 
 .oppet2{
-color: black;
+color: red;
 filter: brightness(285%);
     text-align: top;
     font-family: "SCript mt bold";
