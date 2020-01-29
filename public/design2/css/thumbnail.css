@@ -220,9 +220,31 @@
     color: black;
 }
 .oppet{
-color:red;
+color: white;
     text-align: top;
+    font-family: "SCript mt bold";
+}
 
+.cece{
+
+color: #white;
+filter: brightness(185%);
+text-align:center;
+}
+
+.oppet2{
+color: #ee4b28;
+filter: brightness(285%);
+    text-align: top;
+    font-family: "SCript mt bold";
+}
+
+
+.oppet3{
+color: #ee4b28;
+
+    text-align: top;
+    font-family: "SCript mt bold";
 }
 
 

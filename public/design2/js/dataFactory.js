@@ -44,20 +44,32 @@ gg.factory('myDataFactory', function () {
                 "lt": {
                     "intro": "Masažas yra vienas iš ypatingų veiksnių žmogaus gyvenime, padedančių palaikyti puikią kūno ir dvasios būseną. Ir nieko nėra geresnio, kaip po sunkios ir išvargintos darbo dienos atsipalaiduoti ir atgaivinti savo kūną masažo procedūromis.",
                     "findMore": "Sužinokite daugiau",
-                    "bookNow": "Rezervuokite laiką"
+                    "bookNow": "Rezervuokite laiką",
+                    "opening":"Atidarymas 2020 m. Vasario 1 d",
+                    "discount":"Visą vasario mėnesį -35% nuolaida masažams",
+                    "discount2":"Su kodu:",
+                    "discount3":"Visą vasario mėnesį -35% nuolaida masažams su kodu: "
 
                 },
                 "de": {
                     "intro": "Die Massage bietet eine heilsame Wirkung auf Körper und Seele. Es gibt nichts Schöneres als sich nach einem harten und müden Arbeitstag bei einer Massage Ihrer Wahl zu entspannen – gönnen Sie sich diese Auszeit!",
                     "findMore": "Erfahren Sie mehr",
-                    "bookNow": "Sparen Sie Zeit"
+                    "bookNow": "Sparen Sie Zeit",
+                    "opening":"Eröffnung ab 1. Februar 2020",
+                    "discount":"Erhalten Sie -35% Rabatt auf ausgewählte Massage",
+                    "discount2":"Mit Rabatt Code:",
+                    "discount3":"Erhalten Sie -35% Rabatt auf ausgewählte Massage Mit Rabatt Code: "
 
 
                 },
                 "ru": {
                     "intro": "Массаж является одним из особых факторов в жизни человека, помогая поддерживать хорошее тело и душу. И нет ничего лучше, чем после тяжелого и усталого рабочего дня, расслабиться и оживить cвое тело массажными процедурами.",
                     "findMore": "Узнайте больше",
-                    "bookNow": "резервировать время"
+                    "bookNow": "резервировать время",
+                    "opening":"Открытие 1 февраля 2020 г.",
+                    "discount":"Весь февраль скидка -35% на массажи",
+                    "discount2":"C кодом:",
+                    "discount3":"Весь февраль скидка -35% на массажи c кодом:"
 
                 }
             }
@@ -81,7 +93,7 @@ gg.factory('myDataFactory', function () {
                     "gallery": "Galerie",
                     "prices": "Preise",
                     "book": "Bestellung",
-                    "giftCard":"Geschenkkarte",
+                    "giftCard":"Gutscheine",
                     "contacts": "Kontakte",
                 },
                 "ru": {
@@ -522,9 +534,9 @@ gg.factory('myDataFactory', function () {
                     "offers1":"PASIŪLYMAI",
                     "offers2":["Senjorams suteikiama 15% nuolaida nuo kainos.","Pirkdami 10-ies kartų abonementą, nemokamai gausite 11-ąjį masažą!"],
                     "present1":"DOVANŲ KUPONAI",
-                    "present2":["Dovanų kuponai užsakomi pagal Jūsų pageidavimus.","Masažo kuponas yra ideali dovana gimtadieniui, vestuvėms, Kalėdoms ar kitoms progoms.","Dovanų kuponus galite įsigyti šiuo adresu: Oberstadt 22, 1. aukštas iš anksto susitarus telefonu ar info@vidamassage.ch (atsiprašome už laikinus nepatogumus)"],
+                    "present2":["Masažo kuponas yra ideali dovana gimtadieniui, vestuvėms, Kalėdoms ar kitoms progoms.","Dovanų kuponus galite įsigyti internetu arba šiuo adresu: Oberstadt 22, 1. aukštas, iš anksto susitarus telefonu arba info@vidamassage.ch."],
                     "attention1":"ATKREIPKITE DĖMESĮ",
-                    "attention2":["Atsiskaitymas tik grynaisiais pinigais (atsiprašome už laikinus nepatogumus).","Paslauga mokama kiekvieno masažo pabaigoje.","Nuolaidos nesumuojamos.","Jei negalite atvykti į masažą. Prašome atšaukti savo užsakymą prieš 24 valandas iki sutartos datos elektroniniu paštu arba sms žinute."]
+                    "attention2":["Atsiskaitymas tik grynaisiais pinigais arba PayPal (atsiprašome už laikinus nepatogumus).","Paslauga mokama kiekvieno masažo pabaigoje.","Nuolaidos nesumuojamos.","Jei negalite atvykti į masažą. Prašome atšaukti savo užsakymą prieš 24 valandas iki sutartos datos elektroniniu paštu arba sms žinute."]
 
 
 
@@ -562,9 +574,9 @@ gg.factory('myDataFactory', function () {
                     "offers1":"ANGEBOTE",
                     "offers2":["Senioren erhalten 15% Rabatt auf den Preis.","Beim Kauf eines 10-er Abos erhalten Sie die 11. Massage gratis!"],
                     "present1":"GUTSCHEINE",
-                    "present2":["Geschenkgutscheine werden nach Ihren Wünschen bestellt.","Massagegutschein ist die ideale Geschenkidee zum Geburtstag, zur Hochzeit, zu Weihnachten oder zu jeder anderen Gelegenheit.","Geschenkgutscheine können unter folgenden Adresse erworben werden: 22 Oberstadt, 1. Stock im Voraus telefonisch oder info@vidamassage.ch (es tut uns leid für zeitweilig Unbequemlichkeiten)."],
+                    "present2":["Massagegutschein ist die ideale Geschenkidee zum Geburtstag, zur Hochzeit, zu Weihnachten oder zu jeder anderen Gelegenheit.","Geschenkgutscheine können direkt hier online bestellen oder unter folgenden Adresse erworben werden: 22 Oberstadt, 1. Stock im Voraus telefonisch oder info@vidamassage.ch"],
                     "attention1":"BITTE BEACHTEN",
-                    "attention2":["Zahlen Sie nur in bar (es tut uns leid für zeitweilig Unbequemlichkeiten).","Der Dienst ist am Ende jeder Massage zu bezahlen.","Rabatte können nicht kombiniert werden.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail/SMS."]
+                    "attention2":["Zahlen Sie nur in bar oder PayPal (es tut uns leid für zeitweilig Unbequemlichkeiten).","Der Dienst ist am Ende jeder Massage zu bezahlen.","Rabatte können nicht kombiniert werden.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail/SMS."]
                 },
                 "ru": {
                     "title": "Цены",
@@ -599,9 +611,9 @@ gg.factory('myDataFactory', function () {
                     "offers1":"ПРЕДЛОЖЕНИЯ",
                     "offers2":["Пожилые люди получают 15% скидку от цены.","Купите 10-х абонемент и получите 11 массаж бесплатно!"],
                     "present1":"ПОДАРОЧНЫЕ КУПОНЫ",
-                    "present2":["Подарочные купоны заказываются  в соответствии с вашими пожеланиями.","Массажный купон - идеальная идея для подарка на день рождения, свадьбу, Рождество или любой другой случай.","Подарочные сертификаты можно приобрести по адресу: Оберштадт 22, первый этаж заранее по телефону или info@vidamassage.ch (извините за временое неудобство)."],
+                    "present2":["Массажный подарочный купон - идеальный подарок на день рождения, свадьбу, Рождество или другое событие.","Подарочные купоны можно приобрести через интернет или по адресу Oberstadt 22, 1-й этаж, по предварительной договоренности по телефону или по адресу info@vidamassage.ch."],
                     "attention1":"ОБРАТИТЕ ВНИМАНИЕ",
-                    "attention2":["Oплата только наличными (извините за временое неудобство).","Услуга оплачивается в конце каждого массажа.","Скидки не могут быть объединены.","Если вы не можете прийти на массаж. Пожалуйста, отмените ваш заказ по электронной почте или смс за 24 часа до согласованной даты."]
+                    "attention2":["Oплата только наличными или PayPal (извините за временое неудобство).","Услуга оплачивается в конце каждого массажа.","Скидки не могут быть объединены.","Если вы не можете прийти на массаж. Пожалуйста, отмените ваш заказ по электронной почте или смс за 24 часа до согласованной даты."]
                 }
             };
 

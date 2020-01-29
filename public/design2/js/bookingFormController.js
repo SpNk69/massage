@@ -19,7 +19,9 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
             formNames: myFF.setLanguage(currentLanguage, myDF.getFormNames(), $scope),
             formPH: myFF.setLanguage(currentLanguage, myDF.getPlaceHolders(), $scope),
             BFErrorsBE: myFF.setLanguage(currentLanguage, myDF.getFFBEErrorMessages(), $scope),
-            sucRespBookForm: myFF.setLanguage(currentLanguage, myDF.getSucRespFullBookForm(), $scope)
+            sucRespBookForm: myFF.setLanguage(currentLanguage, myDF.getSucRespFullBookForm(), $scope),
+            introText: myFF.setLanguage(currentLanguage, myDF.getIntroData(), $scope),
+
 
         };
 

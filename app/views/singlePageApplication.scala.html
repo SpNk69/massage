@@ -68,15 +68,19 @@
         <header class="masthead text-center text-white d-flex" ng-controller="controllerIntroAndNavigation">
 
             <div class="container my-auto" >
+                <h1 class="oppet"> {{data.introText.opening}}</h1>
 
-                <h1 class="oppet"> Eröffnung 1. Februar 2020</h1>
+                <h4 class="oppet2">{{data.introText.discount}} </h4>
+                <h3 class="oppet2">{{data.introText.discount2}} "FEBRUAR35"</h3>
+
 
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
 
 
+                        <hr>
 
-                        <p class="mb-5">{{data.introText.intro}}</p>
+                        <p class="mb-5 cece" >{{data.introText.intro}}</p>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#{{aboutMe}}">
                             {{data.introText.findMore}}</a>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#{{bookit}}">
@@ -701,6 +705,8 @@
             <div class="  col-md-8  col-lg-8 mx-auto text-center " id="{{bookit}}">
                 <h3 class="labelDiv">{{data.formNames.title}}</h3>
                 <hr class="my-4">
+                <h6 class="oppet3">{{data.introText.discount3}} "FEBRUAR35"</h6>
+
                 <!--<form name="myForm" novalidate>-->
                     <!--<div class="inputDiv  ">-->
                         <!--<label for="labelFirstName" class="labelDiv">{{data.formNames.name}}</label>-->
@@ -1158,6 +1164,7 @@
             <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157036724-1">
             </script>
+
             <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
