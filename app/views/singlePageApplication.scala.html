@@ -879,8 +879,8 @@
 
 
         <script src='https://www.google.com/recaptcha/api.js'></script>
-        <section  class="">
-            <div class="la1" ng-controller="controllerContactUs" id="{{contactMe}}">
+        <section  class="" ng-controller="controllerContactUs">
+            <div class="la1"  id="{{contactMe}}">
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
                         <h2 class="section-heading">{{data.contactForm.secTitle}}</h2>
@@ -1023,10 +1023,37 @@
                     </ng-map>
                 </div>
             </div>
+            <!--<div class="bottomBorder"></div>-->
+            <!--<hr>-->
+            <!--<div class="row">-->
+                <!--<div class="col-lg-8 mx-auto text-center">-->
+                    <!--<h2 class="section-heading">{{data.contactForm.review}}</h2>-->
+                    <!--<hr class="my-4">-->
+                    <!--&lt;!&ndash;<p class="mb-5">{{data.contactForm.sentence}}</p>&ndash;&gt;-->
+                <!--</div>-->
 
+                <!--<div class="col-lg-12 mx-auto text-center">-->
+
+
+
+
+                    <!--<script src="//simplybook.it/v2/widget/widget.js"></script>-->
+                <!--<script>var widget = new SimplybookWidget({"widget_type":"reviews","url":"https:\/\/vidamassage.simplybook.it","theme":"space","theme_settings":{"sb_base_color":"#ee4b28","timeline_show_end_time":"0","timeline_modern_display":"as_slots","display_item_mode":"block","dark_font_color":"#474747","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","hide_img_mode":"","show_sidebar":"1","sb_busy":"#dad2ce","sb_available":"#d3e0f1"},"timeline":null,"datepicker":null,"is_rtl":false,"app_config":{"predefined":[]},"reviews_count":"0","hide_add_reviews":"0"});</script>-->
+
+            <!--</div>-->
+
+            <!--</div>-->
+        </section>
             <script src='@routes.Assets.at("design2/js/footerController.js")'></script>
 
             <!--<script src='@routes.Assets.at("design2/js/leTest1.js")'></script>-->
+
+
+
+
+
+
+
 
             <!-- Footer -->
             <footer class="page-footer font-small blue" ng-controller="controllerFooter">

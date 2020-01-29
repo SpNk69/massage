@@ -772,7 +772,8 @@ gg.factory('myDataFactory', function () {
                     "open":"Darbo laikas",
                     "openHours":["Pi: 10:00 - 21:00","An: Uždaryta","Tr: 15:00 - 21:00","Ke: 15:00 - 21:00","Pe: 10:00 - 21:00","Še: 10:00 - 21:00","Se: Uždaryta"],
                     "privacyPolicy":"Aš sutinku su privatumo politika",
-                    "privacyPolicy2":"Privatumo politika"
+                    "privacyPolicy2":"Privatumo politika",
+                    "review":"Papasakokite, ką manote apie paslaugas!"
 
 
                 },
@@ -793,7 +794,8 @@ gg.factory('myDataFactory', function () {
                     "open":"Öffnungszeiten",
                     "openHours":["Mo: 10:00 - 21:00","Di: Geschlossen","Mi: 15:00 - 21:00","Do: 15:00 - 21:00","Fr: 10:00 - 21:00","Sa: 10:00 - 21:00","So: Geschlossen"],
                     "privacyPolicy":"Ich stimme den Datenschutzbestimmungen zu",
-                    "privacyPolicy2":"Datenschutz-Bestimmungen"
+                    "privacyPolicy2":"Datenschutz-Bestimmungen",
+                    "review":"Sagen Sie uns, was Sie über die Dienstleistungen denken!"
 
 
 
@@ -815,7 +817,8 @@ gg.factory('myDataFactory', function () {
                     "open":"Часы работы",
                     "openHours":["По: 10:00 - 21:00","Вт: Закрыто","Ср: 15:00 - 21:00","Че: 15:00 - 21:00","Пя: 10:00 - 21:00","Су: 10:00 - 21:00","Во: Закрыто"],
                     "privacyPolicy":"Я согласен с политикой конфиденциальности",
-                    "privacyPolicy2":"политика конфиденциальности"
+                    "privacyPolicy2":"политика конфиденциальности",
+                    "review":"Расскажите нам, что вы думаете об услугах!"
 
 
 
