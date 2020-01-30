@@ -220,9 +220,11 @@
     color: black;
 }
 .oppet{
-color: red;
+color: #DE2941;
     text-align: top;
-    font-family: "SCript mt bold";
+    filter: brightness(85%);
+
+
 }
 
 .cece{
@@ -233,10 +235,11 @@ text-align:center;
 }
 
 .oppet2{
-color: red;
-filter: brightness(285%);
+color: #1E38E2;
+filter: brightness(85%);
     text-align: top;
-    font-family: "SCript mt bold";
+
+
 }
 
 
@@ -244,7 +247,7 @@ filter: brightness(285%);
 color: #ee4b28;
 
     text-align: top;
-    font-family: "SCript mt bold";
+
 }
 
 
