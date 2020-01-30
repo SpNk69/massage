@@ -779,7 +779,7 @@ gg.factory('myDataFactory', function () {
                 },
                 "de": {
                     "secTitle": "Kontaktieren Sie uns",
-                    "sentence": "Haben Sie Fragen? Frage und antworte. Sie können uns auch in sozialen Netzwerken folgen.",
+                    "sentence": "Haben Sie Fragen? Fragen Sie und wir werden antworten. Sie können uns auch in sozialen Netzwerken folgen.",
                     "title": "Fragen",
                     "name": "Name",
                     "namePH": "Geben Sie einen Namen ein",
