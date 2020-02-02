@@ -45,7 +45,7 @@ gg.factory('myDataFactory', function () {
                     "intro": "Masažas yra vienas iš ypatingų veiksnių žmogaus gyvenime, padedančių palaikyti puikią kūno ir dvasios būseną. Ir nieko nėra geresnio, kaip po sunkios ir išvargintos darbo dienos atsipalaiduoti ir atgaivinti savo kūną masažo procedūromis.",
                     "findMore": "Sužinokite daugiau",
                     "bookNow": "Rezervuokite laiką",
-                    "opening":"Atidarymas 2020 m. Vasario 1 d",
+                    "opening":"Jau atidaryta nuo 2020 m. Vasario 1 d.",
                     "discount":"Visą vasario mėnesį -35% nuolaida masažams",
                     "discount2":"Su kodu:",
                     "discount3":"Visą vasario mėnesį -35% nuolaida masažams su kodu: "
@@ -55,7 +55,7 @@ gg.factory('myDataFactory', function () {
                     "intro": "Die Massage bietet eine heilsame Wirkung auf Körper und Seele. Es gibt nichts Schöneres als sich nach einem harten und müden Arbeitstag bei einer Massage Ihrer Wahl zu entspannen – gönnen Sie sich diese Auszeit!",
                     "findMore": "Erfahren Sie mehr",
                     "bookNow": "Sparen Sie Zeit",
-                    "opening":"Eröffnung ab 1. Februar 2020",
+                    "opening":"Bereits ab 1. Februar 2020 geöffnet",
                     "discount":"Erhalten Sie -35% Rabatt auf ausgewählte Massage",
                     "discount2":"Mit Rabatt Code:",
                     "discount3":"Erhalten Sie -35% Rabatt auf ausgewählte Massage Mit Rabatt Code: "
@@ -66,7 +66,7 @@ gg.factory('myDataFactory', function () {
                     "intro": "Массаж является одним из особых факторов в жизни человека, помогая поддерживать хорошее тело и душу. И нет ничего лучше, чем после тяжелого и усталого рабочего дня, расслабиться и оживить cвое тело массажными процедурами.",
                     "findMore": "Узнайте больше",
                     "bookNow": "резервировать время",
-                    "opening":"Открытие 1 февраля 2020 г.",
+                    "opening":"Уже открыта с 2020 года 1 февраля",
                     "discount":"Весь февраль скидка -35% на массажи",
                     "discount2":"C кодом:",
                     "discount3":"Весь февраль скидка -35% на массажи c кодом:"
