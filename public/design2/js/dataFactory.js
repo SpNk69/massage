@@ -647,7 +647,7 @@ gg.factory('myDataFactory', function () {
                     "time": "Zeit",
                     "message": "Nachricht",
                     "button": "Buche es",
-                    "title": "Bestellen Sie eine Massage nach Ihren Wünschen!",
+                    "title": "Reservation Sie eine Massage nach Ihren Wünschen!",
                     "title2": "Überraschen Sie Ihre Familie oder Freunde mit einem Geschenkgutschein!"
 
                 },
