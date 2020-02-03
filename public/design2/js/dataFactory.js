@@ -574,7 +574,7 @@ gg.factory('myDataFactory', function () {
                     "offers1":"ANGEBOTE",
                     "offers2":["Senioren erhalten 15% Rabatt auf den Preis.","Beim Kauf eines 10-er Abos erhalten Sie die 11. Massage gratis!"],
                     "present1":"GUTSCHEINE",
-                    "present2":["Massagegutschein ist die ideale Geschenkidee zum Geburtstag, zur Hochzeit, zu Weihnachten oder zu jeder anderen Gelegenheit.","Geschenkgutscheine können direkt hier online bestellen www.vidamassage.ch oder unter folgenden im vereinbaren Adresse : 22 Oberstadt, 1. Stock  telefonisch oder info@vidamassage.ch"],
+                    "present2":["Massagegutschein ist die ideale Geschenkidee zum Geburtstag, zur Hochzeit, zu Weihnachten oder zu jeder anderen Gelegenheit.","Geschenkgutscheine können direkt hier online bestellen www.vidamassage.ch oder unter folgenden reservieren Adresse: 22 Oberstadt, 1. Stock  telefonisch oder info@vidamassage.ch"],
                     "attention1":"BITTE BEACHTEN SIE DEN ANHANG",
                     "attention2":["Zahlung nur in bar oder per PayPal (Entschuldigung für vorübergehende Unannehmlichkeiten).","Der Dienst ist am Ende jeder Massage zu bezahlen.","Rabatte addieren sich nicht.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail/SMS."]
                 },
