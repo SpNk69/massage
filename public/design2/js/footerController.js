@@ -6,13 +6,22 @@ app.controller('controllerFooter', ['$scope', 'myDataFactory', 'myFunctionsFacto
         loadSection(language);
         $scope.formListenerReset = true;
     });
-
     function loadSection(currentLanguage) {
 
         $scope.privacyPolicy= {};
 
 
 //console.log("|works|")
+
+$(document).ready(function(){
+    setTimeout(function () {
+        $("#cookieConsent").fadeIn(200);
+     }, 4000);
+    $("#closeCookieConsent, .cookieConsentOK").click(function() {
+        $("#cookieConsent").fadeOut(200);
+    });
+});
+
 
         $scope.data = {
             privacyPolicy: myFF.setLanguage(currentLanguage, myDF.getFooterInfo(), $scope)
