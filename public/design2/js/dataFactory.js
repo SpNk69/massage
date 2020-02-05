@@ -147,12 +147,12 @@ gg.factory('myDataFactory', function () {
                     "hob2":["Snieglenčių sportas, Skaitymas, Bėgimas, Sodas"]
                 },
                 "de": {
-                    "whoIAm": ["Meine Name ist Vida. Ich komme aus Litauen. Ich wohne jetzt in der Schweiz, in der Stadt Schaffhausen.", "Für mich ist Massage eine Herausforderung und Vergnügen", "Die Herausforderung – beseitigen Schmerzen im menschlichen Körper", "Vergnügen – es mehr keinen Schmerz, verschwindet die Spannung, kommt die gut Gesundheit zurück, und ein Lächeln erscheint auf dem Gesicht der Mensch", "Mein Ziel – den Leuten zu helfen, sich in jedem Alter gut zu fühlen"],
+                    "whoIAm": ["Meine Name ist Vida. Ich komme aus Litauen. Ich wohne jetzt in der Schweiz, in der Stadt Schaffhausen.", "Für mich ist Massage eine Herausforderung und ein Vergnügen, nämlich", "Die Herausforderung – Schmerzen im Körper nachhaltig zu lindern", "Das Vergnügen – Körper, Geist und Seele in Einklang zu bringen und auf natürliche Weise ein Lächeln auf den Gesichtern der Menschen erscheinen zu lassen", "Mein Ziel – den Leuten zu helfen, sich in jedem Alter gut zu fühlen"],
                     "exp": ["Vilnius Höhere Medizinische Fakultät Litauen", "Klaipeda Universität. Bachelor Öffentliches Gesundheitswesen verliehen. Litauen", "\"Baltic SPA Profi\" Kurse (Lettland), SPA–Massagen", "Zentrum für Entwicklung und Spezialisierung des Pflegepersonals: Zertifikat Nr. 120146 KV – das Recht hat therapeutische Massage zu machen"],
                     "workExp": ["27 Jahre Erfahrung Krankenschwester", "8 Jahre Erfahrung Facharzt für öffentliche Gesundheit", "10 Jahre Erfahrung Masseurin","3 Jahre individuelle Aktivität \"Aktivitäten zum körperlichen Wohlbefinden\". Litauen"],
                     "spa": ["Klassische segmentale Massage", "Hot Stone Massage", "Lymphdrainage-Massage", "Thai-Massage", "Traditionelle ayurvedische Kerala-Massage", "Therapeutische Massage"],
-                    "welcome":["Ich freue mich, dich in meiner Massage-Praxis zu begrüssen!"],
-                    "welcome2":["Ich wünsche Dir eine gute Zeit und bis bald!"],
+                    "welcome":["Ich freue mich, Sie in meiner Massagepraxis zu begrüssen!"],
+                    "welcome2":["Ich wünsche Ihnen eine gute Zeit und bis bald!"],
                     "hob1":["Hobbys:"],
                     "hob2":["Snowboarding, Lesen, Laufen, Garten"]
                 },
