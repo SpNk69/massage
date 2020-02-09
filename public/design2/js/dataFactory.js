@@ -48,7 +48,8 @@ gg.factory('myDataFactory', function () {
                     "opening":"Jau atidaryta nuo 2020 m. Vasario 1 d.",
                     "discount":"Visą vasario mėnesį -35% nuolaida masažams",
                     "discount2":"Su kodu:",
-                    "discount3":"Visą vasario mėnesį -35% nuolaida masažams su kodu: "
+                    "discount3":"Visą vasario mėnesį -35% nuolaida masažams su kodu: ",
+                    "widgetFailure":"Pastaba: jei užsakymas negalimas žemiau, iš naujo perkraukite puslapį. Vyksta problemos šalinimas. Atsiprašome už nepatogumus!"
 
                 },
                 "de": {
@@ -58,7 +59,8 @@ gg.factory('myDataFactory', function () {
                     "opening":"Bereits ab 1. Februar 2020 geöffnet",
                     "discount":"Erhalten Sie -35% Rabatt auf ausgewählte Massage",
                     "discount2":"Mit Rabatt Code:",
-                    "discount3":"Erhalten Sie -35% Rabatt auf ausgewählte Massage Mit Rabatt Code: "
+                    "discount3":"Erhalten Sie -35% Rabatt auf ausgewählte Massage Mit Rabatt Code: ",
+                    "widgetFailure":"Hinweis: Wenn die Buchung unten nicht verfügbar ist, laden Sie die Seite neu. Die Problembehandlung ist noch nicht abgeschlossen. Entschuldigung für die Unannehmlichkeiten!"
 
 
                 },
@@ -69,7 +71,8 @@ gg.factory('myDataFactory', function () {
                     "opening":"Уже открыта с 2020 года 1 февраля",
                     "discount":"Весь февраль скидка -35% на массажи",
                     "discount2":"C кодом:",
-                    "discount3":"Весь февраль скидка -35% на массажи c кодом:"
+                    "discount3":"Весь февраль скидка -35% на массажи c кодом: ",
+                    "widgetFailure":"Примечание: если бронирование не доступно ниже, пожалуйста, перезагрузите страницу. Поиск и устранение неисправностей продолжается. Приносим извинения за неудобства!"
 
                 }
             }
