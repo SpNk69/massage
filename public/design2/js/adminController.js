@@ -36,7 +36,7 @@ app.controller('AdminController', ['$scope', '$http', function ($scope, $http) {
             method: "GET",
             url: "/getAdminClientData"
         }).then(function mySuccess(response) {
-            console.log(response);
+//            console.log(response);
             $scope.clientsData.info = response.data;
             $scope.randomStuff = angular.fromJson($scope.clientsData.info)
         }, function myError(response) {
@@ -67,7 +67,7 @@ app.controller('AdminController', ['$scope', '$http', function ($scope, $http) {
     };
 
     $scope.cleanTable = function () {
-        console.log("cleaning..");
+//        console.log("cleaning..");
         $scope.availabilityData = {};
         $scope.availabilityDivName = "Duomenys";
         $scope.noSlotsAvailable = "";
@@ -124,8 +124,8 @@ app.controller('AdminController', ['$scope', '$http', function ($scope, $http) {
                     $scope.noSlotsAvailable = "Nėra laisvų vietų pasirinktai datai"
                 }
             }, function myError(response) {
-                console.log("Failure");
-                console.log(response)
+//                console.log("Failure");
+//                console.log(response)
             });
         } else {
             $scope.statusAdmin.noDatePicked = true;
@@ -147,11 +147,11 @@ app.controller('AdminController', ['$scope', '$http', function ($scope, $http) {
                 $scope.availabilityData.data = response.data;
                 $scope.getAdminDates(!status);
             }, function myError(response) {
-                console.log(response)
+//                console.log(response)
             });
         }
         else {
-            console.log("No time picked!")
+//            console.log("No time picked!")
             $scope.noTimePicked = true;
         }
     }
@@ -168,7 +168,7 @@ app.controller('AdminController', ['$scope', '$http', function ($scope, $http) {
             data: JSON.stringify("lt")
         }).then(function mySuccess(response) {
             $scope.myTestHere = response.data;
-            console.log(response)
+//            console.log(response)
         }, function myError(response) {
         });
     }

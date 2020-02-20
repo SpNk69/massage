@@ -21,11 +21,26 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
             BFErrorsBE: myFF.setLanguage(currentLanguage, myDF.getFFBEErrorMessages(), $scope),
             sucRespBookForm: myFF.setLanguage(currentLanguage, myDF.getSucRespFullBookForm(), $scope),
             introText: myFF.setLanguage(currentLanguage, myDF.getIntroData(), $scope),
+            summary: myFF.setLanguage(currentLanguage, myDF.getFormNames(), $scope),
+
+
+//        $scope.testMe1 = true;
+//        $scope.testMe2 = true;
 
 
         };
 
+        $scope.showMas=false;
+        $scope.showLen=false;
+        $scope.showPri=false;
+        $scope.showDat=false;
+        $scope.show3=false;
+
+        $scope.disableCalendar=true;
+        $scope.show3=false;
+
         getPricesFromDB();
+//        getNewTimeSlots();
         getCurrentLangTableFromDB1(currentLanguage);
 
         $scope.startDate = moment().format('YYYY-MM-DD');
@@ -35,7 +50,9 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
         $scope.isDisabledTime2 = true;
         $scope.formListenerReset1 = false;
     }
-
+$scope.test111=true;
+$scope.applyStyleBF.test111 = myFF.applyColor("red");
+$scope.zigi1=false;
 
     /**
      * Method for fetching correct table with massages from DB
@@ -57,6 +74,10 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
      * Fetch prices for massages
      */
     function getPricesFromDB() {
+
+    $scope.errorsBF.newSlots=$scope.data.BFErrorsBE.timeFormat3;
+    $scope.statusBF.newTimeSlots=true;
+
         $http({
             method: "GET",
             url: "/getPrices"
@@ -65,6 +86,57 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
         }, function myError(response) {
         });
     }
+
+$scope.doSomeStuff = function(item) {
+    //do operations and finally set disabled to true for that button
+//    console.log("HERE IS MY DAMN VALUE")
+//    console.log(item)
+    $scope.visible1=true;
+    $scope.setMe=item
+    $scope.user.chosenTime=item;
+    $scope.show3=true;
+}
+
+
+
+        function getNewTimeSlots(pickedDate) {
+            $http({
+                method: "POST",
+                url: "/getNewTimeSlots",
+                data: JSON.stringify(pickedDate)
+            }).then(function mySuccess(response) {
+//            console.log(response)
+
+                $scope.newSlots = response.data;
+                if($scope.newSlots.length <1){
+                $scope.show3=false;
+//                console.log("no slots")
+                $scope.errorsBF.newSlots=$scope.data.BFErrorsBE.timeFormat4;
+                $scope.statusBF.newTimeSlots= true;
+                $scope.zigi1=true;
+                $scope.setMe="";
+                $scope.lala11=false;
+                $scope.user.chosenTime="";
+                $scope.visible1=false;
+                }else{
+                $scope.lala11=true;
+//                console.log("PRINT HERE");
+//                console.log($scope.setMe)
+
+                $scope.setMe="";
+
+                $scope.user.chosenTime="";
+                $scope.visible1=true;
+                $scope.statusBF.newTimeSlots= false;
+                $scope.errorsBF.time="";
+                $scope.zigi1=false;
+                }
+//                console.log($scope.newSlots)
+//                console.log(response)
+            }, function myError(response) {
+//            console.log(response)
+            });
+        }
 
     /**
      * Listen on massage pick from massage section when pressed reserve, so options can be updated accordingly
@@ -86,6 +158,7 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
 
         if (newValue !== oldValue) {
             if (newValue === undefined || newValue === null) {
+                $scope.lala11=false;
                 $scope.user.massage = "";
                 $scope.user.massageOptionsFromDB1 = "";
                 $scope.currentHolderForMassageOption1 = [];
@@ -104,9 +177,14 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
 
                 $scope.statusBF.massage = false;
                 $scope.applyStyleBF.massage = myFF.applyColor("green");
+
+
                 $scope.errorsBF.massage = "";
                 $scope.applyStyleBF.massageOption = myFF.applyColor("none")
                 $scope.statusBF.massageOption = false;
+                $scope.showMas=true;
+                                $scope.showSuccessResponse = false;
+
             }
         }
     });
@@ -122,6 +200,11 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
     };
 
 
+
+// $scope.dateMouseOver = function () {
+// $scope.statusBF.newTimeSlots=false;
+// }
+
     //mouse for Time
     $scope.mouseOverTime = function () {
         if ($scope.user.chosenDate === "" || $scope.user.chosenDate === null || $scope.user.chosenDate === undefined) {
@@ -135,11 +218,39 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
     $scope.$watch('user.chosenDate', function (newValue, oldValue) {
         $scope.statusBF.date = false;
         $scope.errorsBF.date = "";
+        $scope.errorsBF.newSlots=$scope.data.BFErrorsBE.timeFormat3;
+        $scope.statusBF.newTimeSlots=true;
+        $scope.applyStyleBF.date = myFF.applyColor("none");
+        $scope.lala11=false;
+
         if (newValue !== oldValue && angular.isDefined(newValue)) {
             $scope.statusBF.time = false;
             $scope.isDisabledTime2 = false;
+            $scope.test111=false;
+            $scope.show3=false;
+            $scope.showDat=true;
+            $scope.applyStyleBF.date = myFF.applyColor("green");
         }
     });
+
+//testy
+//    $scope.$watch('setMe', function (newValue, oldValue) {
+//    if(newValue === undefined){
+//    console.log("###################################")
+//    console.log($scope.setMe)}
+//        $scope.statusBF.date = false;
+//        $scope.errorsBF.date = "";
+//        $scope.errorsBF.newSlots=$scope.data.BFErrorsBE.timeFormat3;
+//        $scope.statusBF.newTimeSlots=true;
+//
+//        if (newValue !== oldValue && angular.isDefined(newValue)) {
+//            $scope.statusBF.time = false;
+//            $scope.isDisabledTime2 = false;
+//            $scope.test111=false;
+//        }
+//    });
+
+
 
     //chosenTime
     $scope.$watch('user.chosenTime', function (newValue, oldValue) {
@@ -194,10 +305,19 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
      */
     $scope.$watch('user.chosenDate', function (newValue, oldValue) {
         if (newValue !== oldValue && newValue !== "") {
-            var pickedDate = {"data": [{"date": newValue}]};
+            var pickedDate = {"data": [{"date": newValue},{"length": $scope.user.massageOption}]};
+//            console.log("IS IT LOGGGGGING?")
+//            console.log($scope.user.massageOption)
             if (newValue !== undefined) {
-                console.log("Getting slot")
-                getTimeSlotsFromBE(pickedDate);
+//                console.log("Getting slot")
+                //here ex getTimeSlotsFromBackend
+                $scope.statusBF.newTimeSlots=false;
+
+//                console.log(pickedDate)
+//                console.log(user.massageOptionBF)
+                getNewTimeSlots(pickedDate);
+
+
             }
         }
     });
@@ -209,43 +329,56 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
     function updateEntryInDB() {
         var timeSlot = {
             "data":
-                [{"slot": $scope.user.chosenTime.slot},
-                    {"id": $scope.user.chosenTime.id},
-                    {"time": $scope.user.chosenTime.time}]
+//                [{"slot": $scope.user.chosenTime.slot},
+//                    {"id": $scope.user.chosenTime.id},
+//                    {"time": $scope.user.chosenTime.time}]
+
+                     [{"slot": $scope.setMe},
+                                        {"id": $scope.setMe},
+                                        {"time": $scope.setMe}]
+
         };
         $http({
             method: "POST",
             url: "/makeABooking",
             data: JSON.stringify(timeSlot)
         }).then(function mySuccess(response) {
-            console.log("Update in db successful")
-            console.log(response)
+//            console.log("Update in db successful")
+//            console.log(response)
         }, function myError(response) {
-            console.log("response status: " + response.status);
-            console.log("response data: " + response.data);
+//            console.log("response status: " + response.status);
+//            console.log("response data: " + response.data);
             //someone booked time slot faster (race conditions)
             if (response.status === 400 && response.data === "SlotNotAvailable") {
-                console.log("Calling backend again");
+//                console.log("Calling backend again");
                 getTimeSlotsFromBE($scope.backupCallForTimeSlotsOnFail);
             }
         });
     }
 
 
+
+
+
+
+
+
     function getTimeSlotsFromBE(pickedDate) {
+//    console.log("cia test")
+//    console.log(pickedDate)
         $http({
             method: "POST",
             url: "/getTimeSlots",
             data: JSON.stringify(pickedDate)
         }).then(function mySuccess(response) {
-            console.log("response for getTimeSlots");
-            console.log(response.data);
+//            console.log("response for getTimeSlots");
+//            console.log(response.data);
             $scope.timeSlotsForPickedDate = response.data;
             $scope.isDisabledTime = false;
-            console.log("How many timeSlots?:");
-            console.log(response.data.length);
+//            console.log("How many timeSlots?:");
+//            console.log(response.data.length);
             if (response.data.length === 0) {
-                console.log("No timeSLots available for picked date:");
+//                console.log("No timeSLots available for picked date:");
                 $scope.errorsBF.time = $scope.data.BFErrorsBE.slots;
                 $scope.isDisabledTime2 = true;
                 $scope.statusBF.time = true;
@@ -257,8 +390,8 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
                 $scope.applyStyleBF.date = myFF.applyColor("green");
             }
         }, function myError(response) {
-            console.log("GetTimeSLots FAILED hard")
-            console.log(response)
+//            console.log("GetTimeSLots FAILED hard")
+//            console.log(response)
         });
     }
 
@@ -287,7 +420,7 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
         $scope.statusBF.name = false;
         $scope.errorsBF.name = "";
         if (newValue !== oldValue && angular.isDefined(newValue)) {
-            if (newValue.length < 2 || newValue.length > 100) {
+            if (newValue.length < 2 || newValue.length > 50) {
                 $scope.errorsBF.name = $scope.data.BFErrorsBE.nameLength;
                 $scope.statusBF.name = true;
                 $scope.applyStyleBF.name = myFF.applyColor("red");
@@ -320,7 +453,7 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
         $scope.statusBF.surname = false;
         $scope.errorsBF.surname = "";
         if (newValue !== oldValue && angular.isDefined(newValue)) {
-            if (newValue.length < 2 || newValue.length > 100) {
+            if (newValue.length < 2 || newValue.length > 50) {
                 $scope.errorsBF.surname = $scope.data.BFErrorsBE.surnameLength;
                 $scope.statusBF.surname = true;
                 $scope.applyStyleBF.surname = myFF.applyColor("red");
@@ -434,13 +567,24 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
         $scope.statusBF.massageOption = false;
         $scope.errorsBF.massageOption = "";
         if (newValue !== oldValue && angular.isDefined(newValue)) {
+        $scope.user.chosenDate="";
             if (newValue === undefined || newValue === null) {
                 $scope.errorsBF.massageOption = $scope.data.BFErrorsBE.massageOptionLength;
                 $scope.statusBF.massageOption = true;
                 $scope.applyStyleBF.massageOption = myFF.applyColor("red");
+                                $scope.disableCalendar=true;
+                                $scope.applyStyleBF.date = myFF.applyColor("red");
+
             } else {
                 $scope.applyStyleBF.massageOption = myFF.applyColor("green");
                 $scope.statusBF.massageOption = false;
+//                console.log("NEW STUFF")
+//                console.log($scope.user.massageOption)
+                                $scope.disableCalendar=false;
+                                $scope.showSuccessResponse = false;
+                                $scope.showLen=true;
+                                $scope.showPri=true;
+
             }
         }
     });
@@ -511,7 +655,8 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
         $scope.myForm.emailBF.$setTouched();
         $scope.myForm.phoneBF.$setTouched();
         $scope.myForm.massageBF.$setTouched();
-        $scope.myForm.timeBF.$setTouched();
+        //commented out 2020-02-18
+//        $scope.myForm.timeBF.$setTouched();
         //separate handling
         if ($scope.user.chosenDate === undefined || $scope.user.chosenDate.length < 9) {
             $scope.errorsBF.date = $scope.data.BFErrorsBE.dateLength;
@@ -527,8 +672,11 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
     }
 
     function isFormValid() {
-        console.log("Errors:")
-        console.log($scope.errorsBF);
+//        console.log("Errors:")
+//        console.log($scope.errorsBF);
+//        console.log ("IS IT FALSE?");
+//        console.log($scope.setMe)
+
 
         //validate message
         return ($scope.errorsBF.name === "" && $scope.myForm.nameBF.$dirty &&
@@ -537,17 +685,17 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
             $scope.errorsBF.phone === "" && $scope.myForm.phoneBF.$dirty &&
             $scope.errorsBF.massage === "" && $scope.myForm.massageBF.$dirty &&
             $scope.errorsBF.massageOption === "" && $scope.myForm.massageOptionBF.$dirty &&
-            $scope.errorsBF.date === "" &&
-            $scope.errorsBF.time === "" && $scope.myForm.timeBF.$dirty &&
+            $scope.errorsBF.date === "" && $scope.setMe !="" && $scope.setMe !=undefined &&//$scope.errorsBF.newSlots !="" &&
+//            $scope.errorsBF.time === "" && $scope.myForm.timeBF.$dirty &&
             $scope.errorsBF.captcha === "")
     }
 
     $scope.submitFullForm1 = function () {
 
 
-        console.log("is form valid?: " + isFormValid());
+//        console.log("is form valid?: " + isFormValid());
         if (isFormValid()) {
-            console.log("on submit:");
+//            console.log("on submit:");
 
             $scope.errorsBF = {};
             $scope.showSuccessResponse = false;
@@ -562,7 +710,7 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
                         {"massage": $scope.user.massage.massageName},
                         {"massageOption": $scope.user.massageOption},
                         {"date": $scope.user.chosenDate},
-                        {"time": $scope.user.chosenTime.time},
+                        {"time": $scope.setMe},
                         {"message": $scope.user.message},
                         {"captcha": $scope.user.captcha}
                     ]
@@ -573,18 +721,27 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
                 data: JSON.stringify(bookingForm)
             }).then(function mySuccess(response) {
 
-                updateEntryInDB();
+//                updateEntryInDB();
                 $scope.showSuccessResponse = true;
-                console.log("SucRespons: ");
-                console.log(response);
+                $scope.disableCalendar=true;
+//                console.log("SucRespons: ");
+                $scope.setMe="";
+//                console.log(response);
                 $scope.submittedSuccess = $scope.data.sucRespBookForm.response;
                 $scope.user = {};
                 $scope.applyStyleBF = {};
                 $scope.setWidgetId(0, $scope.languageParameter);
+                $scope.newSlots={};
+                       $scope.showMas=false;
+                        $scope.showLen=false;
+                        $scope.showPri=false;
+                        $scope.showDat=false;
+                        $scope.show3=false;
+
 
             }, function myError(response) {
-                console.log("FailRespons: ");
-                console.log(response);
+//                console.log("FailRespons: ");
+//                console.log(response);
 
                 $scope.er = response.data[0];
 
@@ -601,7 +758,7 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
     function errorMassagesFromBackend(name, surname, email, phone, massage, massageOption, date, time, message, captcha) {
 
         $scope.ax = $scope.data.BFErrorsBE;
-        console.log("Inside backend validation");
+//        console.log("Inside backend validation");
         $scope.errorsBF.name = myFF.processBackendResponse(name, "nameFormat", "nameLength", $scope.ax.nameFormat, $scope.ax.nameLength);
         if ($scope.errorsBF.name !== "") {
             $scope.status.name = true;

@@ -7,192 +7,192 @@
 @(title: String)(content: Html)
 <!DOCTYPE html>
 <html lang=en >
-    <head>
+<head>
 
-    </head>
-
-
-    <body class="center-main" ng-app="myAdminApp" ng-controller="AdminController">
-
-        <script src='@routes.Assets.at("design2/js/angular.min.js")'></script>
-        <script src='@routes.Assets.at("design2/js/adminController.js")'></script>
-        <link href='@routes.Assets.at("design2/css/turbo.css")' rel=stylesheet>
-
-        <script src='@routes.Assets.at("design2/js/moment-with-locales.min.js")'></script>
-
-        <script src='@routes.Assets.at("design2/js/angular-moment-picker.min.js")'></script>
-
-        <link href='@routes.Assets.at("design2/js/angular-moment-picker.min.css")' rel=stylesheet>
-        <link href='@routes.Assets.at("design2/vendor/bootstrap/css/bootstrap.min.css")' rel="stylesheet">
+</head>
 
 
-        <h1>Sveiki atvykę į administratoriaus puslapį :)</h1>
+<body class="center-main" ng-app="myAdminApp" ng-controller="AdminController">
 
-        <hr>
-        <div class="row">
-            Test
-            {{startDate}}
-        </div>
+<script src='@routes.Assets.at("design2/js/angular.min.js")'></script>
+<script src='@routes.Assets.at("design2/js/adminController.js")'></script>
+<link href='@routes.Assets.at("design2/css/turbo.css")' rel=stylesheet>
 
-        <div class="row">
+<script src='@routes.Assets.at("design2/js/moment-with-locales.min.js")'></script>
 
-            <div class="col-md-6 col-lg-6 col-xl-6 ">
+<script src='@routes.Assets.at("design2/js/angular-moment-picker.min.js")'></script>
 
-                <h2>Laiko keitimas</h2>
-
-                <label>Šiandienos data:</label>
-                {{currentDate | date:'yyyy-MM-dd'}}<br/>
-
-                <div class=" col-sm-6 text-center  borderMode form-control" moment-picker="adminData.datePicker"
-                format="YYYY-MM-DD"
-                selectable=""
-                max-view="month"
-                min-view="mindate"
-                min-date=""
-                start-view="month"
-                autoclose="true"
-                today="true"
-                keyboard="true"
-                start-date="startDate"
-                locale="lt">
-
-                    {{ adminData.datePicker||  chooseADate }}
-                </div>
-
-                <span class="submitError" ng-show="statusAdmin.noDatePicked">Prašome pasirinkti datą</span>
-
-                <button ng-click="getAdminDates(true)" class="btn btn-primary btn-md">Rodyti užimtus laikus</button>
-                <button ng-click="getAdminDates(false)" class="btn btn-primary btn-md">Rodyti laisvus laikus</button>
-                <button ng-click="cleanTable()" class="btn btn-primary btn-md">Išvalyti informaciją</button>
-
-                <br>
-                <br>
-
-                <div >
-                    <label class="">Keisti laiką</label>
-                    <br>
-                    <select class="" ng-disabled="timePickerDisabled" ng-model="adminData.timePicker" name="x33"
-                    ng-options="item.time for item in availabilityData.data">
-                        <option class="labelDiv " value="">Pasirinkite laika</option>
-                    </select>
-                    <span class="submitError" ng-show="statusAdmin.noTimePicked">Prašome pasirinkti laiką</span>
-
-                    <button ng-click="doUpdate(false)" ng-disabled="freeItDisabled" class="btn btn-primary btn-md">
-                        Atlaisvinti!</button>
-                    <button ng-click="doUpdate(true)" ng-disabled="reserveItDisabled" class="btn btn-primary btn-md">
-                        Rezervuoti!</button>
-                </div>
+<link href='@routes.Assets.at("design2/js/angular-moment-picker.min.css")' rel=stylesheet>
+<link href='@routes.Assets.at("design2/vendor/bootstrap/css/bootstrap.min.css")' rel="stylesheet">
 
 
-                <div>
-                    <h3>Kainu keitimas</h3>
-                    <button ng-click="testButton()" class="btn btn-primary btn-md">
-                        GetPrices!!</button>
+<h1>Sveiki atvykę į administratoriaus puslapį :)</h1>
+
+<!--        <hr>-->
+<!--        <div class="row">-->
+<!--            Test-->
+<!--            {{startDate}}-->
+<!--        </div>-->
+
+<!--        <div class="row">-->
+
+<!--            <div class="col-md-6 col-lg-6 col-xl-6 ">-->
+
+<!--                <h2>Laiko keitimas</h2>-->
+
+<!--                <label>Šiandienos data:</label>-->
+<!--                {{currentDate | date:'yyyy-MM-dd'}}<br/>-->
+
+<!--                <div class=" col-sm-6 text-center  borderMode form-control" moment-picker="adminData.datePicker"-->
+<!--                format="YYYY-MM-DD"-->
+<!--                selectable=""-->
+<!--                max-view="month"-->
+<!--                min-view="mindate"-->
+<!--                min-date=""-->
+<!--                start-view="month"-->
+<!--                autoclose="true"-->
+<!--                today="true"-->
+<!--                keyboard="true"-->
+<!--                start-date="startDate"-->
+<!--                locale="lt">-->
+
+<!--                    {{ adminData.datePicker||  chooseADate }}-->
+<!--                </div>-->
+
+<!--                <span class="submitError" ng-show="statusAdmin.noDatePicked">Prašome pasirinkti datą</span>-->
+
+<!--                <button ng-click="getAdminDates(true)" class="btn btn-primary btn-md">Rodyti užimtus laikus</button>-->
+<!--                <button ng-click="getAdminDates(false)" class="btn btn-primary btn-md">Rodyti laisvus laikus</button>-->
+<!--                <button ng-click="cleanTable()" class="btn btn-primary btn-md">Išvalyti informaciją</button>-->
+
+<!--                <br>-->
+<!--                <br>-->
+
+<!--                <div >-->
+<!--                    <label class="">Keisti laiką</label>-->
+<!--                    <br>-->
+<!--                    <select class="" ng-disabled="timePickerDisabled" ng-model="adminData.timePicker" name="x33"-->
+<!--                    ng-options="item.time for item in availabilityData.data">-->
+<!--                        <option class="labelDiv " value="">Pasirinkite laika</option>-->
+<!--                    </select>-->
+<!--                    <span class="submitError" ng-show="statusAdmin.noTimePicked">Prašome pasirinkti laiką</span>-->
+
+<!--                    <button ng-click="doUpdate(false)" ng-disabled="freeItDisabled" class="btn btn-primary btn-md">-->
+<!--                        Atlaisvinti!</button>-->
+<!--                    <button ng-click="doUpdate(true)" ng-disabled="reserveItDisabled" class="btn btn-primary btn-md">-->
+<!--                        Rezervuoti!</button>-->
+<!--                </div>-->
+
+
+<!--                <div>-->
+<!--                    <h3>Kainu keitimas</h3>-->
+<!--                    <button ng-click="testButton()" class="btn btn-primary btn-md">-->
+<!--                        GetPrices!!</button>-->
 
 
 
-                    <select class="" ng-model="adminData.testData" name="x44"
-                    ng-options="item.massageName for item in myTestHere">
-                        <option class="labelDiv " value="">Pasirinkite TEST</option>
-                    </select>
+<!--                    <select class="" ng-model="adminData.testData" name="x44"-->
+<!--                    ng-options="item.massageName for item in myTestHere">-->
+<!--                        <option class="labelDiv " value="">Pasirinkite TEST</option>-->
+<!--                    </select>-->
 
 
-                    <table class="table">
-                        <h3>Kainu lenta</h3>
-                        <tr>
-                            <th>stulp1</th>
-                            <th>stulp2</th>
-                            <th>stulp3</th>
-                            @*<th>Statusas</th>*@
-                        </tr>
-                        <tr >
-                            <td>{{adminData.testData.col1}} CHF</td>
-                            <td>{{adminData.testData.col2}} CHF</td>
-                            <td>{{adminData.testData.col3}} CHF</td>
-                            @*<td>{{xx.status}}</td>*@
-                        </tr>
-                    </table>
+<!--                    <table class="table">-->
+<!--                        <h3>Kainu lenta</h3>-->
+<!--                        <tr>-->
+<!--                            <th>stulp1</th>-->
+<!--                            <th>stulp2</th>-->
+<!--                            <th>stulp3</th>-->
+<!--                            @*<th>Statusas</th>*@-->
+<!--                        </tr>-->
+<!--                        <tr >-->
+<!--                            <td>{{adminData.testData.col1}} CHF</td>-->
+<!--                            <td>{{adminData.testData.col2}} CHF</td>-->
+<!--                            <td>{{adminData.testData.col3}} CHF</td>-->
+<!--                            @*<td>{{xx.status}}</td>*@-->
+<!--                        </tr>-->
+<!--                    </table>-->
 
 
-                </div>
-            </div>
+<!--                </div>-->
+<!--            </div>-->
 
 
-            <div class="col-md-6 col-lg-6 col-xl-6">
+<!--            <div class="col-md-6 col-lg-6 col-xl-6">-->
 
-                <h2>{{availabilityDivName}}</h2>
+<!--                <h2>{{availabilityDivName}}</h2>-->
 
-                <table class="table">
-                    <tr>
-                        <th></th>
-                        <th>Data</th>
-                        <th>Laikas</th>
-                        @*<th>Statusas</th>*@
-                    </tr>
-                    <tr ng-repeat="xx  in availabilityData.data track by $index ">
-                        <td>{{ $index + 1  }}</td>
-                        <td>{{xx.slot | limitTo:10}}</td>
-                        <td>{{xx.time}}</td>
-                        @*<td>{{xx.status}}</td>*@
-                    </tr>
-                </table>
-                <span class="submitError" ng-show="statusAdmin.whenNoFreeSlotsAvailable">{{noSlotsAvailable}}</span>
-            </div>
-        </div>
-        <br>
+<!--                <table class="table">-->
+<!--                    <tr>-->
+<!--                        <th></th>-->
+<!--                        <th>Data</th>-->
+<!--                        <th>Laikas</th>-->
+<!--                        @*<th>Statusas</th>*@-->
+<!--                    </tr>-->
+<!--                    <tr ng-repeat="xx  in availabilityData.data track by $index ">-->
+<!--                        <td>{{ $index + 1  }}</td>-->
+<!--                        <td>{{xx.slot | limitTo:10}}</td>-->
+<!--                        <td>{{xx.time}}</td>-->
+<!--                        @*<td>{{xx.status}}</td>*@-->
+<!--                    </tr>-->
+<!--                </table>-->
+<!--                <span class="submitError" ng-show="statusAdmin.whenNoFreeSlotsAvailable">{{noSlotsAvailable}}</span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br>-->
 
-        <hr>
+<!--        <hr>-->
 
-        <div class=" row center-div" >
+<!--        <div class=" row center-div" >-->
 
 
-            <br>
-            <br>
-            <div class="col-md-12 col-lg-12 col-xl-12">
-                <button ng-click="showHideTableButton(statusAdmin.clientsTableVisibilityOnClick)" class="btn btn-primary btn-md" >
-                    {{myButton}}</button>
-            </div>
-            <br>
-            <br>
-            <div class="clients  col-md-12 col-lg-12 col-xl-12 responsive" ng-show="statusAdmin.isTableVisible">
-                <label>Filtruoti: <input ng-model="searchText"></label>
-                <button ng-click="refresh()" class="btn btn-primary btn-md">Atnaujinti!</button>
+<!--            <br>-->
+<!--            <br>-->
+<div class="col-md-12 col-lg-12 col-xl-12">
+    <button ng-click="showHideTableButton(statusAdmin.clientsTableVisibilityOnClick)" class="btn btn-primary btn-md" >
+        {{myButton}}</button>
+</div>
+<!--            <br>-->
+<!--            <br>-->
+<div class="clients  col-md-12 col-lg-12 col-xl-12 responsive" ng-show="statusAdmin.isTableVisible">
+    <label>Filtruoti: <input ng-model="searchText"></label>
+    <button ng-click="refresh()" class="btn btn-primary btn-md">Atnaujinti!</button>
 
-                <h3>Klientai</h3>
-                <table class="table">
-                    <tr>
-                        <th >Id</th>
-                        <th>Vardas</th>
-                        <th>Pavardė</th>
-                        <th>El.paštas</th>
-                        <th>Tel.nr</th>
-                        <th>Masažas</th>
-                        <th>Trukmė</th>
-                        <th>Data</th>
-                        <th>Laikas</th>
-                        <th>Žinutė</th>
-                    </tr>
-                    <tr ng-repeat="x in clientsData.info | filter:searchText">
-                        <td>{{ $index + 1 }}</td>
-                        <td>{{x.name}}</td>
-                        <td>{{x.surname}}</td>
-                        <td>{{x.email}}</td>
-                        <td>{{x.phone}}</td>
-                        <td>{{x.massage}}</td>
-                        <td>{{x.massageOption}}</td>
-                        <td>{{x.date}}</td>
-                        <td>{{x.time}}</td>
-                        <td>{{x.message}}</td>
+    <h3>Klientai</h3>
+    <table class="table">
+        <tr>
+            <th >Id</th>
+            <th>Vardas</th>
+            <th>Pavardė</th>
+            <th>El.paštas</th>
+            <th>Tel.nr</th>
+            <th>Masažas</th>
+            <th>Trukmė</th>
+            <th>Data</th>
+            <th>Laikas</th>
+            <th>Žinutė</th>
+        </tr>
+        <tr ng-repeat="x in clientsData.info | filter:searchText">
+            <td>{{ $index + 1 }}</td>
+            <td>{{x.name}}</td>
+            <td>{{x.surname}}</td>
+            <td>{{x.email}}</td>
+            <td>{{x.phone}}</td>
+            <td>{{x.massage}}</td>
+            <td>{{x.massageOption}}</td>
+            <td>{{x.date}}</td>
+            <td>{{x.time}}</td>
+            <td>{{x.message}}</td>
 
-                    </tr>
-                </table>
+        </tr>
+    </table>
 
-            </div>
+</div>
 
-            <br>
+<br>
 
-        </div>
-        @*{{randomStuff}}*@
-    </body>
+</div>
+@*{{randomStuff}}*@
+</body>
 
 </html>

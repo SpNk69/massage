@@ -6,6 +6,8 @@ import com.mysql.jdbc.Connection;
 import dataholders.BookingFormErrors;
 import play.Logger;
 import play.libs.Json;
+import play.libs.mailer.Email;
+import play.libs.mailer.MailerClient;
 import play.libs.ws.*;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -38,6 +40,9 @@ public class BookingFormController extends Controller implements WSBodyReadables
     public BookingFormController(WSClient ws) {
         this.ws = ws;
     }
+
+    @Inject
+    MailerClient mailerClient;
 
     /**
      * Method which handles validation of bookingForm and writing to database on success
@@ -75,6 +80,9 @@ public class BookingFormController extends Controller implements WSBodyReadables
 
                             prepareDataForWritingToDB(HelperUtilityClass.fullFormNames, preparedStatement, dataFromFullForm, connection).execute();
 
+                            deliverEmail(dataFromFullForm);
+                            //send email here
+
                             return ok(response);
                         }
                     }
@@ -88,6 +96,41 @@ public class BookingFormController extends Controller implements WSBodyReadables
             Logger.debug("SQLException : {}", e);
             return badRequest(Json.toJson(e.getErrorCode()));
         }
+    }
+
+    private void deliverEmail(Map<String, JsonNode> data) {
+
+        Email readyEmail = new Email().setSubject("Ihre Massagereservierung unter www.vidamassage.ch")
+                .setFrom("info@vidamassage.ch")
+                .addTo("info@vidamassage.ch")
+                .addTo(data.get("email").asText())
+                .setBodyText("Hallo "  + data.get("name").asText() +" "+ data.get("surname").asText()+ ","+
+
+                                "\n\n"+
+                                "Sie haben folgende Massage gebucht: "+ data.get("massage").asText()+
+                                "\n" + "Sie haben hingewiesen dieses E-mail Adresse: " + data.get("email").asText() +
+//                        "\n\n" + "Botschaft: " + data.get("message").asText()+
+                                "\n" + "Die Stelle: Schaffhausen, Oberstadt 22, 1. Stock" +
+                                "\n" + "Datum: " + data.get("date").asText() +
+                                "\n" + "Zeit: "+ data.get("time").asText() +
+
+                                "\n" + "Dauer: " +data.get("massageOption").asText().split(" – ")[0] +
+                                "\n" + "Betrag: " +data.get("massageOption").asText().split(" – ")[1] +" (-35% Der Rabatt wird zum Zeitpunkt der Zahlung angewendet)" +
+//                        "\n\n" + data.get("date").asText() +
+                                "\n" + "Ihre Wünsche: "+ data.get("message").asText() +
+                                "\n" +"Art der Zahlung: Bargeld" +
+                                "\n" + "Um die Massage Zeit abbrechen oder zu ändern, rufen Sie +41797897010 an oder senden Sie eine E-Mail an info@vidamassage.ch"+
+                                "\n\n" + "Mit freundlichen Grüßen" +
+                                "\n" + "vidamassage"+
+                                "\n\n" + "--------------"+
+                                "\n" + "www.vidamassage.ch"+
+                                "\n"+ "+41797897010" +
+                                "\n" + "info@vidamassage.ch" +
+                                "\n" + "P.S. Im Februar gilt 35% Rabatt auf Ihre gewählte Massage."+
+
+                                "\n"+ "Sie können gerne eine Bewertung auf Facebook hinterlassen - https://www.facebook.com/behandlungspraxisVida/"
+                );
+        mailerClient.send(readyEmail);
     }
 
 

@@ -26,8 +26,8 @@ public class JsonTest {
 //        JRootKeysToGetArrays superRoot = new JRootKeysToGetArrays();
 
 
-        rootList.add(new MassageInfo(1,"a","50", "","","",""));
-        rootList.add(new MassageInfo(1,"a","50", "","","",""));
+        rootList.add(new MassageInfo(1,"a","50", "","","","",""));
+        rootList.add(new MassageInfo(1,"a","50", "","","","",""));
 
 
 

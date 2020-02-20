@@ -140,7 +140,7 @@ gg.factory('myDataFactory', function () {
         getAboutMeBody: function () {
             return {
                 "lt": {
-                    "whoIAm": ["Mano vardas Vida. Atvykau iš Lietuvos. Gyvenu Šveicarijoje, Schaffhausen mieste.", "Man masažai – tai iššūkis ir malonumas", "Iššūkis – panaikinti skausmus žmogaus kūne", "Malonumas – kai nebelieka skausmų, dingsta įtampa, grąžinama gera savijauta, o žmogaus veide atsiranda šypsena", "Mano tikslas yra padėti žmonėms jaustis puikiai, bet kuriuo amžiaus periodu"],
+                    "whoIAm": ["Mano vardas Vida. Atvykau iš Lietuvos. Gyvenu Šveicarijoje, Schaffhausen mieste", "Man masažai – tai iššūkis ir malonumas", "Iššūkis – panaikinti skausmus žmogaus kūne", "Malonumas – kai nebelieka skausmų, dingsta įtampa, grąžinama gera savijauta, o žmogaus veide atsiranda šypsena", "Mano tikslas yra padėti žmonėms jaustis puikiai, bet kuriuo amžiaus periodu"],
                     "exp": ["Vilniaus aukštesnioji medicinos mokykla. Lietuva", "Klaipėdos universitetas. Bakalauro laipsnis “Visuomenės sveikata”. Lietuva", "\"Baltic SPA Professional\" kursai (Latvija), SPA masažai", "Slaugos darbuotojų tobulinimosi ir specializacijos centras: Pažymėjimas Nr. KV 120146 – suteikta teisė daryti gydomuosius masažus"],
                     "workExp": ["27 metai: medicinos sesuo", "8 metai: visuomenės sveikatos priežiūros specialistė", "10 metų: masažuotoja","3 metai: individuali veikla \"Fizinės gerovės užtikrinimo veikla\". Lietuva"],
                     "spa": ["Klasikinis segmentinis masažas", "Karštų akmenų masažas", "Limfodrenažinis masažas", "Tajų masažas", "Tradicinis ajurvedinis Keralos masažas", "Gydomieji masažai"],
@@ -150,17 +150,17 @@ gg.factory('myDataFactory', function () {
                     "hob2":["Snieglenčių sportas, Skaitymas, Bėgimas, Sodas"]
                 },
                 "de": {
-                    "whoIAm": ["Meine Name ist Vida. Ich komme aus Litauen. Ich wohne jetzt in der Schweiz, in der Stadt Schaffhausen.", "Für mich ist Massage eine Herausforderung und ein Vergnügen, nämlich", "Die Herausforderung – Schmerzen im Körper nachhaltig zu lindern", "Das Vergnügen – Körper, Geist und Seele in Einklang zu bringen und auf natürliche Weise ein Lächeln auf den Gesichtern der Menschen erscheinen zu lassen", "Mein Ziel – den Leuten zu helfen, sich in jedem Alter gut zu fühlen"],
-                    "exp": ["Vilnius Höhere Medizinische Fakultät Litauen", "Klaipeda Universität. Bachelor Öffentliches Gesundheitswesen verliehen. Litauen", "\"Baltic SPA Profi\" Kurse (Lettland), SPA–Massagen", "Zentrum für Entwicklung und Spezialisierung des Pflegepersonals: Zertifikat Nr. 120146 KV – das Recht hat therapeutische Massage zu machen"],
-                    "workExp": ["27 Jahre Erfahrung Krankenschwester", "8 Jahre Erfahrung Facharzt für öffentliche Gesundheit", "10 Jahre Erfahrung Masseurin","3 Jahre individuelle Aktivität \"Aktivitäten zum körperlichen Wohlbefinden\". Litauen"],
-                    "spa": ["Klassische segmentale Massage", "Hot Stone Massage", "Lymphdrainage-Massage", "Thai-Massage", "Traditionelle ayurvedische Kerala-Massage", "Therapeutische Massage"],
+                    "whoIAm": ["Meine Name ist Vida. Ich komme aus Litauen. Ich wohne jetzt in der Schweiz, in der Stadt Schaffhausen", "Für mich ist Massage eine Herausforderung und ein Vergnügen.", "Die Herausforderung – Schmerzen im Körper nachhaltig zu lindern", "Das Vergnügen – Körper, Geist und Seele in Einklang zu bringen und auf natürliche Weise ein Lächeln auf den Gesichtern der Menschen erscheinen zu lassen", "Mein Ziel – den Leuten zu helfen, sich in jedem Alter gut zu fühlen"],
+                    "exp": ["Vilnius Höhere Medizinische Fakultät Litauen", "Klaipeda Universität. Bachelor Öffentliches Gesundheitswesen verliehen. Litauen", "\"Baltic SPA Profi\" Kurse (Lettland), SPA/Wellness–Massagen", "Zentrum für Entwicklung und Spezialisierung des Pflegepersonals. Zertifikat Nr. 120146 KV – das Recht hat therapeutische Massage zu machen."],
+                    "workExp": ["27 Jahre: eine Krankenschwester", "8 Jahre: Facharzt für Gesundheitswesen", "10 Jahre: Masseurin","3 Jahre individuelle Aktivität \"Aktivitäten zum körperlichen Wohlbefinden\". Litauen"],
+                    "spa": ["Klassische Segmentmassage", "Hot Stone Massage", "Lymphdrainage-Massage", "Thai-Massage", "Traditional Kerala Ayurveda – Massage", "Therapeutische Massage"],
                     "welcome":["Ich freue mich, Sie in meiner Massagepraxis zu begrüssen!"],
                     "welcome2":["Ich wünsche Ihnen eine gute Zeit und bis bald!"],
                     "hob1":["Hobbys:"],
                     "hob2":["Snowboarding, Lesen, Laufen, Garten"]
                 },
                 "ru": {
-                    "whoIAm": ["Меня зовут Вида. Я приехала из Литвы. Теперь живу в Швейцарии, в городе Шаффхаузен.", "Для меня массаж – это вызов и удовольствие", "Вызов – устранить боль в теле человека", "Удовольствие – когда нет больше боли, напряжение исчезает, возвращается хорошее самочувствие, а на лице человека появляется улыбка", "Моя цель – помочь людям чувствовать себя прекрасно в любом возрасте"],
+                    "whoIAm": ["Меня зовут Вида. Я приехала из Литвы. Теперь живу в Швейцарии, в городе Шаффхаузен", "Для меня массаж – это вызов и удовольствие", "Вызов – устранить боль в теле человека", "Удовольствие – когда нет больше боли, напряжение исчезает, возвращается хорошее самочувствие, а на лице человека появляется улыбка", "Моя цель – помочь людям чувствовать себя прекрасно в любом возрасте"],
                     "exp": ["Вильнюсская высшая медицинская школа. Литва", "Клайпедский университет. Степень бакалавра в области общественного здравоохранения. Литва", "\"Baltic SPA Professional\" курсы (Латвия), спа–массажи", "Центр развития и специализации медсестринского персонала: Сертификат Нет. KV 120146 – предоставляется право делать терапевтические (лечебные) массажи"],
                     "workExp": ["27 лет: медицинская сестра", "8 лет: специалист общественного здравоохранения", "10 лет: массажист","3 года: индивидуальная деятельность «Физкультурно-оздоровительная деятельность». Литва"],
                     "spa": ["Классический сегментарный массаж", "Массаж горячими камнями", "Лимфодренажный массаж", "Тайский массаж", "Традиционный аюрведический Керал массаж", "Лечебные массажи"],
@@ -280,7 +280,7 @@ gg.factory('myDataFactory', function () {
                     "labelMore": "Mehr",
                     "labelLess": "Weniger",
                     "buttonReserve": "Reservieren",
-                    "collar":"Schultern - Nacken - und Kragen Massage",
+                    "collar":"Schultern - Nacken - Kragen Massage",
                     "senior":"Massage für Senioren",
                     "stoneHotSpin":"Rückenmassage mit heißen Steinen"
 
@@ -537,9 +537,9 @@ gg.factory('myDataFactory', function () {
                     "offers1":"PASIŪLYMAI",
                     "offers2":["Senjorams suteikiama 15% nuolaida nuo kainos.","Pirkdami 10-ies kartų abonementą, nemokamai gausite 11-ąjį masažą!"],
                     "present1":"DOVANŲ KUPONAI",
-                    "present2":["Masažo kuponas yra ideali dovana gimtadieniui, vestuvėms, Kalėdoms ar kitoms progoms.","Dovanų kuponus galima užsisakyti internetu čia: www.vidamassage.ch arba šiuo adresu: Oberstadt 22, I aukštas, telefonu arba info@vidamassage.ch"],
+                    "present2":["Masažo kuponas yra ideali dovana gimtadieniui, vestuvėms, Kalėdoms ar kitoms progoms.","Dovanų kuponus galima užsisakyti šiuo adresu: Schaffhausen, Oberstadt 22, 1. Stock, telefonu arba info@vidamassage.ch"],
                     "attention1":"ATKREIPKITE DĖMESĮ",
-                    "attention2":["Mokėjimas tik grynaisiais arba per „PayPal“ (atsiprašome už laikinus nepatogumus).","Paslauga mokama kiekvieno masažo pabaigoje.","Nuolaidos nesumuojamos.","Jei negalite atvykti į masažą. Prašome atšaukti savo užsakymą prieš 24 valandas iki sutartos datos elektroniniu paštu arba sms žinute."]
+                    "attention2":["Mokėjimas tik grynaisiais (atsiprašome už laikinus nepatogumus).","Paslauga mokama kiekvieno masažo pabaigoje.","Nuolaidos nesumuojamos.","Jei negalite atvykti į masažą. Prašome atšaukti savo užsakymą prieš 24 valandas iki sutartos datos elektroniniu paštu arba sms žinute."]
 
 
 
@@ -577,9 +577,9 @@ gg.factory('myDataFactory', function () {
                     "offers1":"ANGEBOTE",
                     "offers2":["Senioren erhalten 15% Rabatt auf den Preis.","Beim Kauf eines 10-er Abos erhalten Sie die 11. Massage gratis!"],
                     "present1":"GUTSCHEINE",
-                    "present2":["Massagegutschein ist die ideale Geschenkidee zum Geburtstag, zur Hochzeit, zu Weihnachten oder zu jeder anderen Gelegenheit.","Geschenkgutscheine können direkt hier online bestellen www.vidamassage.ch oder unter folgenden reservieren Adresse: 22 Oberstadt, 1. Stock  telefonisch oder info@vidamassage.ch"],
+                    "present2":["Massagegutschein ist die ideale Geschenkidee zum Geburtstag, zur Hochzeit, zu Weihnachten oder zu jeder anderen Gelegenheit.","Geschenkgutscheine können unter der Adresse: Oberstadt 22, 1. Stock, auch telefonisch unter +41797897010 oder info@vidamassage.ch bestellt werden."],
                     "attention1":"BITTE BEACHTEN SIE DEN ANHANG",
-                    "attention2":["Zahlung nur in bar oder per PayPal (Entschuldigung für vorübergehende Unannehmlichkeiten).","Der Dienst ist am Ende jeder Massage zu bezahlen.","Rabatte addieren sich nicht.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail/SMS."]
+                    "attention2":["Zahlung nur in bar (Entschuldigung für vorübergehende Unannehmlichkeiten).","Der Dienst ist am Ende jeder Massage zu bezahlen.","Rabatte addieren sich nicht.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail/SMS."]
                 },
                 "ru": {
                     "title": "Цены",
@@ -614,9 +614,9 @@ gg.factory('myDataFactory', function () {
                     "offers1":"ПРЕДЛОЖЕНИЯ",
                     "offers2":["Пожилые люди получают 15% скидку от цены.","Купите 10-х абонемент и получите 11 массаж бесплатно!"],
                     "present1":"ПОДАРОЧНЫЕ КУПОНЫ",
-                    "present2":["Массажный подарочный купон - идеальный подарок на день рождения, свадьбу, Рождество или другое событие.","Подарочные сертификаты можно заказать онлайн здесь www.vidamassage.ch или по следующему адресу: 22 Oberstadt, 1-й этаж, по телефону или info@vidamassage.ch"],
+                    "present2":["Массажный подарочный купон - идеальный подарок на день рождения, свадьбу, Рождество или другое событие.","Подарочные купоны можно заказать по aдресу: Schaffhausen, Oberstadt 22, 1. Stock,  также по телефону: +41797897010 или info@vidamassage.ch"],
                     "attention1":"ОБРАТИТЕ ВНИМАНИЕ",
-                    "attention2":["Оплата только наличными или через PayPal (извините за временные неудобства).","Услуга оплачивается в конце каждого массажа.","Скидки не складываются.","Если вы не можете прийти на массаж. Пожалуйста, отмените ваш заказ по электронной почте или смс за 24 часа до согласованной даты."]
+                    "attention2":["Оплата только наличными (извините за временные неудобства).","Услуга оплачивается в конце каждого массажа.","Скидки не складываются.","Если вы не можете прийти на массаж. Пожалуйста, отмените ваш заказ по электронной почте или смс за 24 часа до согласованной даты."]
                 }
             };
 
@@ -636,7 +636,10 @@ gg.factory('myDataFactory', function () {
                     "message": "Žinutė",
                     "button": "Rezervuoti",
                     "title": "Užsisakykite masažą jums patogiu laiku!",
-                    "title2": "Nustebinkite savo šeimą ar draugus dovanų kortele!"
+                    "title2": "Nustebinkite savo šeimą ar draugus dovanų kortele!",
+                    "summary":"Jūsų",
+                    "price":"Kaina",
+                    "choice":"pasirinkimas"
 
                 },
                 "de": {
@@ -651,7 +654,10 @@ gg.factory('myDataFactory', function () {
                     "message": "Nachricht",
                     "button": "Buche es",
                     "title": "Reservation Sie eine Massage nach Ihren Wünschen!",
-                    "title2": "Überraschen Sie Ihre Familie oder Freunde mit einem Geschenkgutschein!"
+                    "title2": "Überraschen Sie Ihre Familie oder Freunde mit einem Geschenkgutschein!",
+                    "summary":"Ihre",
+                    "price":"Preis",
+                    "choice":"wahl"
 
                 },
                 "ru": {
@@ -666,7 +672,10 @@ gg.factory('myDataFactory', function () {
                     "message": "Сообщение",
                     "button": "Забронировать",
                     "title": "Зaкажите свой массаж в удобное для вас время!",
-                    "title2": "Удивите свою семью или друзей подарочной картой!"
+                    "title2": "Удивите свою семью или друзей подарочной картой!",
+                    "summary":"Ваш",
+                    "price":"Цена",
+                    "choice":"выбор"
 
                 }
             }
@@ -882,14 +891,15 @@ gg.factory('myDataFactory', function () {
             return {
                 "lt": {
                     "nameFormat": "Vardas negali turėti skaičių bei specialių simbolių",
-                    "nameLength": "Vardo ilgis turi būti nuo 2 iki 100 simbolių",
+                    "nameLength": "Vardo ilgis turi būti nuo 2 iki 50 simbolių",
                     "surnameFormat": "Pavardė negali turėti skaičių bei specialių simbolių",
-                    "surnameLength": "Pavardės ilgis turi būti tarp nuo 2 iki 100 simbolių",
+                    "surnameLength": "Pavardės ilgis turi būti tarp nuo 2 iki 50 simbolių",
                     "emailFormat": "Neteisingas elektroninio pašto adreso formatas",
                     "emailLength": "Elektroninio pašto adresas negali būti tuščias arba ilgesnis nei 100 simbolių",
                     "phoneFormat": "Neteisingai įvestas telefono numeris",
                     "phoneLength": "Telefono numeris turi būti nuo 9 iki 20 simbolių",
-                    "massageFormat": "xxx1",
+                    //fix
+                    "massageFormat": "",
                     "massageLength": "Pasirinkite masažą",
                     "massageOptionFormat": "Pirmiausia pasirinkite masažą",
                     "massageOptionLength": "Pasirinkite masažo variantą",
@@ -900,18 +910,21 @@ gg.factory('myDataFactory', function () {
                     "messageLength": "Žinutė negali viršyti 1000 simbolių",
                     "messageFormat": "Prašome nenaudoti tokių simbolių kaip '<>`'",
                     "captchaFormat": "Patvirtinkite, kad esate ne robotas",
-                    "slots": "Atsiprašome, bet pasirinktai datai vietų nebėra. Pasirinkite kitą datą"
+                    "slots": "Atsiprašome, bet pasirinktai datai vietų nebėra. Pasirinkite kitą datą",
+                    "timeFormat3":"Norėdami pamatyti galimus laikus, pirmiausia pasirinkite masažą, trukmę bei datą.",
+                    "timeFormat4":"Jūsų pasirinktai datai neliko laisvų vietų. Prašome pasirinkti kitą datą."
                 },
                 "de": {
                     "nameFormat": "Der Name darf keine Zahlen und Sonderzeichen enthalten",
-                    "nameLength": "Die Länge des Namens muss zwischen 2 und 100 Zeichen betragen",
+                    "nameLength": "Die Länge des Namens muss zwischen 2 und 50 Zeichen betragen",
                     "surnameFormat": "Der Nachname darf keine Zahlen und Sonderzeichen enthalten",
-                    "surnameLength": "Der Nachname muss zwischen 2 und 100 Zeichen lang sein",
+                    "surnameLength": "Der Nachname muss zwischen 2 und 50 Zeichen lang sein",
                     "emailFormat": "Ungültiges E-Mail-Adressformat",
                     "emailLength": "Die E-Mail-Adresse darf nicht leer oder länger als 100 Zeichen sein",
                     "phoneFormat": "Ungültige Telefonnummer",
                     "phoneLength": "Die Telefonnummer muss zwischen 9 und 20 Zeichen lang sein",
-                    "massageFormat": "xxx",
+                    //fix this, removed now "xxx"
+                    "massageFormat": "",
                     "massageLength": "Wählen Sie eine Massage",
                     "massageOptionFormat": "Wählen Sie zuerst eine Massage",
                     "massageOptionLength": "Wählen Sie eine Massageoption",
@@ -922,19 +935,22 @@ gg.factory('myDataFactory', function () {
                     "messageLength": "Die Nachricht darf nicht länger als 1000 Zeichen sein",
                     "messageFormat": "Bitte verwenden Sie nicht die folgenden Symbole '<>`'",
                     "captchaFormat": "Bestätigen Sie, dass Sie kein Roboter sind",
-                    "slots": "Entschuldigung, aber für das ausgewählte Datum sind keine weiteren Standorte verfügbar. Wählen Sie ein anderes Datum"
+                    "slots": "Entschuldigung, aber für das ausgewählte Datum sind keine weiteren Standorte verfügbar. Wählen Sie ein anderes Datum",
+                    "timeFormat3":"Um die verfügbare Zeit anzuzeigen, wählen Sie zuerst die Massage, die Dauer und das Datum aus.",
+                    "timeFormat4":"Zum Datum Ihrer Wahl sind keine Stellen zu besetzen. Bitte wählen Sie ein anderes Datum."
 
                 },
                 "ru": {
                     "nameFormat": "Имя не может содержать числа и специальные символы",
-                    "nameLength": "Длина имени должна быть от 2 до 100 символов",
+                    "nameLength": "Длина имени должна быть от 2 до 50 символов",
                     "surnameFormat": "Фамилия не может содержать числа и специальные символы",
-                    "surnameLength": "Фамилия должна быть от 2 до 100 символов",
+                    "surnameLength": "Фамилия должна быть от 2 до 50 символов",
                     "emailFormat": "Недопустимый формат адреса электронной почты",
                     "emailLength": "Адрес электронной почты не может быть пустым или длиннее 100 символов",
                     "phoneFormat": "Недопустимый номер телефона",
                     "phoneLength": "Номер телефона должен быть от 9 до 20 символов.",
-                    "massageFormat": "xxx",
+                    //fix
+                    "massageFormat": "",
                     "massageLength": "Выберите массаж",
                     "massageOptionFormat": "Сначала выберите массаж",
                     "massageOptionLength": "Выберите вариант массажа",
@@ -945,7 +961,9 @@ gg.factory('myDataFactory', function () {
                     "messageLength": "Сообщение не может превышать 1000 символов",
                     "messageFormat": "Пожалуйста, не используйте следующие символы '<>`'",
                     "captchaFormat": "Потвердите что вы не робот",
-                    "slots": "Извините, но мест для выбранной даты больше нет. Выберите другую дату"
+                    "slots": "Извините, но мест для выбранной даты больше нет. Выберите другую дату",
+                    "timeFormat3":"Чтобы просмотреть доступное время, сначала выберите массаж, продолжительность и дату.",
+                    "timeFormat4":"На выбранную вами дату нет свободных мест. Пожалуйста, выберите другую дату."
 
 
                 }
@@ -971,7 +989,8 @@ gg.factory('myDataFactory', function () {
                     "messageLength": "Die Nachricht darf nicht länger als 1000 Zeichen sein",
                     "messageFormat": "Bitte verwenden Sie nicht die folgenden Symbole '<>`'",
                     "captchaFormat": "Bestätigen Sie, dass Sie kein Roboter sind",
-                    "privacyPolicy": "Sie müssen den Datenschutzbestimmungen zustimmen"
+                    "privacyPolicy": "Sie müssen den Datenschutzbestimmungen zustimmen",
+                    "timeFormat4":"Ner laisvu laiku, rinkis kita data"
 
 
 

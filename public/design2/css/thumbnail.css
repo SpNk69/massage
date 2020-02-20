@@ -37,6 +37,9 @@
     position:relative;
 }
 
+.zigma1{
+text-align:center;
+}
 
 .tc3 {
     text-align: center;
@@ -80,6 +83,31 @@
     max-height: 35%;
 }
 
+.zababa{
+margin: 4px 2px;
+border-radius: 10px;
+filter: brightness(125%);
+
+}
+.zababa.zababa:focus{
+  background-color: green !important;
+
+}
+
+.makeItHappen{
+color:green;
+font-size:90%;
+}
+.btn1.btn-primary.zababa:focus {
+  background-color: green !important;
+}
+
+.btn:focus {
+  outline: none;
+}
+.zzz{
+text-align:center;
+}
 
 /*.chi{*/
 /*margin:1px;*/

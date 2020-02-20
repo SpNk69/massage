@@ -20,7 +20,7 @@ public class ValidationUtility {
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(name);
 
-        if (name.length() < 2 || name.length() > 100) {
+        if (name.length() < 2 || name.length() > 50) {
             return "nameLength";
         } else if (m.find()) {
             return "nameFormat";
@@ -35,7 +35,7 @@ public class ValidationUtility {
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(surname);
 
-        if (surname.length() < 2 || surname.length() > 100) {
+        if (surname.length() < 2 || surname.length() > 50) {
             return "surnameLength";
         } else if (m.find()) {
             return "surnameFormat";
@@ -168,7 +168,7 @@ public class ValidationUtility {
 
     public String validateMassage(JsonNode massageNode) {
         String massage = massageNode.asText();
-        String pattern = "[^\\p{L}\\p{Pd}.' -]";
+        String pattern = "[^\\p{L}\\p{Pd}.')(+ -]";
 
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(massage);
