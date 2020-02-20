@@ -418,10 +418,11 @@ public class HomeController extends Controller {
 
     private void additionalFiltering(JsonDataArrayFromBeToFe arr, String date1, int LENGTH_OF_MASSAGE_AS_INDEXES) throws SQLException {
         String qw = "'\""+date1+"\"'";
-        String qq= "SELECT date, time, massageOption from heroku_e3d8ce5aa92835f.fullreservationform WHERE date="+qw+";";
+        String qq= "SELECT date, time, massageOption from heroku_e3d8ce5aa92835f.fullreservationform WHERE date="+qw+" "+"ORDER BY time ASC"+";";
 
         System.out.println("my query:  " + qq);
         ArrayList<Time> arrFromDB = new ArrayList();
+        ArrayList<Time> arrFromDB2 = new ArrayList();
         Map<String,String> hashMap = new HashMap<>();
         try {
             try (Connection connection = helperUC.getConnection()) {
@@ -435,12 +436,23 @@ public class HomeController extends Controller {
                             time.setDate(resultSet.getNString("date").replace("\"", ""));
                             time.setTime(resultSet.getNString("time").replace("\"", ""));
                             time.setLength(resultSet.getNString("massageOption").replace("\"", ""));
+                            System.out.println("TIMERSZ");
+                            System.out.println(time);
 
                             arrFromDB.add(time);
 //                            fullFormDataForFE.add(dataFromDB(resultSet, HelperUtilityClass.fullFormNames));
                         }
+                        while(resultSet.next()){
+
+
+                        }
 
                         System.out.println("sizeeee::::   " + arrFromDB.size());
+
+                        System.out.println(arrFromDB.get(0).getTime());
+                        System.out.println(arrFromDB.get(0));
+                        System.out.println(arrFromDB.get(1).getTime());
+
 
 
                     }}}} catch (SQLException e) {
@@ -472,6 +484,9 @@ public class HomeController extends Controller {
 
                                 try{
                                     for (int z=0; z<(zeba2/15)+BUFFER_TIME;z++) {
+
+                                        System.out.println("###### REMOVING ######");
+                                        System.out.println(x);
 
                                         arr.remove(x);
 

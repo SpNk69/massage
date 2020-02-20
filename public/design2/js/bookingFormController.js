@@ -14,6 +14,7 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
         $scope.applyStyleBF = {};
         $scope.user = {};
         $scope.showSuccessResponse = false;
+        $scope.status={};
 
         $scope.data = {
             formNames: myFF.setLanguage(currentLanguage, myDF.getFormNames(), $scope),
@@ -278,7 +279,7 @@ $scope.doSomeStuff = function(item) {
     function getMassageOptionForSpecificMassage(code) {
         //assign value for user.massage - which one picked
         for (var i = 0; i < $scope.massageInfoFromDB1.length; i++) {
-            console.log($scope.massageInfoFromDB1)
+//            console.log($scope.massageInfoFromDB1)
             if ($scope.massageInfoFromDB1[i].code == code) {
                 $scope.user.massage = $scope.massageInfoFromDB1[i];
             }
@@ -732,6 +733,16 @@ $scope.doSomeStuff = function(item) {
                 $scope.applyStyleBF = {};
                 $scope.setWidgetId(0, $scope.languageParameter);
                 $scope.newSlots={};
+                $scope.status={};
+
+
+
+                 $scope.errorsBF = {};
+                        $scope.statusBF = {};
+                        $scope.applyStyleBF = {};
+                        $scope.user = {};
+
+
                        $scope.showMas=false;
                         $scope.showLen=false;
                         $scope.showPri=false;
