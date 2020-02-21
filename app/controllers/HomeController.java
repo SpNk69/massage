@@ -446,16 +446,17 @@ public class HomeController extends Controller {
 
 
                         }
-
+                        Logger.debug("IS THIS PLACE FEILING1?");
                         System.out.println("sizeeee::::   " + arrFromDB.size());
 
-                        System.out.println(arrFromDB.get(0).getTime());
-                        System.out.println(arrFromDB.get(0));
-                        System.out.println(arrFromDB.get(1).getTime());
+//                        System.out.println(arrFromDB.get(0).getTime());
+//                        System.out.println(arrFromDB.get(0));
+
 
 
 
                     }}}} catch (SQLException e) {
+            Logger.debug("IS THIS PLACE FEILING?2");
             e.printStackTrace();
         }
 
