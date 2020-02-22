@@ -38,4 +38,4 @@ POST        /getAdminDates              controllers.AdminController.getAdminDate
 POST        /updateAdminTimes              controllers.AdminController.updateAdminTimes()
 
 
-GET         /getMeData                  controllers.HomeController.getMeData()
+#GET         /getMeData                  controllers.HomeController.getMeData()

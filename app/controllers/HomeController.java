@@ -133,7 +133,7 @@ public class HomeController extends Controller {
 
     public Result getMeData() throws JsonProcessingException {
         String query = HelperUtilityClass.getEnvVar("ADMIN_DATA");
-        String qw = "'\"2020-02-24\"'";
+        String qw = "'\"2020-02-22\"'";
         String qq= "SELECT date, time, massageOption from heroku_e3d8ce5aa92835f.fullreservationform WHERE date="+qw+";";
 
         System.out.println("my query:  " + qq);
@@ -226,7 +226,7 @@ public class HomeController extends Controller {
 
         if (DateUtils.isSameDay(date1,new Date())) {
             //set to 14400000
-            timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()+ 18000000 )) ;//+ 4400000
+            timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()+ 13200000 )) ;//+ 4400000
             System.out.println("in here 1 1 1 ");
             System.out.println("--------------------------------------------------------");
             System.out.println(timeValue);
@@ -472,7 +472,8 @@ public class HomeController extends Controller {
             for (int i=0; i<arrFromDB.size(); i++){
                 try{
                     for (int x=0;x<arr.size();x++){
-//            System.out.println("COUNTING");
+            System.out.println("COUNTING");
+                        System.out.println("array1: "+ arr.get(x));
                         try{
                             if (arr.get(x).equals(arrFromDB.get(i).getTime())){
                                 System.out.println("INDEX !!!!: " + x);
