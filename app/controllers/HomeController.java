@@ -196,82 +196,66 @@ public class HomeController extends Controller {
         JsonNode json = request().body().asJson();
 
         String timeX = json.findPath("date").asText();
-        String optionX = json.findPath("length").asText().split(" ")[0];
-//        System.out.println("REACHINGF HERE?");
+        String massageLengthFromOptionMassage = json.findPath("length").asText().split(" ")[0];
 
         int LENGTH_OF_MASSAGE_AS_INDEXES = 0;
 //        int BUFFER_TIME= 6;
 
         //fix this, never allow undefined to come in from angularjs, for now it's temporary, meaning most probably permanent.
-        if (optionX.isEmpty()) {
-            System.out.println("EMPTY AS FUCK");
+        if (massageLengthFromOptionMassage.isEmpty()) {
+            System.out.println("Empty massage option arrived, adding number manually - 90minutes");
             LENGTH_OF_MASSAGE_AS_INDEXES = 6;
         } else {
-            LENGTH_OF_MASSAGE_AS_INDEXES = (Integer.parseInt(optionX) / 15) + BUFFER_TIME;
+            LENGTH_OF_MASSAGE_AS_INDEXES = (Integer.parseInt(massageLengthFromOptionMassage) / 15) + BUFFER_TIME;
 
         }
-//        System.out.println("#########@@@@@@@@@@############### " + optionX);
-//        System.out.println("#########@@@@@@@@@@############### LENGTH TOTAL MASSAGE " + LENGTH_OF_MASSAGE_AS_INDEXES);
         Date date1 = new SimpleDateFormat("yyyy-MM-dd").parse(timeX);
-//        Logger.debug("DATTTT");
-//        Logger.debug(String.valueOf(date1));
 
-        String timeValue2;
         String timeValue;
         boolean today = DateUtils.isSameDay(date1, new Date());
 
         if (DateUtils.isSameDay(date1, new Date())) {
-            //set to 14400000
+            //set to 14400000 to move forward
             timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()));//+ 4400000
-            System.out.println("in here 1 1 1 - TODAY");
+            System.out.println("Arrived time is TODAY");
             System.out.println("--------------------------------------------------------");
             System.out.println(timeValue);
         } else {
-            System.out.println("in here 2 2 2 - OTHER DAY");
+            System.out.println("Arrived time - OTHER DAY");
             timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(date1);
+            System.out.println("--------------------------------------------------------");
         }
 
         int MASSAGE_LENGTH = 3600000;
 
 //        String timeValue = "2015-10-28T18:07:04.899+09:30";
-        //fix  14400000
-//        String timeValue2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis() + 4400000));
-
-//        Logger.debug("IS IT TRUE?");
-//        Logger.debug(String.valueOf(DateUtils.isSameDay(date1, new Date())));
-
-//        System.out.println("timeValue2:   " + timeValue);
-//        System.out.println("timeValue2:   " + timeValue2);
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS");
-//        sdf+=3600000
-//        System.out.println("print:   " + sdf);
         ArrayList<String> existing = new ArrayList<>(Arrays.asList("16:00"));
         try {
 
             Calendar startCalendar = Calendar.getInstance();
-            Calendar startCalendar2 = Calendar.getInstance();
+//            Calendar startCalendar2 = Calendar.getInstance();
             startCalendar.setTime(sdf.parse(timeValue));
-            startCalendar2.setTime(sdf.parse(timeValue));
-            System.out.println("print1:   " + startCalendar.getTime());
+//            startCalendar2.setTime(sdf.parse(timeValue));
 
             if (startCalendar.get(Calendar.MINUTE) < 15) {
                 startCalendar.set(Calendar.MINUTE, 15);
-                startCalendar2.set(Calendar.MINUTE, 15);
+//                startCalendar2.set(Calendar.MINUTE, 15);
             } else if (startCalendar.get(Calendar.MINUTE) < 30) {
                 startCalendar.set(Calendar.MINUTE, 30);
-                startCalendar2.set(Calendar.MINUTE, 30);
+//                startCalendar2.set(Calendar.MINUTE, 30);
 
             } else if (startCalendar.get(Calendar.MINUTE) < 45) {
                 startCalendar.set(Calendar.MINUTE, 45);
-                startCalendar2.set(Calendar.MINUTE, 45);
+//                startCalendar2.set(Calendar.MINUTE, 45);
             } else {
                 startCalendar.add(Calendar.MINUTE, 0);
                 startCalendar.add(Calendar.HOUR, 1);// overstep hour and clear minutes
-                startCalendar2.add(Calendar.MINUTE, 0);
-                startCalendar2.add(Calendar.HOUR, 1);// overstep hour and clear minutes
                 startCalendar.clear(Calendar.MINUTE);
-                startCalendar2.clear(Calendar.MINUTE);
+//                startCalendar2.add(Calendar.MINUTE, 0);
+//                startCalendar2.add(Calendar.HOUR, 1);// overstep hour and clear minutes
+//                startCalendar2.clear(Calendar.MINUTE);
             }
 
             Calendar endCalendar = Calendar.getInstance();
@@ -304,375 +288,33 @@ public class HomeController extends Controller {
             ArrayList<String> ar11 = new ArrayList<String>();
             while (endCalendar.after(startCalendar)) {
                 System.out.println("START CALENDAR builder");
-//                System.out.println(startCalendar.getTimeZone());
-//                System.out.println(startCalendar.getTime());
-//
-//                Logger.debug(String.valueOf(startCalendar.getTime()));
-//                Logger.debug(String.valueOf(startTime.getTime()));
-//                System.out.println("endclendar:" + endCalendar.before(closingTIme));
-
-
-//                System.out.println( "test1" +closingTIme.getTime());
-//                System.out.println( "test2" +endCalendar.getTime());
-
-//                System.out.println(endCalendar.compareTo(closingTIme));
-//                System.out.println("closing:"+ closingTIme);
-//                System.out.println("startClaneda: " + startCalendar);
                 String slotStartTime = slotTime.format(startCalendar.getTime());
                 String slotStartDate = slotDate.format(startCalendar.getTime());
 
                 startCalendar.add(Calendar.MINUTE, 15);
-                startCalendar2.setTimeInMillis(startCalendar.getTimeInMillis() + MASSAGE_LENGTH);
-                String slotEndTime = slotTime.format(startCalendar2.getTime());
+//                startCalendar2.setTimeInMillis(startCalendar.getTimeInMillis() + MASSAGE_LENGTH);
+//                String slotEndTime = slotTime.format(startCalendar2.getTime());
 
-
-//                        Logger.debug("slot:" + startCalendar);
-
-
-                //uncomment
-//                if (!startCalendar2.after(closingTIme)) {
-
-
-//                    System.out.println("xx:  "+ closingTIme.after(endCalendar));
-                System.out.println("DATE of available bookings:   " + slotStartTime + " - " + slotEndTime + slotStartDate);
-
-
-                System.out.println();
-
-
+//                System.out.println("DATE of available bookings:   " + slotStartTime + " - " + slotEndTime + slotStartDate);
                 ar11.add(slotStartTime.trim());
-
-
-                //move outside of damn while, only 1 at a time getting added
                 fullFormDataForFE.add(slotStartTime);
-
-//                Logger.debug("SENDING DATA");
-
-//                fullFormDataForFE.add(dataFromDB(resultSet, HelperUtilityClass.fullFormNames));
-
-
-//                    arr.forEach(x->System.out.println("klaka" + x));
-//                    existing.forEach(x->System.out.println("NANA" + x));
-
-//                } else {
-//                System.out.println("OUT OF CLOSING HOURS!");
-//                    System.out.println("DATE:   "+ slotStartTime + " - " + slotEndTime + slotStartDate);
-//                }
-
-
-//                System.out.println("slotStartDate: " + slotStartDate);
-//                System.out.println("slotStartTime: " + slotStartTime);
-//                System.out.println("slotEndTime: " + slotEndTime);
-
             }
-//            if (fullFormDataForFE.size() !=0 ){
-//                fullFormDataForFE.add("xx");
-//                System.out.println("SIZE TO OSMALL");
-//
-//            }
             try {
                 filterSlotsAccordingToWorkingHours(fullFormDataForFE, existing, date1, timeX, LENGTH_OF_MASSAGE_AS_INDEXES, today);
             } catch (IndexOutOfBoundsException e) {
-                Logger.debug("HAHAHA: " + e);
+                Logger.debug("Failed in this X: " + e);
             }
 
             String response = helperUC.initializeObjectMapper().writeValueAsString(fullFormDataForFE);
             return ok(response);
 
-//            return ok();
 
         } catch (ParseException e) {
+            Logger.debug("something wrong here");
             // date in wrong format
         }
-
-
-//        String query = HelperUtilityClass.getEnvVar("ADMIN_DATA");
-
-//            try (Connection connection = helperUC.getConnection()) {
-//                JsonDataArrayFromBeToFe fullFormDataForFE = new JsonDataArrayFromBeToFe();
-//                try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
-//                    try (ResultSet resultSet = preparedStatement.executeQuery()) {
-//
-//                        while (resultSet.next()) {
-//                            fullFormDataForFE.add(dataFromDB(resultSet, HelperUtilityClass.fullFormNames));
-//                        }
-//
-//
-//
-//
-//                        String response = helperUC.initializeObjectMapper().writeValueAsString(fullFormDataForFE);
-//                        Logger.debug("Getting bookingForm data for adminPage...");
-//
-//                        return ok(response);
-//                    }
-//                }
         return badRequest();
-//
     }
-
-
-    private void additionalFiltering1(JsonDataArrayFromBeToFe arr, String date1, int LENGTH_OF_MASSAGE_AS_INDEXES, boolean today) throws SQLException {
-        String qw = "'\"" + date1 + "\"'";
-        String qq = "SELECT date, time, massageOption from heroku_e3d8ce5aa92835f.fullreservationform WHERE date=" + qw + " " + "ORDER BY time ASC" + ";";
-
-        System.out.println("my query:  " + qq);
-        ArrayList<Time> arrFromDB = new ArrayList();
-        ArrayList<Time> arrFromDB2 = new ArrayList();
-        Map<String, String> hashMap = new HashMap<>();
-        try {
-            try (Connection connection = helperUC.getConnection()) {
-//            JsonDataArrayFromBeToFe fullFormDataForFE = new JsonDataArrayFromBeToFe();
-                try (PreparedStatement preparedStatement = connection.prepareStatement(qq)) {
-                    try (ResultSet resultSet = preparedStatement.executeQuery()) {
-
-
-                        while (resultSet.next()) {
-                            Time time = new Time();
-                            time.setDate(resultSet.getNString("date").replace("\"", ""));
-                            time.setTime(resultSet.getNString("time").replace("\"", ""));
-                            time.setLength(resultSet.getNString("massageOption").replace("\"", ""));
-                            System.out.println("TIMERSZ");
-                            System.out.println(time);
-
-                            arrFromDB.add(time);
-//                            fullFormDataForFE.add(dataFromDB(resultSet, HelperUtilityClass.fullFormNames));
-                        }
-
-                        Logger.debug("IS THIS PLACE FEILING1?");
-                        System.out.println("sizeeee::::   " + arrFromDB.size());
-
-//                        System.out.println(arrFromDB.get(0).getTime());
-//                        System.out.println(arrFromDB.get(0));
-
-
-                    }
-                }
-            }
-        } catch (SQLException e) {
-            Logger.debug("IS THIS PLACE FEILING?2");
-            e.printStackTrace();
-        }
-
-        ArrayList<String> newestArrayToFE = new ArrayList<>();
-
-
-        System.out.println("REACHIN HERE?@#@#@#@#@#@#");
-//        System.out.println(arrFromDB.get(0).getLength().split(" ")[0]);
-//        int zex=6;
-
-//    int BUFFER_TIME=4;
-
-        try {
-            int xz = 0;
-            int xz2 = 0;
-            for (int i = 0; i < arrFromDB.size(); i++) {
-
-                try {
-
-                    for (int x = 0; x < arr.size(); x++) {
-                        System.out.println("COUNTING");
-
-//                        System.out.println("IS it today? " + today);
-                        System.out.println("array1: " + arr.get(x));
-                        try {
-                            if (arr.get(x).equals(arrFromDB.get(i).getTime())) {
-                                System.out.println("HIT:");
-                                System.out.println(arr.get(x));
-                                System.out.println("INDEX !!!!: " + x);
-
-                                System.out.println("TESTING##########: " + arrFromDB.get(i).getTime());
-                                String zeba = arrFromDB.get(i).getLength().split(" ")[0];
-                                System.out.println("TEST2:  " + zeba);
-                                int zeba2 = Integer.parseInt(zeba);
-                                System.out.println("TEST3:  " + zeba2);
-
-                                try {
-                                    for (int z = 0; z < (zeba2 / 15) + BUFFER_TIME; z++) {
-
-                                        System.out.println("###### REMOVING ######");
-                                        System.out.println(x);
-                                        System.out.println(arr.get(x));
-
-                                        arr.remove(x);
-
-
-//                    System.out.println("DELETETING X AMOUNT OF TIMES: " + z);
-//                    System.out.println("ELEMENT");
-//                    System.out.println(arr.get(x));
-//                    System.out.println("REMOVING ELEMENT THAT IS AT INDEX : " + x);
-//                    System.out.println("ELEMENT IS: " + arr.get(x));
-//                    arr.remove(x);
-//                    System.out.println("INDEX IS : ");
-//                    System.out.println(x);
-                                    }
-                                } catch (IndexOutOfBoundsException e) {
-                                    Logger.debug("nothing1");
-                                }
-
-                                try {
-                                    System.out.println("does it continue after nothing1?");
-                                    //to be investgated
-                                    for (int j = 0; j < LENGTH_OF_MASSAGE_AS_INDEXES; j++) {
-                                        System.out.println("AM I HERE?: ");
-                                        System.out.println(arr.get(x - j - 1));
-                                        arr.remove(x - j - 1);
-                                    }
-                                } catch (IndexOutOfBoundsException e) {
-                                    Logger.debug("nothing2");
-                                }
-
-
-
-
-
-
-                            } else if (today && arrFromDB.size() ==1 && x<1 && i<1){
-//                            } else if (false){
-                                int one=0;
-
-
-
-
-
-                                String xxxxx2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis() ));
-                                String xxxxxEND2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis() +14400000));
-
-                                SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS");
-//        sdf+=3600000
-                                System.out.println("print:   " + sdf3);
-                                try {
-
-                                    Calendar beforeTIme = Calendar.getInstance();
-                                    Calendar afterTime = Calendar.getInstance();
-                                    beforeTIme.setTime(sdf3.parse(xxxxx2));
-                                    afterTime.setTime(sdf3.parse(xxxxxEND2));
-
-
-                                    System.out.println("IN THE HERE###########################################################");
-////                                timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()))
-//                                long multiplier=800000;
-//
-//                                Date dateX= new Date(System.currentTimeMillis());
-//                                Date dateY = new Date(System.currentTimeMillis()+14400000);
-//                                Calendar calendarX = Calendar.getInstance();
-//                                Calendar calendarY = Calendar.getInstance();
-//                                calendarX.getTime();
-//                                calendarY.setTime(Calendar.getInstance()+14400000);
-
-                                    while (beforeTIme.before(afterTime)) {
-                                        beforeTIme.add(Calendar.MINUTE, 15);
-                                        System.out.println("CURRENT TIME");
-                                        System.out.println(beforeTIme.getTime());
-
-                                        System.out.println("END TIME");
-                                        System.out.println(afterTime.getTime());
-                                        System.out.println("DELETEING");
-                                        System.out.println(arr.get(0));
-                                        System.out.println(arr.remove(0));
-
-                                    }
-
-//                                    System.out.println("DATEX: "+ dateX);
-//                                    System.out.println("DATEY: "+ dateY);
-//                                    System.out.println("DELETEING");
-//                                    System.out.println(arr.get(0));
-//                                    arr.remove(0);
-//                                    dateX.setTime(System.currentTimeMillis()+multiplier);
-//                                    System.out.println("multiplier: "+ multiplier);
-////                                    dateX= new Date (System.currentTimeMillis()+multiplier);
-//                                    multiplier=+multiplier+1000000000;
-//                                    System.out.println("MULTIPL");
-//                                    System.out.println(multiplier);
-
-
-//                                    timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()))
-
-
-//                            }else if (today){
-//                                System.out.println("Is it today?");
-//
-//                                while(xz <1){
-
-                                    //THIS IS GOOD
-//                                    System.out.println("############################3Is it WHILE LOOP??#########################");
-//
-//                                    if (arrFromDB.size() !=0){
-//                                        System.out.println("IN THE MAGICAL PLACE");
-//                                        System.out.println(arrFromDB.get(i).getLength().split(" ")[0]);
-////                                    System.out.println((Integer.parseInt(arrFromDB.get(i).getLength().split(" ")[0])/15+BUFFER_TIME));
-//                                        System.out.println("LENGTH");
-//                                        System.out.println(arrFromDB.get(arrFromDB.size()-1).getLength());
-//                                        System.out.println("ELEMENT");
-//                                        System.out.println(arr.get(0));
-//                                        System.out.println("SIZE");
-//                                        System.out.println(arr.size());
-//
-//                                        for(int jj=0;jj<(Integer.parseInt(arrFromDB.get(arrFromDB.size()-1).getLength().split(" ")[0])/15);jj++){
-//                                            System.out.println("removing xxxxxxxxxxxxxxxxxxxxxx");
-//                                            arr.remove(0);
-//                                        }
-//                                    }
-//                                    xz++;
-//                                }
-//
-//
-//
-//
-//                            }else if(today){
-//
-//                            }
-                                 }catch(IndexOutOfBoundsException | ParseException e){
-                                    Logger.debug("nothing3");
-                                }
-                            }
-
-
-                        } catch (IndexOutOfBoundsException e) {
-                            Logger.debug("Nothing 4");
-
-                        }
-
-                        newestArrayToFE.add(arrFromDB.get(i).getTime());
-
-//        arr.retainAll(Collections.singleton(arrFromDB.get(i).getTime()));
-
-
-                        System.out.println("HER EIT COMES");
-                        System.out.println(arr.contains(arrFromDB.get(i).getTime()));
-                        System.out.println(arrFromDB.get(i).getTime());
-//
-//
-//
-//
-                    }
-
-
-                } catch (IndexOutOfBoundsException e) {
-                    Logger.debug("Yeah, trying to delete more than possible");
-
-                }
-
-//arr.removeAll(newestArrayToFE);
-            }
-
-
-            if (arrFromDB.size() == 0 && today) {
-                System.out.println("NO REGISTERED TODAY");
-                for (int xxx = 0; xxx < 12; xxx++) {
-                    System.out.println("REMOVING XASDASD");
-                    arr.remove(0);
-                    System.out.println(arr.get(0));
-
-                }
-            }
-
-
-
-        }finally{
-            Logger.debug("FINALLY S TATEMENT HERE");
-        }
-    }
-
 
     private void additionalFiltering(JsonDataArrayFromBeToFe arr, String date1, int LENGTH_OF_MASSAGE_AS_INDEXES, boolean today) throws SQLException {
         String qw = "'\"" + date1 + "\"'";
@@ -778,31 +420,18 @@ public class HomeController extends Controller {
 
 
                                                     try {
-//                                                    System.out.println("array of MOnday");
-//                                                    System.out.println(MONDAY1.size());
-//                                                    System.out.println(MONDAY1.get(0));
-//                                                    System.out.println("X IS : " + x);
                                                         if (MONDAY1.get(zzz).equals(arrFromDB.get(i).getTime())) {
                                                             for (int zz = 0; zz < (zeba3 / 15) + BUFFER_TIME; zz++) {
-
-
                                                                 System.out.println("Marking to be removed following slot: ");
                                                                 System.out.println(MONDAY1.get(zzz + zz));
                                                                 arrayHolderForRemoving.add(MONDAY1.get(zzz + zz));
-//                                                arr.remove(x);
                                                             }
                                                         }
-
-
-
                                                     } catch (IndexOutOfBoundsException e) {
                                                         Logger.debug("caught exception in removing slots 2");
                                                         continue;
                                                     }
                                             }
-
-
-
 
                                             }
                                         }
@@ -811,14 +440,8 @@ public class HomeController extends Controller {
                             }catch(Exception e){
                                 Logger.debug("in exception X");
                             }
-
-
                         }
                         arr.removeAll(arrayHolderForRemoving);
-
-
-
-
                     }
                 }
             }
@@ -882,13 +505,7 @@ public class HomeController extends Controller {
                 break;
         }
 
-//padla
-
-//        System.out.println("SIZE OF ARRAY11111111111:  : : " + arr.get(0));
-
-
         additionalFiltering(arr, timeX, LENGTH_OF_MASSAGE_AS_INDEXES, today);
-
 
     }
 
