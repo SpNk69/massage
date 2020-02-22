@@ -226,7 +226,7 @@ public class HomeController extends Controller {
 
         if (DateUtils.isSameDay(date1,new Date())) {
             //set to 14400000
-            timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()+ 14400000 )) ;//+ 4400000
+            timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()+ 18000000 )) ;//+ 4400000
             System.out.println("in here 1 1 1 ");
             System.out.println("--------------------------------------------------------");
             System.out.println(timeValue);
@@ -350,7 +350,7 @@ public class HomeController extends Controller {
 
                 fullFormDataForFE.add(slotStartTime);
 
-                Logger.debug("SENDING DATA");
+//                Logger.debug("SENDING DATA");
 
 //                fullFormDataForFE.add(dataFromDB(resultSet, HelperUtilityClass.fullFormNames));
 
@@ -359,7 +359,7 @@ public class HomeController extends Controller {
 //                    existing.forEach(x->System.out.println("NANA" + x));
 
 //                } else {
-                System.out.println("OUT OF CLOSING HOURS!");
+//                System.out.println("OUT OF CLOSING HOURS!");
 //                    System.out.println("DATE:   "+ slotStartTime + " - " + slotEndTime + slotStartDate);
 //                }
 
