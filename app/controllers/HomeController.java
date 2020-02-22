@@ -27,7 +27,8 @@ public class HomeController extends Controller {
         return ok(SPAcalledFromController.render(""));
     }
 
-    public static int BUFFER_TIME=4;
+    public static int BUFFER_TIME = 4;
+
     public Result toFaceBook() {
         return redirect("https://www.facebook.com/behandlungspraxisVida/");
     }
@@ -129,16 +130,14 @@ public class HomeController extends Controller {
     }
 
 
-
-
     public Result getMeData() throws JsonProcessingException {
         String query = HelperUtilityClass.getEnvVar("ADMIN_DATA");
         String qw = "'\"2020-02-22\"'";
-        String qq= "SELECT date, time, massageOption from heroku_e3d8ce5aa92835f.fullreservationform WHERE date="+qw+";";
+        String qq = "SELECT date, time, massageOption from heroku_e3d8ce5aa92835f.fullreservationform WHERE date=" + qw + ";";
 
         System.out.println("my query:  " + qq);
         ArrayList<Time> ar111 = new ArrayList();
-        Map<String,String> hashMap = new HashMap<>();
+        Map<String, String> hashMap = new HashMap<>();
         try {
             try (Connection connection = helperUC.getConnection()) {
                 JsonDataArrayFromBeToFe fullFormDataForFE = new JsonDataArrayFromBeToFe();
@@ -147,7 +146,7 @@ public class HomeController extends Controller {
 
 
                         while (resultSet.next()) {
-                            Time time= new Time();
+                            Time time = new Time();
                             time.setDate(resultSet.getNString("date"));
                             time.setTime(resultSet.getNString("time"));
                             time.setLength(resultSet.getNString("massageOption"));
@@ -156,28 +155,26 @@ public class HomeController extends Controller {
 //                            fullFormDataForFE.add(dataFromDB(resultSet, HelperUtilityClass.fullFormNames));
                         }
 
-                        System.out.println("sizeeee::::   "+ ar111.size());
+                        System.out.println("sizeeee::::   " + ar111.size());
 
 //                        System.out.println(" size of ar : " +ar111.size());
 
-                        for (int i=0; i<ar111.size(); i++) {
+                        for (int i = 0; i < ar111.size(); i++) {
                             System.out.println("here ti comes");
                             System.out.println(ar111.get(i).getDate() + "  " + ar111.get(i).getTime() + " " + ar111.get(i).getLength());
                         }
-
 
 
                         String response = helperUC.initializeObjectMapper().writeValueAsString(fullFormDataForFE);
 
                         System.out.println("##########################################");
                         System.out.println(response);
-                        for (int i=0; i<fullFormDataForFE.size(); i++) {
+                        for (int i = 0; i < fullFormDataForFE.size(); i++) {
                             System.out.println(fullFormDataForFE.get(i));
                             System.out.println("contains");
 
                             fullFormDataForFE.contains("2020-02-24");
                         }
-
 
 
                         Logger.debug("Getting bookingForm data for adminPage...");
@@ -193,45 +190,44 @@ public class HomeController extends Controller {
     }
 
 
-
-
-
     public Result getNewTimeSlots() throws JsonProcessingException, ParseException, SQLException {
 
+        System.out.println("Inside of getting new time slots");
         JsonNode json = request().body().asJson();
 
         String timeX = json.findPath("date").asText();
         String optionX = json.findPath("length").asText().split(" ")[0];
-        System.out.println("REACHINGF HERE?");
+//        System.out.println("REACHINGF HERE?");
 
-        int LENGTH_OF_MASSAGE_AS_INDEXES=0;
+        int LENGTH_OF_MASSAGE_AS_INDEXES = 0;
 //        int BUFFER_TIME= 6;
 
         //fix this, never allow undefined to come in from angularjs, for now it's temporary, meaning most probably permanent.
-        if(optionX.isEmpty()){
+        if (optionX.isEmpty()) {
             System.out.println("EMPTY AS FUCK");
-            LENGTH_OF_MASSAGE_AS_INDEXES=6;
-        }else{
-            LENGTH_OF_MASSAGE_AS_INDEXES = (Integer.parseInt(optionX)/15)+BUFFER_TIME;
+            LENGTH_OF_MASSAGE_AS_INDEXES = 6;
+        } else {
+            LENGTH_OF_MASSAGE_AS_INDEXES = (Integer.parseInt(optionX) / 15) + BUFFER_TIME;
 
         }
-        System.out.println("#########@@@@@@@@@@############### "+ optionX);
-        System.out.println("#########@@@@@@@@@@############### LENGTH TOTAL MASSAGE "+ LENGTH_OF_MASSAGE_AS_INDEXES);
-        Date date1=new SimpleDateFormat("yyyy-MM-dd").parse(timeX);
-        Logger.debug("DATTTT");
-        Logger.debug(String.valueOf(date1));
+//        System.out.println("#########@@@@@@@@@@############### " + optionX);
+//        System.out.println("#########@@@@@@@@@@############### LENGTH TOTAL MASSAGE " + LENGTH_OF_MASSAGE_AS_INDEXES);
+        Date date1 = new SimpleDateFormat("yyyy-MM-dd").parse(timeX);
+//        Logger.debug("DATTTT");
+//        Logger.debug(String.valueOf(date1));
 
         String timeValue2;
         String timeValue;
+        boolean today = DateUtils.isSameDay(date1, new Date());
 
-        if (DateUtils.isSameDay(date1,new Date())) {
+        if (DateUtils.isSameDay(date1, new Date())) {
             //set to 14400000
-            timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()+ 13200000 )) ;//+ 4400000
-            System.out.println("in here 1 1 1 ");
+            timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()));//+ 4400000
+            System.out.println("in here 1 1 1 - TODAY");
             System.out.println("--------------------------------------------------------");
             System.out.println(timeValue);
-        }else{
-            System.out.println("in here 2 2 2 ");
+        } else {
+            System.out.println("in here 2 2 2 - OTHER DAY");
             timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(date1);
         }
 
@@ -241,15 +237,15 @@ public class HomeController extends Controller {
         //fix  14400000
 //        String timeValue2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis() + 4400000));
 
-        Logger.debug("IS IT TRUE?");
-        Logger.debug(String.valueOf(DateUtils.isSameDay(date1,new Date())));
+//        Logger.debug("IS IT TRUE?");
+//        Logger.debug(String.valueOf(DateUtils.isSameDay(date1, new Date())));
 
-        System.out.println("timeValue2:   " + timeValue);
+//        System.out.println("timeValue2:   " + timeValue);
 //        System.out.println("timeValue2:   " + timeValue2);
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS");
 //        sdf+=3600000
-        System.out.println("print:   " + sdf);
+//        System.out.println("print:   " + sdf);
         ArrayList<String> existing = new ArrayList<>(Arrays.asList("16:00"));
         try {
 
@@ -270,8 +266,10 @@ public class HomeController extends Controller {
                 startCalendar.set(Calendar.MINUTE, 45);
                 startCalendar2.set(Calendar.MINUTE, 45);
             } else {
-                startCalendar.add(Calendar.MINUTE, 0); // overstep hour and clear minutes
-                startCalendar2.add(Calendar.MINUTE, 0); // overstep hour and clear minutes
+                startCalendar.add(Calendar.MINUTE, 0);
+                startCalendar.add(Calendar.HOUR, 1);// overstep hour and clear minutes
+                startCalendar2.add(Calendar.MINUTE, 0);
+                startCalendar2.add(Calendar.HOUR, 1);// overstep hour and clear minutes
                 startCalendar.clear(Calendar.MINUTE);
                 startCalendar2.clear(Calendar.MINUTE);
             }
@@ -305,10 +303,13 @@ public class HomeController extends Controller {
             JsonDataArrayFromBeToFe fullFormDataForFE = new JsonDataArrayFromBeToFe();
             ArrayList<String> ar11 = new ArrayList<String>();
             while (endCalendar.after(startCalendar)) {
-
-                Logger.debug(String.valueOf(startCalendar.getTime()));
-                Logger.debug(String.valueOf(startTime.getTime()));
-                System.out.println("endclendar:" + endCalendar.before(closingTIme));
+                System.out.println("START CALENDAR builder");
+//                System.out.println(startCalendar.getTimeZone());
+//                System.out.println(startCalendar.getTime());
+//
+//                Logger.debug(String.valueOf(startCalendar.getTime()));
+//                Logger.debug(String.valueOf(startTime.getTime()));
+//                System.out.println("endclendar:" + endCalendar.before(closingTIme));
 
 
 //                System.out.println( "test1" +closingTIme.getTime());
@@ -343,11 +344,6 @@ public class HomeController extends Controller {
 
 
                 //move outside of damn while, only 1 at a time getting added
-
-                if (arr.contains(existing)) {
-                    System.out.println("yes");
-                }
-
                 fullFormDataForFE.add(slotStartTime);
 
 //                Logger.debug("SENDING DATA");
@@ -375,8 +371,8 @@ public class HomeController extends Controller {
 //
 //            }
             try {
-                filterSlotsAccordingToWorkingHours(fullFormDataForFE, existing, date1, timeX,LENGTH_OF_MASSAGE_AS_INDEXES);
-            }catch (IndexOutOfBoundsException e){
+                filterSlotsAccordingToWorkingHours(fullFormDataForFE, existing, date1, timeX, LENGTH_OF_MASSAGE_AS_INDEXES, today);
+            } catch (IndexOutOfBoundsException e) {
                 Logger.debug("HAHAHA: " + e);
             }
 
@@ -415,15 +411,14 @@ public class HomeController extends Controller {
     }
 
 
-
-    private void additionalFiltering(JsonDataArrayFromBeToFe arr, String date1, int LENGTH_OF_MASSAGE_AS_INDEXES) throws SQLException {
-        String qw = "'\""+date1+"\"'";
-        String qq= "SELECT date, time, massageOption from heroku_e3d8ce5aa92835f.fullreservationform WHERE date="+qw+" "+"ORDER BY time ASC"+";";
+    private void additionalFiltering1(JsonDataArrayFromBeToFe arr, String date1, int LENGTH_OF_MASSAGE_AS_INDEXES, boolean today) throws SQLException {
+        String qw = "'\"" + date1 + "\"'";
+        String qq = "SELECT date, time, massageOption from heroku_e3d8ce5aa92835f.fullreservationform WHERE date=" + qw + " " + "ORDER BY time ASC" + ";";
 
         System.out.println("my query:  " + qq);
         ArrayList<Time> arrFromDB = new ArrayList();
         ArrayList<Time> arrFromDB2 = new ArrayList();
-        Map<String,String> hashMap = new HashMap<>();
+        Map<String, String> hashMap = new HashMap<>();
         try {
             try (Connection connection = helperUC.getConnection()) {
 //            JsonDataArrayFromBeToFe fullFormDataForFE = new JsonDataArrayFromBeToFe();
@@ -442,10 +437,7 @@ public class HomeController extends Controller {
                             arrFromDB.add(time);
 //                            fullFormDataForFE.add(dataFromDB(resultSet, HelperUtilityClass.fullFormNames));
                         }
-                        while(resultSet.next()){
 
-
-                        }
                         Logger.debug("IS THIS PLACE FEILING1?");
                         System.out.println("sizeeee::::   " + arrFromDB.size());
 
@@ -453,9 +445,10 @@ public class HomeController extends Controller {
 //                        System.out.println(arrFromDB.get(0));
 
 
-
-
-                    }}}} catch (SQLException e) {
+                    }
+                }
+            }
+        } catch (SQLException e) {
             Logger.debug("IS THIS PLACE FEILING?2");
             e.printStackTrace();
         }
@@ -463,32 +456,42 @@ public class HomeController extends Controller {
         ArrayList<String> newestArrayToFE = new ArrayList<>();
 
 
-        System.out.println(arrFromDB.get(0).getLength().split(" ")[0]);
-        int zex=6;
+        System.out.println("REACHIN HERE?@#@#@#@#@#@#");
+//        System.out.println(arrFromDB.get(0).getLength().split(" ")[0]);
+//        int zex=6;
 
 //    int BUFFER_TIME=4;
 
-        try{
-            for (int i=0; i<arrFromDB.size(); i++){
-                try{
-                    for (int x=0;x<arr.size();x++){
-            System.out.println("COUNTING");
-                        System.out.println("array1: "+ arr.get(x));
-                        try{
-                            if (arr.get(x).equals(arrFromDB.get(i).getTime())){
+        try {
+            int xz = 0;
+            int xz2 = 0;
+            for (int i = 0; i < arrFromDB.size(); i++) {
+
+                try {
+
+                    for (int x = 0; x < arr.size(); x++) {
+                        System.out.println("COUNTING");
+
+//                        System.out.println("IS it today? " + today);
+                        System.out.println("array1: " + arr.get(x));
+                        try {
+                            if (arr.get(x).equals(arrFromDB.get(i).getTime())) {
+                                System.out.println("HIT:");
+                                System.out.println(arr.get(x));
                                 System.out.println("INDEX !!!!: " + x);
 
                                 System.out.println("TESTING##########: " + arrFromDB.get(i).getTime());
                                 String zeba = arrFromDB.get(i).getLength().split(" ")[0];
                                 System.out.println("TEST2:  " + zeba);
-                                int zeba2=Integer.parseInt(zeba);
+                                int zeba2 = Integer.parseInt(zeba);
                                 System.out.println("TEST3:  " + zeba2);
 
-                                try{
-                                    for (int z=0; z<(zeba2/15)+BUFFER_TIME;z++) {
+                                try {
+                                    for (int z = 0; z < (zeba2 / 15) + BUFFER_TIME; z++) {
 
                                         System.out.println("###### REMOVING ######");
                                         System.out.println(x);
+                                        System.out.println(arr.get(x));
 
                                         arr.remove(x);
 
@@ -501,60 +504,333 @@ public class HomeController extends Controller {
 //                    arr.remove(x);
 //                    System.out.println("INDEX IS : ");
 //                    System.out.println(x);
-                                    }}
-                                catch (IndexOutOfBoundsException e){
+                                    }
+                                } catch (IndexOutOfBoundsException e) {
                                     Logger.debug("nothing1");
                                 }
 
-                                try{
+                                try {
                                     System.out.println("does it continue after nothing1?");
                                     //to be investgated
-                                    for (int j=0; j<LENGTH_OF_MASSAGE_AS_INDEXES;j++){
+                                    for (int j = 0; j < LENGTH_OF_MASSAGE_AS_INDEXES; j++) {
                                         System.out.println("AM I HERE?: ");
-                                        System.out.println(arr.get(x-j-1));
-                                        arr.remove(x-j-1);
-                                    }}
-                                catch(IndexOutOfBoundsException e){
+                                        System.out.println(arr.get(x - j - 1));
+                                        arr.remove(x - j - 1);
+                                    }
+                                } catch (IndexOutOfBoundsException e) {
                                     Logger.debug("nothing2");
                                 }
-                            }}catch(IndexOutOfBoundsException e){
-                            Logger.debug("nothing3");
+
+
+
+
+
+
+                            } else if (today && arrFromDB.size() ==1 && x<1 && i<1){
+//                            } else if (false){
+                                int one=0;
+
+
+
+
+
+                                String xxxxx2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis() ));
+                                String xxxxxEND2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis() +14400000));
+
+                                SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS");
+//        sdf+=3600000
+                                System.out.println("print:   " + sdf3);
+                                try {
+
+                                    Calendar beforeTIme = Calendar.getInstance();
+                                    Calendar afterTime = Calendar.getInstance();
+                                    beforeTIme.setTime(sdf3.parse(xxxxx2));
+                                    afterTime.setTime(sdf3.parse(xxxxxEND2));
+
+
+                                    System.out.println("IN THE HERE###########################################################");
+////                                timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()))
+//                                long multiplier=800000;
+//
+//                                Date dateX= new Date(System.currentTimeMillis());
+//                                Date dateY = new Date(System.currentTimeMillis()+14400000);
+//                                Calendar calendarX = Calendar.getInstance();
+//                                Calendar calendarY = Calendar.getInstance();
+//                                calendarX.getTime();
+//                                calendarY.setTime(Calendar.getInstance()+14400000);
+
+                                    while (beforeTIme.before(afterTime)) {
+                                        beforeTIme.add(Calendar.MINUTE, 15);
+                                        System.out.println("CURRENT TIME");
+                                        System.out.println(beforeTIme.getTime());
+
+                                        System.out.println("END TIME");
+                                        System.out.println(afterTime.getTime());
+                                        System.out.println("DELETEING");
+                                        System.out.println(arr.get(0));
+                                        System.out.println(arr.remove(0));
+
+                                    }
+
+//                                    System.out.println("DATEX: "+ dateX);
+//                                    System.out.println("DATEY: "+ dateY);
+//                                    System.out.println("DELETEING");
+//                                    System.out.println(arr.get(0));
+//                                    arr.remove(0);
+//                                    dateX.setTime(System.currentTimeMillis()+multiplier);
+//                                    System.out.println("multiplier: "+ multiplier);
+////                                    dateX= new Date (System.currentTimeMillis()+multiplier);
+//                                    multiplier=+multiplier+1000000000;
+//                                    System.out.println("MULTIPL");
+//                                    System.out.println(multiplier);
+
+
+//                                    timeValue = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(new Date(System.currentTimeMillis()))
+
+
+//                            }else if (today){
+//                                System.out.println("Is it today?");
+//
+//                                while(xz <1){
+
+                                    //THIS IS GOOD
+//                                    System.out.println("############################3Is it WHILE LOOP??#########################");
+//
+//                                    if (arrFromDB.size() !=0){
+//                                        System.out.println("IN THE MAGICAL PLACE");
+//                                        System.out.println(arrFromDB.get(i).getLength().split(" ")[0]);
+////                                    System.out.println((Integer.parseInt(arrFromDB.get(i).getLength().split(" ")[0])/15+BUFFER_TIME));
+//                                        System.out.println("LENGTH");
+//                                        System.out.println(arrFromDB.get(arrFromDB.size()-1).getLength());
+//                                        System.out.println("ELEMENT");
+//                                        System.out.println(arr.get(0));
+//                                        System.out.println("SIZE");
+//                                        System.out.println(arr.size());
+//
+//                                        for(int jj=0;jj<(Integer.parseInt(arrFromDB.get(arrFromDB.size()-1).getLength().split(" ")[0])/15);jj++){
+//                                            System.out.println("removing xxxxxxxxxxxxxxxxxxxxxx");
+//                                            arr.remove(0);
+//                                        }
+//                                    }
+//                                    xz++;
+//                                }
+//
+//
+//
+//
+//                            }else if(today){
+//
+//                            }
+                                 }catch(IndexOutOfBoundsException | ParseException e){
+                                    Logger.debug("nothing3");
+                                }
+                            }
+
+
+                        } catch (IndexOutOfBoundsException e) {
+                            Logger.debug("Nothing 4");
+
                         }
-                    }
 
-
-                }catch(IndexOutOfBoundsException e){
-                    Logger.debug("Nothing 4");
-
-                }
-
-                newestArrayToFE.add(arrFromDB.get(i).getTime());
+                        newestArrayToFE.add(arrFromDB.get(i).getTime());
 
 //        arr.retainAll(Collections.singleton(arrFromDB.get(i).getTime()));
 
 
-                System.out.println("HER EIT COMES");
-                System.out.println(arr.contains(arrFromDB.get(i).getTime()));
-                System.out.println(arrFromDB.get(i).getTime());
+                        System.out.println("HER EIT COMES");
+                        System.out.println(arr.contains(arrFromDB.get(i).getTime()));
+                        System.out.println(arrFromDB.get(i).getTime());
 //
 //
 //
 //
-            }
-        }catch (IndexOutOfBoundsException e) {
-            Logger.debug("Yeah, trying to delete more than possible");
+                    }
 
-        }
+
+                } catch (IndexOutOfBoundsException e) {
+                    Logger.debug("Yeah, trying to delete more than possible");
+
+                }
 
 //arr.removeAll(newestArrayToFE);
+            }
+
+
+            if (arrFromDB.size() == 0 && today) {
+                System.out.println("NO REGISTERED TODAY");
+                for (int xxx = 0; xxx < 12; xxx++) {
+                    System.out.println("REMOVING XASDASD");
+                    arr.remove(0);
+                    System.out.println(arr.get(0));
+
+                }
+            }
+
+
+
+        }finally{
+            Logger.debug("FINALLY S TATEMENT HERE");
+        }
     }
 
 
+    private void additionalFiltering(JsonDataArrayFromBeToFe arr, String date1, int LENGTH_OF_MASSAGE_AS_INDEXES, boolean today) throws SQLException {
+        String qw = "'\"" + date1 + "\"'";
+        String qq = "SELECT date, time, massageOption from heroku_e3d8ce5aa92835f.fullreservationform WHERE date=" + qw + " " + "ORDER BY time ASC" + ";";
+
+        System.out.println("my query:  " + qq);
+        ArrayList<Time> arrFromDB = new ArrayList();
+        ArrayList<Time> arrFromDB2 = new ArrayList();
+        Map<String, String> hashMap = new HashMap<>();
+
+        try {
+            try (Connection connection = helperUC.getConnection()) {
+//            JsonDataArrayFromBeToFe fullFormDataForFE = new JsonDataArrayFromBeToFe();
+                try (PreparedStatement preparedStatement = connection.prepareStatement(qq)) {
+                    try (ResultSet resultSet = preparedStatement.executeQuery()) {
+
+
+                        while (resultSet.next()) {
+                            Time time = new Time();
+                            time.setDate(resultSet.getNString("date").replace("\"", ""));
+                            time.setTime(resultSet.getNString("time").replace("\"", ""));
+                            time.setLength(resultSet.getNString("massageOption").replace("\"", ""));
+                            arrFromDB.add(time);
+                        }
+                        System.out.println("Size of Array: " + arrFromDB.size());
+                        //start here
+                        ArrayList<Object> arrayHolderForRemoving = new ArrayList();
+                        //If it is today ant no bookings yet, show 3 hours in advance, deleting 12 slots, 1slot=15min
+                        if (arrFromDB.size() == 0 && today) {
+                            System.out.println("No one registered today, therefore deleting slots");
+                            try {
+
+                            for (int xxx = 0; xxx < 12; xxx++) {
+                                arrayHolderForRemoving.add(arr.get(xxx));
+                                System.out.println(arr.get(xxx));
+
+                            }}catch(IndexOutOfBoundsException e){
+                                Logger.debug("caught exception in removing slots 1");
+                            }
+                        }else{
+
+                            if (today){
+                                System.out.println("It is today, therefore, adding 12 first slots to arrayHolderForRemoving");
+
+                                for (int xxx = 0; xxx < 12; xxx++) {
+                                    arrayHolderForRemoving.add(arr.get(xxx));
+                                }
+                            }
+                            System.out.println("Inside logic where bookings exist");
+
+                            //results from DB (booked slots)
+                            try {
+
+                                for (int i = 0; i < arrFromDB.size(); i++) {
+                                    System.out.println("Checking on element from db" + i);
+                                    System.out.println(arrFromDB.get(i).getTime());
+
+                                    //array coming with filtered slots by workday
+                                    for (int x = 0; x < arr.size(); x++) {
+
+                                        if (arr.get(x).equals(arrFromDB.get(i).getTime())) {
+                                            System.out.println("A match found here");
+                                            System.out.println(arr.get(x));
+                                            int zeba2 = Integer.parseInt(arrFromDB.get(i).getLength().split(" ")[0]);
+                                            try {
+                                                for (int z = 0; z < (zeba2 / 15) + BUFFER_TIME; z++) {
+
+
+                                                    System.out.println("Marking to be removed following slot: ");
+                                                    System.out.println(arr.get(x + z));
+                                                    arrayHolderForRemoving.add(arr.get(x + z));
+//                                                arr.remove(x);
+                                                }
+
+                                            } catch (IndexOutOfBoundsException e) {
+                                                Logger.debug("caught exception in removing slots 2");
+                                                continue;
+                                            }
+
+                                            try {
+
+                                                for (int j = 0; j < LENGTH_OF_MASSAGE_AS_INDEXES; j++) {
+                                                    System.out.println("Does it match actual length of massage?" + LENGTH_OF_MASSAGE_AS_INDEXES);
+                                                    System.out.println("picked massage length as slots");
+                                                    System.out.println(arr.get(x - j));
+                                                    arrayHolderForRemoving.add(arr.get(x - j));
+                                                }
+                                            } catch (IndexOutOfBoundsException e) {
+                                                Logger.debug("caught exception in remove slots 3");
+                                                continue;
+                                            }
+                                            System.out.println("size: " + arrayHolderForRemoving.size());
+                                            System.out.println("first element: " + arrayHolderForRemoving.get(0));
+                                        }else{
+
+                                                //get rid of looping too many times
+                                            if(x<=0){
+                                                System.out.println("not found any match, but must remove next elements from given date time");
+                                                int zeba3 = Integer.parseInt(arrFromDB.get(i).getLength().split(" ")[0]);
+                                                ArrayList<String> MONDAY1 = new ArrayList<>(Arrays.asList("10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00", "14:15", "14:30", "14:45", "15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15", "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00"));
+
+                                                for (int zzz=0; zzz<MONDAY1.size(); zzz++){
+
+
+                                                    try {
+//                                                    System.out.println("array of MOnday");
+//                                                    System.out.println(MONDAY1.size());
+//                                                    System.out.println(MONDAY1.get(0));
+//                                                    System.out.println("X IS : " + x);
+                                                        if (MONDAY1.get(zzz).equals(arrFromDB.get(i).getTime())) {
+                                                            for (int zz = 0; zz < (zeba3 / 15) + BUFFER_TIME; zz++) {
+
+
+                                                                System.out.println("Marking to be removed following slot: ");
+                                                                System.out.println(MONDAY1.get(zzz + zz));
+                                                                arrayHolderForRemoving.add(MONDAY1.get(zzz + zz));
+//                                                arr.remove(x);
+                                                            }
+                                                        }
+
+
+
+                                                    } catch (IndexOutOfBoundsException e) {
+                                                        Logger.debug("caught exception in removing slots 2");
+                                                        continue;
+                                                    }
+                                            }
 
 
 
 
-    private void filterSlotsAccordingToWorkingHours(JsonDataArrayFromBeToFe arr, ArrayList<String> existing, Date date1, String timeX, int LENGTH_OF_MASSAGE_AS_INDEXES) throws SQLException {
+                                            }
+                                        }
+                                    }
+                                }
+                            }catch(Exception e){
+                                Logger.debug("in exception X");
+                            }
+
+
+                        }
+                        arr.removeAll(arrayHolderForRemoving);
+
+
+
+
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            Logger.debug("Crashed when fetching from DB");
+            e.printStackTrace();
+        }
+    }
+
+    private void filterSlotsAccordingToWorkingHours(JsonDataArrayFromBeToFe
+                                                            arr, ArrayList<String> existing, Date date1, String timeX, int LENGTH_OF_MASSAGE_AS_INDEXES, boolean today) throws
+            SQLException {
 //        List<String> ar1 = new ArrayList<>(Arrays.asList("08:00", "08:15", "08:30", "08:45", "09:00", "09:15", "09:30", "09:45"));
         ArrayList<String> ar11 = new ArrayList<>(Arrays.asList("10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00", "14:15", "14:30", "14:45", "15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15", "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00"));
 
@@ -565,16 +841,17 @@ public class HomeController extends Controller {
 
 
         //load from properties file later on.
-        ArrayList<String> MONDAY = new ArrayList<>(Arrays.asList("10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00","14:15","14:30","14:45","15:00","15:15","15:30","15:45","16:00","16:15","16:30","16:45","17:00","17:15","17:30","17:45","18:00","18:15","18:30","18:45","19:00","19:15","19:30","19:45","20:00","20:15","20:30","20:45","21:00"));
+        ArrayList<String> MONDAY = new ArrayList<>(Arrays.asList("10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00", "14:15", "14:30", "14:45", "15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15", "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00"));
         ArrayList<String> TUESDAY = new ArrayList<>(Arrays.asList(""));
-        ArrayList<String> WEDNESDAY = new ArrayList<>(Arrays.asList("15:00","15:15","15:30","15:45","16:00","16:15","16:30","16:45","17:00","17:15","17:30","17:45","18:00","18:15","18:30","18:45","19:00","19:15","19:30","19:45","20:00","20:15","20:30","20:45","21:00"));
-        ArrayList<String> THURSDAY = new ArrayList<>(Arrays.asList("15:00","15:15","15:30","15:45","16:00","16:15","16:30","16:45","17:00","17:15","17:30","17:45","18:00","18:15","18:30","18:45","19:00","19:15","19:30","19:45","20:00","20:15","20:30","20:45","21:00"));
-        ArrayList<String> FRIDAY = new ArrayList<>(Arrays.asList("10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00","14:15","14:30","14:45","15:00","15:15","15:30","15:45","16:00","16:15","16:30","16:45","17:00","17:15","17:30","17:45","18:00","18:15","18:30","18:45","19:00","19:15","19:30","19:45","20:00","20:15","20:30","20:45","21:00"));
-        ArrayList<String> SATURDAY = new ArrayList<>(Arrays.asList("10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00","14:15","14:30","14:45","15:00","15:15","15:30","15:45","16:00","16:15","16:30","16:45","17:00","17:15","17:30","17:45","18:00","18:15","18:30","18:45","19:00","19:15","19:30","19:45","20:00","20:15","20:30","20:45","21:00"));
+        ArrayList<String> WEDNESDAY = new ArrayList<>(Arrays.asList("15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15", "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00"));
+        ArrayList<String> THURSDAY = new ArrayList<>(Arrays.asList("15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15", "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00"));
+        ArrayList<String> FRIDAY = new ArrayList<>(Arrays.asList("10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00", "14:15", "14:30", "14:45", "15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15", "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00"));
+        ArrayList<String> SATURDAY = new ArrayList<>(Arrays.asList("10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00", "14:15", "14:30", "14:45", "15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15", "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00"));
         ArrayList<String> SUNDAY = new ArrayList<>(Arrays.asList(""));
 
+//        additionalFiltering(arr, timeX,LENGTH_OF_MASSAGE_AS_INDEXES);
 
-        switch(dayOfWeek){
+        switch (dayOfWeek) {
             case 1:
                 arr.retainAll(SUNDAY);
                 System.out.println("SUNDAY IT IS");
@@ -610,8 +887,7 @@ public class HomeController extends Controller {
 //        System.out.println("SIZE OF ARRAY11111111111:  : : " + arr.get(0));
 
 
-        additionalFiltering(arr, timeX,LENGTH_OF_MASSAGE_AS_INDEXES);
-
+        additionalFiltering(arr, timeX, LENGTH_OF_MASSAGE_AS_INDEXES, today);
 
 
     }
@@ -629,4 +905,7 @@ public class HomeController extends Controller {
         }
         return map;
     }
+
+    ;
+
 }
