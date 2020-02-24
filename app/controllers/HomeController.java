@@ -287,7 +287,7 @@ public class HomeController extends Controller {
             JsonDataArrayFromBeToFe fullFormDataForFE = new JsonDataArrayFromBeToFe();
             ArrayList<String> ar11 = new ArrayList<String>();
             while (endCalendar.after(startCalendar)) {
-                System.out.println("START CALENDAR builder");
+//                System.out.println("START CALENDAR builder");
                 String slotStartTime = slotTime.format(startCalendar.getTime());
                 String slotStartDate = slotDate.format(startCalendar.getTime());
 
@@ -379,33 +379,41 @@ public class HomeController extends Controller {
                                             System.out.println("A match found here");
                                             System.out.println(arr.get(x));
                                             int zeba2 = Integer.parseInt(arrFromDB.get(i).getLength().split(" ")[0]);
-                                            try {
+
                                                 for (int z = 0; z < (zeba2 / 15) + BUFFER_TIME; z++) {
+
+                                                    try {
 
 
                                                     System.out.println("Marking to be removed following slot: ");
                                                     System.out.println(arr.get(x + z));
                                                     arrayHolderForRemoving.add(arr.get(x + z));
 //                                                arr.remove(x);
+
+                                                    } catch (IndexOutOfBoundsException e) {
+                                                        Logger.debug("caught exception in removing slots 2");
+                                                        continue;
+                                                    }
                                                 }
 
-                                            } catch (IndexOutOfBoundsException e) {
-                                                Logger.debug("caught exception in removing slots 2");
-                                                continue;
-                                            }
 
-                                            try {
+
+
 
                                                 for (int j = 0; j < LENGTH_OF_MASSAGE_AS_INDEXES; j++) {
+
+                                                    try {
                                                     System.out.println("Does it match actual length of massage?" + LENGTH_OF_MASSAGE_AS_INDEXES);
                                                     System.out.println("picked massage length as slots");
                                                     System.out.println(arr.get(x - j));
                                                     arrayHolderForRemoving.add(arr.get(x - j));
+
+                                                    } catch (IndexOutOfBoundsException e) {
+                                                        Logger.debug("caught exception in remove slots 3");
+                                                        continue;
+                                                    }
                                                 }
-                                            } catch (IndexOutOfBoundsException e) {
-                                                Logger.debug("caught exception in remove slots 3");
-                                                continue;
-                                            }
+
                                             System.out.println("size: " + arrayHolderForRemoving.size());
                                             System.out.println("first element: " + arrayHolderForRemoving.get(0));
                                         }else{
@@ -422,9 +430,14 @@ public class HomeController extends Controller {
                                                     try {
                                                         if (MONDAY1.get(zzz).equals(arrFromDB.get(i).getTime())) {
                                                             for (int zz = 0; zz < (zeba3 / 15) + BUFFER_TIME; zz++) {
-                                                                System.out.println("Marking to be removed following slot: ");
-                                                                System.out.println(MONDAY1.get(zzz + zz));
-                                                                arrayHolderForRemoving.add(MONDAY1.get(zzz + zz));
+                                                                try{
+                                                                    System.out.println("Marking to be removed following slot: ");
+                                                                    System.out.println(MONDAY1.get(zzz + zz));
+                                                                    arrayHolderForRemoving.add(MONDAY1.get(zzz + zz));
+                                                                }catch (IndexOutOfBoundsException e){
+                                                                    Logger.debug("yet another exception");
+                                                                }
+
                                                             }
                                                         }
                                                     } catch (IndexOutOfBoundsException e) {
