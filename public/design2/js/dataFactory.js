@@ -1011,16 +1011,21 @@ gg.factory('myDataFactory', function () {
         getSucRespFullBookForm: function () {
             return {
                 "lt": {
-                    "response": "Ačiū, Jūsų laikas rezervuotas."
+                    "response": "Ačiū, Jūsų laikas rezervuotas.",
+                    "pending":"Rezervacija vykdoma ..."
 
                 },
                 "de": {
-                    "response": "Danke, Ihre Zeit ist reserviert."
+                    "response": "Danke, Ihre Zeit ist reserviert.",
+                                        "pending":"Reservierung in Bearbeitung ..."
+
 
 
                 },
                 "ru": {
-                    "response": "Спасибо, ваше время зарезервировано."
+                    "response": "Спасибо, ваше время зарезервировано.",
+                                        "pending":"Бронирование в процессе ..."
+
 
 
                 }

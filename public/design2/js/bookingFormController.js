@@ -39,6 +39,7 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
         $scope.showDat=false;
         $scope.show3=false;
 
+$scope.showProcessingResponse=false;
         $scope.disableCalendar=true;
         $scope.show3=false;
 
@@ -98,7 +99,7 @@ $scope.doSomeStuff = function(item) {
     $scope.setMe=item
     $scope.user.chosenTime=item;
     $scope.show3=true;
-        item.toggled = !item.toggled;
+//        item.toggled = !item.toggled;
 
 }
 
@@ -717,8 +718,12 @@ $scope.doSomeStuff = function(item) {
     $scope.submitFullForm1 = function () {
 
 
+
+
 //        console.log("is form valid?: " + isFormValid());
         if (isFormValid()) {
+            $scope.showProcessingResponse=true;
+            $scope.submittedAndProcessing = $scope.data.sucRespBookForm.pending;
 //            console.log("on submit:");
 
             $scope.errorsBF = {};
@@ -744,6 +749,7 @@ $scope.doSomeStuff = function(item) {
                 url: "/submitFullForm",
                 data: JSON.stringify(bookingForm)
             }).then(function mySuccess(response) {
+            $scope.showProcessingResponse=false;
 
 //                updateEntryInDB();
                 $scope.showSuccessResponse = true;
