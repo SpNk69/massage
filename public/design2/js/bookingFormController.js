@@ -15,12 +15,14 @@ app.controller('controllerBookingForm', ['$scope', 'myDataFactory', 'myFunctions
         $scope.user = {};
         $scope.showSuccessResponse = false;
         $scope.status={};
+        $scope.submittedFail=""
 
         $scope.data = {
             formNames: myFF.setLanguage(currentLanguage, myDF.getFormNames(), $scope),
             formPH: myFF.setLanguage(currentLanguage, myDF.getPlaceHolders(), $scope),
             BFErrorsBE: myFF.setLanguage(currentLanguage, myDF.getFFBEErrorMessages(), $scope),
             sucRespBookForm: myFF.setLanguage(currentLanguage, myDF.getSucRespFullBookForm(), $scope),
+            failResppBookForm: myFF.setLanguage(currentLanguage, myDF.getFailRespFullBookForm(), $scope),
             introText: myFF.setLanguage(currentLanguage, myDF.getIntroData(), $scope),
             summary: myFF.setLanguage(currentLanguage, myDF.getFormNames(), $scope),
 
@@ -96,6 +98,8 @@ $scope.doSomeStuff = function(item) {
     $scope.setMe=item
     $scope.user.chosenTime=item;
     $scope.show3=true;
+        item.toggled = !item.toggled;
+
 }
 
 
@@ -178,6 +182,7 @@ $scope.doSomeStuff = function(item) {
 
                 $scope.statusBF.massage = false;
                 $scope.applyStyleBF.massage = myFF.applyColor("green");
+                $scope.submittedFail=""
 
 
                 $scope.errorsBF.massage = "";
@@ -231,6 +236,7 @@ $scope.doSomeStuff = function(item) {
             $scope.show3=false;
             $scope.showDat=true;
             $scope.applyStyleBF.date = myFF.applyColor("green");
+            $scope.submittedFail=""
         }
     });
 
@@ -268,6 +274,7 @@ $scope.doSomeStuff = function(item) {
             }
             else {
                 $scope.applyStyleBF.time = myFF.applyColor("green");
+                $scope.submittedFail=""
             }
         }
     });
@@ -295,10 +302,14 @@ $scope.doSomeStuff = function(item) {
 
     // function to disable dates in calendar if needed
     $scope.disabledDates = function (date, type) {
+//    console.log("INside disableddates")
+//    console.log(date)
+//    console.log(type)
         //formatas parinktas kad 2'a metu diena 'laisva'
         $scope.takenOrOffDate = "15";
         // disable all Sundays and Saturdays in the Month View
-        return type != 'day' || date.format('dddd') != 'Sunday' && date.format('dddd') != 'Saturday' && date.format('DDD') != $scope.takenOrOffDate;
+//        return type != 'day' || date.format('dddd') != 'Sunday' && date.format('dddd') != 'Saturday' && date.format('DDD') != $scope.takenOrOffDate;
+        return type != 'day' || date.format('dddd') != 'Sunday';
     };
 
     /**
@@ -389,6 +400,7 @@ $scope.doSomeStuff = function(item) {
             } else {
                 $scope.statusBF.date = false;
                 $scope.applyStyleBF.date = myFF.applyColor("green");
+                $scope.submittedFail=""
             }
         }, function myError(response) {
 //            console.log("GetTimeSLots FAILED hard")
@@ -433,6 +445,7 @@ $scope.doSomeStuff = function(item) {
             }
             else {
                 $scope.applyStyleBF.name = myFF.applyColor("green");
+                $scope.submittedFail=""
             }
         }
     });
@@ -466,6 +479,8 @@ $scope.doSomeStuff = function(item) {
             }
             else {
                 $scope.applyStyleBF.surname = myFF.applyColor("green");
+                $scope.submittedFail=""
+
             }
         }
     });
@@ -500,6 +515,7 @@ $scope.doSomeStuff = function(item) {
             }
             else {
                 $scope.applyStyleBF.email = myFF.applyColor("green");
+                $scope.submittedFail=""
             }
         }
     });
@@ -533,6 +549,7 @@ $scope.doSomeStuff = function(item) {
             }
             else {
                 $scope.applyStyleBF.phone = myFF.applyColor("green");
+                $scope.submittedFail=""
             }
         }
     });
@@ -578,6 +595,7 @@ $scope.doSomeStuff = function(item) {
 
             } else {
                 $scope.applyStyleBF.massageOption = myFF.applyColor("green");
+                $scope.submittedFail=""
                 $scope.statusBF.massageOption = false;
 //                console.log("NEW STUFF")
 //                console.log($scope.user.massageOption)
@@ -608,6 +626,8 @@ $scope.doSomeStuff = function(item) {
             }
             else {
                 $scope.applyStyleBF.message = myFF.applyColor("green");
+                $scope.submittedFail=""
+
             }
         }
     });
@@ -631,6 +651,7 @@ $scope.doSomeStuff = function(item) {
                 $scope.applyStyleBF.captcha = myFF.applyColor("red");
             } else {
                 $scope.applyStyleBF.captcha = myFF.applyColor("green");
+                $scope.submittedFail=""
                 $scope.statusBF.captcha = false;
                 $scope.formListenerReset1 = true;
             }
@@ -651,6 +672,8 @@ $scope.doSomeStuff = function(item) {
     );
 
     function notValid() {
+    $scope.submittedFail = $scope.data.failResppBookForm.response;
+//    $scope.submittedFail=
         $scope.myForm.nameBF.$setTouched();
         $scope.myForm.surnameBF.$setTouched();
         $scope.myForm.emailBF.$setTouched();

@@ -1026,6 +1026,30 @@ gg.factory('myDataFactory', function () {
                 }
             }
         },
+                getFailRespFullBookForm: function () {
+                    return {
+                        "lt": {
+                            "response": "Prašome užpildyti visus privalomus laukus."
+
+                        },
+                        "de": {
+                            "response": "Bitte füllen Sie alle geforderten Felder aus."
+
+
+                        },
+                        "ru": {
+                            "response": "Пожалуйста, заполните все обязательные поля."
+
+
+                        }
+                    }
+                },
+
+
+
+
+
+
         getSucRespContactUsForm: function () {
             return {
                 "lt": {
