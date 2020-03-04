@@ -124,7 +124,7 @@ public class BookingFormController extends Controller implements WSBodyReadables
                             "\n" + "Zeit: " + data.get("time").asText() +
 
                             "\n" + "Dauer: " + data.get("massageOption").asText().split(" – ")[0] +
-                            "\n" + "Betrag: " + data.get("massageOption").asText().split(" – ")[1] + " (-35% Der Rabatt wird zum Zeitpunkt der Zahlung angewendet)" +
+                            "\n" + "Betrag: " + data.get("massageOption").asText().split(" – ")[1] + "" +
 //                        "\n\n" + data.get("date").asText() +
                             "\n" + "Ihre Wünsche: " + data.get("message").asText() +
                             "\n" + "Art der Zahlung: Bargeld" +
