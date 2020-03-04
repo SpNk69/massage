@@ -135,7 +135,7 @@ public class BookingFormController extends Controller implements WSBodyReadables
                             "\n" + "www.vidamassage.ch" +
                             "\n" + "+41797897010" +
                             "\n" + "info@vidamassage.ch" +
-                            "\n" + "P.S. Im Februar gilt 35% Rabatt auf Ihre gewählte Massage." +
+//                            "\n" + "P.S. Im Februar gilt 35% Rabatt auf Ihre gewählte Massage." +
 
                             "\n" + "Sie können gerne eine Bewertung auf Facebook hinterlassen - https://www.facebook.com/behandlungspraxisVida/"
             );
