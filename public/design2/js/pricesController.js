@@ -20,7 +20,7 @@ app.controller('controllerPrices', ['$scope', 'myDataFactory', 'myFunctionsFacto
             url: "/getMassagesData",
             data: JSON.stringify(currentLang)
         }).then(function mySuccess(response) {
-        console.log(response.data)
+//        console.log(response.data)
             spaMassages(response.data);
             otherMassages(response.data);
         }, function myError(response) {
