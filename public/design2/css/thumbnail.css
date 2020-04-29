@@ -276,9 +276,10 @@ text-align:left;
 
 .cece{
 
-color: white;
-filter: brightness(255%);
+color: brown;
+filter: brightness(110%);
 text-align:center;
+font-weight: bold;
 }
 
 .oppet2{
