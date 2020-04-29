@@ -20,6 +20,7 @@ app.controller('controllerPrices', ['$scope', 'myDataFactory', 'myFunctionsFacto
             url: "/getMassagesData",
             data: JSON.stringify(currentLang)
         }).then(function mySuccess(response) {
+        console.log(response.data)
             spaMassages(response.data);
             otherMassages(response.data);
         }, function myError(response) {
@@ -30,16 +31,16 @@ app.controller('controllerPrices', ['$scope', 'myDataFactory', 'myFunctionsFacto
     function spaMassages(massageInfo) {
 //        console.log(massageInfo)
         $scope.spaMassages = [];
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 15; i++) {
             $scope.spaMassages.push(massageInfo[i])
         }
-        myFF.refactorArrayForDisplay($scope.spaMassages, 10);
+        myFF.refactorArrayForDisplay($scope.spaMassages, 15);
     }
 
     //separate other massages for Prices section
     function otherMassages(massageInfo) {
         $scope.otherMassages = [];
-        for (var i = 10; i < 16; i++) {
+        for (var i = 15; i < 21; i++) {
             $scope.otherMassages.push(massageInfo[i])
         }
         myFF.refactorArrayForDisplay($scope.otherMassages, 6);

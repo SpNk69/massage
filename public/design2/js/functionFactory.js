@@ -23,28 +23,41 @@ gg.factory('myFunctionsFactory', function () {
 
 
                 if (toRefactor[i].col1 === "" || toRefactor[i].col1 == null) {
-                    toRefactor[i].col1 = "–"
+                    toRefactor[i].col1 = "-"
                 } else {
-                    toRefactor[i].col1 = toRefactor[i].col1 + " CHF"
+                    toRefactor[i].col1 = toRefactor[i].col1 + ".-Fr."
                 }
 
                 if (toRefactor[i].col2 === "" || toRefactor[i].col2 == null) {
-                    toRefactor[i].col2 = "–"
+                    toRefactor[i].col2 = "-"
                 } else {
-                    toRefactor[i].col2 = toRefactor[i].col2 + " CHF"
+                    toRefactor[i].col2 = toRefactor[i].col2 + ".-Fr."
                 }
 
                 if (toRefactor[i].col3 === "" || toRefactor[i].col3 == null) {
-                    toRefactor[i].col3 = "–"
+                    toRefactor[i].col3 = "-"
                 } else {
-                    toRefactor[i].col3 = toRefactor[i].col3 + " CHF"
+                    toRefactor[i].col3 = toRefactor[i].col3 + ".-Fr."
                 }
 
                 if (toRefactor[i].col4 === "" || toRefactor[i].col4 == null) {
-                    toRefactor[i].col4 = "–"
+                    toRefactor[i].col4 = "-"
                 } else {
-                    toRefactor[i].col4 = toRefactor[i].col4 + " CHF"
+                    toRefactor[i].col4 = toRefactor[i].col4 + ".-Fr."
                 }
+
+                 if (toRefactor[i].col5 === "" || toRefactor[i].col5 == null) {
+                                    toRefactor[i].col5 = "-"
+                                } else {
+                                    toRefactor[i].col5 = toRefactor[i].col5 + ".-Fr."
+                                }
+
+                  if (toRefactor[i].col6 === "" || toRefactor[i].col6 == null) {
+                                     toRefactor[i].col6 = "-"
+                                 } else {
+                                     toRefactor[i].col6 = toRefactor[i].col6 + ".-Fr."
+                                 }
+
 
             }
         },
