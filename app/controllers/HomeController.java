@@ -68,6 +68,36 @@ public class HomeController extends Controller {
         }
     }
 
+    public Result getMassagesDataOther() throws JsonProcessingException {
+        JsonNode json = request().body().asJson();
+        try {
+            try (Connection connection = helperUC.getConnection()) {
+                try (PreparedStatement preparedStatement1 = connection.prepareStatement("SELECT * FROM heroku_e3d8ce5aa92835f.massagede_other")) {
+                    JsonDataArrayFromBeToFe massageList = new JsonDataArrayFromBeToFe();
+                    try (ResultSet data = preparedStatement1.executeQuery()) {
+
+                        while (data.next()) {
+                            Logger.debug("getting....");
+                            Logger.debug(data.getString(2));
+                            massageList.add(new MassageInfo(data.getInt(1), data.getString(3), data.getString(2), data.getString(4),
+                                    data.getString(5), data.getString(6), data.getString(7), data.getString(8), data.getString(9),data.getString(10)));
+                        }
+                        String response = helperUC.initializeObjectMapper().writeValueAsString(massageList);
+                        Logger.debug("Getting massageData2...");
+
+                        return ok(response);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            Logger.debug("GetMassageData went wrong... {}", e);
+            return badRequest("Failed while getting MassagesData");
+        }
+    }
+
+
+
+
     /**
      * Method for fetching massages prices and code
      *

@@ -18,6 +18,10 @@ GET         /adminpage                 controllers.HomeController.adminPage()
 POST        /submitFullForm            controllers.BookingFormController.addBookingToDatabase()
 #get massages,prices,lengths
 POST        /getMassagesData           controllers.HomeController.getMassagesData()
+
+POST       /getMassagesDataOther       controllers.HomeController.getMassagesDataOther()
+
+
 GET         /getPrices                 controllers.HomeController.getPrices()
 #fetch data from mysql for admins
 GET         /getAdminClientData        controllers.HomeController.getAdminClientData()
