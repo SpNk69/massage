@@ -53,6 +53,7 @@ $scope.showProcessingResponse=false;
         $scope.isDisabledMasOpt1 = true;
         $scope.isDisabledTime2 = true;
         $scope.formListenerReset1 = false;
+        $scope.massageInfoFromDB1={}
     }
 $scope.test111=true;
 $scope.applyStyleBF.test111 = myFF.applyColor("red");
@@ -69,10 +70,24 @@ $scope.zigi1=false;
             data: JSON.stringify(currentLang)
         }).then(function mySuccess(response) {
             $scope.massageInfoFromDB1 = angular.copy(response.data);
+            call1($scope.massageInfoFromDB1, currentLang, response.data)
         }, function myError(response) {
 
         });
+
     }
+
+    function call1(a1, b1, c1) {
+                  $http({
+                        method: "POST",
+                        url: "/getMassagesDataOther",
+                        data: JSON.stringify(b1)
+                    }).then(function mySuccess(response) {
+                    $scope.massageInfoFromDB1 = a1.concat(response.data)
+                    }, function myError(response) {
+                    });
+    }
+
 
     /**
      * Fetch prices for massages
@@ -287,7 +302,7 @@ $scope.doSomeStuff = function(item) {
     function getMassageOptionForSpecificMassage(code) {
         //assign value for user.massage - which one picked
         for (var i = 0; i < $scope.massageInfoFromDB1.length; i++) {
-//            console.log($scope.massageInfoFromDB1)
+            console.log($scope.massageInfoFromDB1)
             if ($scope.massageInfoFromDB1[i].code == code) {
                 $scope.user.massage = $scope.massageInfoFromDB1[i];
             }
