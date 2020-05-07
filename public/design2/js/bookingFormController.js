@@ -325,7 +325,7 @@ $scope.doSomeStuff = function(item) {
         $scope.takenOrOffDate = "15";
         // disable all Sundays and Saturdays in the Month View
 //        return type != 'day' || date.format('dddd') != 'Sunday' && date.format('dddd') != 'Saturday' && date.format('DDD') != $scope.takenOrOffDate;
-        return type != 'day' || date.format('dddd') != 'Sunday';
+        return type != 'day' || date.format('dddd') != '';
     };
 
     /**
