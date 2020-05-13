@@ -240,6 +240,7 @@ public class HomeController extends Controller {
 
         }
         Date date1 = new SimpleDateFormat("yyyy-MM-dd").parse(timeX);
+        System.out.println("TODAY MASSAGE?????????" + date1);
 
         String timeValue;
         boolean today = DateUtils.isSameDay(date1, new Date());
@@ -333,7 +334,9 @@ public class HomeController extends Controller {
                 filterSlotsAccordingToWorkingHours(fullFormDataForFE, existing, date1, timeX, LENGTH_OF_MASSAGE_AS_INDEXES, today);
             } catch (IndexOutOfBoundsException e) {
                 Logger.debug("Failed in this X: " + e);
+
             }
+
 
             String response = helperUC.initializeObjectMapper().writeValueAsString(fullFormDataForFE);
             return ok(response);
@@ -342,11 +345,12 @@ public class HomeController extends Controller {
         } catch (ParseException e) {
             Logger.debug("something wrong here");
             // date in wrong format
+
         }
         return badRequest();
     }
 
-    private void additionalFiltering(JsonDataArrayFromBeToFe arr, String date1, int LENGTH_OF_MASSAGE_AS_INDEXES, boolean today) throws SQLException {
+    private void additionalFiltering(JsonDataArrayFromBeToFe arr, String date1, int LENGTH_OF_MASSAGE_AS_INDEXES, boolean today) {
         String qw = "'\"" + date1 + "\"'";
         String qq = "SELECT date, time, massageOption from heroku_e3d8ce5aa92835f.fullreservationform WHERE date=" + qw + " " + "ORDER BY time ASC" + ";";
 
@@ -390,7 +394,14 @@ public class HomeController extends Controller {
                                 System.out.println("It is today, therefore, adding 12 first slots to arrayHolderForRemoving");
 
                                 for (int xxx = 0; xxx < 12; xxx++) {
-                                    arrayHolderForRemoving.add(arr.get(xxx));
+                                    try{
+                                        arrayHolderForRemoving.add(arr.get(xxx));
+                                        System.out.println(arr.get(xxx));
+
+
+                                    }catch(IndexOutOfBoundsException e){
+                                        continue;
+                                    }
                                 }
                             }
                             System.out.println("Inside logic where bookings exist");
@@ -495,8 +506,8 @@ public class HomeController extends Controller {
     }
 
     private void filterSlotsAccordingToWorkingHours(JsonDataArrayFromBeToFe
-                                                            arr, ArrayList<String> existing, Date date1, String timeX, int LENGTH_OF_MASSAGE_AS_INDEXES, boolean today) throws
-            SQLException {
+                                                            arr, ArrayList<String> existing, Date date1, String timeX, int LENGTH_OF_MASSAGE_AS_INDEXES, boolean today)  {
+
 //        List<String> ar1 = new ArrayList<>(Arrays.asList("08:00", "08:15", "08:30", "08:45", "09:00", "09:15", "09:30", "09:45"));
         ArrayList<String> ar11 = new ArrayList<>(Arrays.asList("10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00", "14:15", "14:30", "14:45", "15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15", "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00"));
 
@@ -548,7 +559,8 @@ public class HomeController extends Controller {
                 break;
         }
 
-        additionalFiltering(arr, timeX, LENGTH_OF_MASSAGE_AS_INDEXES, today);
+            additionalFiltering(arr, timeX, LENGTH_OF_MASSAGE_AS_INDEXES, today);
+
 
     }
 
