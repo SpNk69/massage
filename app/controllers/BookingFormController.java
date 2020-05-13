@@ -118,6 +118,8 @@ public class BookingFormController extends Controller implements WSBodyReadables
                             "\n\n" +
                             "Sie haben folgende Massage gebucht: " + data.get("massage").asText() +
                             "\n" + "Sie haben hingewiesen dieses E-mail Adresse: " + data.get("email").asText() +
+                            "\n" + "Sie haben hingewiesen dieses Telefonnummer: " + data.get("phone").asText() +
+
 //                        "\n\n" + "Botschaft: " + data.get("message").asText()+
                             "\n" + "Die Stelle: Schaffhausen, Oberstadt 22, 1. Stock" +
                             "\n" + "Datum: " + data.get("date").asText() +
