@@ -2,6 +2,7 @@ package validation;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import common.Constants;
+import play.Logger;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,6 +26,8 @@ public class ValidationUtility {
         } else if (m.find()) {
             return "nameFormat";
         }
+        Logger.debug("VALIDATED AS OK!!!!");
+
         return "";
     }
 
@@ -40,6 +43,8 @@ public class ValidationUtility {
         } else if (m.find()) {
             return "surnameFormat";
         }
+        Logger.debug("VALIDATED AS OK!!!!");
+
         return "";
     }
 
@@ -52,10 +57,17 @@ public class ValidationUtility {
         Matcher m = r.matcher(email);
 
         if (email.length() < 1 || email.length() > 100) {
+            Logger.debug("VALIDATED AS NOK#@@@@@@@!!!!");
+
             return "emailLength";
+
         } else if (!m.find()) {
+            Logger.debug("VALIDATED AS NOK####!!!!");
+
             return "emailFormat";
         }
+        Logger.debug("VALIDATED AS OK!!!!");
+
         return "";
     }
 
@@ -71,6 +83,8 @@ public class ValidationUtility {
         if (message.length() < 1 || message.length() > 1000) {
             return "messageLength";
         }
+        Logger.debug("VALIDATED AS OK!!!!");
+
         return "";
     }
 
@@ -86,6 +100,8 @@ public class ValidationUtility {
         if (message.length() > 1000) {
             return "messageLength";
         }
+        Logger.debug("VALIDATED AS OK!!!!");
+
         return "";
     }
 
@@ -116,6 +132,8 @@ public class ValidationUtility {
         } else if (!m3.find()) {
             return "dateFormat";
         }
+        Logger.debug("VALIDATED AS OK!!!!");
+
         return "";
     }
 
@@ -130,11 +148,16 @@ public class ValidationUtility {
         } else if (!m.find()) {
             return "timeFormat";
         }
+        Logger.debug("VALIDATED AS OK!!!!");
+
         return "";
     }
 
 
     public String validatePhone(JsonNode phoneNode) {
+
+
+
         String phone = phoneNode.asText();
         String pattern = "[^\\d+\\\\() –-]";
 
@@ -142,10 +165,16 @@ public class ValidationUtility {
         Matcher m = r.matcher(phone);
 
         if (phone.length() < 9 || phone.length() > 20) {
+            Logger.debug("VALIDATED AS NOK1!!!!");
+
             return "phoneLength";
         } else if (m.find()) {
+            Logger.debug("VALIDATED AS NOK2!!!!");
+
             return "phoneFormat";
         }
+        Logger.debug("VALIDATED AS OK!!!!");
+
         return "";
     }
 
@@ -162,22 +191,30 @@ public class ValidationUtility {
         } else if (m.find()) {
             return "massageOptionFormat";
         }
+        Logger.debug("VALIDATED AS OK!!!!");
+
         return "";
     }
 
 
     public String validateMassage(JsonNode massageNode) {
         String massage = massageNode.asText();
-        String pattern = "[^\\p{L}\\p{Pd}.')(+ -]";
+        String pattern = "[^\\p{L}\\p{Pd}.,')(+ -]";
 
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(massage);
 
         if (massage.length() < 1 || massage.length() > 100) {
+            Logger.debug("MASSAGE NTO VALID!");
+
             return "massageLength";
         } else if (m.find()) {
+            Logger.debug("VMASSAGE NTO VALID!");
+
             return "massageFormat";
         }
+        Logger.debug("VALIDATED AS OK!!!!");
+
         return "";
     }
 
@@ -185,14 +222,31 @@ public class ValidationUtility {
         HashMap<String, String> validationResult = new HashMap<>();
 
         validationResult.put(Constants.NAME, validateName(dataMap.get(Constants.NAME)));
+        Logger.debug("1", validateName(dataMap.get(Constants.NAME)));
         validationResult.put(Constants.SURNAME, validateSurname(dataMap.get(Constants.SURNAME)));
+        Logger.debug("2", validateSurname(dataMap.get(Constants.SURNAME)));
+
         validationResult.put(Constants.EMAIL, validateEmail(dataMap.get(Constants.EMAIL)));
+        Logger.debug("3",validateEmail(dataMap.get(Constants.EMAIL)));
+
         validationResult.put(Constants.PHONE, validatePhone(dataMap.get(Constants.PHONE)));
+        Logger.debug("4",validatePhone(dataMap.get(Constants.PHONE)));
+
         validationResult.put(Constants.MASSAGE, validateMassage(dataMap.get(Constants.MASSAGE)));
+        Logger.debug("5", validateMassage(dataMap.get(Constants.MASSAGE)));
+
         validationResult.put(Constants.MASSAGE_OPTION, validateMassageOption(dataMap.get(Constants.MASSAGE_OPTION)));
+        Logger.debug("6", validateMassageOption(dataMap.get(Constants.MASSAGE_OPTION)));
+
         validationResult.put(Constants.DATE, validateDate(dataMap.get(Constants.DATE)));
+        Logger.debug("7", validateDate(dataMap.get(Constants.DATE)));
+
         validationResult.put(Constants.TIME, validateTime(dataMap.get(Constants.TIME)));
+        Logger.debug("8", validateTime(dataMap.get(Constants.TIME)));
+
         validationResult.put(Constants.MESSAGE, validateMessageFullForm(dataMap.get(Constants.MESSAGE)));
+        Logger.debug("9", validateTime(dataMap.get(Constants.MESSAGE)));
+
 
         return validationResult;
     }
