@@ -139,7 +139,7 @@ public class BookingFormController extends Controller implements WSBodyReadables
                             "\n" + "info@vidamassage.ch" +
 //                            "\n" + "P.S. Im Februar gilt 35% Rabatt auf Ihre gewählte Massage." +
 
-                            "\n" + "Sie können gerne eine Bewertung auf Facebook hinterlassen - https://www.facebook.com/behandlungspraxisVida/"
+                            "\n" + "Sie können gerne eine Bewertung auf Facebook hinterlassen - https://www.facebook.com/VidaMassagen/"
             );
     System.out.println("IN THE SEND EMAIL2");
 

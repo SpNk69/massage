@@ -30,7 +30,7 @@ public class HomeController extends Controller {
     public static int BUFFER_TIME = 4;
 
     public Result toFaceBook() {
-        return redirect("https://www.facebook.com/behandlungspraxisVida/");
+        return redirect("https://www.facebook.com/VidaMassagen/");
     }
 
     public Result adminPage() {
