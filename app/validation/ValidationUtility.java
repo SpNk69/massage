@@ -199,7 +199,7 @@ public class ValidationUtility {
 
     public String validateMassage(JsonNode massageNode) {
         String massage = massageNode.asText();
-        String pattern = "[^\\p{L}\\p{Pd}.,')(+ -]";
+        String pattern = "[^\\p{L}\\p{Pd}.,')(+\\/& -]";
 
         Pattern r = Pattern.compile(pattern);
         Matcher m = r.matcher(massage);
