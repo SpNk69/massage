@@ -709,14 +709,27 @@
 
         <p class="note2"><u>{{data.prices.offers1 | uppercase}}</u></p>
 
+
+
         <ul>
             <li class="note1" ng-repeat="value in data.prices.offers2">{{value}}</li>
         </ul>
         <p class="note2"><u>{{data.prices.present1 | uppercase}}</u></p>
 
+
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 tc3  d-flex align-content-stretch flex-wrap  ">
+            <div class="thumbnail">
+                <img class="tc2 sizeLimit" src='@routes.Assets.at("design2/img/giftCard.png")'
+                     alt="Geschenkgutscheine">
+
+            </div>
+        </div>
+
         <ul >
             <li class="note1" ng-repeat="value in data.prices.present2">{{value}}</li>
         </ul>
+
+
 
         <p class="note2"><u>{{data.prices.attention1}}</u></p>
 
