@@ -27,7 +27,8 @@ public class HomeController extends Controller {
         return ok(SPAcalledFromController.render(""));
     }
 
-    public static int BUFFER_TIME = 4;
+    // 1h 45min between massages
+    public static int BUFFER_TIME = 7;
 
     public Result toFaceBook() {
         return redirect("https://www.facebook.com/VidaMassagen/");
@@ -391,9 +392,10 @@ public class HomeController extends Controller {
                         }else{
 
                             if (today){
-                                System.out.println("It is today, therefore, adding 12 first slots to arrayHolderForRemoving");
+                                //2 hours
+                                System.out.println("It is today, therefore, adding 8 first slots to arrayHolderForRemoving");
 
-                                for (int xxx = 0; xxx < 12; xxx++) {
+                                for (int xxx = 0; xxx < 8; xxx++) {
                                     try{
                                         arrayHolderForRemoving.add(arr.get(xxx));
                                         System.out.println(arr.get(xxx));
