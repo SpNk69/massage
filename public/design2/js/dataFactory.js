@@ -597,7 +597,7 @@ gg.factory('myDataFactory', function () {
                     "Eine besondere Geschenkidee für alle die Ihnen am Herzen liegen. Gutschein ganz einfach kaufen und verschenken.",
                     "KAUFEN SIE hier Ihren Massage-Gutschein: Oberstadt 22, 1. Stock; +41797897010; Bestellen: info@vidamassage.ch"],
                     "attention1":"BITTE BEACHTEN SIE DEN ANHANG",
-                    "attention2":["Zahlung nur in bar (Entschuldigung für vorübergehende Unannehmlichkeiten).","Der Dienst ist am Ende jeder Massage zu bezahlen.","Rabatte addieren sich nicht.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail/SMS."]
+                    "attention2":["Die Massagen werden von Krankenkassen nicht übernommen.","Zahlung nur in bar (Entschuldigung für vorübergehende Unannehmlichkeiten).","Der Dienst ist am Ende jeder Massage zu bezahlen.","Rabatte addieren sich nicht.","Wenn Sie nicht für eine Massage kommen können. Bitte stornieren Sie Ihre Bestellung bis 24 Stunden vor dem vereinbarten Termin per E-Mail/SMS."]
                 },
                 "ru": {
                     "title": "Цены",
