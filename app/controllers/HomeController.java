@@ -377,12 +377,12 @@ public class HomeController extends Controller {
                         System.out.println("Size of Array: " + arrFromDB.size());
                         //start here
                         ArrayList<Object> arrayHolderForRemoving = new ArrayList();
-                        //If it is today ant no bookings yet, show 3 hours in advance, deleting 12 slots, 1slot=15min
+                        //If it is today ant no bookings yet, show 2 hours in advance, deleting 8 slots, 1slot=15min
                         if (arrFromDB.size() == 0 && today) {
                             System.out.println("No one registered today, therefore deleting slots");
                             try {
 
-                            for (int xxx = 0; xxx < 12; xxx++) {
+                            for (int xxx = 0; xxx < 8; xxx++) {
                                 arrayHolderForRemoving.add(arr.get(xxx));
                                 System.out.println(arr.get(xxx));
 
