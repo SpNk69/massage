@@ -132,14 +132,14 @@ public class BookingFormController extends Controller implements WSBodyReadables
                             "\n" + "Art der Zahlung: Bargeld" +
                             "\n" + "Um die Massage Zeit abbrechen oder zu ändern, rufen Sie +41797897010 an oder senden Sie eine E-Mail an info@vidamassage.ch" +
                             "\n\n" + "Mit freundlichen Grüßen" +
-                            "\n" + "vidamassage" +
-                            "\n\n" + "--------------" +
-                            "\n" + "www.vidamassage.ch" +
-                            "\n" + "+41797897010" +
-                            "\n" + "info@vidamassage.ch" +
-//                            "\n" + "P.S. Im Februar gilt 35% Rabatt auf Ihre gewählte Massage." +
-
-                            "\n" + "Sie können gerne eine Bewertung auf Facebook hinterlassen - https://www.facebook.com/VidaMassagen/"
+                            "\n" + "vidamassage" 
+//                            "\n\n" + "--------------" +
+//                            "\n" + "www.vidamassage.ch" +
+//                            "\n" + "+41797897010" +
+//                            "\n" + "info@vidamassage.ch" +
+////                            "\n" + "P.S. Im Februar gilt 35% Rabatt auf Ihre gewählte Massage." +
+//
+//                            "\n" + "Sie können gerne eine Bewertung auf Facebook hinterlassen - https://www.facebook.com/VidaMassagen/"
             );
     System.out.println("IN THE SEND EMAIL2");
 
